@@ -1,0 +1,3 @@
+# Jen pro parse_otazky.py — stahni_zakon.py i kontrola_odpovedi.py si vystačí
+# se standardní knihovnou.
+pypdf>=6.0

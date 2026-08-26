@@ -52,10 +52,17 @@ Testy logiky: `cd zkouska && npm test`
 ## Odkud se berou data
 
 ```bash
+python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
+```
+
+```bash
+.venv/bin/python tools/parse_otazky.py     # PDF ministerstva → otazky.json
 python3 tools/stahni_zakon.py 2006-182     # znění předpisu k psaní odpovědí
-python3 tools/parse_otazky.py              # PDF ministerstva → otazky.json
 python3 tools/kontrola_odpovedi.py         # kontrola odpovědí proti otázkám
 ```
+
+Virtuální prostředí potřebuje jen parser (kvůli `pypdf`); zbylé dva skripty si
+vystačí se standardní knihovnou.
 
 `parse_otazky.py` si čtyři PDF stáhne z `insolvence.justice.cz` do `_zdroje/`
 (mimo repo) a rozparsuje je. Strukturu čte z vodorovných souřadnic textu, ne
