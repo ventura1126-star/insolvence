@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Zkouška IS",
+    "slug": "zkouska-is",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "output": "single"
+    },
+    "experiments": {
+      "baseUrl": "/zkouska-is"
+    }
+  }
+}

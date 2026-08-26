@@ -1,0 +1,1698 @@
+{
+ "audit-0001": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 3 odst. 5 zákona o účetnictví",
+  "vysvetleni": "Hospodářský rok lze uplatnit až po oznámení záměru místně příslušnému správci daně z příjmů nejméně 3 měsíce před plánovanou změnou účetního období nebo před koncem běžného účetního období — podle toho, který termín nastane dřív. Jinak účetní období zůstává nezměněno. Stejně se postupuje i při přechodu zpátky na kalendářní rok.",
+  "stav": "platna"
+ },
+ "audit-0002": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 4 odst. 12 zákona o účetnictví",
+  "vysvetleni": "V roce 2014 platilo, že účetnictví se vede v peněžních jednotkách české měny — tehdy správně varianta 2.",
+  "stav": "zastarala",
+  "poznamka": "Dnes § 4 odst. 12 zní „v peněžních jednotkách měny účetnictví\". Se zavedením funkční měny může účetní jednotka vést účetnictví i v EUR, USD nebo GBP, je-li to její funkční měna. Kategorické tvrzení „v české měně\" tedy už neplatí a žádná z nabízených variant není dnes správně."
+ },
+ "audit-0003": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 9 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Nestanoví-li zákon nebo zvláštní předpis jinak, jsou účetní jednotky povinny vést účetnictví v plném rozsahu. Zjednodušený rozsah je výjimka podle § 9 odst. 3 a 4, ne východisko.",
+  "stav": "platna"
+ },
+ "audit-0004": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 11 odst. 2 zákona o účetnictví",
+  "vysvetleni": "Účetní doklady se vyhotovují bez zbytečného odkladu po zjištění skutečností, které se jimi zachycují. Žádný měsíční ani čtvrtletní interval zákon nestanoví — rozhoduje okamžik zjištění.",
+  "stav": "platna"
+ },
+ "audit-0005": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 9 odst. 3 a 4 zákona o účetnictví",
+  "vysvetleni": "Zjednodušený rozsah může vést jen malá nebo mikro účetní jednotka bez povinnosti auditu, a to jen pokud je zároveň jednou z forem vyjmenovaných v § 9 odst. 4 — mezi nimi je bytové družstvo. Akciová společnost ani s. r. o. ve výčtu nejsou, takže na zjednodušený rozsah nedosáhnou ani bez povinnosti auditu.",
+  "stav": "platna",
+  "poznamka": "Varianta 4 je poloviční past: obecně prospěšné společnosti ve výčtu § 9 odst. 4 jsou, ale „občanská sdružení\" jako právní forma od účinnosti občanského zákoníku neexistují — dnes jde o spolky."
+ },
+ "audit-0006": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 14 zákona o účetnictví, vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Směrná účtová osnova určuje uspořádání a označení účtových tříd, popřípadě účtových skupin nebo syntetických účtů. Pro podnikatele je závazná do úrovně účtových skupin (dvojmístný číselný znak); syntetické účty si účetní jednotka stanoví sama v účtovém rozvrhu.",
+  "stav": "platna"
+ },
+ "audit-0007": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 17 odst. 7 zákona o účetnictví",
+  "vysvetleni": "Do okamžiku schválení účetní závěrky, nejpozději však do konce následujícího účetního období, může účetní jednotka již uzavřené účetní knihy znovu otevřít — ale jen z důvodu, že obsah položek závěrky neodpovídá skutečnému stavu. Po schválení závěrky už další zápisy přidávat nelze.",
+  "stav": "platna"
+ },
+ "audit-0008": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 18 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Účetní závěrka je nedílný celek a tvoří ji rozvaha, výkaz zisku a ztráty a příloha. Přehled o změnách vlastního kapitálu povinnou součástí obecně není — podle § 18 odst. 2 ho sestavují obchodní společnosti, ale malé a mikro účetní jednotky jsou ho zproštěny.",
+  "stav": "platna"
+ },
+ "audit-0009": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 19 odst. 3 zákona o účetnictví",
+  "vysvetleni": "Při mezitímní účetní závěrce se účetní knihy neuzavírají a inventarizace se provádí jen pro účely vyjádření ocenění podle § 25 odst. 3. Právě tím se mezitímní závěrka liší od řádné.",
+  "stav": "platna"
+ },
+ "audit-0010": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Rozhoduje sjednaná doba splatnosti delší než jeden rok při vzniku pohledávky, ne to, jak dlouho je pohledávka po splatnosti. Pohledávka splatná do roka, kterou dlužník nehradí tři roky, zůstává krátkodobá.",
+  "stav": "platna"
+ },
+ "audit-0011": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 19a odst. 1 zákona o účetnictví",
+  "vysvetleni": "Mezinárodní účetní standardy použije účetní jednotka, která je obchodní společností a emitentem investičních cenných papírů přijatých k obchodování na evropském regulovaném trhu. Právní forma ani zahraniční majetková účast samy o sobě povinnost nezakládají.",
+  "stav": "platna"
+ },
+ "audit-0012": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 20 odst. 2 písm. a) zákona o účetnictví",
+  "vysvetleni": "Účetní závěrku sestavenou v průběhu konkursu není nutné mít ověřenou auditorem po dobu nepřetržitě po sobě jdoucích 36 kalendářních měsíců, počínaje prvním dnem měsíce následujícího po dni, kdy nastaly účinky prohlášení konkursu. Věřitelský výbor ale může rozhodnout, že ověřena být má.",
+  "stav": "platna"
+ },
+ "audit-0013": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 21 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Výroční zprávu vyhotovují účetní jednotky, které mají povinnost mít účetní závěrku ověřenou auditorem. Zápis do obchodního rejstříku sám o sobě povinnost nezakládá.",
+  "stav": "platna"
+ },
+ "audit-0014": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 21a odst. 4 zákona o účetnictví",
+  "vysvetleni": "Účetní jednotky zapisované do veřejného rejstříku zveřejňují závěrku a výroční zprávu uložením do sbírky listin. Povinnost je splněna okamžikem předání rejstříkovému soudu — předání finančnímu úřadu spolu s daňovým přiznáním ji nenahrazuje.",
+  "stav": "platna"
+ },
+ "audit-0015": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 22 odst. 6 zákona o účetnictví",
+  "vysvetleni": "Konsolidační celek tvoří konsolidující účetní jednotka (ovládající osoba) a konsolidované účetní jednotky (ovládané osoby). Rozhoduje vztah ovládání, ne shodný předmět činnosti ani vzájemné obchodování.",
+  "stav": "platna"
+ },
+ "audit-0016": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 28 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Základní pravidlo: o majetku účtuje a odpisuje ho účetní jednotka, která k němu má vlastnické nebo jiné právo. Odpisování uživatelem bez ohledu na vlastnictví je výjimka pro případy výslovně uvedené v § 28 odst. 1 větě druhé.",
+  "stav": "platna"
+ },
+ "audit-0017": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 28 odst. 1 věta druhá zákona o účetnictví",
+  "vysvetleni": "U smlouvy o výpůjčce po dobu zajištění závazků převodem práva účtuje a odpisuje majetek účetní jednotka, která jej používá — tedy původní vlastník, jenž právo převedl a věc si dál vypůjčil. Nový vlastník, který věc drží jen jako zajištění, ji neodpisuje.",
+  "stav": "platna"
+ },
+ "audit-0018": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 28 odst. 1 věta třetí zákona o účetnictví, vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Pozemky a umělecká díla, která nejsou součástí stavby, jsou z odpisování vyloučena — nedochází u nich k opotřebení, které by odpis vyjadřoval.",
+  "stav": "platna"
+ },
+ "audit-0019": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 28 odst. 3 zákona o účetnictví",
+  "vysvetleni": "Majetek poskytnutý na základě smlouvy o finančním leasingu odpisuje účetní jednotka, která jej poskytuje — tedy pronajímatel jako vlastník. Nájemce jej neodpisuje, i když ho po celou dobu užívá a nakonec nabude do vlastnictví.",
+  "stav": "platna"
+ },
+ "audit-0020": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 28 odst. 6 zákona o účetnictví",
+  "vysvetleni": "Účetní odpis vyjadřuje skutečné opotřebení: odpisuje se podle odpisového plánu po dobu předpokládané životnosti, a jen do výše ocenění majetku v účetnictví. Doby podle zákona o daních z příjmů jsou daňová kategorie a s účetním odpisem se krýt nemusí.",
+  "stav": "platna"
+ },
+ "audit-0021": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 28 odst. 6 zákona o účetnictví, § 26 odst. 8 zákona o daních z příjmů",
+  "vysvetleni": "Daňové odpisování lze přerušit a při pokračování se pokračuje způsobem, jako by přerušeno nebylo — toho se běžně využívá k daňové optimalizaci. Účetní odpisy přerušit nelze, protože by účetnictví přestalo věrně zobrazovat opotřebení majetku.",
+  "stav": "platna"
+ },
+ "audit-0022": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 28 odst. 6 zákona o účetnictví, § 26 odst. 5 zákona o daních z příjmů",
+  "vysvetleni": "Odpisovat lze až od uvedení majetku do stavu způsobilého užívání, tedy po dokončení věci a splnění technických funkcí a povinností podle právních předpisů. Zaplacení faktury ani její přijetí okamžik zahájení odpisů neurčuje.",
+  "stav": "platna"
+ },
+ "audit-0023": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 28 zákona o účetnictví, § 29 odst. 5 zákona o daních z příjmů",
+  "vysvetleni": "U podílového spoluvlastnictví odpisuje každý spoluvlastník svůj podíl, a to shodně účetně i daňově — vstupní cenou je pro něj jeho spoluvlastnický podíl. Dohoda spoluvlastníků odpisování na jednoho z nich soustředit nemůže.",
+  "stav": "platna"
+ },
+ "audit-0025": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 31 odst. 2 písm. a) zákona o účetnictví",
+  "vysvetleni": "Účetní závěrka a výroční zpráva se uschovávají 10 let počínajících koncem účetního období, kterého se týkají. Ostatní účetní záznamy — doklady, knihy, odpisové plány, inventurní soupisy, účtový rozvrh — jen 5 let.",
+  "stav": "platna"
+ },
+ "audit-0026": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 33 odst. 2 zákona o účetnictví",
+  "vysvetleni": "Účetní záznam může mít listinnou, technickou nebo smíšenou formu. Smíšenou formou se rozumí záznam v listinné podobě, který zároveň obsahuje informace v technické formě pro člověka nečitelné.",
+  "stav": "platna"
+ },
+ "audit-0027": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 35 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Opravy a doplnění v účetních záznamech jsou přípustné, ale nesmějí vést k neúplnosti, neprůkaznosti, nesprávnosti, nesrozumitelnosti nebo nepřehlednosti účetnictví. Svolení žádného úřadu se k nim nevyžaduje.",
+  "stav": "platna"
+ },
+ "audit-0028": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 37a odst. 1 písm. l) a odst. 4 písm. b) zákona o účetnictví",
+  "vysvetleni": "Nemít v rozporu s § 20 odst. 1 účetní závěrku ověřenou auditorem je přestupek, za který lze uložit pokutu do 3 % hodnoty aktiv celkem. Sazba 6 % dopadá na těžší případy — nevedení účetnictví, nesestavení závěrky nebo výroční zprávy.",
+  "stav": "platna"
+ },
+ "audit-0029": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 37ab zákona o účetnictví",
+  "vysvetleni": "Přestupky podle zákona o účetnictví projednává finanční úřad, nestanoví-li zvláštní právní předpis jinak. Kontrola tedy probíhá v rámci správy daní, ne u soudu ani u živnostenského úřadu.",
+  "stav": "platna"
+ },
+ "audit-0031": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 4 odst. 12 zákona o účetnictví",
+  "vysvetleni": "U cizích měn platí povinnost použít současně i cizí měnu — účet se tedy vede v měně účetnictví (u tuzemské účetní jednotky zpravidla v korunách) a zároveň v příslušné cizí měně. Vést ho jen v jedné z nich nestačí.",
+  "stav": "platna",
+  "poznamka": "Otázka je formulovaná ještě pro dobu, kdy měnou účetnictví byla vždy koruna. Se zavedením funkční měny může být měnou účetnictví i EUR, USD nebo GBP — princip souběhu s cizí měnou ale zůstává."
+ },
+ "audit-0032": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 11 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Účetním dokladem pro zaúčtování úhrady je výpis z bankovního účtu — teprve ten prokazuje, že k pohybu peněz skutečně došlo. Příkaz k úhradě je jen pokyn bance, dodavatelská faktura dokládá vznik závazku, ne jeho zaplacení.",
+  "stav": "platna"
+ },
+ "audit-0033": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Ceniny svěřené pracovníkům k použití na předem stanovené účely se vykazují jako pohledávka za zaměstnancem — dokud je nevyúčtuje, dluží účetní jednotce jejich hodnotu.",
+  "stav": "platna"
+ },
+ "audit-0034": {
+  "spravne": [
+   0
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Záporný zůstatek běžného účtu je fakticky čerpaný úvěr, proto se vykazuje v pasivech jako krátkodobý bankovní úvěr. Aktiva se o záporné položky nesnižují.",
+  "stav": "platna"
+ },
+ "audit-0035": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 25 odst. 5 písm. a) a § 24 zákona o účetnictví",
+  "vysvetleni": "Pořizovací cenou je cena, za kterou byl cenný papír pořízen, včetně přímých nákladů s pořízením souvisejících — tedy i poplatků makléřům a burzám. Náklady na držbu a úroky z úvěru na pořízení jsou náklady období, do ceny nevstupují.",
+  "stav": "platna"
+ },
+ "audit-0036": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Náhradní díly i obaly a obalové materiály do materiálu patří. Nedokončená výroba je samostatná položka zásob a umělecká díla, která nejsou součástí stavby, jsou dlouhodobým hmotným majetkem — ani jedno v položce „Materiál\" nemá co dělat.",
+  "stav": "platna"
+ },
+ "audit-0037": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Zbožím jsou předměty nakoupené za účelem dalšího prodeje a dále výrobky vlastní výroby aktivované a předané do vlastních prodejen. Předměty průmyslového vlastnictví jsou dlouhodobý nehmotný majetek, povolenky na emise se vykazují samostatně.",
+  "stav": "platna"
+ },
+ "audit-0038": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 25 odst. 5 písm. a) zákona o účetnictví, vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Do pořizovací ceny zásob patří náklady přímo související s jejich pořízením — přeprava i pojištění během přepravy. Reklama je provozní náklad období a úroky z úvěrů se do ceny zásob nezahrnují.",
+  "stav": "platna"
+ },
+ "audit-0039": {
+  "spravne": [
+   0
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Manko na zásobách se účtuje na vrub provozních nákladů. Kategorie mimořádných nákladů se navíc ve výkazu zisku a ztráty už nepoužívá.",
+  "stav": "platna"
+ },
+ "audit-0040": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 25 odst. 3 zákona o účetnictví, § 24 a 25 zákona o daních z příjmů",
+  "vysvetleni": "Opravná položka k zásobám se tvoří na vrub provozních nákladů, ale daňově účinná není — zákon o rezervách ji mezi daňově uznatelné opravné položky neřadí. Rozdíl se vypořádá až v daňovém přiznání.",
+  "stav": "platna"
+ },
+ "audit-0041": {
+  "spravne": [
+   2
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Rezerva je závazek nejistý co do výše nebo okamžiku splnění, proto se vykazuje v cizích zdrojích, ne ve vlastním kapitálu ani v časovém rozlišení.",
+  "stav": "platna"
+ },
+ "audit-0042": {
+  "spravne": [
+   1
+  ],
+  "pramen": "zákon č. 593/1992 Sb., o rezervách pro zjištění základu daně z příjmů",
+  "vysvetleni": "Daňové dopady tvorby a čerpání rezerv upravuje zákon o rezervách — ten určuje, které rezervy jsou daňově uznatelné. Zákon o účetnictví řeší jen účetní zachycení.",
+  "stav": "platna"
+ },
+ "insolvence-0001": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 136 odst. 1 insolvenčního zákona",
+  "vysvetleni": "O tom, zda je dlužník v úpadku, rozhoduje vždy insolvenční soud rozhodnutím o úpadku. Věřitelé ani insolvenční správce o úpadku nerozhodují — věřitelé se vyjadřují ke způsobu řešení, správce zjišťuje majetkovou podstatu.",
+  "stav": "platna"
+ },
+ "insolvence-0002": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 2 písm. a) a § 7a insolvenčního zákona",
+  "vysvetleni": "Insolvenční řízení lze vést pouze před insolvenčním soudem, kterým je krajský soud. Rozhodčí ani obecný okresní soud k němu příslušný není — jde o zvláštní druh řízení svěřený výhradně insolvenčním soudům.",
+  "stav": "platna"
+ },
+ "insolvence-0003": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 2 písm. g) insolvenčního zákona",
+  "vysvetleni": "Zajištěným věřitelem je ten, jehož pohledávka je zajištěna majetkem náležejícím do majetkové podstaty, a to jen zástavním právem, zadržovacím právem, omezením převodu nemovitosti, zajišťovacím převodem práva, postoupením pohledávky k zajištění nebo obdobným právem podle zahraniční úpravy. Zástavní právo k věci ve vlastnictví někoho jiného než dlužníka do podstaty nespadá, směnka zajišťovacím instrumentem v tomto smyslu není.",
+  "stav": "platna"
+ },
+ "insolvence-0004": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 2 písm. g) insolvenčního zákona",
+  "vysvetleni": "Výčet zajišťovacích institutů je taxativní a výhrada vlastnického práva v něm není. Zástavní právo, zajišťovací převod práva i právo obdobné zástavnímu podle zahraniční úpravy v něm naopak jsou.",
+  "stav": "platna"
+ },
+ "insolvence-0005": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 3 odst. 1 a odst. 2 písm. b) insolvenčního zákona",
+  "vysvetleni": "Úpadek ve formě platební neschopnosti vyžaduje více věřitelů, závazky déle než 30 dnů po splatnosti a neschopnost je plnit. Neplacení po dobu delší 3 měsíců zakládá vyvratitelnou domněnku té neschopnosti — spolu s mnohostí věřitelů je tak naplněn celý úpadek.",
+  "stav": "platna"
+ },
+ "insolvence-0006": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 3 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Platební neschopností se rozumí stav, kdy dlužník má peněžité závazky déle než 30 dnů po lhůtě splatnosti a není schopen je plnit.",
+  "stav": "platna",
+  "poznamka": "Zákon pod pojem platební neschopnost shrnuje všechny tři znaky z § 3 odst. 1 včetně mnohosti věřitelů. Nabízená varianta ji nezmiňuje, ale ze zbývajících je jediná, která vystihuje podstatu."
+ },
+ "insolvence-0009": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 3 odst. 1 písm. a) insolvenčního zákona",
+  "vysvetleni": "Mnohost věřitelů je prvním zákonným znakem platební neschopnosti. Nepeněžité závazky se nepočítají, převaha závazků nad majetkem je předlužení a neschopnost hradit až v budoucnu je hrozící úpadek.",
+  "stav": "platna"
+ },
+ "insolvence-0010": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 3 odst. 2 písm. d) insolvenčního zákona",
+  "vysvetleni": "Nesplní-li dlužník povinnost předložit seznamy majetku, závazků a zaměstnanců, kterou mu uložil insolvenční soud, má se za to, že není schopen plnit své peněžité závazky. Sankcí je tedy důkazní domněnka, ne pokuta ani předvedení.",
+  "stav": "platna"
+ },
+ "insolvence-0011": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 3 odst. 2 písm. d) insolvenčního zákona",
+  "vysvetleni": "Nepředložení seznamů na výzvu soudu zakládá domněnku platební neschopnosti; ve spojení s mnohostí věřitelů a třicetidenním prodlením je tím naplněn úpadek. Záporný vlastní kapitál ani převaha splatných závazků nad majetkem mezi domněnkami nejsou.",
+  "stav": "platna"
+ },
+ "insolvence-0012": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 3 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Platební neschopnost stojí výhradně na peněžitých závazcích. Nepeněžité závazky po splatnosti ani neschopnost je plnit proto podmínkou nejsou — na rozdíl od mnohosti věřitelů a neschopnosti plnit peněžité závazky po 30 dnech.",
+  "stav": "platna"
+ },
+ "insolvence-0013": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 3 odst. 1 a 4 insolvenčního zákona",
+  "vysvetleni": "Dlužník má jediného věřitele, takže chybí mnohost věřitelů — a ta je nutná jak pro platební neschopnost, tak pro předlužení. Bez ohledu na to, že závazek 1 mil. Kč převyšuje majetek 900 tis. Kč a je 68 dnů po splatnosti, dlužník v úpadku není.",
+  "stav": "platna"
+ },
+ "insolvence-0014": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 3 odst. 4 insolvenčního zákona",
+  "vysvetleni": "O předlužení jde tehdy, má-li dlužník více věřitelů a souhrn jeho závazků převyšuje hodnotu jeho majetku. Počítají se všechny závazky, nejen splatné — v tom se předlužení liší od platební neschopnosti.",
+  "stav": "platna"
+ },
+ "insolvence-0015": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 3 odst. 2 písm. b) a d) insolvenčního zákona",
+  "vysvetleni": "Domněnku neschopnosti plnit zakládá neplacení po dobu delší 3 měsíců po splatnosti a dále nesplnění povinnosti předložit soudem vyžádané seznamy. Třicetidenní prodlení je samostatný znak úpadku, ne domněnka; převaha závazků nad majetkem je předlužení.",
+  "stav": "platna"
+ },
+ "insolvence-0016": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 3 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Předlužena může být jen právnická osoba nebo fyzická osoba — podnikatel. Nepodnikající fyzická osoba se do úpadku může dostat pouze platební neschopností, ať je její majetková situace jakákoli.",
+  "stav": "platna"
+ },
+ "insolvence-0018": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 3 odst. 5 insolvenčního zákona",
+  "vysvetleni": "O hrozící úpadek jde tehdy, lze-li se zřetelem ke všem okolnostem důvodně předpokládat, že dlužník nebude schopen řádně a včas splnit podstatnou část svých peněžitých závazků. Žádné pevné intervaly prodlení zákon nestanoví.",
+  "stav": "platna"
+ },
+ "insolvence-0019": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 3 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Postačí důvodný předpoklad, nemusí být najisto postaveno. A jde o podstatnou část peněžitých závazků, ne o všechny.",
+  "stav": "platna"
+ },
+ "insolvence-0020": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 3 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Hrozící úpadek míří na budoucí neschopnost splnit podstatnou část peněžitých závazků — jde tedy o předpoklad budoucí platební neschopnosti, ne předlužení.",
+  "stav": "platna"
+ },
+ "insolvence-0021": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 97 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Insolvenční návrh pro hrozící úpadek je oprávněn podat jedině dlužník. Věřitel může namítat jen úpadek již nastalý, takže hrozící úpadek fakticky zjišťuje a uplatňuje sám dlužník.",
+  "stav": "platna"
+ },
+ "insolvence-0022": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 3 odst. 5 a § 97 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Institut dává dlužníkovi možnost zahájit řízení dřív, než se jeho situace zhorší, a otevřít si tak cestu k reorganizaci či oddlužení. Je to nástroj v rukou dlužníka — věřitel se hrozícího úpadku dovolávat nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0023": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 4 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Způsoby řešení úpadku jsou konkurs, reorganizace, oddlužení a zvláštní způsoby pro určité subjekty. Moratorium mezi ně nepatří — je to dočasná ochrana dlužníka před rozhodnutím o úpadku, ne způsob jeho řešení.",
+  "stav": "platna"
+ },
+ "insolvence-0024": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 4 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutím o způsobu řešení úpadku je jen rozhodnutí o prohlášení konkursu, o povolení reorganizace a o povolení oddlužení. Schválení oddlužení je až následný krok po jeho povolení, zamítnutí návrhu ani zrušení oddlužení způsob řešení neurčují — správně tedy není žádná z nabízených variant.",
+  "stav": "platna"
+ },
+ "insolvence-0025": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 5 písm. b) insolvenčního zákona",
+  "vysvetleni": "Zásada zní, že věřitelé se zásadně stejným nebo obdobným postavením mají rovné možnosti. Není to tedy naprostá rovnost všech — zajištěný věřitel má jiné postavení než nezajištěný a zachází se s ním odlišně.",
+  "stav": "platna"
+ },
+ "insolvence-0026": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 5 písm. c) insolvenčního zákona",
+  "vysvetleni": "Práva nabytá věřitelem v dobré víře před zahájením řízení nelze omezit rozhodnutím soudu ani postupem správce — ledaže zákon stanoví jinak. Výjimku tedy může založit jen zákon, ne úvaha soudu.",
+  "stav": "platna"
+ },
+ "insolvence-0027": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 6 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Všechny čtyři subjekty jsou z působnosti zákona vyňaty: ČNB a Garanční fond obchodníků s cennými papíry podle odstavce 1, zdravotní pojišťovna po dobu držení povolení podle odstavce 2. Fond pojištění vkladů dnes spravuje Garanční systém finančního trhu, na který výjimka rovněž dopadá.",
+  "stav": "platna"
+ },
+ "insolvence-0028": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 6 odst. 1 písm. b) a g) insolvenčního zákona",
+  "vysvetleni": "Vyňaty jsou územní samosprávné celky, tedy i obec, a veřejné vysoké školy. Na státní podnik se insolvenční zákon vztahuje; veřejná střední škola je zpravidla příspěvkovou organizací kraje, a ta ve výčtu výjimek není.",
+  "stav": "platna"
+ },
+ "insolvence-0029": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 6 odst. 1 písm. b) a § 97 insolvenčního zákona",
+  "vysvetleni": "Insolvenční návrh jako dlužník může podat státní podnik i nadace — na oba se zákon vztahuje. Obec ani kraj jako územní samosprávné celky do působnosti zákona nespadají, takže návrh podat nemohou.",
+  "stav": "platna"
+ },
+ "insolvence-0030": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 6 odst. 1 písm. b) insolvenčního zákona",
+  "vysvetleni": "Církev i advokát jsou běžnými subjekty, na jejichž úpadek insolvenční zákon dopadá. Obec a kraj jsou územní samosprávné celky vyňaté z jeho působnosti.",
+  "stav": "platna"
+ },
+ "dane-0001": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 2 odst. 1 zákona o daních z příjmů",
+  "vysvetleni": "Poplatníky daně z příjmů fyzických osob jsou fyzické osoby — bez dalších podmínek. Bydliště, nemovitost ani pracovní poměr v ČR okruh poplatníků nezužují; rozhodují jen o tom, zda je poplatník daňovým rezidentem (daní celosvětové příjmy), nebo nerezidentem (daní jen příjmy ze zdrojů v ČR). Žádná z nabízených variant proto neplatí.",
+  "stav": "platna"
+ },
+ "dane-0002": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 2 odst. 4 zákona o daních z příjmů",
+  "vysvetleni": "Obvykle se zdržujícím je ten, kdo na území ČR pobývá alespoň 183 dnů v příslušném kalendářním roce, a to souvisle nebo v několika obdobích. Obě varianty jsou tedy správné — do lhůty se navíc započítává každý započatý den pobytu.",
+  "stav": "platna"
+ },
+ "dane-0003": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 3 odst. 1 zákona o daních z příjmů",
+  "vysvetleni": "Předmětem daně jsou příjmy ze závislé činnosti, ze samostatné činnosti, z kapitálového majetku, z nájmu a ostatní příjmy — všechny čtyři nabízené varianty tedy předmětem daně jsou. Prodej cenných papírů držených měsíc sice nesplní tříletý časový test pro osvobození, ale to z něj nedělá příjem mimo předmět daně; osvobození a předmět daně jsou dvě různé věci.",
+  "stav": "platna"
+ },
+ "dane-0005": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 4 odst. 1 písm. b) zákona o daních z příjmů",
+  "vysvetleni": "V roce 2014 činil časový test pro osvobození příjmu z prodeje nemovitosti 5 let — tehdy správně varianta 1.",
+  "stav": "zastarala",
+  "poznamka": "U nemovitostí nabytých od 1. 1. 2021 je časový test 10 let, ne 5. Osvobodit dřívější prodej lze, jen pokud poplatník získané prostředky použije na obstarání vlastní bytové potřeby. Žádná z nabízených variant dnešní úpravě neodpovídá."
+ },
+ "dane-0008": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 6 odst. 7 zákona o daních z příjmů",
+  "vysvetleni": "Předmětem daně nejsou ochranné pracovní prostředky, zálohy přijaté od zaměstnavatele k vydání jeho jménem ani náhrady za opotřebení vlastního nářadí podle zákoníku práce. U cestovních náhrad to ale neplatí bez výhrady — mimo předmět daně jsou jen do výše stanovené pro zaměstnance odměňovaného platem, cokoli nad ni je zdanitelný příjem.",
+  "stav": "platna"
+ },
+ "dane-0010": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 7 odst. 1 zákona o daních z příjmů",
+  "vysvetleni": "Příjmem ze samostatné činnosti je příjem ze zemědělské výroby, ze živnostenského podnikání a z jiného podnikání, ke kterému je potřeba podnikatelské oprávnění — tedy i příjmy advokáta. Výtěžek ze zpeněžení majetkové podstaty ale není příjmem insolvenčního správce; ten patří do podstaty a rozděluje se věřitelům.",
+  "stav": "platna"
+ },
+ "dane-0011": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 7 odst. 2 zákona o daních z příjmů",
+  "vysvetleni": "Do § 7 odst. 2 patří příjem z užití nebo poskytnutí práv z průmyslového vlastnictví a autorských práv a dále příjem z výkonu nezávislého povolání — tím je jak činnost znalce, tak odměna insolvenčního správce. Prodej starožitného nábytku nepodnikající fyzickou osobou je ostatní příjem podle § 10.",
+  "stav": "platna"
+ },
+ "dane-0012": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 7 odst. 6 zákona o daních z příjmů",
+  "vysvetleni": "Příjem autora za příspěvek do novin, časopisu, rozhlasu nebo televize je samostatným základem daně pro srážkovou daň, nepřesáhne-li úhrn těchto příjmů od téhož plátce 10 000 Kč v kalendářním měsíci.",
+  "stav": "platna",
+  "poznamka": "V době vzniku otázky činil limit 7 000 Kč měsíčně od téhož plátce — což mezi nabízenými variantami nebylo, takže tehdy byla správně poslední varianta. Po zvýšení na 10 000 Kč otázka smysl dává."
+ },
+ "dane-0017": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 26 odst. 2 písm. a) zákona o daních z příjmů",
+  "vysvetleni": "Hmotným majetkem jsou samostatné hmotné movité věci se vstupní cenou vyšší než 80 000 Kč a provozně-technickými funkcemi delší než jeden rok. Žádná z nabízených dvojic částky a doby tomu neodpovídá — u všech je špatně i doba, ta je jednoletá, ne tří- až pětiletá.",
+  "stav": "platna"
+ },
+ "dane-0018": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 26 odst. 2 a 9 zákona o daních z příjmů",
+  "vysvetleni": "Hranice je 80 000 Kč, ne 40 000. Pěstitelské celky trvalých porostů se posuzují od výměry 0,25 ha, ne 1 ha, a u ovocných stromů se navíc vyžaduje hustota nejméně 90 stromů na hektar. Provozní důlní dílo je z pojmu stavby výslovně vyňato. Správně tedy není žádná varianta.",
+  "stav": "platna"
+ },
+ "dane-0020": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 34 odst. 1 zákona o daních z příjmů",
+  "vysvetleni": "Daňovou ztrátu lze odečíst nejdéle v 5 zdaňovacích obdobích bezprostředně následujících po období, za které byla stanovena.",
+  "stav": "platna",
+  "poznamka": "Od roku 2020 lze ztrátu uplatnit i zpětně, ve 2 obdobích bezprostředně předcházejících, a to do souhrnné výše 30 mil. Kč. Varianta o pěti letech dopředu platí dál, ale výčet už není úplný."
+ },
+ "dane-0023": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 38a odst. 2 zákona o daních z příjmů",
+  "vysvetleni": "Zálohy neplatí poplatník, jehož poslední známá daňová povinnost nepřesáhla 30 000 Kč, dále obec nebo kraj a zůstavitel ode dne smrti. Hranice není 50 000 Kč, zahájení insolvenčního řízení poplatníka záloh nezbavuje a čtvrtletně platí zálohy jen ti, jejichž poslední známá povinnost přesáhla 150 000 Kč.",
+  "stav": "platna"
+ },
+ "dane-0024": {
+  "spravne": [
+   1
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Dokud daň existovala, byla jejím předmětem úplatné nabytí vlastnického práva k nemovité věci — tehdy správně varianta 2.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020 a od té doby se neplatí. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0025": {
+  "spravne": [
+   1
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Po novele z roku 2016 byl poplatníkem vždy nabyvatel vlastnického práva — tehdy správně varianta 2.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. k 26. 9. 2020. Otázka navíc mířila na úpravu, která se sama v čase měnila: do listopadu 2016 byl poplatníkem zpravidla převodce a nabyvatel ručitelem."
+ },
+ "dane-0026": {
+  "spravne": [
+   0
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Poplatníkem byl nabyvatel vlastnického práva — tehdy správně varianta 1.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. k 26. 9. 2020, takže při zpeněžování majetkové podstaty už se neřeší vůbec."
+ },
+ "obecne_pravo_a_exekuce-0017": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 106 zákona o obchodních korporacích",
+  "vysvetleni": "Statutárním orgánem veřejné obchodní společnosti jsou všichni společníci. Valnou hromadu, dozorčí radu, představenstvo ani správní radu v. o. s. povinně nezřizuje — je to osobní společnost, kde rozhodují sami společníci.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0021": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 142 a § 246 zákona o obchodních korporacích",
+  "vysvetleni": "Základní kapitál povinně vytvářejí kapitálové společnosti — akciová společnost (nejméně 2 000 000 Kč) a společnost s ručením omezeným. Veřejná obchodní společnost základní kapitál nemá, takže neplatí ani to, že by ho vytvářela každá obchodní společnost.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0024": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 551 a § 553 občanského zákoníku",
+  "vysvetleni": "O zdánlivé právní jednání jde, chybí-li vůle jednající osoby, a dále není-li možné pro neurčitost nebo nesrozumitelnost zjistit jeho obsah. Zastření jiného jednání se posuzuje podle skutečné vůle stran (§ 555 odst. 2), a jednání příčící se dobrým mravům je absolutně neplatné (§ 588) — v obou případech jednání existuje, jen má jiný osud.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0025": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 7 občanského zákoníku",
+  "vysvetleni": "Má se za to, že ten, kdo jednal určitým způsobem, jednal poctivě a v dobré víře. Jde o vyvratitelnou domněnku — dobrá víra se tedy předpokládá čili presumuje; obě varianty říkají totéž a obě jsou správné.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0027": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 545 a násl. občanského zákoníku",
+  "vysvetleni": "Občanský zákoník pojem „právní úkon\" nepoužívá vůbec — nahradil ho pojmem právní jednání. Svéprávnost, pacht i rodinný závod jsou naopak pojmy, které do práva zavedl nebo vrátil právě on.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0028": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 3069 občanského zákoníku",
+  "vysvetleni": "Při dědění se použije právo platné v den smrti zůstavitele. Den sepsání závěti rozhodný není a u zůstavitele, který zemřel před 1. 1. 2014, se proto použije dosavadní úprava.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0029": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 3045 odst. 1 občanského zákoníku",
+  "vysvetleni": "Sdružení podle zákona o sdružování občanů se považují za spolky. Změnit právní formu na ústav nebo sociální družstvo mohou, ale je to jejich právo, ne povinnost — samotnou účinností zákoníku nezanikla ani se nezrušila.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0030": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 210 a násl. občanského zákoníku, § 1 zákona o obchodních korporacích",
+  "vysvetleni": "Korporace obecně upravuje občanský zákoník, obchodní korporace pak zákon o obchodních korporacích. Úprava je tedy rozdělená mezi oba předpisy — varianty se slovem „pouze\" proto neplatí.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0031": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 1 zákona o obchodních korporacích",
+  "vysvetleni": "Obchodními korporacemi jsou obchodní společnosti a družstva. Mezi společnosti patří veřejná obchodní společnost, mezi družstva družstvo i evropská družstevní společnost. Komanditní společnost na akcie české právo nezná.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0032": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 142 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Minimální výše vkladu je 1 Kč, neurčí-li společenská smlouva víc. Základní kapitál je souhrn vkladů, takže u společnosti se dvěma společníky činí minimálně 2 Kč — ne 1 Kč a už vůbec ne 100 000 Kč. Správně proto není žádná z nabízených variant.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0033": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 135 zákona o obchodních korporacích",
+  "vysvetleni": "Společenská smlouva může připustit vznik různých druhů podílů; jeden druh tvoří podíly se stejnými právy a povinnostmi. Lišit se tedy mohou práva i povinnosti, ne jen jedno z toho.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0034": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 439 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Neurčí-li stanovy jinak, má představenstvo 3 členy — stanovy ale mohou určit i jediného člena. Počet akcionářů v tom nehraje roli, takže jednočlenné představenstvo je možné i u společnosti s více akcionáři.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0035": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 448 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Neurčí-li stanovy jinak, má dozorčí rada tři členy; stanovy mohou určit i jediného. Stejně jako u představenstva na počtu akcionářů nezáleží.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0036": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 448 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Jednočlennou dozorčí radu umožňují prostě stanovy — zákon ji neváže na členství v zaměstnaneckém poměru, souhlas odborů, jednočlenné představenstvo ani na počet akcionářů. Žádná z podmínek proto neplatí.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0037": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 175 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "U společnosti s ručením omezeným je rozhodování per rollam možné, pokud ho společenská smlouva nevyloučí — je tedy přípustné ze zákona a smlouva ho může jen zakázat.",
+  "stav": "platna",
+  "poznamka": "V původním znění zákona z roku 2014 to bylo obráceně: per rollam bylo možné, jen pokud ho společenská smlouva připustila. Změnila to novela č. 33/2020 Sb. Pozor na dvojici s akciovou společností, kde opačné pravidlo platí dodnes."
+ },
+ "obecne_pravo_a_exekuce-0040": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 418 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "U akciové společnosti je rozhodování per rollam možné, jen připouštějí-li to stanovy. Je to přesně opačné pravidlo než u společnosti s ručením omezeným podle § 175, kde stačí, že ho společenská smlouva nevyloučí.",
+  "stav": "platna"
+ },
+ "dane-0004": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 3 odst. 4 písm. c), f) a g) zákona o daních z příjmů",
+  "vysvetleni": "Předmětem daně nejsou příjmy z rozšíření rozsahu nebo vypořádání společného jmění manželů, převod majetku mezi osobami blízkými při ukončení zemědělské činnosti (pokud osoba blízká v činnosti pokračuje) a vypořádání spoluvlastnictví rozdělením věci podle velikosti podílů. U úvěrů a zápůjček to ale neplatí bez výhrady — zákon z nich vyjímá například příjem z úplatně postoupené pohledávky, takže „veškeré\" je špatně.",
+  "stav": "platna"
+ },
+ "dane-0013": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 39 zákona o daních z příjmů, zrušený zákonem č. 267/2014 Sb.",
+  "vysvetleni": "Dokud registrační povinnost upravoval § 39, měl poplatník patnáctidenní lhůtu — tehdy správně varianta 1.",
+  "stav": "zastarala",
+  "poznamka": "§ 39 zákona o daních z příjmů byl zrušen a registrační povinnost fyzických osob se dnes řídí daňovým řádem. Patnáctidenní ani třicetidenní lhůta v podobě, jakou otázka předpokládá, už v zákoně o daních z příjmů není."
+ },
+ "dane-0014": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 39 zákona o daních z příjmů, zrušený zákonem č. 267/2014 Sb.",
+  "vysvetleni": "Dokud registrační povinnost upravoval § 39, vázala se na zahájení podnikatelské činnosti — tehdy správně varianta 1.",
+  "stav": "zastarala",
+  "poznamka": "§ 39 zákona o daních z příjmů byl zrušen; registraci fyzických osob dnes upravuje daňový řád (§ 125 a násl.) a lhůty v podobě, kterou otázka předpokládá, už nestanoví."
+ },
+ "dane-0019": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 27 zákona o daních z příjmů",
+  "vysvetleni": "Z odpisování jsou vyloučeny inventarizační přebytky nezaúčtované ve prospěch výnosů, předměty muzejní a galerijní hodnoty i movitý majetek nabytý věřitelem zajišťovacím převodem práva, odpisuje-li jej po dobu zajištění původní odpisovatel na základě výpůjčky. U uměleckých děl je to obráceně — vyloučeno je dílo, které součástí stavby NENÍ.",
+  "stav": "platna"
+ },
+ "dane-0021": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 4 odst. 1 písm. w) a § 4a písm. h) zákona o daních z příjmů",
+  "vysvetleni": "Správné jsou všechny čtyři varianty. Osvobozen je příjem z odpisu dluhu při reorganizaci i při oddlužení (§ 4a písm. h), u právnických osob obdobně § 19 odst. 1 písm. h), a rovněž příjmy z úroků z přeplatků zaviněných správcem daně i orgánem sociálního zabezpečení (§ 4 odst. 1 písm. w).",
+  "stav": "platna"
+ },
+ "dane-0027": {
+  "spravne": [
+   2
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Základem daně byla nabývací hodnota snížená o uznatelný výdaj — tedy o odměnu a náklady za znalecký posudek, byl-li vyžadován — tehdy správně varianta 3.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0028": {
+  "spravne": [
+   1
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Sjednanou cenou se rozumělo úplata za nabytí vlastnického práva k nemovité věci — tehdy správně varianta 2. Cena zjištěná podle znaleckého posudku byla samostatná veličina, ne sjednaná cena.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0029": {
+  "spravne": [
+   0
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Sazba činila 4 % ze základu daně — tedy z nabývací hodnoty snížené o uznatelný výdaj, ne rovnou ze znaleckého posudku či směrné hodnoty. Tehdy správně varianta 1.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0030": {
+  "spravne": [
+   3
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Výnos daně byl příjmem státního rozpočtu — tehdy správně varianta 4.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0031": {
+  "spravne": [
+   2
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Místně příslušným byl správce daně, v jehož obvodu se nacházela nemovitá věc, u níž dochází k nabytí vlastnického práva, nebo pozemek zatížený právem stavby — tehdy správně varianta 3.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0033": {
+  "spravne": [
+   0
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Přiznání se podávalo nejpozději do konce třetího kalendářního měsíce následujícího po měsíci, v němž byl proveden vklad do katastru — tehdy správně varianta 1.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. s účinností od 26. 9. 2020. Otázka se ptá na daň, která v českém právním řádu neexistuje."
+ },
+ "dane-0035": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "části čtyřicátá pátá až čtyřicátá sedmá zákona č. 261/2007 Sb., o stabilizaci veřejných rozpočtů",
+  "vysvetleni": "Ekologické (energetické) daně jsou tři: daň ze zemního plynu a některých dalších plynů, daň z pevných paliv a daň z elektřiny. Daň z minerálních olejů mezi ně nepatří — je to spotřební daň podle zákona o spotřebních daních.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0041": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 652 zákona o obchodních korporacích",
+  "vysvetleni": "V družstvu je rozhodování per rollam možné, jen připouštějí-li to stanovy. Družstvo stanovy má, ne společenskou smlouvu — a platí pro něj stejné pravidlo jako pro akciovou společnost, ne jako pro s. r. o., kde stačí, že ho společenská smlouva nevyloučí.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0042": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 178 zákona o obchodních korporacích",
+  "vysvetleni": "Kumulativní hlasování se u společnosti s ručením omezeným použije, jen určí-li tak společenská smlouva. Není to výchozí způsob volby, který by šlo jen vyloučit.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0044": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 3062 občanského zákoníku",
+  "vysvetleni": "Zákonné předkupní právo spoluvlastníků podle § 140 starého občanského zákoníku zaniklo uplynutím jednoho roku od účinnosti nového občanského zákoníku. Výjimkou je spoluvlastnictví k zemědělskému nebo rodinnému závodu, kde předkupní právo zůstalo.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0045": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 1476 občanského zákoníku",
+  "vysvetleni": "Dědí se na základě dědické smlouvy, ze závěti nebo ze zákona a tyto důvody mohou působit i vedle sebe. Odkaz dědickým titulem není — odkazovník není dědic a neodpovídá za dluhy pozůstalosti, jen mu vzniká pohledávka vůči dědici.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0046": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 656 odst. 2 a § 677 občanského zákoníku",
+  "vysvetleni": "Zákoník pojem zdánlivé manželství zná a sňatečný obřad výslovně předepisuje jako veřejný a slavnostní, konaný před dvěma svědky. Neveřejný obřad tedy neumožňuje a církevní sňatek naopak připouští.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0047": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 1826 odst. 2 občanského zákoníku, § 7 a násl. zákona o obchodních korporacích",
+  "vysvetleni": "Slovní spojení se objevuje v obou předpisech — v zákoně o obchodních korporacích na řadě míst (například u uveřejňování údajů společností), v občanském zákoníku u odstoupení spotřebitele od smlouvy prostřednictvím formuláře na internetových stránkách.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0048": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 2 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Osobní společnost, tedy i veřejná obchodní společnost, může být založena jen za podnikatelským účelem nebo za účelem správy vlastního majetku. Jiný účel je u ní vyloučen — na rozdíl od kapitálových společností.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0049": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 2 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Komanditní společnost je osobní společností, takže platí totéž co u veřejné obchodní společnosti: založit ji lze jen za podnikatelským účelem nebo za účelem správy vlastního majetku.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0050": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 246 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Základní kapitál se vyjadřuje v českých korunách. V eurech ho lze vyjádřit jen tehdy, vede-li společnost podle zvláštního zákona v eurech i účetnictví — obojí musí jít ruku v ruce.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0051": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 246 odst. 2 zákona o obchodních korporacích",
+  "vysvetleni": "Základní kapitál akciové společnosti činí alespoň 2 000 000 Kč, nebo 80 000 EUR. Mezi nabízenými variantami ani jedna z těchto hodnot není — pozor na past, kde je uvedeno 80 000 Kč místo 80 000 EUR.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0052": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 250 zákona o obchodních korporacích",
+  "vysvetleni": "Akciová společnost se zakládá přijetím stanov. Zakládání s veřejnou nabídkou akcií zákon o obchodních korporacích na rozdíl od dřívějšího obchodního zákoníku vůbec neupravuje.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0053": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 421 odst. 2 zákona o obchodních korporacích",
+  "vysvetleni": "Jmenování ani odvolání likvidátora do působnosti valné hromady ze zákona nepatří — náleží jí, jen určí-li tak stanovy. Schválení nájmu závodu ani smlouvy o tichém společenství zákon do její působnosti nesvěřuje vůbec; ze zákona řeší jen převod nebo zastavení závodu. Správně proto není žádná varianta.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0055": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 412 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Valná hromada je usnášeníschopná při účasti akcionářů s akciemi přesahujícími 30 % základního kapitálu, „ledaže stanovy určí jinak“. Stanovy tedy mohou kvorum zvýšit i snížit — každá z nabízených variant možnost jednosměrně omezuje, a je proto nesprávná.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0056": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 169 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Neurčí-li společenská smlouva jinak, je valná hromada usnášeníschopná za přítomnosti společníků s alespoň polovinou všech hlasů. Společenská smlouva tedy může kvorum zvýšit i snížit — všechny nabízené varianty ji v jednom směru omezují.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0057": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 194 odst. 2 zákona o obchodních korporacích",
+  "vysvetleni": "Statutárním orgánem s. r. o. je každý jednatel samostatně. Kolektivní orgán z více jednatelů vznikne, jen určí-li tak společenská smlouva — není to výchozí stav.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0058": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 251 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Cena nepeněžitého vkladu se určí posudkem znalce, ale znalce vybírají při zakládání zakladatelé, jinak představenstvo nebo správní rada — soud ho nejmenuje. Odborný odhad nestačí a jednatele akciová společnost nemá. Správně proto není žádná varianta.",
+  "stav": "platna",
+  "poznamka": "Právě tady se ZOK rozešel s dřívějším obchodním zákoníkem, podle kterého znalce jmenoval soud."
+ },
+ "obecne_pravo_a_exekuce-0059": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 656 písm. o) a r) zákona o obchodních korporacích",
+  "vysvetleni": "Členská schůze ze zákona volí a odvolává likvidátora a schvaluje smlouvu o tiché společnosti. Nájem závodu mezi její působnost nepatří — zákon jí svěřuje jen převod nebo zastavení závodu. Pozor na rozdíl proti akciové společnosti, kde likvidátor patří valné hromadě jen tehdy, určí-li tak stanovy.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0062": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 2048 odst. 1 občanského zákoníku",
+  "vysvetleni": "Občanský zákoník pro smluvní pokutu písemnou formu nevyžaduje, takže ji lze ujednat i ústně, a výslovně připouští, že může být ujednána i v jiném plnění než peněžitém.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0063": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 1888 občanského zákoníku",
+  "vysvetleni": "V osobě dlužníka se mění závazek převzetím dluhu. Postoupením pohledávky se mění věřitel, novace a narovnání mění obsah závazku, ne jeho strany.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0064": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 1902 a § 1903 občanského zákoníku",
+  "vysvetleni": "Obsah závazku mění novace (dosavadní závazek se ruší a nahrazuje novým) a narovnání (strany si ujednáním upraví práva, která byla sporná či pochybná). Převzetí dluhu mění osobu dlužníka a převzetí majetku zakládá vedle dosavadního dlužníka dalšího.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0065": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 777 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Ujednání společenských smluv odporující donucujícím ustanovením zákona o obchodních korporacích se zrušila přímo dnem nabytí jeho účinnosti — bez jakékoli přechodné lhůty.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0066": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 777 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Zrušovací účinek dopadá jen na ujednání odporující ustanovením donucujícím. Odchylka od dispozitivního ustanovení je právě to, co dispozitivnost umožňuje, takže taková ujednání zůstala v platnosti.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0067": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 777 odst. 3 zákona o obchodních korporacích",
+  "vysvetleni": "Smlouvy o výkonu funkce a o odměně se měly uzpůsobit do 6 měsíců od nabytí účinnosti zákona. Sankce je tvrdá: jinak platí, že je výkon funkce bezplatný — nárok na obvyklou odměnu nevzniká.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0068": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 705 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Představenstvo družstva má 3 členy, ledaže stanovy určí vyšší počet. Na rozdíl od akciové společnosti, kde stanovy mohou počet určit jakkoli včetně jediného člena, tady se dolů jít nedá.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0069": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 8 odst. 1 zákona o obchodních korporacích",
+  "vysvetleni": "Formu veřejné listiny vyžaduje společenská smlouva, kterou se zakládá kapitálová společnost — tedy s. r. o. i akciová společnost. U osobních společností stačí písemná forma. Ani jedna varianta tomu neodpovídá.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0070": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 1314 odst. 2 písm. b) občanského zákoníku",
+  "vysvetleni": "Veřejnou listinu zástavní smlouva vyžaduje, je-li zástavou nemovitá věc nezapisovaná do veřejného seznamu, dále závod nebo jiná věc hromadná a má-li zástavní právo k movité věci vzniknout zápisem do rejstříku zástav. U nemovitosti zapsané v katastru postačí písemná forma — zástavní právo tam vzniká vkladem.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0071": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 1315 odst. 1 a 2 občanského zákoníku",
+  "vysvetleni": "Bezvýhradně se zakazuje jen ujednání, podle kterého dlužník nebo zástavce nesmí zástavu vyplatit — a to mezi variantami není. Zpeněžení libovolným způsobem, ponechání za předem určenou cenu i braní plodů a užitků jsou zakázány pouze do doby, než zajištěný dluh dospěje.",
+  "stav": "platna",
+  "poznamka": "U spotřebitele a u člověka, který je malým nebo středním podnikatelem, se k ujednání o libovolném zpeněžení či ponechání zástavy nepřihlíží i po dospělosti dluhu (§ 1315 odst. 3)."
+ },
+ "obecne_pravo_a_exekuce-0072": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 456 a násl. zákona o obchodních korporacích",
+  "vysvetleni": "Ani jedna varianta neplatí: statutárním orgánem je správní rada jako celek, ne její předseda.",
+  "stav": "zastarala",
+  "poznamka": "Otázka pochází z původní podoby monistického systému, kterou novela č. 33/2020 Sb. od roku 2021 přepsala. Funkce statutárního ředitele byla zrušena, takže varianta o neslučitelnosti s ní míří na institut, který už neexistuje."
+ },
+ "obecne_pravo_a_exekuce-0073": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 222 až 227 trestního zákoníku",
+  "vysvetleni": "Pachatelem může být kdokoli z uvedených. Dlužník u poškození i zvýhodnění věřitele (§ 222, 223), věřitel u pletich v insolvenčním řízení (§ 226 odst. 1), insolvenční správce podle § 226 odst. 3 spolu se členy věřitelského výboru, a osoba odlišná od nich například podle § 225, který postihuje každého, kdo maří výkon funkce insolvenčního správce.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0084": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 118, § 151 a § 161 občanského zákoníku",
+  "vysvetleni": "Zákoník přiznává právnické osobě jen právní osobnost, ne svéprávnost — sama právně jednat nemůže. Za ni jedná statutární orgán jako její zástupce a toto jednání se jí přičítá. Formulace, že „právně jedná prostřednictvím statutárního orgánu\", odpovídá teorii jednání podle dřívější úpravy, ne konstrukci zastoupení.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0125": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 2051 občanského zákoníku",
+  "vysvetleni": "Soud nepřiměřeně vysokou smluvní pokutu snížit může, ale jen na návrh dlužníka — z úřední povinnosti to udělat nesmí. Ani jedna varianta to netrefuje.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0141": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 1345 občanského zákoníku",
+  "vysvetleni": "Při rozdělení zastavené věci zatíží zástavní právo všechny věci vzniklé rozdělením. Věřitel tedy o zajištění nepřijde ani se neomezí na největší z nově vzniklých částí.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0144": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 1323 a § 1324 odst. 1 občanského zákoníku",
+  "vysvetleni": "Hlasovací právo spojené s podílem může zástavní věřitel vykonávat jen tehdy, bylo-li to ujednáno — bez dalšího ne, ale ani to není vyloučeno navždy. Dospěje-li pohledávka, nabývá naopak přímo ze zákona právo na peněžitá a jiná věcná plnění z účasti na korporaci až do výše zajištěného dluhu.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0167": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 35 odst. 2 exekučního řádu",
+  "vysvetleni": "Exekuční řízení je zahájeno dnem, hodinou a minutou, kdy exekuční návrh došel exekutorovi. Pověření od soudu přichází až potom a řízení nezahajuje — jen od něj se odvíjí oprávnění exekutora zjišťovat a zajišťovat majetek.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0168": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 28 exekučního řádu",
+  "vysvetleni": "Exekuci vede ten exekutor, kterého v exekučním návrhu označí oprávněný. Právě tím se exekuce liší od soudního výkonu rozhodnutí — výběr osoby vykonavatele je na věřiteli, ne na rozvrhu práce soudu.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0169": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 59 odst. 1 a 2 exekučního řádu",
+  "vysvetleni": "Exekuci lze vést pro peněžité i nepeněžité plnění; u nepeněžitého je jedním ze způsobů právě provedení prací a výkonů. Vykázání ze společného obydlí je předběžné opatření vykonávané soudem, exekutor je neprovádí.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0170": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 38 odst. 1 exekučního řádu",
+  "vysvetleni": "Návrh musí označit exekutora včetně jeho sídla a uvést povinnost, která má být vymožena. Způsob exekuce se v něm neuvádí — ten podle § 47 odst. 1 volí sám exekutor tak, aby nebyl zřejmě nevhodný.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0171": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 35 odst. 2 a § 43a odst. 1 exekučního řádu",
+  "vysvetleni": "Exekuční návrh se podává u exekutora, ne u soudu; soud se do věci dostane až na základě exekutorovy žádosti o pověření. Žádný předepsaný formulář Exekutorské komory neexistuje.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0172": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 38 odst. 2 exekučního řádu",
+  "vysvetleni": "K návrhu se připojuje originál nebo úředně ověřená kopie exekučního titulu opatřeného potvrzením o vykonatelnosti. Prostá kopie nestačí a rozhodující je vykonatelnost, ne právní moc — vykonatelné může být i rozhodnutí, které dosud právní moci nenabylo.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0173": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 40 odst. 1 exekučního řádu",
+  "vysvetleni": "Výčet exekučních titulů je taxativní a exekuční příkaz v něm není — je to úkon uvnitř už běžící exekuce, ne její podklad. Exekutorský zápis se svolením k vykonatelnosti přestal být exekučním titulem od roku 2013; zůstal jen notářský zápis.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0174": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 40 odst. 1 písm. d) exekučního řádu",
+  "vysvetleni": "Notářský zápis se svolením k vykonatelnosti je exekučním titulem. Cizí rozhodnutí bez prohlášení o vykonatelnosti titulem není a exekuční příkaz jím není nikdy.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0175": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 36 odst. 1 a 2 exekučního řádu",
+  "vysvetleni": "Účastníky jsou oprávněný a povinný, a dále manžel povinného, je-li postihován jeho majetek nebo majetek ve společném jmění. Exekutor účastníkem není — vykonává úkony, které se považují za úkony exekučního soudu. Žádná varianta tomu neodpovídá.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0176": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 43a odst. 3 exekučního řádu",
+  "vysvetleni": "Soud vydá pověření do 15 dnů, jsou-li splněny všechny zákonem stanovené předpoklady. Způsob provedení exekuce v něm neurčuje — ten volí až exekutor v exekučním příkazu.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0179": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 47 odst. 1 exekučního řádu",
+  "vysvetleni": "Exekutor posoudí způsob provedení exekuce a vydá exekuční příkaz až poté, kdy mu soud vydal pověření podle § 43a. Samotné doručení návrhu k tomu nestačí a na právní moc se nečeká.",
+  "stav": "platna"
+ },
+ "obecne_pravo_a_exekuce-0180": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 47 odst. 1 exekučního řádu",
+  "vysvetleni": "Zákon dává exekutorovi pravomoc exekuční příkaz vydat i zrušit, aniž by to vázal na pokyn soudu nebo návrh účastníka. Typicky ho zruší, ukáže-li se zvolený způsob jako zřejmě nevhodný nebo odpadne-li důvod postihu daného majetku.",
+  "stav": "platna"
+ },
+ "dane-0015": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 23 odst. 2 zákona o daních z příjmů",
+  "vysvetleni": "Z výsledku hospodaření se vychází jen u poplatníků, kteří vedou účetnictví — u ostatních z rozdílu mezi příjmy a výdaji, a daňová evidence je právě takový případ. U veřejné obchodní společnosti se navíc výsledek hospodaření upraví o převod podílů na něm společníkům. Tvrzení, že se vychází z výsledku hospodaření vždy, tedy neplatí.",
+  "stav": "platna"
+ },
+ "dane-0016": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 23 odst. 3 písm. a) body 1, 2 a 6 zákona o daních z příjmů",
+  "vysvetleni": "Výsledek hospodaření se zvyšuje o částky neoprávněně zkracující příjmy, o částky, které nelze zahrnout do výdajů, a o přijaté úhrady smluvních sankcí u věřitele vedoucího účetnictví, pokud dříve výsledek hospodaření snižovaly. Formulace „výdaje, které nejsou nutné pro udržení a zajištění příjmů\" v zákoně není — rozhoduje, zda je zákon mezi uznatelné výdaje řadí.",
+  "stav": "platna"
+ },
+ "dane-0032": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "zákonné opatření Senátu č. 340/2013 Sb., zrušené zákonem č. 386/2020 Sb.",
+  "vysvetleni": "Osvobozeno bylo první úplatné nabytí stavby rodinného domu a pozemku či práva stavby, jehož součástí je nová stavba rodinného domu — tehdy správně varianty 3 a 4.",
+  "stav": "zastarala",
+  "poznamka": "Daň z nabytí nemovitých věcí byla zrušena zákonem č. 386/2020 Sb. k 26. 9. 2020, takže osvobození od ní dnes nemá co řešit."
+ },
+ "dane-0034": {
+  "spravne": [
+   2
+  ],
+  "pramen": "zákon č. 357/1992 Sb., o dani dědické, dani darovací a dani z převodu nemovitostí, zrušený k 1. 1. 2014",
+  "vysvetleni": "Zvláštní sazba daně darovací u bezúplatně nabytých emisních povolenek činila 32 % — tehdy správně varianta 3.",
+  "stav": "zastarala",
+  "poznamka": "Daň darovací jako samostatná daň byla zrušena k 1. 1. 2014 a bezúplatné příjmy se od té doby zdaňují v režimu daně z příjmů. Otázka byla fakticky překonaná už v okamžiku, kdy tahle sada začala platit."
+ },
+ "dane-0036": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 1 části čtyřicáté páté až čtyřicáté sedmé zákona č. 261/2007 Sb.",
+  "vysvetleni": "Správu ekologických daní vykonávají orgány Celní správy České republiky — stejně jako u spotřebních daní. Finanční úřady s nimi nemají co do činění.",
+  "stav": "platna"
+ },
+ "dane-0037": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 1 odst. 3 zákona o spotřebních daních",
+  "vysvetleni": "Spotřebními daněmi jsou daň z minerálních olejů, z lihu, z piva, z vína a meziproduktů a z tabákových výrobků. Daň z elektřiny je ekologická daň podle zákona č. 261/2007 Sb. a DPH je daň univerzální, ne spotřební ve smyslu tohoto zákona.",
+  "stav": "platna"
+ },
+ "dane-0038": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 1 odst. 3 zákona o spotřebních daních",
+  "vysvetleni": "Daň z tabákových výrobků i daň z lihu do výčtu spotřebních daní patří. Daň z pevných paliv je ekologická daň a DPH mezi spotřební daně nepatří.",
+  "stav": "platna"
+ },
+ "dane-0039": {
+  "spravne": [
+   1
+  ],
+  "pramen": "části čtyřicátá pátá až čtyřicátá sedmá zákona č. 261/2007 Sb.",
+  "vysvetleni": "Zdaňovacím obdobím u všech tří ekologických daní — ze zemního plynu, z pevných paliv i z elektřiny — je kalendářní měsíc. Shodně jako u spotřebních daní.",
+  "stav": "platna"
+ },
+ "dane-0040": {
+  "spravne": [
+   2
+  ],
+  "pramen": "zákon o spotřebních daních ve spojení se zákonem o Celní správě České republiky",
+  "vysvetleni": "Správu spotřebních daní vykonávají celní orgány, ne finanční úřady. Finanční ředitelství navíc jako stupeň soustavy neexistují — od roku 2013 je nahradilo Odvolací finanční ředitelství, a to na straně finanční správy, ne celní.",
+  "stav": "platna"
+ },
+ "dane-0041": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 17 zákona o spotřebních daních",
+  "vysvetleni": "Zdaňovacím obdobím pro vybrané výrobky, s výjimkou dovážených, je kalendářní měsíc.",
+  "stav": "platna"
+ },
+ "dane-0042": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 1 odst. 3 zákona o spotřebních daních",
+  "vysvetleni": "Spotřební daní není DPH ani daň z elektřiny — ta patří mezi daně ekologické. Daň z tabákových výrobků a daň z piva naopak spotřebními daněmi jsou.",
+  "stav": "platna"
+ },
+ "dane-0045": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 13a odst. 1 zákona o dani z nemovitých věcí",
+  "vysvetleni": "Přiznání se podává do 31. ledna zdaňovacího období. Nepodává se znovu, pokud je poplatník podal už dřív a nezměnily se okolnosti rozhodné pro stanovení daně — daň se pak vyměří ve výši poslední známé daně.",
+  "stav": "platna"
+ },
+ "dane-0046": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 12 zákona o dani silniční",
+  "vysvetleni": "Zdaňovacím obdobím daně silniční je kalendářní rok.",
+  "stav": "platna"
+ },
+ "dane-0047": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 2 odst. 1 a 2 zákona o dani silniční",
+  "vysvetleni": "Předmětem daně je zdanitelné vozidlo, kterým se rozumí silniční vozidlo kategorie N2 a N3 a jejich přípojná vozidla kategorie O3 a O4 registrovaná v ČR — tedy nákladní vozidla nad 3,5 tuny. Zemědělské traktory zdanitelnými vozidly nejsou.",
+  "stav": "platna",
+  "poznamka": "Reforma provedená zákonem č. 142/2022 Sb. vypustila podmínku využívání vozidla k podnikání a osobní automobily z předmětu daně úplně vyřadila. Varianty, které předmět daně vážou na podnikání nebo na činnost přinášející zdanitelné příjmy, platily do roku 2021."
+ },
+ "dane-0048": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 13 zákona o dani z nemovitých věcí",
+  "vysvetleni": "Zdaňovacím obdobím je kalendářní rok. Daň se stanoví podle stavu k 1. lednu roku, na který se vyměřuje.",
+  "stav": "platna"
+ },
+ "dane-0049": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 2 odst. 1 a 2 zákona o dani z nemovitých věcí",
+  "vysvetleni": "Předmětem daně jsou pozemky na území ČR evidované v katastru, tedy i pozemky zemědělské. Z předmětu jsou vyňaty pozemky zastavěné zdanitelnými stavbami — pokud ale stavba zdanitelnou stavbou není, pozemek pod ní předmětem daně zůstává. Lesní pozemky s lesy ochrannými a lesy zvláštního určení předmětem daně naopak nejsou.",
+  "stav": "platna"
+ },
+ "dane-0050": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 7 odst. 1 zákona o dani z nemovitých věcí",
+  "vysvetleni": "Předmětem daně je zdanitelná stavba, tedy budova nebo inženýrská stavba z přílohy zákona, která je dokončená nebo užívaná — což pokrývá jak stavby po kolaudačním souhlasu, tak stavby užívané ještě před ním. Rozestavěné stavby předmětem daně nejsou a zpevněné plochy se zdaňují v rámci daně z pozemků.",
+  "stav": "platna"
+ },
+ "dane-0051": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 8 odst. 1 zákona o dani z nemovitých věcí",
+  "vysvetleni": "Poplatníkem je vlastník zdanitelné stavby nebo zdanitelné jednotky — tedy i vlastník bytu či nebytového prostoru. Nájemce poplatníkem není a dohoda vlastníka s uživatelem na tom nic změnit nemůže.",
+  "stav": "platna"
+ },
+ "dane-0052": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 13b odst. 1 zákona o dani z nemovitých věcí",
+  "vysvetleni": "Daň se stanoví podle stavu k 1. lednu roku, na který se vyměřuje, a ke změnám rozhodných skutečností v průběhu zdaňovacího období se nepřihlíží. Prodej nemovitosti insolvenčním správcem během roku tedy daň za daný rok neovlivní; poplatníkem zůstává ten, kdo byl vlastníkem k 1. lednu.",
+  "stav": "platna"
+ },
+ "dane-0054": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 2 odst. 2 písm. b) zákona o dani z nemovitých věcí",
+  "vysvetleni": "Z předmětu daně z pozemků jsou vyňaty lesní pozemky v rozsahu, v němž jde o lesy ochranné nebo lesy zvláštního určení. Zemědělské pozemky i pozemky ve vlastnictví státu předmětem daně jsou — u státních pozemků se případně uplatní osvobození, což je něco jiného než vynětí z předmětu daně.",
+  "stav": "platna"
+ },
+ "dane-0055": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 242 odst. 3 daňového řádu",
+  "vysvetleni": "Přeplatek vzniklý z daňových povinností, které vznikly ode dne účinnosti rozhodnutí o úpadku, se použije pouze na úhradu splatných pohledávek za majetkovou podstatou. Přeplatek na DPH za červen 2013 vznikl až po prohlášení konkursu, kdežto nedoplatek za leden 2013 je přihlášenou pohledávkou, ne pohledávkou za podstatou — převod je proto vyloučen, a to daňovým řádem.",
+  "stav": "platna"
+ },
+ "dane-0057": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 244 odst. 1 daňového řádu",
+  "vysvetleni": "Přiznání za část zdaňovacího období do dne předcházejícího účinkům rozhodnutí o úpadku se podává do 30 dnů. Po prohlášení konkursu má oprávnění nakládat s majetkovou podstatou insolvenční správce, takže povinnost splnit dopadá na něj. Nesoučinnost statutárního orgánu ho nezbavuje odpovědnosti — při nedostatečnosti podkladů povinnost zaniká jen tehdy, sdělí-li to správci daně ve stejné lhůtě a poskytne součinnost ke stanovení daně podle pomůcek.",
+  "stav": "platna"
+ },
+ "dane-0058": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 244 odst. 1 a § 245 odst. 1 daňového řádu",
+  "vysvetleni": "Lhůta 30 dnů od účinnosti rozhodnutí o úpadku dopadá i na přiznání za předcházející zdaňovací období, jehož lhůta dosud neuplynula — tedy i na rok 2012. Od 1. 2. 2013 uplyne 30 dnů 3. 3. 2013, což byla neděle, takže lhůta se posouvá na nejbližší pracovní den, pondělí 4. 3. 2013. Prodloužit ji nelze.",
+  "stav": "platna"
+ },
+ "dane-0059": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 114 odst. 1 daňového řádu",
+  "vysvetleni": "O odvolání rozhoduje nejblíže nadřízený správce daně, kterým je Odvolací finanční ředitelství. Generální finanční ředitelství ani ministerstvo odvolacím orgánem nejsou a insolvenční soud do daňového nalézacího řízení nezasahuje.",
+  "stav": "platna"
+ },
+ "dane-0060": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 243 odst. 2 daňového řádu",
+  "vysvetleni": "Doměrky se týkají let 2010 až 2012, jde tedy o pohledávky, které nejsou pohledávkami za majetkovou podstatou. Ukončením přezkumného jednání nabývá nepravomocné rozhodnutí v nalézacím řízení právní moci přímo ze zákona — odvolání se tím stane bezpředmětným a odvolací orgán, tedy Odvolací finanční ředitelství, řízení zastaví.",
+  "stav": "platna"
+ },
+ "audit-0024": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 27 písm. g) zákona o daních z příjmů",
+  "vysvetleni": "Z odpisování jsou vyloučeny inventarizační přebytky hmotného majetku, pokud nebyly při zjištění zaúčtovány ve prospěch výnosů. Technické zhodnocení nemovité kulturní památky se naopak odpisuje (rovnoměrně 15 let) a soubor movitých věcí je běžným hmotným majetkem. Majetek pod hranicí 80 000 Kč není z odpisování vyloučen — vůbec není hmotným majetkem pro daňové účely.",
+  "stav": "platna"
+ },
+ "audit-0030": {
+  "spravne": [
+   1
+  ],
+  "pramen": "zákon č. 218/2000 Sb., o rozpočtových pravidlech",
+  "vysvetleni": "Pokuty ukládá finanční úřad a jejich výnos je příjmem státního rozpočtu. Obec ani kraj z nich nic nedostávají.",
+  "stav": "platna",
+  "poznamka": "Zákon o účetnictví to dnes výslovně neuvádí — dřívější ustanovení, které příjem z pokut adresovalo státnímu rozpočtu, bylo vypuštěno a plyne to až z obecné rozpočtové úpravy."
+ },
+ "audit-0043": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 8 zákona č. 593/1992 Sb., o rezervách pro zjištění základu daně z příjmů",
+  "vysvetleni": "Zákonné opravné položky lze tvořit pouze k pohledávkám, a to včetně pohledávek za dlužníky v insolvenčním řízení. K zásobám ani k dlouhodobému majetku daňově účinné opravné položky tvořit nelze a k závazkům se opravné položky netvoří vůbec — ty se snižují, ne opravují.",
+  "stav": "platna"
+ },
+ "audit-0044": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Poskytnuté zálohy na zásoby se v rozvaze vykazují v oddíle zásob, ne mezi pohledávkami. Je to jedna z mála položek, kde se rozvahové zařazení řídí účelem zálohy, ne její právní povahou.",
+  "stav": "platna"
+ },
+ "audit-0045": {
+  "spravne": [
+   0
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Směnka předaná bance k eskontu se u předávajícího účtuje jako pohledávka za bankou — banka směnku odkoupí a do doby připsání částky na účet drží účetní jednotka nárok vůči ní.",
+  "stav": "platna"
+ },
+ "audit-0046": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Záloha poskytnutá zaměstnanci na cestovné je pohledávkou za zaměstnancem. Dokud ji nevyúčtuje, dluží účetní jednotce její hodnotu.",
+  "stav": "platna"
+ },
+ "audit-0047": {
+  "spravne": [
+   2
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Vztah ke státu z titulu DPH se vykazuje podle výsledného salda daně na vstupu a na výstupu — při nadměrném odpočtu jako pohledávka v aktivech, při vlastní daňové povinnosti jako závazek v pasivech. Rozvahová položka to je vždy, nikdy náklad či výnos.",
+  "stav": "platna"
+ },
+ "audit-0048": {
+  "spravne": [
+   0
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Přeplatek na zálohách na daň z příjmů je nárokem vůči státu, vykazuje se tedy jako pohledávka na straně aktiv. Záporná znaménka se v rozvaze pro tyhle případy nepoužívají.",
+  "stav": "platna"
+ },
+ "audit-0049": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Výnosy příštích období jsou příjmy přijaté v běžném období, které však věcně patří do výnosů období příštích — typicky předplacené nájemné. Náklady běžného období související s výkony příštích období jsou naopak náklady příštích období.",
+  "stav": "platna"
+ },
+ "audit-0050": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Přijatá záloha je u příjemce závazkem vůči odběrateli — dokud službu neposkytne, dluží mu buď plnění, nebo vrácení peněz.",
+  "stav": "platna"
+ },
+ "audit-0051": {
+  "spravne": [
+   3,
+   4
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Vydané dluhopisy i závazky vůči zaměstnancům jsou cizí zdroje. Základní kapitál, zisk i rezervní fond patří do vlastního kapitálu.",
+  "stav": "platna"
+ },
+ "audit-0052": {
+  "spravne": [
+   1
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Cizím zdrojem krytí majetku jsou závazky vůči dodavatelům. Pohledávky za odběrateli i poskytnuté půjčky jsou aktiva, tedy majetek, ne zdroj jeho krytí; fondy ze zisku a zisk patří do vlastního kapitálu.",
+  "stav": "platna"
+ },
+ "audit-0053": {
+  "spravne": [
+   0
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Výsledkové účty jsou účty nákladové a výnosové — na nich se sleduje výsledek hospodaření. Aktivní a pasivní účty jsou rozvahové, podrozvahové stojí mimo obojí.",
+  "stav": "platna",
+  "poznamka": "Ve zdrojovém PDF ministerstva je v této variantě překlep: stojí tam „účty nákladové a výsledkové\" místo „nákladové a výnosové\". Jiná varianta ale správná není."
+ },
+ "audit-0054": {
+  "spravne": [
+   2
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Nákup materiálu placený hotově je pohyb uvnitř aktiv: zásoby vzrostou, peníze v pokladně o stejnou částku klesnou. Bilanční suma se nemění a pasiva zůstávají beze změny.",
+  "stav": "platna"
+ },
+ "audit-0055": {
+  "spravne": [
+   3
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Jde o pohyb uvnitř pasiv: závazek vůči dodavateli zanikne, závazek vůči bance ve stejné výši vznikne. Aktiva ani celková pasiva se nemění, mění se jen struktura cizích zdrojů.",
+  "stav": "platna"
+ },
+ "audit-0056": {
+  "spravne": [
+   0
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Převzetím materiálu na sklad vzrostou zásoby (aktiva) a přijetím faktury vznikne závazek vůči dodavateli (pasiva). Bilanční suma se zvýší na obou stranách o stejnou částku.",
+  "stav": "platna"
+ },
+ "audit-0057": {
+  "spravne": [
+   2
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Splacením úvěru z běžného účtu klesnou peníze na účtu (aktiva) i závazek vůči bance (pasiva). Bilanční suma se sníží na obou stranách.",
+  "stav": "platna"
+ },
+ "audit-0058": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 25 odst. 1 písm. c) zákona o účetnictví",
+  "vysvetleni": "Nakoupené zásoby se oceňují pořizovací cenou, tedy cenou pořízení včetně nákladů souvisejících s pořízením (doprava, pojistné během přepravy). Samotná „cena pořízení\" vedlejší náklady nezahrnuje, a proto správná není.",
+  "stav": "platna"
+ },
+ "audit-0059": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "vyhláška č. 500/2002 Sb.",
+  "vysvetleni": "Nepravdivá jsou dvě tvrzení: aktiva nejsou zdroje krytí majetku, ale majetek sám — zdroji krytí jsou pasiva. A vlastní kapitál mezi aktiva nepatří, je součástí pasiv. Zbylá tři tvrzení platí.",
+  "stav": "platna"
+ },
+ "audit-0060": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 4 odst. 1 zákona o účetnictví",
+  "vysvetleni": "Právnické osoby se sídlem v ČR vedou účetnictví ode dne svého vzniku až do dne svého zániku — bez ohledu na to, kdy zahájily činnost nebo kdy vystavily první doklad. Vazba na zahájení činnosti platí pro zahraniční osoby podnikající na území ČR.",
+  "stav": "platna"
+ }
+}

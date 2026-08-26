@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+.DS_Store
+*.log
+
+# Stažená PDF ministerstva a znění předpisů — jen mezisklad pro skripty
+# v tools/, stáhne se znovu. Do repa patří až vygenerované otazky.json.
+_zdroje/
+
+# Lokální konfigurace nástrojů.
+.claude/settings.local.json
+
+# Secrets: never commit.
+.env
