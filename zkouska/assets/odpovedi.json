@@ -1694,5 +1694,384 @@
   "pramen": "§ 4 odst. 1 zákona o účetnictví",
   "vysvetleni": "Právnické osoby se sídlem v ČR vedou účetnictví ode dne svého vzniku až do dne svého zániku — bez ohledu na to, kdy zahájily činnost nebo kdy vystavily první doklad. Vazba na zahájení činnosti platí pro zahraniční osoby podnikající na území ČR.",
   "stav": "platna"
+ },
+ "insolvence-0007": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 3 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Předlužení je stav, kdy souhrn závazků dlužníka převyšuje hodnotu jeho majetku — účetně řečeno cizí zdroje převyšují netto hodnotu majetku. Počítají se všechny závazky, ne jen splatné; v tom se předlužení liší od platební neschopnosti. Nedodání seznamů je domněnka neschopnosti plnit, ne předlužení.",
+  "stav": "platna",
+  "poznamka": "Předpoklad v zadání je nepřesný: § 3 odst. 4 u předlužení žádnou třicetidenní lhůtu nevyžaduje, stačí mnohost věřitelů. Zákon také velí přihlédnout k další správě majetku a k dalšímu provozování podniku, takže rozhodující nemusí být čistě účetní hodnoty."
+ },
+ "insolvence-0008": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 3 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Předlužení je stav, kdy souhrn závazků dlužníka převyšuje hodnotu jeho majetku — účetně řečeno cizí zdroje převyšují netto hodnotu majetku. Počítají se všechny závazky, ne jen splatné; v tom se předlužení liší od platební neschopnosti. Nedodání seznamů je domněnka neschopnosti plnit, ne předlužení.",
+  "stav": "platna",
+  "poznamka": "Předpoklad v zadání je nepřesný: § 3 odst. 4 u předlužení žádnou třicetidenní lhůtu nevyžaduje, stačí mnohost věřitelů. Zákon také velí přihlédnout k další správě majetku a k dalšímu provozování podniku, takže rozhodující nemusí být čistě účetní hodnoty."
+ },
+ "insolvence-0017": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 3 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Do předlužení se počítají všechny závazky dlužníka, nejen splatné. A při stanovení hodnoty majetku se přihlíží také k jeho další správě, případně k dalšímu provozování podniku — lze-li se zřetelem ke všem okolnostem důvodně předpokládat, že v tom dlužník bude moci pokračovat. Budoucí provoz tedy roli hraje.",
+  "stav": "platna"
+ },
+ "insolvence-0031": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 6 odst. 1 písm. d) a odst. 2 písm. b) insolvenčního zákona",
+  "vysvetleni": "Vyňata je Všeobecná zdravotní pojišťovna trvale a dále každá zdravotní pojišťovna po dobu, po kterou je nositelem povolení k provádění veřejného zdravotního pojištění. U vysokých škol platí výjimka jen pro veřejné, ne pro kteroukoli; zdravotnické zařízení je běžný dlužník.",
+  "stav": "platna"
+ },
+ "insolvence-0032": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 6 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Slovo „nikdy\" je tu klíčové. Trvale jsou vyňaty jen subjekty z odstavce 1; výjimky v odstavci 2 jsou časově omezené. Zdravotní pojišťovna ministerstva vnitra je vyňata jen po dobu držení povolení a politické hnutí jen v době vyhlášených voleb. Na církev i společenství vlastníků jednotek zákon dopadá bez omezení. Správně proto není žádná varianta.",
+  "stav": "platna"
+ },
+ "insolvence-0034": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 6 odst. 2 písm. a) insolvenčního zákona",
+  "vysvetleni": "Zákon nelze použít na finanční instituci po dobu, po kterou je nositelem licence nebo povolení podle zvláštních předpisů. Bankovní licenci uděluje Česká národní banka — ne ministerstvo financí a už vůbec ne Bankovní asociace, což je zájmové sdružení bez jakékoli licenční pravomoci. Po odnětí licence se banka do působnosti zákona vrací, takže „jakákoli banka\" neplatí.",
+  "stav": "platna"
+ },
+ "insolvence-0035": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 7 insolvenčního zákona",
+  "vysvetleni": "Ustanovení občanského soudního řádu o sporném řízení se použijí přiměřeně, a to jen subsidiárně — tedy nestanoví-li insolvenční zákon jinak a není-li takový postup v rozporu se zásadami insolvenčního řízení. Obě omezení platí současně.",
+  "stav": "platna"
+ },
+ "insolvence-0036": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 12 odst. 1 insolvenčního zákona",
+  "vysvetleni": "V prvním stupni jedná a rozhoduje jediný soudce. V odvolacím a dovolacím řízení se uplatní obecná úprava občanského soudního řádu, podle níž rozhoduje senát.",
+  "stav": "platna"
+ },
+ "insolvence-0037": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 9 insolvenčního zákona",
+  "vysvetleni": "Procesními subjekty jsou insolvenční soud, dlužník, věřitelé uplatňující svá práva vůči dlužníku, insolvenční správce a další správci, státní zastupitelství, které do řízení vstoupilo, a likvidátor dlužníka. Věřitel, který se nepřihlásil, svá práva neuplatňuje, takže mezi ně nepatří; „správce podniku dlužníka\" zákon nezná vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0040": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 14 odst. 1 a § 15 insolvenčního zákona",
+  "vysvetleni": "Účastníky jsou dlužník a věřitelé uplatňující své právo vůči dlužníku, a dále jiné osoby po dobu, po kterou soud o jimi uplatněném právu jedná — což pokrývá i toho, kdo podal vylučovací žalobu. Insolvenční soud je procesní subjekt, ale účastníkem řízení, které sám vede, být nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0041": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 14 odst. 1 a § 15 insolvenčního zákona",
+  "vysvetleni": "Okruh účastníků tvoří dlužník, věřitelé uplatňující své právo vůči dlužníku a jiné osoby po dobu, po kterou soud rozhoduje o jimi uplatněném právu. Insolvenční správce ani státní zastupitelství účastníky nejsou — jsou to procesní subjekty podle § 9, což je jiná kategorie.",
+  "stav": "platna"
+ },
+ "insolvence-0042": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 14 odst. 1 a § 15 insolvenčního zákona",
+  "vysvetleni": "Dlužník je účastníkem vždy. Likvidátor je procesním subjektem podle § 9, ale účastníkem se stává jen pro tu část řízení, kde se rozhoduje o jeho nárocích. Insolvenční správce účastníkem není nikdy a věřitelé se účastníky nestávají tím, že jsou v účetnictví dlužníka — musí své právo uplatnit přihláškou.",
+  "stav": "platna"
+ },
+ "insolvence-0043": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 14 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Účastníky jsou vedle dlužníka věřitelé, kteří uplatňují právo vůči dlužníku. Likvidátor, insolvenční správce i státní zastupitelství jsou procesní subjekty podle § 9, ne účastníci.",
+  "stav": "platna"
+ },
+ "insolvence-0044": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 14 odst. 2 a § 16 odst. 2 insolvenčního zákona",
+  "vysvetleni": "V insolvenčním řízení je vedlejší účastenství vyloučeno, v incidenčních sporech je naopak výslovně přípustné. Dává to smysl: incidenční spor je klasický sporný proces mezi žalobcem a žalovaným, kdežto insolvenční řízení je řízení mnoha účastníků, kde by vedlejší účastenství jen komplikovalo průběh.",
+  "stav": "platna"
+ },
+ "insolvence-0045": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 14 odst. 1 a § 15 insolvenčního zákona",
+  "vysvetleni": "Účastníky jsou dlužník a věřitelé, kteří uplatňují své právo vůči dlužníku. Vedle nich jsou účastníky i jiné osoby uplatňující své právo, ale jen po dobu, po kterou o něm soud jedná a rozhoduje. Obě varianty tedy platí vedle sebe.",
+  "stav": "platna"
+ },
+ "insolvence-0046": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 16 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Účastníky incidenčního sporu jsou žalobce a žalovaný, není-li stanoveno jinak. Insolvenční správce jím tedy není vždy — je jím jen tehdy, když v konkrétním sporu vystupuje na jedné ze stran.",
+  "stav": "platna"
+ },
+ "insolvence-0047": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 18 odst. 1 a 3 insolvenčního zákona",
+  "vysvetleni": "Vstup nabyvatele řeší insolvenční zákon vlastní úpravou, která má přednost před § 107a i § 92 občanského soudního řádu. Věřitel buď podá návrh podle § 18 odst. 1 (povinně na předepsaném formuláři, s písemným souhlasem nabyvatele), nebo spolu s nabyvatelem učiní do protokolu u soudu společné prohlášení podle odstavce 3.",
+  "stav": "platna"
+ },
+ "insolvence-0048": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 18 insolvenčního zákona",
+  "vysvetleni": "Ke změně v osobě věřitele nedojde samotnou smlouvou o postoupení — insolvenční soud o vstupu nabyvatele musí rozhodnout. Postupuje se podle § 18 insolvenčního zákona, ne podle § 107a občanského soudního řádu.",
+  "stav": "platna"
+ },
+ "insolvence-0049": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 19 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Nabyvatel se stává účastníkem, jakmile soud o jeho vstupu rozhodne — ne až doručením rozhodnutí nebo jeho právní mocí. Platí pro něj stav řízení v době, kdy se účastníkem stal, a vstupuje i do incidenčních sporů týkajících se nabyté pohledávky.",
+  "stav": "platna"
+ },
+ "insolvence-0050": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 18 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Převod nebo přechod pohledávky, který neplyne přímo z právního předpisu, je nutné doložit veřejnou listinou nebo listinou s úředně ověřenou pravostí podpisů osob, které ji podepsaly. Nestačí tedy jen ověřené podpisy na návrhu a neplatí ani požadavek předkládat vše výhradně v originále.",
+  "stav": "platna",
+  "poznamka": "Otázka je psaná před zavedením povinného formuláře. Dnes § 18 odst. 1 vyžaduje, aby byl návrh podán na formuláři podle prováděcího předpisu — k návrhu podanému jinak se vůbec nepřihlíží."
+ },
+ "insolvence-0051": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 18 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Rozhoduje insolvenční soud, a to na základě návrhu věřitele a po písemném souhlasu nabyvatele. Bez návrhu soud tuto změnu neprovede a jiný než insolvenční soud o ní rozhodovat nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0052": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 19 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Rozhodující je okamžik, kdy soud o vstupu rozhodne. Zveřejnění v insolvenčním rejstříku, doručení ani právní moc na vznik účastenství vliv nemají — odvolání proti tomuto rozhodnutí ostatně není přípustné.",
+  "stav": "platna"
+ },
+ "insolvence-0053": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 18 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Návrh podává původní věřitel, nabyvatel k němu připojuje písemný souhlas. Úřední ověření podpisů se vyžaduje na listině dokládající převod pohledávky, ne na samotném návrhu, a písemná forma není jediná cesta — § 18 odst. 3 připouští i společné prohlášení do protokolu u soudu.",
+  "stav": "platna"
+ },
+ "insolvence-0055": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 20 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Odborová organizace může zastupovat dlužníkova zaměstnance, a to jen jde-li o uplatňování jeho pracovněprávních pohledávek. Obě podmínky platí současně — nezastupuje kteréhokoli věřitele a rozhoduje povaha pohledávky, ne to, kdo podal přihlášku.",
+  "stav": "platna"
+ },
+ "insolvence-0056": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 25 odst. 2 a § 22 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Osobu určuje předseda insolvenčního soudu ze seznamu, a to podle pořadí daného dnem zápisu sídla nebo provozovny. Nelze-li správce ze seznamu vybrat, lze ustanovit i fyzickou osobu nezapsanou v seznamu, splňuje-li obecné a kvalifikační předpoklady pro zápis a se svým ustanovením souhlasí. Seznam správců konkursní podstaty je institut zrušeného zákona o konkursu a vyrovnání.",
+  "stav": "platna"
+ },
+ "insolvence-0059": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 21 odst. 1 a § 22 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Pravidlem je ustanovení ze seznamu, ale není bezvýjimečné: nelze-li správce ze seznamu vybrat, může jím být i fyzická osoba v seznamu nezapsaná, pokud splňuje předpoklady pro zápis a souhlasí. Právě proto neplatí ani varianta se slovem „pouze\". Obchodní společnost může být správcem jen jako veřejná obchodní společnost zapsaná v seznamu — zaměstnávat zapsaného správce nestačí.",
+  "stav": "platna"
+ },
+ "insolvence-0060": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 23 insolvenčního zákona, § 6 odst. 1 písm. f) zákona o insolvenčních správcích",
+  "vysvetleni": "Správce uzavírá pojistku na svůj náklad a kryje škodu jak z výkonu své funkce, tak z činnosti svých zaměstnanců. Doložení pojištění je podmínkou pro vydání povolení, tedy pro výkon funkce vůbec. Hotovým výdajem v konkrétním insolvenčním řízení pojistné není — je to náklad jeho podnikání.",
+  "stav": "platna"
+ },
+ "insolvence-0061": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 24 odst. 1 a § 34 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Jakmile se správce dozví o skutečnostech zakládajících důvod k vyloučení, musí to neprodleně oznámit insolvenčnímu soudu. Vyloučení ale nemusí být úplné: týká-li se jeho poměr jen některého z věřitelů a není důvod pochybovat, že to ovlivní celkový výkon funkce, soud ustanoví jen pro dotčené úkony odděleného insolvenčního správce. Bezvýjimečné odvolání z funkce to tedy není.",
+  "stav": "platna"
+ },
+ "insolvence-0062": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 25 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Jsou to dva kroky a obě varianty popisují každá jeden. Konkrétní osobu určí předseda insolvenčního soudu podle pořadí v seznamu, ale správcem ji do funkce ustanoví svým rozhodnutím insolvenční soud. Věřitelský výbor do toho nemluví — může správce až později odvolat postupem podle § 29.",
+  "stav": "platna"
+ },
+ "insolvence-0063": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 25 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Osobu určuje předseda soudu, nestanoví-li zákon jinak — výjimkou je například reorganizace, kde je správce určen už v předloženém reorganizačním plánu. Do funkce ho pak ustanovuje svým rozhodnutím insolvenční soud. Zajištěný věřitel osobu správce neurčuje, ani když podal insolvenční návrh.",
+  "stav": "platna"
+ },
+ "insolvence-0064": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 25 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Nebrání-li tomu jiné okolnosti, určí předseda soudu dlužníkům tvořícím koncern stejného správce. Je to pravidlo se zabudovanou výjimkou, ne povinnost bez výjimky, a právní forma správce v něm roli nehraje. Obdobně se postupuje u dlužníků, kteří jsou manžely.",
+  "stav": "platna"
+ },
+ "insolvence-0065": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 26 insolvenčního zákona",
+  "vysvetleni": "Odvolání směřuje proti rozhodnutí, kterým byl správce ustanoven — tedy proti usnesení o úpadku v této části. Opatření, kterým předseda soudu osobu určil, je úkon správy soudu, ne rozhodnutí, a odvolání proti němu nepřipadá v úvahu. Souhlas státního zastupitelství se nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0066": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 26 insolvenčního zákona",
+  "vysvetleni": "Odvolání je přípustné, ale rozsah námitek je úzký: jen že správce nesplňuje podmínky pro ustanovení, nebo že není nepodjatý. Nevhodnost pro dané řízení ani vytíženost v jiných řízeních namítat nelze a ke skutečnostem vzniklým až po rozhodnutí soudu prvního stupně se nepřihlíží.",
+  "stav": "platna"
+ },
+ "insolvence-0067": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 112 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Předběžný správce provádí opatření ke zjištění dlužníkova majetku, k jeho zajištění a k přezkoumání dlužníkova účetnictví nebo evidence. Přihlášky nepřezkoumává — to přichází na řadu až po rozhodnutí o úpadku, kdy věřitelé své pohledávky vůbec přihlašují.",
+  "stav": "platna"
+ },
+ "insolvence-0068": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 27 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Insolvenční soud ustanoví správce nejpozději v rozhodnutí o úpadku. Dřív ho ustanovit může — jako předběžného správce; nestanoví-li soud v rozhodnutí o úpadku jinak, stává se předběžný správce správcem s plnou působností.",
+  "stav": "platna"
+ },
+ "insolvence-0069": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 27 odst. 1 a § 112 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Předběžný správce se ustanovuje rozhodnutím insolvenčního soudu, konkrétně předběžným opatřením. Soud tak musí učinit i bez návrhu, jestliže nařídil předběžné opatření omezující dlužníka v nakládání s majetkovou podstatou v širším rozsahu než § 111. Automaticky po zahájení řízení se neustanovuje a schůze věřitelů s tím nemá co do činění — ta se v té fázi ještě nekoná.",
+  "stav": "platna"
+ },
+ "insolvence-0070": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 27 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Nejzazší okamžik je rozhodnutí o úpadku — správce v něm musí být ustanoven vždy. Předseda soudu osobu jen určuje, ustanovuje ji do funkce soud; ministerstvo vede seznam, ale do konkrétního řízení nikoho neustanovuje.",
+  "stav": "platna"
+ },
+ "insolvence-0071": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 27 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Nestanoví-li insolvenční soud o osobě správce v rozhodnutí o úpadku jinak, stává se předběžný správce správcem s plnou působností. Nevyžaduje se k tomu návrh dlužníka, věřitele ani souhlas věřitelského výboru.",
+  "stav": "platna"
+ },
+ "insolvence-0072": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 27 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Správce činný před rozhodnutím o úpadku je předběžný správce. Oddělený správce se ustanovuje pro úkony, z nichž je hlavní správce vyloučen pro poměr k některému věřiteli; zvláštní správce pro odborně náročné otázky; zástupce správce pro dobu, kdy správce nemůže funkci vykonávat.",
+  "stav": "platna"
+ },
+ "insolvence-0073": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 29 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Usnesení schůze o ustanovení nového správce potvrzuje insolvenční soud a nepotvrdí je pouze tehdy, nesplňuje-li zvolený správce podmínky podle § 21 až 24 a § 25 odst. 3. Jiný důvod k nepotvrzení zákon nedává, ale ani soud vázán bezvýhradně není — návrh věřitele, který hlasoval proti, se přitom nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0074": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 29 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Odvolat správce a ustanovit nového může jen schůze věřitelů, která nejblíže následuje po přezkumném jednání. Není to tedy kterákoli schůze ani první schůze v řízení — rozhoduje návaznost na přezkumné jednání, protože teprve po něm je zřejmé, kdo jsou zjištění věřitelé a jaké mají hlasovací síly.",
+  "stav": "platna"
+ },
+ "insolvence-0075": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 29 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Rozhodná je schůze konaná 1. 6., protože nejblíže následuje po přezkumném jednání. Schůze z 1. 3. i 2. 5. se konaly před ním, takže na nich odvolání přijmout nelze, a věřitelský výbor tuto pravomoc nemá vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0076": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 29 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Usnesení je přijato, hlasovala-li pro ně nejméně polovina všech věřitelů přihlášených ke dni předcházejícímu konání schůze, počítaná podle výše jejich pohledávek a jen z těch, kdo mají právo hlasovat. Nepočítá se tedy z přítomných, ale ze všech přihlášených — nedostavit se na schůzi fakticky znamená hlasovat proti.",
+  "stav": "platna",
+  "poznamka": "U oddlužení je kvórum jiné: vyžaduje se nadpoloviční většina všech přihlášených věřitelů počítaná podle výše pohledávek."
+ },
+ "insolvence-0077": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 29 odst. 1 a § 31 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Odvolat správce může schůze věřitelů, která nejblíže následuje po přezkumném jednání, a to bez uvádění důvodů — stačí jí dosáhnout na kvórum. Insolvenční soud správce odvolat také může, ale jen z důležitých důvodů, které nemají původ v porušení jeho povinností; bez důvodu ne. Porušuje-li správce povinnosti, nejde o odvolání, ale o zproštění funkce podle § 32.",
+  "stav": "platna"
+ },
+ "insolvence-0078": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 29 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Usnesení schůze o ustanovení nového správce potvrzuje insolvenční soud a nepotvrdí je pouze tehdy, nesplňuje-li zvolený správce podmínky podle § 21 až 24 a § 25 odst. 3. Jiný důvod k nepotvrzení zákon nedává, ale ani soud vázán bezvýhradně není — návrh věřitele, který hlasoval proti, se přitom nevyžaduje.",
+  "stav": "platna"
  }
 }
