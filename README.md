@@ -102,8 +102,8 @@ a zapíše `.nojekyll` (bez něj GitHub Pages spustí Jekyll a ten složku `_exp
 s bundlem přeskočí). Pak stačí commitnout a pushnout — GitHub Actions web
 republikují samy.
 
-`baseUrl` v `zkouska/app.json` musí odpovídat názvu repozitáře, jinak si
-stránka nenajde bundle.
+`baseUrl` v `zkouska/app.json` musí odpovídat názvu repozitáře (`/insolvence`),
+jinak si stránka nenajde bundle a načte se prázdná.
 
 **Pozor:** GitHub Pages ze soukromého repozitáře fungují jen na placeném plánu
 (GitHub Pro a výš). Na free plánu se web nenasadí — app pak jde spouštět lokálně
