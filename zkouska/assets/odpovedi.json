@@ -2073,5 +2073,181 @@
   "pramen": "§ 29 odst. 2 insolvenčního zákona",
   "vysvetleni": "Usnesení schůze o ustanovení nového správce potvrzuje insolvenční soud a nepotvrdí je pouze tehdy, nesplňuje-li zvolený správce podmínky podle § 21 až 24 a § 25 odst. 3. Jiný důvod k nepotvrzení zákon nedává, ale ani soud vázán bezvýhradně není — návrh věřitele, který hlasoval proti, se přitom nevyžaduje.",
   "stav": "platna"
+ },
+ "insolvence-0079": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 31 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Rozhoduje insolvenční soud, a to buď na návrh insolvenčního správce či věřitelského orgánu, anebo i bez návrhu. Věřitelský výbor sám odvolat správce nemůže — může jen podat návrh soudu, případně se odvolání usnese celá schůze věřitelů postupem podle § 29.",
+  "stav": "platna"
+ },
+ "insolvence-0080": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 29 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Rozhodná je schůze, která po přezkumném jednání následuje nejblíže — ne kterákoli pozdější a ne schůze navázaná na rozhodnutí o úpadku či na ustanovení správce. Kvórum se navíc neváže na účast: usnesení je přijato, hlasovala-li pro ně nejméně polovina všech přihlášených věřitelů počítaná podle výše pohledávek. Žádná varianta tomu neodpovídá.",
+  "stav": "platna"
+ },
+ "insolvence-0081": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 29 odst. 1 a § 31 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zákon rozlišuje dvě věci, které se snadno pletou: odvolání podle § 31 je pro důležité důvody, které nemají původ v porušení povinností (typicky nemoc), kdežto zproštění podle § 32 je následek toho, že správce neplní povinnosti, nepostupuje s odbornou péčí nebo závažně porušil důležitou povinnost. Odvolat správce proto může schůze věřitelů usnesením, nebo soud ze zdravotních důvodů. Neplnění povinností vede ke zproštění, ne k odvolání, a předseda soudu tuto pravomoc nemá — ten osobu správce jen určuje.",
+  "stav": "platna"
+ },
+ "insolvence-0082": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 31 odst. 1 a § 33 insolvenčního zákona",
+  "vysvetleni": "Vážná nemoc je důležitý důvod bez původu v porušení povinností, takže soud může správce odvolat podle § 31. Je-li překážka jen přechodná, nabízí se šetrnější řešení — ustanovit správci zástupce podle § 33. Zproštění nepřipadá v úvahu, to je následek porušení povinností, a oddělený správce řeší podjatost k některému věřiteli.",
+  "stav": "platna"
+ },
+ "insolvence-0083": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 31 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud rozhodne na návrh insolvenčního správce nebo věřitelského orgánu, anebo i bez návrhu. Věřitelským orgánem je věřitelský výbor či zástupce věřitelů — jednotlivý věřitel návrh podat nemůže a dlužník je v tomto ustanovení výslovně vynechán.",
+  "stav": "platna",
+  "poznamka": "Pozor na rozdíl proti zproštění: tam § 32 odst. 1 návrhové právo dlužníkovi naopak dává."
+ },
+ "insolvence-0084": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 31 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Ustanovení zní přesně takto: soud může na návrh správce nebo věřitelského orgánu anebo i bez návrhu správce odvolat, učiní tak zpravidla po jeho slyšení a o podaném návrhu rozhodne neprodleně. Ministerstvo spravedlnosti mezi navrhovateli není a žádná fikce vyhovění po uplynutí lhůty se tu neuplatní — tu zákon zná jen u vstupu nabyvatele pohledávky podle § 18 odst. 2.",
+  "stav": "platna"
+ },
+ "insolvence-0085": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 32 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zákon rozlišuje dvě věci, které se snadno pletou: odvolání podle § 31 je pro důležité důvody, které nemají původ v porušení povinností (typicky nemoc), kdežto zproštění podle § 32 je následek toho, že správce neplní povinnosti, nepostupuje s odbornou péčí nebo závažně porušil důležitou povinnost. Zásadní porušení povinnosti proto vede ke zproštění funkce rozhodnutím insolvenčního soudu, ne k odvolání a ne usnesením schůze věřitelů.",
+  "stav": "platna"
+ },
+ "insolvence-0086": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 32 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zákon rozlišuje dvě věci, které se snadno pletou: odvolání podle § 31 je pro důležité důvody, které nemají původ v porušení povinností (typicky nemoc), kdežto zproštění podle § 32 je následek toho, že správce neplní povinnosti, nepostupuje s odbornou péčí nebo závažně porušil důležitou povinnost. Zprostit funkce může jen insolvenční soud a jen pro neplnění povinností. Zdravotní důvody vedou k odvolání podle § 31, schůze věřitelů zprošťovat nemůže a předseda soudu osobu správce pouze určuje.",
+  "stav": "platna"
+ },
+ "insolvence-0087": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 32 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud může správce zprostit na návrh věřitelského orgánu nebo dlužníka, anebo i bez návrhu. Jednotlivý věřitel ani blíže neurčená osoba dotčená ve svých právech návrhové právo nemají a schůze věřitelů zprošťovat nemůže vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0088": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 32 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Důvody zproštění jsou tři a zákon je uvádí vedle sebe: správce neplní řádně své povinnosti, nepostupuje s odbornou péčí, nebo závažně porušil důležitou povinnost uloženou zákonem či soudem. Důležité důvody bez původu v porušení povinností vedou k odvolání podle § 31, ne ke zproštění.",
+  "stav": "platna"
+ },
+ "insolvence-0089": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 34 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Odděleného správce ustanoví soud, je-li insolvenční správce vyloučen jen z některých úkonů pro svůj poměr k některému věřiteli či jeho zástupci. Zvláštní specializaci řeší zvláštní správce podle § 35, přechodnou nemožnost výkonu funkce zástupce podle § 33.",
+  "stav": "platna"
+ },
+ "insolvence-0090": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 33 až 35 insolvenčního zákona",
+  "vysvetleni": "Oddělený správce provádí ty úkony, z nichž je hlavní správce vyloučen pro svůj poměr k některému věřiteli. Ani jedna varianta to nepopisuje: odbornou specializaci řeší zvláštní správce, přechodný výpadek zástupce a činnost do rozhodnutí o úpadku předběžný správce. Přezkum pohledávek zajištěných věřitelů jako takový úkolem odděleného správce není.",
+  "stav": "platna"
+ },
+ "insolvence-0092": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 36 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Zpráva o stavu insolvenčního řízení se předkládá věřitelskému orgánu i soudu nejméně jednou za 3 měsíce. Soud může určit jinou dobu, ale nejvýše dvanáctiměsíční. Žádná z nabízených variant tříměsíční lhůtu neuvádí, takže správně není ani jedna.",
+  "stav": "platna"
+ },
+ "insolvence-0093": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 37 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Podle § 37 odst. 3 správce odpovídá věřiteli s pohledávkou za majetkovou podstatou za to, že jeho pohledávka vzniklá na základě právního úkonu správce nemohla být uspokojena. Odpovědnost je objektivní — zavinění se neprokazuje — ale není absolutní: správce se jí zprostí, prokáže-li, že v době, kdy úkon činil, nemohl poznat, že majetková podstata na úhradu nestačí. Žádný strop ve výši jeho odměny zákon nestanoví. Rozhodující je tedy původ pohledávky v právním úkonu správce — ne to, zda šlo o provoz dlužníkova podniku, a rozhodně ne bez ohledu na důvod vzniku.",
+  "stav": "platna"
+ },
+ "insolvence-0094": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 37 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Podle § 37 odst. 3 správce odpovídá věřiteli s pohledávkou za majetkovou podstatou za to, že jeho pohledávka vzniklá na základě právního úkonu správce nemohla být uspokojena. Odpovědnost je objektivní — zavinění se neprokazuje — ale není absolutní: správce se jí zprostí, prokáže-li, že v době, kdy úkon činil, nemohl poznat, že majetková podstata na úhradu nestačí. Žádný strop ve výši jeho odměny zákon nestanoví. Smlouva na dodávku vody je právní úkon správce, takže odpovědnost vzniká — ale zprostit se jí lze.",
+  "stav": "platna"
+ },
+ "insolvence-0095": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 37 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Podle § 37 odst. 3 správce odpovídá věřiteli s pohledávkou za majetkovou podstatou za to, že jeho pohledávka vzniklá na základě právního úkonu správce nemohla být uspokojena. Odpovědnost je objektivní — zavinění se neprokazuje — ale není absolutní: správce se jí zprostí, prokáže-li, že v době, kdy úkon činil, nemohl poznat, že majetková podstata na úhradu nestačí. Žádný strop ve výši jeho odměny zákon nestanoví. Uzavření smlouvy na dodávku elektřiny je právní úkon správce, takže odpovědnost je dána a je objektivní; zavinění dodavatel prokazovat nemusí.",
+  "stav": "platna"
+ },
+ "insolvence-0096": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 40 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Přešlo-li na správce oprávnění nakládat s majetkovou podstatou, jedná svým jménem a na účet dlužníka. Není tedy zástupcem dlužníka a nejedná na svůj účet — musí se přitom označit tak, aby bylo patrné, že jedná při výkonu funkce, včetně nezaměnitelného označení dlužníka.",
+  "stav": "platna"
+ },
+ "insolvence-0097": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 40 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Správce jedná svým jménem na účet dlužníka, ale jen tehdy, přešlo-li na něj oprávnění nakládat s majetkovou podstatou. Podmínka je součástí pravidla — bez přechodu dispozičních oprávnění takto jednat nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0098": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 40 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Přesná formulace zahrnuje i podmínku: svým jménem na účet dlužníka, přešlo-li na správce oprávnění nakládat s majetkovou podstatou. Varianta bez této podmínky je příliš široká — do doby přechodu dispozičních oprávnění takové jednání správci nenáleží.",
+  "stav": "platna"
+ },
+ "insolvence-0099": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 41 insolvenčního zákona",
+  "vysvetleni": "Pravidlo chrání osobní majetek správce: pro pohledávky týkající se majetkové podstaty na něj výkon rozhodnutí vést nelze. Má ale dvě výjimky — pořádková opatření uložená správci v souvislosti s takovými řízeními a náhradu nákladů řízení, které způsobil svým zaviněním nebo které vznikly náhodou, jež se mu přihodila.",
+  "stav": "platna"
+ },
+ "insolvence-0100": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 41 insolvenčního zákona",
+  "vysvetleni": "Osobní majetek správce lze postihnout jen ve dvou případech: jde-li o pořádkové opatření uložené správci, nebo o náklady řízení vzniklé jeho zaviněním (případně náhodou, která se mu přihodila). Mimo ně je jeho majetek chráněn — ale tvrzení, že postižen být nemůže nikdy, také neplatí.",
+  "stav": "platna"
  }
 }
