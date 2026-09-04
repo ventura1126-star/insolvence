@@ -2515,5 +2515,127 @@
   "pramen": "§ 60 odst. 3 insolvenčního zákona",
   "vysvetleni": "Výbor služby odborníků využívat může. Náklady lze hradit z majetkové podstaty jen se souhlasem insolvenčního soudu — souhlas se tedy neváže na uzavření spolupráce, ale na úhradu z podstaty. Bez něj je nesou členové ze svého.",
   "stav": "platna"
+ },
+ "insolvence-0054": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 63 odst. 2 a § 68 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Podle § 63 odst. 2 přechází s pohledávkou na nabyvatele i členství ve věřitelském výboru, skončí-li účast původního věřitele postupem podle § 18. Neplatí to ale, nabylo-li pohledávku takto více osob. Postoupí-li věřitel jen část pohledávky, jeho účast v řízení nekončí, takže mu funkce zůstává a nepřechází na nikoho. Právo účastnit se schůze věřitelů na nabyvatele přechází vždy a funkce zástupce věřitelů se řídí ustanoveními o věřitelském výboru obdobně, takže při postoupení celé pohledávky přejde také.",
+  "stav": "platna"
+ },
+ "insolvence-0137": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 61 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud může prozatímní věřitelský výbor jmenovat i před první schůzí věřitelů a dokonce před rozhodnutím o úpadku — tedy už po podání insolvenčního návrhu. Navrhne-li to dlužník, přihlášený věřitel nebo předběžný správce, musí tak učinit neprodleně. Nezvolí-li naopak schůze výbor, prozatímní výbor se nejmenuje: působnost výboru pak vykonává sám soud.",
+  "stav": "platna"
+ },
+ "insolvence-0138": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 63 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zákon uvádí tři důvody zániku funkce: odvolání, odstoupení a ukončení účasti věřitele v insolvenčním řízení. Smrt mezi nimi výslovně není — projeví se až přes ukončení účasti v řízení, ne jako samostatný důvod.",
+  "stav": "platna"
+ },
+ "insolvence-0139": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 63 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Funkce zaniká odvoláním, odstoupením nebo ukončením účasti v insolvenčním řízení. Zproštění funkce zákon zná jen u insolvenčního správce podle § 32 — na členy věřitelského výboru se nevztahuje.",
+  "stav": "platna"
+ },
+ "insolvence-0140": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 63 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Věřitel postoupil celou pohledávku (95 % i 5 %), takže jeho účast v řízení skončila a funkce mu podle odstavce 1 zanikla. Členství ale nepřechází ani na jednoho z nabyvatelů — odstavec 2 přechod výslovně vylučuje, nabylo-li pohledávku více osob. Uvolněné místo proto zaujme náhradník.",
+  "stav": "platna"
+ },
+ "insolvence-0141": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 63 odst. 2 a § 68 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Ustanovení o věřitelském výboru platí pro zástupce věřitelů obdobně. Pohledávku nabyla jediná osoba, takže výjimka pro nabytí více osobami se neuplatní a funkce zástupce věřitelů přešla na nabyvatele. Náhradník nenastupuje a novou volbu svolávat netřeba.",
+  "stav": "platna"
+ },
+ "insolvence-0142": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 63 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Podle § 63 odst. 2 přechází s pohledávkou na nabyvatele i členství ve věřitelském výboru, skončí-li účast původního věřitele postupem podle § 18. Neplatí to ale, nabylo-li pohledávku takto více osob. Postoupí-li věřitel jen část pohledávky, jeho účast v řízení nekončí, takže mu funkce zůstává a nepřechází na nikoho. Zbylých 5 % tady věřitele v řízení udrží, takže si členství ponechá — a nabyvatel 95 % se členem nestává.",
+  "stav": "platna"
+ },
+ "insolvence-0143": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 64 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Odvolání přípustné je a podat je může každá z odvolaných osob — ne kterýkoli člen výboru. Byl-li naopak návrh na odvolání zamítnut, může se odvolat ten, kdo návrh podal.",
+  "stav": "platna"
+ },
+ "insolvence-0144": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 65 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Člen i náhradník může ze své funkce odstoupit kdykoli, podáním adresovaným insolvenčnímu soudu, a důvody v něm uvádět nemusí. Zanikne-li tím funkce, nastoupí na jeho místo náhradník a doplňující volbou se určí náhradník nový.",
+  "stav": "platna"
+ },
+ "insolvence-0145": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 58 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Má-li dlužník zaměstnance, může se jednání věřitelského výboru účastnit odborová organizace, která u dlužníka působí, a to s hlasem poradním. Členem výboru se tím nestává a zaměstnanci si žádného svého zástupce do výboru nevolí — členy mohou být jen přihlášení věřitelé.",
+  "stav": "platna"
+ },
+ "insolvence-0147": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 69 insolvenčního zákona",
+  "vysvetleni": "Je-li proti rozhodnutí opravný prostředek přípustný, může jej státní zastupitelství, které do řízení, incidenčního sporu nebo moratoria vstoupilo, podat. Zákon to neváže na to, zda stejné právo mají všichni nebo většina účastníků, a neomezuje se jen na řádné opravné prostředky.",
+  "stav": "platna"
+ },
+ "insolvence-0148": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 70 odst. 1 a § 98 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Likvidátor vykonává svou působnost jen v rozsahu, v jakém nepřešla na insolvenčního správce — tedy s omezením, ne bez něj. Insolvenční návrh podat může, a u právnické osoby v likvidaci ho podat dokonce musí; činí tak jménem dlužníka. Účastníkem řízení není, je procesním subjektem podle § 9.",
+  "stav": "platna"
+ },
+ "insolvence-0149": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 9 písm. f), § 14 odst. 1 a § 70 insolvenčního zákona",
+  "vysvetleni": "Likvidátor je procesním subjektem, ne účastníkem řízení — účastníky jsou podle § 14 jen dlužník a věřitelé uplatňující své právo. Součinnost s insolvenčním správcem patří přímo do jeho působnosti. A na odměnu nárok má: přísluší mu náhrada nutných výdajů a přiměřená odměna, jejíž výši určí soud na návrh správce.",
+  "stav": "platna"
+ },
+ "insolvence-0150": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 70 odst. 1 až 3 a § 168 insolvenčního zákona",
+  "vysvetleni": "Svou působnost likvidátor vykonává už od podání insolvenčního návrhu (u věřitelského návrhu od rozhodnutí o úpadku), takže tvrzení, že ji nevykonává vůbec, neplatí. Poskytuje součinnost správci a má právo na náhradu nutných výdajů a přiměřenou odměnu — a tento nárok je pohledávkou za majetkovou podstatou, ne pohledávkou, kterou by musel přihlašovat.",
+  "stav": "platna"
  }
 }
