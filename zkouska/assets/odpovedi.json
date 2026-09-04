@@ -2403,5 +2403,117 @@
   "pramen": "§ 50 odst. 1 a § 51 insolvenčního zákona",
   "vysvetleni": "Hlasovat mohou zjištění věřitelé bez dalšího. U popřené pohledávky přizná hlasovací právo schůze věřitelů, a pokud je nepřizná, rozhodne na návrh insolvenční soud; ten rozhoduje i u pohledávek dosud nezjištěných nebo sporných. Automaticky tedy nehlasuje každý přihlášený — § 51 odst. 4 hlasovací právo výslovně upírá mimo jiné věřitelům s pohledávkami za majetkovou podstatou a s podřízenými pohledávkami.",
   "stav": "platna"
+ },
+ "insolvence-0122": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 51 odst. 1 a 3 insolvenčního zákona",
+  "vysvetleni": "O hlasovacím právu rozhoduje schůze věřitelů tam, kde byla pohledávka popřena — a to v rozsahu popření, takže i u popření částečného. Nepřizná-li ho, rozhodne na návrh insolvenční soud. U pohledávek dosud nepřezkoumaných nebo sporných rozhoduje rovnou soud, ne schůze.",
+  "stav": "platna"
+ },
+ "insolvence-0124": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 54 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud může usnesení odporující společnému zájmu věřitelů zrušit, ale výčet výjimek je široký: usnesení podle § 29 odst. 1 (odvolání a volba nového správce), usnesení o přiznání hlasovacího práva, o způsobu řešení úpadku, o reorganizačním plánu a o způsobu oddlužení. V těchto věcech je vůle věřitelů konečná.",
+  "stav": "platna"
+ },
+ "insolvence-0125": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 54 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Důvodem může být jedině rozpor se společným zájmem věřitelů. Soud navíc nemůže rozhodnout z vlastní iniciativy — jen na návrh insolvenčního správce nebo věřitele, který proti usnesení hlasoval (nestačí, že se schůze zúčastnil). A musí tak učinit ještě do skončení té schůze, která usnesení přijala; druhý den už je pozdě.",
+  "stav": "platna"
+ },
+ "insolvence-0127": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 56 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Věřitelský výbor má nejméně 3 a nejvýše 7 členů, o konkrétním počtu rozhoduje schůze věřitelů. Čtyři i sedm členů tedy možné je, dva ani osm ne. Je-li přihlášených věřitelů více než 50, je ustanovení výboru povinné — u nepatrného konkursu a u oddlužení povinné není.",
+  "stav": "platna"
+ },
+ "insolvence-0128": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 57 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Hlasuje se odděleně podle skupin: členy navržené nezajištěnými věřiteli volí hlasy nezajištěných, členy navržené zajištěnými hlasy zajištěných. Nepočítá se tedy dohromady a rozhodně ne principem „jeden věřitel, jeden hlas\" — i tady se váží podle výše pohledávek.",
+  "stav": "platna"
+ },
+ "insolvence-0129": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 58 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Výbor se schází z vlastní iniciativy — schůze svolává jeho předseda — anebo jej svolá insolvenční soud či insolvenční správce. Dlužník ani státní zastupitelství tuto možnost nemají.",
+  "stav": "platna"
+ },
+ "insolvence-0130": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 59 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Členem může být jen přihlášený věřitel, který se svým zvolením souhlasí — zajištěný i nezajištěný, a zjištění pohledávky se nevyžaduje. Vyloučeny jsou naopak osoby, u nichž je důvod pochybovat o nepodjatosti: osoby dlužníkovi blízké, vedoucí zaměstnanci, společníci a osoby tvořící s dlužníkem koncern.",
+  "stav": "platna"
+ },
+ "insolvence-0131": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 59 odst. 2 insolvenčního zákona",
+  "vysvetleni": "§ 59 odst. 2 vylučuje osoby, u nichž je vzhledem k jejich vztahu k dlužníkovi důvod pochybovat o nepodjatosti, a demonstrativně jmenuje osoby dlužníkovi blízké, vedoucí zaměstnance, společníky dlužníka a osoby tvořící s dlužníkem koncern. Vyloučena je tedy osoba blízká i společník dlužníka. Zaměstnanci ale plošně vyloučeni nejsou — jen ti vedoucí. A u akcionářů platí výjimka: vadí jen tehdy, působí-li v orgánech dlužníka nebo vlastní-li akcie v souhrnné hodnotě přesahující desetinu základního kapitálu.",
+  "stav": "platna"
+ },
+ "insolvence-0132": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 59 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Vyloučeni jsou jen vedoucí zaměstnanci dlužníka ve smyslu zákoníku práce, ne zaměstnanci obecně. Řadový zaměstnanec může být členem výboru i hlasovat na schůzi a jeho mzdová pohledávka není podřízená — naopak je postavena na roveň pohledávkám za majetkovou podstatou podle § 169.",
+  "stav": "platna"
+ },
+ "insolvence-0133": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 59 odst. 2 insolvenčního zákona",
+  "vysvetleni": "§ 59 odst. 2 vylučuje osoby, u nichž je vzhledem k jejich vztahu k dlužníkovi důvod pochybovat o nepodjatosti, a demonstrativně jmenuje osoby dlužníkovi blízké, vedoucí zaměstnance, společníky dlužníka a osoby tvořící s dlužníkem koncern. Osoba blízká, vedoucí zaměstnanec i osoba tvořící s dlužníkem koncern tedy členem být nemohou. Zaměstnanci jako celek vyloučeni nejsou — zákon míří výslovně jen na ty vedoucí.",
+  "stav": "platna"
+ },
+ "insolvence-0134": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 59 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Výčet v zákoně je demonstrativní („zejména\"), takže rozhoduje obecné kritérium — důvod pochybovat o nepodjatosti kvůli vztahu k dlužníkovi. Společník je ve výčtu přímo. Jednatel je statutárním orgánem dlužníka, takže tím spíš. A stoprocentní akcionář akciové společnosti, která je jediným společníkem dlužníka, dlužníka nepřímo ovládá, čímž s ním tvoří koncern. Bývalý zaměstnanec sám o sobě vyloučen není.",
+  "stav": "platna"
+ },
+ "insolvence-0135": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 58 odst. 4 a § 60 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Členové mají právo na náhradu nutných výdajů spojených s výkonem funkce a na přiměřenou odměnu, jejíž výši určí insolvenční soud. Majetek z podstaty nabývat mohou, ale jen se souhlasem schůze věřitelů — není to tedy vyloučeno absolutně. Zastoupit se ve výboru dát mohou, a to kteroukoli plně svéprávnou fyzickou osobou, náklady si však hradí sami.",
+  "stav": "platna"
+ },
+ "insolvence-0136": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 60 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Výbor služby odborníků využívat může. Náklady lze hradit z majetkové podstaty jen se souhlasem insolvenčního soudu — souhlas se tedy neváže na uzavření spolupráce, ale na úhradu z podstaty. Bez něj je nesou členové ze svého.",
+  "stav": "platna"
  }
 }
