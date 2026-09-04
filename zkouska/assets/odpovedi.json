@@ -2637,5 +2637,289 @@
   "pramen": "§ 70 odst. 1 až 3 a § 168 insolvenčního zákona",
   "vysvetleni": "Svou působnost likvidátor vykonává už od podání insolvenčního návrhu (u věřitelského návrhu od rozhodnutí o úpadku), takže tvrzení, že ji nevykonává vůbec, neplatí. Poskytuje součinnost správci a má právo na náhradu nutných výdajů a přiměřenou odměnu — a tento nárok je pohledávkou za majetkovou podstatou, ne pohledávkou, kterou by musel přihlašovat.",
   "stav": "platna"
+ },
+ "insolvence-0151": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 71 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Doručením vyhláškou se v insolvenčním řízení rozumí zveřejnění písemnosti v insolvenčním rejstříku — tedy na internetu, ne na úřední desce soudu, v Obchodním věstníku ani ve Sbírce zákonů. Za doručenou se považuje dnem, hodinou a minutou zveřejnění.",
+  "stav": "platna"
+ },
+ "insolvence-0152": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 71 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Základní pravidlo je opačné než v běžném civilním řízení: doručuje se pouze vyhláškou, tedy zveřejněním v rejstříku, ledaže zákon pro určité případy nebo osoby stanoví i zvláštní způsob doručení. Doručování každému zvlášť je výjimka, ne pravidlo.",
+  "stav": "platna"
+ },
+ "insolvence-0154": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 74 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "§ 74 rozlišuje dvě věci, které se pletou: zveřejnění v insolvenčním rejstříku je dokladem o doručení i tehdy, doručuje-li se zároveň zvláštním způsobem — ale lhůta k opravnému prostředku začíná běžet až ode dne, kdy byla písemnost doručena zvláštním způsobem. Správce má tedy doručeno 1. 7., kdy bylo rozhodnutí zveřejněno, ale odvolací lhůta mu běží až od 3. 7. O tom musí být poučen.",
+  "stav": "platna"
+ },
+ "insolvence-0157": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 74 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "§ 74 rozlišuje dvě věci, které se pletou: zveřejnění v insolvenčním rejstříku je dokladem o doručení i tehdy, doručuje-li se zároveň zvláštním způsobem — ale lhůta k opravnému prostředku začíná běžet až ode dne, kdy byla písemnost doručena zvláštním způsobem. Nezáleží tedy na tom, zda se zvláštní doručení podařilo — zveřejnění dokladem o doručení je vždy, a lhůta se přesto odvíjí od zvláštního doručení.",
+  "stav": "platna"
+ },
+ "insolvence-0158": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 71 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí je doručeno okamžikem zveřejnění v insolvenčním rejstříku, a tím okamžikem nastávají jeho účinky — tedy 3. 8. v 9:25. Vyvěšení na úřední desce ani pozdější doručení zvláštním způsobem na tom nic nemění; ta mají význam jen pro běh odvolací lhůty. Odvolaný správce má pak povinnost bez zbytečného odkladu informovat nového správce a předat mu doklady.",
+  "stav": "platna"
+ },
+ "insolvence-0159": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 75 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Zvlášť se doručuje dlužníku, osobám, o jejichž podání insolvenční soud rozhoduje, a osobám, které mají v insolvenčním řízení něco osobně vykonat. Žádná z nabízených variant tomuto výčtu neodpovídá.",
+  "stav": "platna",
+  "poznamka": "Otázka vychází ze staršího znění, které mezi adresáty zvláštního doručení výslovně jmenovalo i insolvenčního správce, věřitelský výbor a státní zastupitelství. Dnešní § 75 odst. 2 je stručnější — správce se ovšem doručuje podle § 77 do datové schránky."
+ },
+ "insolvence-0160": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 75 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Zvlášť se doručuje dlužníku a osobám, které mají v řízení něco osobně vykonat — a to jsou tady oba správci: odvolaný musí předat doklady a informovat nástupce, nový přebírá funkci. Všem přihlášeným věřitelům se rozhodnutí zvlášť nedoručuje, těm stačí zveřejnění v rejstříku.",
+  "stav": "platna"
+ },
+ "insolvence-0161": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 76 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Je-li pro insolvenční řízení nutný doklad o doručení — a u výzvy k opravě přihlášky nutný je, protože od doručení běží lhůta k opravě — zasílá správce písemnost jako zásilku s dodejkou nebo jako zásilku do vlastních rukou adresáta. Obyčejná ani doporučená zásilka bez dodejky nestačí.",
+  "stav": "platna"
+ },
+ "insolvence-0153": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 421 odst. 1 písm. a) insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí vydaná v insolvenčním řízení i v incidenčních sporech se v rejstříku zveřejňují v úplném znění, chronologicky a s uvedením okamžiku vložení. Právě v tom spočívá princip publicity insolvenčního řízení — na zveřejnění se váže i doručení vyhláškou.",
+  "stav": "platna",
+  "poznamka": "Omezená výjimka existuje u osobních údajů: na žádost fyzické osoby, která podání učinila, může soud rozhodnout, že některé její osobní údaje nebudou veřejně přístupné. Jméno a příjmení se ale zveřejní vždy."
+ },
+ "insolvence-0162": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 77 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Prvotní cesta je datová schránka správce. Teprve není-li doručení tímto způsobem možné, předá soud písemnost doručujícímu orgánu na adresu sídla zapsanou v seznamu insolvenčních správců. Žádost správce může směřovat jen na jinou adresu v ČR, a i tu lze použít, jen když datová schránka nefunguje.",
+  "stav": "platna"
+ },
+ "insolvence-0163": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 77 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Má-li správce datovou schránku, doručuje se do ní vždy. Na jinou adresu ani na elektronickou adresu doručovat nelze — zákon to připouští jen tehdy, není-li doručení do datové schránky možné. Požádat si o poštu tedy nejde.",
+  "stav": "platna"
+ },
+ "insolvence-0164": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 81 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Správci může soud uložit pořádkovou pokutu i opakovaně, nejvýše však do úhrnné částky 200 000 Kč. Členům a náhradníkům věřitelského výboru ji ukládá podle obecné úpravy § 53 občanského soudního řádu — insolvenční zákon jim vlastní strop nestanoví. Věřitelský výbor sám pokutu ukládat nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0165": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 81 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Pokutu lze uložit členům i náhradníkům věřitelského výboru, kteří se bez řádné omluvy neúčastní jeho schůzí nebo jinak neplní své povinnosti. Nevhodné vystupování vůči dlužníkovi důvodem není — rozhoduje neplnění povinností. A okruh se nevyčerpává členy výboru, pokutovat lze i insolvenčního správce.",
+  "stav": "platna"
+ },
+ "insolvence-0166": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 81 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Strop je 200 000 Kč, a to úhrnně — pokutu lze uložit i opakovaně, ale součet ji přesáhnout nesmí.",
+  "stav": "platna"
+ },
+ "insolvence-0167": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 81 a § 68 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Pokutovat lze insolvenčního správce i členy a náhradníky věřitelského výboru — tedy i věřitele, který je jeho členem. Na zástupce věřitelů se ustanovení o věřitelském výboru použijí obdobně, takže i on. Státní zastupitelství mezi adresáty pořádkové pokuty podle § 81 nepatří.",
+  "stav": "platna"
+ },
+ "insolvence-0168": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 81 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Strop je 200 000 Kč úhrnně a uložit ji lze i opakovaně — počet pokut zákon neomezuje. Žádná z nabízených variant tomu neodpovídá: ani tři pokuty, ani 100 000 Kč v jednotlivém případě, ani 500 000 Kč či eurová částka.",
+  "stav": "platna"
+ },
+ "insolvence-0169": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 82 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Předběžné opatření nařizuje výhradně insolvenční soud — správce ani nikdo jiný tuto pravomoc nemá. A může tak učinit i bez návrhu, nestanoví-li zákon jinak; návrh věřitele ani státního zastupitelství tedy podmínkou není.",
+  "stav": "platna"
+ },
+ "insolvence-0170": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 82 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Předběžné opatření nařizuje soud. Insolvenční správce takovou pravomoc nemá vůbec a návrh účastníka se nevyžaduje — soud může rozhodnout i z vlastní iniciativy.",
+  "stav": "platna"
+ },
+ "insolvence-0171": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 82 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud může předběžné opatření nařídit z vlastní iniciativy i na návrh. Obojí vedle sebe — proto neplatí varianta se slovem „pouze\". Podnět zaměstnance dlužníka samostatnou cestou není; zaměstnanec může leda soud upozornit a ten pak jedná z úřední povinnosti.",
+  "stav": "platna"
+ },
+ "insolvence-0172": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 82 odst. 2 a 3 insolvenčního zákona",
+  "vysvetleni": "Předběžným opatřením lze do rozhodnutí o insolvenčním návrhu ustanovit předběžného správce, a dále — neodporuje-li to společnému zájmu věřitelů — udělit souhlas se započtením vzájemných pohledávek nebo naopak započtení pro určité případy či na určitou dobu zakázat. Vzetí do vazby je institut trestního práva a s insolvenčním řízením nemá nic společného.",
+  "stav": "platna"
+ },
+ "insolvence-0173": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 82 odst. 1 a odst. 2 písm. a) insolvenčního zákona",
+  "vysvetleni": "Vydat je lze i bez návrhu a jedním z jeho možných obsahů je právě ustanovení předběžného správce. Jistotu navrhovatel neskládá, jde-li o opatření, které by soud mohl nařídit i bez návrhu, a nikdy ji neskládá dlužník — podmínka složení 50 000 Kč přihlášeným věřitelem je tedy vymyšlená.",
+  "stav": "platna"
+ },
+ "insolvence-0174": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 82 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Jistotu neskládá dlužník nikdy, a dále ji neskládá žádný navrhovatel předběžného opatření, které by soud mohl nařídit i bez návrhu — tedy ani přihlášený věřitel v takovém případě. Obě osvobození stojí vedle sebe, u dlužníka ovšem bez jakékoli podmínky.",
+  "stav": "platna"
+ },
+ "insolvence-0175": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 82 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Do rozhodnutí o insolvenčním návrhu může soud předběžným opatřením ustanovit předběžného správce a uložit insolvenčnímu navrhovateli složení jistoty k zajištění náhrady škody z nedůvodně zahájeného řízení. Účinky zahájení řízení může omezit jen některé — konkrétně podle § 109 odst. 1 písm. b) a c) — ne všechny. Prominout lhůtu k přihlášce nelze vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0176": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 83 insolvenčního zákona",
+  "vysvetleni": "Prominutí zmeškání lhůty v insolvenčním řízení není přípustné, a to bez ohledu na to, kdo by o ně žádal. Totéž platí pro zmeškání soudního jednání včetně schůze věřitelů a přezkumného jednání. Zmeškaná lhůta k přihlášce pohledávky je proto nenávratně ztracená.",
+  "stav": "platna"
+ },
+ "insolvence-0177": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 84 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Přerušení insolvenčního řízení není přípustné — ani na návrh, ani se souhlasem věřitelského orgánu. Zvláštní případ nastane jen tehdy, pozastavila-li Česká národní banka obchodování se všemi investičními nástroji na regulovaném trhu: tehdy nelze po tuto dobu vydat rozhodnutí o úpadku podnikatele, ale řízení běží dál.",
+  "stav": "platna"
+ },
+ "insolvence-0178": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 86 insolvenčního zákona",
+  "vysvetleni": "Soud je povinen provést i jiné důkazy potřebné k osvědčení úpadku nebo hrozícího úpadku, než které navrhli účastníci. Zjišťování úpadku tedy neovládá zásada projednací — soud nesmí zůstat jen u toho, co mu strany předloží.",
+  "stav": "platna"
+ },
+ "insolvence-0179": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 88 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Správné jsou všechny čtyři varianty. V záhlaví se uvádí označení insolvenčního soudu, jména a příjmení soudců, označení dlužníka a jeho zástupce, označení osoby, o jejímž podání se rozhoduje, a jejího zástupce, a označení věci. Je-li to možné, i datum narození nebo identifikační číslo dlužníka.",
+  "stav": "platna"
+ },
+ "insolvence-0180": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 89 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí jsou účinná okamžikem zveřejnění v insolvenčním rejstříku — tedy dnem, hodinou a minutou, ne až začátkem toho dne a ne až právní mocí. Vyvěšení na úřední desce na účinnost vliv nemá.",
+  "stav": "platna"
+ },
+ "insolvence-0181": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 89 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí vydaná v průběhu jednání nebo hned po něm jsou účinná, jakmile jsou vyhlášena účastníkům a správci, kteří byli přítomni. U rozhodnutí ve věci samé je rozhodné veřejné vyhlášení. Zveřejnění v rejstříku pak soud provede nejpozději do konce následujícího pracovního dne, ale účinnost už nastala dřív.",
+  "stav": "platna"
+ },
+ "insolvence-0182": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 89 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí bylo vyhlášeno při jednání, takže je účinné okamžikem vyhlášení — 1. 9. v 10:25. Pozdější zveřejnění v rejstříku, vyvěšení na desce ani doručení zvláštním způsobem na tom nic nemění; ta mají význam jen pro běh lhůt.",
+  "stav": "platna",
+  "poznamka": "Srovnej s případem, kdy se rozhodnutí při jednání nevyhlašuje: tam podle § 89 odst. 1 nastane účinnost až okamžikem zveřejnění v insolvenčním rejstříku."
+ },
+ "insolvence-0183": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 96 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Obnova insolvenčního řízení není přípustná — stejně jako jeho přerušení nebo prominutí zmeškání lhůty. Zbývá jen žaloba pro zmatečnost, u níž se navíc nepoužije § 235 odst. 2 občanského soudního řádu.",
+  "stav": "platna"
+ },
+ "insolvence-0184": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 97 odst. 1 až 4 a § 80a insolvenčního zákona",
+  "vysvetleni": "Návrh se podává písemně, a to v listinné nebo elektronické podobě. Má-li listinnou podobu, musí nést úředně ověřený podpis navrhovatele — jinak se k němu vůbec nepřihlíží. Elektronicky lze podat datovou schránkou nebo podáním podepsaným uznávaným elektronickým podpisem. Předepsaný formulář se u insolvenčního návrhu nevyžaduje; ten zákon žádá až u návrhu na povolení oddlužení.",
+  "stav": "platna"
+ },
+ "insolvence-0185": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 97 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Podepíše-li návrh jen zástupce na základě procesní plné moci, je podmínka úředně ověřeného podpisu splněna jen tehdy, je-li úředně ověřeným podpisem opatřena připojená plná moc — tedy podpis zmocnitele. Vlastnoruční podpis nestačí a podpis zmocněnce na plné moci se ověřovat nemusí.",
+  "stav": "platna"
  }
 }
