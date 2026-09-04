@@ -2249,5 +2249,159 @@
   "pramen": "§ 41 insolvenčního zákona",
   "vysvetleni": "Osobní majetek správce lze postihnout jen ve dvou případech: jde-li o pořádkové opatření uložené správci, nebo o náklady řízení vzniklé jeho zaviněním (případně náhodou, která se mu přihodila). Mimo ně je jeho majetek chráněn — ale tvrzení, že postižen být nemůže nikdy, také neplatí.",
   "stav": "platna"
+ },
+ "insolvence-0101": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 41 odst. 1 a § 42 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Správné jsou všechny čtyři varianty. Úvěrové financování slouží k udržení nebo obnovení provozu podniku, který je součástí majetkové podstaty, a zahrnuje smlouvy o úvěru a obdobné i smlouvy na dodávky energií a surovin — a to výslovně včetně smluv o zajištění jejich splnění. Majetek pořízený z těchto prostředků navíc nespadá pod zajištění podle dříve uzavřených smluv, takže nové zástavní právo mu nepřekáží.",
+  "stav": "platna"
+ },
+ "insolvence-0102": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 41 odst. 1 a § 42 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Smlouvu o úvěrovém financování může uzavřít insolvenční správce, a vedle něj i dlužník s dispozičními oprávněními nebo dlužník po dobu trvání moratoria. Věřitelský výbor takové smlouvy neuzavírá — může k nim nanejvýš dávat souhlas jako věřitelský orgán.",
+  "stav": "platna"
+ },
+ "insolvence-0103": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 43 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Součinnost spočívá v poskytnutí údajů o majetku dlužníka a dalších údajů nutných pro výkon správy, a to ve stejném rozsahu, v jakém by je orgány poskytly přímo dlužníku. Správce se tedy dostane přesně tam, kam by se dostal dlužník sám — ne dál a ne míň, a souhlas soudu k tomu nepotřebuje.",
+  "stav": "platna"
+ },
+ "insolvence-0104": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 43 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Součinnost se poskytuje na písemnou žádost správce bez zbytečného odkladu. Žádná šedesátidenní lhůta ani povinnost komunikovat přes soud v zákoně nejsou. Okruh povinných je přitom široký — vedle správních úřadů i notáři, exekutoři, banky, provozovatelé telekomunikačních a poštovních služeb, dopravci či bývalí zaměstnavatelé dlužníka.",
+  "stav": "platna"
+ },
+ "insolvence-0106": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 45 insolvenčního zákona",
+  "vysvetleni": "Mlčenlivost trvá i po skončení funkce, a to bez časového omezení — žádná desetiletá lhůta v zákoně není. Vztahuje se i na osoby, jejichž prostřednictvím správce funkci vykonává. Zprostit jej může buď ten, v jehož zájmu povinnost má, nebo insolvenční soud.",
+  "stav": "platna"
+ },
+ "insolvence-0107": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 46 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Věřitelskými orgány jsou schůze věřitelů a věřitelský výbor nebo zástupce věřitelů — spojka „nebo\" je podstatná, výbor a zástupce vedle sebe nestojí. Insolvenční soud ani správce věřitelskými orgány nejsou a „poradní výbor věřitelů\" zákon nezná.",
+  "stav": "platna"
+ },
+ "insolvence-0108": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 46 odst. 2 a § 47 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Schůzi přísluší volba a odvolání členů věřitelského výboru a jeho náhradníků nebo zástupce věřitelů a může si vyhradit cokoli, co patří do působnosti věřitelských orgánů — na takové usnesení ovšem potřebuje dvoutřetinovou většinu hlasů přítomných věřitelů podle výše pohledávek. Svolává a řídí ji insolvenční soud, ne správce.",
+  "stav": "platna"
+ },
+ "insolvence-0109": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 46 odst. 2 a § 47 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Schůze je vrcholným věřitelským orgánem — plyne to z toho, že si může vyhradit cokoli, co patří do působnosti ostatních věřitelských orgánů, a není-li výbor ani zástupce ustanoven, vykonává i jejich působnost. Svolává ji insolvenční soud; nezřizuje se jeho rozhodnutím, existuje ze zákona.",
+  "stav": "platna"
+ },
+ "insolvence-0111": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 47 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Schůzi svolává insolvenční soud, a to buď z vlastní iniciativy, nebo na návrh insolvenčního správce, věřitelského výboru anebo alespoň dvou věřitelů, jejichž pohledávky činí alespoň desetinu přihlášených. Návrh jediného věřitele tedy nestačí a správce schůzi sám nesvolává.",
+  "stav": "platna"
+ },
+ "insolvence-0112": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 47 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Návrhové právo má insolvenční správce a věřitelský výbor; soud pak schůzi svolá tak, aby se konala do 30 dnů od žádosti. Státní zastupitelství mezi navrhovateli není a u věřitelů zákon vyžaduje alespoň dva, jejichž pohledávky dohromady činí alespoň desetinu přihlášených — jeden věřitel s desetinou nestačí.",
+  "stav": "platna",
+  "poznamka": "Je-li způsobem řešení úpadku oddlužení, je práh přísnější: návrh musí podat nadpoloviční většina všech věřitelů, jejichž pohledávky zároveň tvoří nadpoloviční většinu přihlášených."
+ },
+ "insolvence-0113": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 48 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Oznámení zveřejní insolvenční soud vyhláškou, ve které musí být uveden předmět jednání, místo a termín konání. Není to rozhodnutí ani usnesení a správce ho nevydává — schůzi ostatně svolává a řídí soud.",
+  "stav": "platna"
+ },
+ "insolvence-0114": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 48 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Svolává-li soud schůzi na návrh, označí jako předmět jednání vždy i záležitost, pro kterou byl návrh podán — navrhovatel ji tedy musí uvést. Schůze pak může projednat jen to, co bylo v oznámení; další body lze přibrat, jen jsou-li přítomni všichni věřitelé. Předchozí projednání s věřitelským výborem zákon nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0115": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 48 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Věřitel, který opakovaně podal nedůvodný návrh, hradí ostatním věřitelům na jejich žádost náklady spojené s účastí na takové schůzi a soud mu navíc uloží paušál 5 000 Kč, jehož zaplacení nelze prominout. Insolvenční správce mezi oprávněnými není a z hlasování se takový věřitel nevylučuje.",
+  "stav": "platna"
+ },
+ "insolvence-0116": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 49 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Vyžaduje se prostá většina hlasů přítomných nebo řádně zastoupených věřitelů, počítaná podle výše pohledávek. Nepočítá se ze všech věřitelů a k řádně zastoupeným se přihlíží. Na každou 1 Kč pohledávky připadá jeden hlas — ne na každých 10 Kč.",
+  "stav": "platna"
+ },
+ "insolvence-0117": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 49 odst. 1 a § 50 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Hlasují osobně přítomní věřitelé i přítomní zástupci — zákon mluví o přítomných nebo řádně zastoupených. Nepřítomný věřitel může hlasovat písemně hlasovacím lístkem s úředně ověřeným podpisem, doručeným soudu nejpozději den před schůzí. Hlasování on-line insolvenční zákon nezná.",
+  "stav": "platna"
+ },
+ "insolvence-0119": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 57 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Zvolen byl tříčlenný výbor. Klíčové je, že se hlasuje odděleně: členy navržené nezajištěnými věřiteli volí hlasy nezajištěných, členy navržené zajištěnými hlasy zajištěných. Věřitel č. 1 tak získal všech 500 000 hlasů zajištěných, věřitelé č. 2 a č. 3 každý všech 200 000 hlasů nezajištěných. Navrhnout a volit sám sebe zákon nezakazuje a podmínka, aby členů navržených nezajištěnými bylo alespoň tolik jako navržených zajištěnými, je splněna dvěma ku jedné.",
+  "stav": "platna"
+ },
+ "insolvence-0120": {
+  "spravne": [
+   0,
+   2,
+   3
+  ],
+  "pramen": "§ 50 odst. 1 a § 51 insolvenčního zákona",
+  "vysvetleni": "Hlasovat mohou zjištění věřitelé bez dalšího. U popřené pohledávky přizná hlasovací právo schůze věřitelů, a pokud je nepřizná, rozhodne na návrh insolvenční soud; ten rozhoduje i u pohledávek dosud nezjištěných nebo sporných. Automaticky tedy nehlasuje každý přihlášený — § 51 odst. 4 hlasovací právo výslovně upírá mimo jiné věřitelům s pohledávkami za majetkovou podstatou a s podřízenými pohledávkami.",
+  "stav": "platna"
  }
 }
