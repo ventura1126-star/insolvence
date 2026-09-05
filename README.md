@@ -7,6 +7,12 @@ insolvence; k úspěchu je potřeba 56 správně (80 %). App to kopíruje: ostr�
 v ostrém formátu, trénink po okruzích s vysvětlením a odkazem na paragraf, a
 opakování toho, co ti nesedí.
 
+Nad tím stojí **ranní desetiminutovky** — na každý den v měsíci jedno téma:
+krátký výklad a pak otázky z banky, které se ho týkají. Číslo lekce je prostě den
+v měsíci, takže se nikde neukládá, kde jsi skončil, a prvního dalšího měsíce se
+řada vrátí na začátek. Zameškané dny zůstávají otevřené, do budoucích se nedá
+koukat. Lekce jsou v `assets/lekce.json`, pool se na konci měsíce vymění.
+
 Po testu následuje ještě případová studie a ústní část — ty app neřeší.
 Zdroj: <https://insolvence.justice.cz/zkousky-insolvencnich-spravcu/obecna-jak-zkouska-probiha/>
 

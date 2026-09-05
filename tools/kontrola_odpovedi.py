@@ -22,6 +22,44 @@ STAVY = {"platna", "zastarala"}
 ZADNA = re.compile(r"(žádná|ani jedna).{0,30}(správná|není správná)", re.I)
 
 
+def zkontroluj_lekce(otazky, odpovedi):
+    """Ranní lekce odkazují na otázky jen jejich id — hlídá, že tam všechny jsou.
+
+    Lekce s otázkou bez dohledané odpovědi by se v aplikaci ukázala bez rozboru,
+    což je horší než kratší lekce.
+    """
+    soubor = KOREN / "zkouska/assets/lekce.json"
+    if not soubor.exists():
+        return []
+
+    lekce = json.loads(soubor.read_text("utf-8"))
+    chyby = []
+    dny = [l["den"] for l in lekce]
+
+    if sorted(dny) != list(range(1, len(lekce) + 1)):
+        chyby.append(f"lekce: dny nejdou 1..{len(lekce)} bez mezer a duplicit")
+
+    for l in lekce:
+        for pole in ("nazev", "oblast", "vyklad"):
+            if not l.get(pole):
+                chyby.append(f"lekce {l['den']}: chybí {pole}")
+        if len(l.get("otazky", [])) < 3:
+            chyby.append(f"lekce {l['den']}: míň než 3 otázky")
+        if len(set(l["otazky"])) != len(l["otazky"]):
+            chyby.append(f"lekce {l['den']}: opakující se otázka")
+        for oid in l["otazky"]:
+            if oid not in otazky:
+                chyby.append(f"lekce {l['den']}: otázka {oid} neexistuje")
+            elif oid not in odpovedi:
+                chyby.append(f"lekce {l['den']}: otázka {oid} nemá dohledanou odpověď")
+            elif odpovedi[oid]["stav"] != "platna":
+                chyby.append(f"lekce {l['den']}: otázka {oid} je zastaralá")
+
+    print(f"lekcí           {len(lekce)}  "
+          f"(otázek v nich {sum(len(l['otazky']) for l in lekce)})")
+    return chyby
+
+
 def main():
     otazky = {
         o["id"]: o
@@ -58,6 +96,8 @@ def main():
         posledni = len(otazka["varianty"]) - 1
         if posledni in spravne and len(spravne) > 1 and ZADNA.search(otazka["varianty"][posledni]):
             chyby.append(f"{oid}: „žádná odpověď\" se nedá kombinovat s jinou variantou")
+
+    chyby += zkontroluj_lekce(otazky, odpovedi)
 
     hotovo = sum(1 for o in odpovedi.values() if o.get("stav") == "platna")
     print(f"otázek celkem   {len(otazky)}")

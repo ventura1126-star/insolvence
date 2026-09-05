@@ -1,0 +1,414 @@
+[
+ {
+  "den": 1,
+  "nazev": "Úpadek: platební neschopnost",
+  "oblast": "Insolvence",
+  "vyklad": "Úpadek má dvě formy a plete se to. Dneska ta první.\n\nPlatební neschopnost stojí na třech znacích současně (§ 3 odst. 1): dlužník má více věřitelů, má peněžité závazky po dobu delší 30 dnů po splatnosti, a tyto závazky není schopen plnit. Chybí-li jediný z nich, o úpadek nejde — a právě na tom staví banka příkladové otázky, kde dlužníkovi zbývá jeden jediný věřitel.\n\nTřetí znak, neschopnost plnit, se dokazuje těžko, a proto k němu zákon dává čtyři vyvratitelné domněnky (§ 3 odst. 2). Má se za to, že dlužník plnit nedokáže, jestliže zastavil platby podstatné části závazků, neplní je déle než 3 měsíce po splatnosti, nelze dosáhnout uspokojení výkonem rozhodnutí či exekucí, nebo nepředložil soudem vyžádané seznamy majetku, závazků a zaměstnanců.\n\nPozor na dvě čísla vedle sebe: **30 dnů** je znak úpadku, **3 měsíce** jsou domněnka neschopnosti plnit. Otázky je schválně míchají.\n\nA pozor na pojem: platební neschopnost se týká jen závazků peněžitých. Nepeněžité závazky po splatnosti úpadek nezakládají, ať jsou jakkoli staré.",
+  "otazky": [
+   "insolvence-0005",
+   "insolvence-0006",
+   "insolvence-0009",
+   "insolvence-0010",
+   "insolvence-0012"
+  ]
+ },
+ {
+  "den": 2,
+  "nazev": "Úpadek: předlužení",
+  "oblast": "Insolvence",
+  "vyklad": "Druhá forma úpadku. Předlužen může být jen právnická osoba nebo fyzická osoba — podnikatel (§ 3 odst. 4). Nepodnikající fyzická osoba se do úpadku dostane výhradně platební neschopností, ať je její majetková situace jakkoli zoufalá.\n\nPředlužení nastane, má-li dlužník více věřitelů a souhrn jeho závazků převyšuje hodnotu jeho majetku. Klíčové je slovo souhrn: počítají se **všechny** závazky, ne jen splatné. Tím se předlužení liší od platební neschopnosti, kde naopak rozhoduje prodlení. Žádnou třicetidenní lhůtu předlužení nevyžaduje — stačí mnohost věřitelů.\n\nDruhá věc, kterou zákon výslovně říká: při stanovení hodnoty dlužníkova majetku se přihlíží také k jeho další správě, případně k dalšímu provozování podniku, lze-li důvodně předpokládat, že v tom dlužník bude moci pokračovat. Předlužení tedy není prostý účetní výpočet — funkční podnik má vyšší hodnotu než součet jeho položek na rozvaze.\n\nPrakticky: firma může mít záporný vlastní kapitál a přesto nebýt předlužena, pokud její provoz generuje hodnotu. A naopak — mnohost věřitelů chybět nesmí nikdy.",
+  "otazky": [
+   "insolvence-0007",
+   "insolvence-0013",
+   "insolvence-0014",
+   "insolvence-0016",
+   "insolvence-0017"
+  ]
+ },
+ {
+  "den": 3,
+  "nazev": "Hrozící úpadek",
+  "oblast": "Insolvence",
+  "vyklad": "Třetí stav, který zákon zná, a jediný, který ještě úpadkem není.\n\nO hrozící úpadek jde tehdy, lze-li se zřetelem ke všem okolnostem důvodně předpokládat, že dlužník nebude schopen řádně a včas splnit **podstatnou část** svých peněžitých závazků (§ 3 odst. 5). Rozeber si tu definici na tři kusy, protože každý z nich je v otázkách napadán zvlášť:\n\nZa prvé stačí důvodný předpoklad — nemusí být najisto postaveno. Za druhé jde o podstatnou část závazků, ne o všechny. Za třetí míří definice na budoucí platební neschopnost, ne na předlužení.\n\nNejdůležitější je ale to, co ze stavu plyne procesně: **insolvenční návrh pro hrozící úpadek může podat jedině dlužník** (§ 97 odst. 5). Věřitel se hrozícího úpadku dovolávat nemůže, ten musí tvrdit úpadek už nastalý. Je to tedy nástroj v rukou dlužníka — dává mu možnost jít do řízení dřív, než se situace zhorší, a otevřít si tím cestu k reorganizaci nebo oddlužení.\n\nOtázky se ptají i na to, kdo hrozící úpadek „zjišťuje\". Odpověď plyne z výše uvedeného: fakticky sám dlužník.",
+  "otazky": [
+   "insolvence-0018",
+   "insolvence-0019",
+   "insolvence-0020",
+   "insolvence-0021",
+   "insolvence-0022"
+  ]
+ },
+ {
+  "den": 4,
+  "nazev": "Na koho zákon nedopadá",
+  "oblast": "Insolvence",
+  "vyklad": "Výjimky z působnosti (§ 6) mají dvě vrstvy a otázky na tom rozdílu stojí.\n\n**Trvale** vyňaty jsou subjekty z odstavce 1: stát, územní samosprávné celky (obec i kraj), Česká národní banka, Všeobecná zdravotní pojišťovna, Garanční systém finančního trhu a jím spravované fondy, Garanční fond obchodníků s cennými papíry, veřejná vysoká škola, a právnická osoba, za jejíž dluhy se stát nebo kraj zaručil.\n\n**Dočasně** vyňaty jsou subjekty z odstavce 2, a to jen po určitou dobu: finanční instituce po dobu držení licence (banku licencuje Česká národní banka), zdravotní pojišťovna po dobu držení povolení k provádění veřejného zdravotního pojištění, a politická strana či hnutí v době vyhlášených voleb.\n\nObjeví-li se v otázce slovo **nikdy**, hledej v odstavci 1. Zdravotní pojišťovna ministerstva vnitra je vyňata jen dočasně, kdežto Všeobecná zdravotní pojišťovna trvale — to je oblíbená past.\n\nA pozor na formulace typu „kterákoliv vysoká škola\": výjimka platí jen pro veřejné. Na soukromou vysokou školu, církev, společenství vlastníků jednotek, státní podnik i advokáta insolvenční zákon dopadá normálně.",
+  "otazky": [
+   "insolvence-0027",
+   "insolvence-0028",
+   "insolvence-0029",
+   "insolvence-0030",
+   "insolvence-0031",
+   "insolvence-0032"
+  ]
+ },
+ {
+  "den": 5,
+  "nazev": "Způsoby řešení úpadku a zásady řízení",
+  "oblast": "Insolvence",
+  "vyklad": "Způsoby řešení úpadku jsou čtyři (§ 4 odst. 1): konkurs, reorganizace, oddlužení a zvláštní způsoby pro určité subjekty. **Moratorium mezi ně nepatří** — je to dočasná ochrana dlužníka před rozhodnutím o úpadku, ne způsob jeho řešení.\n\nRozhodnutím o způsobu řešení úpadku se rozumí jen tři rozhodnutí: o prohlášení konkursu, o **povolení** reorganizace a o **povolení** oddlužení. Schválení oddlužení je až následný krok a rozhodnutím o způsobu řešení není — na tom je postavená otázka, kde je správně „žádná odpověď\".\n\nZásady řízení (§ 5) stojí za přečtení celé, protože se z nich odvozuje výklad všeho ostatního. Čtyři jsou:\n\nŘízení musí být vedeno tak, aby žádný účastník nebyl nespravedlivě poškozen ani nedovoleně zvýhodněn a aby se dosáhlo rychlého, hospodárného a co nejvyššího uspokojení věřitelů. Věřitelé se **zásadně stejným nebo obdobným postavením** mají rovné možnosti — není to tedy naprostá rovnost všech, zajištěný věřitel má jiné postavení než nezajištěný. Práva nabytá v dobré víře před zahájením řízení nelze omezit, **ledaže zákon stanoví jinak** — výjimku tedy může založit jen zákon, ne úvaha soudu. A věřitelé se musí zdržet uspokojování svých pohledávek mimo řízení.",
+  "otazky": [
+   "insolvence-0023",
+   "insolvence-0024",
+   "insolvence-0025",
+   "insolvence-0026"
+  ]
+ },
+ {
+  "den": 6,
+  "nazev": "Procesní subjekty a účastníci",
+  "oblast": "Insolvence",
+  "vyklad": "Dvě kategorie, které se pletou nejvíc ze všeho, a banka je zkouší z obou stran.\n\n**Procesní subjekty** (§ 9) jsou: insolvenční soud, dlužník, věřitelé uplatňující svá práva vůči dlužníku, insolvenční správce a další správci, státní zastupitelství, které do řízení vstoupilo, a likvidátor dlužníka.\n\n**Účastníci** (§ 14 odst. 1) jsou jen dva druhy: dlužník a věřitelé, kteří uplatňují své právo vůči dlužníku. K nim § 15 přidává jiné osoby uplatňující své právo, ale jen po dobu, po kterou o něm soud jedná a rozhoduje — typicky ten, kdo podal vylučovací žalobu.\n\nZ toho plyne, co otázky testují: insolvenční správce, státní zastupitelství ani likvidátor **nejsou účastníky**, přestože jsou procesními subjekty. Insolvenční soud také ne — účastníkem řízení, které sám vede, být nemůže. A věřitel, který se nepřihlásil, není ani procesním subjektem, protože svá práva neuplatňuje.\n\nJeště jeden rozdíl: **vedlejší účastenství** je v insolvenčním řízení vyloučeno (§ 14 odst. 2), ale v incidenčních sporech je výslovně přípustné (§ 16 odst. 2). Incidenční spor je klasický sporný proces mezi žalobcem a žalovaným, kdežto insolvenční řízení je řízení mnoha účastníků.",
+  "otazky": [
+   "insolvence-0037",
+   "insolvence-0040",
+   "insolvence-0041",
+   "insolvence-0043",
+   "insolvence-0044"
+  ]
+ },
+ {
+  "den": 7,
+  "nazev": "Postoupení pohledávky za běhu řízení",
+  "oblast": "Insolvence",
+  "vyklad": "Věřitel postoupí přihlášenou pohledávku. Co se stane procesně?\n\nPředevším: **neřídí se to občanským soudním řádem.** § 18 insolvenčního zákona má přednost před § 107a i § 92 OSŘ. Samotná smlouva o postoupení změnu v osobě věřitele nezpůsobí — soud o vstupu nabyvatele musí rozhodnout.\n\nCesty jsou dvě. Buď původní věřitel podá návrh (§ 18 odst. 1), povinně na předepsaném formuláři a s písemným souhlasem nabyvatele; převod neplynoucí přímo ze zákona musí doložit veřejnou listinou nebo listinou s úředně ověřenými podpisy. Anebo věřitel s nabyvatelem učiní do protokolu u soudu společné prohlášení (§ 18 odst. 3).\n\nSoud rozhodne do 3 pracovních dnů. Nerozhodne-li, platí fikce, že návrhu vyhověl — a rozhodnutí ani nemusí vyhotovit. Odvolání proti němu není přípustné.\n\nNejčastěji zkoušený detail: **nabyvatel se stává účastníkem okamžikem, kdy soud rozhodne** (§ 19 odst. 1). Ne doručením rozhodnutí, ne jeho právní mocí a ne zveřejněním v rejstříku. Platí pro něj stav řízení v době, kdy se účastníkem stal, a vstupuje i do incidenčních sporů týkajících se nabyté pohledávky.",
+  "otazky": [
+   "insolvence-0047",
+   "insolvence-0048",
+   "insolvence-0049",
+   "insolvence-0051",
+   "insolvence-0053"
+  ]
+ },
+ {
+  "den": 8,
+  "nazev": "Ustanovení insolvenčního správce",
+  "oblast": "Insolvence",
+  "vyklad": "Jsou to dva kroky a otázky je zkouší odděleně i dohromady.\n\nKonkrétní **osobu určí předseda insolvenčního soudu** podle pořadí daného dnem zápisu sídla nebo provozovny do příslušné části seznamu (§ 25 odst. 2). Do funkce ji ale **ustanoví svým rozhodnutím insolvenční soud** (§ 25 odst. 1). Předseda tedy určuje, soud ustanovuje — obojí je správně, každé o něčem jiném.\n\nNejzazší okamžik je rozhodnutí o úpadku (§ 27 odst. 1). Dřív ustanovit lze — jako předběžného správce; a nestanoví-li soud v rozhodnutí o úpadku jinak, stává se předběžný správce správcem s plnou působností.\n\nPravidlem je výběr ze seznamu, ale není bezvýjimečné: **nelze-li nikoho ze seznamu vybrat, může být správcem i fyzická osoba v seznamu nezapsaná**, splňuje-li předpoklady pro zápis a souhlasí-li (§ 22 odst. 2). Proto neplatí varianty se slovem „pouze\".\n\nDvě další pravidla: dlužníkům tvořícím koncern určí předseda zpravidla stejnou osobu, nebrání-li tomu jiné okolnosti (§ 25 odst. 4) — obdobně u manželů. A obchodní společnost může být správcem jen jako veřejná obchodní společnost zapsaná v seznamu; zaměstnávat zapsaného správce nestačí.",
+  "otazky": [
+   "insolvence-0056",
+   "insolvence-0062",
+   "insolvence-0063",
+   "insolvence-0068",
+   "insolvence-0070"
+  ]
+ },
+ {
+  "den": 9,
+  "nazev": "Odvolání versus zproštění správce",
+  "oblast": "Insolvence",
+  "vyklad": "Nejvýnosnějších deset minut z celé insolvence. Banka na tom staví nejméně osm otázek a systematicky je zaměňuje.\n\n**Odvolání (§ 31)** je pro důležité důvody, které **nemají** původ v porušení povinností — typicky nemoc. Rozhoduje soud na návrh insolvenčního správce nebo věřitelského orgánu, anebo i bez návrhu. Učiní tak zpravidla po slyšení správce a o podaném návrhu rozhodne neprodleně. Odvolá-li ho, ustanoví současně nového.\n\n**Zproštění (§ 32)** je následek toho, že správce neplní řádně své povinnosti, nepostupuje s odbornou péčí, nebo závažně porušil důležitou povinnost uloženou zákonem či soudem. Rozhoduje soud na návrh věřitelského orgánu **nebo dlužníka**, anebo i bez návrhu.\n\nVšimni si rozdílu v navrhovatelích: u odvolání správce a věřitelský orgán, u zproštění věřitelský orgán a dlužník. Ministerstvo spravedlnosti nenavrhuje ani jedno.\n\nA do třetice: odvolat správce může i **schůze věřitelů**, konkrétně ta, která nejblíže následuje po přezkumném jednání (§ 29 odst. 1) — a ta žádný důvod uvádět nemusí. Kvórum se počítá ze **všech přihlášených** věřitelů podle výše pohledávek, ne z přítomných; nedostavit se tedy fakticky znamená hlasovat proti.",
+  "otazky": [
+   "insolvence-0074",
+   "insolvence-0076",
+   "insolvence-0085",
+   "insolvence-0086",
+   "insolvence-0088"
+  ]
+ },
+ {
+  "den": 10,
+  "nazev": "Čtyři druhy dalších správců",
+  "oblast": "Insolvence",
+  "vyklad": "Vedle insolvenčního správce zná zákon čtyři další figury a otázky je nechávají zaměnit.\n\n**Předběžný správce** (§ 27, § 112) působí před rozhodnutím o úpadku. Ustanovuje se předběžným opatřením, a soud tak musí učinit i bez návrhu, nařídil-li předběžné opatření omezující dlužníka v nakládání s podstatou v širším rozsahu než § 111. Jeho povinností je provést opatření ke zjištění dlužníkova majetku, k jeho zajištění a k přezkoumání účetnictví. Přihlášky nepřezkoumává — v té fázi ještě žádné nejsou.\n\n**Zástupce insolvenčního správce** (§ 33) se ustanoví pro případ, že by správce ze závažných důvodů nemohl **přechodně** svou funkci vykonávat. To je řešení pro nemoc, které je šetrnější než odvolání.\n\n**Oddělený správce** (§ 34) nastupuje pro ty úkony, z nichž je hlavní správce vyloučen pro svůj poměr jen k některému věřiteli. Podjatost tedy nemusí znamenat odvolání z celé funkce.\n\n**Zvláštní správce** (§ 35) řeší zvláštní problematiku vyžadující odbornou specializaci. Zpeněžování majetkové podstaty ale samo o sobě důvodem pro jeho ustanovení není.",
+  "otazky": [
+   "insolvence-0067",
+   "insolvence-0072",
+   "insolvence-0082",
+   "insolvence-0089",
+   "insolvence-0090"
+  ]
+ },
+ {
+  "den": 11,
+  "nazev": "Povinnosti a odpovědnost správce",
+  "oblast": "Insolvence",
+  "vyklad": "Základní povinnost (§ 36 odst. 1): postupovat svědomitě a s odbornou péčí a vyvinout veškeré úsilí, které lze spravedlivě požadovat, aby věřitelé byli uspokojeni v co nejvyšší míře. Společnému zájmu věřitelů musí dát přednost před zájmy vlastními i cizími.\n\nZpráva o stavu insolvenčního řízení se předkládá věřitelskému orgánu i soudu **nejméně jednou za 3 měsíce** (§ 36 odst. 2). Soud může určit jinou dobu, ale nejvýše dvanáctiměsíční. Otázka v bance nabízí rok, půl roku i měsíc — správně tedy není žádná varianta.\n\nOdpovědnost má dvě roviny. Obecná (§ 37 odst. 1): za škodu způsobenou porušením povinností nebo nepostupováním s odbornou péčí; zprostit se lze jen důkazem, že škodě nešlo zabránit ani při vynaložení veškerého úsilí.\n\nA zvláštní (§ 37 odst. 3), na kterou míří otázky o dodávkách vody a elektřiny: uzavřeš-li jako správce smlouvu a věřitel z ní nedostane zaplaceno, **odpovídáš bez ohledu na zavinění** — ale zprostíš se, prokážeš-li, že jsi v době úkonu nemohl poznat, že podstata na úhradu nestačí. Žádný strop ve výši tvé odměny zákon nestanoví; varianty, které ho nabízejí, jsou past.",
+  "otazky": [
+   "insolvence-0092",
+   "insolvence-0093",
+   "insolvence-0094",
+   "insolvence-0095"
+  ]
+ },
+ {
+  "den": 12,
+  "nazev": "Jak správce jedná a úvěrové financování",
+  "oblast": "Insolvence",
+  "vyklad": "Přešlo-li na správce oprávnění nakládat s majetkovou podstatou, jedná **svým jménem na účet dlužníka** (§ 40 odst. 3). Není tedy zástupcem dlužníka a nejedná na svůj účet. Podmínka je součástí pravidla — bez přechodu dispozičních oprávnění takto jednat nemůže. Musí se přitom označit tak, aby bylo patrné, že jedná při výkonu funkce, včetně nezaměnitelného označení dlužníka.\n\nFunkci vykonává osobně, ale může ji vykonávat i prostřednictvím svého zaměstnance nebo zaměstnance dlužníka; ve zvlášť odůvodněných případech i přes jiné odborníky. Odpovědnost tím na nikoho nepřechází.\n\n**Úvěrové financování** (§ 41) je nástroj k udržení nebo obnovení provozu podniku, který je součástí podstaty. Zahrnuje smlouvy o úvěru a obdobné, smlouvy na dodávky energií a surovin, a výslovně i smlouvy o zajištění jejich splnění. Majetek pořízený z těchto prostředků navíc nespadá pod zajištění podle dříve uzavřených smluv (§ 42 odst. 1), takže nové zástavní právo mu nepřekáží.\n\nUzavřít je může nejen správce, ale i **dlužník s dispozičními oprávněními nebo dlužník po dobu trvání moratoria** (§ 42 odst. 3). Věřitelský výbor je neuzavírá — jen k nim dává souhlas.",
+  "otazky": [
+   "insolvence-0096",
+   "insolvence-0097",
+   "insolvence-0098",
+   "insolvence-0099",
+   "insolvence-0100"
+  ]
+ },
+ {
+  "den": 13,
+  "nazev": "Součinnost třetích osob a mlčenlivost",
+  "oblast": "Insolvence",
+  "vyklad": "Součinnost (§ 43) je tvůj hlavní vyšetřovací nástroj a je dobré vědět, jak daleko sahá.\n\nOkruh povinných je široký: orgány veřejné správy včetně katastrálních úřadů a evidence vozidel, ale i notáři, soudní exekutoři, osoby vedoucí evidenci cenných papírů, finanční instituce, poskytovatelé úvěru, provozovatelé telekomunikačních a poštovních služeb, dopravci, vydavatelé tisku a bývalí zaměstnavatelé dlužníka.\n\nPoskytují ji **na písemnou žádost bez zbytečného odkladu**. Žádná šedesátidenní lhůta ani povinnost komunikovat přes soud v zákoně nejsou.\n\nRozsah je klíčový: údaje o majetku dlužníka a další údaje nutné pro výkon správy **ve stejném rozsahu, v jakém by je poskytly přímo dlužníku** (§ 43 odst. 2). Dostaneš se tedy přesně tam, kam by se dostal dlužník sám — ne dál a ne míň, a souhlas soudu k tomu nepotřebuješ.\n\n**Mlčenlivost** (§ 45) trvá i po skončení funkce, a to bez časového omezení — žádná desetiletá lhůta v zákoně není. Vztahuje se i na osoby, jejichž prostřednictvím funkci vykonáváš. Zprostit tě z ní může buď ten, v jehož zájmu ji máš, nebo insolvenční soud.",
+  "otazky": [
+   "insolvence-0103",
+   "insolvence-0104",
+   "insolvence-0106"
+  ]
+ },
+ {
+  "den": 14,
+  "nazev": "Věřitelské orgány a schůze věřitelů",
+  "oblast": "Insolvence",
+  "vyklad": "Věřitelskými orgány jsou **schůze věřitelů a věřitelský výbor nebo zástupce věřitelů** (§ 46 odst. 1). Spojka „nebo\" je podstatná — výbor a zástupce vedle sebe nestojí. Insolvenční soud ani správce věřitelskými orgány nejsou.\n\nSchůze je vrcholným orgánem: **může si vyhradit cokoli, co patří do působnosti věřitelských orgánů** (na takové usnesení ale potřebuje dvoutřetinovou většinu hlasů přítomných podle výše pohledávek), a není-li výbor ani zástupce ustanoven, vykonává i jejich působnost. Přísluší jí volba a odvolání členů výboru a jejich náhradníků.\n\n**Svolává a řídí ji insolvenční soud**, ne správce (§ 47 odst. 1). Soud tak činí z vlastní iniciativy, nebo na návrh insolvenčního správce, věřitelského výboru anebo **alespoň dvou věřitelů**, jejichž pohledávky činí alespoň desetinu přihlášených. Jeden věřitel s desetinou tedy nestačí. Schůzi svolá tak, aby se konala do 30 dnů od žádosti.\n\nOznámení zveřejní soud **vyhláškou** s uvedením předmětu jednání, místa a termínu (§ 48 odst. 1). Projednat lze jen to, co v oznámení bylo — další body jen za přítomnosti všech věřitelů.",
+  "otazky": [
+   "insolvence-0107",
+   "insolvence-0108",
+   "insolvence-0111",
+   "insolvence-0112",
+   "insolvence-0113"
+  ]
+ },
+ {
+  "den": 15,
+  "nazev": "Hlasování na schůzi věřitelů",
+  "oblast": "Insolvence",
+  "vyklad": "K platnosti usnesení se vyžaduje prostá většina hlasů **přítomných nebo řádně zastoupených** věřitelů, počítaná podle výše jejich pohledávek (§ 49 odst. 1). A pak přijde nejzkoušenější číslo v celé kapitole: **na každou 1 Kč pohledávky připadá jeden hlas.** Varianta s deseti korunami je past.\n\nHlasovat mohou přítomní věřitelé i přítomní zástupci. Nepřítomný věřitel může hlasovat písemně **hlasovacím lístkem** — podáním takto výslovně označeným, s úředně ověřeným podpisem, doručeným soudu nejpozději den před schůzí (§ 50 odst. 2). Hlasování on-line insolvenční zákon nezná.\n\nKdo hlasovat může? Zjištění věřitelé bez dalšího. U popřené pohledávky přizná hlasovací právo **schůze věřitelů**, a nepřizná-li je, rozhodne na návrh **soud** (§ 51 odst. 1). Soud rozhoduje i u pohledávek dosud nezjištěných nebo sporných.\n\nAutomaticky tedy nehlasuje každý přihlášený: § 51 odst. 4 hlasovací právo výslovně upírá věřitelům s pohledávkami za majetkovou podstatou, s pohledávkami jim na roveň postavenými, s pohledávkami vyloučenými ze způsobu řešení úpadku a s pohledávkami podřízenými.",
+  "otazky": [
+   "insolvence-0116",
+   "insolvence-0117",
+   "insolvence-0120",
+   "insolvence-0122"
+  ]
+ },
+ {
+  "den": 16,
+  "nazev": "Věřitelský výbor: počet a volba",
+  "oblast": "Insolvence",
+  "vyklad": "Výbor má **nejméně 3 a nejvýše 7 členů**, o konkrétním počtu rozhoduje schůze (§ 56 odst. 2). Ustanovit ho je povinné, je-li přihlášených věřitelů více než 50 — u nepatrného konkursu a u oddlužení povinné není.\n\nNejcennější je pravidlo o volbě (§ 57 odst. 2): **členy navržené nezajištěnými věřiteli volí hlasy nezajištěných, členy navržené zajištěnými hlasy zajištěných.** Hlasuje se tedy odděleně po skupinách, ne dohromady.\n\nVyzkoušej si to na příkladu z banky. Na schůzi je zajištěný věřitel s 500 000 Kč a dva nezajištění po 100 000 Kč. Každý navrhne sám sebe a hlasuje pro sebe. Kdo počítá většinu ze všech přítomných, dojde k závěru, že prošel jen ten zajištěný — a spadne do pasti. Ve skutečnosti získal zajištěný všech 500 000 hlasů své skupiny a oba nezajištění všech 200 000 hlasů té své. Zvolen je **tříčlenný výbor**.\n\nNavrhnout a volit sám sebe zákon nezakazuje. A je splněna i podmínka z § 57 odst. 1, že členů navržených nezajištěnými musí být alespoň tolik jako navržených zajištěnými — dva ku jedné.",
+  "otazky": [
+   "insolvence-0119",
+   "insolvence-0127",
+   "insolvence-0128",
+   "insolvence-0130"
+  ]
+ },
+ {
+  "den": 17,
+  "nazev": "Podjatost ve věřitelském výboru",
+  "oblast": "Insolvence",
+  "vyklad": "Členem i náhradníkem může být **jen přihlášený věřitel, který se svým zvolením souhlasí** (§ 59 odst. 1). Zajištěný i nezajištěný, a zjištění pohledávky se nevyžaduje.\n\nVyloučeny jsou osoby, u nichž je vzhledem k jejich vztahu k dlužníkovi důvod pochybovat o nepodjatosti (§ 59 odst. 2). Zákon je vypočítává slovem **zejména** — výčet je tedy demonstrativní a rozhoduje obecné kritérium. Jmenuje: osoby dlužníkovi blízké, vedoucí zaměstnance dlužníka, společníky dlužníka (s výjimkou akcionářů) a osoby tvořící s dlužníkem koncern.\n\nDvě pasti, na kterých banka staví tři varianty téže otázky:\n\n**Zaměstnanci nejsou vyloučeni plošně** — jen ti vedoucí ve smyslu zákoníku práce. Řadový zaměstnanec může být členem výboru i hlasovat na schůzi, a jeho mzdová pohledávka není podřízená; naopak je postavena na roveň pohledávkám za majetkovou podstatou.\n\n**Akcionář je vyloučen jen podmíněně** — vadí, jen působí-li v orgánech dlužníka nebo vlastní-li akcie v souhrnné hodnotě přesahující desetinu základního kapitálu.\n\nProtože je výčet otevřený, spadne pod něj i jednatel dlužníka nebo stoprocentní akcionář společnosti, která je jediným společníkem dlužníka — ten dlužníka nepřímo ovládá, čímž s ním tvoří koncern.",
+  "otazky": [
+   "insolvence-0131",
+   "insolvence-0132",
+   "insolvence-0133",
+   "insolvence-0134"
+  ]
+ },
+ {
+  "den": 18,
+  "nazev": "Zánik funkce ve výboru a postoupení pohledávky",
+  "oblast": "Insolvence",
+  "vyklad": "Funkce zaniká ze tří důvodů (§ 63 odst. 1): **odvoláním, odstoupením nebo ukončením účasti** věřitele v insolvenčním řízení. „Zproštění\" mezi nimi není — to zákon zná jen u správce. Odstoupit lze kdykoli, podáním soudu, a důvody se uvádět nemusí (§ 65 odst. 1).\n\nZbytek lekce patří jedné situaci, na které banka staví čtyři varianty téhož příkladu. Člen výboru postoupí pohledávku — co s jeho členstvím? Rozhodují dva detaily § 63 odst. 2:\n\nPostoupí **celou** pohledávku **jedné** osobě → členství přechází na nabyvatele.\n\nPostoupí celou pohledávku **více osobám** (třeba 95 % a 5 %) → zákon přechod výslovně vylučuje. Účast původního věřitele skončila, funkce mu zanikla, ale nepřechází na nikoho — nastupuje náhradník.\n\nPostoupí **jen část** (95 %, 5 % si nechá) → jeho účast v řízení nekončí, takže si členství podrží a na nabyvatele nepřechází nic.\n\nStejná pravidla platí obdobně pro zástupce věřitelů (§ 68 odst. 2). A proti rozhodnutí o odvolání z funkce je odvolání přípustné — podat je může každá z odvolaných osob (§ 64 odst. 1).",
+  "otazky": [
+   "insolvence-0138",
+   "insolvence-0139",
+   "insolvence-0140",
+   "insolvence-0142",
+   "insolvence-0144"
+  ]
+ },
+ {
+  "den": 19,
+  "nazev": "Dohled soudu a pořádkové pokuty",
+  "oblast": "Insolvence",
+  "vyklad": "Soud v řízení nejen rozhoduje, ale průběžně vykonává **dohlédací činnost** (§ 10). V jejím rámci je oprávněn vyžadovat od správce zprávy a vysvětlení, **nahlížet do jeho účtů**, konat potřebná šetření, dávat mu pokyny a uložit mu, aby si vyžádal stanovisko věřitelského výboru (§ 11 odst. 2).\n\nMůže také zrušit usnesení schůze věřitelů, odporuje-li společnému zájmu věřitelů — ale § 54 to obestavěl třemi omezeními, a banka je zkouší každé zvlášť:\n\nJediným důvodem je rozpor se společným zájmem. Soud nesmí jednat z vlastní iniciativy, jen **na návrh správce nebo věřitele, který hlasoval proti**. A musí rozhodnout **ještě do skončení té schůze**, která usnesení přijala — druhý den už je pozdě.\n\nNavíc je z toho vyňato pět druhů usnesení: o odvolání a volbě nového správce, o přiznání hlasovacího práva, o způsobu řešení úpadku, o reorganizačním plánu a o způsobu oddlužení. V těchto věcech je vůle věřitelů konečná.\n\n**Pořádková pokuta** (§ 81): správci ji lze uložit i opakovaně, nejvýše však do úhrnné částky **200 000 Kč**. Členům a náhradníkům výboru se ukládá podle § 53 občanského soudního řádu, důvodem je neúčast bez omluvy nebo jiné neplnění povinností.",
+  "otazky": [
+   "insolvence-0124",
+   "insolvence-0125",
+   "insolvence-0164",
+   "insolvence-0165",
+   "insolvence-0166"
+  ]
+ },
+ {
+  "den": 20,
+  "nazev": "Doručování v insolvenčním řízení",
+  "oblast": "Insolvence",
+  "vyklad": "Tady je všechno naruby proti běžnému civilnímu řízení, tak pozor.\n\nZákladní pravidlo (§ 71 odst. 1): doručuje se **pouze vyhláškou**, tedy zveřejněním písemnosti v insolvenčním rejstříku, ledaže zákon pro určité případy nebo osoby stanoví i zvláštní způsob. Doručování každému zvlášť je výjimka, ne pravidlo. Za doručenou se písemnost považuje **dnem, hodinou a minutou** zveřejnění.\n\nPak přijde past z § 74, na které banka staví tři otázky. Zveřejnění v rejstříku je **dokladem o doručení i tehdy**, doručuje-li se zároveň zvláštním způsobem. Ale je-li s doručením spojen běh lhůty k opravnému prostředku, **začíná lhůta běžet až ode dne zvláštního doručení**.\n\nPrakticky: rozhodnutí zveřejněné 1. 7. a doručené ti do datové schránky 3. 7. máš doručené prvním datem, ale odvolací lhůta ti běží od druhého. O tom musíš být poučen.\n\nTobě jako správci soud doručuje **do datové schránky** (§ 77 odst. 1) — a máš-li ji, vždycky do ní. Na jinou adresu jen tehdy, není-li to možné.\n\nA opačným směrem: posíláš-li výzvu k opravě přihlášky, musí to být **s dodejkou nebo do vlastních rukou** (§ 76 odst. 2), protože potřebuješ doklad o doručení pro běh lhůty.",
+  "otazky": [
+   "insolvence-0151",
+   "insolvence-0152",
+   "insolvence-0154",
+   "insolvence-0157",
+   "insolvence-0161",
+   "insolvence-0162"
+  ]
+ },
+ {
+  "den": 21,
+  "nazev": "Kdy jsou rozhodnutí účinná",
+  "oblast": "Insolvence",
+  "vyklad": "Dva režimy, které banka testuje párem skoro identických příkladů. Rozdíl je jediný: proběhlo jednání?\n\n**Mimo jednání** (§ 89 odst. 1): rozhodnutí je účinné **okamžikem zveřejnění v insolvenčním rejstříku** — dnem, hodinou a minutou. Ne až začátkem toho dne, ne až právní mocí, a vyvěšení na úřední desce na tom nic nemění.\n\n**Při jednání** (§ 89 odst. 2): rozhodnutí je účinné, jakmile je vyhlášeno účastníkům a správci, kteří byli přítomni. U rozhodnutí ve věci samé je rozhodné veřejné vyhlášení. Zveřejnění v rejstříku pak soud provede nejpozději do konce následujícího pracovního dne, ale účinnost už nastala dřív.\n\nVezmi si dva příklady z banky. Rozhodnutí o odvolání správce zveřejněné 3. 8. v 9:25 a vyvěšené na desce v 9:31 — správce přestal funkci vykonávat v **9:25**. Rozhodnutí o zproštění vyhlášené při jednání 1. 9. v 10:25 a zveřejněné až ve 14:25 — funkce skončila v **10:25**.\n\nJeště k formě: soud rozhoduje usnesením a v jeho záhlaví se uvádí označení soudu, jména a příjmení soudců, označení dlužníka a jeho zástupce, označení osoby, o jejímž podání se rozhoduje, a označení věci (§ 88 odst. 2).",
+  "otazky": [
+   "insolvence-0158",
+   "insolvence-0179",
+   "insolvence-0180",
+   "insolvence-0181",
+   "insolvence-0182"
+  ]
+ },
+ {
+  "den": 22,
+  "nazev": "Tři zákazy a předběžná opatření",
+  "oblast": "Insolvence",
+  "vyklad": "Nejdřív tři věci, které v insolvenčním řízení prostě nejdou, a je dobré je mít pohromadě:\n\n**Prominutí zmeškání lhůty** není přípustné (§ 83) — a totéž platí pro zmeškání jednání včetně schůze věřitelů a přezkumného jednání. Zmeškaná lhůta k přihlášce je nenávratně pryč. **Přerušení řízení** není přípustné (§ 84). **Obnova řízení** není přípustná (§ 96); zbývá jen žaloba pro zmatečnost.\n\nNaopak soud musí být aktivní tam, kde jde o úpadek: je povinen provést i jiné důkazy potřebné k jeho osvědčení, než které navrhli účastníci (§ 86). Zjišťování úpadku tedy neovládá zásada projednací.\n\n**Předběžné opatření** (§ 82) nařizuje výhradně insolvenční soud — správce tuto pravomoc nemá — a může tak učinit **i bez návrhu**. Jistotu neskládá dlužník nikdy a neskládá ji ani jiný navrhovatel opatření, které by soud mohl nařídit i bez návrhu.\n\nJeho obsahem může být ustanovení předběžného správce, omezení **některého** z účinků zahájení řízení (ne všech), uložení jistoty insolvenčnímu navrhovateli, a dále souhlas se započtením nebo naopak zákaz započtení vzájemných pohledávek.",
+  "otazky": [
+   "insolvence-0169",
+   "insolvence-0172",
+   "insolvence-0176",
+   "insolvence-0177",
+   "insolvence-0178",
+   "insolvence-0183"
+  ]
+ },
+ {
+  "den": 23,
+  "nazev": "Insolvenční návrh",
+  "oblast": "Insolvence",
+  "vyklad": "Řízení lze zahájit **jen na návrh** a zahajuje se dnem, kdy návrh dojde věcně příslušnému soudu (§ 97 odst. 1). Vést je lze pouze před insolvenčním soudem, kterým je krajský soud — rozhodčí ani okresní soud k němu příslušný není.\n\nForma je přísná a otázky na ní stojí. Návrh v **listinné podobě musí být opatřen úředně ověřeným podpisem** osoby, která jej podala; jinak se k němu **vůbec nepřihlíží** (§ 97 odst. 2). Není to vada, kterou by šlo odstranit — návrh prostě neexistuje.\n\nPodepíše-li ho zmocněnec na základě procesní plné moci, je podmínka splněna jen tehdy, je-li úředně ověřeným podpisem opatřena **připojená plná moc** (§ 97 odst. 3). Ověřuje se tedy podpis zmocnitele, ne podpis na návrhu.\n\nElektronicky lze podat datovou schránkou nebo podáním s uznávaným elektronickým podpisem. Předepsaný formulář se u insolvenčního návrhu **nevyžaduje** — ten zákon žádá až u návrhu na povolení oddlužení a u přihlášky pohledávky.\n\nA kdo návrh podat musí: dlužník-právnická osoba nebo podnikatel bez zbytečného odkladu poté, co se o úpadku dozvěděl, a spolu s ním jeho statutární orgán, zákonní zástupci a **likvidátor** (§ 98).",
+  "otazky": [
+   "insolvence-0002",
+   "insolvence-0021",
+   "insolvence-0184",
+   "insolvence-0185",
+   "insolvence-0001"
+  ]
+ },
+ {
+  "den": 24,
+  "nazev": "Likvidátor a státní zastupitelství",
+  "oblast": "Insolvence",
+  "vyklad": "Dvě figury, které jsou procesními subjekty, ale ne účastníky.\n\n**Likvidátor dlužníka** (§ 70) vykonává v insolvenčním řízení svou působnost jen v rozsahu, v jakém **nepřešla na insolvenčního správce** — tedy s omezením, ne bez něj. Do jeho působnosti patří i součinnost se správcem, kterou zákon ukládá dlužníkovi.\n\nPůsobnost vykonává už od podání insolvenčního návrhu; jde-li o návrh věřitele, až od rozhodnutí o úpadku. Tvrzení, že ji od podání návrhu nevykonává vůbec, tedy neplatí.\n\nZa svou činnost má právo na náhradu nutných výdajů a přiměřenou odměnu, jejíž výši určí soud na návrh správce. Důležité pro praxi: tento nárok je **pohledávkou za majetkovou podstatou**, ne pohledávkou, kterou by musel přihlašovat.\n\nA jak už víš z lekce o návrhu: u právnické osoby v likvidaci má likvidátor povinnost insolvenční návrh podat, a činí tak jménem dlužníka.\n\n**Státní zastupitelství** může vstoupit do insolvenčního řízení, incidenčního sporu i moratoria. Je-li proti rozhodnutí opravný prostředek přípustný, může jej podat (§ 69) — zákon to neváže na to, zda stejné právo mají všichni nebo většina účastníků, ani se neomezuje na řádné opravné prostředky.",
+  "otazky": [
+   "insolvence-0147",
+   "insolvence-0148",
+   "insolvence-0149",
+   "insolvence-0150"
+  ]
+ },
+ {
+  "den": 25,
+  "nazev": "Účetní období a rozsah účetnictví",
+  "oblast": "Audit",
+  "vyklad": "Účetním obdobím je dvanáct nepřetržitě po sobě jdoucích měsíců — buď kalendářní rok, nebo hospodářský rok, který může začínat prvním dnem jiného měsíce než leden.\n\nPřechod na hospodářský rok má jednu tvrdou podmínku: záměr se musí oznámit místně příslušnému správci daně z příjmů **nejméně 3 měsíce před plánovanou změnou** nebo před koncem běžného účetního období, podle toho, co nastane dřív. Jinak účetní období zůstává nezměněno. Změnu lze v běžném období provést jen jednou.\n\nRozsah: nestanoví-li zákon jinak, vede se účetnictví **v plném rozsahu** (§ 9 odst. 1). Zjednodušený rozsah je výjimka pro malou nebo mikro účetní jednotku bez povinnosti auditu, a jen pokud je zároveň jednou z forem vyjmenovaných v § 9 odst. 4 — mezi nimi bytové družstvo, spolek, ústav, nadační fond, společenství vlastníků jednotek nebo obecně prospěšná společnost. **Akciová společnost ani s. r. o. ve výčtu nejsou**, takže na zjednodušený rozsah nedosáhnou ani bez auditu.\n\nPrávnické osoby se sídlem v ČR vedou účetnictví **ode dne vzniku do dne zániku** — ne od zahájení činnosti a ne od prvního dokladu. Vazba na zahájení činnosti platí pro zahraniční osoby podnikající u nás.\n\nA účetní doklady se vyhotovují **bez zbytečného odkladu** po zjištění skutečností, které zachycují — žádné měsíční ani čtvrtletní intervaly zákon nestanoví.",
+  "otazky": [
+   "audit-0001",
+   "audit-0003",
+   "audit-0004",
+   "audit-0005",
+   "audit-0060"
+  ]
+ },
+ {
+  "den": 26,
+  "nazev": "Účetní závěrka a zveřejňování",
+  "oblast": "Audit",
+  "vyklad": "Závěrka je nedílný celek a tvoří ji **rozvaha, výkaz zisku a ztráty a příloha** (§ 18 odst. 1). Přehled o peněžních tocích a přehled o změnách vlastního kapitálu povinnou součástí obecně nejsou — sestavují je obchodní společnosti, ale malé a mikro účetní jednotky jsou jich zproštěny. Právě proto má otázka na povinné součásti **tři** správné varianty.\n\nPo sestavení závěrky lze účetní knihy znovu otevřít jen **do okamžiku schválení závěrky, nejpozději do konce následujícího účetního období**, a jen z důvodu, že obsah položek neodpovídá skutečnému stavu (§ 17 odst. 7). Po schválení už další zápisy přidávat nelze.\n\n**Mezitímní závěrka** se od řádné liší dvěma věcmi: účetní knihy se **neuzavírají** a inventarizace se provádí jen pro účely vyjádření ocenění (§ 19 odst. 3).\n\nOvěření auditorem se váže na velikost jednotky. V konkursu je úleva: závěrku sestavenou v jeho průběhu není nutné mít ověřenou **po dobu 36 kalendářních měsíců**, pokud o ověření nerozhodne věřitelský výbor (§ 20 odst. 2).\n\n**Výroční zprávu** vyhotovují jednotky s povinností auditu (§ 21 odst. 1) — zápis do rejstříku sám o sobě povinnost nezakládá. Zveřejňuje se **uložením do sbírky listin**; povinnost je splněna předáním rejstříkovému soudu. A závěrka i výroční zpráva se uschovávají **10 let**, ostatní záznamy 5 let.",
+  "otazky": [
+   "audit-0007",
+   "audit-0008",
+   "audit-0009",
+   "audit-0012",
+   "audit-0013",
+   "audit-0014",
+   "audit-0025"
+  ]
+ },
+ {
+  "den": 27,
+  "nazev": "Odpisování dlouhodobého majetku",
+  "oblast": "Audit",
+  "vyklad": "Základní pravidlo (§ 28 odst. 1): o majetku účtuje a odpisuje ho účetní jednotka, která k němu má **vlastnické nebo jiné právo**. Odpisování uživatelem bez ohledu na vlastnictví je výjimka pro případy výslovně uvedené ve větě druhé — a jedním z nich je smlouva o výpůjčce po dobu zajištění závazků převodem práva. Tam odpisuje **původní vlastník, který věc dál používá**, ne nový vlastník držící ji jako zajištění.\n\nU **finančního leasingu** je to naopak: odpisuje ten, kdo majetek poskytuje, tedy pronajímatel jako vlastník (§ 28 odst. 3). Nájemce ne, i když věc po celou dobu užívá a nakonec ji nabude.\n\n**Účetní odpis** vyjadřuje skutečné opotřebení: podle odpisového plánu, po dobu předpokládané životnosti, a jen do výše ocenění v účetnictví. Doby podle zákona o daních z příjmů jsou daňová kategorie a krýt se nemusí. Z toho plyne i rozdíl v přerušování: **daňové odpisy přerušit lze** (a využívá se to k daňové optimalizaci), **účetní ne** — jinak by účetnictví přestalo věrně zobrazovat opotřebení.\n\nOdpisovat lze až od **uvedení do stavu způsobilého užívání** — ne od zaplacení a ne od přijetí faktury.\n\nNeodpisují se pozemky ani umělecká díla, která nejsou součástí stavby. A z daňového odpisování jsou vyloučeny mimo jiné inventarizační přebytky nezaúčtované ve prospěch výnosů.",
+  "otazky": [
+   "audit-0016",
+   "audit-0017",
+   "audit-0018",
+   "audit-0019",
+   "audit-0020",
+   "audit-0021",
+   "audit-0022",
+   "audit-0024"
+  ]
+ },
+ {
+  "den": 28,
+  "nazev": "Rozvaha a základní účetní operace",
+  "oblast": "Audit",
+  "vyklad": "Deset minut na věci, které vypadají triviálně, dokud je otázka nepřehodí.\n\n**Aktiva jsou majetek, pasiva jsou zdroje jeho krytí.** Vlastní kapitál patří mezi pasiva, ne mezi aktiva. Do vlastních zdrojů patří základní kapitál, zisk a fondy ze zisku; vydané dluhopisy a závazky vůči zaměstnancům jsou cizí zdroje. Pohledávky za odběrateli a poskytnuté půjčky jsou aktiva, tedy majetek — ne zdroj krytí.\n\nČtyři typové operace, které banka zkouší:\n\nNákup materiálu placený **hotově** → pohyb uvnitř aktiv, zásoby nahoru, pokladna dolů, bilanční suma beze změny. Úhrada závazku dodavateli **z úvěru** → pohyb uvnitř pasiv, závazek zaniká, úvěr vzniká, suma beze změny. Přijetí faktury za materiál **převzatý na sklad** → zásoby nahoru, závazek nahoru, suma roste na obou stranách. Splacení úvěru **z běžného účtu** → peníze dolů, závazek dolů, suma klesá na obou stranách.\n\nJeště pár zařazení, která se pletou: záporný zůstatek běžného účtu je fakticky čerpaný úvěr, takže patří **do pasiv** jako krátkodobý bankovní úvěr. Poskytnuté zálohy na zásoby se vykazují **v zásobách**, ne mezi pohledávkami. Rezervy jsou **cizí zdroj**. A vztah ke státu z titulu DPH je podle salda buď pohledávka, nebo závazek — vždycky rozvahová položka, nikdy náklad či výnos.",
+  "otazky": [
+   "audit-0051",
+   "audit-0052",
+   "audit-0054",
+   "audit-0055",
+   "audit-0056",
+   "audit-0057",
+   "audit-0034",
+   "audit-0044",
+   "audit-0047"
+  ]
+ },
+ {
+  "den": 29,
+  "nazev": "Daň z příjmů: základy",
+  "oblast": "Daně",
+  "vyklad": "Poplatníky daně z příjmů fyzických osob jsou **fyzické osoby** — bez dalších podmínek (§ 2 odst. 1). Bydliště, nemovitost ani pracovní poměr okruh poplatníků nezužují; rozhodují jen o tom, zda je poplatník rezidentem (daní celosvětové příjmy), nebo nerezidentem (jen příjmy ze zdrojů v ČR).\n\nObvykle se zdržujícím je ten, kdo na území ČR pobývá **alespoň 183 dnů v příslušném kalendářním roce, a to souvisle nebo v několika obdobích** (§ 2 odst. 4). Obě varianty jsou tedy správné a do lhůty se počítá každý započatý den.\n\nPředmětem daně je pět druhů příjmů: ze závislé činnosti, ze samostatné činnosti, z kapitálového majetku, z nájmu a ostatní. Pozor na rozdíl mezi **předmětem daně** a **osvobozením** — prodej cenných papírů držených měsíc nesplní tříletý časový test pro osvobození, ale předmětem daně být nepřestává.\n\nMimo předmět daně stojí naopak například příjmy z rozšíření nebo vypořádání společného jmění manželů a z vypořádání spoluvlastnictví rozdělením věci podle velikosti podílů (§ 3 odst. 4).\n\nA pro tvou budoucí praxi: **odměna insolvenčního správce** je příjmem z výkonu nezávislého povolání podle § 7 odst. 2 písm. c) — stejně jako u znalce. Výtěžek ze zpeněžení podstaty naopak tvým příjmem není, ten patří do podstaty.",
+  "otazky": [
+   "dane-0001",
+   "dane-0002",
+   "dane-0003",
+   "dane-0004",
+   "dane-0010",
+   "dane-0011"
+  ]
+ },
+ {
+  "den": 30,
+  "nazev": "Daně v insolvenčním řízení",
+  "oblast": "Daně",
+  "vyklad": "Nejpraktičtější daňová lekce, samé věci z reálného spisu.\n\n**Přiznání za část období do úpadku** se podává do 30 dnů od účinnosti rozhodnutí o úpadku a lhůtu nelze prodloužit (§ 244 odst. 1 daňového řádu). Po prohlášení konkursu tuto povinnost plníš ty jako správce. Nemáš-li podklady, povinnost zanikne — ale jen tehdy, sdělíš-li to správci daně ve stejné lhůtě a poskytneš součinnost ke stanovení daně podle pomůcek.\n\nPast je v § 245: **stejná třicetidenní lhůta pohltí i přiznání za předchozí rok**, pokud jeho lhůta ještě neuplynula. Při úpadku 1. 2. 2013 tak přiznání za rok 2012 muselo být podáno do 4. 3. 2013 — třicátý den vyšel na neděli, takže se lhůta posunula na pondělí.\n\n**Přeplatek vzniklý po úpadku** lze podle § 242 odst. 3 použít jen na pohledávky za majetkovou podstatou. Finanční úřad ho tedy nesmí převést na starší přihlášený nedoplatek — a vylučuje to daňový řád, ne insolvenční zákon.\n\nA po přezkumném jednání: ukončením přezkumu nabývá nepravomocné rozhodnutí o pohledávce, která není za podstatou, **právní moci přímo ze zákona** (§ 243 odst. 2). Podané odvolání se tím stane bezpředmětným a Odvolací finanční ředitelství je zastaví.\n\nOsvobozen je i příjem z **odpisu dluhu při reorganizaci nebo oddlužení** (§ 4a písm. h).",
+  "otazky": [
+   "dane-0021",
+   "dane-0055",
+   "dane-0057",
+   "dane-0058",
+   "dane-0059",
+   "dane-0060"
+  ]
+ },
+ {
+  "den": 31,
+  "nazev": "Exekuce z pohledu správce",
+  "oblast": "Obecné právo a exekuce",
+  "vyklad": "Poslední lekce měsíce a pro tvou praxi jedna z nejužitečnějších — exekuce a insolvence se potkávají pořád.\n\n**Exekuční řízení je zahájeno, když návrh dojde exekutorovi** (§ 35 odst. 2 exekučního řádu), a to dnem, hodinou a minutou. Ne pověřením soudu. Návrh se podává **u exekutora**, ne u soudu; soud se do věci dostane až na základě jeho žádosti o pověření, kterou musí podat do 15 dnů. Soud pak pověření vydá do 15 dnů, jsou-li splněny zákonné předpoklady.\n\n**Exekutora si vybírá oprávněný** (§ 28) — tím se exekuce zásadně liší od soudního výkonu rozhodnutí. Návrh musí označit exekutora včetně sídla a uvést povinnost, která má být vymožena; **způsob exekuce se v něm neuvádí**, ten volí sám exekutor v exekučním příkazu tak, aby nebyl zřejmě nevhodný.\n\nExekuční titul musí nést doložku **vykonatelnosti**, ne právní moci, a připojuje se v originále nebo úředně ověřené kopii. Exekuční příkaz sám titulem není a **exekutorský zápis jím přestal být už v roce 2013** — zůstal jen notářský zápis se svolením k vykonatelnosti.\n\nA do třetice: **exekutor není účastníkem** exekučního řízení. Účastníky jsou oprávněný, povinný a případně manžel povinného; exekutorovy úkony se považují za úkony exekučního soudu.",
+  "otazky": [
+   "obecne_pravo_a_exekuce-0167",
+   "obecne_pravo_a_exekuce-0168",
+   "obecne_pravo_a_exekuce-0170",
+   "obecne_pravo_a_exekuce-0171",
+   "obecne_pravo_a_exekuce-0172",
+   "obecne_pravo_a_exekuce-0173",
+   "obecne_pravo_a_exekuce-0174",
+   "obecne_pravo_a_exekuce-0175"
+  ]
+ }
+]

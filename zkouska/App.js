@@ -12,6 +12,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import otazky from './assets/otazky.json';
 import odpovedi from './assets/odpovedi.json';
+import lekce from './assets/lekce.json';
 import {
   OTAZEK_V_TESTU,
   hraniceUspechu,
@@ -21,6 +22,7 @@ import {
   vyhodnot,
   zodpovezene,
 } from './src/test';
+import { lekceProDen, odemceneLekce, otazkyLekce } from './src/lekce';
 import { aktualizujChyby, nactiChyby, ulozChyby } from './src/ulozeni';
 
 const theme = {
@@ -34,7 +36,8 @@ const theme = {
 };
 
 export default function App() {
-  // 'domu' | { rezim: 'ostry' } | { rezim: 'trenink', oblast } | { rezim: 'chyby' }
+  // 'domu' | 'lekce-seznam' | { rezim: 'ostry' | 'chyby' }
+  // | { rezim: 'trenink', oblast } | { rezim: 'lekce', den }
   const [kam, setKam] = useState('domu');
   const [chyby, setChyby] = useState([]);
 
@@ -56,6 +59,15 @@ export default function App() {
         <StatusBar barStyle="dark-content" backgroundColor={theme.paper} />
         {kam === 'domu' ? (
           <Domu chyby={chyby} onOtevri={setKam} />
+        ) : kam === 'lekce-seznam' ? (
+          <SeznamLekci onOtevri={setKam} onZpet={() => setKam('domu')} />
+        ) : kam.rezim === 'lekce' ? (
+          <Lekce
+            den={kam.den}
+            chyby={chyby}
+            onZapisChyby={zapisChyby}
+            onZpet={() => setKam('domu')}
+          />
         ) : (
           <Beh
             zadani={kam}
@@ -83,6 +95,8 @@ function Domu({ chyby, onOtevri }) {
           {hraniceUspechu(OTAZEK_V_TESTU)} správně.
         </Text>
       </View>
+
+      <RanniLekce onOtevri={onOtevri} />
 
       <Volba
         popisek="Ostrý test"
@@ -120,6 +134,162 @@ function Domu({ chyby, onOtevri }) {
   );
 }
 
+/** „1 otázka, 2 otázky, 5 otázek" — čeština počítá jinak než šablona s číslem. */
+function pocetOtazek(n) {
+  if (n === 1) return '1 otázka';
+  if (n >= 2 && n <= 4) return `${n} otázky`;
+  return `${n} otázek`;
+}
+
+/**
+ * Karta dnešní ranní lekce.
+ *
+ * Datum se čte při každém vykreslení, takže po půlnoci stačí appku otevřít
+ * znovu a nabídne další lekci. V krátkém měsíci se na poslední lekce nedostane
+ * a karta zmizí — pool se stejně na konci měsíce vyměňuje.
+ */
+function RanniLekce({ onOtevri }) {
+  const dnesni = lekceProDen(lekce);
+  const kolikOdemceno = odemceneLekce(lekce).length;
+
+  if (!dnesni) return null;
+
+  return (
+    <View>
+      <Text style={styles.sekce}>Ranní deset minut</Text>
+      <Pressable
+        onPress={() => onOtevri({ rezim: 'lekce', den: dnesni.den })}
+        accessibilityRole="button"
+        accessibilityLabel={`Dnešní lekce: ${dnesni.nazev}`}
+        style={({ pressed }) => [styles.lekceKarta, pressed && styles.volbaStisk]}
+      >
+        <Text style={styles.lekceCislo}>
+          {dnesni.den}. lekce · {dnesni.oblast}
+        </Text>
+        <Text style={styles.lekceNazev}>{dnesni.nazev}</Text>
+        <Text style={styles.volbaNapoveda}>
+          Výklad a {pocetOtazek(dnesni.otazky.length)} k procvičení
+        </Text>
+      </Pressable>
+
+      {kolikOdemceno > 1 && (
+        <Pressable
+          onPress={() => onOtevri('lekce-seznam')}
+          accessibilityRole="button"
+          hitSlop={8}
+          style={styles.odkaz}
+        >
+          <Text style={styles.odkazText}>Dřívější lekce ({kolikOdemceno - 1}) →</Text>
+        </Pressable>
+      )}
+    </View>
+  );
+}
+
+function SeznamLekci({ onOtevri, onZpet }) {
+  const dostupne = odemceneLekce(lekce);
+
+  return (
+    <ScrollView contentContainerStyle={styles.domu} showsVerticalScrollIndicator={false}>
+      <Zpet onPress={onZpet} popisek="← Domů" />
+      <Text style={styles.nazev}>Lekce</Text>
+      <Text style={styles.podnadpis}>
+        Každý den v měsíci jedno téma. Co jsi zameškal, můžeš dohnat; prvního
+        dalšího měsíce se řada vrátí na začátek s novým poolem.
+      </Text>
+
+      {dostupne.map((l, i) => (
+        <Pressable
+          key={l.den}
+          onPress={() => onOtevri({ rezim: 'lekce', den: l.den })}
+          accessibilityRole="button"
+          style={({ pressed }) => [styles.volba, pressed && styles.volbaStisk]}
+        >
+          <Text style={styles.lekceCislo}>
+            {l.den}. {i === 0 ? '· dnes' : `· ${l.oblast}`}
+          </Text>
+          <Text style={styles.volbaPopisek}>{l.nazev}</Text>
+        </Pressable>
+      ))}
+    </ScrollView>
+  );
+}
+
+/**
+ * Výkladový text lekce.
+ *
+ * Text se píše s hvězdičkami kolem zdůrazněných míst, protože v JSON se jinak
+ * důraz zapsat nedá; tady se rozpadne na běžné a tučné úseky. React Native
+ * markdown sám nerenderuje, takže bez tohohle by se hvězdičky vypsaly doslova.
+ */
+function Vyklad({ text }) {
+  return (
+    <View style={styles.vyklad}>
+      {text.split('\n\n').map((odstavec, i) => (
+        <Text key={i} style={styles.vykladText}>
+          {odstavec.split('**').map((usek, j) =>
+            j % 2 ? (
+              <Text key={j} style={styles.vykladDuraz}>
+                {usek}
+              </Text>
+            ) : (
+              usek
+            )
+          )}
+        </Text>
+      ))}
+    </View>
+  );
+}
+
+function Lekce({ den, chyby, onZapisChyby, onZpet }) {
+  const [procvicuje, setProcvicuje] = useState(false);
+  const dnesni = lekce.find((l) => l.den === den);
+
+  if (!dnesni) {
+    return (
+      <View style={styles.stred}>
+        <Text style={styles.nadpisVysledku}>Lekce není</Text>
+        <Zpet onPress={onZpet} popisek="← Zpátky" />
+      </View>
+    );
+  }
+
+  if (procvicuje) {
+    return (
+      <Beh
+        zadani={{ rezim: 'lekce', den }}
+        chyby={chyby}
+        onZapisChyby={onZapisChyby}
+        onZpet={onZpet}
+      />
+    );
+  }
+
+  return (
+    <ScrollView contentContainerStyle={styles.beh} showsVerticalScrollIndicator={false}>
+      <Zpet onPress={onZpet} popisek="← Domů" />
+
+      <Text style={styles.postup}>
+        {dnesni.den}. lekce · {dnesni.oblast}
+      </Text>
+      <Text style={styles.zneni}>{dnesni.nazev}</Text>
+
+      <Vyklad text={dnesni.vyklad} />
+
+      <Pressable
+        onPress={() => setProcvicuje(true)}
+        accessibilityRole="button"
+        style={({ pressed }) => [styles.tlacitko, pressed && styles.tlacitkoStisk]}
+      >
+        <Text style={styles.tlacitkoText}>
+          Procvičit ({pocetOtazek(dnesni.otazky.length)})
+        </Text>
+      </Pressable>
+    </ScrollView>
+  );
+}
+
 function Volba({ popisek, napoveda, onPress, neaktivni }) {
   return (
     <Pressable
@@ -143,6 +313,9 @@ function Volba({ popisek, napoveda, onPress, neaktivni }) {
 /** Připraví sadu otázek pro zvolený režim. */
 function sadaProRezim(zadani, chyby) {
   if (zadani.rezim === 'ostry') return sestavTest(otazky, odpovedi);
+  if (zadani.rezim === 'lekce') {
+    return otazkyLekce(lekce.find((l) => l.den === zadani.den), otazky);
+  }
   if (zadani.rezim === 'chyby') {
     const hledane = new Set(chyby);
     return otazky.filter((o) => hledane.has(o.id));
@@ -383,6 +556,33 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   volbaStisk: { backgroundColor: '#F3EEE7' },
+
+  lekceKarta: {
+    borderRadius: 16,
+    paddingVertical: 22,
+    paddingHorizontal: 20,
+    backgroundColor: theme.ink,
+  },
+  lekceCislo: {
+    fontSize: 12,
+    letterSpacing: 1.2,
+    textTransform: 'uppercase',
+    color: theme.accent,
+  },
+  lekceNazev: {
+    marginTop: 8,
+    marginBottom: 6,
+    fontSize: 22,
+    fontWeight: '600',
+    letterSpacing: -0.4,
+    color: theme.paper,
+  },
+  odkaz: { paddingVertical: 12, alignSelf: 'flex-start' },
+  odkazText: { fontSize: 15, color: theme.accent },
+
+  vyklad: { marginTop: 4, gap: 16 },
+  vykladText: { fontSize: 17, lineHeight: 27, color: theme.ink },
+  vykladDuraz: { fontWeight: '600' },
   volbaNeaktivni: { backgroundColor: 'transparent', borderStyle: 'dashed' },
   volbaPopisek: { fontSize: 19, fontWeight: '500', color: theme.ink },
   textNeaktivni: { color: theme.muted },
