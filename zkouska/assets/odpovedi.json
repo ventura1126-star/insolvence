@@ -3581,5 +3581,110 @@
   "pramen": "§ 128 odst. 1 insolvenčního zákona",
   "vysvetleni": "Soud takový návrh odmítne, jestliže pro jeho vady nelze pokračovat v řízení, a učiní tak neprodleně, nejpozději do 7 dnů poté, co byl návrh podán. K odstranění vad nevyzývá — § 43 občanského soudního řádu se výslovně nepoužije. Sedmidenní lhůta k doplnění se týká jen chybějících příloh podle odstavce 2, ne vad samotného návrhu.",
   "stav": "platna"
+ },
+ "insolvence-0262": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 128 odst. 1 a § 128a insolvenčního zákona",
+  "vysvetleni": "Odmítnout návrh lze ze čtyř důvodů: chybí náležitosti, je nesrozumitelný nebo je neurčitý — v těchto třech případech jen tehdy, nelze-li pro ten nedostatek pokračovat v řízení (§ 128 odst. 1) — a dále je-li věřitelský návrh zjevně bezdůvodný (§ 128a). Správné jsou proto všechny čtyři varianty.",
+  "stav": "platna"
+ },
+ "insolvence-0263": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 128 odst. 1 a § 128a insolvenčního zákona",
+  "vysvetleni": "Odmítnout návrh lze ze čtyř důvodů: chybí náležitosti, je nesrozumitelný nebo je neurčitý — v těchto třech případech jen tehdy, nelze-li pro ten nedostatek pokračovat v řízení (§ 128 odst. 1) — a dále je-li věřitelský návrh zjevně bezdůvodný (§ 128a). Každý z nabízených důvodů je tedy důvodem k odmítnutí — správně není žádná varianta.",
+  "stav": "platna"
+ },
+ "insolvence-0264": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 128 odst. 1 a § 128a odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Věřitelský návrh soud odmítne, je-li zjevně bezdůvodný — a zákon výslovně jmenuje případ, kdy navrhovatel jeho podáním zjevně sleduje zneužití svých práv na úkor dlužníka. U nesrozumitelnosti a neurčitosti se ale § 43 občanského soudního řádu nepoužije, takže soud k opravě nevyzývá. A chybí-li úředně ověřený podpis, návrh se neodmítá — vůbec se k němu nepřihlíží.",
+  "stav": "platna"
+ },
+ "insolvence-0265": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 128a odst. 2 písm. d) a § 144 insolvenčního zákona",
+  "vysvetleni": "Nezaplatí-li věřitel zálohu splatnou spolu s podáním návrhu, je návrh zjevně bezdůvodný a soud jej odmítne. Neosvědčení úpadku ani aktivní legitimace vede k zamítnutí, ne k odmítnutí — to jsou dvě různá rozhodnutí. A pro nedostatek majetku dnes návrh zamítnout nelze vůbec.",
+  "stav": "platna",
+  "poznamka": "Obě pravidla se od roku 2014 změnila. Dřív se návrh pro nedostatek majetku zamítal, dnes to § 144 výslovně zakazuje. A nezaplacení zálohy dříve vedlo jen k zastavení řízení; odmítnutí pro zjevnou bezdůvodnost přibylo až s povinnou zálohou u věřitelských návrhů."
+ },
+ "insolvence-0266": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 128 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Chybějící příloha není důvodem k okamžitému odmítnutí. Soud nejprve určí navrhovateli lhůtu k doplnění — a teprve nebude-li návrh ve lhůtě doplněn, odmítne jej. U dlužníka, který podává návrh na základě povinnosti podle § 98 odst. 1, přitom sedmidenní strop pro tuto lhůtu neplatí.",
+  "stav": "platna"
+ },
+ "insolvence-0267": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 128 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Soud určí lhůtu k doplnění, která nesmí být delší než 7 dnů. Slovo „zásadně\" je na místě, protože zákon zná výjimku: u insolvenčního návrhu podaného dlužníkem na základě povinnosti podle § 98 odst. 1 se sedmidenní strop neuplatní. U věřitelského návrhu tedy platí bez výjimky.",
+  "stav": "platna"
+ },
+ "insolvence-0268": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 129 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zpětvzetí je možné až do **vydání** rozhodnutí o úpadku, anebo do **právní moci** jiného rozhodnutí o insolvenčním návrhu. Ty dva okamžiky se liší schválně: u rozhodnutí o úpadku stačí jeho vydání, u odmítnutí, zamítnutí či zastavení se čeká na právní moc.",
+  "stav": "platna",
+  "poznamka": "Věřitel, který vzal návrh zpět, jej může pro tutéž pohledávku znovu podat až po 6 měsících — a totéž platí pro toho, kdo od něj pohledávku nabyl (§ 129 odst. 2)."
+ },
+ "insolvence-0269": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 130 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Uhradil-li dlužník po zahájení řízení pohledávku navrhovatele a ten proto vzal návrh zpět, má se při rozhodování o náhradě nákladů v pochybnostech za to, že zastavení řízení zavinil dlužník. Je to vyvratitelná domněnka — dlužník může prokázat opak.",
+  "stav": "platna"
+ },
+ "insolvence-0270": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 98 odst. 2 a § 136 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Jsou-li jednatelé oprávněni jednat samostatně, má povinnost podat návrh každý z nich a podpis jediného z nich stačí. Přílohy úpadek osvědčují, takže soud rozhodne o úpadku — druhého jednatele vyzývat nemusí a jednání nařizovat také ne.",
+  "stav": "platna"
+ },
+ "insolvence-0271": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 134 insolvenčního zákona",
+  "vysvetleni": "Soud musí do 10 dnů od podání návrhu učinit úkony směřující k rozhodnutí věci a o návrhu rozhodnout bez zbytečného odkladu — u nesporného dlužnického návrhu nejpozději do 15 dnů od jeho podání. Je-li vyhlášeno moratorium, neskončí tato lhůta dřív než 10 dnů po jeho zániku.",
+  "stav": "platna"
+ },
+ "insolvence-0272": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 88 odst. 1 a § 136 insolvenčního zákona",
+  "vysvetleni": "V insolvenčním řízení soud rozhoduje usnesením — rozsudky se tu nevydávají vůbec. Platí to i pro rozhodnutí o úpadku.",
+  "stav": "platna"
+ },
+ "insolvence-0273": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 136 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí o úpadku obsahuje mimo jiné výrok určující místo a termín schůze věřitelů a přezkumného jednání a výrok ukládající dlužníku sestavit a odevzdat správci seznamy. Lhůta k přihlášení pohledávek je 2 měsíce, ne 90 dnů. A výzva, aby dlužníkovi dlužníci plnili správci, se v rozhodnutí o úpadku neobjevuje — ta patří do předběžného opatření podle § 113, případně k prohlášení konkursu.",
+  "stav": "platna"
  }
 }
