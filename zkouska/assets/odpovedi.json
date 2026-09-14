@@ -2921,5 +2921,196 @@
   "pramen": "§ 97 odst. 3 insolvenčního zákona",
   "vysvetleni": "Podepíše-li návrh jen zástupce na základě procesní plné moci, je podmínka úředně ověřeného podpisu splněna jen tehdy, je-li úředně ověřeným podpisem opatřena připojená plná moc — tedy podpis zmocnitele. Vlastnoruční podpis nestačí a podpis zmocněnce na plné moci se ověřovat nemusí.",
   "stav": "platna"
+ },
+ "insolvence-0118": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 50 odst. 2 a 3, § 176 a § 391 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Formulář zákon předepisuje u přihlášky pohledávky, u návrhu na povolení oddlužení a u hlasovacího lístku, jehož náležitosti stanoví prováděcí předpis. U námitek proti usnesení schůze věřitelů žádný formulář předepsán není.",
+  "stav": "platna"
+ },
+ "insolvence-0146": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 56 odst. 1 a 3 a § 68 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zástupce věřitelů volí schůze místo věřitelského výboru tam, kde volba výboru není povinná. Povinná je při více než 50 přihlášených věřitelích, ale tohle pravidlo prolamuje odstavec 3: u nepatrného konkursu a u oddlužení povinná není bez ohledu na počet věřitelů. I s více než padesáti věřiteli tedy zástupce zvolit lze. Insolvenční soud zástupce věřitelů nejmenuje nikdy.",
+  "stav": "platna"
+ },
+ "insolvence-0186": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 97 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Řízení se zahajuje podáním insolvenčního návrhu u soudu, ne až zveřejněním vyhlášky a rozhodně ne rozhodnutím o úpadku. Žádná dvouhodinová prodleva neexistuje.",
+  "stav": "platna",
+  "poznamka": "Přesně vzato je rozhodný den, kdy návrh soudu dojde — tedy okamžik doručení, ne odeslání."
+ },
+ "insolvence-0187": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 97 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Řízení se zahajuje dnem, kdy insolvenční návrh dojde věcně příslušnému soudu (§ 97 odst. 1) — tedy krajskému soudu. Místní příslušnost se nevyžaduje: došel-li návrh krajskému soudu, který není místně příslušný, je řízení přesto zahájeno a věc se jen postoupí. Vyhláška oznamující zahájení se zveřejňuje až potom a řízení nezahajuje.",
+  "stav": "platna"
+ },
+ "insolvence-0188": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 97 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Řízení se zahajuje dnem, kdy insolvenční návrh dojde věcně příslušnému soudu (§ 97 odst. 1) — tedy krajskému soudu. Místní příslušnost se nevyžaduje: došel-li návrh krajskému soudu, který není místně příslušný, je řízení přesto zahájeno a věc se jen postoupí. Vyhláška oznamující zahájení se zveřejňuje až potom a řízení nezahajuje. Nezáleží ani na tom, zda je den pracovní. K jakémukoli soudu to ale nestačí — okresní soud věcně příslušný není.",
+  "stav": "platna"
+ },
+ "insolvence-0189": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 97 odst. 2 a 4 insolvenčního zákona",
+  "vysvetleni": "Následkem je, že se k návrhu nepřihlíží — ne odmítnutí, zamítnutí ani zastavení řízení. Rozdíl je podstatný: odmítnutí i zamítnutí jsou rozhodnutí o návrhu, který existuje, kdežto tady se na návrh hledí, jako by nebyl podán vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0190": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 97 odst. 2 a 4 insolvenčního zákona",
+  "vysvetleni": "V listinné podobě musí návrh nést úředně ověřený podpis osoby, která jej podala. Prostý písemný návrh bez ověření, e-mail bez uznávaného elektronického podpisu ani fax podmínku nesplňují a soud k nim nepřihlíží.",
+  "stav": "platna"
+ },
+ "insolvence-0191": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 97 odst. 1, 2 a 5 insolvenčního zákona",
+  "vysvetleni": "Návrh musí být písemný — v listinné podobě s úředně ověřeným podpisem, nebo elektronicky datovou schránkou či s uznávaným elektronickým podpisem. Pro hrozící úpadek jej může podat jedině dlužník; pro úpadek již nastalý ale i věřitel, takže tvrzení, že jej podává pouze dlužník, neplatí.",
+  "stav": "platna"
+ },
+ "insolvence-0192": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 97 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Návrh musí být opatřen úředně ověřeným podpisem, uznávaným elektronickým podpisem, anebo odeslán z datové schránky navrhovatele. Osobní podání na podatelně ověření nenahrazuje. Podat jej může dlužník i věřitel — výhradní právo dlužníka platí jen u hrozícího úpadku.",
+  "stav": "platna"
+ },
+ "insolvence-0156": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 74 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Je-li s doručením spojen běh lhůty k opravnému prostředku, začíná lhůta běžet ode dne zvláštního doručení — okamžik doručení tedy na běh odvolací lhůty vliv má. A protože právní moc nastává marným uplynutím této lhůty, ovlivňuje doručení i ji, ale jen tam, kde je odvolání vůbec přípustné. Není-li, je rozhodnutí pravomocné bez ohledu na doručení.",
+  "stav": "platna"
+ },
+ "insolvence-0193": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 97 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Insolvenční návrh pro hrozící úpadek je oprávněn podat jedině dlužník. Věřitel může tvrdit jen úpadek už nastalý — a nezáleží na tom, kolik věřitelů se spojí ani kdo jsou.",
+  "stav": "platna"
+ },
+ "insolvence-0194": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 97 odst. 5 insolvenčního zákona",
+  "vysvetleni": "Jen dlužník. Ani banka, ani státní zastupitelství, ani kterýkoli jiný věřitel se hrozícího úpadku dovolávat nemůže. Je to nástroj, který má dlužníkovi umožnit jít do řízení dřív, než se jeho situace zhorší.",
+  "stav": "platna"
+ },
+ "insolvence-0195": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 98 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Povinnost se váže na úpadek, ne na jeho konkrétní formu — vzniká tedy jak při platební neschopnosti, tak při předlužení. U hrozícího úpadku povinnost není, tam má dlužník jen možnost návrh podat.",
+  "stav": "platna"
+ },
+ "insolvence-0196": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 98 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Povinnost mají vedle dlužníka i jeho zákonní zástupci, statutární orgán a likvidátor právnické osoby v likvidaci; návrh podávají jménem dlužníka. Je-li těchto osob víc a jednají-li samostatně, má povinnost každá z nich. Likvidátorova povinnost se přitom neomezuje na předlužení a „správce podniku\" zákon nezná.",
+  "stav": "platna"
+ },
+ "insolvence-0197": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 98 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Povinnost podat insolvenční návrh má podle § 98 odst. 1 dlužník, který je právnickou osobou nebo fyzickou osobou — podnikatelem, a to bez zbytečného odkladu poté, co se o svém úpadku dozvěděl nebo při náležité pečlivosti dozvědět měl. Nepodnikající fyzické osoby se netýká vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0198": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 98 odst. 1 a § 6 odst. 1 písm. c) insolvenčního zákona",
+  "vysvetleni": "Povinnost podat insolvenční návrh má podle § 98 odst. 1 dlužník, který je právnickou osobou nebo fyzickou osobou — podnikatelem, a to bez zbytečného odkladu poté, co se o svém úpadku dozvěděl nebo při náležité pečlivosti dozvědět měl. Nepodnikající fyzické osoby se netýká vůbec. Česká národní banka je navíc z působnosti insolvenčního zákona úplně vyňata, takže se jí povinnost týkat ani nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0199": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 101 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Vyhláška se zveřejňuje nejpozději do 2 hodin poté, co návrh soudu došel. Výjimka míří na situaci, kdy návrh dojde méně než 2 hodiny před koncem úředních hodin nebo ve dnech pracovního klidu — pak běží lhůta až od zahájení úředních hodin nejbližšího pracovního dne. Nedostatek náležitostí návrhu zveřejnění vyhlášky neodkládá.",
+  "stav": "platna",
+  "poznamka": "Dnešní § 101 odst. 1 váže dvouhodinovou lhůtu na návrh podaný dlužníkem. Je-li návrh spojen s návrhem na povolení oddlužení, činí lhůta 3 pracovní dny."
+ },
+ "insolvence-0202": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 103 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Návrh musí kromě obecných náležitostí podání obsahovat označení insolvenčního navrhovatele a dlužníka a dále rozhodující skutečnosti osvědčující úpadek nebo hrozící úpadek, označení důkazů a to, čeho se navrhovatel domáhá. Údaj o obratu dlužníka zákon nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0203": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 103 odst. 2 a § 105 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Zaměstnanec podává návrh jako věřitel, takže musí doložit splatnou pohledávku vůči dlužníkovi a připojit její přihlášku. A jako z každého návrhu z něj musí být patrno, čeho se domáhá. Seznam majetku dlužníka nepředkládá — ten připojuje dlužník k vlastnímu návrhu.",
+  "stav": "platna",
+  "poznamka": "Zaměstnanec má proti jiným navrhovatelům dvě úlevy: podle § 108 mu nelze uložit zálohu na náklady řízení a podle § 82 odst. 2 písm. c) ani jistotu."
+ },
+ "insolvence-0204": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 104 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Dlužník k návrhu připojuje čtyři věci (§ 104 odst. 1): seznam majetku včetně pohledávek, seznam závazků s uvedením věřitelů, seznam zaměstnanců a listiny dokládající úpadek nebo hrozící úpadek. Účetní závěrka ani výpis z rejstříku trestů mezi přílohami nejsou a přihlášku pohledávky připojuje naopak věřitel, podává-li návrh on (§ 105 odst. 1).",
+  "stav": "platna"
+ },
+ "insolvence-0205": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 104 odst. 1 a § 105 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Dlužník k návrhu připojuje čtyři věci (§ 104 odst. 1): seznam majetku včetně pohledávek, seznam závazků s uvedením věřitelů, seznam zaměstnanců a listiny dokládající úpadek nebo hrozící úpadek. Účetní závěrka ani výpis z rejstříku trestů mezi přílohami nejsou a přihlášku pohledávky připojuje naopak věřitel, podává-li návrh on (§ 105 odst. 1).",
+  "stav": "platna"
+ },
+ "insolvence-0206": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 104 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Dlužník k návrhu připojuje čtyři věci (§ 104 odst. 1): seznam majetku včetně pohledávek, seznam závazků s uvedením věřitelů, seznam zaměstnanců a listiny dokládající úpadek nebo hrozící úpadek. Účetní závěrka ani výpis z rejstříku trestů mezi přílohami nejsou a přihlášku pohledávky připojuje naopak věřitel, podává-li návrh on (§ 105 odst. 1).",
+  "stav": "platna"
  }
 }
