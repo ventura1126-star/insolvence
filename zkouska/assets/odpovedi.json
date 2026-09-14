@@ -3686,5 +3686,95 @@
   "pramen": "§ 136 odst. 2 insolvenčního zákona",
   "vysvetleni": "Rozhodnutí o úpadku obsahuje mimo jiné výrok určující místo a termín schůze věřitelů a přezkumného jednání a výrok ukládající dlužníku sestavit a odevzdat správci seznamy. Lhůta k přihlášení pohledávek je 2 měsíce, ne 90 dnů. A výzva, aby dlužníkovi dlužníci plnili správci, se v rozhodnutí o úpadku neobjevuje — ta patří do předběžného opatření podle § 113, případně k prohlášení konkursu.",
   "stav": "platna"
+ },
+ "insolvence-0274": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 136 odst. 2 písm. d) insolvenčního zákona",
+  "vysvetleni": "Lhůtu k přihlášení stanoví soud ve výzvě obsažené v rozhodnutí o úpadku, spolu s poučením o následcích jejího zmeškání. Je propadná — prominutí zmeškání lhůty je v insolvenčním řízení podle § 83 vyloučené, takže opožděná přihláška je nenávratně ztracená.",
+  "stav": "platna"
+ },
+ "insolvence-0275": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 136 odst. 2 písm. b) insolvenčního zákona",
+  "vysvetleni": "Insolvenční správce se ustanovuje výrokem rozhodnutí o úpadku, a to bez ohledu na způsob řešení úpadku — u oddlužení stejně jako u konkursu. Nejpozdějším okamžikem pro jeho ustanovení je právě rozhodnutí o úpadku (§ 27 odst. 1).",
+  "stav": "platna"
+ },
+ "insolvence-0276": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 136 odst. 2 písm. d) insolvenčního zákona",
+  "vysvetleni": "Lhůta k přihlášení pohledávek činí **2 měsíce** a soud ji nestanoví v rozmezí — je pevná. Platí i tehdy, je-li s rozhodnutím o úpadku spojeno rozhodnutí o povolení oddlužení.",
+  "stav": "platna",
+  "poznamka": "Tady se zákon změnil: dřív byla u oddlužení spojeného s rozhodnutím o úpadku lhůta zkrácená na 30 dnů. Dnes už žádná taková výjimka není."
+ },
+ "insolvence-0277": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 137 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Není-li způsobem řešení úpadku oddlužení, soud schůzi věřitelů svolat musí, a to tak, aby se konala nejpozději do 3 měsíců od rozhodnutí o úpadku. Není to jeho možnost a nezávisí to na počtu přihlášených věřitelů.",
+  "stav": "platna"
+ },
+ "insolvence-0278": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 137 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Přezkumné jednání se musí konat do 2 měsíců po uplynutí lhůty k přihlášení pohledávek, ale zároveň ne dřív než 7 dnů po jejím uplynutí — správce potřebuje čas přihlášky zpracovat. Z důvodů hodných zvláštního zřetele může soud lhůtu prodloužit.",
+  "stav": "platna"
+ },
+ "insolvence-0279": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 137 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Rozhodná je lhůta k přihlášení pohledávek, ne rozhodnutí o úpadku: přezkumné jednání se musí konat nejpozději do 2 měsíců po jejím uplynutí, a zároveň ne dřív než 7 dnů po ní.",
+  "stav": "platna"
+ },
+ "insolvence-0280": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 138 a § 27 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Rozhodnutí o úpadku soud doručuje dlužníku a insolvenčnímu správci do vlastních rukou, a ustanovení o insolvenčním správci platí přiměřeně i pro předběžného správce. Dostane je tedy zvlášť — ne jen zveřejněním v rejstříku, a Obchodní věstník ani úřední deska v insolvenčním řízení roli nehrají.",
+  "stav": "platna"
+ },
+ "insolvence-0281": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 138 insolvenčního zákona",
+  "vysvetleni": "Dlužníku a insolvenčnímu správci se rozhodnutí o úpadku doručuje zvlášť, do vlastních rukou. Vedle toho se samozřejmě zveřejňuje v rejstříku — proto neplatí varianty se slovem „výhradně\". Všem známým věřitelům se zvlášť nedoručuje.",
+  "stav": "platna"
+ },
+ "insolvence-0282": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 89 odst. 1 a 2 a § 140 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Účinky předběžného opatření trvají i po rozhodnutí o úpadku — zákon to říká výslovně; soud je ovšem může i bez návrhu změnit. Účinky samotného rozhodnutí o úpadku nastávají zveřejněním v rejstříku, ale jen tehdy, nebylo-li vyhlášeno při jednání; bylo-li vyhlášeno, nastávají už vyhlášením. Slovo „vždy\" proto neplatí.",
+  "stav": "platna"
+ },
+ "insolvence-0283": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 122 odst. 3, § 140 odst. 2 a § 324 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Zákaz započtení navázaný na zveřejnění návrhu zná zákon jen u reorganizace (§ 324 odst. 3) a vedle toho po dobu moratoria. U návrhu na povolení oddlužení žádné takové pravidlo není — uplatní se obecný režim § 140 odst. 2, podle kterého je započtení po rozhodnutí o úpadku přípustné, byly-li podmínky splněny před rozhodnutím o způsobu řešení úpadku. Žádná z nabízených variant tomu neodpovídá.",
+  "stav": "platna"
+ },
+ "insolvence-0284": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 140 odst. 2 a 3 insolvenčního zákona",
+  "vysvetleni": "Započtení je po rozhodnutí o úpadku přípustné, byly-li jeho podmínky splněny před rozhodnutím o způsobu řešení úpadku — ale nepřípustné je, pokud se věřitel ohledně započitatelné pohledávky nestal přihlášeným věřitelem, získal ji neúčinným úkonem, v době nabytí věděl o úpadku, anebo dosud neuhradil splatnou pohledávku dlužníka v převyšujícím rozsahu. Přihlášení je tedy podmínkou, ne překážkou.",
+  "stav": "platna"
  }
 }
