@@ -3425,5 +3425,161 @@
   "pramen": "§ 115 insolvenčního zákona",
   "vysvetleni": "Moratorium může navrhnout jedině dlužník, a to jen ten, který je podnikatelem. Právnická osoba v likvidaci to právo nemá, takže tvrzení, že je může navrhnout dlužník-právnická osoba, je příliš široké. Věřitel ani finanční úřad návrh podat nemohou.",
   "stav": "platna"
+ },
+ "insolvence-0244": {
+  "spravne": [
+   0,
+   1,
+   3
+  ],
+  "pramen": "§ 115, § 116 odst. 2, § 119 odst. 1 a § 125 insolvenčního zákona",
+  "vysvetleni": "Moratorium může navrhnout jen dlužník-podnikatel, vyžaduje souhlas většiny věřitelů podle výše pohledávek a navrhnout je lze i před zahájením insolvenčního řízení. Trvat ale může nejdéle 3 měsíce, a jen na návrh dlužníka je lze prodloužit nejvýše o dalších 30 dnů — šest měsíců tedy ne.",
+  "stav": "platna"
+ },
+ "insolvence-0245": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 115 a § 117 insolvenčního zákona",
+  "vysvetleni": "Návrh na moratorium může podat jedině dlužník, a to jen ten, který je podnikatelem — věřitelský návrh na moratorium zákon nezná. Soud o něm rozhodne do konce pracovního dne nejblíže následujícího po dni, kdy mu návrh došel; patnáctidenní lhůta v zákoně není.",
+  "stav": "platna"
+ },
+ "insolvence-0246": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 115 a § 125 insolvenčního zákona",
+  "vysvetleni": "Moratorium lze vyhlásit i před zahájením insolvenčního řízení, a vždy jen na návrh dlužníka. Formulace „na návrh insolvenčního navrhovatele\" neplatí — navrhovatelem může být i věřitel, a ten moratorium navrhnout nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0247": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 116 odst. 2 insolvenčního zákona",
+  "vysvetleni": "K návrhu musí dlužník připojit písemné prohlášení většiny svých věřitelů, počítané podle výše jejich pohledávek, že s vyhlášením moratoria souhlasí — a podpisy na něm musí být úředně ověřené (§ 116 odst. 2). Nepočítá se tedy po hlavách a nevyžaduje se souhlas všech zajištěných ani tříčtvrtinová většina. Kromě prohlášení se připojuje i poslední účetní závěrka a seznamy, které se jinak přikládají k insolvenčnímu návrhu.",
+  "stav": "platna"
+ },
+ "insolvence-0248": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 116 odst. 2 insolvenčního zákona",
+  "vysvetleni": "K návrhu musí dlužník připojit písemné prohlášení většiny svých věřitelů, počítané podle výše jejich pohledávek, že s vyhlášením moratoria souhlasí — a podpisy na něm musí být úředně ověřené (§ 116 odst. 2). Nepočítá se tedy po hlavách a nevyžaduje se souhlas všech zajištěných ani tříčtvrtinová většina.",
+  "stav": "platna"
+ },
+ "insolvence-0249": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 117 insolvenčního zákona",
+  "vysvetleni": "Soud rozhodne do konce pracovního dne nejblíže následujícího po dni, kdy mu návrh došel, a § 43 občanského soudního řádu se přitom nepoužije — vady tedy odstraňovat nevyzývá. Je to jedna z nejkratších lhůt v celém zákoně.",
+  "stav": "platna"
+ },
+ "insolvence-0250": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 118 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud moratorium vyhlásí, jsou-li splněny předpoklady podle § 115 a 116 a nebylo-li dosud rozhodnuto o insolvenčním návrhu; jinak návrh odmítne. Nevyzývá k odstranění vad ani neposkytuje lhůtu — u moratoria na to není čas, soud rozhoduje do konce nejblíže následujícího pracovního dne a § 43 občanského soudního řádu se nepoužije.",
+  "stav": "platna"
+ },
+ "insolvence-0251": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 120 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Po dobu trvání moratoria zůstávají zachovány účinky spojené se zahájením insolvenčního řízení, ale rozhodnutí o úpadku vydat nelze. Tím spíš nelze rozhodnout o způsobu řešení úpadku — to na rozhodnutí o úpadku navazuje.",
+  "stav": "platna"
+ },
+ "insolvence-0252": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 120, § 121 odst. 1 a § 123 insolvenčního zákona",
+  "vysvetleni": "Nelze vydat rozhodnutí o úpadku a nelze provést exekuci — účinky zahájení řízení totiž trvají dál. Přihlásit pohledávku ale věřitelé mohou, jen účinky těchto úkonů nastanou až zánikem moratoria. A předběžného správce soud ustanovit může; navrhne-li to dlužník, ustanoví ho dokonce přímo v rozhodnutí o vyhlášení moratoria.",
+  "stav": "platna"
+ },
+ "insolvence-0253": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 120 odst. 1, § 121 odst. 1 a § 122 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Nelze vydat rozhodnutí o úpadku a nelze provést výkon rozhodnutí. Se započtením je to ale obráceně, než varianta tvrdí: po dobu moratoria je započtení nepřípustné, ledaže soud určí jinak předběžným opatřením — a platí to i tehdy, byly-li podmínky započtení splněny ještě před vyhlášením moratoria. Řízení o vymožení pohledávky zahájit lze, jen je nelze provést.",
+  "stav": "platna"
+ },
+ "insolvence-0254": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 122 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Přednostně lze hradit závazky bezprostředně související se zachováním provozu podniku, které vznikly v posledních 30 dnech před vyhlášením moratoria nebo po něm. Tříměsíční okno zákon nezná.",
+  "stav": "platna"
+ },
+ "insolvence-0255": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 120 odst. 1 a § 122 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Moratorium dlužníkovi umožňuje upřednostnit právě ty věřitele, jejichž pohledávky bezprostředně souvisí se zachováním provozu podniku — v tom je jeho smysl, udržet firmu v chodu. Libovolného věřitele upřednostnit nemůže a rozhodnutí o úpadku po dobu moratoria vydat nelze.",
+  "stav": "platna"
+ },
+ "insolvence-0256": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 122 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Započtení vzájemných pohledávek je po dobu moratoria nepřípustné, ledaže insolvenční soud určí jinak předběžným opatřením. Zákaz platí i tehdy, byly-li zákonné podmínky započtení splněny ještě před vyhlášením moratoria — na okamžik splnění podmínek se tedy nehledí.",
+  "stav": "platna"
+ },
+ "insolvence-0257": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 122 odst. 3 a § 324 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Zákaz započtení s výhradou předběžného opatření soudu platí ve dvou situacích: po dobu trvání moratoria a od okamžiku zveřejnění návrhu na povolení reorganizace v insolvenčním rejstříku. U reorganizace se tedy neváže až na usnesení o jejím povolení, ale už na samotný návrh. V obou případech platí zákaz i tehdy, byly-li podmínky započtení splněny dřív.",
+  "stav": "platna"
+ },
+ "insolvence-0258": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 124 odst. 1 a 5 insolvenčního zákona",
+  "vysvetleni": "Moratorium zaniká uplynutím doby, na kterou bylo vyhlášeno, nebo dřív rozhodnutím soudu o jeho zrušení (§ 124 odst. 1), a dále tím, že soud insolvenční návrh zamítne či odmítne anebo řízení o něm zastaví (§ 124 odst. 5). Jiné důvody zákon nezná. Dohoda většiny věřitelů sama o sobě moratorium neukončí — většina věřitelů počítaná podle výše pohledávek může jen navrhnout jeho zrušení a rozhoduje o něm soud. A sdělení dlužníka, že úpadek překonal, důvodem zániku není vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0259": {
+  "spravne": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 124 odst. 1 a 5 insolvenčního zákona",
+  "vysvetleni": "Moratorium zaniká uplynutím doby, na kterou bylo vyhlášeno, nebo dřív rozhodnutím soudu o jeho zrušení (§ 124 odst. 1), a dále tím, že soud insolvenční návrh zamítne či odmítne anebo řízení o něm zastaví (§ 124 odst. 5). Jiné důvody zákon nezná. Správné jsou proto všechny čtyři varianty.",
+  "stav": "platna"
+ },
+ "insolvence-0260": {
+  "spravne": [
+   1,
+   2
+  ],
+  "pramen": "§ 128 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Odmítnutí přichází ve dvou případech: návrh neobsahuje všechny náležitosti nebo je nesrozumitelný či neurčitý a pro tyto nedostatky nelze pokračovat v řízení, anebo navrhovatel ve stanovené lhůtě nedoplní zákonem požadované přílohy. Chybí-li úředně ověřený podpis, návrh se neodmítá — vůbec se k němu nepřihlíží. A na formuláři se insolvenční návrh nepodává.",
+  "stav": "platna"
+ },
+ "insolvence-0261": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 128 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud takový návrh odmítne, jestliže pro jeho vady nelze pokračovat v řízení, a učiní tak neprodleně, nejpozději do 7 dnů poté, co byl návrh podán. K odstranění vad nevyzývá — § 43 občanského soudního řádu se výslovně nepoužije. Sedmidenní lhůta k doplnění se týká jen chybějících příloh podle odstavce 2, ne vad samotného návrhu.",
+  "stav": "platna"
  }
 }
