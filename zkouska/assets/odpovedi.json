@@ -3323,5 +3323,107 @@
   "pramen": "§ 111 odst. 1 a 3 insolvenčního zákona",
   "vysvetleni": "Vozidlo, kterým dlužník provozuje taxislužbu, je pro jeho podnikání zásadní — jeho prodej je podstatná změna ve skladbě majetku a nikoli zanedbatelné zmenšení podstaty. Sankcí ale není neplatnost: úkony učiněné v rozporu s omezením jsou vůči věřitelům neúčinné, ledaže si dlužník nebo jeho věřitel předem vyžádal souhlas insolvenčního soudu. Souhlas prozatímního věřitelského výboru nestačí.",
   "stav": "platna"
+ },
+ "insolvence-0232": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 111 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Omezení podle § 111 odst. 1 se netýká úkonů nutných ke splnění povinností podle zvláštních předpisů (tedy i placení daní), k provozování podniku v rámci obvyklého hospodaření, k odvrácení hrozící škody, k plnění zákonné vyživovací povinnosti a ke splnění procesních sankcí (§ 111 odst. 2). Zakázané je podstatně měnit skladbu, využití či určení majetku a nikoli zanedbatelně podstatu zmenšovat — tedy třeba darovat. Platba splatného závazku z provozu podniku je tedy v pořádku, jen pokud jde o obvyklé hospodaření; mimo něj už ne.",
+  "stav": "platna"
+ },
+ "insolvence-0233": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 111 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Omezení podle § 111 odst. 1 se netýká úkonů nutných ke splnění povinností podle zvláštních předpisů (tedy i placení daní), k provozování podniku v rámci obvyklého hospodaření, k odvrácení hrozící škody, k plnění zákonné vyživovací povinnosti a ke splnění procesních sankcí (§ 111 odst. 2). Zakázané je podstatně měnit skladbu, využití či určení majetku a nikoli zanedbatelně podstatu zmenšovat — tedy třeba darovat. Souhlas předběžného správce zákon obecně nevyžaduje — ten se uplatní, jen nařídí-li to soud předběžným opatřením podle § 113.",
+  "stav": "platna"
+ },
+ "insolvence-0234": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 111 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Dlužník smí provozovat podnik v rámci obvyklého hospodaření — to je jedna z výjimek, které § 111 odst. 2 z omezení výslovně vyjímá. Zdržet se jakéhokoli nakládání nemusí a zákaz nemíří na každé zmenšení podstaty, ale jen na nikoli zanedbatelné; drobné úbytky tedy nevadí. A plnit k rukám předběžného správce musí dlužníkovi dlužníci jen tehdy, nařídí-li to soud předběžným opatřením podle § 113.",
+  "stav": "platna"
+ },
+ "insolvence-0235": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 111 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Sankcí je neúčinnost vůči věřitelům, ne neplatnost — ani absolutní, ani relativní. Úkon tedy platí a zavazuje strany, jen se ho nelze dovolávat vůči věřitelům v insolvenčním řízení. Výjimkou je případ, kdy si dlužník nebo jeho věřitel předem vyžádal souhlas insolvenčního soudu.",
+  "stav": "platna"
+ },
+ "insolvence-0236": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 111 odst. 3 insolvenčního zákona",
+  "vysvetleni": "Tady je jádro věci: neúčinnost nastává přímo ze zákona. Nezakládá ji rozhodnutí soudu a nemusí se jí nikdo dovolávat odpůrčí žalobou. Tím se § 111 odst. 3 zásadně liší od odporovatelnosti podle § 235 a násl., kde neúčinnosti dosáhne jen insolvenční správce odpůrčí žalobou. Žádná z nabízených variant proto neplatí.",
+  "stav": "platna"
+ },
+ "insolvence-0237": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 113 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Soud může předběžným opatřením nařídit, aby osoby, které mají závazky vůči dlužníkovi, plnily napříště předběžnému správci místo dlužníkovi — a současně předběžného správce ustanoví, pokud tak neučinil dřív. Je to možnost, ne povinnost, a soud může rozhodnout i bez návrhu.",
+  "stav": "platna"
+ },
+ "insolvence-0238": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 146 odst. 1 a § 142 insolvenčního zákona",
+  "vysvetleni": "Předběžná opatření zanikají účinností jiného rozhodnutí o insolvenčním návrhu podle § 142 — tedy odmítnutí návrhu, zastavení řízení nebo zamítnutí návrhu. Zanikne samozřejmě i tehdy, zruší-li je soud sám. Rozhodnutím o úpadku ale předběžné opatření nezaniká; to mezi rozhodnutí podle § 142 nepatří.",
+  "stav": "platna"
+ },
+ "insolvence-0239": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 115, § 122 a § 126 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Moratorium je nástroj dlužníka, kterým si kupuje čas na překlenutí potíží: po dobu jeho trvání nelze rozhodnout o úpadku, může přednostně hradit závazky spojené se zachováním provozu a protistrany mu nemohou vypovědět dlouhodobé dodavatelské smlouvy. Podá-li návrh před zahájením insolvenčního řízení, nastávají vyhlášením moratoria účinky spojené se zahájením řízení — a mezi ně patří i to, že exekuci na jeho majetek nelze provést. Úročení závazků moratorium nezastavuje a věřitel je navrhnout nemůže.",
+  "stav": "platna"
+ },
+ "insolvence-0240": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 115 insolvenčního zákona",
+  "vysvetleni": "Lhůty k návrhu na moratorium jsou dvě a liší se podle toho, kdo podal insolvenční návrh (§ 115): podal-li jej sám dlužník, má 7 dnů od jeho podání; podal-li jej věřitel, má 15 dnů od doručení návrhu dlužníkovi insolvenčním soudem. U věřitelského návrhu tedy neběží lhůta od jeho podání, ale od doručení dlužníkovi.",
+  "stav": "platna"
+ },
+ "insolvence-0241": {
+  "spravne": [
+   1,
+   3
+  ],
+  "pramen": "§ 115 insolvenčního zákona",
+  "vysvetleni": "Lhůty k návrhu na moratorium jsou dvě a liší se podle toho, kdo podal insolvenční návrh (§ 115): podal-li jej sám dlužník, má 7 dnů od jeho podání; podal-li jej věřitel, má 15 dnů od doručení návrhu dlužníkovi insolvenčním soudem.",
+  "stav": "platna"
+ },
+ "insolvence-0242": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 115 insolvenčního zákona",
+  "vysvetleni": "Lhůty k návrhu na moratorium jsou dvě a liší se podle toho, kdo podal insolvenční návrh (§ 115): podal-li jej sám dlužník, má 7 dnů od jeho podání; podal-li jej věřitel, má 15 dnů od doručení návrhu dlužníkovi insolvenčním soudem. Podat návrh současně s insolvenčním návrhem tedy dlužník nemusí — má na to ještě týden.",
+  "stav": "platna"
+ },
+ "insolvence-0243": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 115 insolvenčního zákona",
+  "vysvetleni": "Moratorium může navrhnout jedině dlužník, a to jen ten, který je podnikatelem. Právnická osoba v likvidaci to právo nemá, takže tvrzení, že je může navrhnout dlužník-právnická osoba, je příliš široké. Věřitel ani finanční úřad návrh podat nemohou.",
+  "stav": "platna"
  }
 }
