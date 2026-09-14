@@ -3776,5 +3776,96 @@
   "pramen": "§ 140 odst. 2 a 3 insolvenčního zákona",
   "vysvetleni": "Započtení je po rozhodnutí o úpadku přípustné, byly-li jeho podmínky splněny před rozhodnutím o způsobu řešení úpadku — ale nepřípustné je, pokud se věřitel ohledně započitatelné pohledávky nestal přihlášeným věřitelem, získal ji neúčinným úkonem, v době nabytí věděl o úpadku, anebo dosud neuhradil splatnou pohledávku dlužníka v převyšujícím rozsahu. Přihlášení je tedy podmínkou, ne překážkou.",
   "stav": "platna"
+ },
+ "insolvence-0285": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 140 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Účinky předběžného opatření trvají i po rozhodnutí o úpadku, ale insolvenční soud může své rozhodnutí o něm změnit — a to i bez návrhu. Insolvenční správce takovou pravomoc nemá a souhlas věřitelského výboru se nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0286": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 140 odst. 2 a 3 insolvenčního zákona",
+  "vysvetleni": "Obě pohledávky byly splatné před rozhodnutím o úpadku, takže podmínka podle odstavce 2 je splněna. Odstavec 3 ale klade dvě další překážky, které tady hrají roli: věřitel se musí ohledně započitatelné pohledávky stát přihlášeným věřitelem, a nesmí mít neuhrazenou splatnou pohledávku dlužníka v rozsahu, v němž převyšuje tu jeho. Dlužníkova pohledávka je 150 000 Kč, věřitelova 100 000 Kč — rozdíl 50 000 Kč musí věřitel uhradit ještě před úkonem započtení.",
+  "stav": "platna"
+ },
+ "insolvence-0287": {
+  "spravne": [
+   0,
+   3
+  ],
+  "pramen": "§ 109 odst. 1 písm. c) insolvenčního zákona",
+  "vysvetleni": "Pravidlo se prohlášením konkursu nemění: exekuci či výkon rozhodnutí postihující majetek v podstatě lze nařídit nebo zahájit, ale nelze provést. Výjimkou jsou pohledávky za majetkovou podstatou a pohledávky jim na roveň postavené, u nichž lze exekuci provést na základě rozhodnutí soudu podle § 203 odst. 5.",
+  "stav": "platna"
+ },
+ "insolvence-0288": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 141 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Proti rozhodnutí o úpadku vydanému na základě dlužnického návrhu není odvolání přípustné — dlužník si o úpadek řekl sám. Bylo-li vydáno na základě věřitelského návrhu, odvolat se může pouze dlužník, a to jen s námitkou, že úpadek není osvědčen nebo že vydání brání zákonná překážka (§ 141 odst. 1).",
+  "stav": "platna"
+ },
+ "insolvence-0289": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 141 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Proti rozhodnutí o úpadku vydanému na základě dlužnického návrhu není odvolání přípustné — dlužník si o úpadek řekl sám. Bylo-li vydáno na základě věřitelského návrhu, odvolat se může pouze dlužník, a to jen s námitkou, že úpadek není osvědčen nebo že vydání brání zákonná překážka (§ 141 odst. 1). Je-li úpadek osvědčen, není důvodem ke zrušení rozhodnutí ani to, že navrhovatel nedoložil svou splatnou pohledávku (§ 141 odst. 2).",
+  "stav": "platna"
+ },
+ "insolvence-0290": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 141 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Je-li úpadek osvědčen, není důvodem ke zrušení ani změně rozhodnutí o úpadku skutečnost, že navrhovatel nedoložil svou splatnou pohledávku. Splatné pohledávky pěti dalších věřitelů úpadek osvědčují, takže odvolací soud rozhodnutí potvrdí. Nikoho k připojení vyzývat nemusí.",
+  "stav": "platna"
+ },
+ "insolvence-0291": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 142 a § 144 insolvenčního zákona",
+  "vysvetleni": "Jinými rozhodnutími o insolvenčním návrhu jsou odmítnutí pro vady nebo zjevnou bezdůvodnost, zastavení řízení pro neodstranitelný nedostatek podmínky řízení nebo pro zpětvzetí návrhu, a zamítnutí návrhu. Nedodržení lhůt důvodem k zastavení není a pro nedostatek majetku dnes návrh zamítnout nelze vůbec.",
+  "stav": "platna"
+ },
+ "insolvence-0292": {
+  "spravne": [
+   0,
+   1
+  ],
+  "pramen": "§ 143 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Zamítnutí přichází, nejsou-li splněny předpoklady pro vydání rozhodnutí o úpadku — tedy neosvědčí-li se úpadek — a dále u věřitelského návrhu tehdy, nebylo-li osvědčeno, že navrhovatel a alespoň jedna další osoba mají proti dlužníku splatnou pohledávku. Nedostatek majetku důvodem k zamítnutí není a nezaplacení zálohy vede k odmítnutí nebo zastavení, ne k zamítnutí.",
+  "stav": "platna"
+ },
+ "insolvence-0293": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 143 odst. 1 a § 144 insolvenčního zákona",
+  "vysvetleni": "Zamítá se pro neosvědčený úpadek. Zpětvzetí vede k zastavení řízení, nedostatek majetku není důvodem k zamítnutí vůbec a doba podání návrhu roli nehraje — řízení je zahájeno i mimo pracovní dobu soudu.",
+  "stav": "platna"
+ },
+ "insolvence-0294": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 143 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Zákon míří na účelové štěpení pohledávek: za další osobu se nepovažuje ten, na koho byla pohledávka navrhovatele nebo její část převedena v době 6 měsíců před podáním insolvenčního návrhu nebo po zahájení řízení. Postoupení starší než půl roku tedy mnohost věřitelů založit může, novější ne — a to bez ohledu na to, zda šlo o simulovaný úkon.",
+  "stav": "platna"
+ },
+ "insolvence-0295": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 142 a § 143 insolvenčního zákona",
+  "vysvetleni": "Zamítnutím je dotčen ten, kdo návrh podal — odvolat se proto může insolvenční navrhovatel. Dlužník zamítnutím poškozen není a přihlášený ani nepřihlášený věřitel účastníkem rozhodování o cizím návrhu není; chce-li se do věci vložit, musí k řízení přistoupit vlastním insolvenčním návrhem podle § 107.",
+  "stav": "platna"
  }
 }
