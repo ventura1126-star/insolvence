@@ -3112,5 +3112,216 @@
   "pramen": "§ 104 odst. 1 insolvenčního zákona",
   "vysvetleni": "Dlužník k návrhu připojuje čtyři věci (§ 104 odst. 1): seznam majetku včetně pohledávek, seznam závazků s uvedením věřitelů, seznam zaměstnanců a listiny dokládající úpadek nebo hrozící úpadek. Účetní závěrka ani výpis z rejstříku trestů mezi přílohami nejsou a přihlášku pohledávky připojuje naopak věřitel, podává-li návrh on (§ 105 odst. 1).",
   "stav": "platna"
+ },
+ "insolvence-0207": {
+  "spravne": [
+   2,
+   3
+  ],
+  "pramen": "§ 97 odst. 5 a § 105 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Návrh může podat dlužník a věřitel, ten ale musí doložit splatnou pohledávku — s dosud nesplatnou pohledávkou aktivně legitimován není. Státní zastupitelství návrh podat nemůže vůbec; do už běžícího řízení jen vstupuje.",
+  "stav": "platna"
+ },
+ "insolvence-0208": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 390 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Podává-li insolvenční návrh sám dlužník, musí návrh na povolení oddlužení podat spolu s ním — tedy téhož dne. Třicetidenní lhůta platí jen tehdy, podala-li insolvenční návrh jiná osoba; běží od doručení návrhu dlužníku a ten o ní musí být poučen. Opožděný návrh soud odmítne.",
+  "stav": "platna"
+ },
+ "insolvence-0209": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 107 odst. 1 a § 97, § 103, § 104 insolvenčního zákona",
+  "vysvetleni": "Další návrh podaný před rozhodnutím o úpadku se považuje za přistoupení k řízení, ale zůstává plnohodnotným insolvenčním návrhem — musí tedy obsahovat rozhodující skutečnosti osvědčující úpadek, nést úředně ověřený nebo uznávaný elektronický podpis a mít předepsané přílohy. Podat jej může dlužník i věřitel.",
+  "stav": "platna",
+  "poznamka": "Po vydání rozhodnutí o úpadku se k dalšímu insolvenčnímu návrhu už nepřihlíží (§ 107 odst. 5)."
+ },
+ "insolvence-0210": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 108 odst. 3 a 5 insolvenčního zákona",
+  "vysvetleni": "Zálohu podle § 108 odst. 2 může soud uložit insolvenčnímu navrhovateli před rozhodnutím o návrhu, je-li to nutné ke krytí nákladů řízení a nelze-li prostředky zajistit jinak — tedy za podmínek, ne automaticky. Její výši může určit až do 50 000 Kč. Uložit ji nelze zaměstnanci ani bývalému zaměstnanci dlužníka, jehož pohledávka spočívá jen v pracovněprávních nárocích. Kdo ji zaplatil a není dlužníkem, může její náhradu uplatnit jako pohledávku za majetkovou podstatou — pojem „pohledávka 1. třídy\" pochází ze zrušeného zákona o konkursu a vyrovnání a insolvenční zákon ho nezná.",
+  "stav": "platna"
+ },
+ "insolvence-0211": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 108 odst. 2 a 3 insolvenčního zákona",
+  "vysvetleni": "Zálohu podle § 108 odst. 2 může soud uložit insolvenčnímu navrhovateli před rozhodnutím o návrhu, je-li to nutné ke krytí nákladů řízení a nelze-li prostředky zajistit jinak — tedy za podmínek, ne automaticky. Její výši může určit až do 50 000 Kč. Uložit ji nelze zaměstnanci ani bývalému zaměstnanci dlužníka, jehož pohledávka spočívá jen v pracovněprávních nárocích. Strop je 50 000 Kč, ne 30 000, a nejde o povinnost soudu, ale o možnost.",
+  "stav": "platna"
+ },
+ "insolvence-0212": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 108 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Zálohu podle § 108 odst. 2 může soud uložit insolvenčnímu navrhovateli před rozhodnutím o návrhu, je-li to nutné ke krytí nákladů řízení a nelze-li prostředky zajistit jinak — tedy za podmínek, ne automaticky. Její výši může určit až do 50 000 Kč. Uložit ji nelze zaměstnanci ani bývalému zaměstnanci dlužníka, jehož pohledávka spočívá jen v pracovněprávních nárocích. Uložit ji lze jen insolvenčnímu navrhovateli, ne kterémukoli přihlášenému věřiteli, a rozhodně ne vždy.",
+  "stav": "platna",
+  "poznamka": "Od novely zná § 108 odst. 1 ještě druhý typ zálohy: u věřitelského návrhu proti podnikající právnické osobě je záloha 50 000 Kč povinná ze zákona a splatná spolu s návrhem, u ostatních dlužníků 10 000 Kč."
+ },
+ "insolvence-0213": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 108 odst. 2 insolvenčního zákona",
+  "vysvetleni": "Zálohu nelze uložit insolvenčnímu navrhovateli, který je zaměstnancem nebo bývalým zaměstnancem dlužníka a jehož pohledávka spočívá pouze v pracovněprávních nárocích. Podmínky pro osvobození od soudních poplatků zákon jako důvod neuvádí a o opakovaném vyměřování nemluví — strop 50 000 Kč je celkový.",
+  "stav": "platna"
+ },
+ "insolvence-0214": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 108 odst. 2 a 3 insolvenčního zákona",
+  "vysvetleni": "Výši zálohy může soud určit až do 50 000 Kč. Uložit ji lze kterémukoli insolvenčnímu navrhovateli, ne jen podnikateli. Náhradu může ten, kdo ji zaplatil a není dlužníkem, uplatnit jako pohledávku za majetkovou podstatou — „pohledávka 1. třídy\" je pojem zrušeného zákona o konkursu a vyrovnání.",
+  "stav": "platna"
+ },
+ "insolvence-0215": {
+  "spravne": [
+   1,
+   2,
+   3
+  ],
+  "pramen": "§ 108 odst. 2, § 169 odst. 1 písm. a), § 203 a § 51 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Pracovněprávní pohledávka zaměstnance je postavena na roveň pohledávkám za majetkovou podstatou. Z toho plynou hned tři důsledky: zálohu na náklady řízení mu uložit nelze, pohledávku nepřihlašuje (uplatňuje ji u insolvenčního správce), a nemá hlasovací právo na schůzi věřitelů. Insolvenční návrh podat může — v tom omezen není.",
+  "stav": "platna"
+ },
+ "insolvence-0216": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 108 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Nezaplatí-li navrhovatel zálohu ve stanovené lhůtě, může soud řízení zastavit, a neučiní-li tak, může přikročit k jejímu vymáhání (§ 108 odst. 4). Obojí je možnost, ne povinnost, a o tom musí být navrhovatel poučen. Odmítnutí návrhu tímto důvodem není.",
+  "stav": "platna"
+ },
+ "insolvence-0217": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 108 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Nezaplatí-li navrhovatel zálohu ve stanovené lhůtě, může soud řízení zastavit, a neučiní-li tak, může přikročit k jejímu vymáhání (§ 108 odst. 4). Obojí je možnost, ne povinnost, a o tom musí být navrhovatel poučen. Odmítnutí návrhu tímto důvodem není.",
+  "stav": "platna"
+ },
+ "insolvence-0218": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 109 odst. 1 písm. a) a b) insolvenčního zákona",
+  "vysvetleni": "Pohledávky týkající se majetkové podstaty nelze uplatnit žalobou, lze-li je uplatnit přihláškou, a právo na uspokojení ze zajištění lze uplatnit i nově nabýt jen za podmínek stanovených zákonem. Řízení o žalobách se zahájením nepřerušují — to nastává až rozhodnutím o úpadku podle § 140a. A dlužník se nemusí zdržet jakéhokoli nakládání s podstatou; § 111 mu zakazuje jen podstatné změny v jejím složení a rozsahu.",
+  "stav": "platna"
+ },
+ "insolvence-0219": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 109 odst. 1 písm. b) a § 41 insolvenčního zákona",
+  "vysvetleni": "Nové zajištění na majetku dlužníka nabýt lze, ale jen za podmínek stanovených zákonem — prakticky v rámci úvěrového financování, u něhož § 41 odst. 1 výslovně počítá i se smlouvami o zajištění. Souhlas schůze věřitelů ani rozhodnutí soudu k tomu zákon nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0220": {
+  "spravne": [
+   1
+  ],
+  "pramen": "§ 109 odst. 1 písm. c) a odst. 4 insolvenčního zákona",
+  "vysvetleni": "Exekuci lze po zahájení řízení nařídit nebo zahájit, ale nelze ji provést. Účinky zahájení přitom nastávají okamžikem zveřejnění vyhlášky o zahájení řízení v insolvenčním rejstříku — ne už podáním návrhu a ne až rozhodnutím o úpadku či prohlášením konkursu.",
+  "stav": "platna"
+ },
+ "insolvence-0221": {
+  "spravne": [
+   0
+  ],
+  "pramen": "§ 109 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Účinky zahájení insolvenčního řízení nastávají okamžikem zveřejnění vyhlášky, kterou se oznamuje zahájení řízení, v insolvenčním rejstříku (§ 109 odst. 4). Ne podáním či doručením návrhu, ne vyvěšením na úřední desce soudu a ne až rozhodnutím o úpadku. Rozhodný je okamžik, tedy den, hodina a minuta zveřejnění.",
+  "stav": "platna"
+ },
+ "insolvence-0222": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 109 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Účinky zahájení insolvenčního řízení nastávají okamžikem zveřejnění vyhlášky, kterou se oznamuje zahájení řízení, v insolvenčním rejstříku (§ 109 odst. 4). Ne podáním či doručením návrhu, ne vyvěšením na úřední desce soudu a ne až rozhodnutím o úpadku. Rozhodný je okamžik, tedy den, hodina a minuta zveřejnění. Pozor na rozdíl proti zahájení samotného řízení: to nastává dnem, kdy návrh dojde věcně příslušnému soudu (§ 97 odst. 1), kdežto účinky se pojí až s vyhláškou.",
+  "stav": "platna"
+ },
+ "insolvence-0223": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 109 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Účinky zahájení insolvenčního řízení nastávají okamžikem zveřejnění vyhlášky, kterou se oznamuje zahájení řízení, v insolvenčním rejstříku (§ 109 odst. 4). Ne podáním či doručením návrhu, ne vyvěšením na úřední desce soudu a ne až rozhodnutím o úpadku. Rozhodný je okamžik, tedy den, hodina a minuta zveřejnění.",
+  "stav": "platna"
+ },
+ "insolvence-0224": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 109 odst. 1 písm. c) a odst. 4 insolvenčního zákona",
+  "vysvetleni": "Účinky zahájení insolvenčního řízení nastávají okamžikem zveřejnění vyhlášky, kterou se oznamuje zahájení řízení, v insolvenčním rejstříku (§ 109 odst. 4). Ne podáním či doručením návrhu, ne vyvěšením na úřední desce soudu a ne až rozhodnutím o úpadku. Rozhodný je okamžik, tedy den, hodina a minuta zveřejnění. Od té chvíle lze výkon rozhodnutí či exekuci nařídit nebo zahájit, ale nelze ji provést. Výjimkou jsou pohledávky za majetkovou podstatou a pohledávky jim na roveň postavené, u nichž lze exekuci provést na základě rozhodnutí soudu podle § 203 odst. 5.",
+  "stav": "platna"
+ },
+ "insolvence-0225": {
+  "spravne": [
+   4
+  ],
+  "pramen": "§ 109 odst. 1 písm. c) a odst. 4 insolvenčního zákona",
+  "vysvetleni": "Rozhodný je okamžik zveřejnění vyhlášky oznamující zahájení řízení v insolvenčním rejstříku — a ten mezi nabízenými variantami není. Podání návrhu je brzy, rozhodnutí o úpadku pozdě, a úřední deska soudu na účinky vliv nemá; ta je v insolvenčním řízení jen doplňkem, doručuje se rejstříkem.",
+  "stav": "platna"
+ },
+ "insolvence-0226": {
+  "spravne": [
+   0,
+   1,
+   2
+  ],
+  "pramen": "§ 109 odst. 4 insolvenčního zákona",
+  "vysvetleni": "Účinky se pojí výhradně se zveřejněním vyhlášky v insolvenčním rejstříku. Úřední deska soudu na ně vliv nemá — ani u vyhlášky, ani u samotného návrhu. V insolvenčním řízení je nositelem publicity rejstřík, ne deska.",
+  "stav": "platna"
+ },
+ "insolvence-0227": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 110 odst. 1 a 3 insolvenčního zákona",
+  "vysvetleni": "Přihlásit pohledávku lze od zahájení řízení; horní hranicí je lhůta stanovená v rozhodnutí o úpadku. Podává-li se přihláška na základě výzvy soudu vydané dřív, lze ji podávat až do rozhodnutí o úpadku a kratší lhůtu soud stanovit nesmí.",
+  "stav": "platna"
+ },
+ "insolvence-0228": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 110 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Věřitelé jsou oprávněni uplatnit pohledávku přihláškou od zahájení insolvenčního řízení, a to i dřív, než soud zveřejní výzvu k podávání přihlášek (§ 110 odst. 1). Nečeká se tedy ani na výzvu, ani na rozhodnutí o úpadku — to naopak lhůtu k přihlášení uzavírá.",
+  "stav": "platna"
+ },
+ "insolvence-0229": {
+  "spravne": [
+   2
+  ],
+  "pramen": "§ 110 odst. 1 insolvenčního zákona",
+  "vysvetleni": "Věřitelé jsou oprávněni uplatnit pohledávku přihláškou od zahájení insolvenčního řízení, a to i dřív, než soud zveřejní výzvu k podávání přihlášek (§ 110 odst. 1). Nečeká se tedy ani na výzvu, ani na rozhodnutí o úpadku — to naopak lhůtu k přihlášení uzavírá. Návrh doručený věcně nepříslušnému soudu řízení vůbec nezahájí, takže od něj nelze počítat nic.",
+  "stav": "platna"
+ },
+ "insolvence-0230": {
+  "spravne": [
+   0,
+   2
+  ],
+  "pramen": "§ 111 odst. 1 a 2 insolvenčního zákona",
+  "vysvetleni": "Dlužník se musí zdržet nakládání s podstatou, jde-li o podstatné změny ve skladbě, využití či určení majetku nebo o jeho nikoli zanedbatelné zmenšení. Omezení se ale netýká úkonů nutných ke splnění povinností podle zvláštních předpisů (tedy i placení daní), k provozování podniku v rámci obvyklého hospodaření, k odvrácení hrozící škody, k plnění vyživovací povinnosti a ke splnění procesních sankcí. Darovat část majetku nelze a souhlas předběžného správce zákon nevyžaduje.",
+  "stav": "platna"
+ },
+ "insolvence-0231": {
+  "spravne": [
+   3
+  ],
+  "pramen": "§ 111 odst. 1 a 3 insolvenčního zákona",
+  "vysvetleni": "Vozidlo, kterým dlužník provozuje taxislužbu, je pro jeho podnikání zásadní — jeho prodej je podstatná změna ve skladbě majetku a nikoli zanedbatelné zmenšení podstaty. Sankcí ale není neplatnost: úkony učiněné v rozporu s omezením jsou vůči věřitelům neúčinné, ledaže si dlužník nebo jeho věřitel předem vyžádal souhlas insolvenčního soudu. Souhlas prozatímního věřitelského výboru nestačí.",
+  "stav": "platna"
  }
 }
