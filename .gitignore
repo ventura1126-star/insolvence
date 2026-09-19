@@ -13,3 +13,5 @@ _zdroje/
 
 # Secrets: never commit.
 .env
+artefakt/zakon.js
+artefakt/vyklad.js

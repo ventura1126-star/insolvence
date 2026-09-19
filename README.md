@@ -124,3 +124,21 @@ jinak si stránka nenajde bundle a načte se prázdná.
 
 Web běží na <https://ventura1126-star.github.io/insolvence/> a je neindexovaný
 (`noindex` v hlavičce). Repozitář je soukromý, stránka veřejná.
+
+## Zákon s výkladem jako Artifact
+
+Týž zákon a výklad běží i jako Artifact na claude.ai —
+<https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>. Navíc proti webové verzi
+umí jedinou věc, kterou statická stránka neumí: pod každým odstavcem se dá
+rovnou zeptat Claudea, a ten dostane v kontextu znění toho odstavce i výklad
+k němu. Rozhovory se ukládají na server, takže drží napříč zařízeními.
+
+```bash
+python3 tools/sbal_artefakt.py
+```
+
+Vyrobí `artefakt/zakon.js` a `artefakt/vyklad.js` (data pověšená na `window`,
+čistě v ASCII kvůli kódování) a ty se publikují spolu s `artefakt/index.html`.
+Vygenerované skripty jsou mimo repo, stránka v něm je.
+
+Trénink otázek zůstává na GitHub Pages — Artifact nese jen zákon.

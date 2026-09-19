@@ -1,0 +1,794 @@
+<title>Insolvenční zákon v praxi</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  /* Paleta navazuje na tréninkovou appku (papír, inkoust, pečeť), aby to
+     byl zjevně tentýž produkt. Přibyla jedna barva navíc: rozhovor.
+     Zákon a výklad jsou teplé, dotazy na Claudea studené — ať je na první
+     pohled poznat, kde končí předpis a kde začíná debata o něm. */
+  :root {
+    --papir: #FBF9F6;
+    --plocha: #FFFFFF;
+    --vyklad-plocha: #F3EEE7;
+    --inkoust: #1A1714;
+    --tlum: #857A70;
+    --linka: #E5DED5;
+    --pecet: #A85430;
+    --rozhovor: #3A5876;
+    --rozhovor-plocha: #EDF1F5;
+    --stin: 0 1px 2px rgba(26, 23, 20, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --papir: #17150F;
+      --plocha: #1F1C17;
+      --vyklad-plocha: #252119;
+      --inkoust: #EDE7DC;
+      --tlum: #9A9084;
+      --linka: #332F27;
+      --pecet: #DC9068;
+      --rozhovor: #9DBDDC;
+      --rozhovor-plocha: #1C222A;
+      --stin: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --papir: #17150F;
+    --plocha: #1F1C17;
+    --vyklad-plocha: #252119;
+    --inkoust: #EDE7DC;
+    --tlum: #9A9084;
+    --linka: #332F27;
+    --pecet: #DC9068;
+    --rozhovor: #9DBDDC;
+    --rozhovor-plocha: #1C222A;
+    --stin: none;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--papir);
+    color: var(--inkoust);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .obal { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
+
+  /* ---- horní lišta ---------------------------------------------------- */
+  .lista {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: color-mix(in srgb, var(--papir) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--linka);
+    margin: 0 -1.25rem 1.5rem;
+    padding: .7rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  }
+  .zpet {
+    appearance: none;
+    border: 0;
+    background: none;
+    color: var(--tlum);
+    font: inherit;
+    font-size: .95rem;
+    cursor: pointer;
+    padding: .35rem 0;
+  }
+  .zpet:hover { color: var(--inkoust); }
+  .lista-nazev {
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+  }
+  .lista-stav { margin-left: auto; font-size: .8rem; color: var(--tlum); font-variant-numeric: tabular-nums; }
+
+  /* ---- obsah ---------------------------------------------------------- */
+  .titul {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: clamp(1.9rem, 6vw, 2.6rem);
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 1.12;
+    text-wrap: balance;
+    margin: .5rem 0 .6rem;
+  }
+  .perex { color: var(--tlum); font-size: .98rem; max-width: 38rem; margin: 0 0 1.5rem; }
+
+  .hledani {
+    width: 100%;
+    font: inherit;
+    color: var(--inkoust);
+    background: var(--plocha);
+    border: 1px solid var(--linka);
+    border-radius: .65rem;
+    padding: .7rem .9rem;
+    box-shadow: var(--stin);
+  }
+  .hledani::placeholder { color: var(--tlum); }
+  .hledani:focus-visible { outline: 2px solid var(--pecet); outline-offset: 1px; }
+
+  .cast {
+    margin: 2.2rem 0 .3rem;
+    font-size: .74rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--pecet);
+  }
+  .hlava { margin: 1.2rem 0 .2rem; font-size: .85rem; color: var(--tlum); }
+
+  .radek {
+    display: grid;
+    grid-template-columns: 3.4rem 1fr auto;
+    align-items: baseline;
+    gap: .8rem;
+    width: 100%;
+    text-align: left;
+    appearance: none;
+    border: 0;
+    border-bottom: 1px solid var(--linka);
+    background: none;
+    color: inherit;
+    font: inherit;
+    padding: .7rem .25rem;
+    cursor: pointer;
+  }
+  .radek:hover { background: var(--plocha); }
+  .radek:focus-visible { outline: 2px solid var(--pecet); outline-offset: -2px; }
+  .radek-cislo { font-weight: 600; color: var(--pecet); font-variant-numeric: tabular-nums; }
+  .radek-nazev { font-size: .95rem; }
+  .radek-znacka { font-size: .7rem; color: var(--linka); line-height: 1; }
+  .radek-znacka.hotovo { color: var(--pecet); }
+  .radek-znacka.castecne { color: var(--tlum); }
+
+  /* ---- paragraf ------------------------------------------------------- */
+  .p-cislo {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    color: var(--pecet);
+    font-variant-numeric: tabular-nums;
+  }
+  .p-nazev {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: 1.15;
+    text-wrap: balance;
+    margin: .25rem 0 .5rem;
+  }
+  .drobecky { font-size: .8rem; color: var(--tlum); margin: 0 0 2rem; }
+
+  .odstavec { margin-bottom: 2.5rem; }
+
+  /* Znění zákona patkově, všechno ostatní bezpatkově — typografie sama
+     říká, kde mluví předpis a kde už někdo o předpisu. */
+  .zneni {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.06rem;
+    line-height: 1.6;
+    white-space: pre-line;
+    margin: 0;
+  }
+  .zneni-cislo { font-weight: 600; color: var(--pecet); font-family: "IBM Plex Sans", sans-serif; font-size: .95rem; }
+
+  .vyklad {
+    margin-top: 1rem;
+    background: var(--vyklad-plocha);
+    border-radius: .75rem;
+    padding: 1.1rem 1.15rem;
+  }
+  .stitek {
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--pecet);
+    margin-bottom: .6rem;
+  }
+  .vyklad p { margin: 0 0 .8rem; font-size: .96rem; }
+  .vyklad p:last-child { margin-bottom: 0; }
+  .vyklad strong { font-weight: 600; }
+  .chybi { margin-top: .9rem; font-size: .88rem; color: var(--tlum); font-style: italic; }
+
+  /* ---- rozhovor ------------------------------------------------------- */
+  .rozbal {
+    margin-top: .75rem;
+    appearance: none;
+    border: 1px solid var(--linka);
+    background: none;
+    color: var(--rozhovor);
+    font: inherit;
+    font-size: .88rem;
+    border-radius: 999px;
+    padding: .4rem .9rem;
+    cursor: pointer;
+  }
+  .rozbal:hover { border-color: var(--rozhovor); }
+  .rozbal:focus-visible { outline: 2px solid var(--rozhovor); outline-offset: 1px; }
+
+  .rozhovor {
+    margin-top: .75rem;
+    border-left: 2px solid var(--rozhovor);
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
+  .bublina { font-size: .95rem; }
+  .bublina .kdo {
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--rozhovor);
+    display: block;
+    margin-bottom: .2rem;
+  }
+  .bublina p { margin: 0 0 .7rem; }
+  .bublina p:last-child { margin-bottom: 0; }
+  .bublina.ja { color: var(--inkoust); }
+  .bublina.ja .text {
+    background: var(--rozhovor-plocha);
+    border-radius: .6rem;
+    padding: .6rem .75rem;
+    display: block;
+  }
+
+  .psani { display: flex; flex-direction: column; gap: .5rem; }
+  .dotaz {
+    width: 100%;
+    font: inherit;
+    font-size: .95rem;
+    color: var(--inkoust);
+    background: var(--plocha);
+    border: 1px solid var(--linka);
+    border-radius: .6rem;
+    padding: .6rem .75rem;
+    resize: vertical;
+    min-height: 4.5rem;
+  }
+  .dotaz:focus-visible { outline: 2px solid var(--rozhovor); outline-offset: 1px; }
+  .nastroje { display: flex; gap: .5rem; align-items: center; }
+  .poslat {
+    appearance: none;
+    border: 0;
+    background: var(--rozhovor);
+    color: var(--papir);
+    font: inherit;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 999px;
+    padding: .45rem 1.1rem;
+    cursor: pointer;
+  }
+  .poslat[disabled] { opacity: .45; cursor: default; }
+  .poslat:focus-visible { outline: 2px solid var(--rozhovor); outline-offset: 2px; }
+  .drobny {
+    appearance: none;
+    border: 0;
+    background: none;
+    color: var(--tlum);
+    font: inherit;
+    font-size: .85rem;
+    cursor: pointer;
+    padding: .45rem .3rem;
+  }
+  .drobny:hover { color: var(--inkoust); }
+  .potiz { font-size: .85rem; color: var(--pecet); }
+
+  /* ---- přechod -------------------------------------------------------- */
+  .prechod {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--linka);
+  }
+  .prechod button {
+    appearance: none;
+    border: 0;
+    background: none;
+    color: var(--pecet);
+    font: inherit;
+    font-size: .95rem;
+    cursor: pointer;
+    padding: .3rem 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .prechod button:hover { text-decoration: underline; }
+
+  .prazdno { color: var(--tlum); padding: 2rem 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="obal">
+  <div class="lista">
+    <button class="zpet" id="zpet" hidden>← Obsah</button>
+    <span class="lista-nazev" id="lista-nazev">Insolvenční zákon</span>
+    <span class="lista-stav" id="lista-stav"></span>
+  </div>
+  <main id="hlavni"></main>
+</div>
+
+<script src="zakon.js"></script>
+<script src="vyklad.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var ZAKON = window.ZAKON || [];
+  var VYKLAD = window.VYKLAD || {};
+  var BEZ_CISLA = '-';
+
+  // Schopnosti dorazí až po chvíli a nemusí dorazit vůbec (jiný prohlížeč,
+  // nepovolený přístup). Stránka se vykreslí bez nich a diskuze se rozsvítí,
+  // až když se ozvou.
+  var sample = null;
+  var db = null;
+  var schopnostiHotovy = false;
+
+  var hlavni = document.getElementById('hlavni');
+  var zpetBtn = document.getElementById('zpet');
+  var listaNazev = document.getElementById('lista-nazev');
+  var listaStav = document.getElementById('lista-stav');
+
+  var podleCisla = {};
+  ZAKON.forEach(function (p) { podleCisla[p.paragraf] = p; });
+
+  /* ---- pomocné ------------------------------------------------------- */
+
+  function bezDiakritiky(t) {
+    return t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  }
+
+  function klicOdstavce(o) { return o.cislo || BEZ_CISLA; }
+
+  function vykladOdstavce(p, o) {
+    var k = VYKLAD[p.paragraf];
+    return (k && k[klicOdstavce(o)]) || null;
+  }
+
+  function vylozeno(p) {
+    return p.odstavce.filter(function (o) { return vykladOdstavce(p, o); }).length;
+  }
+
+  // Id dokumentu v úložišti. Musí projít gramatikou cest, proto podtržítko
+  // místo mezery a „x" pro odstavec bez čísla.
+  function klicDiskuze(p, o) {
+    return p.paragraf + '-' + (o.cislo || 'x');
+  }
+
+  function el(tag, trida, text) {
+    var e = document.createElement(tag);
+    if (trida) e.className = trida;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  /** Text s prázdnými řádky mezi odstavci a **tučnými** úseky. */
+  function vlozText(kam, text) {
+    text.split('\n\n').forEach(function (odst) {
+      var p = el('p');
+      odst.split('**').forEach(function (usek, i) {
+        if (i % 2) p.appendChild(el('strong', null, usek));
+        else if (usek) p.appendChild(document.createTextNode(usek));
+      });
+      kam.appendChild(p);
+    });
+  }
+
+  /* ---- obsah --------------------------------------------------------- */
+
+  function hledej(dotaz) {
+    var h = bezDiakritiky(dotaz).trim();
+    if (!h) return null;
+    var cislo = h.replace(/^§\s*/, '');
+    if (/^\d+[a-z]?$/.test(cislo)) {
+      return ZAKON.filter(function (p) { return p.paragraf === cislo; })
+        .concat(ZAKON.filter(function (p) {
+          return p.paragraf !== cislo && p.paragraf.indexOf(cislo) === 0;
+        }));
+    }
+    var nalez = [];
+    ZAKON.forEach(function (p) {
+      var vNazvu = p.nazev && bezDiakritiky(p.nazev).indexOf(h) >= 0;
+      var vTextu = p.odstavce.some(function (o) {
+        return bezDiakritiky(o.text).indexOf(h) >= 0;
+      });
+      if (vNazvu || vTextu) nalez.push({ p: p, vNazvu: !!vNazvu });
+    });
+    nalez.sort(function (a, b) { return (b.vNazvu ? 1 : 0) - (a.vNazvu ? 1 : 0); });
+    return nalez.slice(0, 60).map(function (n) { return n.p; });
+  }
+
+  function radekParagrafu(p) {
+    var b = el('button', 'radek');
+    b.type = 'button';
+    b.appendChild(el('span', 'radek-cislo', '§ ' + p.paragraf));
+    var nazev = p.nazev || p.odstavce[0].text.replace(/\s+/g, ' ').slice(0, 70) + '…';
+    b.appendChild(el('span', 'radek-nazev', nazev));
+    var hotovo = vylozeno(p);
+    var stav = hotovo === p.odstavce.length ? 'hotovo' : hotovo ? 'castecne' : '';
+    b.appendChild(el('span', 'radek-znacka ' + stav,
+      hotovo === p.odstavce.length ? '●' : hotovo ? '◐' : '○'));
+    b.addEventListener('click', function () { location.hash = '#p' + p.paragraf; });
+    return b;
+  }
+
+  function vykresliObsah(dotaz) {
+    hlavni.textContent = '';
+    zpetBtn.hidden = true;
+    listaNazev.textContent = 'Insolvenční zákon';
+
+    var celkem = 0, hotovo = 0;
+    ZAKON.forEach(function (p) { celkem += p.odstavce.length; hotovo += vylozeno(p); });
+    listaStav.textContent = hotovo + ' / ' + celkem + ' odst.';
+
+    hlavni.appendChild(el('h1', 'titul', 'Insolvenční zákon v praxi'));
+    hlavni.appendChild(el('p', 'perex',
+      'Znění zákona č. 182/2006 Sb. podle Sbírky, pod každým odstavcem výklad, ' +
+      'co znamená v práci správce — a možnost se k němu rovnou zeptat.'));
+
+    var pole = el('input', 'hledani');
+    pole.type = 'search';
+    pole.placeholder = 'Číslo paragrafu nebo slovo';
+    pole.setAttribute('aria-label', 'Hledat v zákoně');
+    pole.autocomplete = 'off';
+    if (dotaz) pole.value = dotaz;
+    hlavni.appendChild(pole);
+
+    var vypis = el('div');
+    hlavni.appendChild(vypis);
+
+    function prekresli(text) {
+      vypis.textContent = '';
+      var nalez = hledej(text || '');
+      if (nalez) {
+        if (!nalez.length) {
+          vypis.appendChild(el('p', 'prazdno', 'Nic takového v zákoně není.'));
+          return;
+        }
+        nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
+        return;
+      }
+      var cast = null, hlava = null;
+      ZAKON.forEach(function (p) {
+        if (p.cast !== cast) {
+          cast = p.cast;
+          hlava = null;
+          vypis.appendChild(el('h2', 'cast', cast));
+        }
+        if (p.hlava !== hlava) {
+          hlava = p.hlava;
+          if (hlava) vypis.appendChild(el('h3', 'hlava', hlava));
+        }
+        vypis.appendChild(radekParagrafu(p));
+      });
+    }
+
+    var casovac;
+    pole.addEventListener('input', function () {
+      clearTimeout(casovac);
+      casovac = setTimeout(function () { prekresli(pole.value); }, 120);
+    });
+    prekresli(dotaz || '');
+  }
+
+  /* ---- rozhovor pod odstavcem ---------------------------------------- */
+
+  function kontext(p, o, vyklad) {
+    return [
+      'Jsi asistent pro přípravu na obecnou zkoušku insolvenčního správce v ČR.',
+      'Uživatel čte insolvenční zákon (č. 182/2006 Sb.) po odstavcích a ptá se na konkrétní místo.',
+      '',
+      'Odpovídej česky, stručně a prakticky — v rovině toho, co to znamená pro práci správce.',
+      'Kde si nejsi jistý, řekni to. Neuváděj paragrafy, které si nepamatuješ přesně.',
+      'Nepiš úvodní zdvořilosti, jdi rovnou k věci.',
+      '',
+      '--- MÍSTO V ZÁKONĚ ---',
+      '§ ' + p.paragraf + (p.nazev ? ' — ' + p.nazev : ''),
+      p.cast + (p.hlava ? ' · ' + p.hlava : '') + (p.dil ? ' · ' + p.dil : ''),
+      '',
+      'Znění' + (o.cislo ? ' odstavce ' + o.cislo : '') + ':',
+      o.text,
+      '',
+      vyklad ? '--- VÝKLAD, KTERÝ UŽIVATEL PRÁVĚ ČETL ---\n' + vyklad
+             : '--- K tomuto odstavci zatím žádný výklad napsaný není. ---',
+      '--- KONEC KONTEXTU ---'
+    ].join('\n');
+  }
+
+  function rozhovorProOdstavec(p, o, vyklad) {
+    var obal = el('div');
+    var klic = klicDiskuze(p, o);
+    var zpravy = [];
+    var otevreno = false;
+    var bezi = false;
+    var ulozeniDoc = null;
+
+    var rozbal = el('button', 'rozbal');
+    rozbal.type = 'button';
+    rozbal.textContent = 'Zeptat se na tento odstavec';
+    obal.appendChild(rozbal);
+
+    var panel = el('div', 'rozhovor');
+    panel.hidden = true;
+    obal.appendChild(panel);
+
+    var vlakno = el('div');
+    vlakno.style.display = 'flex';
+    vlakno.style.flexDirection = 'column';
+    vlakno.style.gap = '.75rem';
+    panel.appendChild(vlakno);
+
+    var psani = el('div', 'psani');
+    var pole = el('textarea', 'dotaz');
+    pole.placeholder = 'Na co se chceš u tohohle odstavce zeptat?';
+    pole.setAttribute('aria-label', 'Dotaz k odstavci');
+    var nastroje = el('div', 'nastroje');
+    var poslat = el('button', 'poslat');
+    poslat.type = 'button';
+    poslat.textContent = 'Zeptat se';
+    var smazat = el('button', 'drobny');
+    smazat.type = 'button';
+    smazat.textContent = 'Smazat rozhovor';
+    smazat.hidden = true;
+    nastroje.appendChild(poslat);
+    nastroje.appendChild(smazat);
+    psani.appendChild(pole);
+    psani.appendChild(nastroje);
+    panel.appendChild(psani);
+
+    var potiz = el('div', 'potiz');
+    potiz.hidden = true;
+    panel.appendChild(potiz);
+
+    function popisek() {
+      rozbal.textContent = zpravy.length
+        ? (otevreno ? 'Skrýt rozhovor' : 'Rozhovor (' + zpravy.length + ')')
+        : (otevreno ? 'Skrýt' : 'Zeptat se na tento odstavec');
+    }
+
+    function vykresliVlakno(rozepsana) {
+      vlakno.textContent = '';
+      zpravy.forEach(function (z) {
+        var b = el('div', 'bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
+        b.appendChild(el('span', 'kdo', z.role === 'user' ? 'Já' : 'Claude'));
+        if (z.role === 'user') {
+          b.appendChild(el('span', 'text', z.text));
+        } else {
+          vlozText(b, z.text);
+        }
+        vlakno.appendChild(b);
+      });
+      if (rozepsana != null) {
+        var b2 = el('div', 'bublina claude');
+        b2.appendChild(el('span', 'kdo', 'Claude'));
+        if (rozepsana) vlozText(b2, rozepsana);
+        else b2.appendChild(el('p', null, 'Přemýšlí…'));
+        vlakno.appendChild(b2);
+      }
+      smazat.hidden = zpravy.length === 0;
+      popisek();
+    }
+
+    function uloz() {
+      if (!ulozeniDoc) return;
+      ulozeniDoc.set({
+        paragraf: p.paragraf,
+        odstavec: o.cislo || null,
+        zpravy: zpravy,
+        zmeneno: Date.now()
+      }).catch(function () { /* uložení je pohodlí, ne podmínka */ });
+    }
+
+    function nactiUlozene() {
+      if (!db) return;
+      try {
+        ulozeniDoc = db.doc('data/users/me/' + klic);
+      } catch (e) { return; }
+      ulozeniDoc.get().then(function (snap) {
+        var data = snap && snap.exists ? snap.data() : null;
+        if (data && Array.isArray(data.zpravy) && data.zpravy.length && !zpravy.length) {
+          zpravy = data.zpravy;
+          vykresliVlakno(null);
+        }
+      }).catch(function () {});
+    }
+
+    function odesli() {
+      var text = pole.value.trim();
+      if (!text || bezi || !sample) return;
+      bezi = true;
+      potiz.hidden = true;
+      poslat.disabled = true;
+      pole.value = '';
+      zpravy.push({ role: 'user', text: text });
+      vykresliVlakno('');
+
+      // Kontext se přilepí k první otázce; další kola ho už mají v historii.
+      var tahy = zpravy.map(function (z, i) {
+        return {
+          role: z.role,
+          content: i === 0 && z.role === 'user'
+            ? kontext(p, o, vyklad) + '\n\nOtázka: ' + z.text
+            : z.text
+        };
+      });
+
+      sample(tahy, {
+        cache: false,
+        onText: function (u) { vykresliVlakno(u.text); }
+      }).then(function (v) {
+        zpravy.push({ role: 'assistant', text: v.text });
+        vykresliVlakno(null);
+        uloz();
+      }).catch(function (e) {
+        zpravy.pop();
+        vykresliVlakno(null);
+        potiz.hidden = false;
+        potiz.textContent =
+          e && e.code === 'rate_limited' ? 'Moc dotazů za sebou. Zkus to za chvíli.'
+          : e && e.code === 'not_granted' ? 'Dotazy na Claudea tady nejsou povolené.'
+          : 'Nepovedlo se to odeslat. Zkus to znovu.';
+      }).then(function () {
+        bezi = false;
+        poslat.disabled = false;
+      });
+    }
+
+    rozbal.addEventListener('click', function () {
+      otevreno = !otevreno;
+      panel.hidden = !otevreno;
+      popisek();
+      if (otevreno) pole.focus();
+    });
+    poslat.addEventListener('click', odesli);
+    pole.addEventListener('keydown', function (e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') odesli();
+    });
+    smazat.addEventListener('click', function () {
+      zpravy = [];
+      vykresliVlakno(null);
+      if (ulozeniDoc) ulozeniDoc.delete().catch(function () {});
+    });
+
+    nactiUlozene();
+
+    // Dokud se schopnosti neozvou, tlačítko se neukazuje — ať nenabízí něco,
+    // co nemusí fungovat.
+    function prepniDostupnost() {
+      obal.hidden = !sample;
+    }
+    prepniDostupnost();
+    obal.prepni = prepniDostupnost;
+    obal.nactiUlozene = nactiUlozene;
+    return obal;
+  }
+
+  /* ---- paragraf ------------------------------------------------------- */
+
+  var zivePrepinace = [];
+
+  function vykresliParagraf(cislo) {
+    var p = podleCisla[cislo];
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaStav.textContent = '';
+
+    if (!p) {
+      listaNazev.textContent = 'Paragraf není';
+      hlavni.appendChild(el('p', 'prazdno', 'Takový paragraf v zákoně není.'));
+      return;
+    }
+
+    listaNazev.textContent = '§ ' + p.paragraf;
+
+    if (p.nazev) {
+      hlavni.appendChild(el('div', 'p-cislo', '§ ' + p.paragraf));
+      hlavni.appendChild(el('h1', 'p-nazev', p.nazev));
+    } else {
+      hlavni.appendChild(el('h1', 'p-nazev', '§ ' + p.paragraf));
+    }
+    hlavni.appendChild(el('p', 'drobecky',
+      [p.cast, p.hlava, p.dil, p.oddil].filter(Boolean).join(' · ')));
+
+    p.odstavce.forEach(function (o) {
+      var blok = el('section', 'odstavec');
+
+      var zneni = el('p', 'zneni');
+      if (o.cislo) zneni.appendChild(el('span', 'zneni-cislo', '(' + o.cislo + ') '));
+      zneni.appendChild(document.createTextNode(o.text));
+      blok.appendChild(zneni);
+
+      var v = vykladOdstavce(p, o);
+      if (v) {
+        var karta = el('div', 'vyklad');
+        karta.appendChild(el('div', 'stitek', 'V praxi'));
+        vlozText(karta, v);
+        blok.appendChild(karta);
+      } else {
+        blok.appendChild(el('p', 'chybi', 'Výklad k tomuhle odstavci ještě nemám.'));
+      }
+
+      var r = rozhovorProOdstavec(p, o, v);
+      zivePrepinace.push(r);
+      blok.appendChild(r);
+
+      hlavni.appendChild(blok);
+    });
+
+    var i = ZAKON.indexOf(p);
+    var prechod = el('div', 'prechod');
+    var dozadu = el('button');
+    dozadu.type = 'button';
+    if (i > 0) {
+      dozadu.textContent = '← § ' + ZAKON[i - 1].paragraf;
+      dozadu.addEventListener('click', function () {
+        location.hash = '#p' + ZAKON[i - 1].paragraf;
+      });
+    } else {
+      dozadu.style.visibility = 'hidden';
+      dozadu.textContent = '—';
+    }
+    prechod.appendChild(dozadu);
+    if (i < ZAKON.length - 1) {
+      var dopredu = el('button');
+      dopredu.type = 'button';
+      dopredu.textContent = '§ ' + ZAKON[i + 1].paragraf + ' →';
+      dopredu.addEventListener('click', function () {
+        location.hash = '#p' + ZAKON[i + 1].paragraf;
+      });
+      prechod.appendChild(dopredu);
+    }
+    hlavni.appendChild(prechod);
+    window.scrollTo(0, 0);
+  }
+
+  /* ---- směrování ------------------------------------------------------ */
+
+  function smeruj() {
+    var h = location.hash.replace(/^#/, '');
+    if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
+    else vykresliObsah('');
+  }
+
+  zpetBtn.addEventListener('click', function () {
+    if (history.length > 1) history.back();
+    else location.hash = '';
+  });
+  window.addEventListener('hashchange', smeruj);
+  smeruj();
+
+  /* ---- schopnosti ----------------------------------------------------- */
+
+  if (window.claude && window.claude.use) {
+    window.claude.use('sample').then(function (s) {
+      sample = s;
+      zivePrepinace.forEach(function (r) { r.prepni(); });
+    }).catch(function () {});
+    window.claude.use('db').then(function (d) {
+      db = d;
+      // Úložiště se mohlo ozvat až po vykreslení paragrafu — dotáhnout
+      // uložené rozhovory dodatečně.
+      if (db) zivePrepinace.forEach(function (r) { r.nactiUlozene(); });
+    }).catch(function () {});
+  }
+})();
+</script>
