@@ -7,11 +7,12 @@ insolvence; k úspěchu je potřeba 56 správně (80 %). App to kopíruje: ostr�
 v ostrém formátu, trénink po okruzích s vysvětlením a odkazem na paragraf, a
 opakování toho, co ti nesedí.
 
-Nad tím stojí **ranní desetiminutovky** — na každý den v měsíci jedno téma:
-krátký výklad a pak otázky z banky, které se ho týkají. Číslo lekce je prostě den
-v měsíci, takže se nikde neukládá, kde jsi skončil, a prvního dalšího měsíce se
-řada vrátí na začátek. Zameškané dny zůstávají otevřené, do budoucích se nedá
-koukat. Lekce jsou v `assets/lekce.json`, pool se na konci měsíce vymění.
+Vedle testů je v appce celý **insolvenční zákon s výkladem** — znění podle
+Sbírky a pod každým odstavcem vysvětlení, co znamená v praxi správce, na co si
+dát pozor a co z něj bývá u zkoušky. Dá se v něm hledat podle čísla paragrafu
+i podle slova (bez ohledu na diakritiku) a procházet paragraf po paragrafu.
+Znění je v `assets/zakon.json` a generuje se, výklad je v `assets/vyklad.json`
+a píše se ručně; kolečko u paragrafu v obsahu ukazuje, kolik z něj je hotové.
 
 Po testu následuje ještě případová studie a ústní část — ty app neřeší.
 Zdroj: <https://insolvence.justice.cz/zkousky-insolvencnich-spravcu/obecna-jak-zkouska-probiha/>
@@ -38,10 +39,13 @@ se ukazují — na nich je změna vidět nejlíp.
 | Okruh | Odpovědí | Z toho zastaralých | Otázek celkem |
 |---|---:|---:|---:|
 | Audit | 60 | 1 | 60 |
-| Obecné právo a exekuce | 61 | 1 | 216 |
+| Obecné právo a exekuce | 76 | 1 | 216 |
 | Daně | 52 | 14 | 108 |
-| Insolvence | 27 | 0 | 1 049 |
-| **Celkem** | **200** | **16** | **1 433** |
+| Insolvence | 281 | 0 | 1 049 |
+| **Celkem** | **469** | **16** | **1 433** |
+
+Výklad zákona: **103 z 1 420 odstavců** (§ 1 až § 38 — základní ustanovení,
+procesní subjekty a celý díl o insolvenčním správci). Zbytek přibývá po dávkách.
 
 ## Spuštění
 
@@ -64,7 +68,8 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 ```bash
 .venv/bin/python tools/parse_otazky.py     # PDF ministerstva → otazky.json
 python3 tools/stahni_zakon.py 2006-182     # znění předpisu k psaní odpovědí
-python3 tools/kontrola_odpovedi.py         # kontrola odpovědí proti otázkám
+python3 tools/vytez_zakon.py               # znění zákona → zakon.json pro app
+python3 tools/kontrola_odpovedi.py         # kontrola odpovědí i výkladu
 ```
 
 Virtuální prostředí potřebuje jen parser (kvůli `pypdf`); zbylé dva skripty si
@@ -79,6 +84,12 @@ výboru má jen jednu variantu.
 
 `stahni_zakon.py` stahuje aktuální znění předpisů a umí vypsat konkrétní
 paragraf (`--paragraf 3`). Předpisy jsou autorskoprávně volné.
+
+`vytez_zakon.py` z toho staženého znění vyrobí `zkouska/assets/zakon.json` —
+482 paragrafů rozdělených na 1 420 odstavců i s částmi, hlavami a díly. Text
+zákona se tedy nikde nepřepisuje ručně a po novele se dá celý přegenerovat;
+výklad leží zvlášť ve `vyklad.json` a `kontrola_odpovedi.py` hlídá, že po
+přegenerování nevisí u odstavce, který už v zákoně není.
 
 ### Formát odpovědi
 
@@ -111,6 +122,5 @@ republikují samy.
 `baseUrl` v `zkouska/app.json` musí odpovídat názvu repozitáře (`/insolvence`),
 jinak si stránka nenajde bundle a načte se prázdná.
 
-**Pozor:** GitHub Pages ze soukromého repozitáře fungují jen na placeném plánu
-(GitHub Pro a výš). Na free plánu se web nenasadí — app pak jde spouštět lokálně
-přes `npm start`, což na učení stačí.
+Web běží na <https://ventura1126-star.github.io/insolvence/> a je neindexovaný
+(`noindex` v hlavičce). Repozitář je soukromý, stránka veřejná.

@@ -5,6 +5,7 @@ import {
   StatusBar,
   StyleSheet,
   Text,
+  TextInput,
   View,
 } from 'react-native';
 // Vlastní SafeAreaView z react-native je zastaralý, SDK 54 odkazuje sem.
@@ -12,7 +13,8 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import otazky from './assets/otazky.json';
 import odpovedi from './assets/odpovedi.json';
-import lekce from './assets/lekce.json';
+import zakon from './assets/zakon.json';
+import vyklad from './assets/vyklad.json';
 import {
   OTAZEK_V_TESTU,
   hraniceUspechu,
@@ -22,7 +24,15 @@ import {
   vyhodnot,
   zodpovezene,
 } from './src/test';
-import { lekceProDen, odemceneLekce, otazkyLekce } from './src/lekce';
+import {
+  hledej,
+  najdiParagraf,
+  obsah,
+  pokrytiVykladu,
+  sousedi,
+  vykladOdstavce,
+  vylozenoVParagrafu,
+} from './src/zakon';
 import { aktualizujChyby, nactiChyby, ulozChyby } from './src/ulozeni';
 
 const theme = {
@@ -36,8 +46,8 @@ const theme = {
 };
 
 export default function App() {
-  // 'domu' | 'lekce-seznam' | { rezim: 'ostry' | 'chyby' }
-  // | { rezim: 'trenink', oblast } | { rezim: 'lekce', den }
+  // 'domu' | 'zakon' | { rezim: 'ostry' | 'chyby' }
+  // | { rezim: 'trenink', oblast } | { paragraf: '38' }
   const [kam, setKam] = useState('domu');
   const [chyby, setChyby] = useState([]);
 
@@ -59,14 +69,13 @@ export default function App() {
         <StatusBar barStyle="dark-content" backgroundColor={theme.paper} />
         {kam === 'domu' ? (
           <Domu chyby={chyby} onOtevri={setKam} />
-        ) : kam === 'lekce-seznam' ? (
-          <SeznamLekci onOtevri={setKam} onZpet={() => setKam('domu')} />
-        ) : kam.rezim === 'lekce' ? (
-          <Lekce
-            den={kam.den}
-            chyby={chyby}
-            onZapisChyby={zapisChyby}
-            onZpet={() => setKam('domu')}
+        ) : kam === 'zakon' ? (
+          <Zakon onOtevri={setKam} onZpet={() => setKam('domu')} />
+        ) : kam.paragraf ? (
+          <Paragraf
+            cislo={kam.paragraf}
+            onOtevri={setKam}
+            onZpet={() => setKam('zakon')}
           />
         ) : (
           <Beh
@@ -96,7 +105,7 @@ function Domu({ chyby, onOtevri }) {
         </Text>
       </View>
 
-      <RanniLekce onOtevri={onOtevri} />
+      <KartaZakona onOtevri={onOtevri} />
 
       <Volba
         popisek="Ostrý test"
@@ -134,93 +143,12 @@ function Domu({ chyby, onOtevri }) {
   );
 }
 
-/** „1 otázka, 2 otázky, 5 otázek" — čeština počítá jinak než šablona s číslem. */
-function pocetOtazek(n) {
-  if (n === 1) return '1 otázka';
-  if (n >= 2 && n <= 4) return `${n} otázky`;
-  return `${n} otázek`;
-}
-
 /**
- * Karta dnešní ranní lekce.
+ * Výkladový text.
  *
- * Datum se čte při každém vykreslení, takže po půlnoci stačí appku otevřít
- * znovu a nabídne další lekci. V krátkém měsíci se na poslední lekce nedostane
- * a karta zmizí — pool se stejně na konci měsíce vyměňuje.
- */
-function RanniLekce({ onOtevri }) {
-  const dnesni = lekceProDen(lekce);
-  const kolikOdemceno = odemceneLekce(lekce).length;
-
-  if (!dnesni) return null;
-
-  return (
-    <View>
-      <Text style={styles.sekce}>Ranní deset minut</Text>
-      <Pressable
-        onPress={() => onOtevri({ rezim: 'lekce', den: dnesni.den })}
-        accessibilityRole="button"
-        accessibilityLabel={`Dnešní lekce: ${dnesni.nazev}`}
-        style={({ pressed }) => [styles.lekceKarta, pressed && styles.volbaStisk]}
-      >
-        <Text style={styles.lekceCislo}>
-          {dnesni.den}. lekce · {dnesni.oblast}
-        </Text>
-        <Text style={styles.lekceNazev}>{dnesni.nazev}</Text>
-        <Text style={styles.volbaNapoveda}>
-          Výklad a {pocetOtazek(dnesni.otazky.length)} k procvičení
-        </Text>
-      </Pressable>
-
-      {kolikOdemceno > 1 && (
-        <Pressable
-          onPress={() => onOtevri('lekce-seznam')}
-          accessibilityRole="button"
-          hitSlop={8}
-          style={styles.odkaz}
-        >
-          <Text style={styles.odkazText}>Dřívější lekce ({kolikOdemceno - 1}) →</Text>
-        </Pressable>
-      )}
-    </View>
-  );
-}
-
-function SeznamLekci({ onOtevri, onZpet }) {
-  const dostupne = odemceneLekce(lekce);
-
-  return (
-    <ScrollView contentContainerStyle={styles.domu} showsVerticalScrollIndicator={false}>
-      <Zpet onPress={onZpet} popisek="← Domů" />
-      <Text style={styles.nazev}>Lekce</Text>
-      <Text style={styles.podnadpis}>
-        Každý den v měsíci jedno téma. Co jsi zameškal, můžeš dohnat; prvního
-        dalšího měsíce se řada vrátí na začátek s novým poolem.
-      </Text>
-
-      {dostupne.map((l, i) => (
-        <Pressable
-          key={l.den}
-          onPress={() => onOtevri({ rezim: 'lekce', den: l.den })}
-          accessibilityRole="button"
-          style={({ pressed }) => [styles.volba, pressed && styles.volbaStisk]}
-        >
-          <Text style={styles.lekceCislo}>
-            {l.den}. {i === 0 ? '· dnes' : `· ${l.oblast}`}
-          </Text>
-          <Text style={styles.volbaPopisek}>{l.nazev}</Text>
-        </Pressable>
-      ))}
-    </ScrollView>
-  );
-}
-
-/**
- * Výkladový text lekce.
- *
- * Text se píše s hvězdičkami kolem zdůrazněných míst, protože v JSON se jinak
- * důraz zapsat nedá; tady se rozpadne na běžné a tučné úseky. React Native
- * markdown sám nerenderuje, takže bez tohohle by se hvězdičky vypsaly doslova.
+ * Píše se s hvězdičkami kolem zdůrazněných míst, protože v JSON se důraz jinak
+ * zapsat nedá; tady se rozpadne na běžné a tučné úseky. React Native markdown
+ * sám nerenderuje, takže bez tohohle by se hvězdičky vypsaly doslova.
  */
 function Vyklad({ text }) {
   return (
@@ -242,51 +170,208 @@ function Vyklad({ text }) {
   );
 }
 
-function Lekce({ den, chyby, onZapisChyby, onZpet }) {
-  const [procvicuje, setProcvicuje] = useState(false);
-  const dnesni = lekce.find((l) => l.den === den);
+/**
+ * Karta zákona na úvodní obrazovce.
+ *
+ * Místo denní dávky se nabízí celý zákon k procházení — výklad u odstavce
+ * dává smysl číst tehdy, když na ten odstavec člověk narazí, ne podle data.
+ */
+function KartaZakona({ onOtevri }) {
+  const { hotovo, celkem } = useMemo(() => pokrytiVykladu(zakon, vyklad), []);
 
-  if (!dnesni) {
+  return (
+    <View>
+      <Text style={styles.sekce}>Zákon s výkladem</Text>
+      <Pressable
+        onPress={() => onOtevri('zakon')}
+        accessibilityRole="button"
+        accessibilityLabel="Insolvenční zákon s výkladem"
+        style={({ pressed }) => [styles.karta, pressed && styles.volbaStisk]}
+      >
+        <Text style={styles.kartaNadnadpis}>Zákon č. 182/2006 Sb.</Text>
+        <Text style={styles.kartaNazev}>Insolvenční zákon</Text>
+        <Text style={styles.volbaNapoveda}>
+          {zakon.length} paragrafů · výklad k {hotovo} z {celkem} odstavců
+        </Text>
+      </Pressable>
+    </View>
+  );
+}
+
+/** Obsah zákona: hledání, a pod ním části a hlavy s paragrafy. */
+function Zakon({ onOtevri, onZpet }) {
+  const [dotaz, setDotaz] = useState('');
+  const casti = useMemo(() => obsah(zakon), []);
+  const nalezene = useMemo(() => hledej(zakon, dotaz), [dotaz]);
+  const hleda = dotaz.trim().length > 0;
+
+  return (
+    <ScrollView
+      contentContainerStyle={styles.domu}
+      showsVerticalScrollIndicator={false}
+      keyboardShouldPersistTaps="handled"
+    >
+      <Zpet onPress={onZpet} popisek="← Domů" />
+      <Text style={styles.nazev}>Insolvenční zákon</Text>
+      <Text style={styles.podnadpis}>
+        Znění podle Sbírky, pod každým odstavcem výklad, co znamená v praxi
+        správce. Kde výklad ještě není, stojí aspoň zákon.
+      </Text>
+
+      <TextInput
+        value={dotaz}
+        onChangeText={setDotaz}
+        placeholder="Číslo paragrafu nebo slovo"
+        placeholderTextColor={theme.muted}
+        autoCorrect={false}
+        autoCapitalize="none"
+        accessibilityLabel="Hledat v zákoně"
+        style={styles.hledani}
+      />
+
+      {hleda ? (
+        nalezene.length ? (
+          nalezene.map((p) => (
+            <RadekParagrafu key={p.paragraf} paragraf={p} onOtevri={onOtevri} />
+          ))
+        ) : (
+          <Text style={styles.patka}>Nic takového v zákoně není.</Text>
+        )
+      ) : (
+        casti.map((cast) => (
+          <View key={cast.nazev}>
+            <Text style={styles.sekce}>{cast.nazev}</Text>
+            {cast.hlavy.map((hlava) => (
+              <View key={`${cast.nazev}/${hlava.nazev}`}>
+                {hlava.nazev && <Text style={styles.podsekce}>{hlava.nazev}</Text>}
+                {hlava.paragrafy.map((p) => (
+                  <RadekParagrafu key={p.paragraf} paragraf={p} onOtevri={onOtevri} />
+                ))}
+              </View>
+            ))}
+          </View>
+        ))
+      )}
+    </ScrollView>
+  );
+}
+
+function RadekParagrafu({ paragraf, onOtevri }) {
+  const hotovo = vylozenoVParagrafu(vyklad, paragraf);
+  const vse = hotovo === paragraf.odstavce.length;
+
+  return (
+    <Pressable
+      onPress={() => onOtevri({ paragraf: paragraf.paragraf })}
+      accessibilityRole="button"
+      accessibilityLabel={`§ ${paragraf.paragraf}${paragraf.nazev ? `, ${paragraf.nazev}` : ''}`}
+      style={({ pressed }) => [styles.radekParagrafu, pressed && styles.volbaStisk]}
+    >
+      <Text style={styles.cisloParagrafu}>§ {paragraf.paragraf}</Text>
+      <Text style={styles.nazevParagrafu} numberOfLines={2}>
+        {paragraf.nazev ?? prvniSlova(paragraf.odstavce[0].text)}
+      </Text>
+      {/* Tečka u paragrafu, kde výklad chybí nebo je jen část — ať je vidět,
+          kde se dá číst dál a kde zatím stojí holý zákon. */}
+      <Text style={[styles.znacka, vse && styles.znackaHotovo]}>
+        {vse ? '●' : hotovo ? '◐' : '○'}
+      </Text>
+    </Pressable>
+  );
+}
+
+/** Paragraf bez názvu se v seznamu představí začátkem svého znění. */
+function prvniSlova(text, limit = 60) {
+  const jeden = text.replace(/\s+/g, ' ').trim();
+  return jeden.length > limit ? `${jeden.slice(0, limit)}…` : jeden;
+}
+
+/** Jeden paragraf: znění po odstavcích a pod každým odstavcem jeho výklad. */
+function Paragraf({ cislo, onOtevri, onZpet }) {
+  const paragraf = useMemo(() => najdiParagraf(zakon, cislo), [cislo]);
+  const { predchozi, dalsi } = useMemo(() => sousedi(zakon, cislo), [cislo]);
+
+  if (!paragraf) {
     return (
       <View style={styles.stred}>
-        <Text style={styles.nadpisVysledku}>Lekce není</Text>
+        <Text style={styles.nadpisVysledku}>Paragraf není</Text>
         <Zpet onPress={onZpet} popisek="← Zpátky" />
       </View>
     );
   }
 
-  if (procvicuje) {
-    return (
-      <Beh
-        zadani={{ rezim: 'lekce', den }}
-        chyby={chyby}
-        onZapisChyby={onZapisChyby}
-        onZpet={onZpet}
-      />
-    );
-  }
+  const kdeJsem = [paragraf.cast, paragraf.hlava, paragraf.dil, paragraf.oddil]
+    .filter(Boolean)
+    .join(' · ');
 
   return (
     <ScrollView contentContainerStyle={styles.beh} showsVerticalScrollIndicator={false}>
-      <Zpet onPress={onZpet} popisek="← Domů" />
+      <Zpet onPress={onZpet} popisek="← Obsah" />
 
-      <Text style={styles.postup}>
-        {dnesni.den}. lekce · {dnesni.oblast}
-      </Text>
-      <Text style={styles.zneni}>{dnesni.nazev}</Text>
+      {/* Většina paragrafů nadpis nemá — pak je nadpisem samo číslo, ať se
+          nahoře nevypisuje prázdná fráze. */}
+      {paragraf.nazev ? (
+        <>
+          <Text style={styles.postup}>§ {paragraf.paragraf}</Text>
+          <Text style={styles.zneni}>{paragraf.nazev}</Text>
+        </>
+      ) : (
+        <Text style={styles.zneni}>§ {paragraf.paragraf}</Text>
+      )}
+      <Text style={styles.drobecky}>{kdeJsem}</Text>
 
-      <Vyklad text={dnesni.vyklad} />
+      {paragraf.odstavce.map((odstavec, i) => (
+        <Odstavec
+          key={odstavec.cislo ?? i}
+          odstavec={odstavec}
+          vyklad={vykladOdstavce(vyklad, paragraf, odstavec)}
+        />
+      ))}
 
-      <Pressable
-        onPress={() => setProcvicuje(true)}
-        accessibilityRole="button"
-        style={({ pressed }) => [styles.tlacitko, pressed && styles.tlacitkoStisk]}
-      >
-        <Text style={styles.tlacitkoText}>
-          Procvičit ({pocetOtazek(dnesni.otazky.length)})
-        </Text>
-      </Pressable>
+      <View style={styles.prechod}>
+        {predchozi ? (
+          <Pressable
+            onPress={() => onOtevri({ paragraf: predchozi.paragraf })}
+            accessibilityRole="button"
+            hitSlop={8}
+            style={styles.odkaz}
+          >
+            <Text style={styles.odkazText}>← § {predchozi.paragraf}</Text>
+          </Pressable>
+        ) : (
+          <View />
+        )}
+        {dalsi && (
+          <Pressable
+            onPress={() => onOtevri({ paragraf: dalsi.paragraf })}
+            accessibilityRole="button"
+            hitSlop={8}
+            style={styles.odkaz}
+          >
+            <Text style={styles.odkazText}>§ {dalsi.paragraf} →</Text>
+          </Pressable>
+        )}
+      </View>
     </ScrollView>
+  );
+}
+
+function Odstavec({ odstavec, vyklad: text }) {
+  return (
+    <View style={styles.odstavec}>
+      <Text style={styles.textZakona}>
+        {odstavec.cislo && <Text style={styles.cisloOdstavce}>({odstavec.cislo}) </Text>}
+        {odstavec.text}
+      </Text>
+      {text ? (
+        <View style={styles.rozbor}>
+          <Text style={styles.verdikt}>V praxi</Text>
+          <Vyklad text={text} />
+        </View>
+      ) : (
+        <Text style={styles.poznamka}>Výklad k tomuhle odstavci ještě nemám.</Text>
+      )}
+    </View>
   );
 }
 
@@ -313,9 +398,6 @@ function Volba({ popisek, napoveda, onPress, neaktivni }) {
 /** Připraví sadu otázek pro zvolený režim. */
 function sadaProRezim(zadani, chyby) {
   if (zadani.rezim === 'ostry') return sestavTest(otazky, odpovedi);
-  if (zadani.rezim === 'lekce') {
-    return otazkyLekce(lekce.find((l) => l.den === zadani.den), otazky);
-  }
   if (zadani.rezim === 'chyby') {
     const hledane = new Set(chyby);
     return otazky.filter((o) => hledane.has(o.id));
@@ -557,19 +639,19 @@ const styles = StyleSheet.create({
   },
   volbaStisk: { backgroundColor: '#F3EEE7' },
 
-  lekceKarta: {
+  karta: {
     borderRadius: 16,
     paddingVertical: 22,
     paddingHorizontal: 20,
     backgroundColor: theme.ink,
   },
-  lekceCislo: {
+  kartaNadnadpis: {
     fontSize: 12,
     letterSpacing: 1.2,
     textTransform: 'uppercase',
     color: theme.accent,
   },
-  lekceNazev: {
+  kartaNazev: {
     marginTop: 8,
     marginBottom: 6,
     fontSize: 22,
@@ -578,6 +660,60 @@ const styles = StyleSheet.create({
     color: theme.paper,
   },
   odkaz: { paddingVertical: 12, alignSelf: 'flex-start' },
+  prechod: {
+    marginTop: 28,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
+  podsekce: {
+    marginTop: 18,
+    marginBottom: 6,
+    fontSize: 13,
+    lineHeight: 19,
+    color: theme.muted,
+  },
+  hledani: {
+    marginTop: 8,
+    marginBottom: 4,
+    borderWidth: 1,
+    borderColor: theme.rule,
+    borderRadius: 12,
+    paddingVertical: 13,
+    paddingHorizontal: 16,
+    fontSize: 16,
+    color: theme.ink,
+    backgroundColor: '#FFFFFF',
+  },
+  radekParagrafu: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingVertical: 13,
+    borderBottomWidth: 1,
+    borderBottomColor: theme.rule,
+  },
+  cisloParagrafu: {
+    width: 58,
+    fontSize: 15,
+    fontWeight: '600',
+    color: theme.accent,
+  },
+  nazevParagrafu: { flex: 1, fontSize: 15, lineHeight: 21, color: theme.ink },
+  znacka: { fontSize: 11, color: theme.rule },
+  znackaHotovo: { color: theme.spravne },
+
+  drobecky: {
+    marginTop: -14,
+    marginBottom: 24,
+    fontSize: 13,
+    lineHeight: 19,
+    color: theme.muted,
+  },
+  odstavec: { marginBottom: 26 },
+  textZakona: { fontSize: 16, lineHeight: 25, color: theme.ink },
+  cisloOdstavce: { fontWeight: '600', color: theme.accent },
   odkazText: { fontSize: 15, color: theme.accent },
 
   vyklad: { marginTop: 4, gap: 16 },

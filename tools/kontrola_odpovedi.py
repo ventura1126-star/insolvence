@@ -22,41 +22,46 @@ STAVY = {"platna", "zastarala"}
 ZADNA = re.compile(r"(žádná|ani jedna).{0,30}(správná|není správná)", re.I)
 
 
-def zkontroluj_lekce(otazky, odpovedi):
-    """Ranní lekce odkazují na otázky jen jejich id — hlídá, že tam všechny jsou.
+def zkontroluj_vyklad():
+    """Výklad se píše ručně vedle znění zákona — hlídá, že se nerozešly.
 
-    Lekce s otázkou bez dohledané odpovědi by se v aplikaci ukázala bez rozboru,
-    což je horší než kratší lekce.
+    zakon.json se přegeneruje z e-Sbírky po každé novele, a novela umí odstavec
+    přečíslovat i zrušit. Výklad, který pak visí u odstavce, co v zákoně není,
+    by se v aplikaci tiše ztratil — tady je aspoň vidět.
     """
-    soubor = KOREN / "zkouska/assets/lekce.json"
-    if not soubor.exists():
-        return []
+    zakon_s = KOREN / "zkouska/assets/zakon.json"
+    vyklad_s = KOREN / "zkouska/assets/vyklad.json"
+    if not zakon_s.exists() or not vyklad_s.exists():
+        return ["chybí zakon.json nebo vyklad.json — spusť tools/vytez_zakon.py"]
 
-    lekce = json.loads(soubor.read_text("utf-8"))
+    zakon = json.loads(zakon_s.read_text("utf-8"))
+    vyklad = json.loads(vyklad_s.read_text("utf-8"))
     chyby = []
-    dny = [l["den"] for l in lekce]
 
-    if sorted(dny) != list(range(1, len(lekce) + 1)):
-        chyby.append(f"lekce: dny nejdou 1..{len(lekce)} bez mezer a duplicit")
+    # Odstavec bez čísla (paragraf o jediné větě) má ve výkladu klíč „-".
+    odstavce = {
+        p["paragraf"]: {o["cislo"] or "-" for o in p["odstavce"]} for p in zakon
+    }
 
-    for l in lekce:
-        for pole in ("nazev", "oblast", "vyklad"):
-            if not l.get(pole):
-                chyby.append(f"lekce {l['den']}: chybí {pole}")
-        if len(l.get("otazky", [])) < 3:
-            chyby.append(f"lekce {l['den']}: míň než 3 otázky")
-        if len(set(l["otazky"])) != len(l["otazky"]):
-            chyby.append(f"lekce {l['den']}: opakující se otázka")
-        for oid in l["otazky"]:
-            if oid not in otazky:
-                chyby.append(f"lekce {l['den']}: otázka {oid} neexistuje")
-            elif oid not in odpovedi:
-                chyby.append(f"lekce {l['den']}: otázka {oid} nemá dohledanou odpověď")
-            elif odpovedi[oid]["stav"] != "platna":
-                chyby.append(f"lekce {l['den']}: otázka {oid} je zastaralá")
+    for cislo, k_odstavcum in vyklad.items():
+        if cislo not in odstavce:
+            chyby.append(f"výklad § {cislo}: takový paragraf v zákoně není")
+            continue
+        for odstavec, text in k_odstavcum.items():
+            if odstavec not in odstavce[cislo]:
+                chyby.append(f"výklad § {cislo} odst. {odstavec}: takový odstavec není")
+            elif not text.strip():
+                chyby.append(f"výklad § {cislo} odst. {odstavec}: prázdný text")
 
-    print(f"lekcí           {len(lekce)}  "
-          f"(otázek v nich {sum(len(l['otazky']) for l in lekce)})")
+    celkem = sum(len(o) for o in odstavce.values())
+    hotovo = sum(
+        1
+        for cislo, k in vyklad.items()
+        for odstavec in k
+        if odstavec in odstavce.get(cislo, ())
+    )
+    print(f"zákon           {len(zakon)} paragrafů, {celkem} odstavců")
+    print(f"výklad          {hotovo} odstavců ({100 * hotovo // celkem} %)")
     return chyby
 
 
@@ -97,7 +102,7 @@ def main():
         if posledni in spravne and len(spravne) > 1 and ZADNA.search(otazka["varianty"][posledni]):
             chyby.append(f"{oid}: „žádná odpověď\" se nedá kombinovat s jinou variantou")
 
-    chyby += zkontroluj_lekce(otazky, odpovedi)
+    chyby += zkontroluj_vyklad()
 
     hotovo = sum(1 for o in odpovedi.values() if o.get("stav") == "platna")
     print(f"otázek celkem   {len(otazky)}")
