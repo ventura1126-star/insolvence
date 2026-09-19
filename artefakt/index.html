@@ -90,6 +90,45 @@
     letter-spacing: -.01em;
   }
   .lista-stav { margin-left: auto; font-size: .8rem; color: var(--tlum); font-variant-numeric: tabular-nums; }
+  .tisk-tlacitko {
+    appearance: none;
+    border: 1px solid var(--linka);
+    background: none;
+    color: var(--tlum);
+    font: inherit;
+    font-size: .82rem;
+    border-radius: 999px;
+    padding: .25rem .75rem;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .lista-stav + .tisk-tlacitko { margin-left: .5rem; }
+  .tisk-tlacitko:hover { color: var(--inkoust); border-color: var(--tlum); }
+  .tisk-tlacitko:focus-visible { outline: 2px solid var(--pecet); outline-offset: 1px; }
+
+  .tisk-panel {
+    border: 1px solid var(--linka);
+    background: var(--plocha);
+    border-radius: .75rem;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--stin);
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+  .tisk-panel .stitek { margin-bottom: .1rem; }
+  .tisk-volba {
+    display: flex;
+    align-items: baseline;
+    gap: .55rem;
+    font-size: .93rem;
+    cursor: pointer;
+  }
+  .tisk-volba input { margin: 0; accent-color: var(--pecet); }
+  .tisk-volba .kolik { color: var(--tlum); font-size: .84rem; }
+  .tisk-akce { display: flex; gap: .5rem; align-items: center; margin-top: .35rem; }
+  .tisk-akce .poslat { background: var(--pecet); }
 
   /* ---- obsah ---------------------------------------------------------- */
   .titul {
@@ -314,6 +353,99 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
+
+  /* ---- tisk ------------------------------------------------------------
+     Na papír se nekreslí obrazovka, ale vlastní sazba: žádné plochy (jsou
+     to litry inkoustu a na tiskárně stejně vypadnou), místo nich linky.
+     Rozlišení patkové/bezpatkové zůstává — na papíře nese stejnou informaci
+     jako na displeji, tedy kde mluví zákon a kde už někdo o zákoně. */
+  .tisk { display: none; }
+
+  @media print {
+    @page { margin: 18mm 16mm 20mm; }
+    html, body { background: #FFF; color: #000; }
+    .obal { display: none; }
+    .tisk { display: block; }
+
+    .tisk {
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      color: #000;
+      orphans: 3;
+      widows: 3;
+    }
+    .t-hlavicka { border-bottom: 1.5pt solid #000; padding-bottom: 6pt; margin-bottom: 16pt; }
+    .t-nadpis {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 17pt;
+      font-weight: 600;
+      letter-spacing: -.01em;
+    }
+    .t-podnadpis { font-size: 8pt; color: #444; margin-top: 3pt; }
+
+    .t-paragraf { break-before: page; }
+    .t-paragraf:first-of-type { break-before: avoid; }
+    .t-paragraf-cislo {
+      font-size: 8pt;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .t-paragraf-nazev {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 14pt;
+      font-weight: 600;
+      line-height: 1.15;
+      margin: 1pt 0 2pt;
+      break-after: avoid;
+    }
+    .t-drobecky { font-size: 7.5pt; color: #555; margin-bottom: 12pt; }
+
+    .t-odstavec { margin-bottom: 14pt; }
+    .t-zneni {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 10pt;
+      line-height: 1.4;
+      white-space: pre-line;
+      margin: 0;
+      break-after: avoid;
+    }
+    .t-zneni-cislo { font-family: "IBM Plex Sans", sans-serif; font-weight: 600; font-size: 9pt; }
+
+    .t-vyklad { margin: 7pt 0 0 0; padding-left: 9pt; border-left: 2pt solid #000; }
+    .t-stitek {
+      display: block;
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 3pt;
+    }
+    .t-vyklad p { margin: 0 0 5pt; }
+    .t-vyklad p:last-child { margin-bottom: 0; }
+    .t-chybi { margin: 6pt 0 0; font-size: 8.5pt; color: #666; font-style: italic; }
+
+    /* Rozhovor dostane tečkovanou linku, aby se na první pohled odlišil od
+       výkladu — na papíře nemáme barvu, která to dělá na displeji. */
+    .t-rozhovor { margin: 7pt 0 0 0; padding-left: 9pt; border-left: 1pt dotted #000; }
+    .t-kdo {
+      font-size: 7pt;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #333;
+      margin-bottom: 2pt;
+      break-after: avoid;
+    }
+    .t-bublina { margin-bottom: 6pt; break-inside: avoid; }
+    .t-bublina:last-child { margin-bottom: 0; }
+    .t-bublina p { margin: 0 0 4pt; }
+    .t-bublina p:last-child { margin-bottom: 0; }
+    .t-bublina.ja p { font-style: italic; }
+
+    .t-patka { margin-top: 18pt; padding-top: 5pt; border-top: .5pt solid #999; font-size: 7.5pt; color: #555; }
+  }
 </style>
 
 <div class="obal">
@@ -321,9 +453,12 @@
     <button class="zpet" id="zpet" hidden>← Obsah</button>
     <span class="lista-nazev" id="lista-nazev">Insolvenční zákon</span>
     <span class="lista-stav" id="lista-stav"></span>
+    <button class="tisk-tlacitko" id="tisk-tlacitko">Tisk</button>
   </div>
+  <div id="tisk-misto"></div>
   <main id="hlavni"></main>
 </div>
+<div class="tisk" id="tisk" aria-hidden="true"></div>
 
 <script src="zakon.js"></script>
 <script src="vyklad.js"></script>
@@ -761,9 +896,203 @@
     window.scrollTo(0, 0);
   }
 
+  /* ---- tisk ------------------------------------------------------------
+     Na papír se nevykresluje obrazovka, ale vlastní dokument — jinak by se
+     tisklo i to, co je sbalené, a chybělo by to, co je uložené jinde než
+     v právě otevřeném paragrafu. Rozhovory se proto před tiskem dotáhnou
+     z úložiště pro všechny paragrafy, které se mají tisknout. */
+
+  var tiskMisto = document.getElementById('tisk-misto');
+  var tiskCil = document.getElementById('tisk');
+  var tiskBtn = document.getElementById('tisk-tlacitko');
+  var tiskPanel = null;
+
+  function maVyklad(p) { return vylozeno(p) > 0; }
+
+  /** Všechny uložené rozhovory tohoto čtenáře, jako {"36-5": [zprávy]}. */
+  function nactiVsechnyRozhovory() {
+    if (!db) return Promise.resolve({});
+    var mapa = {};
+    return db.collection('data/users/me').get().then(function (snap) {
+      (snap.docs || []).forEach(function (d) {
+        var data = d.data();
+        if (data && Array.isArray(data.zpravy) && data.zpravy.length) {
+          mapa[d.id] = data.zpravy;
+        }
+      });
+      return mapa;
+    }).catch(function () { return {}; });
+  }
+
+  function tiskniParagraf(p, rozhovory, sRozhovory) {
+    var sekce = el('section', 't-paragraf');
+    sekce.appendChild(el('div', 't-paragraf-cislo', '§ ' + p.paragraf));
+    if (p.nazev) sekce.appendChild(el('h2', 't-paragraf-nazev', p.nazev));
+    sekce.appendChild(el('div', 't-drobecky',
+      [p.cast, p.hlava, p.dil, p.oddil].filter(Boolean).join(' · ')));
+
+    p.odstavce.forEach(function (o) {
+      var blok = el('div', 't-odstavec');
+
+      var zneni = el('p', 't-zneni');
+      if (o.cislo) zneni.appendChild(el('span', 't-zneni-cislo', '(' + o.cislo + ') '));
+      zneni.appendChild(document.createTextNode(o.text));
+      blok.appendChild(zneni);
+
+      var v = vykladOdstavce(p, o);
+      if (v) {
+        var karta = el('div', 't-vyklad');
+        karta.appendChild(el('span', 't-stitek', 'V praxi'));
+        vlozText(karta, v);
+        blok.appendChild(karta);
+      }
+
+      var zpravy = sRozhovory ? rozhovory[klicDiskuze(p, o)] : null;
+      if (zpravy && zpravy.length) {
+        var vlakno = el('div', 't-rozhovor');
+        vlakno.appendChild(el('span', 't-stitek', 'Můj rozhovor k odstavci'));
+        zpravy.forEach(function (z) {
+          var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
+          b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
+          vlozText(b, z.text);
+          vlakno.appendChild(b);
+        });
+        blok.appendChild(vlakno);
+      }
+
+      sekce.appendChild(blok);
+    });
+    return sekce;
+  }
+
+  function vytiskni(paragrafy, sRozhovory, popisRozsahu) {
+    return nactiVsechnyRozhovory().then(function (rozhovory) {
+      tiskCil.textContent = '';
+
+      var hlavicka = el('header', 't-hlavicka');
+      hlavicka.appendChild(el('div', 't-nadpis', 'Insolvenční zákon v praxi'));
+      hlavicka.appendChild(el('div', 't-podnadpis',
+        'Zákon č. 182/2006 Sb., znění podle Sbírky · ' + popisRozsahu +
+        ' · vytištěno ' + new Date().toLocaleDateString('cs-CZ')));
+      tiskCil.appendChild(hlavicka);
+
+      paragrafy.forEach(function (p) {
+        tiskCil.appendChild(tiskniParagraf(p, rozhovory, sRozhovory));
+      });
+
+      tiskCil.appendChild(el('div', 't-patka',
+        'Výklad je neoficiální a slouží k přípravě na zkoušku insolvenčního ' +
+        'správce; závazné je jen znění předpisu.'));
+
+      // Prohlížeč musí stihnout dokument složit, než otevře náhled.
+      return new Promise(function (hotovo) {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            window.print();
+            hotovo();
+          });
+        });
+      });
+    });
+  }
+
+  function zavriPanel() {
+    if (tiskPanel) { tiskPanel.remove(); tiskPanel = null; }
+  }
+
+  function otevriPanel() {
+    if (tiskPanel) { zavriPanel(); return; }
+
+    var h = location.hash.replace(/^#/, '');
+    var otevreny = h.indexOf('p') === 0 ? podleCisla[h.slice(1)] : null;
+    var sVykladem = ZAKON.filter(maVyklad);
+    var odstavcuSVykladem = 0;
+    sVykladem.forEach(function (p) { odstavcuSVykladem += p.odstavce.length; });
+
+    tiskPanel = el('div', 'tisk-panel');
+    tiskPanel.appendChild(el('div', 'stitek', 'Co vytisknout'));
+
+    var volby = [];
+    function pridejVolbu(hodnota, popis, kolik, vychozi) {
+      var l = el('label', 'tisk-volba');
+      var r = document.createElement('input');
+      r.type = 'radio';
+      r.name = 'tisk-rozsah';
+      r.value = hodnota;
+      r.checked = !!vychozi;
+      l.appendChild(r);
+      var t = el('span');
+      t.appendChild(document.createTextNode(popis + ' '));
+      t.appendChild(el('span', 'kolik', kolik));
+      l.appendChild(t);
+      tiskPanel.appendChild(l);
+      volby.push(r);
+    }
+
+    if (otevreny) {
+      pridejVolbu('tento', 'Tento paragraf',
+        '§ ' + otevreny.paragraf + ' · ' + otevreny.odstavce.length + ' odst.', true);
+    }
+    pridejVolbu('vyklad', 'Vše, k čemu je výklad',
+      sVykladem.length + ' paragrafů · ' + odstavcuSVykladem + ' odst.', !otevreny);
+    pridejVolbu('vse', 'Celý zákon',
+      ZAKON.length + ' paragrafů · dlouhé', false);
+
+    var lb = el('label', 'tisk-volba');
+    var zaskrt = document.createElement('input');
+    zaskrt.type = 'checkbox';
+    zaskrt.checked = true;
+    zaskrt.disabled = !db;
+    lb.appendChild(zaskrt);
+    lb.appendChild(el('span', null, db
+      ? 'Včetně mých rozhovorů s Claudem'
+      : 'Rozhovory teď nejdou načíst'));
+    tiskPanel.appendChild(lb);
+
+    var akce = el('div', 'tisk-akce');
+    var ok = el('button', 'poslat');
+    ok.type = 'button';
+    ok.textContent = 'Vytisknout';
+    var zrus = el('button', 'drobny');
+    zrus.type = 'button';
+    zrus.textContent = 'Zavřít';
+    akce.appendChild(ok);
+    akce.appendChild(zrus);
+    tiskPanel.appendChild(akce);
+
+    ok.addEventListener('click', function () {
+      var rozsah = 'vyklad';
+      volby.forEach(function (r) { if (r.checked) rozsah = r.value; });
+      var sada, popis;
+      if (rozsah === 'tento' && otevreny) {
+        sada = [otevreny];
+        popis = '§ ' + otevreny.paragraf;
+      } else if (rozsah === 'vse') {
+        sada = ZAKON;
+        popis = 'celý zákon';
+      } else {
+        sada = sVykladem;
+        popis = 'paragrafy s výkladem';
+      }
+      ok.disabled = true;
+      ok.textContent = 'Připravuju…';
+      vytiskni(sada, zaskrt.checked && !!db, popis).then(function () {
+        ok.disabled = false;
+        ok.textContent = 'Vytisknout';
+        zavriPanel();
+      });
+    });
+    zrus.addEventListener('click', zavriPanel);
+
+    tiskMisto.appendChild(tiskPanel);
+  }
+
+  tiskBtn.addEventListener('click', otevriPanel);
+
   /* ---- směrování ------------------------------------------------------ */
 
   function smeruj() {
+    zavriPanel();
     var h = location.hash.replace(/^#/, '');
     if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
     else vykresliObsah('');
