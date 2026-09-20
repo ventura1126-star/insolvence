@@ -284,6 +284,11 @@
     display: block;
   }
 
+  .vlakno { display: flex; flex-direction: column; gap: .75rem; }
+
+  .stav-ulozeni { font-size: .78rem; color: var(--tlum); }
+  .stav-ulozeni.varovne { color: var(--pecet); }
+
   .psani { display: flex; flex-direction: column; gap: .5rem; }
   .dotaz {
     width: 100%;
@@ -474,8 +479,6 @@
   // nepovolený přístup). Stránka se vykreslí bez nich a diskuze se rozsvítí,
   // až když se ozvou.
   var sample = null;
-  var db = null;
-  var schopnostiHotovy = false;
 
   var hlavni = document.getElementById('hlavni');
   var zpetBtn = document.getElementById('zpet');
@@ -626,6 +629,129 @@
 
   /* ---- rozhovor pod odstavcem ---------------------------------------- */
 
+  /* ---- ukládání rozhovorů ---------------------------------------------
+     Dvě vrstvy, a to schválně. Prohlížeč drží rozhovor hned a bez ptaní,
+     takže přežije obnovení stránky i tehdy, když se serverem něco je.
+     Server je navíc — díky němu je rozhovor vidět i na druhém zařízení.
+     Když server nejde, neschovává se to: panel to napíše. Tiché selhání
+     vypadá přesně jako „nic se neukládá", a to je horší než chybová hláška. */
+
+  var PREDPONA = 'iz-rozhovor-';
+
+  var ulozeni = {
+    db: null,
+    stav: 'ceka',   // 'ceka' | 'server' | 'jen-zde'
+    duvod: '',
+    vlakna: {}      // klíč odstavce → {paragraf, odstavec, zpravy, zmeneno}
+  };
+
+  function zLokalniho(klic) {
+    try {
+      var s = localStorage.getItem(PREDPONA + klic);
+      return s ? JSON.parse(s) : null;
+    } catch (e) { return null; }
+  }
+
+  function doLokalniho(klic, zaznam) {
+    try { localStorage.setItem(PREDPONA + klic, JSON.stringify(zaznam)); }
+    catch (e) { /* plné nebo zakázané úložiště — snad to vezme server */ }
+  }
+
+  function vsechnoZLokalniho() {
+    var mapa = {};
+    try {
+      for (var i = 0; i < localStorage.length; i += 1) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(PREDPONA) === 0) {
+          var z = zLokalniho(k.slice(PREDPONA.length));
+          if (z && z.zpravy && z.zpravy.length) mapa[k.slice(PREDPONA.length)] = z;
+        }
+      }
+    } catch (e) { /* soukromé okno, zakázané úložiště */ }
+    return mapa;
+  }
+
+  function nastavStav(stav, duvod) {
+    ulozeni.stav = stav;
+    ulozeni.duvod = duvod || '';
+    ozviSeVlaknum();
+  }
+
+  /** Uloží vlákno — nejdřív do prohlížeče, pak na server, jde-li to. */
+  function ulozVlakno(klic, p, o, zpravy) {
+    var zaznam = {
+      paragraf: p.paragraf,
+      odstavec: o.cislo || null,
+      zpravy: zpravy.slice(),
+      zmeneno: Date.now()
+    };
+    ulozeni.vlakna[klic] = zaznam;
+    doLokalniho(klic, zaznam);
+
+    if (!ulozeni.db) return Promise.resolve();
+    return ulozeni.db.doc('data/users/me/' + klic).set(zaznam).then(function () {
+      if (ulozeni.stav !== 'server') nastavStav('server', '');
+    }, function (e) {
+      nastavStav('jen-zde', (e && e.code) || 'zápis se nepodařil');
+    });
+  }
+
+  function smazVlakno(klic) {
+    delete ulozeni.vlakna[klic];
+    try { localStorage.removeItem(PREDPONA + klic); } catch (e) {}
+    if (ulozeni.db) {
+      ulozeni.db.doc('data/users/me/' + klic).delete().then(null, function () {});
+    }
+  }
+
+  function popisNedostupnosti(perm) {
+    if (!perm) return Promise.resolve('úložiště není k dispozici');
+    return perm.state('db').then(function (stav) {
+      if (stav === 'denied') return 'ukládání jsi při načtení odmítl — načti stránku znovu';
+      if (stav === 'prompt') return 'ukládání zatím není povolené';
+      if (stav === 'unavailable') return 'úložiště tu není k dispozici';
+      return 'na server se to teď nedaří';
+    }, function () { return 'úložiště není k dispozici'; });
+  }
+
+  function nastartujUlozeni() {
+    // Co je v prohlížeči, je k dispozici hned — ještě než se ozve server.
+    ulozeni.vlakna = vsechnoZLokalniho();
+    ozviSeVlaknum();
+
+    if (!(window.claude && window.claude.use)) {
+      nastavStav('jen-zde', 'stránka běží mimo Claude');
+      return;
+    }
+
+    window.claude.use('db').then(function (d) {
+      if (!d) {
+        return window.claude.use('permissions')
+          .then(popisNedostupnosti, function () { return 'úložiště není k dispozici'; })
+          .then(function (duvod) { nastavStav('jen-zde', duvod); });
+      }
+      ulozeni.db = d;
+      // Jedno hromadné načtení místo dotazu u každého odstavce zvlášť.
+      return d.collection('data/users/me').get().then(function (snap) {
+        (snap.docs || []).forEach(function (doc) {
+          var data = doc.data();
+          if (!data || !Array.isArray(data.zpravy) || !data.zpravy.length) return;
+          var mistni = ulozeni.vlakna[doc.id];
+          // Novější vyhrává; bez razítka bere přednost server.
+          if (!mistni || (data.zmeneno || 0) >= (mistni.zmeneno || 0)) {
+            ulozeni.vlakna[doc.id] = data;
+            doLokalniho(doc.id, data);
+          }
+        });
+        nastavStav('server', '');
+      });
+    }).then(null, function (e) {
+      nastavStav('jen-zde', (e && e.code) || 'na server se nepodařilo připojit');
+    });
+  }
+
+  /* ---- rozhovor pod odstavcem ---------------------------------------- */
+
   function kontext(p, o, vyklad) {
     return [
       'Jsi asistent pro přípravu na obecnou zkoušku insolvenčního správce v ČR.',
@@ -651,24 +777,20 @@
   function rozhovorProOdstavec(p, o, vyklad) {
     var obal = el('div');
     var klic = klicDiskuze(p, o);
-    var zpravy = [];
+    var ulozene = ulozeni.vlakna[klic];
+    var zpravy = ulozene && ulozene.zpravy ? ulozene.zpravy.slice() : [];
     var otevreno = false;
     var bezi = false;
-    var ulozeniDoc = null;
 
     var rozbal = el('button', 'rozbal');
     rozbal.type = 'button';
-    rozbal.textContent = 'Zeptat se na tento odstavec';
     obal.appendChild(rozbal);
 
     var panel = el('div', 'rozhovor');
     panel.hidden = true;
     obal.appendChild(panel);
 
-    var vlakno = el('div');
-    vlakno.style.display = 'flex';
-    vlakno.style.flexDirection = 'column';
-    vlakno.style.gap = '.75rem';
+    var vlakno = el('div', 'vlakno');
     panel.appendChild(vlakno);
 
     var psani = el('div', 'psani');
@@ -682,7 +804,6 @@
     var smazat = el('button', 'drobny');
     smazat.type = 'button';
     smazat.textContent = 'Smazat rozhovor';
-    smazat.hidden = true;
     nastroje.appendChild(poslat);
     nastroje.appendChild(smazat);
     psani.appendChild(pole);
@@ -693,10 +814,29 @@
     potiz.hidden = true;
     panel.appendChild(potiz);
 
+    var stavUlozeni = el('div', 'stav-ulozeni');
+    panel.appendChild(stavUlozeni);
+
     function popisek() {
       rozbal.textContent = zpravy.length
         ? (otevreno ? 'Skrýt rozhovor' : 'Rozhovor (' + zpravy.length + ')')
         : (otevreno ? 'Skrýt' : 'Zeptat se na tento odstavec');
+    }
+
+    function vykresliStav() {
+      if (!zpravy.length || ulozeni.stav === 'ceka') {
+        stavUlozeni.hidden = true;
+        return;
+      }
+      stavUlozeni.hidden = false;
+      if (ulozeni.stav === 'server') {
+        stavUlozeni.className = 'stav-ulozeni';
+        stavUlozeni.textContent = 'Uloženo — uvidíš to i na jiném zařízení.';
+      } else {
+        stavUlozeni.className = 'stav-ulozeni varovne';
+        stavUlozeni.textContent =
+          'Uloženo jen v tomhle prohlížeči: ' + ulozeni.duvod + '.';
+      }
     }
 
     function vykresliVlakno(rozepsana) {
@@ -704,11 +844,8 @@
       zpravy.forEach(function (z) {
         var b = el('div', 'bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
         b.appendChild(el('span', 'kdo', z.role === 'user' ? 'Já' : 'Claude'));
-        if (z.role === 'user') {
-          b.appendChild(el('span', 'text', z.text));
-        } else {
-          vlozText(b, z.text);
-        }
+        if (z.role === 'user') b.appendChild(el('span', 'text', z.text));
+        else vlozText(b, z.text);
         vlakno.appendChild(b);
       });
       if (rozepsana != null) {
@@ -720,30 +857,7 @@
       }
       smazat.hidden = zpravy.length === 0;
       popisek();
-    }
-
-    function uloz() {
-      if (!ulozeniDoc) return;
-      ulozeniDoc.set({
-        paragraf: p.paragraf,
-        odstavec: o.cislo || null,
-        zpravy: zpravy,
-        zmeneno: Date.now()
-      }).catch(function () { /* uložení je pohodlí, ne podmínka */ });
-    }
-
-    function nactiUlozene() {
-      if (!db) return;
-      try {
-        ulozeniDoc = db.doc('data/users/me/' + klic);
-      } catch (e) { return; }
-      ulozeniDoc.get().then(function (snap) {
-        var data = snap && snap.exists ? snap.data() : null;
-        if (data && Array.isArray(data.zpravy) && data.zpravy.length && !zpravy.length) {
-          zpravy = data.zpravy;
-          vykresliVlakno(null);
-        }
-      }).catch(function () {});
+      vykresliStav();
     }
 
     function odesli() {
@@ -755,8 +869,11 @@
       pole.value = '';
       zpravy.push({ role: 'user', text: text });
       vykresliVlakno('');
+      // Otázka se ukládá hned. Kdyby se odpověď nedopsala nebo ses zavřel
+      // stránku uprostřed, nepřijdeš aspoň o to, na co ses ptal.
+      ulozVlakno(klic, p, o, zpravy);
 
-      // Kontext se přilepí k první otázce; další kola ho už mají v historii.
+      // Kontext se přilepí k první otázce; další kola ho mají v historii.
       var tahy = zpravy.map(function (z, i) {
         return {
           role: z.role,
@@ -772,10 +889,11 @@
       }).then(function (v) {
         zpravy.push({ role: 'assistant', text: v.text });
         vykresliVlakno(null);
-        uloz();
-      }).catch(function (e) {
+        ulozVlakno(klic, p, o, zpravy);
+      }, function (e) {
         zpravy.pop();
         vykresliVlakno(null);
+        ulozVlakno(klic, p, o, zpravy);
         potiz.hidden = false;
         potiz.textContent =
           e && e.code === 'rate_limited' ? 'Moc dotazů za sebou. Zkus to za chvíli.'
@@ -799,26 +917,32 @@
     });
     smazat.addEventListener('click', function () {
       zpravy = [];
+      smazVlakno(klic);
       vykresliVlakno(null);
-      if (ulozeniDoc) ulozeniDoc.delete().catch(function () {});
     });
 
-    nactiUlozene();
+    /** Úložiště se ozvalo až teď — dotáhnout, co v něm leží. */
+    obal.obnov = function () {
+      if (bezi) return;
+      var z = ulozeni.vlakna[klic];
+      var nove = z && z.zpravy ? z.zpravy : [];
+      if (nove.length !== zpravy.length) zpravy = nove.slice();
+      vykresliVlakno(null);
+    };
+    obal.prepni = function () { obal.hidden = !sample; };
 
-    // Dokud se schopnosti neozvou, tlačítko se neukazuje — ať nenabízí něco,
-    // co nemusí fungovat.
-    function prepniDostupnost() {
-      obal.hidden = !sample;
-    }
-    prepniDostupnost();
-    obal.prepni = prepniDostupnost;
-    obal.nactiUlozene = nactiUlozene;
+    obal.prepni();
+    vykresliVlakno(null);
     return obal;
   }
-
   /* ---- paragraf ------------------------------------------------------- */
 
   var zivePrepinace = [];
+
+  /** Dá vědět rozhovorům na obrazovce, že se uložená data nebo stav změnily. */
+  function ozviSeVlaknum() {
+    zivePrepinace.forEach(function (r) { r.obnov(); });
+  }
 
   function vykresliParagraf(cislo) {
     var p = podleCisla[cislo];
@@ -909,20 +1033,17 @@
 
   function maVyklad(p) { return vylozeno(p) > 0; }
 
-  /** Všechny uložené rozhovory tohoto čtenáře, jako {"36-5": [zprávy]}. */
-  function nactiVsechnyRozhovory() {
-    if (!db) return Promise.resolve({});
+  /** Všechny uložené rozhovory, jako {"36-5": [zprávy]}. */
+  function vsechnyRozhovory() {
     var mapa = {};
-    return db.collection('data/users/me').get().then(function (snap) {
-      (snap.docs || []).forEach(function (d) {
-        var data = d.data();
-        if (data && Array.isArray(data.zpravy) && data.zpravy.length) {
-          mapa[d.id] = data.zpravy;
-        }
-      });
-      return mapa;
-    }).catch(function () { return {}; });
+    Object.keys(ulozeni.vlakna).forEach(function (k) {
+      var z = ulozeni.vlakna[k];
+      if (z && z.zpravy && z.zpravy.length) mapa[k] = z.zpravy;
+    });
+    return mapa;
   }
+
+  function maNejakyRozhovor() { return Object.keys(vsechnyRozhovory()).length > 0; }
 
   function tiskniParagraf(p, rozhovory, sRozhovory) {
     var sekce = el('section', 't-paragraf');
@@ -966,7 +1087,8 @@
   }
 
   function vytiskni(paragrafy, sRozhovory, popisRozsahu) {
-    return nactiVsechnyRozhovory().then(function (rozhovory) {
+    var rozhovory = vsechnyRozhovory();
+    return Promise.resolve().then(function () {
       tiskCil.textContent = '';
 
       var hlavicka = el('header', 't-hlavicka');
@@ -1041,12 +1163,13 @@
     var lb = el('label', 'tisk-volba');
     var zaskrt = document.createElement('input');
     zaskrt.type = 'checkbox';
-    zaskrt.checked = true;
-    zaskrt.disabled = !db;
+    var jsouRozhovory = maNejakyRozhovor();
+    zaskrt.checked = jsouRozhovory;
+    zaskrt.disabled = !jsouRozhovory;
     lb.appendChild(zaskrt);
-    lb.appendChild(el('span', null, db
+    lb.appendChild(el('span', null, jsouRozhovory
       ? 'Včetně mých rozhovorů s Claudem'
-      : 'Rozhovory teď nejdou načíst'));
+      : 'Zatím nemáš u žádného odstavce rozhovor'));
     tiskPanel.appendChild(lb);
 
     var akce = el('div', 'tisk-akce');
@@ -1076,7 +1199,7 @@
       }
       ok.disabled = true;
       ok.textContent = 'Připravuju…';
-      vytiskni(sada, zaskrt.checked && !!db, popis).then(function () {
+      vytiskni(sada, zaskrt.checked, popis).then(function () {
         ok.disabled = false;
         ok.textContent = 'Vytisknout';
         zavriPanel();
@@ -1107,17 +1230,13 @@
 
   /* ---- schopnosti ----------------------------------------------------- */
 
+  nastartujUlozeni();
+
   if (window.claude && window.claude.use) {
     window.claude.use('sample').then(function (s) {
       sample = s;
       zivePrepinace.forEach(function (r) { r.prepni(); });
-    }).catch(function () {});
-    window.claude.use('db').then(function (d) {
-      db = d;
-      // Úložiště se mohlo ozvat až po vykreslení paragrafu — dotáhnout
-      // uložené rozhovory dodatečně.
-      if (db) zivePrepinace.forEach(function (r) { r.nactiUlozene(); });
-    }).catch(function () {});
+    }, function () {});
   }
 })();
 </script>

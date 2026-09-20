@@ -130,8 +130,11 @@ Web běží na <https://ventura1126-star.github.io/insolvence/> a je neindexovan
 Týž zákon a výklad běží i jako Artifact na claude.ai —
 <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>. Navíc proti webové verzi
 umí dvě věci, které statická stránka neumí. Pod každým odstavcem se dá rovnou
-zeptat Claudea, a ten dostane v kontextu znění toho odstavce i výklad k němu;
-rozhovory se ukládají na server, takže drží napříč zařízeními. A celé se to dá
+zeptat Claudea, a ten dostane v kontextu znění toho odstavce i výklad k němu.
+Rozhovory se ukládají dvakrát: hned do prohlížeče (drží obnovení stránky a
+nepotřebuje k tomu nic povolovat) a navíc na server (pak jsou vidět i na
+druhém zařízení). Když server nejde, panel to napíše i s důvodem — mlčky se
+to neztrácí. A celé se to dá
 vytisknout — jeden paragraf, všechno s výkladem, nebo celý zákon, volitelně
 i s uloženými rozhovory. Tisk má vlastní sazbu, ne obrázek obrazovky: místo
 barevných ploch linky (plná u výkladu, tečkovaná u rozhovoru), každý paragraf
