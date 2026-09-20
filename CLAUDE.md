@@ -21,7 +21,12 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 - Kód: `artefakt/index.html` (jedna stránka, prostý HTML/JS, bez frameworku)
 - Data: `artefakt/zakon.json`, `artefakt/vyklad.json`, `artefakt/temata.json`
 - Náplň: znění zákona, výklad po odstavcích, témata mimo insolvenční zákon,
-  rozhovor s Claudem pod každým místem, tisk
+  rozhovory s Claudem, tisk
+- Rozhovory: jeden sdílený **postranní panel** (na širokém displeji sloupec
+  vedle textu, na telefonu přes celou obrazovku), každé vlákno má **název** a
+  všechna se dají najít v přehledu **Moje rozhovory** (`#rozhovory`). Ukládají
+  se dvojmo — do prohlížeče hned a na server pro druhé zařízení; selhání
+  serveru se **nesmí zamlčet**, panel o něm píše i s důvodem.
 
 Publikuje se nástrojem Artifact. Z jiné konverzace je potřeba předat `url`,
 jinak vznikne nový artefakt místo aktualizace toho stávajícího.

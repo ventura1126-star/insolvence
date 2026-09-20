@@ -190,6 +190,17 @@
   .radek-znacka.castecne { color: var(--tlum); }
 
   .radek-tema { grid-template-columns: 1fr auto; }
+  .radek-vlakno { grid-template-columns: 1fr auto; align-items: center; }
+  .vlakno-nazev { display: block; font-size: .95rem; }
+  .vlakno-kde {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: .15rem;
+    font-size: .78rem;
+    color: var(--tlum);
+  }
   .radek-pramen { font-size: .78rem; color: var(--tlum); white-space: nowrap; }
   .bod-nadpis {
     font-family: "Source Serif 4", Georgia, serif;
@@ -253,6 +264,98 @@
   .chybi { margin-top: .9rem; font-size: .88rem; color: var(--tlum); font-style: italic; }
 
   /* ---- rozhovor ------------------------------------------------------- */
+  /* Panel stojí na širokém displeji vedle textu, aby znění zákona zůstalo
+     vidět, a na telefonu přes celou obrazovku, kde by sloupec neměl smysl. */
+  .panel {
+    position: fixed;
+    z-index: 20;
+    inset: 0;
+    background: var(--plocha);
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--linka);
+  }
+  .panel-zaves { display: none; }
+
+  @media (min-width: 62rem) {
+    .panel {
+      inset: 0 0 0 auto;
+      width: 25rem;
+      box-shadow: -1px 0 0 var(--linka), -24px 0 48px rgba(26, 23, 20, .06);
+    }
+    body.s-panelem .obal { margin-right: 25rem; }
+  }
+  @media (max-width: 61.99rem) {
+    .panel-zaves {
+      display: block;
+      position: fixed;
+      inset: 0;
+      z-index: 19;
+      background: rgba(26, 23, 20, .25);
+    }
+  }
+
+  .panel-hlavicka {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .7rem .9rem .5rem;
+    border-bottom: 1px solid var(--linka);
+  }
+  .panel-nazev {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--inkoust);
+    background: none;
+    border: 1px solid transparent;
+    border-radius: .4rem;
+    padding: .3rem .4rem;
+  }
+  .panel-nazev:hover:not(:disabled) { border-color: var(--linka); }
+  .panel-nazev:focus-visible { outline: 2px solid var(--rozhovor); outline-offset: 0; }
+  .panel-nazev::placeholder { color: var(--tlum); font-weight: 400; }
+  .panel-zavrit {
+    appearance: none;
+    border: 0;
+    background: none;
+    color: var(--tlum);
+    font-size: 1.05rem;
+    line-height: 1;
+    padding: .45rem .5rem;
+    cursor: pointer;
+    border-radius: .4rem;
+  }
+  .panel-zavrit:hover { color: var(--inkoust); background: var(--vyklad-plocha); }
+  .panel-kde {
+    appearance: none;
+    border: 0;
+    background: none;
+    text-align: left;
+    font: inherit;
+    font-size: .8rem;
+    color: var(--rozhovor);
+    padding: .45rem .95rem .6rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--linka);
+  }
+  .panel-kde:hover { text-decoration: underline; }
+  .panel-telo {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem .95rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
+  .panel .psani {
+    border-top: 1px solid var(--linka);
+    padding: .75rem .95rem 1rem;
+    background: var(--plocha);
+  }
+
   .rozbal {
     margin-top: .75rem;
     appearance: none;
@@ -266,16 +369,14 @@
     cursor: pointer;
   }
   .rozbal:hover { border-color: var(--rozhovor); }
+  /* Místo, kde už rozhovor je, to dá znát i beze slov. */
+  .rozbal-plny {
+    border-color: var(--rozhovor);
+    background: var(--rozhovor-plocha);
+    font-weight: 500;
+  }
   .rozbal:focus-visible { outline: 2px solid var(--rozhovor); outline-offset: 1px; }
 
-  .rozhovor {
-    margin-top: .75rem;
-    border-left: 2px solid var(--rozhovor);
-    padding-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-  }
   .bublina { font-size: .95rem; }
   .bublina .kdo {
     font-size: .68rem;
@@ -381,7 +482,8 @@
   @media print {
     @page { margin: 18mm 16mm 20mm; }
     html, body { background: #FFF; color: #000; }
-    .obal { display: none; }
+    .obal, .panel, .panel-zaves { display: none; }
+    body.s-panelem .obal { margin-right: 0; }
     .tisk { display: block; }
 
     .tisk {
@@ -478,6 +580,7 @@
     <button class="zpet" id="zpet" hidden>← Obsah</button>
     <span class="lista-nazev" id="lista-nazev">Insolvenční zákon</span>
     <span class="lista-stav" id="lista-stav"></span>
+    <button class="tisk-tlacitko" id="rozhovory-tlacitko">Rozhovory</button>
     <button class="tisk-tlacitko" id="tisk-tlacitko">Tisk</button>
   </div>
   <div id="tisk-misto"></div>
@@ -732,9 +835,11 @@
   }
 
   /** Uloží vlákno — nejdřív do prohlížeče, pak na server, jde-li to. */
-  function ulozVlakno(klic, zpravy) {
+  function ulozVlakno(klic, zpravy, nazev) {
+    var puvodni = ulozeni.vlakna[klic];
     var zaznam = {
       misto: klic,
+      nazev: nazev || (puvodni && puvodni.nazev) || '',
       zpravy: zpravy.slice(),
       zmeneno: Date.now()
     };
@@ -827,165 +932,417 @@
     ].join('\n');
   }
 
-  function rozhovorProMisto(klic, kontextText) {
+  /* ---- rozhovor v postranním panelu -------------------------------------
+     Rozhovorů bude hodně a vmáčknuté pod odstavec se v nich nedalo vyznat.
+     Vedle textu proto stojí jeden sdílený panel: na širokém displeji jako
+     sloupec vedle zákona (znění zůstane vidět), na telefonu přes celou
+     obrazovku. Vlákno má název — sám se navrhne z první otázky a dá se
+     přepsat — a všechna se pak dají najít v přehledu.
+
+     V místě samotném zbyde jen tlačítko, které ukazuje, jestli tam nějaký
+     rozhovor je a jak se jmenuje. */
+
+  var panel = null;   // { klic, kontext, popis, cil, ... } právě otevřené vlákno
+
+  /** Název, který se nabídne, než si ho pojmenuje sám. */
+  function odvozenyNazev(zpravy) {
+    var prvni = null;
+    for (var i = 0; i < zpravy.length; i += 1) {
+      if (zpravy[i].role === 'user') { prvni = zpravy[i].text; break; }
+    }
+    if (!prvni) return '';
+    var jedna = prvni.replace(/\s+/g, ' ').trim();
+    return jedna.length > 48 ? jedna.slice(0, 48).replace(/\s+\S*$/, '') + '…' : jedna;
+  }
+
+  function nazevVlakna(klic) {
+    var z = ulozeni.vlakna[klic];
+    if (!z) return '';
+    return z.nazev || odvozenyNazev(z.zpravy || []);
+  }
+
+  function pocetZprav(klic) {
+    var z = ulozeni.vlakna[klic];
+    return z && z.zpravy ? z.zpravy.length : 0;
+  }
+
+  /* --- tlačítko, které v místě zůstane --- */
+
+  function rozhovorProMisto(klic, kontextText, popisMista) {
     var obal = el('div');
-    var ulozene = ulozeni.vlakna[klic];
-    var zpravy = ulozene && ulozene.zpravy ? ulozene.zpravy.slice() : [];
-    var otevreno = false;
-    var bezi = false;
+    var tlacitko = el('button', 'rozbal');
+    tlacitko.type = 'button';
+    obal.appendChild(tlacitko);
 
-    var rozbal = el('button', 'rozbal');
-    rozbal.type = 'button';
-    obal.appendChild(rozbal);
+    function prekresli() {
+      var kolik = pocetZprav(klic);
+      if (kolik) {
+        tlacitko.classList.add('rozbal-plny');
+        tlacitko.textContent = nazevVlakna(klic) + '  · ' + kolik;
+      } else {
+        tlacitko.classList.remove('rozbal-plny');
+        tlacitko.textContent = 'Zeptat se na tohle místo';
+      }
+      obal.hidden = !sample && !kolik;
+    }
 
-    var panel = el('div', 'rozhovor');
-    panel.hidden = true;
-    obal.appendChild(panel);
+    tlacitko.addEventListener('click', function () {
+      otevriPanel(klic, kontextText, popisMista);
+    });
 
+    obal.obnov = prekresli;
+    obal.prepni = prekresli;
+    obal.klicMista = klic;
+    obal.otevri = function () { otevriPanel(klic, kontextText, popisMista); };
+    prekresli();
+    return obal;
+  }
+
+  /* --- samotný panel --- */
+
+  function postavPanel() {
+    if (panel) return panel;
+
+    var korpus = el('aside', 'panel');
+    korpus.setAttribute('aria-label', 'Rozhovor');
+    korpus.hidden = true;
+
+    var hlavicka = el('div', 'panel-hlavicka');
+    var nadpis = el('input', 'panel-nazev');
+    nadpis.setAttribute('aria-label', 'Název rozhovoru');
+    nadpis.placeholder = 'Pojmenuj rozhovor';
+    var zavrit = el('button', 'panel-zavrit');
+    zavrit.type = 'button';
+    zavrit.setAttribute('aria-label', 'Zavřít rozhovor');
+    zavrit.textContent = '✕';
+    hlavicka.appendChild(nadpis);
+    hlavicka.appendChild(zavrit);
+    korpus.appendChild(hlavicka);
+
+    var kde = el('button', 'panel-kde');
+    kde.type = 'button';
+    kde.addEventListener('click', function () {
+      // Z přehledu se dá panel otevřít, aniž by se stránka přepnula; tohle
+      // na to místo doskočí.
+      if (panel && panel.klic) {
+        var m = mistoVlakna(panel.klic);
+        if (m && location.hash !== m.hash) location.hash = m.hash;
+      }
+    });
+    korpus.appendChild(kde);
+
+    var telo = el('div', 'panel-telo');
     var vlakno = el('div', 'vlakno');
-    panel.appendChild(vlakno);
+    telo.appendChild(vlakno);
+    var potiz = el('div', 'potiz');
+    potiz.hidden = true;
+    telo.appendChild(potiz);
+    var stavUlozeni = el('div', 'stav-ulozeni');
+    telo.appendChild(stavUlozeni);
+    korpus.appendChild(telo);
 
     var psani = el('div', 'psani');
     var pole = el('textarea', 'dotaz');
-    pole.placeholder = 'Na co se chceš u tohohle odstavce zeptat?';
-    pole.setAttribute('aria-label', 'Dotaz k odstavci');
+    pole.placeholder = 'Na co se chceš zeptat?';
+    pole.setAttribute('aria-label', 'Dotaz');
     var nastroje = el('div', 'nastroje');
     var poslat = el('button', 'poslat');
     poslat.type = 'button';
     poslat.textContent = 'Zeptat se';
     var smazat = el('button', 'drobny');
     smazat.type = 'button';
-    smazat.textContent = 'Smazat rozhovor';
+    smazat.textContent = 'Smazat';
     nastroje.appendChild(poslat);
     nastroje.appendChild(smazat);
     psani.appendChild(pole);
     psani.appendChild(nastroje);
-    panel.appendChild(psani);
+    korpus.appendChild(psani);
 
-    var potiz = el('div', 'potiz');
-    potiz.hidden = true;
-    panel.appendChild(potiz);
+    var zaves = el('div', 'panel-zaves');
+    zaves.hidden = true;
+    zaves.addEventListener('click', zavriPanelRozhovoru);
 
-    var stavUlozeni = el('div', 'stav-ulozeni');
-    panel.appendChild(stavUlozeni);
+    document.body.appendChild(zaves);
+    document.body.appendChild(korpus);
 
-    function popisek() {
-      rozbal.textContent = zpravy.length
-        ? (otevreno ? 'Skrýt rozhovor' : 'Rozhovor (' + zpravy.length + ')')
-        : (otevreno ? 'Skrýt' : 'Zeptat se na tento odstavec');
+    panel = {
+      korpus: korpus, zaves: zaves, nadpis: nadpis, kde: kde,
+      vlakno: vlakno, potiz: potiz, stav: stavUlozeni,
+      pole: pole, poslat: poslat, smazat: smazat,
+      klic: null, kontext: '', zpravy: [], bezi: false
+    };
+
+    zavrit.addEventListener('click', zavriPanelRozhovoru);
+    poslat.addEventListener('click', odesliZPanelu);
+    smazat.addEventListener('click', function () {
+      if (!panel.klic) return;
+      smazVlakno(panel.klic);
+      panel.zpravy = [];
+      vykresliPanel(null);
+      ozviSeVlaknum();
+    });
+    pole.addEventListener('keydown', function (e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') odesliZPanelu();
+    });
+    nadpis.addEventListener('change', function () {
+      if (!panel.klic || !panel.zpravy.length) return;
+      ulozVlakno(panel.klic, panel.zpravy, nadpis.value.trim());
+      ozviSeVlaknum();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel && !panel.korpus.hidden) zavriPanelRozhovoru();
+    });
+
+    return panel;
+  }
+
+  function otevriPanel(klic, kontextText, popisMista) {
+    var p = postavPanel();
+    p.klic = klic;
+    p.kontext = kontextText;
+    p.popis = popisMista || '';
+    p.cil = location.hash;
+    var z = ulozeni.vlakna[klic];
+    p.zpravy = z && z.zpravy ? z.zpravy.slice() : [];
+    p.nadpis.value = nazevVlakna(klic);
+    p.kde.textContent = p.popis;
+    p.kde.hidden = !p.popis;
+    p.potiz.hidden = true;
+    p.korpus.hidden = false;
+    p.zaves.hidden = false;
+    document.body.classList.add('s-panelem');
+    vykresliPanel(null);
+    p.pole.focus();
+  }
+
+  function zavriPanelRozhovoru() {
+    if (!panel) return;
+    panel.korpus.hidden = true;
+    panel.zaves.hidden = true;
+    panel.klic = null;
+    document.body.classList.remove('s-panelem');
+  }
+
+  function vykresliPanel(rozepsana) {
+    if (!panel) return;
+    var p = panel;
+    p.vlakno.textContent = '';
+    p.zpravy.forEach(function (z) {
+      var b = el('div', 'bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
+      b.appendChild(el('span', 'kdo', z.role === 'user' ? 'Já' : 'Claude'));
+      if (z.role === 'user') b.appendChild(el('span', 'text', z.text));
+      else vlozText(b, z.text);
+      p.vlakno.appendChild(b);
+    });
+    if (rozepsana != null) {
+      var b2 = el('div', 'bublina claude');
+      b2.appendChild(el('span', 'kdo', 'Claude'));
+      if (rozepsana) vlozText(b2, rozepsana);
+      else b2.appendChild(el('p', null, 'Přemýšlí…'));
+      p.vlakno.appendChild(b2);
+    }
+    p.smazat.hidden = p.zpravy.length === 0;
+    p.nadpis.disabled = p.zpravy.length === 0;
+    if (!p.nadpis.value) p.nadpis.value = odvozenyNazev(p.zpravy);
+
+    if (!p.zpravy.length || ulozeni.stav === 'ceka') {
+      p.stav.hidden = true;
+    } else {
+      p.stav.hidden = false;
+      if (ulozeni.stav === 'server') {
+        p.stav.className = 'stav-ulozeni';
+        p.stav.textContent = 'Uloženo — uvidíš to i na jiném zařízení.';
+      } else {
+        p.stav.className = 'stav-ulozeni varovne';
+        p.stav.textContent = 'Uloženo jen v tomhle prohlížeči: ' + ulozeni.duvod + '.';
+      }
+    }
+    p.vlakno.parentNode.scrollTop = p.vlakno.parentNode.scrollHeight;
+  }
+
+  function odesliZPanelu() {
+    var p = panel;
+    if (!p || !p.klic) return;
+    var text = p.pole.value.trim();
+    if (!text || p.bezi || !sample) return;
+    p.bezi = true;
+    p.potiz.hidden = true;
+    p.poslat.disabled = true;
+    p.pole.value = '';
+    p.zpravy.push({ role: 'user', text: text });
+    vykresliPanel('');
+    ulozVlakno(p.klic, p.zpravy, p.nadpis.value.trim());
+    ozviSeVlaknum();
+
+    var klicTehdy = p.klic;
+    var tahy = p.zpravy.map(function (z, i) {
+      return {
+        role: z.role,
+        content: i === 0 && z.role === 'user'
+          ? p.kontext + '\n\nOtázka: ' + z.text
+          : z.text
+      };
+    });
+
+    sample(tahy, {
+      cache: false,
+      onText: function (u) { if (panel.klic === klicTehdy) vykresliPanel(u.text); }
+    }).then(function (v) {
+      p.zpravy.push({ role: 'assistant', text: v.text });
+      if (panel.klic === klicTehdy) vykresliPanel(null);
+      ulozVlakno(klicTehdy, p.zpravy, p.nadpis.value.trim());
+      ozviSeVlaknum();
+    }, function (e) {
+      p.zpravy.pop();
+      if (panel.klic === klicTehdy) vykresliPanel(null);
+      ulozVlakno(klicTehdy, p.zpravy, p.nadpis.value.trim());
+      ozviSeVlaknum();
+      p.potiz.hidden = false;
+      p.potiz.textContent =
+        e && e.code === 'rate_limited' ? 'Moc dotazů za sebou. Zkus to za chvíli.'
+        : e && e.code === 'not_granted' ? 'Dotazy na Claudea tady nejsou povolené.'
+        : 'Nepovedlo se to odeslat. Zkus to znovu.';
+    }).then(function () {
+      p.bezi = false;
+      p.poslat.disabled = false;
+    });
+  }
+
+  /* ---- přehled rozhovorů ---------------------------------------------- */
+
+  /** Kde vlákno patří — z klíče se dá zpětně určit místo i popis. */
+  function mistoVlakna(klic) {
+    if (klic.indexOf('t-') === 0) {
+      var zbytek = klic.slice(2);
+      var del = zbytek.lastIndexOf('-');
+      var t = tematPodleId(zbytek.slice(0, del));
+      var i = Number(zbytek.slice(del + 1));
+      if (!t || !t.body[i]) return null;
+      return {
+        druh: 'tema',
+        hash: '#t' + t.id,
+        kde: t.nazev,
+        bod: t.body[i].nadpis
+      };
+    }
+    var del2 = klic.lastIndexOf('-');
+    var cislo = klic.slice(0, del2);
+    var odst = klic.slice(del2 + 1);
+    var p = podleCisla[cislo];
+    if (!p) return null;
+    return {
+      druh: 'zakon',
+      hash: '#p' + cislo,
+      kde: '§ ' + cislo + (p.nazev ? ' — ' + p.nazev : ''),
+      bod: odst === 'x' ? '' : 'odstavec ' + odst
+    };
+  }
+
+  function vykresliRozhovory() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Moje rozhovory';
+    listaStav.textContent = '';
+    zavriPanelRozhovoru();
+
+    hlavni.appendChild(el('h1', 'titul', 'Moje rozhovory'));
+
+    var klice = Object.keys(ulozeni.vlakna).filter(function (k) {
+      var z = ulozeni.vlakna[k];
+      return z && z.zpravy && z.zpravy.length;
+    });
+
+    if (!klice.length) {
+      hlavni.appendChild(el('p', 'perex',
+        'Zatím žádný. Otevři si kterýkoli odstavec nebo téma a zeptej se — ' +
+        'rozhovor dostane název a najdeš ho potom tady.'));
+      return;
     }
 
-    function vykresliStav() {
-      if (!zpravy.length || ulozeni.stav === 'ceka') {
-        stavUlozeni.hidden = true;
+    hlavni.appendChild(el('p', 'perex',
+      klice.length + (klice.length === 1 ? ' rozhovor' :
+        klice.length < 5 ? ' rozhovory' : ' rozhovorů') +
+      '. Nejnovější nahoře; klikni a otevře se tam, kde vznikl.'));
+
+    var hledaci = el('input', 'hledani');
+    hledaci.type = 'search';
+    hledaci.placeholder = 'Hledat v mých rozhovorech';
+    hledaci.setAttribute('aria-label', 'Hledat v rozhovorech');
+    hledaci.autocomplete = 'off';
+    hlavni.appendChild(hledaci);
+
+    var vypis = el('div');
+    hlavni.appendChild(vypis);
+
+    function prekresli(dotaz) {
+      vypis.textContent = '';
+      var h = bezDiakritiky(dotaz || '').trim();
+      var radky = klice.map(function (k) {
+        return { klic: k, zaznam: ulozeni.vlakna[k], misto: mistoVlakna(k) };
+      }).filter(function (r) {
+        if (!r.misto) return false;
+        if (!h) return true;
+        var vse = nazevVlakna(r.klic) + ' ' + r.misto.kde + ' ' + r.misto.bod + ' ' +
+          r.zaznam.zpravy.map(function (z) { return z.text; }).join(' ');
+        return bezDiakritiky(vse).indexOf(h) >= 0;
+      }).sort(function (a, b) {
+        return (b.zaznam.zmeneno || 0) - (a.zaznam.zmeneno || 0);
+      });
+
+      if (!radky.length) {
+        vypis.appendChild(el('p', 'prazdno', 'Nic takového jsi neřešil.'));
         return;
       }
-      stavUlozeni.hidden = false;
-      if (ulozeni.stav === 'server') {
-        stavUlozeni.className = 'stav-ulozeni';
-        stavUlozeni.textContent = 'Uloženo — uvidíš to i na jiném zařízení.';
-      } else {
-        stavUlozeni.className = 'stav-ulozeni varovne';
-        stavUlozeni.textContent =
-          'Uloženo jen v tomhle prohlížeči: ' + ulozeni.duvod + '.';
+
+      var druh = null;
+      radky.forEach(function (r) {
+        if (r.misto.druh !== druh && !h) {
+          druh = r.misto.druh;
+          vypis.appendChild(el('h2', 'cast',
+            druh === 'tema' ? 'Mimo insolvenční zákon' : 'Insolvenční zákon'));
+        }
+        var b = el('button', 'radek radek-vlakno');
+        b.type = 'button';
+        var levo = el('span');
+        levo.appendChild(el('span', 'vlakno-nazev', nazevVlakna(r.klic)));
+        levo.appendChild(el('span', 'vlakno-kde',
+          r.misto.kde + (r.misto.bod ? ' · ' + r.misto.bod : '')));
+        b.appendChild(levo);
+        b.appendChild(el('span', 'radek-pramen', r.zaznam.zpravy.length + ' zpráv'));
+        b.addEventListener('click', function () { skocNaVlakno(r.klic, r.misto); });
+        vypis.appendChild(b);
+      });
+    }
+
+    var casovac;
+    hledaci.addEventListener('input', function () {
+      clearTimeout(casovac);
+      casovac = setTimeout(function () { prekresli(hledaci.value); }, 120);
+    });
+    prekresli('');
+  }
+
+  /** Skočí na místo, kde vlákno vzniklo, a otevře ho. */
+  function skocNaVlakno(klic, misto) {
+    cekaNaOtevreni = klic;
+    if (location.hash === misto.hash) smeruj();
+    else location.hash = misto.hash;
+  }
+
+  var cekaNaOtevreni = null;
+
+  /** Po vykreslení stránky otevře vlákno, na které se skočilo z přehledu. */
+  function dootevri() {
+    if (!cekaNaOtevreni) return;
+    var hledany = cekaNaOtevreni;
+    cekaNaOtevreni = null;
+    for (var i = 0; i < zivePrepinace.length; i += 1) {
+      if (zivePrepinace[i].klicMista === hledany) {
+        zivePrepinace[i].otevri();
+        return;
       }
     }
-
-    function vykresliVlakno(rozepsana) {
-      vlakno.textContent = '';
-      zpravy.forEach(function (z) {
-        var b = el('div', 'bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
-        b.appendChild(el('span', 'kdo', z.role === 'user' ? 'Já' : 'Claude'));
-        if (z.role === 'user') b.appendChild(el('span', 'text', z.text));
-        else vlozText(b, z.text);
-        vlakno.appendChild(b);
-      });
-      if (rozepsana != null) {
-        var b2 = el('div', 'bublina claude');
-        b2.appendChild(el('span', 'kdo', 'Claude'));
-        if (rozepsana) vlozText(b2, rozepsana);
-        else b2.appendChild(el('p', null, 'Přemýšlí…'));
-        vlakno.appendChild(b2);
-      }
-      smazat.hidden = zpravy.length === 0;
-      popisek();
-      vykresliStav();
-    }
-
-    function odesli() {
-      var text = pole.value.trim();
-      if (!text || bezi || !sample) return;
-      bezi = true;
-      potiz.hidden = true;
-      poslat.disabled = true;
-      pole.value = '';
-      zpravy.push({ role: 'user', text: text });
-      vykresliVlakno('');
-      // Otázka se ukládá hned. Kdyby se odpověď nedopsala nebo ses zavřel
-      // stránku uprostřed, nepřijdeš aspoň o to, na co ses ptal.
-      ulozVlakno(klic, zpravy);
-
-      // Kontext se přilepí k první otázce; další kola ho mají v historii.
-      var tahy = zpravy.map(function (z, i) {
-        return {
-          role: z.role,
-          content: i === 0 && z.role === 'user'
-            ? kontextText + '\n\nOtázka: ' + z.text
-            : z.text
-        };
-      });
-
-      sample(tahy, {
-        cache: false,
-        onText: function (u) { vykresliVlakno(u.text); }
-      }).then(function (v) {
-        zpravy.push({ role: 'assistant', text: v.text });
-        vykresliVlakno(null);
-        ulozVlakno(klic, zpravy);
-      }, function (e) {
-        zpravy.pop();
-        vykresliVlakno(null);
-        ulozVlakno(klic, zpravy);
-        potiz.hidden = false;
-        potiz.textContent =
-          e && e.code === 'rate_limited' ? 'Moc dotazů za sebou. Zkus to za chvíli.'
-          : e && e.code === 'not_granted' ? 'Dotazy na Claudea tady nejsou povolené.'
-          : 'Nepovedlo se to odeslat. Zkus to znovu.';
-      }).then(function () {
-        bezi = false;
-        poslat.disabled = false;
-      });
-    }
-
-    rozbal.addEventListener('click', function () {
-      otevreno = !otevreno;
-      panel.hidden = !otevreno;
-      popisek();
-      if (otevreno) pole.focus();
-    });
-    poslat.addEventListener('click', odesli);
-    pole.addEventListener('keydown', function (e) {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') odesli();
-    });
-    smazat.addEventListener('click', function () {
-      zpravy = [];
-      smazVlakno(klic);
-      vykresliVlakno(null);
-    });
-
-    /** Úložiště se ozvalo až teď — dotáhnout, co v něm leží. */
-    obal.obnov = function () {
-      if (bezi) return;
-      var z = ulozeni.vlakna[klic];
-      var nove = z && z.zpravy ? z.zpravy : [];
-      if (nove.length !== zpravy.length) zpravy = nove.slice();
-      vykresliVlakno(null);
-    };
-    obal.prepni = function () { obal.hidden = !sample; };
-
-    obal.prepni();
-    vykresliVlakno(null);
-    return obal;
   }
   /* ---- témata mimo insolvenční zákon ------------------------------------
      Zkouška se neptá jen na insolvenční zákon. Tahle část drží témata ze
@@ -1044,7 +1401,11 @@
       var karta = el('div', 'vyklad');
       vlozText(karta, bod.text);
       blok.appendChild(karta);
-      var r = rozhovorProMisto('t-' + t.id + '-' + i, kontextTematu(t, bod));
+      var r = rozhovorProMisto(
+        't-' + t.id + '-' + i,
+        kontextTematu(t, bod),
+        t.nazev + ' · ' + bod.nadpis
+      );
       zivePrepinace.push(r);
       blok.appendChild(r);
       hlavni.appendChild(blok);
@@ -1071,6 +1432,7 @@
     }
     hlavni.appendChild(prechod);
     window.scrollTo(0, 0);
+    dootevri();
   }
 
   /* ---- paragraf ------------------------------------------------------- */
@@ -1124,7 +1486,12 @@
         blok.appendChild(el('p', 'chybi', 'Výklad k tomuhle odstavci ještě nemám.'));
       }
 
-      var r = rozhovorProMisto(klicDiskuze(p, o), kontext(p, o, v));
+      var r = rozhovorProMisto(
+        klicDiskuze(p, o),
+        kontext(p, o, v),
+        '§ ' + p.paragraf + (o.cislo ? ' odst. ' + o.cislo : '') +
+          (p.nazev ? ' — ' + p.nazev : '')
+      );
       zivePrepinace.push(r);
       blok.appendChild(r);
 
@@ -1156,6 +1523,7 @@
     }
     hlavni.appendChild(prechod);
     window.scrollTo(0, 0);
+    dootevri();
   }
 
   /* ---- tisk ------------------------------------------------------------
@@ -1176,7 +1544,7 @@
     var mapa = {};
     Object.keys(ulozeni.vlakna).forEach(function (k) {
       var z = ulozeni.vlakna[k];
-      if (z && z.zpravy && z.zpravy.length) mapa[k] = z.zpravy;
+      if (z && z.zpravy && z.zpravy.length) mapa[k] = z;
     });
     return mapa;
   }
@@ -1206,11 +1574,12 @@
         blok.appendChild(karta);
       }
 
-      var zpravy = sRozhovory ? rozhovory[klicDiskuze(p, o)] : null;
-      if (zpravy && zpravy.length) {
+      var vl = sRozhovory ? rozhovory[klicDiskuze(p, o)] : null;
+      if (vl && vl.zpravy.length) {
         var vlakno = el('div', 't-rozhovor');
-        vlakno.appendChild(el('span', 't-stitek', 'Můj rozhovor k odstavci'));
-        zpravy.forEach(function (z) {
+        vlakno.appendChild(el('span', 't-stitek',
+          'Můj rozhovor: ' + (vl.nazev || odvozenyNazev(vl.zpravy))));
+        vl.zpravy.forEach(function (z) {
           var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
           b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
           vlozText(b, z.text);
@@ -1237,11 +1606,12 @@
       vlozText(karta, bod.text);
       blok.appendChild(karta);
 
-      var zpravy = sRozhovory ? rozhovory['t-' + t.id + '-' + i] : null;
-      if (zpravy && zpravy.length) {
+      var vl = sRozhovory ? rozhovory['t-' + t.id + '-' + i] : null;
+      if (vl && vl.zpravy.length) {
         var vlakno = el('div', 't-rozhovor');
-        vlakno.appendChild(el('span', 't-stitek', 'Můj rozhovor k tomuhle bodu'));
-        zpravy.forEach(function (z) {
+        vlakno.appendChild(el('span', 't-stitek',
+          'Můj rozhovor: ' + (vl.nazev || odvozenyNazev(vl.zpravy))));
+        vl.zpravy.forEach(function (z) {
           var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
           b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
           vlozText(b, z.text);
@@ -1293,7 +1663,7 @@
     if (tiskPanel) { tiskPanel.remove(); tiskPanel = null; }
   }
 
-  function otevriPanel() {
+  function otevriTiskPanel() {
     if (tiskPanel) { zavriPanel(); return; }
 
     var h = location.hash.replace(/^#/, '');
@@ -1391,14 +1761,18 @@
     tiskMisto.appendChild(tiskPanel);
   }
 
-  tiskBtn.addEventListener('click', otevriPanel);
+  tiskBtn.addEventListener('click', otevriTiskPanel);
+  document.getElementById('rozhovory-tlacitko').addEventListener('click', function () {
+    location.hash = '#rozhovory';
+  });
 
   /* ---- směrování ------------------------------------------------------ */
 
   function smeruj() {
     zavriPanel();
     var h = location.hash.replace(/^#/, '');
-    if (h.indexOf('t') === 0) vykresliTema(h.slice(1));
+    if (h === 'rozhovory') vykresliRozhovory();
+    else if (h.indexOf('t') === 0) vykresliTema(h.slice(1));
     else if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
     else vykresliObsah('');
   }
