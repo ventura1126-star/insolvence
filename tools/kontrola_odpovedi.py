@@ -22,6 +22,33 @@ STAVY = {"platna", "zastarala"}
 ZADNA = re.compile(r"(žádná|ani jedna).{0,30}(správná|není správná)", re.I)
 
 
+def zkontroluj_temata():
+    """Témata mimo insolvenční zákon — hlídá jen to, co jde strojově.
+
+    Prázdný bod nebo chybějící pramen by se v aplikaci ukázal jako díra;
+    duplicitní id by tiše přebilo jiné téma.
+    """
+    soubor = KOREN / "artefakt/temata.json"
+    if not soubor.exists():
+        return []
+    temata = json.loads(soubor.read_text("utf-8"))
+    chyby = []
+    videna = set()
+    for t in temata:
+        for pole in ("id", "oblast", "nazev", "pramen", "body"):
+            if not t.get(pole):
+                chyby.append(f"téma {t.get('id', '?')}: chybí {pole}")
+        if t.get("id") in videna:
+            chyby.append(f"téma {t['id']}: id se opakuje")
+        videna.add(t.get("id"))
+        for i, b in enumerate(t.get("body", [])):
+            if not b.get("nadpis") or not b.get("text", "").strip():
+                chyby.append(f"téma {t.get('id')} bod {i}: prázdný nadpis nebo text")
+    print(f"témata         {len(temata)} "
+          f"({sum(len(t.get('body', [])) for t in temata)} bodů)")
+    return chyby
+
+
 def zkontroluj_vyklad():
     """Výklad se píše ručně vedle znění zákona — hlídá, že se nerozešly.
 
@@ -52,6 +79,8 @@ def zkontroluj_vyklad():
                 chyby.append(f"výklad § {cislo} odst. {odstavec}: takový odstavec není")
             elif not text.strip():
                 chyby.append(f"výklad § {cislo} odst. {odstavec}: prázdný text")
+
+    chyby += zkontroluj_temata()
 
     celkem = sum(len(o) for o in odstavce.values())
     hotovo = sum(

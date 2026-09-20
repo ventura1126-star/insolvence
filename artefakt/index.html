@@ -189,6 +189,18 @@
   .radek-znacka.hotovo { color: var(--pecet); }
   .radek-znacka.castecne { color: var(--tlum); }
 
+  .radek-tema { grid-template-columns: 1fr auto; }
+  .radek-pramen { font-size: .78rem; color: var(--tlum); white-space: nowrap; }
+  .bod-nadpis {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.22rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 .1rem;
+  }
+
   /* ---- paragraf ------------------------------------------------------- */
   .p-cislo {
     font-size: .8rem;
@@ -408,6 +420,14 @@
     .t-drobecky { font-size: 7.5pt; color: #555; margin-bottom: 12pt; }
 
     .t-odstavec { margin-bottom: 14pt; }
+    .t-bod-nadpis {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 11.5pt;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0 0 4pt;
+      break-after: avoid;
+    }
     .t-zneni {
       font-family: "Source Serif 4", Georgia, serif;
       font-size: 10pt;
@@ -467,12 +487,14 @@
 
 <script src="zakon.js"></script>
 <script src="vyklad.js"></script>
+<script src="temata.js"></script>
 <script>
 (function () {
   'use strict';
 
   var ZAKON = window.ZAKON || [];
   var VYKLAD = window.VYKLAD || {};
+  var TEMATA = window.TEMATA || [];
   var BEZ_CISLA = '-';
 
   // Schopnosti dorazí až po chvíli a nemusí dorazit vůbec (jiný prohlížeč,
@@ -593,17 +615,49 @@
     var vypis = el('div');
     hlavni.appendChild(vypis);
 
+    function radekTematu(t) {
+      var b = el('button', 'radek radek-tema');
+      b.type = 'button';
+      b.appendChild(el('span', 'radek-nazev', t.nazev));
+      b.appendChild(el('span', 'radek-pramen', t.pramen));
+      b.addEventListener('click', function () { location.hash = '#t' + t.id; });
+      return b;
+    }
+
     function prekresli(text) {
       vypis.textContent = '';
       var nalez = hledej(text || '');
       if (nalez) {
-        if (!nalez.length) {
-          vypis.appendChild(el('p', 'prazdno', 'Nic takového v zákoně není.'));
+        var h = bezDiakritiky(text || '').trim();
+        var temata = h.length > 1 ? TEMATA.filter(function (t) {
+          return bezDiakritiky(t.nazev + ' ' + t.pramen + ' ' +
+            t.body.map(function (b) { return b.nadpis + ' ' + b.text; }).join(' ')
+          ).indexOf(h) >= 0;
+        }) : [];
+        if (temata.length) {
+          vypis.appendChild(el('h2', 'cast', 'Mimo insolvenční zákon'));
+          temata.forEach(function (t) { vypis.appendChild(radekTematu(t)); });
+          if (nalez.length) vypis.appendChild(el('h2', 'cast', 'Insolvenční zákon'));
+        }
+        if (!nalez.length && !temata.length) {
+          vypis.appendChild(el('p', 'prazdno', 'Nic takového tu není.'));
           return;
         }
         nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
         return;
       }
+      if (TEMATA.length) {
+        vypis.appendChild(el('h2', 'cast', 'Mimo insolvenční zákon'));
+        var oblast = null;
+        TEMATA.forEach(function (t) {
+          if (t.oblast !== oblast) {
+            oblast = t.oblast;
+            vypis.appendChild(el('h3', 'hlava', oblast));
+          }
+          vypis.appendChild(radekTematu(t));
+        });
+      }
+
       var cast = null, hlava = null;
       ZAKON.forEach(function (p) {
         if (p.cast !== cast) {
@@ -678,10 +732,9 @@
   }
 
   /** Uloží vlákno — nejdřív do prohlížeče, pak na server, jde-li to. */
-  function ulozVlakno(klic, p, o, zpravy) {
+  function ulozVlakno(klic, zpravy) {
     var zaznam = {
-      paragraf: p.paragraf,
-      odstavec: o.cislo || null,
+      misto: klic,
       zpravy: zpravy.slice(),
       zmeneno: Date.now()
     };
@@ -774,9 +827,8 @@
     ].join('\n');
   }
 
-  function rozhovorProOdstavec(p, o, vyklad) {
+  function rozhovorProMisto(klic, kontextText) {
     var obal = el('div');
-    var klic = klicDiskuze(p, o);
     var ulozene = ulozeni.vlakna[klic];
     var zpravy = ulozene && ulozene.zpravy ? ulozene.zpravy.slice() : [];
     var otevreno = false;
@@ -871,14 +923,14 @@
       vykresliVlakno('');
       // Otázka se ukládá hned. Kdyby se odpověď nedopsala nebo ses zavřel
       // stránku uprostřed, nepřijdeš aspoň o to, na co ses ptal.
-      ulozVlakno(klic, p, o, zpravy);
+      ulozVlakno(klic, zpravy);
 
       // Kontext se přilepí k první otázce; další kola ho mají v historii.
       var tahy = zpravy.map(function (z, i) {
         return {
           role: z.role,
           content: i === 0 && z.role === 'user'
-            ? kontext(p, o, vyklad) + '\n\nOtázka: ' + z.text
+            ? kontextText + '\n\nOtázka: ' + z.text
             : z.text
         };
       });
@@ -889,11 +941,11 @@
       }).then(function (v) {
         zpravy.push({ role: 'assistant', text: v.text });
         vykresliVlakno(null);
-        ulozVlakno(klic, p, o, zpravy);
+        ulozVlakno(klic, zpravy);
       }, function (e) {
         zpravy.pop();
         vykresliVlakno(null);
-        ulozVlakno(klic, p, o, zpravy);
+        ulozVlakno(klic, zpravy);
         potiz.hidden = false;
         potiz.textContent =
           e && e.code === 'rate_limited' ? 'Moc dotazů za sebou. Zkus to za chvíli.'
@@ -935,6 +987,92 @@
     vykresliVlakno(null);
     return obal;
   }
+  /* ---- témata mimo insolvenční zákon ------------------------------------
+     Zkouška se neptá jen na insolvenční zákon. Tahle část drží témata ze
+     zákona o obchodních korporacích a z občanského zákoníku, která do
+     insolvenční praxe zasahují nejvíc — psaná stejně jako výklad, tedy přes
+     to, co s nimi správce dělá, a vždy s ověřeným paragrafem. */
+
+  function tematPodleId(id) {
+    for (var i = 0; i < TEMATA.length; i += 1) if (TEMATA[i].id === id) return TEMATA[i];
+    return null;
+  }
+
+  function kontextTematu(t, bod) {
+    return [
+      'Jsi asistent pro přípravu na obecnou zkoušku insolvenčního správce v ČR.',
+      'Uživatel čte výklad k tématu, které leží mimo insolvenční zákon, ale do',
+      'insolvenční praxe zasahuje. Ptá se na konkrétní bod toho výkladu.',
+      '',
+      'Odpovídej česky, stručně a prakticky — v rovině toho, co to znamená pro',
+      'práci insolvenčního správce. Kde si nejsi jistý, řekni to.',
+      'Neuváděj paragrafy, které si nepamatuješ přesně.',
+      'Nepiš úvodní zdvořilosti, jdi rovnou k věci.',
+      '',
+      '--- TÉMA ---',
+      t.oblast + ' — ' + t.nazev,
+      'Prameny: ' + t.pramen,
+      '',
+      '--- BOD, KTERÝ UŽIVATEL PRÁVĚ ČETL ---',
+      bod.nadpis,
+      bod.text,
+      '--- KONEC KONTEXTU ---'
+    ].join('\n');
+  }
+
+  function vykresliTema(id) {
+    var t = tematPodleId(id);
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaStav.textContent = '';
+
+    if (!t) {
+      listaNazev.textContent = 'Téma není';
+      hlavni.appendChild(el('p', 'prazdno', 'Takové téma tu není.'));
+      return;
+    }
+
+    listaNazev.textContent = t.nazev;
+    hlavni.appendChild(el('div', 'p-cislo', t.oblast));
+    hlavni.appendChild(el('h1', 'p-nazev', t.nazev));
+    hlavni.appendChild(el('p', 'drobecky', t.pramen));
+
+    t.body.forEach(function (bod, i) {
+      var blok = el('section', 'odstavec');
+      blok.appendChild(el('h2', 'bod-nadpis', bod.nadpis));
+      var karta = el('div', 'vyklad');
+      vlozText(karta, bod.text);
+      blok.appendChild(karta);
+      var r = rozhovorProMisto('t-' + t.id + '-' + i, kontextTematu(t, bod));
+      zivePrepinace.push(r);
+      blok.appendChild(r);
+      hlavni.appendChild(blok);
+    });
+
+    var i2 = TEMATA.indexOf(t);
+    var prechod = el('div', 'prechod');
+    var dozadu = el('button');
+    dozadu.type = 'button';
+    if (i2 > 0) {
+      dozadu.textContent = '← ' + TEMATA[i2 - 1].nazev;
+      dozadu.addEventListener('click', function () { location.hash = '#t' + TEMATA[i2 - 1].id; });
+    } else {
+      dozadu.style.visibility = 'hidden';
+      dozadu.textContent = '—';
+    }
+    prechod.appendChild(dozadu);
+    if (i2 < TEMATA.length - 1) {
+      var dopredu = el('button');
+      dopredu.type = 'button';
+      dopredu.textContent = TEMATA[i2 + 1].nazev + ' →';
+      dopredu.addEventListener('click', function () { location.hash = '#t' + TEMATA[i2 + 1].id; });
+      prechod.appendChild(dopredu);
+    }
+    hlavni.appendChild(prechod);
+    window.scrollTo(0, 0);
+  }
+
   /* ---- paragraf ------------------------------------------------------- */
 
   var zivePrepinace = [];
@@ -986,7 +1124,7 @@
         blok.appendChild(el('p', 'chybi', 'Výklad k tomuhle odstavci ještě nemám.'));
       }
 
-      var r = rozhovorProOdstavec(p, o, v);
+      var r = rozhovorProMisto(klicDiskuze(p, o), kontext(p, o, v));
       zivePrepinace.push(r);
       blok.appendChild(r);
 
@@ -1086,7 +1224,37 @@
     return sekce;
   }
 
-  function vytiskni(paragrafy, sRozhovory, popisRozsahu) {
+  function tiskniTema(t, rozhovory, sRozhovory) {
+    var sekce = el('section', 't-paragraf');
+    sekce.appendChild(el('div', 't-paragraf-cislo', t.oblast));
+    sekce.appendChild(el('h2', 't-paragraf-nazev', t.nazev));
+    sekce.appendChild(el('div', 't-drobecky', t.pramen));
+
+    t.body.forEach(function (bod, i) {
+      var blok = el('div', 't-odstavec');
+      blok.appendChild(el('h3', 't-bod-nadpis', bod.nadpis));
+      var karta = el('div', 't-vyklad');
+      vlozText(karta, bod.text);
+      blok.appendChild(karta);
+
+      var zpravy = sRozhovory ? rozhovory['t-' + t.id + '-' + i] : null;
+      if (zpravy && zpravy.length) {
+        var vlakno = el('div', 't-rozhovor');
+        vlakno.appendChild(el('span', 't-stitek', 'Můj rozhovor k tomuhle bodu'));
+        zpravy.forEach(function (z) {
+          var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
+          b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
+          vlozText(b, z.text);
+          vlakno.appendChild(b);
+        });
+        blok.appendChild(vlakno);
+      }
+      sekce.appendChild(blok);
+    });
+    return sekce;
+  }
+
+  function vytiskni(paragrafy, sRozhovory, popisRozsahu, temata) {
     var rozhovory = vsechnyRozhovory();
     return Promise.resolve().then(function () {
       tiskCil.textContent = '';
@@ -1098,6 +1266,9 @@
         ' · vytištěno ' + new Date().toLocaleDateString('cs-CZ')));
       tiskCil.appendChild(hlavicka);
 
+      (temata || []).forEach(function (t) {
+        tiskCil.appendChild(tiskniTema(t, rozhovory, sRozhovory));
+      });
       paragrafy.forEach(function (p) {
         tiskCil.appendChild(tiskniParagraf(p, rozhovory, sRozhovory));
       });
@@ -1159,6 +1330,12 @@
       sVykladem.length + ' paragrafů · ' + odstavcuSVykladem + ' odst.', !otevreny);
     pridejVolbu('vse', 'Celý zákon',
       ZAKON.length + ' paragrafů · dlouhé', false);
+    if (TEMATA.length) {
+      var boduCelkem = 0;
+      TEMATA.forEach(function (t) { boduCelkem += t.body.length; });
+      pridejVolbu('temata', 'Mimo insolvenční zákon',
+        TEMATA.length + ' témat · ' + boduCelkem + ' bodů', false);
+    }
 
     var lb = el('label', 'tisk-volba');
     var zaskrt = document.createElement('input');
@@ -1186,8 +1363,12 @@
     ok.addEventListener('click', function () {
       var rozsah = 'vyklad';
       volby.forEach(function (r) { if (r.checked) rozsah = r.value; });
-      var sada, popis;
-      if (rozsah === 'tento' && otevreny) {
+      var sada, popis, temata = null;
+      if (rozsah === 'temata') {
+        sada = [];
+        temata = TEMATA;
+        popis = 'mimo insolvenční zákon';
+      } else if (rozsah === 'tento' && otevreny) {
         sada = [otevreny];
         popis = '§ ' + otevreny.paragraf;
       } else if (rozsah === 'vse') {
@@ -1199,7 +1380,7 @@
       }
       ok.disabled = true;
       ok.textContent = 'Připravuju…';
-      vytiskni(sada, zaskrt.checked, popis).then(function () {
+      vytiskni(sada, zaskrt.checked, popis, temata).then(function () {
         ok.disabled = false;
         ok.textContent = 'Vytisknout';
         zavriPanel();
@@ -1217,7 +1398,8 @@
   function smeruj() {
     zavriPanel();
     var h = location.hash.replace(/^#/, '');
-    if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
+    if (h.indexOf('t') === 0) vykresliTema(h.slice(1));
+    else if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
     else vykresliObsah('');
   }
 

@@ -145,10 +145,16 @@ na novou stránku.
 python3 tools/sbal_artefakt.py
 ```
 
-Z `artefakt/zakon.json` a `artefakt/vyklad.json` vyrobí `zakon.js` a
-`vyklad.js` (data pověšená na `window`, čistě v ASCII kvůli kódování) a ty se
-publikují spolu s `artefakt/index.html`. Vygenerované skripty jsou mimo repo,
-stránka i data v něm jsou.
+Z `artefakt/zakon.json`, `vyklad.json` a `temata.json` vyrobí `zakon.js`,
+`vyklad.js` a `temata.js` (data pověšená na `window`, čistě v ASCII kvůli
+kódování) a ty se publikují spolu s `artefakt/index.html`. Vygenerované skripty
+jsou mimo repo, stránka i data v něm jsou.
+
+Vedle zákona má Artifact sekci **Mimo insolvenční zákon** (`temata.json`) —
+21 témat ze ZOK a z občanského zákoníku, která do insolvenční praxe zasahují:
+péče řádného hospodáře, § 66 ZOK, diskvalifikace, zajištění a jeho druhy,
+odporovatelnost, započtení, SJM. Každý bod má vlastní rozhovor i tisk, stejně
+jako odstavec zákona.
 
 Dvě appky, každá na jedno: **Pages** trénuje otázky, **Artifact** nese zákon.
 Odkaz mezi nimi vede z úvodní obrazovky Pages.

@@ -1,0 +1,434 @@
+[
+ {
+  "id": "zok-pece",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Péče řádného hospodáře a její porušení",
+  "pramen": "§ 159 o. z., § 51 až § 53 z. o. k.",
+  "body": [
+   {
+    "nadpis": "Tři složky, a každá se dokazuje jinak",
+    "text": "**§ 159 odst. 1 o. z.** říká, co na sebe člověk bere, když přijme funkci: vykonávat ji **s nezbytnou loajalitou, s potřebnými znalostmi a pečlivostí**.\n\n— **Loajalita** — zájem korporace má přednost před vaším. Sem patří odklánění zakázek na vlastní firmu, obchody se spřízněnými osobami, tunel.\n\n— **Znalosti** — kdo na funkci nestačí, musí to poznat a vyvodit z toho důsledky. Druhá věta § 159 odst. 1 je tvrdá: **má se za to, že jedná nedbale ten, kdo té péče není schopen, ač to musel zjistit, a nevyvodí z toho pro sebe důsledky.** Jinými slovy „já tomu nerozumím, dělal jsem to jen na papíře\" není obrana — je to přiznání.\n\n— **Pečlivost** — informovanost před rozhodnutím.\n\nJako správce to používáte proti bývalému jednateli. Na Truhlárně Bureš: jednatel osmnáct měsíců neplatil DPH, protože „doufal, že se to zlepší\", a neřešil, že marže na hlavní zakázce je záporná. Nepotřebujete prokazovat zlý úmysl — stačí, že nebyl informovaný a nekonal."
+   },
+   {
+    "nadpis": "Důkazní břemeno je obrácené — a to je vaše nejsilnější karta",
+    "text": "**§ 52 odst. 2 z. o. k.:** je-li před soudem posuzováno, zda člen voleného orgánu jednal s péčí řádného hospodáře, **nese důkazní břemeno tento člen** — ledaže soud rozhodne, že to po něm nelze spravedlivě požadovat.\n\nObraťte si to naruby a uvidíte, co to pro vás znamená: **vy nemusíte dokazovat, že jednatel pochybil. On musí dokázat, že nepochybil.**\n\nPrakticky: podáte žalobu, popíšete ztrátu a to, že rozhodnutí bylo jeho. Dál je to na něm — musí soudu předložit podklady, analýzy, zápisy, znalecké posudky, ze kterých je vidět, že se rozhodoval informovaně. U firmy, kde účetnictví chybí a zápisy z jednání nikdo nepsal, je to pro něj skoro neunesitelné.\n\nTa výhrada na konci („nelze spravedlivě požadovat\") míří na situace, kdy je bývalý jednatel odstřižený od dokumentů — typicky když je má u sebe právě insolvenční správce. Počítejte s tím, že ji uplatní, a buďte připraven doklady zpřístupnit; jinak vám tu výhodu soud vezme.\n\nMěřítkem je podle **§ 52 odst. 1** vždy **jiná rozumně pečlivá osoba v obdobném postavení**, ne obecná lidská opatrnost."
+   },
+   {
+    "nadpis": "Pravidlo podnikatelského úsudku: ztráta sama o sobě není porušení",
+    "text": "**§ 51 odst. 1 z. o. k.** je ochranná zeď pro jednatele a je potřeba ji znát, abyste nežaloval něco, co neprojde.\n\nPečlivě a s potřebnými znalostmi jedná ten, kdo mohl při podnikatelském rozhodování **v dobré víře rozumně předpokládat, že jedná informovaně a v obhajitelném zájmu obchodní korporace**. Podnikání je riziko a zákon nechce, aby se rozhodnutí posuzovala zpětně podle toho, jak dopadla.\n\nPříklad, kde neuspějete: jednatel Strojírny Kolář nakoupil stroj za 8 mil. na novou zakázku, měl nabídku odběratele, propočet návratnosti i stanovisko banky. Odběratel po roce zkrachoval a stroj stojí. **Není to porušení péče** — rozhodoval se informovaně a v obhajitelném zájmu firmy.\n\nPříklad, kde uspějete: tentýž stroj koupil bez propočtu, od firmy své manželky a za dvojnásobek ceny. Tady pravidlo nepomůže — poslední věta § 51 odst. 1 říká, že **neplatí, pokud rozhodování nebylo učiněno s nezbytnou loajalitou**. Střet zájmů tu zeď boří.\n\nVaše úloha při přípravě žaloby je tedy najít, čím konkrétně chyběla informovanost nebo loajalita — ne to, že firma prodělala."
+   },
+   {
+    "nadpis": "Co se tím dá vymoci do podstaty",
+    "text": "**§ 53 odst. 1 z. o. k.:** kdo porušil péči řádného hospodáře, **vydá korporaci prospěch**, který v souvislosti s tím získal; není-li to možné, nahradí ho v penězích.\n\nVedle toho běží obecná **náhrada škody** podle § 2910 o. z. — to jsou dvě různé věci a v žalobě je nemíchejte: vydání prospěchu je bezdůvodné obohacení jednatele, náhrada škody je ztráta korporace.\n\nDvě ustanovení, která se v praxi hodí nejvíc:\n\n**§ 53 odst. 2** — k právním jednáním korporace omezujícím odpovědnost člena orgánu **se nepřihlíží**. Klauzule ve smlouvě o výkonu funkce typu „společnost se vzdává nároků na náhradu škody\" je tedy bezcenná. Jednatelé je mají a neplatí.\n\n**§ 159 odst. 3 o. z.** — nenahradil-li člen orgánu škodu, kterou způsobil, **ručí věřiteli za dluh korporace** v rozsahu, v jakém škodu nenahradil, pokud se věřitel plnění na korporaci nemůže domoci. Tohle je cesta pro jednotlivého věřitele, ne pro vás; vy jdete cestou § 66 z. o. k. (další téma)."
+   }
+  ]
+ },
+ {
+  "id": "zok-uzadek",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Zvláštní povinnosti při úpadku — žaloba správce na jednatele",
+  "pramen": "§ 66 a § 69 z. o. k.",
+  "body": [
+   {
+    "nadpis": "Pozor: § 68 už neexistuje, právo se od roku 2021 změnilo",
+    "text": "Tohle je místo, kde starší materiály i starší kolegové mluví o **„ručení jednatele za dluhy společnosti podle § 68 ZOK\"**. Ten paragraf byl **zrušen novelou č. 33/2020 Sb. s účinností od 1. 1. 2021** a nahradil ho **§ 66 z. o. k. — Zvláštní povinnosti při úpadku obchodní korporace**.\n\nRozdíl není kosmetický:\n\n— **Starý § 68** zakládal **ručení** člena orgánu za splnění povinností korporace. Věřitel s ním chodil za jednatelem sám.\n\n— **Nový § 66** nezakládá ručení, ale **povinnost plnit do majetkové podstaty**. Peníze jdou do podstaty a rozdělí se všem věřitelům poměrně, ne tomu, kdo byl nejrychlejší.\n\nJde o českou podobu toho, čemu se v cizině říká *wrongful trading*. A je to ustanovení, se kterým budete pracovat vy osobně — ne věřitelé."
+   },
+   {
+    "nadpis": "Kdy to jde použít a co se tím dá získat",
+    "text": "**§ 66 odst. 1** má dvě vstupní podmínky, obě musí být splněné:\n\n— člen statutárního orgánu **porušením svých povinností přispěl k úpadku** korporace, a\n\n— v insolvenčním řízení už **bylo rozhodnuto o způsobu řešení úpadku**.\n\nPak insolvenční soud **na návrh insolvenčního správce** rozhodne o dvou různých věcech:\n\n**a) Vydání prospěchu.** Člen vydá do podstaty prospěch ze smlouvy o výkonu funkce i jiný prospěch, který od korporace dostal, a to **až za 2 roky zpět před zahájením insolvenčního řízení**. Důležité omezení: jen **jde-li o řízení zahájené na návrh jiné osoby než dlužníka**. Podal-li návrh dlužník sám, tahle část nejde použít.\n\n**b) Doplnění podstaty — jen v konkursu.** Byl-li prohlášen konkurs, může soud rozhodnout, že člen **poskytne do podstaty plnění až do výše rozdílu mezi souhrnem dluhů a hodnotou majetku** korporace. Při určení výše soud přihlédne zejména k tomu, **jakou měrou porušení povinnosti přispělo k nedostatečné výši podstaty**.\n\nNa Truhlárně Bureš: dluhy 6,8 mil., majetek 4,2 mil., rozdíl 2,6 mil. To je strop, ne automatická částka — soud vám přizná tolik, kolik z toho rozdílu jde na vrub jednatelova jednání."
+   },
+   {
+    "nadpis": "Návrh podáváte vy. Věřitel ne — a to je častý omyl",
+    "text": "**Aktivně legitimován je jen insolvenční správce.** Jednotlivý věřitel tenhle návrh podat nemůže; to je změna proti starému ručení podle § 68 a plete se to dodnes.\n\n**§ 66 odst. 2** ale přidává povinnost: **rozhodne-li o tom věřitelský výbor, návrh podáte**. Nemáte tu volnost, kterou byste možná čekal.\n\nZároveň vás chrání před tím, abyste financoval spor z vlastního: nejsou-li v podstatě peníze na náklady, **můžete podání návrhu nebo pokračování v řízení podmínit tím, aby vám věřitelé složili přiměřenou zálohu**. Věřitelé, kteří ji složí, pak mohou při vašem úspěchu žádat její náhradu **jako pohledávku za majetkovou podstatou**.\n\nJe to přesně stejný mechanismus jako u odpůrčí žaloby (§ 239 odst. 2 ins. zák.) a používejte ho — spory s bývalými jednateli bývají dlouhé a znalecky drahé.\n\nŘízení běží **před insolvenčním soudem** a v rámci insolvenčního řízení. Nejde tedy o přihlášku a nejde o běžnou žalobu u obecného soudu."
+   },
+   {
+    "nadpis": "Na koho to dopadne kromě formálního jednatele",
+    "text": "**§ 69 z. o. k.** rozšiřuje dosah § 63 až § 66 na tři skupiny, a ta třetí je v praxi nejcennější:\n\n— **bývalého** člena statutárního orgánu (odst. 2) — nepomůže tedy rezignovat týden před podáním návrhu,\n\n— osobu v **obdobném postavení**,\n\n— a **každou další osobu, která se fakticky v takovém postavení nachází, přestože není členem orgánu, a bez zřetele k tomu, jaký vztah k obchodní korporaci má**.\n\nTo je **faktický vedoucí** — stínový jednatel. Klasický případ: v rejstříku je zapsaný „bílý kůň\", student nebo člověk bez majetku, ale firmu reálně řídil někdo jiný, kdo podepisoval, jednal s bankou a rozhodoval o platbách. Podle § 69 odst. 2 se § 66 vztahuje i na něj.\n\nStejnou logiku má **§ 62 odst. 1 z. o. k.** u péče řádného hospodáře.\n\nJe-li členem orgánu **právnická osoba**, dopadá to podle § 69 odst. 1 i na fyzickou osobu, která ji při výkonu funkce zastupuje — takže konstrukce „jednatelem je naše servisní s.r.o.\" nechrání nikoho.\n\nVaše práce je tedy dohledat, **kdo firmu opravdu řídil**: podpisová práva v bance, e-maily, kdo jednal s odběrateli. Zápis v rejstříku je jen výchozí bod."
+   }
+  ]
+ },
+ {
+  "id": "zok-vylouceni",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Vyloučení z výkonu funkce (diskvalifikace)",
+  "pramen": "§ 63 až § 65 a § 69 z. o. k.",
+  "body": [
+   {
+    "nadpis": "Za co a na jak dlouho",
+    "text": "**§ 63 odst. 1 z. o. k.:** soud může **i bez návrhu** rozhodnout, že člen statutárního orgánu, který **v posledních 3 letech před zahájením řízení opakovaně nebo závažně porušil své povinnosti při výkonu funkce**, nesmí **až po dobu 3 let** od právní moci rozhodnutí vykonávat funkci člena statutárního orgánu **jakékoli obchodní korporace**.\n\nZapamatujte si tu dvojici čísel — **3 roky zpět, až 3 roky zákazu** — a to, že porušení musí být **opakované nebo závažné**. Jeden nešikovný obchod na to nestačí.\n\nDůsledek je široký: zákaz neplatí jen pro tu firmu, která padla, ale **pro všechny obchodní korporace**.\n\n**§ 63 odst. 2** to provazuje s předchozím tématem: uložil-li soud povinnost podle **§ 66 odst. 1**, rozhodne o vyloučení **i bez návrhu**. Uspějete-li tedy se svou žalobou proti jednateli, diskvalifikace přijde automaticky jako druhý krok.\n\nNávrh podle **§ 63 odst. 3** může podat **každý, kdo na něm má důležitý zájem** — tady už tedy i věřitel."
+   },
+   {
+    "nadpis": "Co se stane právní mocí a jak jde zmírnit",
+    "text": "**§ 64 odst. 1:** právní mocí rozhodnutí přestává být ta osoba členem statutárního orgánu **ve všech obchodních korporacích** naráz, a soud to bez zbytečného odkladu oznámí rejstříkovému soudu.\n\nNemusí tedy nikdo nic odvolávat ani zapisovat — funkce prostě zanikne.\n\n**§ 64 odst. 2** je ventil: soud může rozhodnout, že člověk **může zůstat členem statutárního orgánu jiné obchodní korporace**, pokud okolnosti dokládají, že jeho dosavadní výkon funkce tam vyloučení neodůvodňuje, a pokud by vyloučení mohlo poškodit **oprávněné zájmy té korporace nebo jejích věřitelů**.\n\nPraktický smysl: člověk se poveze na jedné zkrachovalé firmě, ale zároveň řídí zdravý podnik se sto zaměstnanci. Vyhodit ho odtamtud by poškodilo právě ty věřitele, které má zákon chránit.\n\nNávrh na tohle zmírnění může podat **jen ta osoba sama nebo dotčená korporace**, soud k němu sám nepřistoupí."
+   },
+   {
+    "nadpis": "Kdo zákaz poruší, ručí — a dostane deset let",
+    "text": "**§ 65 z. o. k.** je sankce s ostrými zuby a stojí za to ji znát, protože k ní v praxi opravdu dochází.\n\nKdo poruší zákaz uložený rozhodnutím o vyloučení, **ručí za splnění všech povinností obchodní korporace**, které vznikly v době, kdy přes zákaz fakticky vykonával činnost člena jejího statutárního orgánu.\n\nVšimněte si, že se mluví o **faktickém** výkonu — nemusí být nikde zapsaný. Kdo si po diskvalifikaci nastrčí do rejstříku známého a řídí firmu dál sám, ručí celým svým majetkem za všechno, co za tu dobu vznikne.\n\nA soud **i bez návrhu** rozhodne, že se té osobě **opětovně zakazuje** vykonávat funkci, tentokrát **až na 10 let**.\n\nPro vás jako správce to je konkrétní vodítko při soupisu: narazíte-li na firmu řízenou diskvalifikovanou osobou, máte tu ručitele za dluhy z celého toho období — a to je pohledávka do podstaty."
+   }
+  ]
+ },
+ {
+  "id": "zok-hrozici",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Povinnosti orgánu při hrozícím úpadku",
+  "pramen": "§ 98 a § 99 ins. zák., § 51 a § 66 z. o. k., § 159 o. z.",
+  "body": [
+   {
+    "nadpis": "Čí zájem se hlídá, když firma začne padat",
+    "text": "Dokud je firma zdravá, jedná statutární orgán v **zájmu korporace**, což se prakticky kryje se zájmem společníků: vydělat.\n\nJakmile hrozí úpadek, obrátí se to. Majetek už fakticky nepatří společníkům — jejich podíl je nulový nebo záporný — a **hodnotu, se kterou se hazarduje, drží věřitelé**. Rizikový obchod, který by při úspěchu zachránil společníky a při neúspěchu sebral věřitelům posledních 20 %, je pak jednáním proti zájmu korporace.\n\nČeský zákon to nemá napsané jednou větou tak jako některé cizí úpravy. Skládá se to ze tří míst:\n\n— **§ 159 odst. 1 o. z.** a **§ 51 odst. 1 z. o. k.** — „obhajitelný zájem obchodní korporace\", který se v blízkosti úpadku posouvá k věřitelům,\n\n— **§ 66 z. o. k.** — sankce za to, že člen orgánu porušením povinností **přispěl k úpadku**,\n\n— **§ 98 ins. zák.** — povinnost podat insolvenční návrh.\n\nPro vás to znamená: u každého úpadku si položte otázku, **odkdy jednatel věděl nebo vědět měl**, a co dělal potom."
+   },
+   {
+    "nadpis": "Povinnost podat návrh a co stojí její zmeškání",
+    "text": "**§ 98 ins. zák.** ukládá dlužníkovi — u právnické osoby jejímu statutárnímu orgánu — podat insolvenční návrh **bez zbytečného odkladu poté, co se dozvěděl nebo při náležité pečlivosti měl dozvědět o svém úpadku**.\n\nPozor na rozsah: povinnost se týká **úpadku**, ne hrozícího úpadku. Při hrozícím úpadku návrh podat **může** (a bývá to rozumné), ale **nemusí**.\n\n**§ 99 ins. zák.** pak zakládá odpovědnost za škodu vůči věřitelům. Ta škoda se počítá jako **rozdíl mezi tím, co věřitel dostal v insolvenci, a tím, co by dostal, kdyby byl návrh podán včas** — a u firmy, která rok dojídala zásoby a platila jen vybrané dodavatele, bývá ten rozdíl značný.\n\nTuhle žalobu podává **věřitel sám**, ne vy. Spor patří podle § 7a písm. c) ins. zák. krajskému soudu. Vaše role je poskytnout podklady — z účetnictví, které máte, je datum vzniku úpadku obvykle dobře čitelné.\n\nVy proti jednateli jdete jinou cestou: **§ 66 z. o. k.** — plnění do podstaty."
+   },
+   {
+    "nadpis": "Čeho se jednatelé dopouštějí nejčastěji",
+    "text": "Tři vzorce, na které narazíte skoro v každém pozdě podaném úpadku:\n\n**Placení vybraných věřitelů.** Firma má na účtu 400 tis. a dluží deseti dodavatelům. Jednatel zaplatí dva, s nimiž chce dál obchodovat, a ostatní ne. To je **zvýhodňující právní úkon** podle § 241 ins. zák. a současně porušení péče.\n\n**Nakupování na dluh, o kterém se ví, že se nezaplatí.** Objednávka materiálu měsíc před úpadkem, s vědomím, že dodavatel zboží nikdy nedostane zaplaceno. Vedle odporovatelnosti je tu i trestní rovina (§ 222 tr. zákoníku, poškození věřitele).\n\n**Vyvádění majetku na spřízněné osoby.** Převod strojů, vozidel nebo nemovitosti na manželku či sesterskou firmu za zlomek ceny — § 240 ins. zák. a k tomu porušení loajality.\n\nVšechny tři vedou k dvěma paralelním nárokům: **odpůrčí žaloba** proti nabyvateli (vrátit plnění do podstaty) a **§ 66 z. o. k.** proti jednateli (doplnit podstatu). Můžete vést oba, jen si pohlídejte, ať nevymáháte totéž dvakrát."
+   }
+  ]
+ },
+ {
+  "id": "zok-smlouva",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Smlouva o výkonu funkce a odměňování",
+  "pramen": "§ 59 až § 61 z. o. k.",
+  "body": [
+   {
+    "nadpis": "Co platí, když smlouva není",
+    "text": "**§ 59 odst. 1 z. o. k.:** vztah mezi korporací a členem voleného orgánu se řídí **přiměřeně ustanoveními občanského zákoníku o příkazu**, ledaže ze smlouvy o výkonu funkce nebo ze zákona plyne něco jiného. Ustanovení o správě cizího majetku se nepoužijí.\n\n**§ 59 odst. 3** je to, co vás při soupisu zajímá nejvíc: **není-li odměňování v kapitálové společnosti sjednáno ve smlouvě o výkonu funkce, platí, že výkon funkce je bezplatný.**\n\nPrakticky to znamená, že jednatel, který si roky vyplácel „odměnu jednatele\" bez schválené smlouvy, ji **dostával bez právního důvodu**. To je bezdůvodné obohacení a pohledávka do podstaty.\n\nKontrolujte tedy vždycky dvojici: **je smlouva o výkonu funkce, a byla schválena?** Podle **§ 59 odst. 2** se v kapitálové společnosti sjednává **písemně** a schvaluje ji **nejvyšší orgán** — bez toho schválení **nenabude účinnosti**. Samotný podpis jednatele s jednatelem nestačí."
+   },
+   {
+    "nadpis": "Výjimka, kterou jednatelé uplatní jako první",
+    "text": "**§ 59 odst. 4** říká, kdy se pravidlo o bezplatnosti **nepoužije**. Je-li smlouva nebo ujednání o odměně neplatné **z důvodu na straně společnosti**, nebo nebyla-li uzavřena **pro překážky na straně společnosti**, pro vyšší moc či jinou překážku vzniklou nezávisle na vůli člena orgánu, anebo ji nejvyšší orgán bez zbytečného odkladu neschválí z uvedených důvodů — pak odměna náleží, a to **ve výši obvyklé**.\n\nRozhodující je tedy otázka, **na čí straně byla překážka**. U jednočlenné s.r.o., kde je jednatel zároveň jediným společníkem, se těžko tvrdí, že mu ve schválení bránilo něco nezávislého na jeho vůli — schvalujícím orgánem byl on sám.\n\nOdměna obvyklá se určuje **k době uzavření smlouvy**, a nebyla-li uzavřena, **k době vzniku funkce**, za činnost obdobnou té, kterou skutečně vykonával. U mikropodniku to bývá řádově méně, než si vyplácel.\n\n**§ 59 odst. 5** ještě řeší rozpor se společenskou smlouvou: přednost má společenská smlouva, ledaže byla smlouva o výkonu funkce schválena většinou potřebnou pro její změnu."
+   },
+   {
+    "nadpis": "Plnění nad rámec smlouvy a zákaz výplaty při špatném hospodaření",
+    "text": "**§ 61 odst. 1:** jiné plnění než to, na které plyne právo z právního předpisu, ze **schválené** smlouvy o výkonu funkce nebo z vnitřního předpisu schváleného příslušným orgánem, lze poskytnout **jen se souhlasem toho, kdo schvaluje smlouvu o výkonu funkce**, a s vyjádřením kontrolního orgánu, byl-li zřízen.\n\nSem spadají bonusy, odstupné, auto nad rámec smlouvy, „mimořádné odměny\" odhlasované samy sobě.\n\nA teď ustanovení, které je pro insolvenční praxi nejcennější — **§ 61 odst. 2**: plnění podle smlouvy o výkonu funkce **se neposkytne, pokud výkon funkce zřejmě přispěl k nepříznivému hospodářskému výsledku** korporace, ledaže ten, kdo smlouvu schvaluje, rozhodne jinak.\n\nU firmy, která rok před úpadkem prodělávala a jednatel si přesto vyplácel odměnu i bonusy, máte tedy přímý zákonný důvod žádat je zpět. Ke stejnému výsledku vede **§ 66 odst. 1 písm. a) z. o. k.**, které dovoluje sáhnout na prospěch ze smlouvy o výkonu funkce **až dva roky zpět**.\n\nA připomínka z předchozího tématu: klauzule omezující odpovědnost jednatele jsou podle **§ 53 odst. 2** bez účinku."
+   }
+  ]
+ },
+ {
+  "id": "zok-vyvadeni",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Vyvádění majetku a odporovatelnost",
+  "pramen": "§ 235 až § 243 ins. zák., § 589 až § 599 o. z., § 55 a § 56 z. o. k.",
+  "body": [
+   {
+    "nadpis": "Tři skutkové podstaty, tři různé lhůty",
+    "text": "Odporovat lze podle **§ 235 ins. zák.** úkonům, kterými dlužník **zkracuje uspokojení věřitelů nebo zvýhodňuje některé věřitele na úkor jiných**. Za právní úkon se považuje i **opomenutí** — například to, že dlužník nechal promlčet vlastní pohledávku.\n\nZákon to rozpadá do tří typů a **každý má jinou lhůtu i jiné podmínky**:\n\n**§ 240 — bez přiměřeného protiplnění.** Bezúplatně nebo za cenu podstatně nižší než obvyklou. Lhůta **1 rok** zpět, u osob blízkých a osob tvořících s dlužníkem koncern **3 roky**.\n\n**§ 241 — zvýhodňující.** Věřiteli se dostane vyššího uspokojení, než jaké by měl v konkursu. Lhůta **1 rok**, u blízkých a koncernu **3 roky**.\n\n**§ 242 — úmyslně zkracující.** Dlužník úmyslně zkrátil věřitele a druhá strana o tom věděla nebo vědět musela. Lhůta **5 let** — nejdelší, ale musíte prokázat úmysl.\n\nU § 240 a § 241 se navíc vyžaduje, aby byl úkon učiněn **v době, kdy byl dlužník v úpadku**, nebo aby k úpadku vedl; u osob blízkých a koncernu se úpadek **předpokládá**. To je zásadní úleva, protože u spřízněných převodů nemusíte dokazovat, v jakém stavu firma tehdy byla."
+   },
+   {
+    "nadpis": "Žalobu podáváte jen vy, a máte na ni rok",
+    "text": "**§ 239 odst. 1 ins. zák.:** odporovat může v insolvenčním řízení **pouze insolvenční správce**, i když není osobou s dispozičními oprávněními. Běží-li už spor z odpůrčí žaloby jiné osoby, nelze v něm až do skončení insolvenčního řízení pokračovat.\n\n**A teď lhůta, o kterou se přichází nejčastěji. § 239 odst. 3: odpůrčí žalobu lze podat ve lhůtě 1 roku ode dne, kdy nastaly účinky rozhodnutí o úpadku. Nepodáte-li ji, odpůrčí nárok zanikne.**\n\nJe to **prekluze**, ne promlčení — soud k ní přihlédne sám a nedá se zhojit ničím. Proto patří datum rozhodnutí o úpadku plus rok do kalendáře hned první den ve funkci, a prověrku podezřelých převodů dělejte dřív, než dojde na zpeněžování.\n\n**§ 239 odst. 2:** rozhodne-li o tom věřitelský výbor, žalobu **podáte vždy**; a stejně jako u § 66 z. o. k. můžete podání podmínit zálohou od věřitelů, není-li v podstatě na náklady sporu.\n\nŽaluje se proti tomu, **kdo má plnění vydat do podstaty** — tedy proti nabyvateli, ne proti jednateli."
+   },
+   {
+    "nadpis": "Kde se to potkává s korporátním právem",
+    "text": "Typický případ z praxe: půl roku před úpadkem převede Truhlárna Bureš dvě CNC frézy v hodnotě 1,1 mil. na firmu jednatelovy manželky za 40 tis.\n\nMáte proti tomu **tři samostatné nástroje a všechny jdou vést vedle sebe**:\n\n— **Odpůrčí žaloba** podle § 240 ins. zák. proti nabyvateli — frézy nebo jejich hodnota zpátky do podstaty. Lhůta pro blízké osoby je 3 roky zpět a úpadek se předpokládá.\n\n— **§ 66 z. o. k.** proti jednateli — doplnění podstaty za to, že porušením povinností přispěl k úpadku.\n\n— **Neplatnost pro nedodržení postupu při střetu zájmů.** Podle **§ 55 odst. 1 z. o. k.** musel jednatel o záměru uzavřít smlouvu s osobou blízkou informovat kontrolní orgán, jinak nejvyšší orgán. **§ 56 odst. 1** totéž u zajištění dluhů takových osob.\n\nVedle toho je tu **relativní neúčinnost podle § 589 o. z.**, ale tu v insolvenci nepoužijete — insolvenční zákon má vlastní, speciální úpravu, která ji nahrazuje. Obecná odpůrčí žaloba podle o. z. patří věřiteli mimo insolvenci.\n\nA nezapomeňte na **§ 243 ins. zák.**: dosáhl-li věřitel rozhodnutí o neúčinnosti **před** právní mocí rozhodnutí o úpadku, může si plnění nechat a do podstaty ho nepředává."
+   }
+  ]
+ },
+ {
+  "id": "zok-organy",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Orgány korporace a co z nich v insolvenci zbude",
+  "pramen": "§ 44, § 194, § 435 z. o. k., § 229 a § 246 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Kdo je kdo v s.r.o. a v a.s.",
+    "text": "**§ 44 z. o. k.** určuje nejvyšší orgán: v **osobní společnosti** všichni společníci, v **kapitálové společnosti valná hromada**, v **družstvu členská schůze**.\n\nStatutární orgán:\n\n— **s.r.o. — jeden nebo více jednatelů** (§ 194 odst. 1). Určí-li tak společenská smlouva, tvoří více jednatelů **kolektivní orgán**; jinak jedná každý samostatně. To si ověřte v rejstříku hned první den, protože z toho plyne, čí podpis na starších smlouvách firmu zavazoval.\n\n— **a.s. — představenstvo** (§ 435 odst. 1), jemuž přísluší **obchodní vedení**. To platí v dualistickém systému; v monistickém je statutárním orgánem správní rada.\n\n**§ 196** ukládá jednateli zajišťovat **řádné vedení evidence a účetnictví a vedení seznamu společníků**. Na tohle se odvoláte pokaždé, když vám jednatel účetnictví nepředá — je to jeho zákonná povinnost, ne laskavost."
+   },
+   {
+    "nadpis": "Prohlášením konkursu se role rozdělí — a je to jemnější, než se zdá",
+    "text": "**§ 246 odst. 1 ins. zák.:** prohlášením konkursu přechází **na insolvenčního správce oprávnění nakládat s majetkovou podstatou**, jakož i výkon práv a plnění povinností dlužníka, **pokud souvisí s majetkovou podstatou**.\n\nZákon pak výslovně jmenuje, co děláte: vykonáváte **akcionářská práva spojená s akciemi v podstatě**, rozhodujete o obchodním tajemství a jiné mlčenlivosti, vystupujete vůči zaměstnancům **jako zaměstnavatel**, zajišťujete **provoz podniku, vedení účetnictví a plnění daňových povinností**.\n\nVšimněte si té podmínky **„pokud souvisí s majetkovou podstatou\"**. Neznamená to, že se stáváte jednatelem. Korporace dál existuje, dál má svůj statutární orgán a ten dál dělá to, co s podstatou nesouvisí: svolává valnou hromadu, zajišťuje zápisy do rejstříku, podepisuje za společnost tam, kde nejde o majetek.\n\nDržte se toho i prakticky — na listiny, které se podávají do rejstříku, patří podpis jednatele, ne váš.\n\n**§ 246 odst. 2** je vaše ochrana: úkony, které dlužník udělá poté, co oprávnění přešlo na vás, jsou vůči věřitelům **neúčinné ze zákona** a odpůrčí žalobu na ně podávat nemusíte."
+   },
+   {
+    "nadpis": "Co ještě může valná hromada rozhodnout",
+    "text": "Valná hromada po prohlášení konkursu **nezaniká** a její působnost se nepřesouvá na vás celá. Dál může:\n\n— **odvolat a jmenovat jednatele** — což vás zajímá, protože potřebujete, aby měla firma s kým jednat,\n\n— rozhodovat o změnách společenské smlouvy,\n\n— schvalovat věci, které se netýkají nakládání s podstatou.\n\nNemůže naopak rozhodnout o ničem, co by znamenalo **nakládání s majetkem v podstatě** — prodej nemovitosti, souhlas se zástavou, rozdělení zisku. To je vaše.\n\n**§ 229 odst. 3 ins. zák.** říká pro každou fázi řízení, kdo je **osobou s dispozičními oprávněními**. Je to místo, kam se vyplatí chodit, protože ta odpověď není v konkursu, reorganizaci a oddlužení stejná — v **reorganizaci** zůstávají dispoziční oprávnění dlužníkovi a vy vykonáváte kontrolu, kdežto v **konkursu** je máte vy.\n\nPro praxi to znamená jednu větu, kterou budete opakovat: **není pravda, že se správcem přebírá firma. Přebírá se majetek.**"
+   }
+  ]
+ },
+ {
+  "id": "zok-opatrovnik",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Když firma nemá jednatele — opatrovník",
+  "pramen": "§ 165 o. z., § 198 a § 200 o. z.",
+  "body": [
+   {
+    "nadpis": "Situace, do které se dostanete dřív nebo později",
+    "text": "Jednatel Truhlárny den po rozhodnutí o úpadku rezignuje a odstěhuje se. Nebo zemře. Nebo firma měla jednatele dva, oba skončili a valná hromada se nesejde, protože společník je nekontaktní.\n\nVzniká tím praktický problém: potřebujete, aby někdo **převzal poštu, podepsal listiny do rejstříku, předal účetnictví** a byl vůbec kým jednat. Vy to nejste — vaše oprávnění se podle § 246 ins. zák. týká jen podstaty.\n\n**§ 165 odst. 1 o. z.** dává dvě řešení, a v tomhle pořadí:\n\n— **Nemá-li statutární orgán dostatečný počet členů** potřebný k rozhodování, jmenuje soud **chybějící členy** na návrh toho, kdo osvědčí právní zájem — a to na dobu, než budou noví členové povoláni postupem podle zakladatelského jednání.\n\n— **Jinak jmenuje soud právnické osobě opatrovníka**, a to **i bez návrhu**, kdykoli se o tom při své činnosti dozví.\n\n„Ten, kdo osvědčí právní zájem\" jste mimo jiné **vy** — s tím se návrh podává."
+   },
+   {
+    "nadpis": "Opatrovník při střetu zájmů",
+    "text": "**§ 165 odst. 2 o. z.** míří na jinou situaci: soud jmenuje opatrovníka **i bez návrhu**, jsou-li **zájmy člena statutárního orgánu v rozporu se zájmy právnické osoby** a nemá-li korporace jiného člena orgánu schopného ji zastupovat.\n\nTo je přesně případ, který vyrobíte vy sám. Podáte za podstatu žalobu proti jednateli podle § 66 z. o. k. — a on je zároveň jediný, kdo za firmu jedná. Nemůže se přece sám za sebe žalovat.\n\nTehdy se jmenuje opatrovník, který korporaci v tom sporu zastupuje.\n\nPozor na návaznost: rezignace ani odvolání jednatele ho **nezbavuje odpovědnosti za dobu, kdy funkci vykonával** — to plyne z § 69 odst. 2 z. o. k., který vztahuje § 63 až § 66 i na **bývalého** člena. Útěk z funkce tedy není obrana, jen komplikace pro vás."
+   },
+   {
+    "nadpis": "Likvidátor, který zjistí úpadek",
+    "text": "Zrcadlová situace, na kterou narazíte u firem, které šly nejdřív do likvidace.\n\n**§ 193 o. z.:** likvidátor **nabývá působnosti statutárního orgánu** okamžikem svého povolání a **za řádný výkon funkce odpovídá stejně jako člen statutárního orgánu**. Není to tedy nějaký správce druhé kategorie — platí na něj péče řádného hospodáře i odpovědnost za škodu.\n\n**§ 189 odst. 2:** je-li právnická osoba v likvidaci a likvidátor nebyl povolán, vykonávají jeho působnost **všichni členové statutárního orgánu**.\n\nA klíčové ustanovení pro vás — **§ 200 o. z.:** zjistí-li likvidátor v průběhu likvidace, že právnická osoba je **v úpadku**, **podá bez zbytečného odkladu insolvenční návrh**.\n\nJe to táž povinnost, jakou má statutární orgán podle § 98 ins. zák., jen adresovaná likvidátorovi. A stejně jako tam z ní plyne odpovědnost za škodu, pokud ji nesplní včas."
+   }
+  ]
+ },
+ {
+  "id": "zok-likvidace",
+  "oblast": "Zákon o obchodních korporacích",
+  "nazev": "Likvidace versus insolvence",
+  "pramen": "§ 187 až § 193 a § 200 o. z., § 173 a násl., § 244 a násl. ins. zák.",
+  "body": [
+   {
+    "nadpis": "Dva různé způsoby, jak firma končí",
+    "text": "**Likvidace** podle **§ 187 odst. 1 o. z.** má vypořádat majetek zrušené právnické osoby (**likvidační podstatu**), **vyrovnat dluhy věřitelům** a naložit s čistým zůstatkem (**likvidačním zůstatkem**).\n\nVšimněte si té třetí části. Likvidace počítá s tím, že **na všechny věřitele peníze jsou** a ještě něco zbude společníkům. Je to řízené ukončení solventní firmy.\n\n**Insolvence** naopak vychází z toho, že peníze na všechny **nejsou**, a celý zákon se točí kolem toho, jak rozdělit nedostatek spravedlivě.\n\nOdtud plyne rozdíl ve všem ostatním:\n\n— likvidaci vede **likvidátor** povolaný orgánem korporace (§ 189 odst. 1), insolvenci **soudem ustanovený správce** z kolečka,\n\n— v likvidaci se věřitelé **nepřihlašují do přezkumu** a platí se průběžně, v insolvenci **přihláškou** ve lhůtě a poměrně,\n\n— v likvidaci **není nic jako odporovatelnost** proti dřívějším převodům.\n\nFirma vstupuje do likvidace **dnem, kdy je zrušena** (§ 187 odst. 2), a nese dodatek **„v likvidaci\"**."
+   },
+   {
+    "nadpis": "Co se stane, když se likvidace potká s úpadkem",
+    "text": "To je ta situace, kvůli které se tohle téma u zkoušky vůbec objevuje.\n\nLikvidátor sečte majetek a dluhy a zjistí, že na věřitele nestačí. Likvidace tím **ztratila smysl**, protože její cíl — vyrovnat dluhy — nelze splnit. Musí se přejít do režimu, který nedostatek umí rozdělit.\n\n**§ 200 o. z.** proto ukládá likvidátorovi podat **bez zbytečného odkladu insolvenční návrh**. Jedinou výjimkou je případ podle § 201 (nedostatečný majetek u zvláštních případů).\n\nInsolvenční řízení pak běží **vedle** likvidace a fakticky ji přebíjí: prohlášením konkursu přejde podle **§ 246 ins. zák.** nakládání s majetkem na vás a likvidátor zůstane procesním subjektem podle **§ 9 písm. f) ins. zák.**\n\nPro vás z toho plynou dvě praktické věci. **Likvidátor je pro vás cenný zdroj** — obvykle už má sestavený soupis majetku i seznam věřitelů. A **prověřte, co stihl udělat před vaším příchodem**: platby jednotlivým věřitelům v likvidaci mohou být zvýhodňujícími úkony podle § 241 ins. zák."
+   },
+   {
+    "nadpis": "A opačný směr: konkurs skončil, co dál",
+    "text": "Po skončení konkursu se cesty rozcházejí podle toho, co zbylo.\n\n**Nezbylo nic** — což je běžné. Právnická osoba se po zrušení konkursu vymaže z obchodního rejstříku a zaniká. Likvidace už neproběhne, protože není co vypořádat.\n\n**Něco zbylo** — po uspokojení všech věřitelů zůstal majetek. Pak se firma do likvidace vrací, aby se ten zůstatek rozdělil společníkům. V praxi je to vzácné.\n\nPro úplnost dvě poznámky k terminologii, které se u zkoušky pletou:\n\n— **Zrušení** právnické osoby je začátek konce, **zánik** je výmaz z rejstříku. Mezi tím leží likvidace nebo konkurs.\n\n— **Likvidační podstata** (§ 187 o. z.) a **majetková podstata** (§ 205 ins. zák.) jsou dva různé pojmy ze dvou různých zákonů. Nemíchejte je.\n\nU **fyzické osoby** nic takového neexistuje — člověk nezaniká. Proto má insolvenční zákon oddlužení a osvobození od zbytku dluhů podle § 414."
+   }
+  ]
+ },
+ {
+  "id": "oz-zastava",
+  "oblast": "Občanský zákoník",
+  "nazev": "Zástavní právo a pořadí zástav",
+  "pramen": "§ 1309 až § 1394 o. z., § 2 písm. g), § 167 a § 298 ins. zák.",
+  "body": [
+   {
+    "nadpis": "K čemu zástava věřiteli je",
+    "text": "**§ 1309 odst. 1 o. z.:** zástavní právo dává věřiteli oprávnění, nesplní-li dlužník dluh řádně a včas, **uspokojit se z výtěžku zpeněžení zástavy** do ujednané výše, a není-li ujednána, do výše pohledávky s příslušenstvím **ke dni zpeněžení**.\n\nTo „ke dni zpeněžení\" je prakticky důležité: úroky běží dál a zajištění je pokrývá. Zajištěný věřitel proto přihlašuje jinou částku, než jakou měl ke dni úpadku.\n\nRozsah zajištění určuje **§ 1313 o. z.**: zástavní právo zajišťuje **dluh a jeho příslušenství**; smluvní pokutu jen tehdy, je-li to **zvlášť ujednáno**. Příslušenstvím jsou podle § 513 úroky, úroky z prodlení a náklady spojené s uplatněním pohledávky.\n\nPři přezkumu přihlášky tedy porovnáváte tři věci: **zástavní smlouvu** (co zajišťuje), **§ 1313** (co zajišťovat může) a **§ 513** (co je příslušenství). Smluvní pokuta bez výslovného ujednání ze zajištění vypadává."
+   },
+   {
+    "nadpis": "Kdy vzniká a proč je rozhodující den podání návrhu",
+    "text": "U **nemovitosti** platí **§ 1316 o. z.**: zástavní právo k věci zapsané ve veřejném seznamu vzniká **zápisem** v tomto seznamu.\n\nAle **§ 10 katastrálního zákona** (č. 256/2013 Sb.) říká, že **právní účinky zápisu nastávají k okamžiku, kdy návrh došel katastrálnímu úřadu**. Vklad se tedy provede později, ale se zpětnými účinky.\n\nPro vás z toho plyne konkrétní kontrola: nestačí podívat se, kdy byl vklad **proveden**. Musíte zjistit, **kdy došel návrh** — a to proto, že zástavní právo zřízené po zahájení insolvenčního řízení je podle § 109 ins. zák. neúčinné, kdežto zřízené den předtím platí.\n\nU **movitých věcí** se zástava zřizuje buď **odevzdáním věci** věřiteli, nebo **zápisem do rejstříku zástav** vedeného Notářskou komorou — a do toho rejstříku se při soupisu dívejte vždy. Zástavy na strojích a vozidlech se tam skrývají a v účetnictví dlužníka po nich často není stopa.\n\n**Pořadí** se řídí okamžikem vzniku: dřívější zástava je uspokojena přednostně. Při rozvrhu výtěžku podle § 298 ins. zák. to určuje, kdo dostane kolik."
+   },
+   {
+    "nadpis": "Smluvní versus zákonná zástava",
+    "text": "**Smluvní** zástava vzniká ze zástavní smlouvy — typicky banka k nemovitosti nebo k pohledávkám.\n\n**Zákonná** zástava vzniká přímo ze zákona, bez smlouvy, a právě na ni se při soupisu zapomíná. Několik, které potkáte:\n\n— **zástavní právo pronajímatele** k věcem nájemce vneseným do prostoru,\n\n— **zástavní právo skladovatele** a dopravce,\n\n— **daňové zástavní právo** podle daňového řádu, zapisované do katastru,\n\n— **soudcovské zástavní právo** zřízené v exekuci, jehož pořadí se podle § 338d o. s. ř. řídí **dnem, kdy k soudu došel návrh** na jeho zřízení.\n\nZákonná zástava zakládá postavení zajištěného věřitele stejně jako smluvní — **§ 2 písm. g) ins. zák.** mezi nimi nerozlišuje. Před sestavením soupisu proto projděte katastr, rejstřík zástav i případné exekuční spisy; zajištění, které přehlédnete, se ozve až u rozvrhu a to je pozdě."
+   },
+   {
+    "nadpis": "Uspokojení ze zástavy v insolvenci a mimo ni",
+    "text": "**Mimo insolvenci** si zástavní věřitel zástavu zpeněží sám — dražbou nebo prodejem — a uspokojí se z výtěžku.\n\n**V insolvenci to nejde.** Podle § 109 ins. zák. nelze uplatňovat zajištění mimo řízení a podle **§ 167 ins. zák.** se zajištění věřitelé uspokojují **z výtěžku zpeněžení zástavy**, a to v pořadí svých zajištění.\n\nZpeněžuje **správce**, ale podle **§ 293 ins. zák. na pokyn zajištěného věřitele** — a ten pokyn jste povinen splnit, ledaže jde o zjevně nevýhodný prodej; pak si vyžádáte souhlas insolvenčního soudu.\n\n**§ 298 ins. zák.** pak říká, jak se výtěžek rozdělí: zajištěnému věřiteli se vydá po odečtení **nákladů spojených se správou a zpeněžením** a **odměny správce**. Náklady na správu se odečítají nejvýše v rozsahu 4 %, náklady na zpeněžení nejvýše 5 % výtěžku, ledaže se zajištěný věřitel dohodl jinak.\n\nTohle je v praxi nejčastější spor, který se zajištěnými věřiteli vedete: **co všechno jste směl z výtěžku odečíst**. Veďte si k zástavě oddělenou evidenci nákladů od prvního dne."
+   }
+  ]
+ },
+ {
+  "id": "oz-prevod",
+  "oblast": "Občanský zákoník",
+  "nazev": "Zajišťovací převod práva a postoupení k zajištění",
+  "pramen": "§ 2040 až § 2044 a § 1879 o. z., § 2 písm. g) ins. zák.",
+  "body": [
+   {
+    "nadpis": "Čím se liší od zástavy",
+    "text": "**§ 2040 odst. 1 o. z.:** smlouvou o zajišťovacím převodu práva zajišťuje dlužník nebo třetí osoba dluh tím, že věřiteli **dočasně převede své právo**.\n\nRozdíl proti zástavě je zásadní a jde o **vlastnictví**:\n\n— U **zástavy** zůstává věc dlužníkovi, věřitel má jen právo se z ní uspokojit.\n\n— U **zajišťovacího převodu** se věřitel **stane vlastníkem** — dočasně, s tím, že to má skončit, až bude dluh splněn.\n\n**§ 2040 odst. 2:** má se za to, že jde o převod **s rozvazovací podmínkou, že dluh bude splněn**. Splní-li dlužník, vlastnictví se vrací zpět automaticky, bez dalšího převodu.\n\nTypicky to potkáte u vozidel a strojů financovaných nebankovně: v technickém průkazu je jako vlastník zapsán věřitel, ale stroj stojí ve výrobní hale dlužníka a dlužník ho užívá."
+   },
+   {
+    "nadpis": "Proč je § 2 písm. g) ins. zák. jmenuje zvlášť",
+    "text": "Kdyby insolvenční zákon mluvil jen o zástavě, vypadly by tyhle instituty ze hry — u nich totiž **žádné zástavní právo nevzniká**, převádí se rovnou vlastnictví nebo pohledávka.\n\nProto **§ 2 písm. g) ins. zák.** vyjmenovává vedle zástavního a zadržovacího práva výslovně také **zajišťovací převod práva** a **postoupení pohledávky k zajištění**. Kdo je má, je zajištěným věřitelem se vším, co z toho plyne.\n\nPro vás to znamená konkrétní postup při soupisu. Narazíte na stroj, jehož vlastníkem je podle papírů někdo jiný. Máte dvě možnosti a musíte je rozlišit:\n\n— Jde o **skutečný cizí majetek** (nájem, leasing, výhrada vlastnictví) → do podstaty nepatří, případně se vyloučí žalobou podle § 225 ins. zák.\n\n— Jde o **zajišťovací převod** → věc do podstaty **patří** a věřitel je zajištěným věřitelem, který se uspokojí z výtěžku. Vlastnictví má jen jako zajištění, ne proto, aby si věc nechal.\n\nRozhodující je obsah smlouvy, ne to, co je v evidenci. Tohle je jeden z nejčastějších sporů při soupisu a vyplatí se u něj trvat na předložení celé dokumentace."
+   },
+   {
+    "nadpis": "Postoupení pohledávky k zajištění",
+    "text": "Tentýž princip u pohledávek. Dlužník postoupí věřiteli podle **§ 1879 o. z.** své pohledávky za odběrateli — ne proto, aby je prodal, ale aby zajistil úvěr.\n\nBanka se tím stává formálně věřitelem těch pohledávek, ale ekonomicky jde pořád o zajištění.\n\nPraktický dopad v insolvenci: pohledávky za odběrateli **patří do podstaty** a vy je vymáháte, ale výtěžek z nich patří přednostně bance jako zajištěnému věřiteli.\n\nNa co si dát pozor při přezkumu:\n\n— **Které konkrétní pohledávky** byly postoupeny a kdy. Rámcové ujednání „všechny současné i budoucí pohledávky\" je běžné, ale musí být dostatečně určité.\n\n— **Byl o postoupení vyrozuměn poddlužník?** Podle § 1882 o. z. platí, že dokud dlužník o postoupení neví, plní se postupiteli s účinky splnění. Odběratelé proto často platí dál dlužníkovi.\n\n— **Nešlo o zajištění zřízené příliš pozdě?** Zajištění poskytnuté v rozhodné době bez přiměřeného protiplnění nebo se zvýhodňujícím účinkem je napadnutelné podle § 240 a § 241 ins. zák."
+   }
+  ]
+ },
+ {
+  "id": "oz-zadrzovaci",
+  "oblast": "Občanský zákoník",
+  "nazev": "Zadržovací právo",
+  "pramen": "§ 1395 až § 1399 o. z., § 2 písm. g) ins. zák.",
+  "body": [
+   {
+    "nadpis": "Kdy vzniká a komu",
+    "text": "**§ 1395 odst. 1 o. z.:** kdo má povinnost vydat **cizí movitou věc, kterou má u sebe**, může ji **ze své vůle zadržet** k zajištění splatného dluhu osoby, jíž by jinak měl věc vydat.\n\nTři podmínky: **movitá věc**, **cizí**, a věřitel ji **má u sebe oprávněně**. Kdo si věc vzal svémocně, zadržovací právo nezíská.\n\nVzniká **jednostranně** — nepotřebuje smlouvu ani zápis. To je důvod, proč vás může překvapit: v účetnictví dlužníka po něm není stopa.\n\nTypické případy, na které narazíte: **autoservis** drží dodávku, dokud se nezaplatí oprava. **Účetní firma** drží účetnictví. **Skladovatel** drží zboží kvůli neuhrazenému skladnému. **Dopravce** drží zásilku.\n\n**§ 1395 odst. 2** navíc dovoluje zadržet i pro **nesplatný** dluh, například nezajistí-li dlužník dluh jinak, ač měl, nebo prohlásí-li, že dluh nesplní."
+   },
+   {
+    "nadpis": "Proč je to pro soupis nebezpečné",
+    "text": "Zadržovací právo je podle **§ 2 písm. g) ins. zák.** plnohodnotné zajištění. Kdo věc dlužníka zadržuje, je **zajištěný věřitel** a uspokojí se z jejího výtěžku přednostně.\n\nScénář, který se opravdu stává: přijdete do firmy, sepíšete stroje a vozidla. O dodávce, která je od června v servisu, se v účetnictví mlčí, protože je „na opravě\". Servis ji drží pro nezaplacenou fakturu 90 tis. Dodávku sepíšete jako nezatíženou, prodáte za 220 tis. a rozdělíte výtěžek mezi nezajištěné.\n\nServis pak přijde s tím, že byl zajištěným věřitelem. A bude mít pravdu — a vy jste způsobil škodu podle § 37 ins. zák.\n\n**Praktické opatření:** při soupisu se vždycky ptejte, **co z majetku dlužníka fyzicky drží někdo jiný** a proč. Projděte nedokončené zakázky, opravy, sklady u třetích osob, účetnictví u externí účetní.\n\nA obráceně: u přihlášek hledejte, jestli přihlašující věřitel náhodou nedrží dlužníkovu věc — často to sám neoznačí, protože o svém postavení neví."
+   },
+   {
+    "nadpis": "Co se s věcí stane dál",
+    "text": "Zadržovací právo **nedává právo věc užívat ani si ji nechat**. Věřitel ji jen drží.\n\nV insolvenci se postupuje stejně jako u zástavy: věc **patří do podstaty**, vy ji sepíšete, zajistíte a zpeněžíte, a **zadržující věřitel se uspokojí z výtěžku** v postavení zajištěného věřitele podle § 167 a § 298 ins. zák.\n\nMusí vám ji tedy vydat — jeho právo se přesouvá na výtěžek. Odmítá-li, vymáháte vydání, protože zadržovacím právem nelze po zahájení řízení obcházet § 109 ins. zák.\n\nPořadí mezi více zajištěními se řídí dobou vzniku. Zadržovací právo, které vzniklo později než zástava k téže věci, je tedy v pořadí za ní.\n\nPraktická rada k vyjednávání: u věcí, kde je zadržovaná částka malá a hodnota věci vysoká, se obvykle vyplatí **zadržujícího věřitele vyplatit z podstaty** a věc prodat volně. Uspoříte tím spor a často i čas, který by věc ztratila na hodnotě."
+   }
+  ]
+ },
+ {
+  "id": "oz-ruceni",
+  "oblast": "Občanský zákoník",
+  "nazev": "Ručení a proč to není zajištění",
+  "pramen": "§ 2018 až § 2028 o. z., § 2 písm. g), § 183 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Ručitel u vás stojí ve frontě s ostatními",
+    "text": "**§ 2018 odst. 1 o. z.:** kdo věřiteli prohlásí, že ho uspokojí, jestliže dlužník svůj dluh nesplní, stává se **ručitelem**. Podle odst. 2 vyžaduje ručitelské prohlášení **písemnou formu**.\n\nA teď to, co je u zkoušky i v praxi nejdůležitější: **ručení není v § 2 písm. g) ins. zák. mezi zajištěními uvedeno.**\n\nTen výčet je uzavřený a zní: zástavní právo, zadržovací právo, omezení převodu nemovitosti, zajišťovací převod práva, postoupení pohledávky k zajištění (a obdobná práva podle zahraniční úpravy).\n\nDodavatel Kovařík, který má pohledávku 800 tis. zajištěnou ručitelským prohlášením jednatelova společníka, je tedy ve vašem řízení **nezajištěný věřitel**. Zaškrtne v přihlášce „zajištěná\", vy ho přeřadíte a on bude protestovat. Logika je přitom jednoduchá: **zajištění se váže na majetek v podstatě.** Ručitel žádný majetek do podstaty nedává — ručí svým vlastním.\n\nTotéž platí pro **zástavu poskytnutou třetí osobou**: kdo má pohledávku jištěnou domem dlužníkovy matky, je u vás nezajištěný, protože ten dům do podstaty nepatří. Uspokojí se mimo insolvenci, ale u vás stojí ve frontě."
+   },
+   {
+    "nadpis": "Co ručitel může a kdy",
+    "text": "**§ 2021 o. z.:** věřitel má právo požadovat splnění na ručiteli, **nesplnil-li dlužník v přiměřené lhůtě** ačkoli ho k tomu věřitel vyzval. Výzva není třeba, nemůže-li ji věřitel uskutečnit nebo je-li nepochybné, že dlužník nesplní.\n\nProhlášení konkursu na dlužníka je přesně ten případ, kdy je nepochybné, že nesplní. Věřitelé proto po ručitelích jdou hned.\n\nRučitel, který plnil, má podle **§ 1937 o. z.** **regres** — vstupuje do práv věřitele vůči dlužníkovi v rozsahu, v jakém plnil.\n\nA tady vzniká otázka, kterou budete řešit: **kdo tu pohledávku u vás přihlašuje?**\n\n**§ 183 odst. 3 ins. zák.** to řeší: osoby, od kterých může věřitel požadovat plnění (tedy i ručitelé), mohou pohledávku **přihlásit jako podmíněnou** pro případ, že za dlužníka plní. Plní-li ručitel až po přezkumu, **vstupuje do práv věřitele** v rozsahu plnění a soud rozhodne o jeho vstupu.\n\nNemůže se tedy stát, že by táž pohledávka byla v podstatě uspokojena dvakrát — jednou věřiteli a jednou ručiteli."
+   },
+   {
+    "nadpis": "Ručení jako aktivum podstaty",
+    "text": "Obraťte to: ručitelem může být i **dlužník sám** za cizí dluh.\n\nRučila-li Truhlárna Bureš za úvěr sesterské firmy, je to **podmíněný závazek**, který se v podstatě projeví, jakmile věřitel ručení uplatní. Takový věřitel přihlašuje podmíněnou pohledávku podle § 183 ins. zák.\n\nA naopak: zaplatila-li Truhlárna jako ručitel za sesterskou firmu **před** úpadkem, má vůči ní **regresní pohledávku** podle § 1937 o. z. Ta je **aktivem podstaty** a vy ji máte vymáhat — u koncernových struktur se na ni pravidelně zapomíná, protože v účetnictví bývá zaúčtovaná jako náklad.\n\nJeště dvě věci, které se pletou:\n\n— **Ručení** (§ 2018) — ručitel plní, až když nesplní dlužník. Je to **podpůrný** závazek.\n\n— **Spoludlužnictví** (§ 1872) — věřitel může jít po kterémkoli z dlužníků rovnou. Není podpůrné.\n\nVe smlouvách bývá spoludlužnictví schované pod nadpisem „ručení\", takže čtěte obsah, ne nadpis."
+   }
+  ]
+ },
+ {
+  "id": "oz-skoda",
+  "oblast": "Občanský zákoník",
+  "nazev": "Náhrada škody a promlčení nároků",
+  "pramen": "§ 2894, § 2910, § 2913 a § 629 až § 636 o. z.",
+  "body": [
+   {
+    "nadpis": "Dvě cesty k náhradě a proč si vybrat tu správnou",
+    "text": "Občanský zákoník dělí odpovědnost za škodu podle toho, co bylo porušeno:\n\n**§ 2910 — porušení zákona.** Škůdce, který **vlastním zaviněním** poruší povinnost stanovenou zákonem a zasáhne tím do absolutního práva poškozeného, nahradí, co způsobil. Druhá věta rozšiřuje: i při zásahu do jiného práva, jde-li o porušení zákonné povinnosti **stanovené na ochranu takového práva**.\n\n**§ 2913 — porušení smlouvy.** Poruší-li strana povinnost ze smlouvy, nahradí škodu druhé straně **nebo i osobě, jejímuž zájmu mělo splnění zjevně sloužit**.\n\nRozdíl je v zavinění: u § 2910 se **zkoumá** (a podle § 2911 se nedbalost předpokládá), u smluvní odpovědnosti podle § 2913 odst. 2 se odpovědnosti zprostí jen ten, komu ve splnění zabránila **mimořádná nepředvídatelná a nepřekonatelná překážka**.\n\nPro vaše žaloby proti bývalým jednatelům je základem **§ 2910** ve spojení s § 159 o. z. a § 52 z. o. k. — porušili zákonnou povinnost péče řádného hospodáře. Připomeňte si přitom, že **důkazní břemeno o té péči nese jednatel** (§ 52 odst. 2 z. o. k.); zbytek — škodu a příčinnou souvislost — dokazujete vy."
+   },
+   {
+    "nadpis": "Co musíte prokázat",
+    "text": "Čtyři prvky, a u soudu se láme skoro vždycky ten třetí:\n\n— **Porušení povinnosti** — zákonné nebo smluvní.\n\n— **Škoda** — a ta musí být vyčíslená. U korporace jde obvykle o **skutečnou škodu**; ušlý zisk se přiznává obtížněji.\n\n— **Příčinná souvislost** — že škoda vznikla právě z toho porušení, ne z trhu, covidu nebo krachu odběratele. Tohle bývá slabé místo: firma padla z deseti důvodů a vy tvrdíte, že za 2,6 mil. může jednatel.\n\n— **Zavinění**, kde se zkoumá.\n\nPraktický postup při přípravě: nejdřív určete **rozhodný okamžik** (kdy byl jednatel povinen jednat jinak), pak **spočítejte rozdíl** mezi tím, co bylo, a tím, co mělo být. U pozdě podaného návrhu je to rozdíl mezi majetkem tehdy a majetkem v době skutečného návrhu — a ten se dobře dokládá z účetnictví, které máte.\n\n**§ 2894 odst. 2** připomíná, že nebyla-li výslovně ujednána povinnost nahradit **nemajetkovou újmu**, hradí se jen tam, kde to zákon zvlášť stanoví. U korporátních sporů se tedy drží majetková škoda."
+   },
+   {
+    "nadpis": "Lhůty, které vás mohou připravit o celý nárok",
+    "text": "Obecná promlčecí lhůta je podle **§ 629 odst. 1 o. z.** **tři roky**.\n\nU náhrady škody má ale **§ 620 odst. 1** vlastní počátek: lhůta běží ode dne, kdy se poškozený **dozvěděl o škodě a o osobě povinné k její náhradě**, nebo kdy se to dozvědět měl a mohl.\n\nVedle toho běží **objektivní lhůty podle § 636**:\n\n— **10 let** ode dne, kdy škoda vznikla,\n\n— **15 let**, byla-li škoda způsobena **úmyslně**.\n\nPro vás je klíčová otázka, **komu se ta subjektivní lhůta počítá**. Poškozeným je **korporace**, ne vy — a korporaci zastupoval právě ten jednatel, který škodu způsobil. Judikatura proto u nároků vůči členům orgánů váže počátek na okamžik, kdy se o škodě dozvěděl někdo, kdo ji mohl uplatnit; u jednočlenné firmy to fakticky bývá až vy.\n\n**Praktický závěr: nespoléhejte na to.** Jakmile z účetnictví uvidíte možný nárok, pusťte se do něj hned. A pozor — nárok podle **§ 66 z. o. k.** má vlastní režim a váže se na rozhodnutí o způsobu řešení úpadku, zatímco odpůrčí žaloba má podle § 239 odst. 3 ins. zák. **prekluzivní rok**. Tři různé lhůty, tři kalendáře."
+   }
+  ]
+ },
+ {
+  "id": "oz-neucinnost",
+  "oblast": "Občanský zákoník",
+  "nazev": "Neplatnost, neúčinnost a zdánlivost",
+  "pramen": "§ 551 až § 554, § 580 až § 588, § 589 až § 599 o. z., § 235 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Tři různé vady, tři různé následky",
+    "text": "Tyhle tři pojmy se pletou nejčastěji ze všeho a u zkoušky se na ně ptá rádo.\n\n**Zdánlivé právní jednání (§ 551 až § 554)** — **nevzniklo vůbec**. Nebyla projevena vážná vůle, nelze zjistit obsah, chybí zákonem požadovaná náležitost s tímto následkem. Nepřihlíží se k němu a nikdo se ničeho dovolávat nemusí — prostě se nestalo.\n\n**Neplatné jednání (§ 580 a násl.)** — vzniklo, ale je vadné:\n\n— **absolutně neplatné** (§ 588) — příčí se dobrým mravům, odporuje zákonu tam, kde to vyžaduje veřejný pořádek, zavazuje k nemožnému plnění. Soud k ní přihlíží **z úřední povinnosti**.\n\n— **relativně neplatné** (§ 586) — neplatnost na ochranu určité osoby; **namítnout ji může jen ta osoba** a dokud ji nenamítne, **považuje se jednání za platné**.\n\n**Neúčinné jednání (§ 589)** — je **platné a existuje**, jen **nepůsobí vůči určitému věřiteli**. Majetek zůstane u nabyvatele, ale věřitel se z něj může uspokojit.\n\nTu poslední větu si zapamatujte, protože je to celá podstata odporovatelnosti: **neúčinnost nic neruší, jen to vůči vám neplatí.**"
+   },
+   {
+    "nadpis": "Obecná odpůrčí žaloba podle o. z.",
+    "text": "**§ 589 odst. 1 o. z.:** zkracuje-li právní jednání dlužníka uspokojení **vykonatelné** pohledávky věřitele, má věřitel právo domáhat se, aby soud určil, že to jednání **není vůči němu právně účinné**. Podle odst. 2 se neúčinnost zakládá **rozhodnutím soudu** o odpůrčí žalobě.\n\nLhůty v **§ 590 odst. 1**:\n\n— **5 let** — jednání učiněné **v úmyslu zkrátit věřitele**, byl-li ten úmysl druhé straně **znám**,\n\n— **2 roky** — jednání, kterým dlužník věřitele zkrátil, **musel-li být** druhé straně úmysl znám,\n\n— **2 roky** — jednání mezi dlužníkem a **osobou blízkou** nebo v její prospěch; tady se vědomost **předpokládá** a druhá strana musí prokázat, že úmysl znám nebyl a být nemusel.\n\n**§ 591** k tomu přidává **bezúplatná jednání**: odporovat lze těm z posledních **2 let**, s výjimkou plnění zákonné povinnosti, obvyklých příležitostných darů, přiměřených darů na veřejně prospěšný účel a plnění, kterým bylo vyhověno mravnímu závazku.\n\nPozor na ten požadavek **vykonatelné** pohledávky — věřitel musí mít titul. To je proti insolvenční úpravě zásadní rozdíl."
+   },
+   {
+    "nadpis": "V insolvenci platí jiná pravidla — a jen vy",
+    "text": "Jakmile běží insolvenční řízení, obecná úprava z o. z. ustupuje. **§ 235 a násl. ins. zák.** je speciální úpravou a liší se v několika bodech, které je potřeba znát:\n\n— **Žalobce.** Podle **§ 239 odst. 1 ins. zák.** může odporovat **pouze insolvenční správce**. Věřitel ne. Běží-li už jeho spor, **nelze v něm pokračovat** až do skončení insolvenčního řízení.\n\n— **Kam plnění jde.** Ne k věřiteli, ale **do majetkové podstaty**, a rozdělí se všem poměrně.\n\n— **Vykonatelnost se nevyžaduje.**\n\n— **Lhůty jsou jiné**: 1 rok u § 240 a § 241 (3 roky u blízkých osob a koncernu), 5 let u § 242.\n\n— **Prekluze.** § 239 odst. 3 dává na podání **1 rok od účinků rozhodnutí o úpadku**, jinak nárok **zaniká**.\n\nJediné místo, kde se obecná úprava ještě projeví, je **§ 243 ins. zák.**: dosáhl-li věřitel pravomocného rozhodnutí o neúčinnosti **před** právní mocí rozhodnutí o úpadku, může se domáhat vydání plnění do výše své pohledávky **a do podstaty ho nepředává**.\n\nPři soupisu proto vždycky zjistěte, **neběží-li už na dlužníka něčí odpůrčí žaloba** a v jakém je stavu."
+   }
+  ]
+ },
+ {
+  "id": "oz-cese",
+  "oblast": "Občanský zákoník",
+  "nazev": "Postoupení pohledávky a započtení",
+  "pramen": "§ 1879 až § 1887, § 1982 až § 1991 o. z., § 18, § 140 a § 324 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Postoupení: co nabyvatel dostane",
+    "text": "**§ 1879 o. z.:** věřitel může pohledávku nebo její část postoupit smlouvou **i bez souhlasu dlužníka**.\n\n**§ 1880 odst. 1:** postupník nabývá také **příslušenství a práva s pohledávkou spojená, včetně jejího zajištění**. Zajištění tedy jde s pohledávkou automaticky — kdo koupí pohledávku jištěnou zástavou, kupuje i tu zástavu.\n\nPodle odst. 2 postupitel **vydá postupníkovi doklady** a sdělí vše, co je k uplatnění potřeba.\n\nPro vás je to důležité při přezkumu. Přihlásí-li se inkasní agentura s pohledávkou koupenou od banky, kontrolujete:\n\n— **existenci původní pohledávky** (agentura nemůže mít víc práv než banka),\n\n— **smlouvu o postoupení** a její určitost,\n\n— **zda šlo zajištění s pohledávkou** — obvykle ano, ale u nemovitosti se musí promítnout do katastru,\n\n— **námitky, které měl dlužník vůči postupiteli**; ty podle § 1884 zůstávají zachovány i vůči postupníkovi."
+   },
+   {
+    "nadpis": "Změna věřitele v běžícím řízení",
+    "text": "Postoupení samo o sobě **nemění účastníka insolvenčního řízení**. Vstup do řízení je podle **§ 17 ins. zák.** zakázán a jediná cesta je **§ 18 ins. zák.**\n\nPřipomenutí toho, co se na tom plete nejvíc:\n\n— **návrh podává původní věřitel**, ne nabyvatel,\n\n— **pouze na formuláři**, jinak se k němu **nepřihlíží** a § 43 o. s. ř. se nepoužije,\n\n— souhlas nabyvatele a doložení převodu **veřejnou listinou nebo s úředně ověřenými podpisy**,\n\n— soud rozhodne **do 3 pracovních dnů**; nerozhodne-li, **má se za to, že vyhověl**.\n\nA **§ 19 odst. 1**: nabyvatel přebírá **stav řízení, jaký je**. Popřená pohledávka zůstává popřená, zmeškané lhůty se neobnovují.\n\nPodle **§ 19 odst. 2** musí nabyvatel do **15 dnů od vstupu** doložit **vám** doklady podle § 177 odst. 2 až 6. To si hlídejte."
+   },
+   {
+    "nadpis": "Započtení: obecně ano, v insolvenci se to komplikuje",
+    "text": "**§ 1982 odst. 1 o. z.:** dluží-li si strany vzájemně plnění stejného druhu, může každá prohlásit, že svou pohledávku **započítává**. Podle odst. 2 se obě pohledávky **ruší v rozsahu, v jakém se kryjí**, a to k okamžiku, kdy se staly způsobilými k započtení.\n\nV insolvenci je to ale nástroj, kterým by se dalo obejít poměrné uspokojení: věřitel, který dlužníkovi zároveň dluží, by si započtením zaplatil 100 %, zatímco ostatní dostanou 11 %.\n\nProto insolvenční zákon započtení omezuje:\n\n— **§ 140 odst. 2:** započtení je po rozhodnutí o úpadku **přípustné**, byly-li zákonné podmínky splněny **před rozhodnutím o způsobu řešení úpadku**.\n\n— **§ 140 odst. 3** vypočítává, kdy **není** přípustné: nestala-li se pohledávka přihlášenou, jde-li o pohledávku nabytou **neúčinným** úkonem, věděl-li věřitel v době nabytí o dlužníkově úpadku, nebo nebyla-li pohledávka dosud splatná.\n\n— **§ 324 odst. 3** zakazuje započtení proti pohledávce z neúčinného úkonu.\n\n— Soud může započtení omezit i **předběžným opatřením** podle § 82 odst. 3 písm. c).\n\nPraktický postup: u každého věřitele, který dlužníkovi zároveň dluží, si položte **datum**. Kdy vznikla vzájemnost a kdy se pohledávky staly způsobilými k započtení? Podle toho se rozhodne, jestli započtení projde."
+   }
+  ]
+ },
+ {
+  "id": "oz-vlastnictvi",
+  "oblast": "Občanský zákoník",
+  "nazev": "Co patří do podstaty — vlastnictví a věcná práva",
+  "pramen": "§ 976 až § 1105, § 2132 o. z., § 205 a § 225 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Výhrada vlastnického práva — nejčastější spor při soupisu",
+    "text": "**§ 2132 o. z.:** vyhradí-li si prodávající k věci vlastnické právo, **má se za to, že se kupující stane vlastníkem teprve úplným zaplacením kupní ceny**. Nebezpečí škody ale přechází už **převzetím věci**.\n\nSituace, kterou potkáte pořád: v hale stojí lis za 900 tis., dodaný před osmi měsíci, zaplacený z poloviny. Dodavatel má ve smlouvě výhradu vlastnictví.\n\n**Lis není dlužníkův** — vlastníkem je pořád dodavatel. Do podstaty nepatří.\n\nCo s tím prakticky:\n\n— Ověřte, **že výhrada byla sjednána**, a kdy. Doložka na faktuře vystavené až po dodání nestačí — musela být součástí smlouvy.\n\n— Ověřte, **že cena opravdu nebyla doplacena**.\n\n— Nezaměňte to se **zajišťovacím převodem práva**, kde věc do podstaty **patří** a věřitel je zajištěný. Rozdíl: u výhrady vlastník nikdy nepřestal být vlastníkem, u zajišťovacího převodu se jím stal dočasně kvůli zajištění.\n\nSepíšete-li věc přesto, má vlastník podle **§ 225 ins. zák.** vylučovací žalobu — **30 dnů** od doručení vyrozumění o soupisu. Nepodá-li ji včas, platí, že byla do soupisu pojata oprávněně."
+   },
+   {
+    "nadpis": "Spoluvlastnictví, věcná břemena, právo stavby",
+    "text": "**Spoluvlastnictví.** Do podstaty patří **dlužníkův podíl**, ne celá věc. Zpeněžuje se buď podíl sám, nebo se po dohodě s ostatními spoluvlastníky prodá věc celá a rozdělí výtěžek — to druhé bývá výhodnější, protože podíl je na trhu těžko prodejný.\n\n**Věcná břemena.** Zatěžují věc a jdou s ní na nabyvatele, takže **snižují cenu**. Rozlišujte:\n\n— **služebnost** (§ 1257) — vlastník musí něco **trpět nebo se něčeho zdržet**,\n\n— **reálné břemeno** (§ 1303) — vlastník musí něco **dávat nebo konat**.\n\nPozor na **§ 248 odst. 3 ins. zák.**: věcná břemena, která vznikla **za nápadně nevýhodných podmínek** poté, co nastaly účinky zahájení řízení, jsou neúčinná. Doživotní bydlení zřízené matce jednatele měsíc před úpadkem tedy prodej neblokuje.\n\n**Právo stavby** (§ 1240 a násl.) je podle **§ 1242** **věc nemovitá** a může být předmětem soupisu i zpeněžení samostatně.\n\nA obecně: do podstaty patří i **pohledávky, podíly v korporacích, práva duševního vlastnictví** — § 206 ins. zák. to vypočítává. Nehmotný majetek se při soupisu přehlíží nejčastěji."
+   },
+   {
+    "nadpis": "Rozsah podstaty se řídí tím, kdo podal návrh",
+    "text": "**§ 205 ins. zák.** to rozlišuje a je to jemnější, než vypadá:\n\n— **Podal-li návrh dlužník**, patří do podstaty majetek, který mu patřil **k okamžiku, kdy nastaly účinky zahájení** řízení, **a majetek nabytý v průběhu** řízení.\n\n— **Podal-li návrh věřitel**, počítá se majetek k okamžiku účinků **předběžného opatření** omezujícího dlužníka, majetek k okamžiku **účinků rozhodnutí o úpadku**, a majetek nabytý poté.\n\nTen rozdíl má praktický smysl: u věřitelského návrhu se dlužník o řízení dozví a může mezi podáním a rozhodnutím o úpadku majetek rozprodat. Proto se u těchto návrhů častěji ustanovuje **předběžný správce** podle § 27 odst. 1.\n\nMajetek **nabytý během řízení** patří do podstaty vždy — dědictví, výhra, doplatek pojistného plnění. U oddlužení na tohle upozorňujte dlužníky dopředu, protože zatajené dědictví je klasický důvod zrušení oddlužení podle § 418.\n\nNaopak **nepatří** do podstaty majetek, který nelze postihnout výkonem rozhodnutí (§ 207 ins. zák.) — obvyklé vybavení domácnosti, snubní prsten, zdravotní pomůcky."
+   }
+  ]
+ },
+ {
+  "id": "oz-pravnicke",
+  "oblast": "Občanský zákoník",
+  "nazev": "Právnické osoby a zastoupení",
+  "pramen": "§ 118 až § 209, § 436 až § 488 o. z.",
+  "body": [
+   {
+    "nadpis": "Kdo za dlužníka jedná a podle čeho to poznáte",
+    "text": "Právnická osoba vzniká podle **§ 126 o. z.** zápisem do veřejného rejstříku a zaniká **výmazem**. Mezi tím může být zrušena — a pak následuje likvidace nebo konkurs.\n\nZa právnickou osobu jedná **statutární orgán** (§ 161 a násl. o. z., u korporací § 194 a § 435 z. o. k.). Jak, to plyne ze zápisu v rejstříku: samostatně, společně dva, jednatel s prokuristou.\n\nPro vás to není formalita. Ověřte si to hned první den, protože z toho plyne:\n\n— **kdo vám má předat účetnictví a doklady**,\n\n— **zda starší smlouvy vůbec zavazovaly firmu** — podepsal-li dlouhodobou nájemní smlouvu jediný jednatel tam, kde bylo potřeba dva, je to důvod se bránit,\n\n— **komu se doručuje**.\n\n**§ 164 odst. 1 o. z.:** člen statutárního orgánu může zastupovat právnickou osobu **ve všech záležitostech**. Podle odst. 2 platí, že neurčí-li zakladatelské jednání jinak, jedná každý člen **samostatně**.\n\nA **§ 47 z. o. k.** k tomu přidává pravidlo, které vám vezme jednu obranu: omezení jednatelského oprávnění společenskou smlouvou, jiným ujednáním nebo rozhodnutím orgánu **nejsou vůči třetím osobám účinná, i když byla zveřejněna**. Strop na částku ve společenské smlouvě tedy smlouvu s dodavatelem nezneplatní — dovnitř firmy zakládá odpovědnost jednatele, ven nepůsobí nic."
+   },
+   {
+    "nadpis": "Prokura a plné moci po prohlášení konkursu",
+    "text": "Tady je ustanovení, které se v praxi přehlíží a způsobuje zmatek: **§ 252 ins. zák.** — prohlášením konkursu **zanikají dlužníkovy jednostranné právní úkony** týkající se podstaty, zejména **jeho příkazy, pověření a plné moci včetně prokury**.\n\nPrakticky: prokurista, který za firmu roky podepisoval, po prohlášení konkursu **nemá nic**. Účetní s plnou mocí k jednání s finančním úřadem taky ne. Advokát zastupující dlužníka ve sporu o pohledávku v podstatě rovněž ne — tam si plnou moc uděluje správce, chce-li v něm pokračovat.\n\nOznamte to hned. Zabráníte tomu, aby někdo v dobré víře dál jednal jménem firmy a nadělal škodu.\n\nZastoupení obecně upravuje **§ 436 a násl. o. z.**: rozlišuje se **zákonné** zastoupení, **smluvní** (plná moc, § 441) a **opatrovnictví**. Plná moc musí být udělena **v téže formě**, jaká se vyžaduje pro právní jednání, na které se vztahuje (§ 441 odst. 2).\n\nPři přezkumu přihlášek proto kontrolujte, zda zmocněnec věřitele **plnou moc doložil** — § 177 ins. zák. to vyžaduje a chybějící plná moc je důvod k výzvě."
+   },
+   {
+    "nadpis": "Sídlo, doručování a nekontaktní dlužník",
+    "text": "**§ 429 o. z.** rozlišuje **sídlo zapsané** v rejstříku a **skutečné** sídlo. Kdo se dovolává skutečného sídla, nemůže třetí osobě vyčítat, že se spolehla na zapsané.\n\nS tím souvisí věc, která vám ušetří čas: nekontaktní dlužník se sídlem na virtuální adrese je běžný. Řešení:\n\n— Doručuje se na **zapsané sídlo**; nepřebírá-li, uplatní se fikce doručení.\n\n— Nemá-li firma funkční statutární orgán, podejte návrh na **jmenování chybějícího člena nebo opatrovníka** podle § 165 o. z.\n\n— Neodevzdá-li jednatel účetnictví, je to porušení povinnosti podle § 196 z. o. k. a současně součinnostní povinnosti podle **§ 210 ins. zák.**, kterou lze vynutit **pořádkovou pokutou** a v krajním případě předvedením.\n\nA nezapomeňte na **insolvenční rejstřík**: většina rozhodnutí je účinná zveřejněním v něm (§ 71 ins. zák.), takže nedostupnost dlužníka řízení nezastaví. To je zásadní rozdíl proti běžnému civilnímu sporu."
+   }
+  ]
+ },
+ {
+  "id": "oz-promlceni",
+  "oblast": "Občanský zákoník",
+  "nazev": "Promlčení a přihlášené pohledávky",
+  "pramen": "§ 609 až § 653 o. z., § 173 a § 193 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Co promlčení dělá a co nedělá",
+    "text": "**§ 609 o. z.:** nebylo-li právo vykonáno v promlčecí lhůtě, **promlčí se a dlužník není povinen plnit**. Plnil-li však po uplynutí lhůty, **nemůže požadovat vrácení** toho, co plnil.\n\nZ toho plyne to, co se u zkoušky ptá nejčastěji: **promlčením pohledávka nezaniká.** Existuje dál jako tzv. naturální obligace, jen se nedá vynutit. Neúročí se jinak, nepozbývá příslušenství, nestává se podmíněnou — prostě jen ztratí vymahatelnost, a to **až když někdo vznese námitku**.\n\nLhůty:\n\n— **obecná 3 roky** (§ 629 odst. 1), počátek podle § 619 ode dne, kdy právo **mohlo být uplatněno poprvé**,\n\n— **objektivní 10 let** (§ 629 odst. 2), u práva na náhradu škody 10, resp. 15 let při úmyslu (§ 636),\n\n— **10 let** u práva přiznaného **rozhodnutím soudu** nebo uznaného dlužníkem (§ 640).\n\n**§ 614:** nepromlčuje se **vlastnické právo** ani právo domáhat se rozdělení společné věci, zřízení nezbytné cesty a vykoupení reálného břemene."
+   },
+   {
+    "nadpis": "Kdo v insolvenci promlčení namítá",
+    "text": "Praktická otázka, která přijde hned při prvním přezkumu: přihlásí se věřitel s fakturou z roku 2019 a je rok 2026.\n\n**Promlčení se přihlíží jen k námitce.** A tu v insolvenčním řízení vznáší **insolvenční správce** — popřením pohledávky podle **§ 192 a § 193 ins. zák.** co do pravosti.\n\nJe to zároveň vaše **povinnost**, ne možnost. Uznáte-li promlčenou pohledávku, zředíte tím uspokojení ostatních věřitelů a porušíte péči, kterou po vás žádá § 36 odst. 1 ins. zák. Promlčení proto kontrolujte u každé přihlášky, u které je od splatnosti víc než tři roky.\n\nPopřít může i **dlužník**, ale v konkursu to podle § 192 odst. 3 nemá vliv na zjištění pohledávky; v oddlužení ano.\n\nNa co se dívat, než popřete:\n\n— **nebyla lhůta přetržena uznáním dluhu** (§ 639 o. z.) nebo splátkovým kalendářem,\n\n— **neběželo řízení**, které lhůtu podle § 648 staví,\n\n— **není pohledávka přiznaná pravomocným rozhodnutím**, a tedy s desetiletou lhůtou,\n\n— **nejde o vykonatelnou pohledávku** — tam podle § 199 ins. zák. žalujete vy a máte jen **30 dnů**."
+   },
+   {
+    "nadpis": "Promlčení na druhé straně: pohledávky dlužníka",
+    "text": "Obraťte to. Dlužník má taky pohledávky za odběrateli — a ty jsou **aktivem podstaty**, které máte vymáhat.\n\nFirma před úpadkem obvykle rok nebo dva nevymáhala nic. Pohledávky za odběrateli se tedy blíží promlčení a **vaší nečinností se promlčí úplně**.\n\nTo je přímá cesta k odpovědnosti podle **§ 37 ins. zák.**: nechal jste promlčet aktivum podstaty a škoda se rovná tomu, co se z něj dalo vybrat.\n\nPraktické opatření: **hned po ustanovení sestavte přehled pohledávek dlužníka s daty splatnosti** a seřaďte je podle toho, které se promlčí nejdřív. U těch na hraně pošlete **předžalobní výzvu** a podejte žalobu; podání žaloby podle § 648 o. z. lhůtu staví.\n\nA nezapomeňte na **§ 235 odst. 1 ins. zák.**, kde se za právní úkon považuje i **opomenutí**. Nechal-li **dlužník** promlčet pohledávku záměrně ve prospěch spřízněného odběratele, je to napadnutelné odpůrčí žalobou."
+   }
+  ]
+ },
+ {
+  "id": "oz-darovani",
+  "oblast": "Občanský zákoník",
+  "nazev": "Darování a bezúplatné převody před úpadkem",
+  "pramen": "§ 2055 až § 2078, § 591 o. z., § 240 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Proč jsou dary první, co hledáte",
+    "text": "**§ 2055 odst. 1 o. z.:** darovací smlouvou dárce **bezplatně** převádí vlastnické právo k věci nebo se zavazuje ji bezplatně převést.\n\nBezúplatný převod je pro věřitele nejhorší možná transakce: z podstaty zmizel majetek a nepřišlo za něj **nic**. Proto na něj obě úpravy míří nejtvrději.\n\n**§ 240 ins. zák. — právní úkon bez přiměřeného protiplnění.** Pokrývá nejen dary, ale i prodeje za cenu **podstatně nižší než obvyklou**. Lhůta **1 rok** zpět, u **osob blízkých a osob tvořících s dlužníkem koncern 3 roky** — a u nich se navíc **předpokládá**, že dlužník byl v té době v úpadku. Nemusíte to tedy dokazovat.\n\n**§ 591 o. z.** pro řízení mimo insolvenci dává 2 roky.\n\nKde dary hledat: **katastr nemovitostí** (historie vlastníků u dlužníka i jeho rodiny), **registr vozidel**, účetnictví (odpisy majetku, který zmizel bez výnosu), a prostě otázka na dlužníka, co v posledních třech letech komu převedl."
+   },
+   {
+    "nadpis": "Co darem není a co se neodporuje",
+    "text": "Ne každý bezúplatný přesun je napadnutelný. **§ 240 odst. 4 ins. zák.** vylučuje:\n\n— plnění uložené **právním předpisem**,\n\n— **příležitostný dar v přiměřené výši**,\n\n— plnění, kterým bylo vyhověno **ohledům slušnosti**,\n\n— plnění, kterým dlužník vyhověl **mravnímu závazku**.\n\nPodobný výčet má **§ 591 o. z.** a přidává **věnování na veřejně prospěšný účel** v přiměřené výši.\n\nPraktický překlad: dárek k svatbě dcery za 20 tis. neodporujete. Převod bytu na dceru za korunu ano.\n\nDvě věci, které se s darováním pletou:\n\n— **§ 2055 odst. 2:** plnění z pouhé **společenské úsluhy** není darováním, je-li zřejmé, že se strany nechtěly vázat.\n\n— **Výživné** placené dlužníkem je plnění zákonné povinnosti, ne dar — a v oddlužení se s ním počítá při určení nezabavitelné částky.\n\nA pozor na **odvolání daru**: dárce může dar odvolat pro **nouzi** (§ 2068) nebo pro **nevděk** (§ 2072). Ocitl-li se dlužník v nouzi, je právo odvolat dar **majetkovým právem, které patří do podstaty** — a vy ho můžete uplatnit."
+   },
+   {
+    "nadpis": "Co se odpůrčí žalobou získá",
+    "text": "**§ 236 odst. 1 ins. zák.:** neúčinností právního úkonu **není dotčena jeho platnost**. Plnění z neúčinných úkonů **náleží do majetkové podstaty**.\n\nVracet se má **věc sama**. Není-li to možné — byla prodána dál, spotřebovala se, zanikla — nastupuje podle **§ 236 odst. 2** povinnost poskytnout **rovnocennou náhradu**.\n\nPraktický příklad: rok před úpadkem převedl jednatel byt na dceru darem. Dcera ho půl roku nato prodala třetí osobě za 3,8 mil.\n\n— Byt zpátky nedostanete, pokud kupující byl v dobré víře.\n\n— Po **dceři** ale žádáte **rovnocennou náhradu**, tedy hodnotu toho, co bezúplatně dostala.\n\nŽaluje se podle § 239 odst. 1 proti tomu, **kdo má plnění vydat** — tedy proti obdarovanému, ne proti jednateli. Proti jednateli jde samostatně **§ 66 z. o. k.**\n\nA do kalendáře znovu: **§ 239 odst. 3 dává na podání 1 rok od účinků rozhodnutí o úpadku**, jinak nárok zaniká. U darů to bolí nejvíc, protože jsou obvykle nejlépe doložitelné a nejjistěji vyhratelné."
+   }
+  ]
+ },
+ {
+  "id": "oz-sjm",
+  "oblast": "Občanský zákoník",
+  "nazev": "Společné jmění manželů v insolvenci",
+  "pramen": "§ 708 až § 753 o. z., § 205, § 268 až § 276 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Co do SJM patří — a dluhy taky",
+    "text": "**§ 709 odst. 1 o. z.:** součástí společného jmění je to, čeho nabyl jeden z manželů nebo oba společně **za trvání manželství**, s výjimkou toho, co slouží **osobní potřebě** jednoho z nich, co nabyl **darem, děděním nebo odkazem** jen jeden z nich, a dalších případů výčtu.\n\nA teď to, co dlužníky zaskočí — **§ 710 o. z.:** součástí společného jmění jsou i **dluhy převzaté za trvání manželství**, ledaže\n\n— se týkají majetku náležejícího **výhradně jednomu** z manželů, a to v rozsahu přesahujícím zisk z něj, nebo\n\n— je převzal **jen jeden z manželů bez souhlasu druhého**, aniž šlo o obstarávání **každodenních nebo běžných potřeb rodiny**.\n\nTa druhá výjimka je v praxi ta podstatná. Vzal-li si manžel podnikatelský úvěr 3 mil. bez vědomí manželky, do SJM ten dluh nepatří. Koupil-li na splátky pračku, patří.\n\nPro vás je to základní třídění při zjišťování podstaty: **který dluh je společný a který výlučný**, protože podle toho se určí, z čeho se bude platit."
+   },
+   {
+    "nadpis": "Prohlášením konkursu SJM zaniká",
+    "text": "**§ 268 odst. 1 ins. zák.:** **prohlášením konkursu zaniká společné jmění dlužníka a jeho manžela.** Bylo-li vzniku SJM vyhrazeno ke dni zániku manželství, má prohlášení konkursu stejné majetkoprávní účinky jako zánik manželství.\n\nNezaniká manželství — jen majetkové společenství. Pak se podle odst. 2 **provede vypořádání**.\n\nDo podstaty patří podle **§ 274 ins. zák.** ta část, která připadne dlužníkovi. Nelze-li vypořádání provést proto, že závazky dlužníka převyšují majetek v SJM, **zahrne se celý majetek ze SJM do podstaty**.\n\nManžel na to není bez obrany. **§ 275 ins. zák.:** pohledávka manžela vzniklá vypořádáním SJM po prohlášení konkursu se **považuje za přihlášenou** a uspokojí se stejně jako ostatní přihlášené pohledávky. Dostane tedy poměrně, jako ostatní věřitelé — ne přednostně.\n\nPraktický dopad, který manželům vysvětlujete pořád: **rodinný dům v SJM se prodá, i když druhý manžel nedluží nic.** Jeho podíl se mu promítne jako pohledávka, kterou dostane zaplacenou v procentech."
+   },
+   {
+    "nadpis": "Smlouvy o zúžení SJM a kdy jsou k ničemu",
+    "text": "Manželé si podle **§ 716 a násl. o. z.** mohou smluvit jiný režim — zúžit SJM, vyhradit jeho vznik ke dni zániku manželství, nebo ho rozšířit.\n\nTypický pokus, na který narazíte: rok před úpadkem manželé notářským zápisem zúží SJM tak, že veškerý majetek připadne manželce, a dluhy zůstanou dlužníkovi.\n\nProti tomu máte dvě věci:\n\n— **§ 719 o. z.** má dvě omezení. Podle **odst. 1** smlouva nesmí svými důsledky vyloučit **schopnost manžela zabezpečovat rodinu**. Podle **odst. 2** se nesmí svým obsahem ani účelem **dotknout práv třetí osoby**, ledaže by s ní souhlasila — a smlouva uzavřená bez jejího souhlasu **vůči ní nemá právní účinky**. Věřitel, který o zúžení nevěděl a nesouhlasil s ním, se jím tedy vůbec nemusí zabývat.\n\n— **§ 240 ins. zák.** — je-li zúžení fakticky bezúplatným převodem na manželku, jde o úkon bez přiměřeného protiplnění; manželka je **osoba blízká**, takže lhůta je **3 roky** a úpadek se předpokládá.\n\nZápis do **veřejného seznamu** (Evidence listin o manželském majetkovém režimu) řeší § 721; bez něj se manželé vůči třetí osobě smlouvy dovolají jen tehdy, byla-li jí známa.\n\n**Společné oddlužení manželů** je pak samostatná kapitola: podle **§ 394a ins. zák.** podávají návrh společně, řízení se spojuje a řeší se jedním splátkovým kalendářem — a podle § 25 odst. 4 dostanou téhož správce."
+   }
+  ]
+ }
+]

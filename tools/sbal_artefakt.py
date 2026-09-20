@@ -17,7 +17,11 @@ from pathlib import Path
 KOREN = Path(__file__).resolve().parent.parent
 CIL = KOREN / "artefakt"
 
-SOUBORY = [("zakon.js", "zakon.json", "ZAKON"), ("vyklad.js", "vyklad.json", "VYKLAD")]
+SOUBORY = [
+    ("zakon.js", "zakon.json", "ZAKON"),
+    ("vyklad.js", "vyklad.json", "VYKLAD"),
+    ("temata.js", "temata.json", "TEMATA"),
+]
 
 
 def main():
