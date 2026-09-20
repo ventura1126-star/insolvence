@@ -23,7 +23,7 @@ SOUBORY = [("zakon.js", "zakon.json", "ZAKON"), ("vyklad.js", "vyklad.json", "VY
 def main():
     CIL.mkdir(exist_ok=True)
     for jmeno, zdroj, promenna in SOUBORY:
-        data = json.loads((KOREN / "zkouska/assets" / zdroj).read_text("utf-8"))
+        data = json.loads((CIL / zdroj).read_text("utf-8"))
         text = "window.%s=%s;\n" % (
             promenna, json.dumps(data, ensure_ascii=True, separators=(",", ":"))
         )

@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
+  Linking,
   Pressable,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from 'react-native';
 // Vlastní SafeAreaView z react-native je zastaralý, SDK 54 odkazuje sem.
@@ -13,8 +13,6 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import otazky from './assets/otazky.json';
 import odpovedi from './assets/odpovedi.json';
-import zakon from './assets/zakon.json';
-import vyklad from './assets/vyklad.json';
 import {
   OTAZEK_V_TESTU,
   hraniceUspechu,
@@ -24,16 +22,10 @@ import {
   vyhodnot,
   zodpovezene,
 } from './src/test';
-import {
-  hledej,
-  najdiParagraf,
-  obsah,
-  pokrytiVykladu,
-  sousedi,
-  vykladOdstavce,
-  vylozenoVParagrafu,
-} from './src/zakon';
 import { aktualizujChyby, nactiChyby, ulozChyby } from './src/ulozeni';
+
+// Druhá appka: zákon s výkladem, rozhovorem a tiskem.
+const ZAKON_URL = 'https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF';
 
 const theme = {
   paper: '#FBF9F6',
@@ -46,8 +38,7 @@ const theme = {
 };
 
 export default function App() {
-  // 'domu' | 'zakon' | { rezim: 'ostry' | 'chyby' }
-  // | { rezim: 'trenink', oblast } | { paragraf: '38' }
+  // 'domu' | { rezim: 'ostry' | 'chyby' } | { rezim: 'trenink', oblast }
   const [kam, setKam] = useState('domu');
   const [chyby, setChyby] = useState([]);
 
@@ -69,14 +60,6 @@ export default function App() {
         <StatusBar barStyle="dark-content" backgroundColor={theme.paper} />
         {kam === 'domu' ? (
           <Domu chyby={chyby} onOtevri={setKam} />
-        ) : kam === 'zakon' ? (
-          <Zakon onOtevri={setKam} onZpet={() => setKam('domu')} />
-        ) : kam.paragraf ? (
-          <Paragraf
-            cislo={kam.paragraf}
-            onOtevri={setKam}
-            onZpet={() => setKam('zakon')}
-          />
         ) : (
           <Beh
             zadani={kam}
@@ -105,7 +88,7 @@ function Domu({ chyby, onOtevri }) {
         </Text>
       </View>
 
-      <KartaZakona onOtevri={onOtevri} />
+      <KartaZakona />
 
       <Volba
         popisek="Ostrý test"
@@ -150,230 +133,34 @@ function Domu({ chyby, onOtevri }) {
  * zapsat nedá; tady se rozpadne na běžné a tučné úseky. React Native markdown
  * sám nerenderuje, takže bez tohohle by se hvězdičky vypsaly doslova.
  */
-function Vyklad({ text }) {
-  return (
-    <View style={styles.vyklad}>
-      {text.split('\n\n').map((odstavec, i) => (
-        <Text key={i} style={styles.vykladText}>
-          {odstavec.split('**').map((usek, j) =>
-            j % 2 ? (
-              <Text key={j} style={styles.vykladDuraz}>
-                {usek}
-              </Text>
-            ) : (
-              usek
-            )
-          )}
-        </Text>
-      ))}
-    </View>
-  );
-}
-
 /**
- * Karta zákona na úvodní obrazovce.
+ * Odkaz na appku se zákonem.
  *
- * Místo denní dávky se nabízí celý zákon k procházení — výklad u odstavce
- * dává smysl číst tehdy, když na ten odstavec člověk narazí, ne podle data.
+ * Zákon s výkladem tady dřív byl taky, ale žil pak na dvou místech a tahle
+ * kopie byla ta chudší — neuměla rozhovor s Claudem ani tisk. Zůstal odkaz;
+ * tahle appka dělá otázky, ta druhá zákon.
  */
-function KartaZakona({ onOtevri }) {
-  const { hotovo, celkem } = useMemo(() => pokrytiVykladu(zakon, vyklad), []);
-
+function KartaZakona() {
   return (
     <View>
       <Text style={styles.sekce}>Zákon s výkladem</Text>
       <Pressable
-        onPress={() => onOtevri('zakon')}
-        accessibilityRole="button"
-        accessibilityLabel="Insolvenční zákon s výkladem"
+        onPress={() => Linking.openURL(ZAKON_URL)}
+        accessibilityRole="link"
+        accessibilityLabel="Otevřít Insolvenční zákon v praxi"
         style={({ pressed }) => [styles.karta, pressed && styles.volbaStisk]}
       >
         <Text style={styles.kartaNadnadpis}>Zákon č. 182/2006 Sb.</Text>
-        <Text style={styles.kartaNazev}>Insolvenční zákon</Text>
+        <Text style={styles.kartaNazev}>Insolvenční zákon v praxi</Text>
         <Text style={styles.volbaNapoveda}>
-          {zakon.length} paragrafů · výklad k {hotovo} z {celkem} odstavců
+          Celý zákon po odstavcích s výkladem, dotazy na Claudea a tiskem.
+          Otevře se v druhé appce →
         </Text>
       </Pressable>
     </View>
   );
 }
 
-/** Obsah zákona: hledání, a pod ním části a hlavy s paragrafy. */
-function Zakon({ onOtevri, onZpet }) {
-  const [dotaz, setDotaz] = useState('');
-  const casti = useMemo(() => obsah(zakon), []);
-  const nalezene = useMemo(() => hledej(zakon, dotaz), [dotaz]);
-  const hleda = dotaz.trim().length > 0;
-
-  return (
-    <ScrollView
-      contentContainerStyle={styles.domu}
-      showsVerticalScrollIndicator={false}
-      keyboardShouldPersistTaps="handled"
-    >
-      <Zpet onPress={onZpet} popisek="← Domů" />
-      <Text style={styles.nazev}>Insolvenční zákon</Text>
-      <Text style={styles.podnadpis}>
-        Znění podle Sbírky, pod každým odstavcem výklad, co znamená v praxi
-        správce. Kde výklad ještě není, stojí aspoň zákon.
-      </Text>
-
-      <TextInput
-        value={dotaz}
-        onChangeText={setDotaz}
-        placeholder="Číslo paragrafu nebo slovo"
-        placeholderTextColor={theme.muted}
-        autoCorrect={false}
-        autoCapitalize="none"
-        accessibilityLabel="Hledat v zákoně"
-        style={styles.hledani}
-      />
-
-      {hleda ? (
-        nalezene.length ? (
-          nalezene.map((p) => (
-            <RadekParagrafu key={p.paragraf} paragraf={p} onOtevri={onOtevri} />
-          ))
-        ) : (
-          <Text style={styles.patka}>Nic takového v zákoně není.</Text>
-        )
-      ) : (
-        casti.map((cast) => (
-          <View key={cast.nazev}>
-            <Text style={styles.sekce}>{cast.nazev}</Text>
-            {cast.hlavy.map((hlava) => (
-              <View key={`${cast.nazev}/${hlava.nazev}`}>
-                {hlava.nazev && <Text style={styles.podsekce}>{hlava.nazev}</Text>}
-                {hlava.paragrafy.map((p) => (
-                  <RadekParagrafu key={p.paragraf} paragraf={p} onOtevri={onOtevri} />
-                ))}
-              </View>
-            ))}
-          </View>
-        ))
-      )}
-    </ScrollView>
-  );
-}
-
-function RadekParagrafu({ paragraf, onOtevri }) {
-  const hotovo = vylozenoVParagrafu(vyklad, paragraf);
-  const vse = hotovo === paragraf.odstavce.length;
-
-  return (
-    <Pressable
-      onPress={() => onOtevri({ paragraf: paragraf.paragraf })}
-      accessibilityRole="button"
-      accessibilityLabel={`§ ${paragraf.paragraf}${paragraf.nazev ? `, ${paragraf.nazev}` : ''}`}
-      style={({ pressed }) => [styles.radekParagrafu, pressed && styles.volbaStisk]}
-    >
-      <Text style={styles.cisloParagrafu}>§ {paragraf.paragraf}</Text>
-      <Text style={styles.nazevParagrafu} numberOfLines={2}>
-        {paragraf.nazev ?? prvniSlova(paragraf.odstavce[0].text)}
-      </Text>
-      {/* Tečka u paragrafu, kde výklad chybí nebo je jen část — ať je vidět,
-          kde se dá číst dál a kde zatím stojí holý zákon. */}
-      <Text style={[styles.znacka, vse && styles.znackaHotovo]}>
-        {vse ? '●' : hotovo ? '◐' : '○'}
-      </Text>
-    </Pressable>
-  );
-}
-
-/** Paragraf bez názvu se v seznamu představí začátkem svého znění. */
-function prvniSlova(text, limit = 60) {
-  const jeden = text.replace(/\s+/g, ' ').trim();
-  return jeden.length > limit ? `${jeden.slice(0, limit)}…` : jeden;
-}
-
-/** Jeden paragraf: znění po odstavcích a pod každým odstavcem jeho výklad. */
-function Paragraf({ cislo, onOtevri, onZpet }) {
-  const paragraf = useMemo(() => najdiParagraf(zakon, cislo), [cislo]);
-  const { predchozi, dalsi } = useMemo(() => sousedi(zakon, cislo), [cislo]);
-
-  if (!paragraf) {
-    return (
-      <View style={styles.stred}>
-        <Text style={styles.nadpisVysledku}>Paragraf není</Text>
-        <Zpet onPress={onZpet} popisek="← Zpátky" />
-      </View>
-    );
-  }
-
-  const kdeJsem = [paragraf.cast, paragraf.hlava, paragraf.dil, paragraf.oddil]
-    .filter(Boolean)
-    .join(' · ');
-
-  return (
-    <ScrollView contentContainerStyle={styles.beh} showsVerticalScrollIndicator={false}>
-      <Zpet onPress={onZpet} popisek="← Obsah" />
-
-      {/* Většina paragrafů nadpis nemá — pak je nadpisem samo číslo, ať se
-          nahoře nevypisuje prázdná fráze. */}
-      {paragraf.nazev ? (
-        <>
-          <Text style={styles.postup}>§ {paragraf.paragraf}</Text>
-          <Text style={styles.zneni}>{paragraf.nazev}</Text>
-        </>
-      ) : (
-        <Text style={styles.zneni}>§ {paragraf.paragraf}</Text>
-      )}
-      <Text style={styles.drobecky}>{kdeJsem}</Text>
-
-      {paragraf.odstavce.map((odstavec, i) => (
-        <Odstavec
-          key={odstavec.cislo ?? i}
-          odstavec={odstavec}
-          vyklad={vykladOdstavce(vyklad, paragraf, odstavec)}
-        />
-      ))}
-
-      <View style={styles.prechod}>
-        {predchozi ? (
-          <Pressable
-            onPress={() => onOtevri({ paragraf: predchozi.paragraf })}
-            accessibilityRole="button"
-            hitSlop={8}
-            style={styles.odkaz}
-          >
-            <Text style={styles.odkazText}>← § {predchozi.paragraf}</Text>
-          </Pressable>
-        ) : (
-          <View />
-        )}
-        {dalsi && (
-          <Pressable
-            onPress={() => onOtevri({ paragraf: dalsi.paragraf })}
-            accessibilityRole="button"
-            hitSlop={8}
-            style={styles.odkaz}
-          >
-            <Text style={styles.odkazText}>§ {dalsi.paragraf} →</Text>
-          </Pressable>
-        )}
-      </View>
-    </ScrollView>
-  );
-}
-
-function Odstavec({ odstavec, vyklad: text }) {
-  return (
-    <View style={styles.odstavec}>
-      <Text style={styles.textZakona}>
-        {odstavec.cislo && <Text style={styles.cisloOdstavce}>({odstavec.cislo}) </Text>}
-        {odstavec.text}
-      </Text>
-      {text ? (
-        <View style={styles.rozbor}>
-          <Text style={styles.verdikt}>V praxi</Text>
-          <Vyklad text={text} />
-        </View>
-      ) : (
-        <Text style={styles.poznamka}>Výklad k tomuhle odstavci ještě nemám.</Text>
-      )}
-    </View>
-  );
-}
 
 function Volba({ popisek, napoveda, onPress, neaktivni }) {
   return (
@@ -659,66 +446,7 @@ const styles = StyleSheet.create({
     letterSpacing: -0.4,
     color: theme.paper,
   },
-  odkaz: { paddingVertical: 12, alignSelf: 'flex-start' },
-  prechod: {
-    marginTop: 28,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
 
-  podsekce: {
-    marginTop: 18,
-    marginBottom: 6,
-    fontSize: 13,
-    lineHeight: 19,
-    color: theme.muted,
-  },
-  hledani: {
-    marginTop: 8,
-    marginBottom: 4,
-    borderWidth: 1,
-    borderColor: theme.rule,
-    borderRadius: 12,
-    paddingVertical: 13,
-    paddingHorizontal: 16,
-    fontSize: 16,
-    color: theme.ink,
-    backgroundColor: '#FFFFFF',
-  },
-  radekParagrafu: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 13,
-    borderBottomWidth: 1,
-    borderBottomColor: theme.rule,
-  },
-  cisloParagrafu: {
-    width: 58,
-    fontSize: 15,
-    fontWeight: '600',
-    color: theme.accent,
-  },
-  nazevParagrafu: { flex: 1, fontSize: 15, lineHeight: 21, color: theme.ink },
-  znacka: { fontSize: 11, color: theme.rule },
-  znackaHotovo: { color: theme.spravne },
-
-  drobecky: {
-    marginTop: -14,
-    marginBottom: 24,
-    fontSize: 13,
-    lineHeight: 19,
-    color: theme.muted,
-  },
-  odstavec: { marginBottom: 26 },
-  textZakona: { fontSize: 16, lineHeight: 25, color: theme.ink },
-  cisloOdstavce: { fontWeight: '600', color: theme.accent },
-  odkazText: { fontSize: 15, color: theme.accent },
-
-  vyklad: { marginTop: 4, gap: 16 },
-  vykladText: { fontSize: 17, lineHeight: 27, color: theme.ink },
-  vykladDuraz: { fontWeight: '600' },
   volbaNeaktivni: { backgroundColor: 'transparent', borderStyle: 'dashed' },
   volbaPopisek: { fontSize: 19, fontWeight: '500', color: theme.ink },
   textNeaktivni: { color: theme.muted },

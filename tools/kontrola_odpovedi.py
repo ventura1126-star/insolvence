@@ -29,8 +29,8 @@ def zkontroluj_vyklad():
     přečíslovat i zrušit. Výklad, který pak visí u odstavce, co v zákoně není,
     by se v aplikaci tiše ztratil — tady je aspoň vidět.
     """
-    zakon_s = KOREN / "zkouska/assets/zakon.json"
-    vyklad_s = KOREN / "zkouska/assets/vyklad.json"
+    zakon_s = KOREN / "artefakt/zakon.json"
+    vyklad_s = KOREN / "artefakt/vyklad.json"
     if not zakon_s.exists() or not vyklad_s.exists():
         return ["chybí zakon.json nebo vyklad.json — spusť tools/vytez_zakon.py"]
 

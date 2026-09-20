@@ -68,7 +68,7 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 ```bash
 .venv/bin/python tools/parse_otazky.py     # PDF ministerstva → otazky.json
 python3 tools/stahni_zakon.py 2006-182     # znění předpisu k psaní odpovědí
-python3 tools/vytez_zakon.py               # znění zákona → zakon.json pro app
+python3 tools/vytez_zakon.py               # znění zákona → artefakt/zakon.json
 python3 tools/kontrola_odpovedi.py         # kontrola odpovědí i výkladu
 ```
 
@@ -85,11 +85,12 @@ výboru má jen jednu variantu.
 `stahni_zakon.py` stahuje aktuální znění předpisů a umí vypsat konkrétní
 paragraf (`--paragraf 3`). Předpisy jsou autorskoprávně volné.
 
-`vytez_zakon.py` z toho staženého znění vyrobí `zkouska/assets/zakon.json` —
+`vytez_zakon.py` z toho staženého znění vyrobí `artefakt/zakon.json` —
 482 paragrafů rozdělených na 1 420 odstavců i s částmi, hlavami a díly. Text
 zákona se tedy nikde nepřepisuje ručně a po novele se dá celý přegenerovat;
-výklad leží zvlášť ve `vyklad.json` a `kontrola_odpovedi.py` hlídá, že po
-přegenerování nevisí u odstavce, který už v zákoně není.
+výklad leží zvlášť v `artefakt/vyklad.json` a `kontrola_odpovedi.py` hlídá, že
+po přegenerování nevisí u odstavce, který už v zákoně není. Obojí patří druhé
+appce, proto to bydlí v `artefakt/`.
 
 ### Formát odpovědi
 
@@ -144,8 +145,10 @@ na novou stránku.
 python3 tools/sbal_artefakt.py
 ```
 
-Vyrobí `artefakt/zakon.js` a `artefakt/vyklad.js` (data pověšená na `window`,
-čistě v ASCII kvůli kódování) a ty se publikují spolu s `artefakt/index.html`.
-Vygenerované skripty jsou mimo repo, stránka v něm je.
+Z `artefakt/zakon.json` a `artefakt/vyklad.json` vyrobí `zakon.js` a
+`vyklad.js` (data pověšená na `window`, čistě v ASCII kvůli kódování) a ty se
+publikují spolu s `artefakt/index.html`. Vygenerované skripty jsou mimo repo,
+stránka i data v něm jsou.
 
-Trénink otázek zůstává na GitHub Pages — Artifact nese jen zákon.
+Dvě appky, každá na jedno: **Pages** trénuje otázky, **Artifact** nese zákon.
+Odkaz mezi nimi vede z úvodní obrazovky Pages.

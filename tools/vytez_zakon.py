@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Vytěží insolvenční zákon ze staženého znění do zkouska/assets/zakon.json.
+Vytěží insolvenční zákon ze staženého znění do artefakt/zakon.json.
 
 Text zákona se nikde nepřepisuje ručně — bere se doslova z toho, co stáhl
 stahni_zakon.py, aby v aplikaci stálo přesně to, co je ve Sbírce. Ručně se
-píše jen výklad, a ten leží vedle, v odpovidajicim souboru vyklad.json.
+píše jen výklad, a ten leží vedle v artefakt/vyklad.json.
 
 Struktura zdroje je naštěstí jednoduchá: nadpisy (ČÁST, HLAVA, Díl, Oddíl,
 § N) stojí každý na vlastním řádku, hned za § může být jeho název a pak
@@ -19,7 +19,7 @@ import sys
 from pathlib import Path
 
 ZDROJ = Path("_zdroje/zakony/2006-182.txt")
-CIL = Path("zkouska/assets/zakon.json")
+CIL = Path("artefakt/zakon.json")
 
 CAST = re.compile(r"^ČÁST (PRVNÍ|DRUHÁ|TŘETÍ|ČTVRTÁ|PÁTÁ)$")
 HLAVA = re.compile(r"^HLAVA [IVXL]+$")
