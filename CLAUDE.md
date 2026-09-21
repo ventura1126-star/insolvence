@@ -27,6 +27,10 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
   všechna se dají najít v přehledu **Moje rozhovory** (`#rozhovory`). Ukládají
   se dvojmo — do prohlížeče hned a na server pro druhé zařízení; selhání
   serveru se **nesmí zamlčet**, panel o něm píše i s důvodem.
+- Na jednom místě může běžet **víc konverzací** vedle sebe, aby šly uzavírat.
+  První má klíč místa (`36-1`), další příponu `~2`, `~3` — starší data tím
+  zůstala platná. Klíč se na místo rozkládá přes `mistoZKlice`; pozor, že
+  `36-1` není předponou `36-11`, proto se porovnává s vlnovkou.
 
 Publikuje se nástrojem Artifact. Z jiné konverzace je potřeba předat `url`,
 jinak vznikne nový artefakt místo aktualizace toho stávajícího.

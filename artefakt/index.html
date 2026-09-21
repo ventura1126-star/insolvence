@@ -356,8 +356,13 @@
     background: var(--plocha);
   }
 
-  .rozbal {
+  .vlakna-mista {
     margin-top: .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+  .rozbal {
     appearance: none;
     border: 1px solid var(--linka);
     background: none;
@@ -375,6 +380,10 @@
     background: var(--rozhovor-plocha);
     font-weight: 500;
   }
+  /* Založení dalšího vlákna je nabídka, ne hlavní akce — ať nepřehluší
+     rozhovory, které už na místě jsou. */
+  .rozbal-novy { border-style: dashed; color: var(--tlum); }
+  .rozbal-novy:hover { color: var(--rozhovor); border-color: var(--rozhovor); }
   .rozbal:focus-visible { outline: 2px solid var(--rozhovor); outline-offset: 1px; }
 
   .bublina { font-size: .95rem; }
@@ -966,34 +975,85 @@
     return z && z.zpravy ? z.zpravy.length : 0;
   }
 
+  /* Na jednom místě může běžet víc konverzací. První z nich má klíč místa
+     samotného — díky tomu zůstávají dřívější rozhovory tam, kde byly — a
+     další dostávají příponu „~2", „~3". Vlnovka proto, že se v identifikátoru
+     dokumentu smí objevit a v číslech paragrafů se nevyskytuje. */
+
+  function klicVlakna(misto, cislo) {
+    return cislo <= 1 ? misto : misto + '~' + cislo;
+  }
+
+  function mistoZKlice(klic) {
+    var vlnka = klic.indexOf('~');
+    return vlnka < 0 ? klic : klic.slice(0, vlnka);
+  }
+
+  /** Klíče všech vláken daného místa, nejstarší první. */
+  function vlaknaMista(misto) {
+    return Object.keys(ulozeni.vlakna).filter(function (k) {
+      // Pozor na to, že „36-1" není předponou „36-11" — proto s vlnovkou.
+      if (k !== misto && k.indexOf(misto + '~') !== 0) return false;
+      var z = ulozeni.vlakna[k];
+      return z && z.zpravy && z.zpravy.length;
+    }).sort(function (a, b) {
+      return cisloVlakna(a) - cisloVlakna(b);
+    });
+  }
+
+  function cisloVlakna(klic) {
+    var vlnka = klic.indexOf('~');
+    return vlnka < 0 ? 1 : Number(klic.slice(vlnka + 1)) || 1;
+  }
+
+  function dalsiVlakno(misto) {
+    var nejvyssi = 0;
+    vlaknaMista(misto).forEach(function (k) {
+      nejvyssi = Math.max(nejvyssi, cisloVlakna(k));
+    });
+    return klicVlakna(misto, nejvyssi + 1);
+  }
+
   /* --- tlačítko, které v místě zůstane --- */
 
-  function rozhovorProMisto(klic, kontextText, popisMista) {
-    var obal = el('div');
-    var tlacitko = el('button', 'rozbal');
-    tlacitko.type = 'button';
-    obal.appendChild(tlacitko);
+  function rozhovorProMisto(misto, kontextText, popisMista) {
+    var obal = el('div', 'vlakna-mista');
 
     function prekresli() {
-      var kolik = pocetZprav(klic);
-      if (kolik) {
-        tlacitko.classList.add('rozbal-plny');
-        tlacitko.textContent = nazevVlakna(klic) + '  · ' + kolik;
-      } else {
-        tlacitko.classList.remove('rozbal-plny');
-        tlacitko.textContent = 'Zeptat se na tohle místo';
-      }
-      obal.hidden = !sample && !kolik;
-    }
+      obal.textContent = '';
+      var klice = vlaknaMista(misto);
 
-    tlacitko.addEventListener('click', function () {
-      otevriPanel(klic, kontextText, popisMista);
-    });
+      klice.forEach(function (k) {
+        var b = el('button', 'rozbal rozbal-plny');
+        b.type = 'button';
+        b.textContent = nazevVlakna(k) + '  · ' + pocetZprav(k);
+        b.addEventListener('click', function () {
+          otevriPanel(k, kontextText, popisMista);
+        });
+        obal.appendChild(b);
+      });
+
+      if (sample) {
+        var novy = el('button', klice.length ? 'rozbal rozbal-novy' : 'rozbal');
+        novy.type = 'button';
+        novy.textContent = klice.length
+          ? '+ Založit novou konverzaci'
+          : 'Zeptat se na tohle místo';
+        novy.addEventListener('click', function () {
+          otevriPanel(dalsiVlakno(misto), kontextText, popisMista);
+        });
+        obal.appendChild(novy);
+      }
+
+      obal.hidden = !sample && !klice.length;
+    }
 
     obal.obnov = prekresli;
     obal.prepni = prekresli;
-    obal.klicMista = klic;
-    obal.otevri = function () { otevriPanel(klic, kontextText, popisMista); };
+    obal.klicMista = misto;
+    obal.otevri = function (klic) {
+      otevriPanel(klic || misto, kontextText, popisMista);
+    };
     prekresli();
     return obal;
   }
@@ -1078,7 +1138,7 @@
       if (!panel.klic) return;
       smazVlakno(panel.klic);
       panel.zpravy = [];
-      vykresliPanel(null);
+      zavriPanelRozhovoru();
       ozviSeVlaknum();
     });
     pole.addEventListener('keydown', function (e) {
@@ -1211,7 +1271,9 @@
   /* ---- přehled rozhovorů ---------------------------------------------- */
 
   /** Kde vlákno patří — z klíče se dá zpětně určit místo i popis. */
-  function mistoVlakna(klic) {
+  function mistoVlakna(puvodniKlic) {
+    var klic = mistoZKlice(puvodniKlic);
+    var poradi = cisloVlakna(puvodniKlic);
     if (klic.indexOf('t-') === 0) {
       var zbytek = klic.slice(2);
       var del = zbytek.lastIndexOf('-');
@@ -1222,7 +1284,7 @@
         druh: 'tema',
         hash: '#t' + t.id,
         kde: t.nazev,
-        bod: t.body[i].nadpis
+        bod: t.body[i].nadpis + (poradi > 1 ? ' · ' + poradi + '. konverzace' : '')
       };
     }
     var del2 = klic.lastIndexOf('-');
@@ -1230,11 +1292,13 @@
     var odst = klic.slice(del2 + 1);
     var p = podleCisla[cislo];
     if (!p) return null;
+    var kdeBod = odst === 'x' ? '' : 'odstavec ' + odst;
+    if (poradi > 1) kdeBod += (kdeBod ? ' · ' : '') + poradi + '. konverzace';
     return {
       druh: 'zakon',
       hash: '#p' + cislo,
       kde: '§ ' + cislo + (p.nazev ? ' — ' + p.nazev : ''),
-      bod: odst === 'x' ? '' : 'odstavec ' + odst
+      bod: kdeBod
     };
   }
 
@@ -1337,9 +1401,10 @@
     if (!cekaNaOtevreni) return;
     var hledany = cekaNaOtevreni;
     cekaNaOtevreni = null;
+    var misto = mistoZKlice(hledany);
     for (var i = 0; i < zivePrepinace.length; i += 1) {
-      if (zivePrepinace[i].klicMista === hledany) {
-        zivePrepinace[i].otevri();
+      if (zivePrepinace[i].klicMista === misto) {
+        zivePrepinace[i].otevri(hledany);
         return;
       }
     }
@@ -1574,23 +1639,29 @@
         blok.appendChild(karta);
       }
 
-      var vl = sRozhovory ? rozhovory[klicDiskuze(p, o)] : null;
-      if (vl && vl.zpravy.length) {
-        var vlakno = el('div', 't-rozhovor');
-        vlakno.appendChild(el('span', 't-stitek',
-          'Můj rozhovor: ' + (vl.nazev || odvozenyNazev(vl.zpravy))));
-        vl.zpravy.forEach(function (z) {
-          var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
-          b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
-          vlozText(b, z.text);
-          vlakno.appendChild(b);
+      if (sRozhovory) {
+        vlaknaMista(klicDiskuze(p, o)).forEach(function (k) {
+          blok.appendChild(tiskniVlakno(rozhovory[k]));
         });
-        blok.appendChild(vlakno);
       }
 
       sekce.appendChild(blok);
     });
     return sekce;
+  }
+
+  /** Jedno vlákno na papír, i s názvem, který mu Richard dal. */
+  function tiskniVlakno(vl) {
+    var vlakno = el('div', 't-rozhovor');
+    vlakno.appendChild(el('span', 't-stitek',
+      'Můj rozhovor: ' + (vl.nazev || odvozenyNazev(vl.zpravy))));
+    vl.zpravy.forEach(function (z) {
+      var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
+      b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
+      vlozText(b, z.text);
+      vlakno.appendChild(b);
+    });
+    return vlakno;
   }
 
   function tiskniTema(t, rozhovory, sRozhovory) {
@@ -1606,18 +1677,10 @@
       vlozText(karta, bod.text);
       blok.appendChild(karta);
 
-      var vl = sRozhovory ? rozhovory['t-' + t.id + '-' + i] : null;
-      if (vl && vl.zpravy.length) {
-        var vlakno = el('div', 't-rozhovor');
-        vlakno.appendChild(el('span', 't-stitek',
-          'Můj rozhovor: ' + (vl.nazev || odvozenyNazev(vl.zpravy))));
-        vl.zpravy.forEach(function (z) {
-          var b = el('div', 't-bublina ' + (z.role === 'user' ? 'ja' : 'claude'));
-          b.appendChild(el('div', 't-kdo', z.role === 'user' ? 'Já' : 'Claude'));
-          vlozText(b, z.text);
-          vlakno.appendChild(b);
+      if (sRozhovory) {
+        vlaknaMista('t-' + t.id + '-' + i).forEach(function (k) {
+          blok.appendChild(tiskniVlakno(rozhovory[k]));
         });
-        blok.appendChild(vlakno);
       }
       sekce.appendChild(blok);
     });
