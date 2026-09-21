@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
-  Linking,
   Pressable,
   ScrollView,
   StatusBar,
@@ -23,9 +22,6 @@ import {
   zodpovezene,
 } from './src/test';
 import { aktualizujChyby, nactiChyby, ulozChyby } from './src/ulozeni';
-
-// Druhá appka: zákon s výkladem, rozhovorem a tiskem.
-const ZAKON_URL = 'https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF';
 
 const theme = {
   paper: '#FBF9F6',
@@ -88,8 +84,6 @@ function Domu({ chyby, onOtevri }) {
         </Text>
       </View>
 
-      <KartaZakona />
-
       <Volba
         popisek="Ostrý test"
         napoveda={`${OTAZEK_V_TESTU} otázek jako u zkoušky, vyhodnocení až na konci`}
@@ -125,42 +119,6 @@ function Domu({ chyby, onOtevri }) {
     </ScrollView>
   );
 }
-
-/**
- * Výkladový text.
- *
- * Píše se s hvězdičkami kolem zdůrazněných míst, protože v JSON se důraz jinak
- * zapsat nedá; tady se rozpadne na běžné a tučné úseky. React Native markdown
- * sám nerenderuje, takže bez tohohle by se hvězdičky vypsaly doslova.
- */
-/**
- * Odkaz na appku se zákonem.
- *
- * Zákon s výkladem tady dřív byl taky, ale žil pak na dvou místech a tahle
- * kopie byla ta chudší — neuměla rozhovor s Claudem ani tisk. Zůstal odkaz;
- * tahle appka dělá otázky, ta druhá zákon.
- */
-function KartaZakona() {
-  return (
-    <View>
-      <Text style={styles.sekce}>Zákon s výkladem</Text>
-      <Pressable
-        onPress={() => Linking.openURL(ZAKON_URL)}
-        accessibilityRole="link"
-        accessibilityLabel="Otevřít Insolvenční zákon v praxi"
-        style={({ pressed }) => [styles.karta, pressed && styles.volbaStisk]}
-      >
-        <Text style={styles.kartaNadnadpis}>Zákon č. 182/2006 Sb.</Text>
-        <Text style={styles.kartaNazev}>Insolvenční zákon v praxi</Text>
-        <Text style={styles.volbaNapoveda}>
-          Celý zákon po odstavcích s výkladem, dotazy na Claudea a tiskem.
-          Otevře se v druhé appce →
-        </Text>
-      </Pressable>
-    </View>
-  );
-}
-
 
 function Volba({ popisek, napoveda, onPress, neaktivni }) {
   return (
@@ -425,27 +383,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   volbaStisk: { backgroundColor: '#F3EEE7' },
-
-  karta: {
-    borderRadius: 16,
-    paddingVertical: 22,
-    paddingHorizontal: 20,
-    backgroundColor: theme.ink,
-  },
-  kartaNadnadpis: {
-    fontSize: 12,
-    letterSpacing: 1.2,
-    textTransform: 'uppercase',
-    color: theme.accent,
-  },
-  kartaNazev: {
-    marginTop: 8,
-    marginBottom: 6,
-    fontSize: 22,
-    fontWeight: '600',
-    letterSpacing: -0.4,
-    color: theme.paper,
-  },
 
   volbaNeaktivni: { backgroundColor: 'transparent', borderStyle: 'dashed' },
   volbaPopisek: { fontSize: 19, fontWeight: '500', color: theme.ink },
