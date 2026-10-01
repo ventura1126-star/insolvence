@@ -15,9 +15,10 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 - Data: `zkouska/assets/otazky.json`, `zkouska/assets/odpovedi.json`
 - Náplň: dohledávání odpovědí, režimy testu, trénink po okruzích, moje chyby
 
-### 2. Insolvenční zákon v praxi — Artifact
+### 2. Insolvenční zákon v praxi — Artifact, a čtecí kopie na Pages
 
-- Web: <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>
+- Artifact (s rozhovory): <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>
+- Čtecí verze: <https://ventura1126-star.github.io/insolvence/zakon/>
 - Kód: `artefakt/index.html` (jedna stránka, prostý HTML/JS, bez frameworku)
 - Data: `artefakt/zakon.json`, `artefakt/vyklad.json`, `artefakt/temata.json`
 - Náplň: znění zákona, výklad po odstavcích, témata mimo insolvenční zákon,
@@ -34,6 +35,14 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 
 Publikuje se nástrojem Artifact. Z jiné konverzace je potřeba předat `url`,
 jinak vznikne nový artefakt místo aktualizace toho stávajícího.
+
+**Táž stránka se publikuje dvakrát.** Richardův iPhone prohlížečku artefaktů
+na claude.ai neotevře — stránka naběhne a za dvě vteřiny ji obal shodí, a to
+i bez jediné vyžádané schopnosti; je to jejich obal, ne náš kód. Stránka se
+ale sama obejde bez Clauda: chybí-li `window.claude`, tlačítka na rozhovory
+se skryjí a zbyde zákon, výklad, témata, hledání a tisk. `build:web` ji proto
+kopíruje i do `docs/zakon/`. **Při každé změně `artefakt/index.html` je tedy
+potřeba publikovat Artifact i přestavět Pages.**
 
 ## Pravidlo, které platí pro obojí: odpovědi se nevymýšlejí
 

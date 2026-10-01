@@ -156,5 +156,13 @@ péče řádného hospodáře, § 66 ZOK, diskvalifikace, zajištění a jeho dr
 odporovatelnost, započtení, SJM. Každý bod má vlastní rozhovor i tisk, stejně
 jako odstavec zákona.
 
-Dvě appky, každá na jedno: **Pages** trénuje otázky, **Artifact** nese zákon.
-Odkaz mezi nimi vede z úvodní obrazovky Pages.
+Táž stránka jede na dvou místech. Jako **Artifact** s rozhovory a jako **čtecí
+verze** na <https://ventura1126-star.github.io/insolvence/zakon/> bez nich —
+prohlížečka artefaktů na claude.ai se na starším iOS neotevře, takže na telefon
+musel zákon jinudy. Stránka se bez `window.claude` obejde sama (tlačítka na
+rozhovory se skryjí), takže je to týž soubor, jen publikovaný dvakrát;
+`npm run build:web` kopii do `docs/zakon/` vyrobí sám.
+
+```bash
+python3 tools/postav_zakon_web.py   # artefakt/ → docs/zakon/ (běží i z build:web)
+```
