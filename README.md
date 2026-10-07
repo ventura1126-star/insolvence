@@ -44,8 +44,9 @@ se ukazují — na nich je změna vidět nejlíp.
 | Insolvence | 281 | 0 | 1 049 |
 | **Celkem** | **469** | **16** | **1 433** |
 
-Výklad zákona: **103 z 1 420 odstavců** (§ 1 až § 38 — základní ustanovení,
-procesní subjekty a celý díl o insolvenčním správci). Zbytek přibývá po dávkách.
+Výklad zákona: **200 z 1 420 odstavců** (§ 1 až § 70 — celá hlava o procesních
+subjektech: základní ustanovení, insolvenční správce, věřitelské orgány,
+státní zastupitelství a likvidátor). Zbytek přibývá po dávkách.
 
 ## Spuštění
 
