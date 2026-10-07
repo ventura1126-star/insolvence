@@ -430,5 +430,177 @@
     "text": "Manželé si podle **§ 716 a násl. o. z.** mohou smluvit jiný režim — zúžit SJM, vyhradit jeho vznik ke dni zániku manželství, nebo ho rozšířit.\n\nTypický pokus, na který narazíte: rok před úpadkem manželé notářským zápisem zúží SJM tak, že veškerý majetek připadne manželce, a dluhy zůstanou dlužníkovi.\n\nProti tomu máte dvě věci:\n\n— **§ 719 o. z.** má dvě omezení. Podle **odst. 1** smlouva nesmí svými důsledky vyloučit **schopnost manžela zabezpečovat rodinu**. Podle **odst. 2** se nesmí svým obsahem ani účelem **dotknout práv třetí osoby**, ledaže by s ní souhlasila — a smlouva uzavřená bez jejího souhlasu **vůči ní nemá právní účinky**. Věřitel, který o zúžení nevěděl a nesouhlasil s ním, se jím tedy vůbec nemusí zabývat.\n\n— **§ 240 ins. zák.** — je-li zúžení fakticky bezúplatným převodem na manželku, jde o úkon bez přiměřeného protiplnění; manželka je **osoba blízká**, takže lhůta je **3 roky** a úpadek se předpokládá.\n\nZápis do **veřejného seznamu** (Evidence listin o manželském majetkovém režimu) řeší § 721; bez něj se manželé vůči třetí osobě smlouvy dovolají jen tehdy, byla-li jí známa.\n\n**Společné oddlužení manželů** je pak samostatná kapitola: podle **§ 394a ins. zák.** podávají návrh společně, řízení se spojuje a řeší se jedním splátkovým kalendářem — a podle § 25 odst. 4 dostanou téhož správce."
    }
   ]
+ },
+ {
+  "id": "ex-zastaveni",
+  "oblast": "Exekuce a výkon rozhodnutí",
+  "nazev": "Co se stane s exekucí, když přijde insolvence",
+  "pramen": "§ 109 odst. 1 písm. c), § 140a až § 140c a § 267 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Exekuce se nezastaví, ale nesmí se provést",
+    "text": "Na Truhlárnu Bureš běží tři exekuce. Soud zveřejní vyhlášku o zahájení insolvenčního řízení — **a tím to pro exekutory končí**, aniž by kdokoli cokoli rušil.\n\n**§ 109 odst. 1 písm. c) ins. zák.:** výkon rozhodnutí či exekuci, která by postihovala majetek ve vlastnictví dlužníka nebo majetek náležející do majetkové podstaty, **lze nařídit nebo zahájit, nelze ji však provést**.\n\nTen rozdíl je přesný a ptá se na něj. Exekuce **existuje dál**, exekutor zůstává pověřený, **jen nesmí nic zpeněžit ani strhnout**. Nezastavuje se — tím by zaniklo pořadí, a kdyby byl insolvenční návrh odmítnut, musel by věřitel začínat znovu.\n\nVýjimkou je zpeněžení pro **pohledávky za majetkovou podstatou**, nařídí-li to insolvenční soud.\n\nÚčinky nastávají **zveřejněním vyhlášky v insolvenčním rejstříku**, ne doručením exekutorovi. Je tedy jeho věcí do rejstříku koukat — v praxi se ale vyplatí mu po ustanovení napsat, ať se nevede spor o úkony, které mezitím stihl."
+   },
+   {
+    "nadpis": "Peníze, které exekutor drží, patří do podstaty",
+    "text": "Situace u každého druhého oddlužení: exekutor paní Dvořákové osm měsíců strhával ze mzdy a na jeho účtu leží 34 tis., které ještě nevyplatil věřiteli.\n\nTy peníze **patří do majetkové podstaty**. Nejsou exekutorovy a nejsou ani věřitelovy — dokud nebyly vyplaceny, je to pořád dlužníkův majetek.\n\nHned po ustanovení tedy:\n\n— z **centrální evidence exekucí** zjistíte, co na dlužníka běží,\n\n— **vyzvete každého exekutora** k vydání zadržených prostředků a k zastavení srážek,\n\n— vyžádáte si **stav řízení** a soupis toho, co už bylo zpeněženo.\n\nExekutor má nárok na náhradu účelně vynaložených nákladů, které mu do té doby vznikly, a uplatní ho podle povahy přihláškou nebo jako pohledávku za podstatou. **Jednostranně si je z vydávaných peněz strhnout nemůže.**\n\nNevymáhat je znamená opomenutí, které jde podle § 37 ins. zák. za vámi."
+   },
+   {
+    "nadpis": "Soudní řízení se přerušují, nová nelze zahájit",
+    "text": "Totéž v mírnější podobě platí pro spory.\n\n**§ 140a ins. zák.:** rozhodnutím o úpadku se **přerušují** soudní a rozhodčí řízení o pohledávkách týkajících se majetkové podstaty, které mají být uplatněny **přihláškou**, na které se jako na přihlášené pohlíží, anebo které se v řízení **neuspokojují** (§ 170). Nekonají se jednání a neběží lhůty; pokračuje-li se později, **lhůty běží znovu od začátku**.\n\n**§ 140c:** nová taková řízení **nelze zahájit** — kromě incidenčních sporů, které naopak probíhají.\n\n**§ 140b:** v ostatních řízeních sice jednat lze, ale **nelze o těch pohledávkách rozhodnout**.\n\nSmysl je jediný: o tom, kolik dlužník komu dluží, se napříště rozhoduje **přezkumem a incidenčním sporem**, ne roztroušeně po obecných soudech.\n\nPozor na opačný směr — **§ 267 odst. 2**: vystupuje-li dlužník jako **oprávněný**, tedy sám vymáhá, stává se prohlášením konkursu oprávněným **insolvenční správce**. Tahle řízení se nepřerušují, naopak je přebíráte a dotahujete, protože nesou peníze do podstaty."
+   },
+   {
+    "nadpis": "Proti správci se exekuce vést nedá",
+    "text": "**§ 267 odst. 1 ins. zák.:** návrh na nařízení výkonu rozhodnutí nebo exekuční návrh se i nadále podává **proti povinnému**, tedy proti dlužníkovi — **proti insolvenčnímu správci jej podat nelze**.\n\nNarazíte na to u věřitelů s pohledávkami za podstatou (§ 168), kteří se nedočkali výplaty a chtěli by to vymoci na vás. Nejde to.\n\nJejich cesta vede přes insolvenční soud: **§ 203a** zná incidenční spor o pravost a pořadí pohledávky za podstatou, a nad vaším postupem je **dohlédací činnost** podle § 11.\n\nZ toho plyne dvojí. Jste chráněn před exekucí — ale **nejste chráněn před odpovědností**: nestačí-li podstata na pohledávku vzniklou z vašeho úkonu, odpovídáte podle **§ 37 odst. 3** osobně, pokud jste v době toho úkonu mohl poznat, že na ni nebude.\n\nA ještě věc, která se plete: **exekuční řád se v insolvenci nepoužije sám od sebe**. Podle § 7 ins. zák. se ustanovení o výkonu rozhodnutí a exekuci použijí **jen tam, kam vás insolvenční zákon výslovně pošle** — typicky § 286 u zpeněžení nemovitosti."
+   }
+  ]
+ },
+ {
+  "id": "ex-soupis",
+  "oblast": "Exekuce a výkon rozhodnutí",
+  "nazev": "Co smí a nesmí být sepsáno",
+  "pramen": "§ 322 o. s. ř., § 68 ex. řádu, § 207 a § 225 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Nezabavitelný majetek do podstaty nepatří — až na jednu výjimku",
+    "text": "**§ 207 odst. 1 ins. zák.:** do majetkové podstaty **nepatří majetek, který nelze postihnout výkonem rozhodnutí nebo exekucí**.\n\nInsolvenční zákon si tedy nevymýšlí vlastní seznam, **přebírá ten exekuční** z **§ 322 o. s. ř.**: obvyklé vybavení domácnosti, oděv, zdravotnické potřeby, snubní prsten, věci osobní povahy, hotovost do dvojnásobku životního minima, zvíře chované jako společník.\n\n**Ale pozor na větu za středníkem: „věci sloužící k podnikání dlužníka však z majetkové podstaty vyloučeny nejsou\", nerozhodne-li insolvenční soud jinak.**\n\nTo je zásadní obrat proti exekuci. Živnostníkovi-truhláři exekutor nářadí, kterým se živí, vzít nesmí (§ 322 odst. 3 o. s. ř.). **V insolvenci ho sepsat musíte**, ledaže soud rozhodne jinak.\n\nDůvod je logický: exekuce má dlužníka nechat vydělávat, aby splácel dál. Konkurs jeho podnikání ukončuje a nářadí je pak majetek jako každý jiný."
+   },
+   {
+    "nadpis": "Příjmy: kolik se strhává",
+    "text": "**§ 207 odst. 2 ins. zák.:** příjmy dlužníka náleží do podstaty **ve stejném rozsahu, v jakém z nich mohou být při výkonu rozhodnutí uspokojeny přednostní pohledávky**.\n\nZase se tedy počítá podle exekučních pravidel — nezabavitelná částka, vyživované osoby, dvě třetiny zbytku u přednostních pohledávek.\n\nU oddlužení plněním splátkového kalendáře proto **nevymýšlíte nic vlastního**: spočítáte srážku tak, jak by ji spočítal exekutor u přednostní pohledávky, a to je částka, kterou plátce mzdy posílá vám.\n\nDvě věci, které se hlídají:\n\n— **Změna počtu vyživovaných osob** mění nezabavitelnou částku. Dlužník ji má oznámit, vy ji máte kontrolovat.\n\n— **Více příjmů** se sčítá — druhý úvazek, dohody, důchod. Zatajený druhý příjem je klasický důvod ke zrušení oddlužení podle § 418.\n\nU dlužníka ve výkonu trestu se podle § 36 odst. 6 ins. zák. peníze zaslané věznicí po rozhodnutí o úpadku považují za **jeho příjem**."
+   },
+   {
+    "nadpis": "Vyškrtnutí ze soupisu versus vyloučení z podstaty",
+    "text": "Dvě podobně znějící věci ze dvou různých světů; u zkoušky se pletou.\n\n**V exekuci — návrh na vyškrtnutí věci ze soupisu (§ 68 ex. řádu).** Třetí osoba tvrdí, že sepsaná věc je její. Podává návrh **exekutorovi** do 30 dnů; nevyhoví-li, následuje vylučovací žaloba u exekučního soudu.\n\n**V insolvenci — vylučovací žaloba (§ 225 ins. zák.).** Osoba tvrdící, že majetek neměl být sepsán, se u **insolvenčního soudu** domáhá jeho vyloučení z podstaty. Žaluje **vás**, a to ve lhůtě **30 dnů** od doručení vyrozumění o soupisu.\n\nA teď to, co stojí lidi majetek — **§ 225 odst. 3: nebyla-li žaloba podána včas, platí, že majetek je do soupisu pojat oprávněně.** Totéž když ji soud zamítne, odmítne, nebo řízení zastaví.\n\nJe to prekluze. Pro vás z toho plyne povinnost, kterou je potřeba dělat poctivě: **vyrozumět o soupisu každého, kdo k věci uplatňuje právo**, a poznamenat si datum doručení. Spor o to, jestli vyrozumění dorazilo, prohrajete vy."
+   }
+  ]
+ },
+ {
+  "id": "pr-povoleni",
+  "oblast": "Vaše profese",
+  "nazev": "Povolení, seznam a zánik práva vykonávat funkci",
+  "pramen": "§ 3, § 4, § 6, § 12 a § 13 zákona č. 312/2006 Sb.",
+  "body": [
+   {
+    "nadpis": "Čím to právo vzniká",
+    "text": "**§ 3 odst. 1 zákona o insolvenčních správcích:** právo vykonávat činnost insolvenčního správce vzniká **dnem nabytí právní moci povolení** vydaného Ministerstvem spravedlnosti.\n\nNevzniká tedy složením zkoušky — ta je jen jednou z podmínek — a nevzniká ani zápisem do seznamu; zápis povolení následuje.\n\nPořadí je: **zkouška → návrh ministerstvu → povolení → zápis do seznamu → kolečko podle § 25 odst. 2 ins. zák.**\n\n**§ 6 odst. 1** vypočítává, co musí fyzická osoba splnit, aby povolení dostala — vedle složené zkoušky především **vysokoškolské vzdělání magisterského studijního programu**, **bezúhonnost**, **plnou svéprávnost** a **pojištění odpovědnosti**.\n\n**Zvláštní povolení** je samostatná kategorie pro dlužníky podle § 3 odst. 2 téhož zákona (banky, pojišťovny, velké účetní jednotky) a pro reorganizace. Vyžaduje **zvláštní zkoušku**. Obecná zkouška, na kterou se připravujete, vás pouští do obecné části seznamu."
+   },
+   {
+    "nadpis": "Provozovny — proč je správci mají po celé republice",
+    "text": "Seznam vede ministerstvo a zapisuje se do něj **sídlo a provozovny**. To není administrativní podrobnost, ale ekonomika celého povolání.\n\nKolečko podle **§ 25 odst. 2 ins. zák.** běží **zvlášť pro obvod každého krajského soudu** a pořadí v něm určuje **den zápisu sídla nebo provozovny** do příslušné části seznamu. Kdo má provozovnu v pěti krajích, je v pěti kolečkách a dostane pětkrát víc případů.\n\nProto se objevily provozovny, které byly jen cedulkou na dveřích — a proto přišla **vyhláška č. 121/2019 Sb.**, o materiálním vybavení a standardech výkonu funkce. Ta stanoví, jak má provozovna vypadat, jaké musí mít **úřední hodiny** a jak má být dostupná pro věřitele i dlužníky.\n\nPorušení těch standardů se posuzuje jako **porušení povinností správce** se vším, co k tomu patří — zproštění podle § 32 ins. zák. i dohled ministerstva."
+   },
+   {
+    "nadpis": "Kdy o to právo přijdete",
+    "text": "**§ 12** vypočítává, kdy právo vykonávat činnost **zaniká ze zákona** — smrtí, omezením svéprávnosti, pravomocným odsouzením za úmyslný trestný čin, zánikem pojištění odpovědnosti, uplynutím doby povolení.\n\n**§ 13** říká, kdy ho ministerstvo **zruší** — na vlastní žádost, při opakovaném nebo závažném porušení povinností, při ztrátě některé z podmínek pro jeho vydání.\n\nOboje se promítá do běžících řízení přes **§ 31 odst. 3 a 4 ins. zák.**:\n\n— **zaniklo-li nebo bylo-li pozastaveno** právo, soud vás odvolat **může**,\n\n— **bylo-li zrušeno povolení**, soud vás odvolat **musí**.\n\nA připomínka, kterou je potřeba mít v hlavě i po odchodu z funkce: **§ 31 odst. 6 ins. zák.** — odpovědnost za dobu výkonu funkce odvoláním **nezaniká**. Proto se pojištění podle § 23 ins. zák. sjednává s krytím přesahujícím konec funkce; promlčecí lhůty podle § 37 odst. 4 běží ještě roky poté."
+   }
+  ]
+ },
+ {
+  "id": "pr-zkouska",
+  "oblast": "Vaše profese",
+  "nazev": "Zkouška insolvenčního správce",
+  "pramen": "§ 1 až § 9 vyhlášky č. 312/2007 Sb.",
+  "body": [
+   {
+    "nadpis": "Z čeho se skládá a co se zkouší",
+    "text": "**§ 3 odst. 1 vyhlášky:** zkouška sestává z **písemné a ústní části**; zvláštní zkouška insolvenčního správce **jen z ústní**.\n\n**§ 3 odst. 2** vypočítává oblasti, ze kterých se znalosti zjišťují. Je jich **sedm**:\n\na) **občanské, obchodní a pracovní právo**,\n\nb) **občanské právo procesní**,\n\nc) **insolvenční právo**,\n\nd) **správní právo včetně správního řízení**,\n\ne) **finanční právo včetně daňového řízení**,\n\nf) **řízení podniku** a\n\ng) **účetnictví a financování**.\n\nStojí za to si ten výčet přečíst pozorně, protože **neodpovídá rozdělení otázek** v tréninkové bance. Ta má čtyři okruhy — audit, daně, obecné právo a exekuce, insolvence. **Správní právo a řízení podniku v ní prakticky nejsou**, a přitom je vyhláška jmenuje. Na ně se připravujte jinudy; písemný test z nich vychází málo, ale ústní část a případová studie se jich dotknou."
+   },
+   {
+    "nadpis": "Komise a průběh",
+    "text": "**§ 7 odst. 1:** zkušební komise jsou **pětičlenné**, členy jmenuje a odvolává **ministr spravedlnosti** a musí mít ukončené vysokoškolské vzdělání. Podle **odst. 2** je komise usnášeníschopná, jsou-li přítomni **nejméně 3** členové.\n\nPro vás jako uchazeče je podstatné, že **písemná část předchází ústní** a že se postupuje v tomto pořadí — neprojdete-li písemnou, k ústní se nedostanete.\n\nNa písemnou část cílí appka s otázkami: **70 otázek, 56 správně, tedy 80 %**. Otázky mají **více správných variant** a počítají se jen při přesné shodě celé sady.\n\nPo testu následuje **případová studie** a **ústní část**. Ty tréninkem otázek nepokryjete — tam se ptá na souvislosti, na postup v konkrétní situaci a právě na ty oblasti, které v bance chybí.\n\nPodrobnosti o opakování zkoušky, lhůtách a omluvě má vyhláška v dalších paragrafech; než se přihlásíte, přečtěte si ji celou, je krátká."
+   }
+  ]
+ },
+ {
+  "id": "pr-odmena",
+  "oblast": "Vaše profese",
+  "nazev": "Odměna správce — konkrétní sazby",
+  "pramen": "§ 1, § 2a, § 3 a § 7 vyhlášky č. 313/2007 Sb., § 38 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Konkurs: dvě složky, které se sčítají",
+    "text": "**§ 1 odst. 1 vyhlášky č. 313/2007 Sb.:** v konkursu je odměna **součtem** částky podle odstavce 2 a odstavce 3.\n\n**Z výtěžku zpeněžení jednotlivého předmětu zajištění** (odst. 2) — počítá se z částky určené k vydání zajištěnému věřiteli:\n\n— do 1 mil. Kč … **9 %**\n\n— 1 až 10 mil. … 90 000 Kč + **4 %** z částky nad 1 mil.\n\n— 10 až 50 mil. … 450 000 Kč + **3 %** nad 10 mil.\n\n— 50 až 500 mil. … 1 650 000 Kč + **2 %** nad 50 mil.\n\n— nad 500 mil. … 10 650 000 Kč + **1 %** nad 500 mil.\n\nZa jednotlivý předmět zajištění se přitom považuje i **funkční celek** tvořený souborem věcí, práv či hodnot — což je u výrobního areálu zásadní rozdíl oproti počítání po kusech.\n\n**Z výtěžku pro nezajištěné věřitele** (odst. 3) jsou sazby vyšší, protože téhle práce je víc: do 500 tis. **25 %**, 500 tis. až 1 mil. 125 000 Kč + **20 %** nad 500 tis., 1 až 5 mil. 225 000 Kč + **15 %** nad 1 mil., a dál klesá."
+   },
+   {
+    "nadpis": "Tisícovka za přihlášku — a záchranná spodní hranice",
+    "text": "**§ 2a vyhlášky:** vedle toho náleží odměna **z počtu přezkoumaných přihlášek**, a to **1 000 Kč za každou**, nejvýše však **1 000 000 Kč** celkem.\n\nZa přezkoumanou se považuje ta přihláška, kterou jste **zařadil do seznamu přihlášených pohledávek**. Nestačí ji tedy dostat do schránky.\n\nA teď věta, která rozhoduje o tom, jestli se prázdný konkurs dá vůbec unést: **je-li způsobem řešení konkurs a nedošlo-li ke zpeněžení, náleží odměna z počtu přezkoumaných přihlášek nejméně 45 000 Kč.**\n\nTedy i u firmy se zmizelým jednatelem a prázdným účtem, kde jste odpracoval stovky hodin a neprodal nic, máte nárok na 45 tis.\n\nZaplatí se ale jen z toho, co je — pořadí zdrojů podle **§ 38 odst. 2 ins. zák.** je podstata, pak **záloha na náklady** (§ 108), a teprve nestačí-li ani ta, **stát do 50 000 Kč na odměnu a 50 000 Kč na hotové výdaje**."
+   },
+   {
+    "nadpis": "Oddlužení: paušály za měsíc",
+    "text": "**§ 3 vyhlášky** rozlišuje podle způsobu:\n\n**Oddlužení zpeněžením majetkové podstaty** (odst. 1) — částka podle § 1, tedy jako v konkursu, **nejméně však 45 000 Kč**.\n\n**Oddlužení plněním splátkového kalendáře se zpeněžením podstaty** (odst. 2) — tady jsou paušály, které budete mít v hlavě:\n\n— **1 650 Kč** za každý započatý kalendářní měsíc **od rozhodnutí o povolení oddlužení do rozhodnutí o jeho schválení**,\n\n— **750 Kč** za každý započatý měsíc **po schválení**,\n\n— a k tomu podíl z **výtěžku zpeněžení** určeného nezajištěným věřitelům: do 500 tis. **15 %**, 500 tis. až 1 mil. 75 000 Kč + **9 %** nad 500 tis., a dál.\n\nVšimněte si té vyšší sazby za první, krátké období — odměňuje práci kolem přezkumu, která se nasčítá bez ohledu na to, kolik se nakonec splatí.\n\n**§ 7 odst. 2:** poštovné, telekomunikační poplatky, opisy a fotokopie se hradí v prokázané výši, **nejvýše však do 5 % odměny**. Cestovní náklady se řídí zvláštními předpisy.\n\nA nezapomeňte na **§ 38 odst. 6 ins. zák.** — ze splátek odkládáte **šestiměsíční rezervu** na svou odměnu na zvláštní účet."
+   }
+  ]
+ },
+ {
+  "id": "pr-dohled",
+  "oblast": "Vaše profese",
+  "nazev": "Dohled ministerstva a kárná odpovědnost",
+  "pramen": "§ 36 a násl. zákona č. 312/2006 Sb., § 32 a § 81 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Tři nezávislé cesty, kterými se za pochybení platí",
+    "text": "Je důležité je nemíchat, protože běží **vedle sebe** a jedna druhou nevylučuje.\n\n**1. Insolvenční soud v tom řízení.** Pořádková pokuta podle **§ 81 ins. zák.** až **200 000 Kč**, snížení odměny podle **§ 38 odst. 3**, a v krajním případě **zproštění funkce** podle § 32. Rozhoduje soudce, který váš spis zná.\n\n**2. Ministerstvo spravedlnosti.** Podle **§ 36 zákona o insolvenčních správcích** vykonává **dohled nad insolvenčními správci a hostujícími správci** — provádí kontrolu, vyžaduje podklady, a vede řízení, která mohou skončit **zrušením povolení** podle § 13. Dopad je na celou vaši praxi, ne na jediné řízení.\n\n**3. Náhrada škody.** **§ 37 ins. zák.**, objektivní odpovědnost s liberací, kterou musíte unést vy. Žalují věřitelé, dlužník nebo třetí osoby.\n\nJedno pochybení tedy umí spustit všechny tři najednou: soud vás zprostí, ministerstvo zahájí řízení a věřitelé podají žalobu. Pravomocné zproštění je přitom v té žalobě **velmi silný podklad** — vaše liberace podle § 37 odst. 1 se po něm prokazuje mimořádně těžko."
+   },
+   {
+    "nadpis": "Co dohled v praxi kontroluje",
+    "text": "Ze zkušenosti a ze standardů podle **vyhlášky č. 121/2019 Sb.** se pozornost soustředí na pár opakujících se věcí:\n\n— **Zvláštní účet pro každé řízení** (§ 36 odst. 5 ins. zák.). Smísení prostředků je nejrychlejší cesta ke zproštění a podle okolností i k § 206 trestního zákoníku.\n\n— **Čtvrtletní zprávy** (§ 36 odst. 2). Jejich absence je viditelná z rejstříku na první pohled a je to první věc, které si soud všimne.\n\n— **Skutečná existence provozovny** a dodržování úředních hodin.\n\n— **Pojištění odpovědnosti** po celou dobu funkce (§ 23 ins. zák.) a v dostatečné výši.\n\n— **Nečinnost.** Řízení, ve kterém se rok nic nestalo, si vyžádá vysvětlení.\n\n— **Lhůty, které propadnou.** Odpůrčí žaloba po roce od účinků rozhodnutí o úpadku (§ 239 odst. 3) nebo promlčené pohledávky dlužníka — obojí je škoda, kterou lze vyčíslit.\n\nNejlepší obrana je přitom prostá a nedá se dohnat zpětně: **vést spis tak, aby z něj bylo vidět, jak jste k rozhodnutí došel.** Nabídky, oslovení zájemci, důvody, konzultace s věřitelským výborem. Důkazní břemeno u liberace nesete vy."
+   }
+  ]
+ },
+ {
+  "id": "tr-poskozeni",
+  "oblast": "Trestní zákoník",
+  "nazev": "Poškození a zvýhodnění věřitele",
+  "pramen": "§ 222 a § 223 trestního zákoníku, § 240 až § 242 ins. zák.",
+  "body": [
+   {
+    "nadpis": "Poškození věřitele — § 222",
+    "text": "**§ 222 odst. 1 tr. zákoníku:** kdo, byť i jen částečně, **zmaří uspokojení svého věřitele** tím, že zničí, poškodí, zatají, zcizí, učiní neupotřebitelnou nebo odstraní část svého majetku, předstírá neexistující dluh, uzná nebo zmenší svůj majetek jinak — bude potrestán.\n\nOdstavec 2 míří na druhou stranu: kdo totéž udělá s **majetkem cizího dlužníka** a zmaří tím uspokojení jeho věřitele.\n\nTo je přesně ten případ z Truhlárny Bureš: jednatel převedl tři měsíce před úpadkem dvě CNC frézy v hodnotě 1,1 mil. na firmu manželky za 40 tis.\n\n**Trestní odpovědnost běží samostatně vedle insolvenční.** Máte proti tomu tři nástroje najednou, a ten třetí není ve vaší moci:\n\n— **odpůrčí žaloba** podle § 240 ins. zák. proti nabyvateli — majetek zpátky do podstaty,\n\n— **§ 66 z. o. k.** proti jednateli — doplnění podstaty,\n\n— **trestní oznámení** — to podává kdokoli a rozhoduje o něm orgán činný v trestním řízení.\n\nTrestní rovina se vyplatí znát i proto, že **odsouzení za úmyslný trestný čin** prodlužuje podle § 37 odst. 4 ins. zák. promlčecí lhůtu u náhrady škody až na **10 let od skončení insolvenčního řízení**."
+   },
+   {
+    "nadpis": "Zvýhodnění věřitele — § 223",
+    "text": "**§ 223 odst. 1 tr. zákoníku:** kdo **jako dlužník, který je v úpadku**, zmaří, byť i jen částečně, uspokojení svého věřitele **zvýhodněním jiného věřitele**, a způsobí tím na cizím majetku škodu nikoli malou, bude potrestán.\n\nVšimněte si té vložené podmínky — **dlužník musí být v úpadku**. Platit vybrané dodavatele dřív, než se do úpadku dostane, trestné není; je to běžné podnikání.\n\nTypický scénář: firma má na účtu 400 tis., dluží deseti dodavatelům a je zjevně v úpadku. Jednatel zaplatí dva, s nimiž chce dál obchodovat, a ostatní ne.\n\nInsolvenční protějšek je **§ 241 ins. zák.** — zvýhodňující právní úkon, kterým se některému věřiteli dostane vyššího uspokojení, než jaké by měl v konkursu. Lhůta **1 rok**, u osob blízkých a koncernu **3 roky**.\n\nRozdíl, který je potřeba mít v hlavě: **odpůrčí žaloba nepotřebuje úmysl ani škodu „nikoli malou\"**, trestní odpovědnost obojí ano. Proto odpůrčí žalobou uspějete častěji než trestním oznámením — a proto je vaší hlavní cestou ona, ne ono."
+   }
+  ]
+ },
+ {
+  "id": "tr-upadek",
+  "oblast": "Trestní zákoník",
+  "nazev": "Způsobení úpadku, maření funkce správce a pletichy",
+  "pramen": "§ 224 až § 227 trestního zákoníku",
+  "body": [
+   {
+    "nadpis": "Způsobení úpadku — § 224, trestné i z nedbalosti",
+    "text": "**§ 224 odst. 1 tr. zákoníku:** kdo si **byť i z hrubé nedbalosti** přivodí úpadek tím, že činí nepřiměřené výdaje, hazardní hry, sázky nebo riskantní obchody, spotřebovává nepřiměřeně podstatnou část majetku, poskytuje ze svého majetku půjčky nebo úvěry jiné osobě, ač to neodpovídá jeho majetkovým poměrům, anebo zanedbává správu svého majetku.\n\n**Tohle je jediný z úpadkových deliktů, který nevyžaduje úmysl.** Stačí hrubá nedbalost — a to je pro posouzení chování jednatele před úpadkem zásadní.\n\nOdstavec 2 přidává zrcadlovou skutkovou podstatu pro toho, kdo **přivodí úpadek jiné osobě** ve stejném výčtu jednání.\n\nZ vaší strany to znamená, že při zjišťování příčin úpadku nehledáte jen převody majetku. Hledáte i **zanedbanou správu**: nevedené účetnictví, nevymáhané pohledávky, neplacené pojistné, ignorované výzvy — dohromady to může naplnit § 224 a současně § 66 z. o. k.\n\nOba nároky stojí na téže skutkové práci, takže podklad, který připravíte pro žalobu, obvykle unese i trestní oznámení."
+   },
+   {
+    "nadpis": "Porušení povinnosti v insolvenčním řízení — § 225",
+    "text": "**§ 225 tr. zákoníku:** kdo v insolvenčním řízení **maří nebo hrubě ztěžuje výkon funkce insolvenčního správce**, a tím ohrozí účel insolvenčního řízení, bude potrestán odnětím svobody.\n\n**Tohle je paragraf, který chrání přímo vás.** A budete ho potřebovat častěji, než by se zdálo.\n\nSituace, které pod něj spadají: jednatel nevydá účetnictví, zatajuje majetek, nepřebírá poštu a je nekontaktní, odmítá součinnost podle § 210 ins. zák., odveze ze dvora stroje, mění zámky.\n\nPostup v praxi je odstupňovaný a stojí za to ho dodržet:\n\n1. **písemná výzva k součinnosti** s odkazem na § 210 ins. zák. a lhůtou,\n\n2. **návrh soudu na pořádkovou pokutu** podle § 81, případně na předvedení,\n\n3. teprve pak **trestní oznámení** podle § 225.\n\nTa posloupnost není formalita — doloží, že jste vyčerpal mírnější prostředky, a tím podstatně zvýší šanci, že se oznámením někdo bude zabývat."
+   },
+   {
+    "nadpis": "Pletichy a prohlášení o majetku — § 226 a § 227",
+    "text": "**§ 226 odst. 1 — pletichy v insolvenčním řízení:** kdo **jako věřitel** v souvislosti s **hlasováním věřitelů** přijme nebo si dá slíbit v rozporu se zásadami a pravidly insolvenčního řízení majetkový nebo jiný prospěch, bude potrestán.\n\nMíří to na kupování hlasů — typicky před schůzí, kde se rozhoduje o **výměně správce podle § 29 ins. zák.** nebo o způsobu řešení úpadku. Dopadá to na obě strany: na toho, kdo prospěch přijme, i na toho, kdo ho poskytne nebo slíbí.\n\nJe to zároveň důvod, proč si u hlasování o své výměně všímejte, **odkud se vzaly hlasy** — nafouknuté přihlášky spřízněných osob jsou běžnější než úplatek, ale obojí se potkává.\n\n**§ 227 — porušení povinnosti učinit pravdivé prohlášení o majetku:** kdo v řízení před soudem nebo jiným orgánem veřejné moci **odmítne splnit zákonnou povinnost učinit prohlášení o majetku**, vyhýbá se jí, nebo v něm uvede nepravdivé či hrubě zkreslené údaje.\n\nV insolvenci na to narazíte u **seznamů podle § 104 ins. zák.** — seznam majetku, závazků a zaměstnanců, které dlužník připojuje k návrhu a stvrzuje jejich správnost a úplnost. Zatajený majetek v tom seznamu není jen důvodem ke zrušení oddlužení podle § 418; může být i tímhle trestným činem."
+   }
+  ]
+ },
+ {
+  "id": "zp-mzdy",
+  "oblast": "Zaměstnanci v insolvenci",
+  "nazev": "Mzdy zaměstnanců a úřad práce",
+  "pramen": "§ 169 odst. 1 písm. a) a § 246 ins. zák., zákon č. 118/2000 Sb.",
+  "body": [
+   {
+    "nadpis": "Správce se stává zaměstnavatelem",
+    "text": "**§ 246 odst. 1 ins. zák.** to říká výslovně: prohlášením konkursu **vystupujete vůči dlužníkovým zaměstnancům jako zaměstnavatel**.\n\nTo není nic symbolického. Od toho dne:\n\n— **podepisujete výpovědi a dohody** o rozvázání pracovního poměru,\n\n— odpovídáte za **mzdovou agendu, odvody a daň** ze závislé činnosti,\n\n— jednáte s **odborovou organizací** (ta podle § 20 odst. 2 ins. zák. zastupuje zaměstnance při uplatňování pracovněprávních pohledávek),\n\n— vydáváte **potvrzení o zaměstnání** a podklady pro úřad práce.\n\nPadne-li výrobní podnik se 140 zaměstnanci, je tohle v prvních týdnech vaše hlavní práce — ne soupis majetku.\n\nA podle **§ 37 odst. 2 ins. zák.** odpovídáte i za škodu, kterou způsobí **zaměstnanci dlužníka** působící v rozsahu své dosavadní činnosti. Proto se při provozu podniku dělá nejdřív inventura, omezení podpisových práv a změna přístupů do banky."
+   },
+   {
+    "nadpis": "Mzdy se platí mimo pořadí",
+    "text": "**§ 169 odst. 1 písm. a) ins. zák.:** **pracovněprávní pohledávky dlužníkových zaměstnanců** jsou pohledávkami **postavenými naroveň pohledávkám za majetkovou podstatou**.\n\nUspokojují se tedy **v plné výši, kdykoli po rozhodnutí o úpadku** — ne poměrně a ne v rozvrhu. Tohle je ta výjimka ze „zásadně poměrného\" uspokojení z § 1 ins. zák., kterou vysvětlujete dodavatelům, kteří dostanou 11 %.\n\nZaměstnanci přitom **nemusí pohledávku přihlašovat** — vycházíte z mzdové evidence, kterou jste převzal. Přihláška je na místě tam, kde je nárok sporný nebo kde ho zaměstnanec vyčísluje jinak než evidence.\n\nPořadí mezi pohledávkami za podstatou navzájem řeší **§ 305**, nestačí-li podstata na všechny.\n\nPraktická past: **mzdy za období po prohlášení konkursu**, kdy podnik dál běží, jsou provozní náklad podstaty. Rozhodnete-li se provoz udržet, počítejte s nimi dopředu — § 37 odst. 3 vás činí odpovědným, pokud jste mohl poznat, že na ně podstata nebude."
+   },
+   {
+    "nadpis": "Co zaplatí úřad práce",
+    "text": "**Zákon č. 118/2000 Sb., o ochraně zaměstnanců při platební neschopnosti zaměstnavatele**, dává zaměstnancům druhou cestu, nezávislou na tom, co je v podstatě.\n\nZaměstnanec si o mzdové nároky požádá **úřad práce**, ten mu je vyplatí a vstupuje do jeho práv vůči dlužníkovi.\n\nDva limity, které je dobré znát, protože se na ně zaměstnanci ptají vás:\n\n— **§ 5 odst. 1:** mzdové nároky lze uplatnit nejvýše v rozsahu odpovídajícím **splatným mzdovým nárokům za 3 kalendářní měsíce** rozhodného období.\n\n— **§ 5 odst. 2:** celková výše vyplacená jednomu zaměstnanci nesmí za jeden měsíc překročit **jedenapůlnásobek rozhodné částky**, kterou vyhlašuje ministerstvo.\n\n**§ 3** vymezuje, kdo je pro ten zákon zaměstnancem — vedle pracovního poměru i ten, s kým zaměstnavatel sjednal **dohodu o provedení práce**, zakládá-li účast na nemocenském pojištění.\n\nVaše role: úřad práce si od vás vyžádá **podklady o nevyplacených nárocích**. Dodat je včas je součást součinnosti — a zaměstnancům tím zkrátíte čekání o měsíce, protože na rozvrh by jinak čekali roky."
+   }
+  ]
  }
 ]

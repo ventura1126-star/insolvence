@@ -151,10 +151,18 @@ kódování) a ty se publikují spolu s `artefakt/index.html`. Vygenerované skr
 jsou mimo repo, stránka i data v něm jsou.
 
 Vedle zákona má Artifact sekci **Mimo insolvenční zákon** (`temata.json`) —
-21 témat ze ZOK a z občanského zákoníku, která do insolvenční praxe zasahují:
-péče řádného hospodáře, § 66 ZOK, diskvalifikace, zajištění a jeho druhy,
-odporovatelnost, započtení, SJM. Každý bod má vlastní rozhovor i tisk, stejně
-jako odstavec zákona.
+30 témat / 91 bodů z předpisů, které do insolvenční praxe zasahují:
+
+| Oblast | Témat |
+|---|---:|
+| Zákon o obchodních korporacích | 9 |
+| Občanský zákoník | 12 |
+| Exekuce a výkon rozhodnutí | 2 |
+| Vaše profese (zák. o IS, vyhlášky o zkoušce a odměně) | 4 |
+| Trestní zákoník (úpadkové delikty) | 2 |
+| Zaměstnanci v insolvenci | 1 |
+
+Každý bod má vlastní rozhovor i tisk, stejně jako odstavec zákona.
 
 Táž stránka jede na dvou místech. Jako **Artifact** s rozhovory a jako **čtecí
 verze** na <https://ventura1126-star.github.io/insolvence/zakon/> bez nich —
