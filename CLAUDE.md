@@ -20,9 +20,10 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 - Artifact (s rozhovory): <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>
 - Čtecí verze: <https://ventura1126-star.github.io/insolvence/zakon/>
 - Kód: `artefakt/index.html` (jedna stránka, prostý HTML/JS, bez frameworku)
-- Data: `artefakt/zakon.json`, `artefakt/vyklad.json`, `artefakt/temata.json`
+- Data: `artefakt/zakon.json`, `vyklad.json`, `temata.json`, `pohledavky.json`
 - Náplň: znění zákona, výklad po odstavcích, témata mimo insolvenční zákon,
-  rozhovory s Claudem, tisk
+  přehled typů pohledávek (`#pohledavky` — tři osy třídění, rozbalovací karty
+  a deset cvičení), rozhovory s Claudem, tisk
 - Rozhovory: jeden sdílený **postranní panel** (na širokém displeji sloupec
   vedle textu, na telefonu přes celou obrazovku), každé vlákno má **název** a
   všechna se dají najít v přehledu **Moje rozhovory** (`#rozhovory`). Ukládají

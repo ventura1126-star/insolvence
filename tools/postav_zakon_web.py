@@ -18,7 +18,7 @@ KOREN = Path(__file__).resolve().parent.parent
 ZDROJ = KOREN / "artefakt"
 CIL = KOREN / "docs/zakon"
 
-SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js"]
+SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js"]
 
 
 def main():

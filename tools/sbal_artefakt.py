@@ -21,6 +21,7 @@ SOUBORY = [
     ("zakon.js", "zakon.json", "ZAKON"),
     ("vyklad.js", "vyklad.json", "VYKLAD"),
     ("temata.js", "temata.json", "TEMATA"),
+    ("pohledavky.js", "pohledavky.json", "POHLEDAVKY"),
 ]
 
 

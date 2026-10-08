@@ -1,0 +1,260 @@
+{
+ "pohledy": [
+  {
+   "id": "poradi",
+   "nazev": "Pořadí uspokojení",
+   "perex": "Kdo dostane zaplaceno dřív a z čeho. Zajištění věřitelé jedou po vlastní koleji — z výtěžku své zástavy; všichni ostatní se dělí o to, co zbude.",
+   "koleje": [
+    {
+     "nazev": "Vlastní kolej: ze zástavy",
+     "popis": "Mimo rozvrh, z výtěžku konkrétního předmětu zajištění.",
+     "typy": [
+      "zajistene"
+     ]
+    },
+    {
+     "nazev": "Hlavní kolej: ze zbytku podstaty",
+     "popis": "Shora dolů. Na nižší stupeň se jde, až když je ten nad ním uspokojen celý.",
+     "typy": [
+      "za-podstatou",
+      "naroveň",
+      "nezajistene",
+      "podrizene",
+      "spolecnici"
+     ]
+    },
+    {
+     "nazev": "Mimo hru",
+     "popis": "Neuspokojí se žádným způsobem řešení úpadku.",
+     "typy": [
+      "vyloucene"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uplatneni",
+   "nazev": "Jak se uplatňuje",
+   "perex": "Druhá osa, která se s pořadím plete. Ne každá pohledávka se přihlašuje — a kdo spletl cestu, obvykle přijde o peníze.",
+   "koleje": [
+    {
+     "nazev": "Přihláškou u insolvenčního soudu",
+     "popis": "Ve lhůtě určené rozhodnutím o úpadku. Zmeškání je neprominutelné.",
+     "typy": [
+      "zajistene",
+      "nezajistene",
+      "podminene",
+      "podrizene"
+     ]
+    },
+    {
+     "nazev": "Písemně vůči osobě s dispozičními oprávněními",
+     "popis": "Tedy vůči správci v konkursu, vůči dlužníku v reorganizaci. Žádná lhůta a žádný přezkum.",
+     "typy": [
+      "za-podstatou",
+      "naroveň"
+     ]
+    },
+    {
+     "nazev": "Neuplatňují se vůbec",
+     "popis": "Zákon s nimi počítá, ale přihlásit je nelze.",
+     "typy": [
+      "spolecnici"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prezkum",
+   "nazev": "Stav po přezkumu",
+   "perex": "Třetí osa. Týká se jen přihlášených pohledávek — co se uplatňuje podle § 203, se nepřezkoumává.",
+   "koleje": [
+    {
+     "nazev": "Výsledek přezkumu",
+     "popis": "O tom, co se dostane do rozvrhu, rozhoduje tenhle stav.",
+     "typy": [
+      "zjistena",
+      "popr-pravost",
+      "popr-vyse",
+      "popr-poradi"
+     ]
+    },
+    {
+     "nazev": "Podle toho, kdo musí žalovat",
+     "popis": "Nejčastější chyba v praxi: zaměnit si směr žaloby a propásnout třicetidenní lhůtu.",
+     "typy": [
+      "nevykonatelna",
+      "vykonatelna"
+     ]
+    },
+    {
+     "nazev": "Zvláštní stavy",
+     "popis": "",
+     "typy": [
+      "podminene",
+      "neprihlizi"
+     ]
+    }
+   ]
+  }
+ ],
+ "typy": {
+  "za-podstatou": {
+   "nazev": "Pohledávky za majetkovou podstatou",
+   "pramen": "§ 168, § 203, § 305",
+   "zkratka": "Plná výše, kdykoli po rozhodnutí o úpadku. Nepřihlašují se.",
+   "popis": "Náklady, bez kterých by řízení nešlo vést. **§ 168 odst. 1** vypočítává ty, které vznikly **po zahájení řízení nebo po vyhlášení moratoria** — odměna a výdaje předběžného správce, odměna likvidátora a členů věřitelského výboru, náhrada zálohy na náklady řízení zaplacené jinou osobou než dlužníkem, pohledávky z moratorních smluv a **z úvěrového financování**.\n\n**§ 168 odst. 2** pak ty, které vznikly **po rozhodnutí o úpadku**: vaše odměna a hotové výdaje, **náklady spojené s udržováním a správou podstaty**, odměna znalce ustanoveného soudem, a **daně, poplatky, pojistné na sociální zabezpečení a zdravotní pojištění**.\n\nUspokojují se **v plné výši, kdykoli po rozhodnutí o úpadku** (§ 168 odst. 3), tedy průběžně, ne až v rozvrhu.",
+   "pozor": "**Nepřihlašují se.** Podle § 203 se uplatňují **písemně vůči osobě s dispozičními oprávněními** — v konkursu tedy vůči vám. Věřitel, který je omylem přihlásí, nic neztratí jen tehdy, uplatní-li je i správně.\n\nRozhodující je **okamžik vzniku**, ne okamžik splatnosti. Faktura za elektřinu spotřebovanou před úpadkem se přihlašuje, i když dorazí až po něm.\n\nNestačí-li podstata na všechny, platí **§ 305 odst. 2**: nejdřív **odměna a hotové výdaje správce**, pak pohledávky věřitelů z úvěrového financování, a teprve potom poměrně zbytek."
+  },
+  "naroveň": {
+   "nazev": "Pohledávky postavené naroveň",
+   "pramen": "§ 169, § 203, § 305",
+   "zkratka": "Platí se stejně jako za podstatou. Taky se nepřihlašují.",
+   "popis": "Pohledávky, které vznikly **před** řízením, ale zákon jim dává stejné zacházení jako pohledávkám za podstatou — z důvodů sociálních nebo proto, že někdo podstatu zhodnotil.\n\n**§ 169 odst. 1** jmenuje zejména:\n\n— **pracovněprávní pohledávky zaměstnanců**,\n\n— pohledávky na **náhradu škody způsobené na zdraví**,\n\n— pohledávky **Úřadu práce** za mzdy vyplacené zaměstnancům a za náhradní výživné,\n\n— pohledávky z **penzijního připojištění se státním příspěvkem**,\n\n— pohledávky na **výživném ze zákona**,\n\n— náhradu nákladů, které **třetí osoby vynaložily na zhodnocení podstaty**, mají-li z toho pohledávku z bezdůvodného obohacení.\n\n**§ 169 odst. 2** přidává pohledávky z **prozatímního a nového financování** podle zákona o preventivní restrukturalizaci.",
+   "pozor": "Zaměstnanci **nemusí nic uplatňovat**: podle **§ 203 odst. 2** se jejich pracovněprávní pohledávka pokládá za uplatněnou ve výši vyplývající z vaší evidence, neuplatní-li ji v jiné výši.\n\nVedle toho běží **zákon č. 118/2000 Sb.** — zaměstnanec si může požádat úřad práce, ten mu vyplatí nejvýše **3 měsíce** a nejvýš **1,5násobek rozhodné částky** měsíčně a vstoupí do jeho práv.\n\nProtože se nepřihlašují, **nemají hlasovací právo** (§ 51 odst. 4). Zájem zaměstnanců ve výboru zní jen poradním hlasem odborové organizace (§ 67)."
+  },
+  "zajistene": {
+   "nazev": "Zajištěné pohledávky",
+   "pramen": "§ 2 písm. g), § 166, § 167, § 298",
+   "zkratka": "Z výtěžku své zástavy, mimo rozvrh. Přihlašují se.",
+   "popis": "Věřitel, jehož pohledávku zajišťuje **majetek náležející do majetkové podstaty**, a to **jen** zástavním právem, zadržovacím právem, omezením převodu nemovitosti, zajišťovacím převodem práva nebo postoupením pohledávky k zajištění (§ 2 písm. g).\n\nUspokojuje se **ze zpeněžení toho konkrétního předmětu zajištění** (§ 167 odst. 1), v pořadí svých zajištění.\n\n**§ 298 odst. 2:** z výtěžku se nejdřív odečtou **náklady spojené se správou a zpeněžením** a **částka připadající na odměnu správce**, zbytek se vydá zajištěnému věřiteli.",
+   "pozor": "**Ručení není zajištění** a zástava poskytnutá třetí osobou také ne — rozhoduje, jestli zastavený majetek leží **v podstatě**. Kdo má jen ručitele, je u vás nezajištěný věřitel.\n\n**§ 166:** zajištění se musí **dovolat v přihlášce**, uvést okolnosti a druh zajištění i dobu jeho vzniku. Kdo to neudělá, je nezajištěný, i kdyby zástavu měl.\n\n**§ 167 odst. 3:** je-li podle znaleckého posudku hodnota zajištění nižší než pohledávka, je zajištěnou jen do výše hodnoty zajištění — zbytek je nezajištěný.\n\nNestačí-li výtěžek zástavy, zbytek pohledávky se uspokojuje jako **nezajištěný, poměrně v rozvrhu**."
+  },
+  "nezajistene": {
+   "nazev": "Nezajištěné přihlášené pohledávky",
+   "pramen": "§ 165, § 173, § 306",
+   "zkratka": "Poměrně, až v rozvrhu. To je většina věřitelů.",
+   "popis": "Běžné pohledávky dodavatelů, bank bez zajištění, nájemců, odběratelů. Uplatňují se **přihláškou** (§ 173) a uspokojují se podle způsobu řešení úpadku — **rozvrhem v konkursu**, plněním splátkového kalendáře v oddlužení, podle plánu v reorganizaci (§ 165 odst. 1).\n\n**§ 306 odst. 3:** všichni věřitelé zahrnutí do rozvrhu se uspokojují **poměrně vzhledem k výši pohledávky tak, jak byla zjištěna**.\n\nJe to ta skupina, které se týká věta z § 1 o „co nejvyšším a zásadně poměrném uspokojení\" — a která v konkursu obvykle vidí jednotky až desítky procent.",
+   "pozor": "Rozhoduje **zjištěná**, ne přihlášená výše. Popřená a neúspěšně žalovaná část do rozvrhu nejde.\n\n**§ 178** je past na nadhodnocené přihlášky: je-li zjištěná výše nižší než **50 %** přihlášené, k pohledávce se **nepřihlíží ani v rozsahu, ve kterém byla zjištěna**, a soud věřiteli uloží zaplatit ve prospěch podstaty částku, o kterou přihlášená převýšila zjištěnou.\n\nNadsazovat přihlášku se tedy nevyplácí — a jako správce na to věřitele při přezkumu upozorňujete."
+  },
+  "podrizene": {
+   "nazev": "Podřízené pohledávky",
+   "pramen": "§ 172",
+   "zkratka": "Až po úplném uhrazení všech ostatních. Prakticky nikdy.",
+   "popis": "**§ 172 odst. 2:** podřízená je pohledávka, která má být **podle smlouvy** uspokojena až po uspokojení jiné nebo ostatních pohledávek dlužníka.\n\nUhradit je lze teprve **po úplném uhrazení všech pohledávek, kterých se řízení týká** (s výjimkou těch podle § 170) — tedy prakticky nikdy, protože v insolvenci z definice nestačí ani na ostatní.\n\nMezi sebou se uspokojují **podle dohodnuté nebo stanovené míry podřízenosti**, jinak poměrně (odst. 3).",
+   "pozor": "**Přihlašují se** jako ostatní, jen s uvedením, že jde o podřízenou pohledávku.\n\n**Nemají hlasovací právo** (§ 51 odst. 4) — logicky, protože o výsledku řízení pro ně nerozhoduje nic.\n\nPotkáte je u koncernových struktur, kde mateřská společnost financovala dceru podřízeným úvěrem, a u některých dluhopisů."
+  },
+  "spolecnici": {
+   "nazev": "Pohledávky společníků z účasti",
+   "pramen": "§ 172 odst. 4",
+   "zkratka": "Neuplatňují se vůbec. Uspokojí se až po podřízených.",
+   "popis": "Pohledávky společníků nebo členů dlužníka **vyplývající z jejich účasti ve společnosti nebo v družstvu** — typicky podíl na likvidačním zůstatku, nevyplacený podíl na zisku.\n\n**§ 172 odst. 4** říká, že se v insolvenčním řízení **neuplatňují**, ale uspokojí se až po uspokojení jiných pohledávek, tedy po podřízených.",
+   "pozor": "Nepleťte si to s **běžnou pohledávkou společníka** z jiného důvodu. Půjčil-li společník firmě peníze smlouvou o zápůjčce, je to normální přihlašovaná pohledávka — jen u ní pozor na § 53 odst. 1, protože jako osoba blízká nebo koncernová **nesmí hlasovat**.\n\nRozhoduje tedy **důvod vzniku**: z účasti ve společnosti → neuplatňuje se; ze samostatného právního jednání → přihláškou."
+  },
+  "vyloucene": {
+   "nazev": "Pohledávky vyloučené z uspokojení",
+   "pramen": "§ 170",
+   "zkratka": "Neuspokojí se žádným způsobem řešení úpadku.",
+   "popis": "**§ 170** vypočítává, co se v insolvenčním řízení neuspokojí vůbec:\n\na) **úroky, úroky z prodlení a poplatek z prodlení z přihlášených pohledávek vzniklých před rozhodnutím o úpadku, pokud přirostly až po něm**,\n\nb) tytéž u pohledávek, které se staly splatnými až po rozhodnutí o úpadku,\n\nc) pohledávky z **darovacích smluv**,\n\nd) **mimosmluvní sankce** postihující majetek dlužníka — s výjimkou penále za nezaplacené daně, poplatky a pojistné,\n\ne) **smluvní pokuty**, vzniklo-li právo na jejich uplatnění až po rozhodnutí o úpadku,\n\nf) **náklady účastníků vzniklé jim účastí v insolvenčním řízení**.",
+   "pozor": "Písmeno a) je nejčastější zdroj popírání: **úročení se rozhodnutím o úpadku zastavuje**. Věřitel, který přihlásí úroky až do dne přihlášky, má v té části pohledávku vyloučenou.\n\nVýjimku má **zajištěný věřitel** podle § 171 — jeho pohledávka se v rozsahu zajištění za podmínek tam uvedených dál úročí.\n\nPísmeno f) znamená, že **svoje náklady na účast v řízení si každý platí sám** — cestovné na schůzi, právníka na přezkum."
+  },
+  "zjistena": {
+   "nazev": "Zjištěná pohledávka",
+   "pramen": "§ 201",
+   "zkratka": "Prošla přezkumem. Jen ta jde do rozvrhu.",
+   "popis": "**§ 201 odst. 1:** pohledávka je zjištěna, jestliže ji **nepopřel insolvenční správce ani žádný z přihlášených věřitelů**, nebo ji nepopřel správce a soud odmítl popření věřitelem, anebo o ní tak rozhodl soud v incidenčním sporu.\n\nZjištěná výše je ta, se kterou se pracuje dál — **§ 306 odst. 3** rozděluje poměrně podle ní, ne podle přihlášené.",
+   "pozor": "**Popření dlužníkem** má v konkursu jiný účinek než v oddlužení. V konkursu nebrání zjištění; v oddlužení podle § 410 ano.\n\nVýsledek přezkumu zapisujete **do seznamu přihlášených pohledávek**, který tvoří součást zápisu o přezkumném jednání (§ 197 odst. 1)."
+  },
+  "popr-pravost": {
+   "nazev": "Popření pravosti",
+   "pramen": "§ 193",
+   "zkratka": "Namítá se, že pohledávka vůbec není.",
+   "popis": "**§ 193:** o popření co do pravosti jde tehdy, je-li namítáno, že pohledávka **nevznikla**, že již **zcela zanikla**, anebo že se **zcela promlčela**.\n\nTo je nejsilnější popření — míří na existenci pohledávky jako takovou.",
+   "pozor": "Promlčení je ten důvod, který musíte u každé starší přihlášky zvážit sám. Uznáte-li promlčenou pohledávku, ředíte tím ostatní věřitele a je to porušení péče podle § 36 odst. 1.\n\nPopřít lze **pravost, výši i pořadí** a popření lze **vzít zpět** (§ 192 odst. 1). Při přezkumném jednání můžete **změnit stanovisko**, které jste zaujal v seznamu (§ 192 odst. 2)."
+  },
+  "popr-vyse": {
+   "nazev": "Popření výše",
+   "pramen": "§ 194",
+   "zkratka": "Dluh je nižší než přihlášená částka.",
+   "popis": "**§ 194:** o popření co do výše jde tehdy, je-li namítáno, že **dlužníkův závazek je nižší než přihlášená částka**. Kdo popírá výši, **musí zároveň uvést, jaká je ve skutečnosti**.\n\nNelze tedy jen říct „je to míň\" — musíte doplnit částku.",
+   "pozor": "**§ 196 odst. 1:** popření výše **nemá vliv na pořadí** pohledávky, a popření pořadí nemá vliv na pravost ani výši. Jsou to tři nezávislé roviny.\n\nA znovu **§ 178**: zjistí-li se výše nižší než **50 %** přihlášené, k pohledávce se nepřihlíží vůbec a věřitel ještě platí rozdíl do podstaty."
+  },
+  "popr-poradi": {
+   "nazev": "Popření pořadí",
+   "pramen": "§ 195, § 196 odst. 2",
+   "zkratka": "Pohledávka patří do horší skupiny, než tvrdí.",
+   "popis": "**§ 195:** o popření co do pořadí jde tehdy, je-li namítáno, že pohledávka má **méně výhodné pořadí**, než uvádí přihláška, nebo že je popíráno **právo na uspokojení ze zajištění**.\n\nTypicky: věřitel se označí za zajištěného, ale zástava do podstaty nepatří — nebo ji vůbec nedoložil podle § 166.",
+   "pozor": "**§ 196 odst. 2** má tvrdý účinek: popření práva na uspokojení ze zajištění má u zajištěného věřitele, který může pohledávku uspokojit **pouze z poskytnutého majetku**, tytéž účinky jako popření pravosti.\n\nPopření pořadí tedy není kosmetická úprava — u některých věřitelů znamená, že v řízení nedostanou nic."
+  },
+  "nevykonatelna": {
+   "nazev": "Nevykonatelná pohledávka",
+   "pramen": "§ 198",
+   "zkratka": "Popřel jsi ji? Žaluje věřitel, do 30 dnů.",
+   "popis": "Pohledávka bez exekučního titulu — běžná faktura, smlouva, uznání dluhu.\n\n**§ 198 odst. 1:** popřel-li ji insolvenční správce, může věřitel uplatnit své právo **žalobou na určení u insolvenčního soudu do 30 dnů od přezkumného jednání**.\n\nŽalobcem je tedy **věřitel**, žalovaným vy.",
+   "pozor": "**§ 198 odst. 2:** v žalobě může věřitel uplatnit jako důvod vzniku pohledávky **jen skutečnosti, které uvedl nejpozději do skončení přezkumného jednání**. Nemůže si tedy u soudu vymyslet nový právní důvod.\n\n**§ 197 odst. 2:** věřitele, jehož **nevykonatelná** pohledávka byla popřena, musíte (vy nebo soud) při jednání **poučit** o právu podat žalobu. Nepřítomného věřitele vyrozumíte písemně — a tohle je povinnost, jejíž opomenutí se vám vrátí."
+  },
+  "vykonatelna": {
+   "nazev": "Vykonatelná pohledávka",
+   "pramen": "§ 191 odst. 2, § 199",
+   "zkratka": "Popřel jsi ji? Žaluješ TY, do 30 dnů. Obrácený směr.",
+   "popis": "Pohledávka přiznaná pravomocným rozhodnutím, rozhodčím nálezem, notářským zápisem se svolením k vykonatelnosti.\n\n**§ 191 odst. 2:** za vykonatelnou se při přezkumném jednání pokládá každá pohledávka, u které věřitel prokáže, že se stala vykonatelnou **nejpozději ke dni rozhodnutí o úpadku**.\n\n**§ 199 odst. 1:** popřel-li jste vykonatelnou pohledávku, **podáte žalobu vy** — do **30 dnů** od přezkumného jednání nebo od právní moci rozhodnutí o schválení zprávy o přezkumu.",
+   "pozor": "**Tohle je nejčastější fatální chyba v praxi: zaměnit směr žaloby.** U nevykonatelné žaluje věřitel, u vykonatelné žalujete vy. Kdo to splete, propásne třicetidenní lhůtu a pohledávka se zjistí tak, jak byla přihlášena.\n\n**§ 199 odst. 2:** u pohledávky přiznané **pravomocným rozhodnutím** lze jako důvod popření pravosti nebo výše uplatnit **jen skutečnosti, které nebyly uplatněny dlužníkem v řízení**, které rozhodnutí předcházelo. Nelze tedy znovu otevírat to, co už soud rozhodl — a nelze namítat jen jiné právní posouzení."
+  },
+  "podminene": {
+   "nazev": "Podmíněná pohledávka",
+   "pramen": "§ 173 odst. 3, § 183 odst. 3",
+   "zkratka": "Ručitelé a spoludlužníci. Hlasovat nesmějí.",
+   "popis": "Přihlásit lze i pohledávku **vázanou na podmínku**.\n\n**§ 183 odst. 3:** osoby, od kterých může věřitel požadovat plnění — tedy **ručitelé, spoludlužníci a poskytovatelé zástavy** — mohou pohledávku, která by jim proti dlužníku vznikla uspokojením věřitele, přihlásit **jako podmíněnou**.\n\nTím se zabrání tomu, aby byla táž pohledávka v podstatě uspokojena dvakrát.",
+   "pozor": "**§ 50 odst. 1:** ke hlasu vázanému na splnění podmínky **se nepřihlíží**, a podle § 51 odst. 4 nemá takový věřitel hlasovací právo do splnění odkládací podmínky.\n\n**§ 191 odst. 1:** pohledávky přihlášené jako podmíněné osobami podle § 183 se přezkoumávají zvláštním způsobem.\n\nPlní-li ručitel až po přezkumu, **vstupuje do práv věřitele** v rozsahu plnění a soud rozhodne o jeho vstupu."
+  },
+  "neprihlizi": {
+   "nazev": "Pohledávka, k níž se nepřihlíží",
+   "pramen": "§ 173 odst. 1, § 178, § 185",
+   "zkratka": "Jako by nebyla. Nejtvrdší následek v celém zákoně.",
+   "popis": "**§ 185:** nastane-li skutečnost, na jejímž základě se k přihlášce nebo k přihlášené pohledávce nepřihlíží, insolvenční soud **přihlášku odmítne** a účast věřitele v řízení tím končí.\n\nNastává zejména:\n\n— **po uplynutí přihlašovací lhůty** určené rozhodnutím o úpadku (§ 173 odst. 1) — k opožděné přihlášce se nepřihlíží a **lhůtu nelze prominout**,\n\n— při **nadhodnocení o víc než polovinu** podle § 178,\n\n— při neodstranění vad přihlášky.",
+   "pozor": "Tohle je věta, kterou budete věřitelům opakovat nejčastěji a nejnepříjemněji. **Zmeškaná přihlašovací lhůta je neprominutelná** — neplatí tu § 58 o. s. ř. o prominutí zmeškání.\n\nProto se vyplatí **vyrozumět známé věřitele** aktivně, jakmile převezmete účetnictví. Zákon vám to u tuzemských věřitelů neukládá, ale zabrání to pozdějším sporům o tom, že se o řízení nedozvěděli."
+  }
+ },
+ "cviceni": [
+  {
+   "zadani": "Dodavatel dodal materiál tři týdny po prohlášení konkursu, na vaši objednávku.",
+   "odpoved": "za-podstatou",
+   "vysvetleni": "Vzniklo po rozhodnutí o úpadku jako náklad na správu a provoz — § 168 odst. 2. Nepřihlašuje se, uplatní se písemně vůči vám podle § 203."
+  },
+  {
+   "zadani": "Dodavatel dodal materiál tři týdny PŘED zahájením řízení, faktura dorazila až po něm.",
+   "odpoved": "nezajistene",
+   "vysvetleni": "Rozhoduje okamžik vzniku, ne doručení faktury. Běžná nezajištěná pohledávka, přihláškou podle § 173."
+  },
+  {
+   "zadani": "Banka má zástavní právo k domu dlužníkovy matky.",
+   "odpoved": "nezajistene",
+   "vysvetleni": "Dům není v majetkové podstatě, takže podle § 2 písm. g) nejde o zajištěného věřitele. Z domu se banka uspokojí mimo insolvenci, u vás stojí ve frontě."
+  },
+  {
+   "zadani": "Věřitel přihlásil jistinu 400 tis. a k ní úroky z prodlení napočítané až do dne přihlášky, tedy osm měsíců po rozhodnutí o úpadku.",
+   "odpoved": "vyloucene",
+   "vysvetleni": "Jistina je běžná pohledávka, ale úroky přirostlé po rozhodnutí o úpadku se podle § 170 písm. a) neuspokojují vůbec. V té části přihlášku popřete."
+  },
+  {
+   "zadani": "Zaměstnanec má nevyplacenou mzdu za dva měsíce před úpadkem.",
+   "odpoved": "naroveň",
+   "vysvetleni": "§ 169 odst. 1 písm. a). Nepřihlašuje se — podle § 203 odst. 2 se pokládá za uplatněnou ve výši z vaší evidence."
+  },
+  {
+   "zadani": "Mateřská společnost půjčila dceři podřízeným úvěrem 5 mil. a přihlásila je.",
+   "odpoved": "podrizene",
+   "vysvetleni": "§ 172 odst. 2. Přihlašuje se, ale uhradí se až po všech ostatních, tedy prakticky nikdy. A jako koncernová osoba nesmí podle § 53 odst. 1 hlasovat."
+  },
+  {
+   "zadani": "Věřitel přihlásil 900 tis. s pravomocným rozsudkem. Podle účetnictví dlužníka je dluh jen 600 tis. a vy to popřete.",
+   "odpoved": "vykonatelna",
+   "vysvetleni": "Je vykonatelná, takže žalobu podáváte VY do 30 dnů (§ 199 odst. 1). A pozor na odst. 2 — namítat lze jen to, co dlužník neuplatnil v tom předchozím řízení."
+  },
+  {
+   "zadani": "Společník přihlásil nevyplacený podíl na zisku za rok 2024.",
+   "odpoved": "spolecnici",
+   "vysvetleni": "Pohledávka z účasti ve společnosti se podle § 172 odst. 4 vůbec neuplatňuje. Kdyby šlo o jeho zápůjčku firmě, přihlašovala by se normálně."
+  },
+  {
+   "zadani": "Věřitel přihlásil 1 mil., v přezkumu se zjistilo 300 tis.",
+   "odpoved": "neprihlizi",
+   "vysvetleni": "Zjištěno méně než 50 % přihlášené částky — podle § 178 se k pohledávce nepřihlíží ani v té zjištěné části a soud věřiteli uloží zaplatit rozdíl ve prospěch podstaty."
+  },
+  {
+   "zadani": "Jednatel ručil za firemní úvěr a banka po něm chce plnění. Chce si to pojistit i ve vašem řízení.",
+   "odpoved": "podminene",
+   "vysvetleni": "Přihlásí pohledávku jako podmíněnou podle § 183 odst. 3 — pro případ, že za dlužníka plní. Do splnění podmínky nemá hlasovací právo (§ 51 odst. 4)."
+  }
+ ]
+}

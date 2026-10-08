@@ -165,6 +165,11 @@ Vedle zákona má Artifact sekci **Mimo insolvenční zákon** (`temata.json`) �
 
 Každý bod má vlastní rozhovor i tisk, stejně jako odstavec zákona.
 
+Vedle toho je tam **přehled typů pohledávek** (`pohledavky.json`, obrazovka
+`#pohledavky`) — 15 typů tříděných po třech osách, mezi kterými se přepíná:
+pořadí uspokojení, způsob uplatnění a stav po přezkumu. Karty se rozbalují na
+výklad a na „pozor na“, a na konci je deset situací z praxe k zařazení.
+
 Táž stránka jede na dvou místech. Jako **Artifact** s rozhovory a jako **čtecí
 verze** na <https://ventura1126-star.github.io/insolvence/zakon/> bez nich —
 prohlížečka artefaktů na claude.ai se na starším iOS neotevře, takže na telefon

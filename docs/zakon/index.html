@@ -213,6 +213,108 @@
     margin: 0 0 .1rem;
   }
 
+  /* ---- přehled pohledávek --------------------------------------------- */
+  .radek-prehled { border-bottom-color: var(--pecet); }
+
+  .osy { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0 1.2rem; }
+  .osa {
+    appearance: none;
+    border: 1px solid var(--linka);
+    background: none;
+    color: var(--tlum);
+    font: inherit;
+    font-size: .88rem;
+    border-radius: 999px;
+    padding: .4rem .9rem;
+    cursor: pointer;
+  }
+  .osa:hover { color: var(--inkoust); }
+  .osa-vybrana {
+    border-color: var(--pecet);
+    background: var(--pecet);
+    color: var(--papir);
+  }
+  .osa:focus-visible { outline: 2px solid var(--pecet); outline-offset: 2px; }
+  .osa-perex { color: var(--tlum); font-size: .95rem; margin: 0 0 1.5rem; }
+
+  .kolej { margin-bottom: 2.2rem; }
+  .kolej-nazev {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 .2rem;
+  }
+  .kolej-popis { color: var(--tlum); font-size: .88rem; margin: 0 0 .9rem; }
+  .kolej-cislo {
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--pecet);
+    font-variant-numeric: tabular-nums;
+    margin-top: .6rem;
+  }
+
+  .typ {
+    border: 1px solid var(--linka);
+    border-radius: .7rem;
+    margin-bottom: .55rem;
+    background: var(--plocha);
+    overflow: hidden;
+  }
+  .typ-otevreny { border-color: var(--pecet); }
+  .typ-hlava {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .9rem;
+    width: 100%;
+    text-align: left;
+    appearance: none;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    padding: .8rem .9rem;
+    cursor: pointer;
+  }
+  .typ-hlava:hover { background: var(--vyklad-plocha); }
+  .typ-hlava:focus-visible { outline: 2px solid var(--pecet); outline-offset: -2px; }
+  .typ-nazev { display: block; font-size: 1rem; font-weight: 600; }
+  .typ-zkratka { display: block; margin-top: .15rem; font-size: .85rem; color: var(--tlum); }
+  .typ-pramen { font-size: .76rem; color: var(--pecet); white-space: nowrap; }
+  .typ-telo { padding: 0 .9rem 1rem; border-top: 1px solid var(--linka); }
+  .typ-telo > p { font-size: .95rem; }
+  .typ-telo > p:first-child { margin-top: .9rem; }
+  .typ-pozor {
+    margin-top: .9rem;
+    padding: .8rem .9rem;
+    border-radius: .6rem;
+    background: var(--vyklad-plocha);
+  }
+  .typ-pozor p { font-size: .93rem; margin: 0 0 .7rem; }
+  .typ-pozor p:last-child { margin-bottom: 0; }
+
+  .cviceni { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--linka); }
+  .uloha { margin-bottom: 1.4rem; }
+  .uloha-zadani {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.02rem;
+    line-height: 1.45;
+    margin: 0 0 .5rem;
+  }
+  .uloha-reseni {
+    border-left: 2px solid var(--pecet);
+    padding-left: .9rem;
+  }
+  .uloha-typ {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--pecet);
+    margin-bottom: .35rem;
+  }
+  .uloha-reseni p { font-size: .93rem; margin: 0; }
+
   /* ---- paragraf ------------------------------------------------------- */
   .p-cislo {
     font-size: .8rem;
@@ -604,6 +706,7 @@
 <script src="zakon.js"></script>
 <script src="vyklad.js"></script>
 <script src="temata.js"></script>
+<script src="pohledavky.js"></script>
 <script>
 (function () {
   'use strict';
@@ -611,6 +714,7 @@
   var ZAKON = window.ZAKON || [];
   var VYKLAD = window.VYKLAD || {};
   var TEMATA = window.TEMATA || [];
+  var POHLEDAVKY = window.POHLEDAVKY || null;
   var BEZ_CISLA = '-';
 
   // Schopnosti dorazí až po chvíli a nemusí dorazit vůbec (jiný prohlížeč,
@@ -763,6 +867,17 @@
         nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
         return;
       }
+      if (POHLEDAVKY) {
+        var kartaP = el('button', 'radek radek-tema radek-prehled');
+        kartaP.type = 'button';
+        kartaP.appendChild(el('span', 'radek-nazev', 'Typy pohledávek — přehled'));
+        kartaP.appendChild(el('span', 'radek-pramen',
+          Object.keys(POHLEDAVKY.typy).length + ' typů'));
+        kartaP.addEventListener('click', function () { location.hash = '#pohledavky'; });
+        vypis.appendChild(el('h2', 'cast', 'Přehledy'));
+        vypis.appendChild(kartaP);
+      }
+
       if (TEMATA.length) {
         vypis.appendChild(el('h2', 'cast', 'Mimo insolvenční zákon'));
         var oblast = null;
@@ -1416,6 +1531,156 @@
       }
     }
   }
+  /* ---- přehled pohledávek ------------------------------------------------
+     Typy pohledávek jsou v zákoně roztroušené po desítkách paragrafů a tři
+     různé osy se přes sebe překládají: pořadí uspokojení, způsob uplatnění
+     a stav po přezkumu. Tahle obrazovka je dává vedle sebe a nechá mezi
+     osami přepínat — proto stojí stranou zákona i témat, ať se to neplete. */
+
+  function vykresliPohledavky() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Pohledávky';
+    listaStav.textContent = '';
+
+    if (!POHLEDAVKY) {
+      hlavni.appendChild(el('p', 'prazdno', 'Přehled pohledávek se nenačetl.'));
+      return;
+    }
+
+    hlavni.appendChild(el('h1', 'titul', 'Typy pohledávek'));
+    hlavni.appendChild(el('p', 'perex',
+      'Tytéž pohledávky se dají třídit třemi způsoby a ty se přes sebe ' +
+      'překládají. Přepni osu a podívej se na ně pokaždé jinak; klikni na ' +
+      'kartu a rozbalí se podrobnosti.'));
+
+    var prepinac = el('div', 'osy');
+    var obsahOsy = el('div');
+    hlavni.appendChild(prepinac);
+    hlavni.appendChild(obsahOsy);
+
+    var vybrana = POHLEDAVKY.pohledy[0].id;
+
+    function kartaTypu(id) {
+      var t = POHLEDAVKY.typy[id];
+      if (!t) return el('div');
+      var karta = el('div', 'typ');
+      var hlava = el('button', 'typ-hlava');
+      hlava.type = 'button';
+      hlava.setAttribute('aria-expanded', 'false');
+      var levo = el('span');
+      levo.appendChild(el('span', 'typ-nazev', t.nazev));
+      levo.appendChild(el('span', 'typ-zkratka', t.zkratka));
+      hlava.appendChild(levo);
+      hlava.appendChild(el('span', 'typ-pramen', t.pramen));
+      karta.appendChild(hlava);
+
+      var telo = el('div', 'typ-telo');
+      telo.hidden = true;
+      vlozText(telo, t.popis);
+      var pozor = el('div', 'typ-pozor');
+      pozor.appendChild(el('div', 'stitek', 'Pozor na'));
+      vlozText(pozor, t.pozor);
+      telo.appendChild(pozor);
+      var r = rozhovorProMisto('q-' + id, kontextPohledavky(id, t), 'Pohledávky · ' + t.nazev);
+      zivePrepinace.push(r);
+      telo.appendChild(r);
+      karta.appendChild(telo);
+
+      hlava.addEventListener('click', function () {
+        telo.hidden = !telo.hidden;
+        karta.classList.toggle('typ-otevreny', !telo.hidden);
+        hlava.setAttribute('aria-expanded', String(!telo.hidden));
+      });
+      return karta;
+    }
+
+    function prekresli() {
+      prepinac.textContent = '';
+      obsahOsy.textContent = '';
+
+      POHLEDAVKY.pohledy.forEach(function (p) {
+        var b = el('button', 'osa' + (p.id === vybrana ? ' osa-vybrana' : ''));
+        b.type = 'button';
+        b.textContent = p.nazev;
+        b.addEventListener('click', function () { vybrana = p.id; prekresli(); });
+        prepinac.appendChild(b);
+      });
+
+      var pohled = POHLEDAVKY.pohledy.filter(function (p) { return p.id === vybrana; })[0];
+      obsahOsy.appendChild(el('p', 'osa-perex', pohled.perex));
+
+      pohled.koleje.forEach(function (k) {
+        var skupina = el('section', 'kolej');
+        skupina.appendChild(el('h2', 'kolej-nazev', k.nazev));
+        if (k.popis) skupina.appendChild(el('p', 'kolej-popis', k.popis));
+        k.typy.forEach(function (id, i) {
+          if (vybrana === 'poradi' && k.typy.length > 1) {
+            skupina.appendChild(el('div', 'kolej-cislo', String(i + 1) + '.'));
+          }
+          skupina.appendChild(kartaTypu(id));
+        });
+        obsahOsy.appendChild(skupina);
+      });
+
+      obsahOsy.appendChild(cviceni());
+    }
+
+    function cviceni() {
+      var obal = el('section', 'cviceni');
+      obal.appendChild(el('h2', 'kolej-nazev', 'Zařaď pohledávku'));
+      obal.appendChild(el('p', 'kolej-popis',
+        'Deset situací z praxe. Rozmysli si odpověď a pak ji odkryj.'));
+      POHLEDAVKY.cviceni.forEach(function (c) {
+        var polozka = el('div', 'uloha');
+        polozka.appendChild(el('p', 'uloha-zadani', c.zadani));
+        var odkryt = el('button', 'rozbal');
+        odkryt.type = 'button';
+        odkryt.textContent = 'Odkrýt odpověď';
+        var reseni = el('div', 'uloha-reseni');
+        reseni.hidden = true;
+        var t = POHLEDAVKY.typy[c.odpoved];
+        reseni.appendChild(el('div', 'uloha-typ', t ? t.nazev : c.odpoved));
+        vlozText(reseni, c.vysvetleni);
+        odkryt.addEventListener('click', function () {
+          reseni.hidden = false;
+          odkryt.hidden = true;
+        });
+        polozka.appendChild(odkryt);
+        polozka.appendChild(reseni);
+        obal.appendChild(polozka);
+      });
+      return obal;
+    }
+
+    prekresli();
+    window.scrollTo(0, 0);
+    dootevri();
+  }
+
+  function kontextPohledavky(id, t) {
+    return [
+      'Jsi asistent pro přípravu na obecnou zkoušku insolvenčního správce v ČR.',
+      'Uživatel si prochází přehled typů pohledávek podle insolvenčního zákona',
+      '(č. 182/2006 Sb.) a ptá se na jeden z nich.',
+      '',
+      'Odpovídej česky, stručně a prakticky — co to znamená pro práci správce.',
+      'Kde si nejsi jistý, řekni to. Neuváděj paragrafy, které si nepamatuješ přesně.',
+      'Nepiš úvodní zdvořilosti, jdi rovnou k věci.',
+      '',
+      '--- TYP POHLEDÁVKY ---',
+      t.nazev + '  (' + t.pramen + ')',
+      t.zkratka,
+      '',
+      t.popis,
+      '',
+      '--- NA CO SI DÁT POZOR ---',
+      t.pozor,
+      '--- KONEC KONTEXTU ---'
+    ].join('\n');
+  }
+
   /* ---- témata mimo insolvenční zákon ------------------------------------
      Zkouška se neptá jen na insolvenční zákon. Tahle část drží témata ze
      zákona o obchodních korporacích a z občanského zákoníku, která do
@@ -1842,6 +2107,7 @@
     zavriPanel();
     var h = location.hash.replace(/^#/, '');
     if (h === 'rozhovory') vykresliRozhovory();
+    else if (h === 'pohledavky') vykresliPohledavky();
     else if (h.indexOf('t') === 0) vykresliTema(h.slice(1));
     else if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
     else vykresliObsah('');
