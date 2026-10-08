@@ -4,9 +4,38 @@
     {
       "name": "zkouska-web",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["expo", "start", "--web", "--port", "8082"],
+      "runtimeArgs": [
+        "expo",
+        "start",
+        "--web",
+        "--port",
+        "8082"
+      ],
       "port": 8082,
       "cwd": "zkouska"
+    },
+    {
+      "name": "artefakt",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-c",
+        "import http.server as h,functools;H=h.SimpleHTTPRequestHandler;H.extensions_map['.html']='text/html; charset=utf-8';H.extensions_map['.js']='text/javascript; charset=utf-8';h.test(functools.partial(H,directory='artefakt'),port=8090,bind='127.0.0.1')"
+      ],
+      "port": 8090
+    },
+    {
+      "name": "zakon-pages",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8091",
+        "--directory",
+        "docs",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "port": 8091
     }
   ]
 }

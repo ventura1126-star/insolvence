@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="cs">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insolvenční zákon v praxi</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -17,6 +21,10 @@
     --rozhovor: #3A5876;
     --rozhovor-plocha: #EDF1F5;
     --stin: 0 1px 2px rgba(26, 23, 20, .06);
+    /* Jen pro hru: lhůty, které se blíží, a hodnocení voleb. */
+    --hra-pozor: #9A6512;
+    --hra-kriticke: #B3261E;
+    --hra-dobre: #3D7A4C;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -30,6 +38,9 @@
       --rozhovor: #9DBDDC;
       --rozhovor-plocha: #1C222A;
       --stin: none;
+      --hra-pozor: #E0B062;
+      --hra-kriticke: #F08A80;
+      --hra-dobre: #8CC79B;
     }
   }
   :root[data-theme="dark"] {
@@ -43,6 +54,9 @@
     --rozhovor: #9DBDDC;
     --rozhovor-plocha: #1C222A;
     --stin: none;
+    --hra-pozor: #E0B062;
+    --hra-kriticke: #F08A80;
+    --hra-dobre: #8CC79B;
   }
 
   * { box-sizing: border-box; }
@@ -90,7 +104,7 @@
     font-weight: 600;
     letter-spacing: -.01em;
   }
-  .lista-stav { margin-left: auto; font-size: .8rem; color: var(--tlum); font-variant-numeric: tabular-nums; }
+  .lista-stav { margin-left: auto; font-size: .8rem; color: var(--tlum); font-variant-numeric: tabular-nums; white-space: nowrap; }
   .tisk-tlacitko {
     appearance: none;
     border: 1px solid var(--linka);
@@ -583,6 +597,218 @@
 
   .prazdno { color: var(--tlum); padding: 2rem 0; }
 
+  /* Odstavec, na který se skočilo z citace ve hře. */
+  .odstavec-cil .zneni {
+    background: var(--vyklad-plocha);
+    box-shadow: 0 0 0 .5rem var(--vyklad-plocha);
+    border-radius: .2rem;
+  }
+
+  /* ---- hra: jeden spis -------------------------------------------------
+     Stejné plochy a písmo jako zbytek stránky. Navíc tři barvy, které nesou
+     informaci: lhůta, která se blíží, lhůta, která hoří, a správná volba. */
+  .hra-karta {
+    border: 1px solid var(--linka);
+    background: var(--plocha);
+    border-radius: .75rem;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--stin);
+  }
+  .hra-karta > .stitek { margin-bottom: .5rem; }
+
+  .hra-den-radek { display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; }
+  .hra-den {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .hra-datum { color: var(--tlum); font-size: .92rem; font-variant-numeric: tabular-nums; }
+
+  .hra-osa {
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--linka);
+    margin: .8rem 0 .3rem;
+  }
+  .hra-osa-dnes {
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    border-radius: 3px;
+    background: var(--pecet);
+  }
+  .hra-osa-znacka {
+    position: absolute;
+    top: -4px;
+    width: 3px;
+    height: 14px;
+    margin-left: -1px;
+    border-radius: 1px;
+    background: var(--tlum);
+  }
+  .hra-osa-znacka.pozor { background: var(--hra-pozor); }
+  .hra-osa-znacka.kriticke { background: var(--hra-kriticke); }
+  .hra-osa-popis {
+    display: flex;
+    justify-content: space-between;
+    font-size: .72rem;
+    color: var(--tlum);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .hra-posun { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .9rem; }
+  .hra-posun .osa[disabled] { opacity: .4; cursor: default; }
+  .hra-posun .osa-vybrana[disabled] { opacity: .4; }
+  .hra-pozn { font-size: .82rem; color: var(--tlum); margin: .5rem 0 0; }
+
+  .hra-lhuty { margin-top: 1rem; border-top: 1px solid var(--linka); }
+  .hra-lhuta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .1rem .8rem;
+    padding: .55rem 0 .55rem .7rem;
+    border-bottom: 1px solid var(--linka);
+    border-left: 3px solid var(--linka);
+  }
+  .hra-lhuta-nazev { font-size: .93rem; font-weight: 500; }
+  .hra-lhuta-kdo { font-size: .78rem; color: var(--tlum); }
+  .hra-lhuta-zbyva { font-size: .85rem; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  .hra-lhuta-kdy { font-size: .78rem; color: var(--tlum); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .hra-lhuta.moje .hra-lhuta-nazev::after {
+    content: "vaše";
+    margin-left: .45rem;
+    font-size: .66rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--pecet);
+  }
+  .hra-lhuta.pozor { border-left-color: var(--hra-pozor); }
+  .hra-lhuta.pozor .hra-lhuta-zbyva { color: var(--hra-pozor); font-weight: 600; }
+  .hra-lhuta.kriticke { border-left-color: var(--hra-kriticke); }
+  .hra-lhuta.kriticke .hra-lhuta-zbyva { color: var(--hra-kriticke); font-weight: 600; }
+  .hra-lhuta.termin { border-left-style: dotted; }
+
+  .hra-udalost { border-color: var(--pecet); }
+  .hra-udalost-nadpis {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0 0 .6rem;
+  }
+  .hra-udalost > p, .hra-text p { font-size: .96rem; margin: 0 0 .75rem; }
+  .hra-podklad {
+    background: var(--vyklad-plocha);
+    border-radius: .6rem;
+    padding: .85rem .95rem;
+    margin: .3rem 0 1rem;
+  }
+  .hra-podklad p { font-size: .9rem; margin: 0 0 .55rem; }
+  .hra-podklad p:last-child { margin-bottom: 0; }
+
+  .hra-volby { display: flex; flex-direction: column; gap: .5rem; }
+  .hra-volba {
+    appearance: none;
+    width: 100%;
+    text-align: left;
+    font: inherit;
+    font-size: .95rem;
+    color: var(--inkoust);
+    background: var(--papir);
+    border: 1px solid var(--linka);
+    border-radius: .6rem;
+    padding: .7rem .85rem;
+    cursor: pointer;
+  }
+  .hra-volba:hover { border-color: var(--pecet); }
+  .hra-volba:focus-visible { outline: 2px solid var(--pecet); outline-offset: 1px; }
+
+  .hra-verdikt {
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: .35rem;
+  }
+  .hra-verdikt.spravne { color: var(--hra-dobre); }
+  .hra-verdikt.chyba { color: var(--hra-kriticke); }
+  .hra-verdikt.odlozeno { color: var(--hra-pozor); }
+  .hra-zvoleno { font-size: .88rem; color: var(--tlum); font-style: italic; margin: 0 0 .7rem; }
+
+  .hra-citace { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .6rem; }
+  .hra-cit {
+    font-size: .8rem;
+    color: var(--pecet);
+    border: 1px solid var(--linka);
+    border-radius: 999px;
+    padding: .15rem .6rem;
+    text-decoration: none;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  a.hra-cit:hover { border-color: var(--pecet); }
+  a.hra-cit:focus-visible { outline: 2px solid var(--pecet); outline-offset: 1px; }
+  span.hra-cit { color: var(--tlum); }
+
+  .hra-akce { display: flex; gap: .5rem; align-items: center; margin-top: 1rem; flex-wrap: wrap; }
+  .hra-akce .poslat { background: var(--pecet); }
+
+  .hra-radek {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .1rem .9rem;
+    padding: .55rem 0;
+    border-bottom: 1px solid var(--linka);
+    align-items: baseline;
+  }
+  .hra-radek:last-child { border-bottom: 0; }
+  .hra-radek-nazev { font-size: .93rem; }
+  .hra-radek-stav { grid-column: 1 / -1; font-size: .78rem; color: var(--tlum); }
+  .hra-castka { font-size: .9rem; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+  .hra-radek.soucet { font-weight: 600; border-top: 1px solid var(--inkoust); }
+  .hra-radek.odecet .hra-castka { color: var(--tlum); }
+
+  .hra-denik-zaznam { padding: .7rem 0; border-bottom: 1px solid var(--linka); }
+  .hra-denik-zaznam:last-child { border-bottom: 0; }
+  .hra-denik-kdy { font-size: .74rem; color: var(--tlum); font-variant-numeric: tabular-nums; margin-bottom: .15rem; }
+  .hra-denik-zaznam p { font-size: .9rem; margin: 0 0 .4rem; }
+  .hra-denik-zaznam .hra-verdikt { display: inline; margin-right: .4rem; }
+
+  .hra-skore {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .6rem;
+    margin-bottom: 1.25rem;
+  }
+  @media (min-width: 40rem) { .hra-skore { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .hra-dlazdice {
+    border: 1px solid var(--linka);
+    background: var(--plocha);
+    border-radius: .7rem;
+    padding: .8rem .9rem;
+  }
+  .hra-dlazdice-cislo {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+  .hra-dlazdice-popis { font-size: .8rem; color: var(--tlum); margin-top: .2rem; }
+  .hra-dlazdice.hlavni { border-color: var(--pecet); }
+  .hra-dlazdice.hlavni .hra-dlazdice-cislo { color: var(--pecet); }
+
+  .hra-zjednoduseni summary { cursor: pointer; font-size: .9rem; color: var(--tlum); }
+  .hra-zjednoduseni summary:hover { color: var(--inkoust); }
+  .hra-zjednoduseni ul { margin: .6rem 0 0; padding-left: 1.1rem; }
+  .hra-zjednoduseni li { font-size: .88rem; margin-bottom: .4rem; }
+
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
@@ -707,6 +933,7 @@
 <script src="vyklad.js"></script>
 <script src="temata.js"></script>
 <script src="pohledavky.js"></script>
+<script src="hra.js"></script>
 <script>
 (function () {
   'use strict';
@@ -715,6 +942,7 @@
   var VYKLAD = window.VYKLAD || {};
   var TEMATA = window.TEMATA || [];
   var POHLEDAVKY = window.POHLEDAVKY || null;
+  var HRA = window.HRA || null;
   var BEZ_CISLA = '-';
 
   // Schopnosti dorazí až po chvíli a nemusí dorazit vůbec (jiný prohlížeč,
@@ -867,6 +1095,15 @@
         nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
         return;
       }
+      if (POHLEDAVKY || HRA) vypis.appendChild(el('h2', 'cast', 'Přehledy'));
+      if (HRA) {
+        var kartaH = el('button', 'radek radek-tema radek-prehled');
+        kartaH.type = 'button';
+        kartaH.appendChild(el('span', 'radek-nazev', 'Hra: Insolvenční správce — jeden spis'));
+        kartaH.appendChild(el('span', 'radek-pramen', HRA.spis));
+        kartaH.addEventListener('click', function () { location.hash = '#hra'; });
+        vypis.appendChild(kartaH);
+      }
       if (POHLEDAVKY) {
         var kartaP = el('button', 'radek radek-tema radek-prehled');
         kartaP.type = 'button';
@@ -874,7 +1111,6 @@
         kartaP.appendChild(el('span', 'radek-pramen',
           Object.keys(POHLEDAVKY.typy).length + ' typů'));
         kartaP.addEventListener('click', function () { location.hash = '#pohledavky'; });
-        vypis.appendChild(el('h2', 'cast', 'Přehledy'));
         vypis.appendChild(kartaP);
       }
 
@@ -1781,7 +2017,7 @@
     zivePrepinace.forEach(function (r) { r.obnov(); });
   }
 
-  function vykresliParagraf(cislo) {
+  function vykresliParagraf(cislo, odstavec) {
     var p = podleCisla[cislo];
     hlavni.textContent = '';
     zivePrepinace = [];
@@ -1807,6 +2043,7 @@
 
     p.odstavce.forEach(function (o) {
       var blok = el('section', 'odstavec');
+      blok.setAttribute('data-odst', o.cislo || 'x');
 
       var zneni = el('p', 'zneni');
       if (o.cislo) zneni.appendChild(el('span', 'zneni-cislo', '(' + o.cislo + ') '));
@@ -1860,6 +2097,12 @@
     }
     hlavni.appendChild(prechod);
     window.scrollTo(0, 0);
+    var cil = odstavec && hlavni.querySelector('[data-odst="' + odstavec + '"]');
+    if (cil) {
+      cil.classList.add('odstavec-cil');
+      cil.scrollIntoView({ block: 'start' });
+      window.scrollBy(0, -70);   // pod lepkavou lištu
+    }
     dootevri();
   }
 
@@ -2002,7 +2245,7 @@
     if (tiskPanel) { zavriPanel(); return; }
 
     var h = location.hash.replace(/^#/, '');
-    var otevreny = h.indexOf('p') === 0 ? podleCisla[h.slice(1)] : null;
+    var otevreny = h.indexOf('p') === 0 ? podleCisla[h.slice(1).split('-')[0]] : null;
     var sVykladem = ZAKON.filter(maVyklad);
     var odstavcuSVykladem = 0;
     sVykladem.forEach(function (p) { odstavcuSVykladem += p.odstavce.length; });
@@ -2101,6 +2344,737 @@
     location.hash = '#rozhovory';
   });
 
+  /* ---- hra: jeden spis -------------------------------------------------
+     Minihra nad spisem Truhlárny Bureš. Scénář je celý v hra.json: události,
+     volby, lhůty a co která volba způsobí. Tady je jen stroj, který posouvá
+     čas, hlídá lhůty a na konci spočítá rozvrh. Peníze se počítají až na
+     konci z toho, co ve spisu zbylo — tak, jak by je počítal správce.
+
+     Postup se drží v localStorage, ale jen jako pohodlí: když úložiště nejde,
+     hra běží dál v paměti a skončí s obnovením stránky. */
+
+  var HRA_KLIC = 'iz-hra-bures';
+  var hraStav = null;
+  var hraScroll = null;
+
+  function kc(n) {
+    return Math.round(n).toLocaleString('cs-CZ') + ' Kč';
+  }
+
+  function hraDatum(den) {
+    var z = HRA.zacatek.split('-');
+    return new Date(Number(z[0]), Number(z[1]) - 1, Number(z[2]) + den);
+  }
+
+  var DNY_TYDNE = ['ne', 'po', 'út', 'st', 'čt', 'pá', 'so'];
+
+  function fmtDatum(den, sDnem) {
+    var d = hraDatum(den);
+    return (sDnem ? DNY_TYDNE[d.getDay()] + ' ' : '') +
+      d.getDate() + '. ' + (d.getMonth() + 1) + '. ' + d.getFullYear();
+  }
+
+  function denZData(d) {
+    var z = hraDatum(0);
+    return Math.round((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) -
+      Date.UTC(z.getFullYear(), z.getMonth(), z.getDate())) / 864e5);
+  }
+
+  /** Konec lhůty podle § 57 o. s. ř.: den vzniku se nepočítá, měsíce a roky
+      končí dnem se stejným číslem, a není-li ho, posledním dnem měsíce. */
+  function konecLhuty(spec, dnes) {
+    var od = spec.od != null ? spec.od : dnes;
+    if (spec.dny) return od + spec.dny;
+    if (spec.mesice || spec.roky) {
+      var d = hraDatum(od);
+      var m = (spec.mesice || 0) + 12 * (spec.roky || 0);
+      var cil = new Date(d.getFullYear(), d.getMonth() + m, 1);
+      var posledni = new Date(cil.getFullYear(), cil.getMonth() + 1, 0).getDate();
+      cil.setDate(Math.min(d.getDate(), posledni));
+      return denZData(cil);
+    }
+    return od;
+  }
+
+  function slij(cil, zdroj) {
+    Object.keys(zdroj).forEach(function (k) { cil[k] = zdroj[k]; });
+  }
+
+  function udalostHry(id) {
+    for (var i = 0; i < HRA.udalosti.length; i += 1) {
+      if (HRA.udalosti[i].id === id) return HRA.udalosti[i];
+    }
+    return null;
+  }
+
+  function veritelHry(id) {
+    for (var i = 0; i < HRA.veritele.length; i += 1) {
+      if (HRA.veritele[i].id === id) return HRA.veritele[i];
+    }
+    return null;
+  }
+
+  /* --- stav a jeho ukládání --- */
+
+  function novyStavHry() {
+    var s = {
+      verze: HRA.verze, den: 0, konec: false,
+      hotovo: {}, odlozene: [], otevrena: null, vysledek: null,
+      flags: {}, pricti: {}, lhuty: [], planovane: [], denik: [],
+      pocty: { zmeskane: 0, prohrane: 0, vyhrane: 0, chyby: 0 },
+      majetek: {}, veritele: {}
+    };
+    HRA.majetek.forEach(function (m) {
+      s.majetek[m.id] = { stav: m.stav, hodnota: m.hodnota, skryty: !!m.skryty, vytezek: 0 };
+    });
+    HRA.veritele.forEach(function (v) {
+      s.veritele[v.id] = {
+        stav: v.stav, skryty: !!v.skryty,
+        zjisteno: v.zjisteno != null ? v.zjisteno : v.castka
+      };
+    });
+    HRA.milniky.forEach(function (m) { s.planovane.push(JSON.parse(JSON.stringify(m))); });
+    provedEfekty(s, HRA.na_zacatku);
+    s.denik.push({
+      den: 0, hodnoceni: 'info', text: HRA.uvod,
+      citace: [{ par: '97', odst: '1' }, { par: '89', odst: '1' }]
+    });
+    return s;
+  }
+
+  function nactiHru() {
+    try {
+      var t = localStorage.getItem(HRA_KLIC);
+      var s = t ? JSON.parse(t) : null;
+      if (s && s.verze === HRA.verze) return s;
+    } catch (e) { /* soukromé okno, zakázané úložiště */ }
+    return null;
+  }
+
+  function ulozHru() {
+    try { localStorage.setItem(HRA_KLIC, JSON.stringify(hraStav)); }
+    catch (e) { /* nevadí — hra běží v paměti */ }
+  }
+
+  function smazHru() {
+    try { localStorage.removeItem(HRA_KLIC); } catch (e) {}
+  }
+
+  /* --- stroj --- */
+
+  function provedEfekty(s, ef) {
+    if (!ef) return;
+    if (ef.nastav) slij(s.flags, ef.nastav);
+    if (ef.pocty) Object.keys(ef.pocty).forEach(function (k) {
+      s.pocty[k] = (s.pocty[k] || 0) + ef.pocty[k];
+    });
+    if (ef.pricti) Object.keys(ef.pricti).forEach(function (k) {
+      s.pricti[k] = (s.pricti[k] || 0) + ef.pricti[k];
+    });
+    // Majetek, na který hra sáhne, se tím objeví v soupisu.
+    if (ef.majetek) Object.keys(ef.majetek).forEach(function (id) {
+      s.majetek[id].skryty = false;
+      slij(s.majetek[id], ef.majetek[id]);
+    });
+    if (ef.veritel) Object.keys(ef.veritel).forEach(function (id) {
+      slij(s.veritele[id], ef.veritel[id]);
+    });
+    (ef.lhuta || []).forEach(function (spec) {
+      s.lhuty = s.lhuty.filter(function (l) { return l.id !== spec.id; });
+      s.lhuty.push({
+        id: spec.id,
+        od: spec.od != null ? spec.od : s.den,
+        konec: konecLhuty(spec, s.den),
+        stav: 'bezi'
+      });
+    });
+    (ef.splnit || []).forEach(function (id) {
+      s.lhuty.forEach(function (l) { if (l.id === id && l.stav === 'bezi') l.stav = 'splnena'; });
+    });
+    (ef.pozdeji || []).forEach(function (p) {
+      var kopie = JSON.parse(JSON.stringify(p));
+      kopie.den = p.den != null ? p.den : s.den + p.za;
+      s.planovane.push(kopie);
+    });
+  }
+
+  function splnujePodminku(s, u) {
+    if (!u.podminka) return true;
+    return Object.keys(u.podminka).every(function (k) { return s.flags[k] === u.podminka[k]; });
+  }
+
+  function cekaNaRozhodnuti(s, u) {
+    return !(u.id in s.hotovo) && s.odlozene.indexOf(u.id) < 0 && splnujePodminku(s, u);
+  }
+
+  function aktivniUdalost(s) {
+    if (s.otevrena) return udalostHry(s.otevrena);
+    var nalez = null;
+    HRA.udalosti.forEach(function (u) {
+      if (u.den <= s.den && cekaNaRozhodnuti(s, u) && (!nalez || u.den < nalez.den)) nalez = u;
+    });
+    return nalez;
+  }
+
+  function dalsiZastaveni(s) {
+    var cil = HRA.konec.den;
+    HRA.udalosti.forEach(function (u) {
+      if (u.den > s.den && cekaNaRozhodnuti(s, u)) cil = Math.min(cil, u.den);
+    });
+    return cil;
+  }
+
+  function zapisDoDeniku(s, z) {
+    s.denik.push({
+      den: s.den, nadpis: z.nadpis || '', volba: z.volba || '',
+      text: z.text, citace: z.citace || [], hodnoceni: z.hodnoceni || 'info'
+    });
+  }
+
+  /** Co se stane, když den skončí: doběhnou lhůty a naplánované události. */
+  function zpracujDen(s) {
+    s.planovane.sort(function (a, b) { return a.den - b.den; });
+    var dnes = s.planovane.filter(function (p) { return p.den <= s.den; });
+    s.planovane = s.planovane.filter(function (p) { return p.den > s.den; });
+    dnes.forEach(function (p) {
+      zapisDoDeniku(s, p);
+      provedEfekty(s, p.efekty);
+    });
+
+    s.lhuty.forEach(function (l) {
+      if (l.stav !== 'bezi' || l.konec >= s.den) return;
+      var def = HRA.lhuty[l.id];
+      if (def.termin) { l.stav = 'probehl'; return; }
+      l.stav = 'uplynula';
+      var pk = def.pri_konci;
+      if (def.udalost) {
+        // Vlastní lhůta správce: propadne jen to, co pořád leží odložené.
+        if (s.odlozene.indexOf(def.udalost) < 0) return;
+        l.stav = 'zmeskana';
+        s.odlozene = s.odlozene.filter(function (id) { return id !== def.udalost; });
+        s.hotovo[def.udalost] = -1;
+      }
+      if (pk) {
+        zapisDoDeniku(s, { text: pk.text, citace: pk.citace, hodnoceni: pk.hodnoceni });
+        provedEfekty(s, pk.efekty);
+      }
+    });
+  }
+
+  function posunCas(s, cil) {
+    cil = Math.min(cil, HRA.konec.den);
+    s.vysledek = null;
+    while (s.den < cil) {
+      s.den += 1;
+      zpracujDen(s);
+      if (aktivniUdalost(s)) break;
+    }
+    if (s.den >= HRA.konec.den && !aktivniUdalost(s)) {
+      // Spory, které by doběhly až po konečné zprávě, hra uzavře teď.
+      s.planovane.sort(function (a, b) { return a.den - b.den; });
+      s.planovane.forEach(function (p) {
+        zapisDoDeniku(s, p);
+        provedEfekty(s, p.efekty);
+      });
+      s.planovane = [];
+      s.konec = true;
+    }
+  }
+
+  function zvolHru(s, u, i) {
+    var v = u.volby[i];
+    provedEfekty(s, u.efekty);
+    provedEfekty(s, v.efekty);
+    if (v.odlozit) {
+      if (s.odlozene.indexOf(u.id) < 0) s.odlozene.push(u.id);
+    } else {
+      s.hotovo[u.id] = i;
+      s.odlozene = s.odlozene.filter(function (id) { return id !== u.id; });
+      // Rozhodnuto — vlastní lhůta k téhle věci už nehoří, ať dopadlo jakkoli.
+      s.lhuty.forEach(function (l) {
+        if (l.stav === 'bezi' && HRA.lhuty[l.id].udalost === u.id) l.stav = 'splnena';
+      });
+    }
+    zapisDoDeniku(s, {
+      nadpis: u.nadpis, volba: v.text, text: v.dusledek,
+      citace: v.citace, hodnoceni: v.hodnoceni
+    });
+    s.otevrena = null;
+    s.vysledek = { udalost: u.id, volba: i };
+  }
+
+  /* --- rozvrh --- */
+
+  function podlePasma(tabulka, zaklad) {
+    var p = tabulka[0];
+    tabulka.forEach(function (r) { if (zaklad > r[0]) p = r; });
+    return p[1] + p[2] * (zaklad - p[0]);
+  }
+
+  function spocitejRozvrh(s) {
+    var o = HRA.odmena, f = s.flags;
+    var halaDef = HRA.majetek.filter(function (m) { return m.zajisteni; })[0];
+    var banka = veritelHry(halaDef.zajisteni).castka;
+    var vytezekHaly = s.majetek[halaDef.id].vytezek || 0;
+    var nZpen = f.hala_zpenezeni != null ? f.hala_zpenezeni : 155000;
+    var nSpr = f.hala_sprava != null ? f.hala_sprava : 93000;
+    var cista = Math.max(0, vytezekHaly - nZpen - nSpr);
+
+    // Základ odměny ze zajištění je částka pro zajištěného věřitele včetně
+    // odměny samotné (§ 1 odst. 1 věta druhá vyhlášky). Když na banku
+    // nevyjde všechno, je základem celý čistý výtěžek; když vyjde a něco
+    // zbude, je to rovnice, která se dořeší pár kroky.
+    var odmZ = podlePasma(o.zajisteni, cista);
+    if (cista - odmZ > banka) {
+      odmZ = 0;
+      for (var k = 0; k < 60; k += 1) odmZ = podlePasma(o.zajisteni, banka + odmZ);
+    }
+    odmZ = Math.round(odmZ);
+    var proBanku = Math.min(banka, cista - odmZ);
+    var prebytek = cista - odmZ - proBanku;
+
+    var polozky = [];
+    var obecna = 0;
+    HRA.majetek.forEach(function (m) {
+      if (m.zajisteni) return;
+      var v = s.majetek[m.id].vytezek || 0;
+      if (v) { polozky.push({ nazev: m.nazev, castka: v }); obecna += v; }
+    });
+
+    var nadRamec = f.nad_ramec != null ? f.nad_ramec : 31000;
+    var sporu = s.pricti.naklady_sporu || 0;
+    var naklady = HRA.naklady_spravy + nadRamec + sporu;
+    var k_rozdeleni = obecna + prebytek - naklady;
+
+    var odmN = Math.round(podlePasma(o.nezajisteni, Math.max(0, k_rozdeleni)));
+    if (odmZ + odmN < o.minimum) odmN = o.minimum - odmZ;
+    var zbyva = k_rozdeleni - odmN;
+
+    var naRoven = [];
+    var nezajisteni = [];
+    HRA.veritele.forEach(function (v) {
+      var st = s.veritele[v.id];
+      if (st.skryty || !st.zjisteno) return;
+      if (v.druh === 'na-roven') naRoven.push({ nazev: v.nazev, zjisteno: st.zjisteno });
+      if (v.druh === 'nezajisteny') nezajisteni.push({ nazev: v.nazev, zjisteno: st.zjisteno });
+    });
+    naRoven.forEach(function (r) {
+      r.vyplaceno = Math.max(0, Math.min(r.zjisteno, zbyva));
+      zbyva -= r.vyplaceno;
+    });
+    var soucet = nezajisteni.reduce(function (a, r) { return a + r.zjisteno; }, 0);
+    var podil = soucet ? Math.max(0, zbyva) / soucet : 0;
+    nezajisteni.forEach(function (r) { r.vyplaceno = Math.round(r.zjisteno * podil); });
+
+    return {
+      vytezekHaly: vytezekHaly, nZpen: nZpen, nSpr: nSpr, cista: cista,
+      odmZ: odmZ, proBanku: proBanku, banka: banka, prebytek: prebytek,
+      polozky: polozky, obecna: obecna,
+      nakladySpravy: HRA.naklady_spravy, nadRamec: nadRamec, sporu: sporu,
+      kRozdeleni: k_rozdeleni, odmN: odmN,
+      naRoven: naRoven, proNezajistene: Math.max(0, zbyva),
+      nezajisteni: nezajisteni, soucet: soucet, podil: podil
+    };
+  }
+
+  /* --- vykreslení --- */
+
+  function citaceHry(citace) {
+    var obal = el('div', 'hra-citace');
+    (citace || []).forEach(function (c) {
+      if (c.par) {
+        var a = el('a', 'hra-cit',
+          '§ ' + c.par + (c.odst ? ' odst. ' + c.odst : '') + (c.pism ? ' písm. ' + c.pism + ')' : ''));
+        a.href = '#p' + c.par + (c.odst ? '-' + c.odst : '');
+        a.addEventListener('click', function () { hraScroll = window.scrollY; });
+        obal.appendChild(a);
+      } else {
+        obal.appendChild(el('span', 'hra-cit', c.text));
+      }
+    });
+    return obal;
+  }
+
+  var VERDIKT = { spravne: 'Správně', chyba: 'Chyba', odlozeno: 'Odloženo' };
+
+  function verdikt(h) {
+    return VERDIKT[h] ? el('div', 'hra-verdikt ' + h, VERDIKT[h]) : null;
+  }
+
+  function kartaKalendare(s, prekresli) {
+    var karta = el('section', 'hra-karta');
+    karta.appendChild(el('div', 'stitek', 'Kalendář řízení'));
+    var radek = el('div', 'hra-den-radek');
+    radek.appendChild(el('span', 'hra-den', 'Den ' + s.den));
+    radek.appendChild(el('span', 'hra-datum', fmtDatum(s.den, true)));
+    karta.appendChild(radek);
+
+    var bezici = s.lhuty.filter(function (l) { return l.stav === 'bezi'; })
+      .sort(function (a, b) { return a.konec - b.konec; });
+
+    function naleha(l) {
+      var def = HRA.lhuty[l.id];
+      if (def.termin) return '';
+      var zbyva = l.konec - s.den;
+      var delka = Math.max(1, l.konec - l.od);
+      if (zbyva <= Math.max(1, delka * 0.2)) return 'kriticke';
+      if (zbyva <= delka * 0.5) return 'pozor';
+      return '';
+    }
+
+    var osa = el('div', 'hra-osa');
+    osa.setAttribute('aria-hidden', 'true');
+    var pomer = function (d) { return Math.min(100, 100 * d / HRA.konec.den) + '%'; };
+    var plnost = el('div', 'hra-osa-dnes');
+    plnost.style.width = pomer(s.den);
+    osa.appendChild(plnost);
+    bezici.forEach(function (l) {
+      var z = el('div', 'hra-osa-znacka ' + naleha(l));
+      z.style.left = pomer(l.konec);
+      osa.appendChild(z);
+    });
+    karta.appendChild(osa);
+    var popis = el('div', 'hra-osa-popis');
+    popis.appendChild(el('span', null, fmtDatum(0)));
+    popis.appendChild(el('span', null, 'konečná zpráva ' + fmtDatum(HRA.konec.den)));
+    karta.appendChild(popis);
+
+    var stoji = !!aktivniUdalost(s);
+    var posun = el('div', 'hra-posun');
+    function tlacitko(text, cil, hlavni) {
+      var b = el('button', 'osa' + (hlavni ? ' osa-vybrana' : ''), text);
+      b.type = 'button';
+      b.disabled = stoji;
+      b.addEventListener('click', function () {
+        posunCas(s, cil);
+        ulozHru();
+        prekresli(true);
+      });
+      posun.appendChild(b);
+    }
+    var dalsi = dalsiZastaveni(s);
+    tlacitko(dalsi >= HRA.konec.den
+      ? 'Ke konečné zprávě → den ' + dalsi
+      : 'Další událost → den ' + dalsi, dalsi, true);
+    if (s.den + 7 < dalsi) tlacitko('+ 1 týden', s.den + 7);
+    if (s.den + 30 < dalsi) tlacitko('+ 1 měsíc', s.den + 30);
+    karta.appendChild(posun);
+    if (stoji) karta.appendChild(el('p', 'hra-pozn', 'Čas stojí, dokud se nerozhodnete.'));
+
+    if (bezici.length) {
+      var seznam = el('div', 'hra-lhuty');
+      bezici.forEach(function (l) {
+        var def = HRA.lhuty[l.id];
+        var r = el('div', 'hra-lhuta ' + naleha(l) +
+          (def.kdo === 'vy' ? ' moje' : '') + (def.termin ? ' termin' : ''));
+        r.appendChild(el('span', 'hra-lhuta-nazev', def.nazev));
+        var zbyva = l.konec - s.den;
+        r.appendChild(el('span', 'hra-lhuta-zbyva',
+          zbyva === 0 ? (def.termin ? 'dnes' : 'končí dnes')
+            : (def.termin ? 'za ' : 'zbývá ') + zbyva + (zbyva === 1 ? ' den' : zbyva < 5 ? ' dny' : ' dní')));
+        r.appendChild(el('span', 'hra-lhuta-kdo',
+          def.termin ? 'termín · ' + def.kdo
+            : def.kdo === 'vy' ? 'jednat musíte vy' : 'lhůta běží: ' + def.kdo));
+        r.appendChild(el('span', 'hra-lhuta-kdy', (def.termin ? '' : 'do ') + fmtDatum(l.konec, true)));
+        seznam.appendChild(r);
+      });
+      karta.appendChild(seznam);
+    }
+    return karta;
+  }
+
+  function kartaUdalosti(s, u, prekresli) {
+    var karta = el('section', 'hra-karta hra-udalost');
+    karta.appendChild(el('div', 'stitek',
+      s.otevrena ? 'Rozpracováno · od dne ' + u.den : 'Událost · den ' + s.den));
+    karta.appendChild(el('h2', 'hra-udalost-nadpis', u.nadpis));
+    var text = el('div', 'hra-text');
+    vlozText(text, u.text);
+    karta.appendChild(text);
+    if (u.podklad) {
+      var pod = el('div', 'hra-podklad');
+      pod.appendChild(el('div', 'stitek', 'Podklady'));
+      u.podklad.forEach(function (odst) { vlozText(pod, odst); });
+      karta.appendChild(pod);
+    }
+    var volby = el('div', 'hra-volby');
+    u.volby.forEach(function (v, i) {
+      if (s.otevrena && v.odlozit) return;
+      var b = el('button', 'hra-volba', v.text);
+      b.type = 'button';
+      b.addEventListener('click', function () {
+        zvolHru(s, u, i);
+        ulozHru();
+        prekresli(true);
+      });
+      volby.appendChild(b);
+    });
+    karta.appendChild(volby);
+    if (s.otevrena) {
+      var akce = el('div', 'hra-akce');
+      var zpet = el('button', 'drobny', 'Ještě ne — zavřít');
+      zpet.type = 'button';
+      zpet.addEventListener('click', function () {
+        s.otevrena = null;
+        ulozHru();
+        prekresli(false);
+      });
+      akce.appendChild(zpet);
+      karta.appendChild(akce);
+    }
+    return karta;
+  }
+
+  function kartaVysledku(s, prekresli) {
+    var u = udalostHry(s.vysledek.udalost);
+    var v = u.volby[s.vysledek.volba];
+    var karta = el('section', 'hra-karta hra-udalost');
+    karta.appendChild(el('div', 'stitek', 'Důsledek · den ' + s.den));
+    karta.appendChild(el('h2', 'hra-udalost-nadpis', u.nadpis));
+    karta.appendChild(el('p', 'hra-zvoleno', v.text));
+    var vd = verdikt(v.hodnoceni);
+    if (vd) karta.appendChild(vd);
+    var text = el('div', 'hra-text');
+    vlozText(text, v.dusledek);
+    karta.appendChild(text);
+    karta.appendChild(citaceHry(v.citace));
+    var akce = el('div', 'hra-akce');
+    var dal = el('button', 'poslat', 'Pokračovat');
+    dal.type = 'button';
+    dal.addEventListener('click', function () {
+      s.vysledek = null;
+      ulozHru();
+      prekresli(false);
+    });
+    akce.appendChild(dal);
+    karta.appendChild(akce);
+    return karta;
+  }
+
+  function kartaRozpracovanych(s, prekresli) {
+    var karta = el('section', 'hra-karta');
+    karta.appendChild(el('div', 'stitek', 'Rozpracované'));
+    s.odlozene.forEach(function (id) {
+      var u = udalostHry(id);
+      var lh = s.lhuty.filter(function (l) {
+        return l.stav === 'bezi' && HRA.lhuty[l.id].udalost === id;
+      })[0];
+      var r = el('div', 'hra-radek');
+      r.appendChild(el('span', 'hra-radek-nazev', u.nadpis));
+      var b = el('button', 'rozbal', 'Otevřít');
+      b.type = 'button';
+      b.disabled = !!aktivniUdalost(s);
+      b.addEventListener('click', function () {
+        s.otevrena = id;
+        s.vysledek = null;
+        ulozHru();
+        prekresli(true);
+      });
+      r.appendChild(b);
+      if (lh) r.appendChild(el('span', 'hra-radek-stav', 'Lhůta do ' + fmtDatum(lh.konec, true)));
+      karta.appendChild(r);
+    });
+    return karta;
+  }
+
+  function kartaMajetku(s) {
+    var karta = el('section', 'hra-karta');
+    karta.appendChild(el('div', 'stitek', 'Majetková podstata'));
+    HRA.majetek.forEach(function (m) {
+      var st = s.majetek[m.id];
+      if (st.skryty) return;
+      var r = el('div', 'hra-radek');
+      r.appendChild(el('span', 'hra-radek-nazev', m.nazev));
+      r.appendChild(el('span', 'hra-castka',
+        st.vytezek ? kc(st.vytezek) : st.hodnota ? 'odhad ' + kc(st.hodnota) : '—'));
+      r.appendChild(el('span', 'hra-radek-stav', st.stav));
+      karta.appendChild(r);
+    });
+    return karta;
+  }
+
+  function kartaVeritelu(s) {
+    var karta = el('section', 'hra-karta');
+    karta.appendChild(el('div', 'stitek', 'Věřitelé'));
+    var celkem = 0;
+    HRA.veritele.forEach(function (v) {
+      var st = s.veritele[v.id];
+      if (st.skryty) return;
+      celkem += v.castka;
+      var r = el('div', 'hra-radek');
+      r.appendChild(el('span', 'hra-radek-nazev', v.nazev));
+      r.appendChild(el('span', 'hra-castka', kc(v.castka)));
+      r.appendChild(el('span', 'hra-radek-stav', st.stav));
+      karta.appendChild(r);
+    });
+    var s2 = el('div', 'hra-radek soucet');
+    s2.appendChild(el('span', 'hra-radek-nazev', 'Celkem uplatněno'));
+    s2.appendChild(el('span', 'hra-castka', kc(celkem)));
+    karta.appendChild(s2);
+    return karta;
+  }
+
+  function kartaDeniku(s, nadpis) {
+    var karta = el('section', 'hra-karta');
+    karta.appendChild(el('div', 'stitek', nadpis || 'Deník spisu'));
+    s.denik.slice().reverse().forEach(function (z) {
+      var r = el('div', 'hra-denik-zaznam');
+      r.appendChild(el('div', 'hra-denik-kdy',
+        'Den ' + z.den + ' · ' + fmtDatum(z.den, true) + (z.nadpis ? ' · ' + z.nadpis : '')));
+      if (z.volba) r.appendChild(el('p', 'hra-zvoleno', z.volba));
+      var vd = verdikt(z.hodnoceni);
+      if (vd) r.appendChild(vd);
+      vlozText(r, z.text);
+      if (z.citace && z.citace.length) r.appendChild(citaceHry(z.citace));
+      karta.appendChild(r);
+    });
+    return karta;
+  }
+
+  function kartaZjednoduseni(prekresli) {
+    var karta = el('section', 'hra-karta');
+    var det = el('details', 'hra-zjednoduseni');
+    det.appendChild(el('summary', null, 'Co hra zjednodušuje'));
+    var ul = el('ul');
+    HRA.zjednoduseni.forEach(function (z) { ul.appendChild(el('li', null, z)); });
+    det.appendChild(ul);
+    karta.appendChild(det);
+    var akce = el('div', 'hra-akce');
+    var znovu = el('button', 'drobny', 'Začít spis znovu');
+    znovu.type = 'button';
+    znovu.addEventListener('click', function () {
+      if (!window.confirm('Opravdu začít znovu? Dosavadní postup se smaže.')) return;
+      smazHru();
+      hraStav = novyStavHry();
+      ulozHru();
+      prekresli(true);
+    });
+    akce.appendChild(znovu);
+    karta.appendChild(akce);
+    return karta;
+  }
+
+  function radekRozvrhu(kam, nazev, castka, trida, stav) {
+    var r = el('div', 'hra-radek' + (trida ? ' ' + trida : ''));
+    r.appendChild(el('span', 'hra-radek-nazev', nazev));
+    r.appendChild(el('span', 'hra-castka', castka));
+    if (stav) r.appendChild(el('span', 'hra-radek-stav', stav));
+    kam.appendChild(r);
+  }
+
+  function vykresliKonecHry(s, prekresli) {
+    var R = spocitejRozvrh(s);
+    hlavni.appendChild(el('div', 'p-cislo', 'Den ' + s.den + ' · ' + fmtDatum(s.den)));
+    hlavni.appendChild(el('h1', 'p-nazev', HRA.konec.nadpis));
+    var uvod = el('div', 'perex');
+    vlozText(uvod, HRA.konec.text);
+    hlavni.appendChild(uvod);
+
+    var skore = el('div', 'hra-skore');
+    function dlazdice(cislo, popis, hlavniD) {
+      var d = el('div', 'hra-dlazdice' + (hlavniD ? ' hlavni' : ''));
+      d.appendChild(el('div', 'hra-dlazdice-cislo', cislo));
+      d.appendChild(el('div', 'hra-dlazdice-popis', popis));
+      skore.appendChild(d);
+    }
+    dlazdice((R.podil * 100).toLocaleString('cs-CZ', { maximumFractionDigits: 1 }) + ' %',
+      'dostanou nezajištění věřitelé', true);
+    dlazdice(String(s.pocty.zmeskane), 'zmeškaných lhůt');
+    dlazdice(String(s.pocty.prohrane), 'prohraných sporů' +
+      (s.pocty.vyhrane ? ' (vyhraných ' + s.pocty.vyhrane + ')' : ''));
+    dlazdice(String(s.pocty.chyby), 'chybných kroků');
+    hlavni.appendChild(skore);
+
+    var k1 = el('section', 'hra-karta');
+    k1.appendChild(el('div', 'stitek', 'Hala — výtěžek zajištění'));
+    radekRozvrhu(k1, 'Výtěžek prodeje haly', kc(R.vytezekHaly));
+    radekRozvrhu(k1, 'Náklady zpeněžení', '− ' + kc(R.nZpen), 'odecet',
+      R.nZpen > 0.05 * R.vytezekHaly ? 'nad 5 % se souhlasem banky' : 'nejvýše 5 %');
+    radekRozvrhu(k1, 'Náklady správy', '− ' + kc(R.nSpr), 'odecet', 'nejvýše 4 %');
+    radekRozvrhu(k1, 'Odměna správce ze zajištění', '− ' + kc(R.odmZ), 'odecet',
+      'základ = částka pro banku + odměna');
+    radekRozvrhu(k1, 'Banka Morava', kc(R.proBanku), null,
+      R.proBanku >= R.banka ? 'uspokojena celá' : 'uspokojena z ' + Math.round(100 * R.proBanku / R.banka) + ' %');
+    radekRozvrhu(k1, 'Přebytek pro ostatní věřitele', kc(R.prebytek), 'soucet');
+    k1.appendChild(citaceHry([{ par: '298', odst: '2' }, { par: '298', odst: '4' },
+      { par: '305', odst: '2' }, { text: '§ 1 odst. 2 vyhl. 313/2007 Sb.' }]));
+    hlavni.appendChild(k1);
+
+    var k2 = el('section', 'hra-karta');
+    k2.appendChild(el('div', 'stitek', 'Obecná podstata a rozvrh'));
+    R.polozky.forEach(function (p) { radekRozvrhu(k2, p.nazev, kc(p.castka)); });
+    radekRozvrhu(k2, 'Přebytek z haly', kc(R.prebytek));
+    radekRozvrhu(k2, 'Náklady správy podstaty', '− ' + kc(R.nakladySpravy), 'odecet', 'paušál hry');
+    if (R.nadRamec) radekRozvrhu(k2, 'Náklady zpeněžení haly nad 5 %', '− ' + kc(R.nadRamec), 'odecet');
+    if (R.sporu) radekRozvrhu(k2, 'Náhrada nákladů prohraných sporů', '− ' + kc(R.sporu), 'odecet');
+    radekRozvrhu(k2, 'Odměna správce z obecné podstaty', '− ' + kc(R.odmN), 'odecet',
+      'základ ' + kc(R.kRozdeleni) + ' včetně odměny a mezd');
+    R.naRoven.forEach(function (r) {
+      radekRozvrhu(k2, r.nazev, '− ' + kc(r.vyplaceno), 'odecet',
+        r.vyplaceno >= r.zjisteno ? 'zaplaceno celé, před rozvrhem' : 'zaplaceno z části');
+    });
+    radekRozvrhu(k2, 'Zbývá nezajištěným věřitelům', kc(R.proNezajistene), 'soucet');
+    k2.appendChild(citaceHry([{ par: '168', odst: '2' }, { par: '169', odst: '3' },
+      { par: '305', odst: '1' }, { text: '§ 1 odst. 3 a 4 vyhl. 313/2007 Sb.' }]));
+    hlavni.appendChild(k2);
+
+    var k3 = el('section', 'hra-karta');
+    k3.appendChild(el('div', 'stitek', 'Rozvrh mezi nezajištěné věřitele'));
+    R.nezajisteni.forEach(function (r) {
+      radekRozvrhu(k3, r.nazev, kc(r.vyplaceno), null, 'zjištěno ' + kc(r.zjisteno));
+    });
+    radekRozvrhu(k3, 'Celkem zjištěno ' + kc(R.soucet), kc(R.proNezajistene), 'soucet');
+    k3.appendChild(citaceHry([{ par: '306', odst: '3' }]));
+    hlavni.appendChild(k3);
+
+    hlavni.appendChild(kartaDeniku(s, 'Jak spis běžel'));
+    hlavni.appendChild(kartaZjednoduseni(prekresli));
+  }
+
+  function vykresliHru() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Hra';
+    listaStav.textContent = '';
+
+    if (!HRA) {
+      hlavni.appendChild(el('p', 'prazdno', 'Hra se nenačetla.'));
+      return;
+    }
+    if (!hraStav) hraStav = nactiHru() || novyStavHry();
+    var s = hraStav;
+
+    function prekresli(nahoru) {
+      var y = window.scrollY;
+      vykresliHru();
+      window.scrollTo(0, nahoru ? 0 : y);
+    }
+
+    listaStav.textContent = 'den ' + s.den;
+
+    if (s.konec) {
+      vykresliKonecHry(s, prekresli);
+      return;
+    }
+
+    hlavni.appendChild(el('div', 'p-cislo', 'Minihra · ' + HRA.spis));
+    hlavni.appendChild(el('h1', 'p-nazev', HRA.nazev));
+    if (s.den === 0 && !Object.keys(s.hotovo).length && !s.vysledek) {
+      hlavni.appendChild(el('p', 'perex', HRA.perex));
+    }
+
+    var u = aktivniUdalost(s);
+    if (s.vysledek) hlavni.appendChild(kartaVysledku(s, prekresli));
+    else if (u) hlavni.appendChild(kartaUdalosti(s, u, prekresli));
+    hlavni.appendChild(kartaKalendare(s, prekresli));
+    if (s.odlozene.length) hlavni.appendChild(kartaRozpracovanych(s, prekresli));
+    hlavni.appendChild(kartaMajetku(s));
+    hlavni.appendChild(kartaVeritelu(s));
+    hlavni.appendChild(kartaDeniku(s));
+    hlavni.appendChild(kartaZjednoduseni(prekresli));
+  }
+
   /* ---- směrování ------------------------------------------------------ */
 
   function smeruj() {
@@ -2108,8 +3082,18 @@
     var h = location.hash.replace(/^#/, '');
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
+    else if (h === 'hra') {
+      vykresliHru();
+      // Návrat z citace: vrátit se tam, kde hráč četl.
+      if (hraScroll != null) { window.scrollTo(0, hraScroll); hraScroll = null; }
+      else window.scrollTo(0, 0);
+    }
     else if (h.indexOf('t') === 0) vykresliTema(h.slice(1));
-    else if (h.indexOf('p') === 0) vykresliParagraf(h.slice(1));
+    else if (h.indexOf('p') === 0) {
+      // „p225-2" je paragraf 225 a v něm odstavec 2 (odkaz z citace ve hře).
+      var cast = h.slice(1).split('-');
+      vykresliParagraf(cast[0], cast[1]);
+    }
     else vykresliObsah('');
   }
 

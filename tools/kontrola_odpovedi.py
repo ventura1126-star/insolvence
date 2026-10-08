@@ -49,6 +49,74 @@ def zkontroluj_temata():
     return chyby
 
 
+def _citace(uzel):
+    """Všechny citace insolvenčního zákona kdekoli ve scénáři hry."""
+    if isinstance(uzel, dict):
+        if "par" in uzel:
+            yield uzel
+        for v in uzel.values():
+            yield from _citace(v)
+    elif isinstance(uzel, list):
+        for v in uzel:
+            yield from _citace(v)
+
+
+def zkontroluj_hru(zakon):
+    """Minihra cituje paragrafy a v artefaktu na ně jde kliknout.
+
+    Citace, která po novele míří na neexistující paragraf, odstavec nebo
+    písmeno, by hráče poslala do prázdna — a hůř, učila by ho číslo, které
+    už neplatí. Proto se každá ověří proti zakon.json.
+    """
+    soubor = KOREN / "artefakt/hra.json"
+    if not soubor.exists():
+        return []
+    hra = json.loads(soubor.read_text("utf-8"))
+    paragrafy = {p["paragraf"]: p for p in zakon}
+    chyby = []
+
+    pocet = 0
+    for c in _citace(hra):
+        pocet += 1
+        oznaceni = f"§ {c['par']}" + (f" odst. {c['odst']}" if c.get("odst") else "")
+        p = paragrafy.get(c["par"])
+        if p is None:
+            chyby.append(f"hra: {oznaceni} — takový paragraf v zákoně není")
+            continue
+        odstavec = None
+        if c.get("odst"):
+            odstavec = next((o for o in p["odstavce"] if o["cislo"] == c["odst"]), None)
+            if odstavec is None:
+                chyby.append(f"hra: {oznaceni} — takový odstavec není")
+                continue
+        if c.get("pism"):
+            texty = [odstavec["text"]] if odstavec else [o["text"] for o in p["odstavce"]]
+            vzor = re.compile(r"(^|\n)\s*" + re.escape(c["pism"]) + r"\)")
+            if not any(vzor.search(t) for t in texty):
+                chyby.append(f"hra: {oznaceni} písm. {c['pism']} — takové písmeno není")
+
+    videna = set()
+    for u in hra.get("udalosti", []):
+        if u["id"] in videna:
+            chyby.append(f"hra: událost {u['id']} — id se opakuje")
+        videna.add(u["id"])
+        if not 2 <= len(u.get("volby", [])) <= 4:
+            chyby.append(f"hra: událost {u['id']} — má mít 2 až 4 volby")
+        for i, v in enumerate(u.get("volby", [])):
+            if not v.get("dusledek", "").strip() or not v.get("citace"):
+                chyby.append(f"hra: událost {u['id']} volba {i} — chybí důsledek nebo citace")
+    lhuty = hra.get("lhuty", {})
+    for u in hra.get("udalosti", []):
+        for v in u.get("volby", []):
+            for lh in v.get("efekty", {}).get("lhuta", []) + v.get("efekty", {}).get("splnit", []):
+                klic = lh["id"] if isinstance(lh, dict) else lh
+                if klic not in lhuty:
+                    chyby.append(f"hra: událost {u['id']} — neznámá lhůta {klic}")
+
+    print(f"hra            {len(hra.get('udalosti', []))} událostí, {pocet} citací")
+    return chyby
+
+
 def zkontroluj_vyklad():
     """Výklad se píše ručně vedle znění zákona — hlídá, že se nerozešly.
 
@@ -81,6 +149,7 @@ def zkontroluj_vyklad():
                 chyby.append(f"výklad § {cislo} odst. {odstavec}: prázdný text")
 
     chyby += zkontroluj_temata()
+    chyby += zkontroluj_hru(zakon)
 
     celkem = sum(len(o) for o in odstavce.values())
     hotovo = sum(

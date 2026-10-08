@@ -18,7 +18,12 @@ KOREN = Path(__file__).resolve().parent.parent
 ZDROJ = KOREN / "artefakt"
 CIL = KOREN / "docs/zakon"
 
-SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js"]
+HLAVICKA = (
+    '<!doctype html>\n<html lang="cs">\n<meta charset="utf-8">\n'
+    '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+)
+
+SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js", "hra.js"]
 
 
 def main():
@@ -30,6 +35,10 @@ def main():
     CIL.mkdir(parents=True, exist_ok=True)
     for s in SOUBORY:
         shutil.copy2(ZDROJ / s, CIL / s)
+    # Artifact si kostru dokumentu přidá sám, Pages ne. Bez viewportu by
+    # iPhone stránku vykreslil na 980 px a zmenšil — tedy nečitelně.
+    stranka = CIL / "index.html"
+    stranka.write_text(HLAVICKA + stranka.read_text("utf-8"), encoding="utf-8")
     celkem = sum((CIL / s).stat().st_size for s in SOUBORY)
     print(f"{CIL}: {len(SOUBORY)} souborů, {celkem / 1024 / 1024:.1f} MB")
 
