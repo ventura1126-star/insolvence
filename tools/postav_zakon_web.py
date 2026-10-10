@@ -24,7 +24,7 @@ HLAVICKA = (
 )
 
 SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js",
-           "hra.js", "lhuty.js"]
+           "hra.js", "hra2.js", "lhuty.js"]
 
 
 def main():

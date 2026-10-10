@@ -23,6 +23,7 @@ SOUBORY = [
     ("temata.js", "temata.json", "TEMATA"),
     ("pohledavky.js", "pohledavky.json", "POHLEDAVKY"),
     ("hra.js", "hra.json", "HRA"),
+    ("hra2.js", "hra2.json", "HRA2"),
     ("lhuty.js", "lhuty.json", "LHUTY"),
 ]
 

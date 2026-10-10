@@ -1,0 +1,1340 @@
+{
+ "verze": 1,
+ "id": "dvorakova",
+ "nazev": "Insolvenční správce: oddlužení",
+ "spis": "Jana Dvořáková — oddlužení",
+ "zacatek": "2025-03-11",
+ "perex": "Krajský soud dnes rozhodl o úpadku paní Jany Dvořákové a týmž usnesením povolil oddlužení. Dluhy 2,1 mil. Kč po krachlé kavárně, žádný zajištěný věřitel, jedno dítě ve výživě — a tři roky, během kterých se může všechno pokazit.",
+ "uvod": "Paní Dvořáková, 47 let, provozovala pět let kavárnu. Po covidu ji dotáhly úvěry, které si brala na provoz, a loni to zavřela. Dnes pracuje jako vedoucí směny ve výrobě, čistá mzda 32 000 Kč, živí dvanáctiletou dceru.\n\nNávrh na povolení oddlužení podala sama prostřednictvím akreditované osoby (§ 390a odst. 1). Soud rozhodl o úpadku a povolil oddlužení jedním usnesením a ustanovil vás správcem (§ 136 odst. 2, § 148 odst. 3). Způsobem bude **plnění splátkového kalendáře se zpeněžením majetkové podstaty** (§ 398 odst. 1).",
+ "konec": {
+  "den": 1256,
+  "typ": "oddluzeni",
+  "nadpis": "Zpráva pro osvobození",
+  "text": "Od schválení oddlužení uplynuly tři roky. Sestavujete **zprávu pro osvobození** a uvádíte v ní, zda dlužnice řádně plnila všechny podstatné povinnosti a zda doporučujete osvobodit, prodloužit, nebo oddlužení zrušit (§ 36 odst. 4). Od jejího předložení běží věřitelům **2 měsíce** na návrh na prodloužení nebo zrušení; k později podaným se nepřihlíží.\n\nPředpoklady pro osvobození jsou podle **§ 412a odst. 1 písm. b)** splněny, jestliže po dobu 3 let od schválení nebylo oddlužení zrušeno a dlužnice plnila podstatné povinnosti — a má se za to, že je plnila, dosáhla-li **předpokládané míry uspokojení** určené soudem."
+ },
+ "zjednoduseni": [
+  "Výši měsíční splátky určil soud v rozhodnutí o schválení oddlužení (§ 406 odst. 3 písm. a) a hra s ní dál počítá jako s pevnou. Skutečná srážka se počítá z čisté mzdy podle nařízení o nezabavitelných částkách a mění se s každou jeho novelou i se změnou počtu vyživovaných osob.",
+  "Předpokládaná míra uspokojení je v tomto spisu 30 % (§ 406 odst. 3 písm. c). Soud ji v každém spisu určuje individuálně.",
+  "Odměna správce se počítá podle § 3 odst. 2 vyhlášky č. 313/2007 Sb.: 1 650 Kč za měsíc do schválení, 750 Kč za měsíc po schválení a podíl z výtěžku zpeněžení. Náhrada hotových výdajů je 150 Kč za započatý měsíc podle § 7 odst. 4. Bez DPH.",
+  "Spory o popřené pohledávky dopadnou tak, jak naznačují podklady. Skutečný soud se může na věc podívat jinak.",
+  "Doba oddlužení jsou tři roky podle § 412a odst. 1 písm. b). Pět let by platilo jen tehdy, kdyby dlužnici bylo osvobození přiznáno v posledních 20 letech (odst. 3).",
+  "Hra nepočítá s přerušením ani prodloužením průběhu oddlužení podle § 412b, ledaže k němu dojde volbou ve hře.",
+  "Konec lhůty nikde nepadá na víkend ani svátek, takže se nikde neposouvá (§ 57 odst. 2 o. s. ř.)."
+ ],
+ "naklady_sporu": 24000,
+ "odmena": {
+  "pramen": "§ 3 odst. 2 a § 7 odst. 4 vyhlášky č. 313/2007 Sb.",
+  "do_schvaleni": 1650,
+  "po_schvaleni": 750,
+  "vydaje_mesic": 150,
+  "zpenezeni": [
+   [
+    0,
+    0,
+    0.15
+   ],
+   [
+    500000,
+    75000,
+    0.09
+   ],
+   [
+    1000000,
+    120000,
+    0.04
+   ]
+  ]
+ },
+ "splatka": 9200,
+ "ocekavana_mira": 0.35,
+ "majetek": [
+  {
+   "id": "auto",
+   "nazev": "Škoda Fabia, r. v. 2016",
+   "hodnota": 78000,
+   "stav": "sepsáno · dlužnice ho používá do práce"
+  },
+  {
+   "id": "chalupa",
+   "nazev": "Spoluvlastnický podíl 1/2 na chalupě",
+   "hodnota": 240000,
+   "stav": "sepsáno · podíl zděděný po babičce"
+  },
+  {
+   "id": "vybaveni",
+   "nazev": "Vybavení kavárny",
+   "hodnota": 0,
+   "stav": "prodáno před úpadkem, výtěžek spotřebován"
+  },
+  {
+   "id": "dar",
+   "nazev": "Mimořádný příjem",
+   "hodnota": 0,
+   "skryty": true,
+   "stav": "zatím žádný"
+  }
+ ],
+ "veritele": [
+  {
+   "id": "vyzivne",
+   "nazev": "Dcera — dlužné výživné",
+   "castka": 48000,
+   "druh": "na-roven",
+   "stav": "pohledávka postavená naroveň (§ 169 odst. 1 písm. e)"
+  },
+  {
+   "id": "credit",
+   "nazev": "Credit Rapid s.r.o.",
+   "castka": 395000,
+   "druh": "nezajisteny",
+   "zjisteno": 395000,
+   "stav": "nebankovní úvěr; přihlášeno i příslušenství"
+  },
+  {
+   "id": "banka",
+   "nazev": "Spořitelní banka a.s.",
+   "castka": 690000,
+   "druh": "nezajisteny",
+   "stav": "spotřebitelský úvěr na provoz kavárny"
+  },
+  {
+   "id": "rozhodci",
+   "nazev": "Inkaso Bohemia a.s.",
+   "castka": 210000,
+   "druh": "nezajisteny",
+   "zjisteno": 210000,
+   "stav": "pohledávka z rozhodčího nálezu — vykonatelná"
+  },
+  {
+   "id": "zeman",
+   "nazev": "Soused Zeman",
+   "castka": 150000,
+   "druh": "nezajisteny",
+   "zjisteno": 150000,
+   "stav": "tvrzená půjčka v hotovosti, bez smlouvy"
+  },
+  {
+   "id": "kava",
+   "nazev": "Dodavatel kávy Perilla s.r.o.",
+   "castka": 128000,
+   "druh": "nezajisteny",
+   "stav": "nezaplacené dodávky"
+  },
+  {
+   "id": "fu",
+   "nazev": "Finanční úřad",
+   "castka": 186000,
+   "druh": "nezajisteny",
+   "stav": "nedoplatek na DPH"
+  },
+  {
+   "id": "vzp",
+   "nazev": "Zdravotní pojišťovna",
+   "castka": 94000,
+   "druh": "nezajisteny",
+   "stav": "dlužné pojistné z podnikání"
+  }
+ ],
+ "lhuty": {
+  "prihlasky": {
+   "nazev": "Přihlášky pohledávek",
+   "kdo": "věřitelé",
+   "citace": [
+    {
+     "par": "136",
+     "odst": "2",
+     "pism": "d"
+    },
+    {
+     "par": "173",
+     "odst": "1"
+    }
+   ],
+   "pri_konci": {
+    "text": "Přihlašovací lhůta uplynula. Přihlásili se všichni věřitelé ze seznamu závazků. K přihláškám podaným později se nepřihlíží a soud je odmítne (§ 185).",
+    "citace": [
+     {
+      "par": "173",
+      "odst": "1"
+     },
+     {
+      "par": "185"
+     }
+    ],
+    "hodnoceni": "info",
+    "efekty": {
+     "veritel": {
+      "banka": {
+       "stav": "přihlášena"
+      },
+      "kava": {
+       "stav": "přihlášena"
+      },
+      "fu": {
+       "stav": "přihlášena"
+      },
+      "vzp": {
+       "stav": "přihlášena"
+      }
+     }
+    }
+   }
+  },
+  "zpravy": {
+   "nazev": "Zpráva o přezkumu a zpráva pro oddlužení",
+   "kdo": "vy",
+   "citace": [
+    {
+     "par": "136",
+     "odst": "2",
+     "pism": "e"
+    },
+    {
+     "par": "398a",
+     "odst": "1"
+    }
+   ],
+   "udalost": "zpravy",
+   "pri_konci": {
+    "text": "Lhůta k podání zprávy o přezkumu a zprávy pro oddlužení uplynula, aniž jste je podal. Soud si vyžádal vysvětlení a uložil vám pořádkovou pokutu. Je to porušení povinnosti podle § 36 odst. 1 se vším, co z toho plyne.",
+    "citace": [
+     {
+      "par": "36",
+      "odst": "1"
+     },
+     {
+      "par": "81",
+      "odst": "2"
+     }
+    ],
+    "hodnoceni": "chyba",
+    "efekty": {
+     "pocty": {
+      "zmeskane": 1,
+      "chyby": 1
+     }
+    }
+   }
+  },
+  "namitky": {
+   "nazev": "Námitky proti zprávám",
+   "kdo": "věřitelé a dlužnice",
+   "termin": true,
+   "citace": [
+    {
+     "par": "398a",
+     "odst": "4"
+    }
+   ]
+  },
+  "zeman_zaloba": {
+   "nazev": "Zemanova žaloba na určení pohledávky",
+   "kdo": "věřitel",
+   "termin": true,
+   "citace": [
+    {
+     "par": "198",
+     "odst": "1"
+    }
+   ]
+  },
+  "rozhodci_zaloba": {
+   "nazev": "Vaše žaloba na popření vykonatelné pohledávky",
+   "kdo": "vy",
+   "citace": [
+    {
+     "par": "199",
+     "odst": "1"
+    }
+   ],
+   "udalost": "rozhodci",
+   "pri_konci": {
+    "text": "Třicetidenní lhůta uplynula a žalobu jste nepodal. Popření vykonatelné pohledávky tím ztratilo účinek — pohledávka Inkasa Bohemia se zjišťuje v celé přihlášené výši 210 000 Kč a sníží podíl ostatních.",
+    "citace": [
+     {
+      "par": "199",
+      "odst": "1"
+     },
+     {
+      "par": "201"
+     }
+    ],
+    "hodnoceni": "chyba",
+    "efekty": {
+     "pocty": {
+      "zmeskane": 1
+     },
+     "veritel": {
+      "rozhodci": {
+       "stav": "zjištěna celá — lhůta propadla",
+       "zjisteno": 210000
+      }
+     }
+    }
+   }
+  },
+  "evidence": {
+   "nazev": "Žádost dlužnice o zařazení do evidence uchazečů",
+   "kdo": "dlužnice",
+   "citace": [
+    {
+     "par": "412",
+     "odst": "4"
+    }
+   ],
+   "udalost": "ztrata_prace",
+   "pri_konci": {
+    "text": "Patnáctidenní lhůta uplynula a dlužnice o zařazení do evidence uchazečů o zaměstnání nepožádala. Má se za to, že neplní povinnost usilovat o získání příjmu — a to je důvod pro zrušení oddlužení.",
+    "citace": [
+     {
+      "par": "412",
+      "odst": "4"
+     },
+     {
+      "par": "418",
+      "odst": "1",
+      "pism": "a"
+     }
+    ],
+    "hodnoceni": "chyba",
+    "efekty": {
+     "pocty": {
+      "chyby": 1
+     },
+     "nastav": {
+      "evidence_zmeskana": true
+     }
+    }
+   }
+  },
+  "osvobozeni": {
+   "nazev": "Tři roky od schválení oddlužení",
+   "kdo": "dlužnice",
+   "termin": true,
+   "citace": [
+    {
+     "par": "412a",
+     "odst": "1",
+     "pism": "b"
+    }
+   ]
+  }
+ },
+ "na_zacatku": {
+  "lhuta": [
+   {
+    "id": "prihlasky",
+    "od": 0,
+    "mesice": 2
+   },
+   {
+    "id": "osvobozeni",
+    "od": 1236
+   }
+  ]
+ },
+ "milniky": [
+  {
+   "den": 140,
+   "nadpis": "Soud schválil oddlužení",
+   "text": "Soud schválil oddlužení plněním splátkového kalendáře se zpeněžením majetkové podstaty. Uložil dlužnici platit nezajištěným věřitelům prostřednictvím správce **9 200 Kč měsíčně**, označil příjem, ze kterého se uhradí první splátka, a určil **předpokládanou míru uspokojení 30 %**. Od právní moci má dlužnice dispoziční oprávnění k příjmům, které po schválení získá.",
+   "citace": [
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "a"
+    },
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "c"
+    },
+    {
+     "par": "409",
+     "odst": "1"
+    }
+   ],
+   "efekty": {
+    "nastav": {
+     "schvaleno": true
+    }
+   }
+  },
+  {
+   "den": 215,
+   "nadpis": "Auto prodáno",
+   "text": "Fabii se podařilo prodat za 78 000 Kč. Dlužnice od té doby jezdí do práce autobusem; soud jí auto ponechat neumožnil, protože nejde o věc nezbytnou k uspokojování hmotných potřeb.",
+   "citace": [
+    {
+     "par": "398",
+     "odst": "3"
+    },
+    {
+     "par": "207",
+     "odst": "1"
+    }
+   ],
+   "efekty": {
+    "majetek": {
+     "auto": {
+      "stav": "zpeněženo za 78 000 Kč",
+      "vytezek": 78000
+     }
+    }
+   }
+  }
+ ],
+ "udalosti": [
+  {
+   "id": "splaceni",
+   "den": 0,
+   "nadpis": "Den 0: dlužnice chce dál splácet jeden úvěr",
+   "text": "Hodinu po zveřejnění rozhodnutí volá paní Dvořáková. „Spořitelní bance jsem splácela poctivě celou dobu. Můžu jim posílat dál aspoň tu tisícovku měsíčně? Nerada bych, aby si o mně mysleli nejhorší.“",
+   "volby": [
+    {
+     "text": "„Nesmíte. Od teď se platí jen přes řízení, jinak byste jednoho věřitele zvýhodnila.“",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Po zahájení řízení se věřitelé uspokojují jen způsobem podle insolvenčního zákona a dlužník se musí zdržet nakládání s podstatou, které by vedlo ke zvýhodnění některého z nich. Dobrovolná splátka jednomu věřiteli je **zvýhodňující úkon** — a vy byste jí museli odporovat.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "111",
+       "odst": "1"
+      },
+      {
+       "par": "241",
+       "odst": "1"
+      }
+     ]
+    },
+    {
+     "text": "„Tisícovka měsíčně nikomu neublíží, klidně posílejte.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Chyba, a vaše. Výše nerozhoduje — rozhoduje, že se jeden věřitel dostane k plnění mimo řízení na úkor ostatních. Je to zvýhodňující úkon podle § 241 a zároveň porušení povinnosti dlužníka podle § 111. Odvolal jste to druhý den, ale stihla odeslat jednu splátku.",
+     "citace": [
+      {
+       "par": "111",
+       "odst": "1"
+      },
+      {
+       "par": "241",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "„Zeptejte se soudu, já do toho nemůžu mluvit.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Vyhýbavá odpověď. Poučit dlužnici o tom, co od zahájení řízení nesmí, patří k vaší součinnosti a k péči řádného hospodáře — zvlášť když se ptá rovnou vás. Dlužnice mezitím dva týdny váhala a jednu splátku odeslala.",
+     "citace": [
+      {
+       "par": "36",
+       "odst": "1"
+      },
+      {
+       "par": "111",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "credit",
+   "den": 18,
+   "nadpis": "Přihláška nebankovky: jistina, pokuta a úroky",
+   "text": "Credit Rapid přihlásil **395 000 Kč**. Rozpad podle přihlášky jste si vypsal.",
+   "podklad": [
+    "Jistina úvěru: **240 000 Kč**",
+    "Úroky do rozhodnutí o úpadku: **35 000 Kč**",
+    "Úroky z prodlení přirostlé **po** rozhodnutí o úpadku: **22 000 Kč**",
+    "Smluvní pokuta, na kterou vzniklo právo **po** rozhodnutí o úpadku: **98 000 Kč**"
+   ],
+   "volby": [
+    {
+     "text": "Popřít 120 000 Kč — úroky po úpadku i smluvní pokutu.",
+     "hodnoceni": "spravne",
+     "dusledek": "Přesně tak. **§ 170 písm. a)** vylučuje úroky z přihlášených pohledávek, které přirostly až po rozhodnutí o úpadku, a **písm. e)** smluvní pokuty, vzniklo-li právo na ně až po něm. Obojí se neuspokojuje žádným způsobem řešení úpadku. Zjištěno 275 000 Kč.",
+     "citace": [
+      {
+       "par": "170",
+       "pism": "a"
+      },
+      {
+       "par": "170",
+       "pism": "e"
+      },
+      {
+       "par": "194"
+      }
+     ],
+     "efekty": {
+      "veritel": {
+       "credit": {
+        "stav": "zjištěno 275 000 Kč, zbytek vyloučen podle § 170",
+        "zjisteno": 275000
+       }
+      }
+     }
+    },
+    {
+     "text": "Popřít jen smluvní pokutu, úroky nechat.",
+     "hodnoceni": "chyba",
+     "dusledek": "Polovičaté. Pokutu jste popřel správně, ale **úroky přirostlé po rozhodnutí o úpadku** jsou vyloučené úplně stejně — § 170 písm. a). O 22 000 Kč jste zředil ostatní věřitele.",
+     "citace": [
+      {
+       "par": "170",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "veritel": {
+       "credit": {
+        "stav": "zjištěno 297 000 Kč — úroky po úpadku prošly",
+        "zjisteno": 297000
+       }
+      }
+     }
+    },
+    {
+     "text": "Nepopírat, úvěrová smlouva to všechno dovoluje.",
+     "hodnoceni": "chyba",
+     "dusledek": "Smlouva to dovolovat může, insolvenční zákon ne. **§ 170** vylučuje tyhle položky bez ohledu na to, co si strany ujednaly. Prošlo 120 000 Kč, které měly vypadnout, a o to méně dostanou ostatní.",
+     "citace": [
+      {
+       "par": "170",
+       "pism": "a"
+      },
+      {
+       "par": "170",
+       "pism": "e"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "veritel": {
+       "credit": {
+        "stav": "zjištěno celé — § 170 neuplatněn",
+        "zjisteno": 395000
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "zeman",
+   "den": 34,
+   "nadpis": "Soused Zeman: 150 000 v hotovosti",
+   "text": "Přihlásil se soused Zeman se 150 000 Kč. Jako důvod uvádí „půjčka v hotovosti v roce 2022 na vybavení kavárny“. V příloze je jednostranné čestné prohlášení, nic víc. Dlužnice tvrdí, že si od něj půjčila 40 000 a vrátila je.",
+   "volby": [
+    {
+     "text": "Popřít pravost celé pohledávky a poučit ho o žalobě.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Popření pravosti je namítnutí, že pohledávka nevznikla (§ 193). Pohledávka je **nevykonatelná**, takže žalobu na určení podává **on** — do 30 dnů od přezkumného jednání (§ 198 odst. 1) — a vy ho o tom musíte poučit (§ 197 odst. 2). V žalobě navíc nemůže uplatnit jiný důvod vzniku, než jaký uvedl do skončení přezkumu.",
+     "citace": [
+      {
+       "par": "193"
+      },
+      {
+       "par": "197",
+       "odst": "2"
+      },
+      {
+       "par": "198",
+       "odst": "1"
+      },
+      {
+       "par": "198",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "lhuta": [
+       {
+        "id": "zeman_zaloba",
+        "dny": 30
+       }
+      ],
+      "veritel": {
+       "zeman": {
+        "stav": "popřena co do pravosti"
+       }
+      },
+      "pozdeji": [
+       {
+        "za": 95,
+        "nadpis": "Zemanova žaloba",
+        "text": "Zeman žalobu podal, ale u soudu neunesl důkazní břemeno — výběr z účtu ani předání nedoložil. Soud žalobu zamítl, pohledávka se nezjišťuje.",
+        "citace": [
+         {
+          "par": "198",
+          "odst": "1"
+         }
+        ],
+        "hodnoceni": "spravne",
+        "efekty": {
+         "pocty": {
+          "vyhrane": 1
+         },
+         "veritel": {
+          "zeman": {
+           "stav": "nezjištěna — žaloba zamítnuta",
+           "zjisteno": 0
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "Popřít jen do výše 110 000, 40 000 uznat.",
+     "hodnoceni": "chyba",
+     "dusledek": "Logické, ale skutkově vedle: dlužnice tvrdí, že těch 40 000 **vrátila**. Uznáním jste do rozvrhu pustil pohledávku, která podle všeho zanikla — a popření výše navíc vyžaduje uvést, jaká je ve skutečnosti (§ 194). Ostatní věřitelé na to doplatí.",
+     "citace": [
+      {
+       "par": "193"
+      },
+      {
+       "par": "194"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "veritel": {
+       "zeman": {
+        "stav": "zjištěno 40 000 Kč",
+        "zjisteno": 40000
+       }
+      }
+     }
+    },
+    {
+     "text": "Nepopírat — čestné prohlášení je taky doklad.",
+     "hodnoceni": "chyba",
+     "dusledek": "Není. Jednostranné prohlášení věřitele není důkaz o vzniku pohledávky a vaší povinností je přihlášky přezkoumat, ne odkývat. Uznáním 150 000 Kč jste zředil všechny ostatní věřitele a porušil péči podle § 36 odst. 1.",
+     "citace": [
+      {
+       "par": "188",
+       "odst": "1"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "veritel": {
+       "zeman": {
+        "stav": "zjištěna celá — nepopřeno",
+        "zjisteno": 150000
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "rozhodci",
+   "den": 47,
+   "nadpis": "Vykonatelná pohledávka z rozhodčího nálezu",
+   "text": "Inkaso Bohemia přihlásilo 210 000 Kč z **rozhodčího nálezu** z roku 2023. Dlužnice přináší výpisy: po nálezu zaplatila exekutorovi 130 000 Kč a od té doby o věci neslyšela. V nálezu se o tom pochopitelně nic nepíše — vznikly až potom.",
+   "podklad": [
+    "Pohledávka je **vykonatelná** — rozhodčí nález nabyl právní moci před rozhodnutím o úpadku (§ 191 odst. 2).",
+    "Platby 130 000 Kč proběhly **po** vydání nálezu, takže je dlužnice v rozhodčím řízení uplatnit nemohla."
+   ],
+   "volby": [
+    {
+     "text": "Popřít do výše 130 000 a do 30 dnů podat žalobu sám.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně, a hlavně správným směrem. U **vykonatelné** pohledávky podává žalobu **správce**, a to do 30 dnů od přezkumného jednání (§ 199 odst. 1). Namítat lze jen skutečnosti, které dlužník neuplatnil v řízení, jež rozhodnutí předcházelo (§ 199 odst. 2) — platby po nálezu tuhle podmínku splňují.",
+     "citace": [
+      {
+       "par": "191",
+       "odst": "2"
+      },
+      {
+       "par": "199",
+       "odst": "1"
+      },
+      {
+       "par": "199",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "lhuta": [
+       {
+        "id": "rozhodci_zaloba",
+        "dny": 30
+       }
+      ],
+      "veritel": {
+       "rozhodci": {
+        "stav": "popřena do výše 130 000 — žaloba podána"
+       }
+      },
+      "splnit": [
+       "rozhodci_zaloba"
+      ],
+      "pricti": {
+       "naklady_sporu": 0
+      },
+      "pozdeji": [
+       {
+        "za": 150,
+        "nadpis": "Spor s Inkasem Bohemia",
+        "text": "Soud dal za pravdu vám: výpisy o platbách po vydání nálezu jsou skutečnosti, které dlužnice v rozhodčím řízení uplatnit nemohla. Zjištěno 80 000 Kč.",
+        "citace": [
+         {
+          "par": "199",
+          "odst": "2"
+         }
+        ],
+        "hodnoceni": "spravne",
+        "efekty": {
+         "pocty": {
+          "vyhrane": 1
+         },
+         "veritel": {
+          "rozhodci": {
+           "stav": "zjištěno 80 000 Kč",
+           "zjisteno": 80000
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "Popřít a počkat, až se věřitel ozve žalobou.",
+     "hodnoceni": "chyba",
+     "dusledek": "Tohle je nejdražší omyl v celém přezkumu: zaměnit směr žaloby. U **nevykonatelné** pohledávky žaluje věřitel (§ 198), u **vykonatelné** žalujete **vy** (§ 199). Nepodáte-li žalobu do 30 dnů, popření ztratí účinek a pohledávka se zjistí celá.",
+     "citace": [
+      {
+       "par": "198",
+       "odst": "1"
+      },
+      {
+       "par": "199",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "lhuta": [
+       {
+        "id": "rozhodci_zaloba",
+        "dny": 30
+       }
+      ],
+      "veritel": {
+       "rozhodci": {
+        "stav": "popřena — čeká se na žalobu, kterou má podat správce"
+       }
+      }
+     },
+     "odlozit": true
+    },
+    {
+     "text": "Nepopírat — proti pravomocnému nálezu se nedá nic dělat.",
+     "hodnoceni": "chyba",
+     "dusledek": "Dá. **§ 199 odst. 2** popření vykonatelné pohledávky nevylučuje, jen ho omezuje na skutečnosti, které dlužník v předchozím řízení neuplatnil. Platby, které proběhly až po vydání nálezu, pod to spadají. Pustil jste do rozvrhu 130 000 Kč navíc.",
+     "citace": [
+      {
+       "par": "199",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "veritel": {
+       "rozhodci": {
+        "stav": "zjištěna celá — nepopřeno",
+        "zjisteno": 210000
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "chalupa",
+   "den": 70,
+   "nadpis": "Chalupa po babičce",
+   "text": "Dlužnice zdědila před čtyřmi lety ideální **polovinu chalupy** na Vysočině; druhou polovinu vlastní její bratr. Odhad podílu 240 000 Kč. Prosí, ať ji nechá být — „jezdíme tam s dcerou na prázdniny a brácha by to nerozdýchal“.",
+   "podklad": [
+    "Dlužnice bydlí v nájemním bytě v Přerově. Chalupa **není její obydlí**.",
+    "Podíl byl sepsán do majetkové podstaty a dlužnice jeho soupis nenapadla."
+   ],
+   "volby": [
+    {
+     "text": "Podíl vydat ke zpeněžení a nabídnout ho nejdřív bratrovi.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Při splátkovém kalendáři se zpeněžením je dlužník povinen **vydat správci majetek náležející do podstaty ke zpeněžení** (§ 398 odst. 3). Ochrana obydlí podle § 398 odst. 6 se na chalupu nevztahuje — obydlím není. Oslovit bratra jako spoluvlastníka je rozumné: podíl se na trhu prodává špatně a jemu za to stojí víc.",
+     "citace": [
+      {
+       "par": "398",
+       "odst": "3"
+      },
+      {
+       "par": "398",
+       "odst": "6"
+      },
+      {
+       "par": "409",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pozdeji": [
+       {
+        "za": 120,
+        "nadpis": "Bratr podíl odkoupil",
+        "text": "Bratr nabídl 225 000 Kč, tedy téměř odhadní cenu — víc, než by dal kdokoli jiný za polovinu nemovitosti, kterou nemůže sám užívat. Prodej proběhl.",
+        "citace": [
+         {
+          "par": "289",
+          "odst": "1"
+         }
+        ],
+        "hodnoceni": "spravne",
+        "efekty": {
+         "majetek": {
+          "chalupa": {
+           "stav": "zpeněženo za 225 000 Kč",
+           "vytezek": 225000
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "Podíl v podstatě nechat a nezpeněžovat — dcera tam jezdí.",
+     "hodnoceni": "chyba",
+     "dusledek": "To nejde. Výjimka pro **obydlí** podle § 398 odst. 6 se týká bydlení, ne rekreace, a vy nemáte pravomoc majetek z podstaty vyřadit kvůli citové vazbě. Nezpeněžením jste připravil věřitele o 225 000 Kč a soud vám to vytkl ve zprávě pro oddlužení.",
+     "citace": [
+      {
+       "par": "398",
+       "odst": "3"
+      },
+      {
+       "par": "398",
+       "odst": "6"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "majetek": {
+       "chalupa": {
+        "stav": "nezpeněženo — chyba správce"
+       }
+      }
+     }
+    },
+    {
+     "text": "Zpeněžit podíl v dražbě, bratra neoslovovat.",
+     "hodnoceni": "chyba",
+     "dusledek": "Zpeněžit bylo správně, způsob nikoli. Ideální polovina nemovitosti je v dražbě prakticky neprodejná — nikdo nechce spoluvlastníka, kterého si nevybral. Vydražilo se za 95 000 Kč, tedy o 130 000 Kč míň, než nabízel bratr. Odbornou péči to neunese.",
+     "citace": [
+      {
+       "par": "286",
+       "odst": "1"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "chalupa": {
+        "stav": "vydraženo za 95 000 Kč",
+        "vytezek": 95000
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "zpravy",
+   "den": 95,
+   "nadpis": "Zpráva o přezkumu a zpráva pro oddlužení",
+   "text": "Přihlašovací lhůta skončila a běží vám lhůta **2 měsíců** na zprávu o přezkumu a zprávu pro oddlužení. Přezkum u oddlužení se nekoná na jednání — provádíte ho sám v seznamu přihlášených pohledávek a stanovisko dlužnice zjistíte při osobním jednání, jehož datum jí musíte sdělit nejméně 7 dní předem.",
+   "volby": [
+    {
+     "text": "Sejít se s dlužnicí, zprávy sestavit a podat v termínu.",
+     "hodnoceni": "spravne",
+     "dusledek": "Takhle to má vypadat. Od zveřejnění zpráv běží věřitelům i dlužnici **7 dnů na námitky** (§ 398a odst. 4) a nezajištěným táž lhůta na návrh, aby se konala schůze věřitelů.",
+     "citace": [
+      {
+       "par": "410",
+       "odst": "1"
+      },
+      {
+       "par": "410",
+       "odst": "2"
+      },
+      {
+       "par": "398a",
+       "odst": "1"
+      },
+      {
+       "par": "398a",
+       "odst": "4"
+      }
+     ],
+     "efekty": {
+      "lhuta": [
+       {
+        "id": "namitky",
+        "dny": 7
+       }
+      ],
+      "pozdeji": [
+       {
+        "za": 9,
+        "nadpis": "Námitky",
+        "text": "Credit Rapid podal námitku proti popření své pohledávky. Soud ji neshledal důvodnou a zprávu o přezkumu schválil.",
+        "citace": [
+         {
+          "par": "398a",
+          "odst": "4"
+         },
+         {
+          "par": "410",
+          "odst": "3"
+         }
+        ],
+        "hodnoceni": "info"
+       }
+      ]
+     }
+    },
+    {
+     "text": "Zprávy podat hned, bez jednání s dlužnicí — ať to je z krku.",
+     "hodnoceni": "chyba",
+     "dusledek": "Jednání s dlužnicí není formalita: zjišťujete při něm její stanovisko ke každé přihlášené pohledávce, a **popření dlužníkem má v oddlužení tytéž účinky jako popření správcem** (§ 410 odst. 5). Bez něj jste přezkum provedl vadně a soud vám zprávu vrátil k opravě.",
+     "citace": [
+      {
+       "par": "410",
+       "odst": "2"
+      },
+      {
+       "par": "410",
+       "odst": "5"
+      },
+      {
+       "par": "398a",
+       "odst": "5"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "lhuta": [
+       {
+        "id": "namitky",
+        "dny": 7
+       }
+      ]
+     }
+    },
+    {
+     "text": "Nechat to na později, teď je rozdělaného moc.",
+     "hodnoceni": "odlozeno",
+     "odlozit": true,
+     "dusledek": "Zprávy zůstávají rozpracované. Lhůta ale běží — do 2 měsíců po uplynutí přihlašovací lhůty je musíte podat, jinak je to porušení povinnosti.",
+     "citace": [
+      {
+       "par": "136",
+       "odst": "2",
+       "pism": "e"
+      }
+     ],
+     "efekty": {
+      "lhuta": [
+       {
+        "id": "zpravy",
+        "od": 61,
+        "mesice": 2
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "ztrata_prace",
+   "den": 290,
+   "nadpis": "Dlužnice přišla o práci",
+   "text": "Volá paní Dvořáková: před třemi týdny dostala výpověď pro nadbytečnost a od pondělí je doma. „Nechtěla jsem volat dřív, čekala jsem, že si rychle něco najdu. Co mám dělat?“",
+   "podklad": [
+    "Od skončení pracovního poměru uplynulo **19 dnů**.",
+    "Do evidence uchazečů o zaměstnání se dosud nepřihlásila."
+   ],
+   "volby": [
+    {
+     "text": "Poslat ji okamžitě na úřad práce a oznámit to soudu.",
+     "hodnoceni": "spravne",
+     "dusledek": "Jediná správná reakce, i když je pozdě. **§ 412 odst. 4**: nepožádá-li dlužník v případě nezaměstnanosti **do 15 dnů** o zařazení do evidence uchazečů, má se za to, že neplní povinnost usilovat o získání příjmu. Lhůta už uplynula, ale okamžitá náprava a vysvětlení soudu to zmírní — a vy to musíte uvést v nejbližší zprávě.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "4"
+      },
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "36",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "nastav": {
+       "evidence_pozde": true
+      },
+      "pozdeji": [
+       {
+        "za": 75,
+        "nadpis": "Nová práce",
+        "text": "Dlužnice nastoupila do skladu za o něco nižší mzdu. Splátky pokračují, dva měsíce ale vypadly a dluží je.",
+        "hodnoceni": "info",
+        "efekty": {
+         "pricti": {
+          "vypadle_splatky": 2
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "Uklidnit ji, ať si v klidu hledá; tři týdny nic neznamenají.",
+     "hodnoceni": "chyba",
+     "dusledek": "Znamenají. Patnáctidenní lhůta podle **§ 412 odst. 4** už uplynula a nečinností jste potvrdil stav, který se podle zákona **považuje za neplnění povinnosti** — tedy důvod ke zrušení oddlužení podle § 418 odst. 1 písm. a).",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "4"
+      },
+      {
+       "par": "418",
+       "odst": "1",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "nastav": {
+       "evidence_zmeskana": true
+      },
+      "pricti": {
+       "vypadle_splatky": 4
+      }
+     }
+    },
+    {
+     "text": "Navrhnout soudu přerušení průběhu oddlužení.",
+     "hodnoceni": "chyba",
+     "dusledek": "Předčasné. Přerušení podle **§ 412b odst. 1** je nástroj pro závažnou a dočasnou překážku, ne pro běžnou ztrátu zaměstnání — a hlavně neřeší to, co hoří: nesplněnou povinnost podle § 412 odst. 4. Soud návrh zamítl a na úřad práce šla dlužnice stejně, jen o další tři týdny později.",
+     "citace": [
+      {
+       "par": "412b",
+       "odst": "1"
+      },
+      {
+       "par": "412",
+       "odst": "4"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "nastav": {
+       "evidence_pozde": true
+      },
+      "pricti": {
+       "vypadle_splatky": 3
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dar",
+   "den": 520,
+   "nadpis": "Dar od matky",
+   "text": "Dlužnice se svěří, že jí matka dala **60 000 Kč** na nové auto do práce. „Je to dar, s dluhy to nemá co dělat, ne? Bez auta se do skladu na ranní nedostanu.“",
+   "volby": [
+    {
+     "text": "Dar je mimořádný příjem — musí ho vydat ke zpeněžení.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Dlužník je povinen vydat správci **hodnoty získané dědictvím, darem a z neúčinného právního jednání**, jakož i majetek, který neuvedl v seznamu, ač to bylo jeho povinností. Zatajený dar je jeden z nejčastějších důvodů zrušení oddlužení i odnětí osvobození podle § 417.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "b"
+      },
+      {
+       "par": "417",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "majetek": {
+       "dar": {
+        "stav": "vydán a rozdělen věřitelům",
+        "vytezek": 60000,
+        "skryty": false
+       }
+      }
+     }
+    },
+    {
+     "text": "Dar je její věc, do oddlužení nepatří.",
+     "hodnoceni": "chyba",
+     "dusledek": "Patří. **§ 412 odst. 1 písm. b)** jmenuje dar výslovně. Zatajení vyjde najevo o dva roky později při zprávě pro osvobození a věřitelé navrhnou odnětí osvobození podle § 417 — s tím, že jste o daru věděl vy.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "b"
+      },
+      {
+       "par": "417",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "nastav": {
+       "dar_zatajen": true
+      }
+     }
+    },
+    {
+     "text": "Nechat jí polovinu na auto, polovinu vydat.",
+     "hodnoceni": "chyba",
+     "dusledek": "Takovou pravomoc nemáte. Zákon nerozlišuje, nač je dar určen — vydává se celý. Potřebuje-li dlužnice auto do práce, je to argument pro **soud** (§ 398 odst. 5), ne pro vaše vlastní dělení.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "b"
+      },
+      {
+       "par": "398",
+       "odst": "5"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "dar": {
+        "stav": "vydáno jen 30 000 Kč",
+        "vytezek": 30000,
+        "skryty": false
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "navrh_zruseni",
+   "den": 900,
+   "nadpis": "Věřitel navrhuje zrušení oddlužení",
+   "text": "Credit Rapid podal návrh na zrušení schváleného oddlužení. Argumentuje výpadkem splátek po ztrátě zaměstnání a tím, že při současném tempu dlužnice nedosáhne předpokládané míry uspokojení. Soud si vyžádal vaši zprávu.",
+   "podklad": [
+    "Dlužnice od návratu do práce platí pravidelně, dluh na splátkách postupně dohání.",
+    "Mimořádná zpráva se podle § 36 odst. 3 podává **neprodleně** a uvádí se v ní, co doporučujete a proč."
+   ],
+   "volby": [
+    {
+     "text": "Doporučit, aby oddlužení běželo dál — povinnosti plní.",
+     "hodnoceni": "spravne",
+     "dusledek": "Obhajitelné a správné. Důvodem pro zrušení je **neplnění podstatných povinností** nebo zaviněná neschopnost splácet (§ 418 odst. 1) — ne jedna přechodná ztráta zaměstnání, kterou dlužnice napravila. Soud návrh zamítl.",
+     "citace": [
+      {
+       "par": "36",
+       "odst": "3"
+      },
+      {
+       "par": "418",
+       "odst": "1",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "vyhrane": 1
+      }
+     }
+    },
+    {
+     "text": "Doporučit prodloužení průběhu oddlužení o 6 měsíců.",
+     "hodnoceni": "odlozeno",
+     "dusledek": "Obranitelné, ale drahé pro dlužnici. **§ 412b odst. 5** prodloužení umožňuje, jenže tady nebyl důvod — povinnosti plní a výpadek dohání. Soud prodloužil o 6 měsíců; dlužnice tak platí půl roku navíc a vy inkasujete šest dalších měsíčních odměn.",
+     "citace": [
+      {
+       "par": "412b",
+       "odst": "5"
+      },
+      {
+       "par": "412b",
+       "odst": "6"
+      }
+     ],
+     "efekty": {
+      "nastav": {
+       "prodlouzeno": true
+      }
+     }
+    },
+    {
+     "text": "Doporučit zrušení a konkurs.",
+     "hodnoceni": "chyba",
+     "dusledek": "Tvrdé a nepodložené. Zrušení podle § 418 má přísné podmínky a žádná tu splněna není. Soud návrh zamítl a ve vaší zprávě postrádal vyváženost — vaší povinností je dát přednost **společnému zájmu věřitelů**, ne návrhu toho nejhlasitějšího.",
+     "citace": [
+      {
+       "par": "418",
+       "odst": "1"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "stehovani",
+   "den": 1100,
+   "nadpis": "Lépe placená práce v jiném městě",
+   "text": "Dlužnici nabídli místo v Olomouci s čistou mzdou o 6 000 Kč vyšší. Musela by se s dcerou přestěhovat a první dva měsíce by platila dvojí nájem. Ptá se, jestli to smí.",
+   "volby": [
+    {
+     "text": "Doporučit, aby nabídku přijala, a změnu oznámit soudu i vám.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Dlužník má povinnost **vynaložit veškeré úsilí k plnému uspokojení věřitelů**, vykonávat přiměřenou výdělečnou činnost a oznámit správci i soudu každou změnu zaměstnání a bydliště. Vyšší příjem znamená vyšší splátku a vyšší míru uspokojení.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "c"
+      }
+     ],
+     "efekty": {
+      "pricti": {
+       "splatka_navic": 3800
+      }
+     }
+    },
+    {
+     "text": "Nedoporučit — stěhování je riziko a dvojí nájem sníží splátku.",
+     "hodnoceni": "chyba",
+     "dusledek": "Krátkozraké. Dva měsíce nižší splátky proti dvaadvaceti měsícům vyšší je jasná bilance ve prospěch věřitelů, a povinnost dlužníka míří přesně sem. Zůstala, kde byla.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "„Dělejte, jak myslíte, mně do toho nic není.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Je. Dohled nad plněním povinností dlužníka a jeho vedení patří k vaší funkci a soud od vás ve zprávách očekává stanovisko. Dlužnice nabídku ze strachu odmítla.",
+     "citace": [
+      {
+       "par": "36",
+       "odst": "1"
+      },
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

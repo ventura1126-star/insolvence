@@ -1015,6 +1015,7 @@
 <script src="temata.js"></script>
 <script src="pohledavky.js"></script>
 <script src="hra.js"></script>
+<script src="hra2.js"></script>
 <script src="lhuty.js"></script>
 <script>
 (function () {
@@ -1024,7 +1025,12 @@
   var VYKLAD = window.VYKLAD || {};
   var TEMATA = window.TEMATA || [];
   var POHLEDAVKY = window.POHLEDAVKY || null;
-  var HRA = window.HRA || null;
+  // Spisů je víc a motor hry pracuje vždy s jedním. HRA se proto přepíná
+  // podle toho, který spis je otevřený — všechny funkce hry ji čtou jako
+  // „právě hraný spis", ne jako jediný, který existuje.
+  var SPISY = [window.HRA, window.HRA2].filter(Boolean);
+  SPISY.forEach(function (sp, i) { if (!sp.id) sp.id = 'spis' + (i + 1); });
+  var HRA = SPISY[0] || null;
   var LHUTY = window.LHUTY || null;
   var BEZ_CISLA = '-';
 
@@ -1178,12 +1184,13 @@
         nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
         return;
       }
-      if (POHLEDAVKY || HRA || LHUTY) vypis.appendChild(el('h2', 'cast', 'Přehledy'));
-      if (HRA) {
+      if (POHLEDAVKY || SPISY.length || LHUTY) vypis.appendChild(el('h2', 'cast', 'Přehledy'));
+      if (SPISY.length) {
         var kartaH = el('button', 'radek radek-tema radek-prehled');
         kartaH.type = 'button';
-        kartaH.appendChild(el('span', 'radek-nazev', 'Hra: Insolvenční správce — jeden spis'));
-        kartaH.appendChild(el('span', 'radek-pramen', HRA.spis));
+        kartaH.appendChild(el('span', 'radek-nazev', 'Hra: veďte spis sám'));
+        kartaH.appendChild(el('span', 'radek-pramen',
+          SPISY.length > 1 ? SPISY.length + ' spisy' : HRA.spis));
         kartaH.addEventListener('click', function () { location.hash = '#hra'; });
         vypis.appendChild(kartaH);
       }
@@ -2570,9 +2577,23 @@
      Postup se drží v localStorage, ale jen jako pohodlí: když úložiště nejde,
      hra běží dál v paměti a skončí s obnovením stránky. */
 
-  var HRA_KLIC = 'iz-hra-bures';
+  var hraStavy = {};          // id spisu → rozehraný stav
   var hraStav = null;
   var hraScroll = null;
+
+  function hraKlic() { return 'iz-hra-' + HRA.id; }
+
+  function spisPodleId(id) {
+    for (var i = 0; i < SPISY.length; i += 1) if (SPISY[i].id === id) return SPISY[i];
+    return null;
+  }
+
+  /** Počet započatých kalendářních měsíců mezi dvěma dny hry. */
+  function zapocateMesice(od, doDne) {
+    if (doDne < od) return 0;
+    var a = hraDatum(od), b = hraDatum(doDne);
+    return (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth()) + 1;
+  }
 
   function kc(n) {
     return Math.round(n).toLocaleString('cs-CZ') + ' Kč';
@@ -2661,7 +2682,7 @@
 
   function nactiHru() {
     try {
-      var t = localStorage.getItem(HRA_KLIC);
+      var t = localStorage.getItem(hraKlic());
       var s = t ? JSON.parse(t) : null;
       if (s && s.verze === HRA.verze) return s;
     } catch (e) { /* soukromé okno, zakázané úložiště */ }
@@ -2669,12 +2690,13 @@
   }
 
   function ulozHru() {
-    try { localStorage.setItem(HRA_KLIC, JSON.stringify(hraStav)); }
+    hraStavy[HRA.id] = hraStav;
+    try { localStorage.setItem(hraKlic(), JSON.stringify(hraStav)); }
     catch (e) { /* nevadí — hra běží v paměti */ }
   }
 
   function smazHru() {
-    try { localStorage.removeItem(HRA_KLIC); } catch (e) {}
+    try { localStorage.removeItem(hraKlic()); } catch (e) {}
   }
 
   /* --- stroj --- */
@@ -2977,6 +2999,7 @@
       : 'Další událost → den ' + dalsi, dalsi, true);
     if (s.den + 7 < dalsi) tlacitko('+ 1 týden', s.den + 7);
     if (s.den + 30 < dalsi) tlacitko('+ 1 měsíc', s.den + 30);
+    if (s.den + 182 < dalsi) tlacitko('+ půl roku', s.den + 182);
     karta.appendChild(posun);
     if (stoji) karta.appendChild(el('p', 'hra-pozn', 'Čas stojí, dokud se nerozhodnete.'));
 
@@ -3183,6 +3206,179 @@
     kam.appendChild(r);
   }
 
+  /** Oddlužení nekončí rozvrhem, ale zprávou pro osvobození — jiná odměna,
+      jiné pořadí, jiná otázka na konci. */
+  function spocitejOddluzeni(s) {
+    var o = HRA.odmena, f = s.flags;
+    var schvaleno = HRA.milniky.filter(function (m) {
+      return m.efekty && m.efekty.nastav && m.efekty.nastav.schvaleno;
+    })[0];
+    var denSchvaleni = schvaleno ? schvaleno.den : 0;
+
+    var m1 = zapocateMesice(0, denSchvaleni);
+    var m2 = zapocateMesice(denSchvaleni + 1, s.den);
+    if (f.prodlouzeno) m2 += 6;
+
+    var splatek = Math.max(0, m2 - (s.pricti.vypadle_splatky || 0));
+    var navic = (s.pricti.splatka_navic || 0) * Math.max(0, m2 - 24);
+    var zeSplatek = splatek * HRA.splatka + navic;
+
+    var zpenezeno = 0, polozky = [];
+    HRA.majetek.forEach(function (m) {
+      var v = s.majetek[m.id].vytezek || 0;
+      if (v) { polozky.push({ nazev: m.nazev, castka: v }); zpenezeno += v; }
+    });
+
+    var odmMes = m1 * o.do_schvaleni + m2 * o.po_schvaleni;
+    var odmZpen = Math.round(podlePasma(o.zpenezeni, zpenezeno));
+    var vydaje = (m1 + m2) * o.vydaje_mesic;
+    var spory = s.pricti.naklady_sporu || 0;
+
+    var k_dispozici = zeSplatek + zpenezeno;
+    var zbyva = k_dispozici - odmMes - odmZpen - vydaje - spory;
+
+    var naRoven = [], nezajisteni = [];
+    HRA.veritele.forEach(function (v) {
+      var st = s.veritele[v.id];
+      if (st.skryty || !st.zjisteno) return;
+      if (v.druh === 'na-roven') naRoven.push({ nazev: v.nazev, zjisteno: st.zjisteno });
+      if (v.druh === 'nezajisteny') nezajisteni.push({ nazev: v.nazev, zjisteno: st.zjisteno });
+    });
+    naRoven.forEach(function (r) {
+      r.vyplaceno = Math.max(0, Math.min(r.zjisteno, zbyva));
+      zbyva -= r.vyplaceno;
+    });
+    var soucet = nezajisteni.reduce(function (a, r) { return a + r.zjisteno; }, 0);
+    var proNe = Math.max(0, zbyva);
+    var mira = soucet ? proNe / soucet : 0;
+    nezajisteni.forEach(function (r) { r.vyplaceno = Math.round(r.zjisteno * mira); });
+
+    // § 412a odst. 1 písm. b): tři roky bez zrušení a plnění podstatných
+    // povinností; dosažení předpokládané míry zakládá domněnku, že je plnil.
+    var prekazky = [];
+    if (f.dar_zatajen) prekazky.push({
+      text: 'Dar 60 000 Kč zůstal zatajený — hodnoty získané darem se vydávají správci.',
+      citace: [{ par: '412', odst: '1', pism: 'b' }, { par: '417', odst: '1' }] });
+    if (f.evidence_zmeskana) prekazky.push({
+      text: 'Dlužnice nepožádala do 15 dnů o zařazení do evidence uchazečů — má se za to, že neplnila povinnost usilovat o příjem.',
+      citace: [{ par: '412', odst: '4' }, { par: '418', odst: '1', pism: 'a' }] });
+
+    // § 412a odst. 1 písm. b): podmínkou je plnění podstatných povinností;
+    // dosažení předpokládané míry je jen domněnka, že je dlužník plnil.
+    // Bez ní musí soud plnění posoudit — a zmeškané lhůty mluví proti.
+    var domnenka = mira >= HRA.ocekavana_mira;
+    var vysledek = prekazky.length ? 'ne' : domnenka ? 'ano' : 'nejiste';
+    return {
+      vysledek: vysledek,
+      m1: m1, m2: m2, splatek: splatek, zeSplatek: zeSplatek,
+      polozky: polozky, zpenezeno: zpenezeno,
+      odmMes: odmMes, odmZpen: odmZpen, vydaje: vydaje, spory: spory,
+      kDispozici: k_dispozici, naRoven: naRoven,
+      nezajisteni: nezajisteni, soucet: soucet, proNezajistene: proNe,
+      mira: mira, domnenka: domnenka, prekazky: prekazky,
+      prodlouzeno: !!f.prodlouzeno
+    };
+  }
+
+  function vykresliKonecOddluzeni(s, prekresli) {
+    var R = spocitejOddluzeni(s);
+    hlavni.appendChild(el('div', 'p-cislo', 'Den ' + s.den + ' · ' + fmtDatum(s.den)));
+    hlavni.appendChild(el('h1', 'p-nazev', HRA.konec.nadpis));
+    var uvod = el('div', 'perex');
+    vlozText(uvod, HRA.konec.text);
+    hlavni.appendChild(uvod);
+
+    var skore = el('div', 'hra-skore');
+    function dlazdice(cislo, popis, hlavniD) {
+      var d = el('div', 'hra-dlazdice' + (hlavniD ? ' hlavni' : ''));
+      d.appendChild(el('div', 'hra-dlazdice-cislo', cislo));
+      d.appendChild(el('div', 'hra-dlazdice-popis', popis));
+      skore.appendChild(d);
+    }
+    dlazdice((R.mira * 100).toLocaleString('cs-CZ', { maximumFractionDigits: 1 }) + ' %',
+      'dostali nezajištění věřitelé', true);
+    dlazdice(Math.round(HRA.ocekavana_mira * 100) + ' %',
+      R.domnenka ? 'předpokládaná míra — splněna' : 'předpokládaná míra — nesplněna');
+    dlazdice(String(s.pocty.zmeskane), 'zmeškaných lhůt');
+    dlazdice(String(s.pocty.chyby), 'chybných kroků');
+    hlavni.appendChild(skore);
+
+    var ZNAK = { ano: 'spravne', nejiste: 'odlozeno', ne: 'chyba' };
+    var NADPIS = {
+      ano: 'Předpoklady splněny',
+      nejiste: 'Bez domněnky — rozhodne soud',
+      ne: 'Předpoklady nesplněny' };
+    var k0 = el('section', 'hra-karta' + (R.vysledek === 'ano' ? '' : ' hra-udalost'));
+    k0.appendChild(el('div', 'stitek', 'Osvobození od placení zbytku dluhů'));
+    k0.appendChild(el('div', 'hra-verdikt ' + ZNAK[R.vysledek], NADPIS[R.vysledek]));
+    var txt = el('div', 'hra-text');
+    if (R.vysledek === 'ano') {
+      vlozText(txt,
+        'Tři roky od schválení uplynuly, oddlužení nebylo zrušeno a dlužnice dosáhla **předpokládané míry ' +
+        'uspokojení** — má se tedy za to, že plnila všechny podstatné povinnosti. Soud přizná osvobození ' +
+        'podle § 414.');
+    } else if (R.vysledek === 'nejiste') {
+      vlozText(txt,
+        'Tři roky uplynuly a oddlužení zrušeno nebylo. Dlužnice ale **nedosáhla předpokládané míry ' +
+        'uspokojení** (' + Math.round(HRA.ocekavana_mira * 100) + ' %), takže domněnka plnění povinností ' +
+        'se neuplatní a soud musí posoudit, zda je skutečně plnila.\n\n' +
+        'A tady se sečte, jak spis běžel: **' + s.pocty.zmeskane + ' zmeškaných lhůt** a **' +
+        s.pocty.chyby + ' chybných kroků**. Čím je toho víc, tím hůř se obhajuje, že se dělalo všechno, ' +
+        'co se dalo — a tím spíš věřitelé ve dvouměsíční lhůtě navrhnou prodloužení nebo zrušení.');
+    } else {
+      vlozText(txt, 'Proti osvobození stojí to, co se během tří let nedořešilo:');
+    }
+    k0.appendChild(txt);
+    R.prekazky.forEach(function (p) {
+      var r = el('div', 'hra-radek');
+      r.appendChild(el('span', 'hra-radek-nazev', p.text));
+      k0.appendChild(r);
+      k0.appendChild(citaceHry(p.citace));
+    });
+    k0.appendChild(citaceHry([{ par: '412a', odst: '1', pism: 'b' }, { par: '414', odst: '1' },
+      { par: '417', odst: '1' }]));
+    hlavni.appendChild(k0);
+
+    var k1 = el('section', 'hra-karta');
+    k1.appendChild(el('div', 'stitek', 'Co se za tři roky sešlo'));
+    radekRozvrhu(k1, 'Splátky od dlužnice', kc(R.zeSplatek),
+      null, R.splatek + ' splátek po ' + kc(HRA.splatka) +
+      (R.prodlouzeno ? ' · průběh prodloužen o 6 měsíců' : ''));
+    R.polozky.forEach(function (p) { radekRozvrhu(k1, p.nazev, kc(p.castka)); });
+    radekRozvrhu(k1, 'Celkem k dispozici', kc(R.kDispozici), 'soucet');
+    k1.appendChild(citaceHry([{ par: '398', odst: '3' }, { par: '412', odst: '1', pism: 'b' }]));
+    hlavni.appendChild(k1);
+
+    var k2 = el('section', 'hra-karta');
+    k2.appendChild(el('div', 'stitek', 'Co se z toho zaplatilo'));
+    radekRozvrhu(k2, 'Odměna správce za měsíce', '− ' + kc(R.odmMes), 'odecet',
+      R.m1 + '× 1 650 Kč do schválení, ' + R.m2 + '× 750 Kč po něm');
+    if (R.odmZpen) radekRozvrhu(k2, 'Odměna z výtěžku zpeněžení', '− ' + kc(R.odmZpen), 'odecet',
+      '15 % do 500 tis. Kč');
+    radekRozvrhu(k2, 'Hotové výdaje správce', '− ' + kc(R.vydaje), 'odecet',
+      (R.m1 + R.m2) + '× 150 Kč za započatý měsíc');
+    if (R.spory) radekRozvrhu(k2, 'Náhrada nákladů prohraných sporů', '− ' + kc(R.spory), 'odecet');
+    R.naRoven.forEach(function (r) {
+      radekRozvrhu(k2, r.nazev, '− ' + kc(r.vyplaceno), 'odecet',
+        r.vyplaceno >= r.zjisteno ? 'zaplaceno celé, před nezajištěnými' : 'zaplaceno z části');
+    });
+    radekRozvrhu(k2, 'Zbývá nezajištěným věřitelům', kc(R.proNezajistene), 'soucet');
+    k2.appendChild(citaceHry([{ par: '398', odst: '4' }, { par: '169', odst: '1', pism: 'e' },
+      { text: '§ 3 odst. 2 a § 7 odst. 4 vyhl. 313/2007 Sb.' }]));
+    hlavni.appendChild(k2);
+
+    var k3 = el('section', 'hra-karta');
+    k3.appendChild(el('div', 'stitek', 'Rozdělení mezi nezajištěné věřitele'));
+    R.nezajisteni.forEach(function (r) {
+      radekRozvrhu(k3, r.nazev, kc(r.vyplaceno), null, 'zjištěno ' + kc(r.zjisteno));
+    });
+    radekRozvrhu(k3, 'Celkem zjištěno ' + kc(R.soucet), kc(R.proNezajistene), 'soucet');
+    hlavni.appendChild(k3);
+
+    hlavni.appendChild(kartaDeniku(s, 'Jak spis běžel'));
+    hlavni.appendChild(kartaZjednoduseni(prekresli));
+  }
+
   function vykresliKonecHry(s, prekresli) {
     var R = spocitejRozvrh(s);
     hlavni.appendChild(el('div', 'p-cislo', 'Den ' + s.den + ' · ' + fmtDatum(s.den)));
@@ -3252,30 +3448,70 @@
     hlavni.appendChild(kartaZjednoduseni(prekresli));
   }
 
-  function vykresliHru() {
+  /** Rozcestník, když je spisů víc. */
+  function vykresliSpisy() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Spisy';
+    listaStav.textContent = '';
+
+    hlavni.appendChild(el('h1', 'titul', 'Jeden spis od začátku do konce'));
+    hlavni.appendChild(el('p', 'perex',
+      'Vedete spis sám: rozhodujete, čas běží, lhůty hoří a na konci se spočítá, ' +
+      'co z toho věřitelé dostali. Každý spis jde jiným způsobem řešení úpadku.'));
+
+    SPISY.forEach(function (sp) {
+      var puvodni = HRA;
+      HRA = sp;
+      var ulozeno = nactiHru();
+      HRA = puvodni;
+
+      var karta = el('button', 'radek radek-tema radek-prehled');
+      karta.type = 'button';
+      var levo = el('span');
+      levo.appendChild(el('span', 'vlakno-nazev', sp.spis));
+      levo.appendChild(el('span', 'vlakno-kde',
+        sp.konec.typ === 'oddluzeni'
+          ? 'Oddlužení plněním splátkového kalendáře · 3 roky'
+          : 'Konkurs · od rozhodnutí o úpadku po rozvrh'));
+      karta.appendChild(levo);
+      karta.appendChild(el('span', 'radek-pramen',
+        ulozeno ? (ulozeno.konec ? 'dokončeno' : 'rozehráno · den ' + ulozeno.den) : 'nezačato'));
+      karta.addEventListener('click', function () { location.hash = '#hra-' + sp.id; });
+      hlavni.appendChild(karta);
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function vykresliHru(id) {
     hlavni.textContent = '';
     zivePrepinace = [];
     zpetBtn.hidden = false;
     listaNazev.textContent = 'Hra';
     listaStav.textContent = '';
 
-    if (!HRA) {
+    if (!SPISY.length) {
       hlavni.appendChild(el('p', 'prazdno', 'Hra se nenačetla.'));
       return;
     }
+    var cilovy = (id && spisPodleId(id)) || SPISY[0];
+    if (HRA !== cilovy) { HRA = cilovy; hraStav = hraStavy[HRA.id] || null; }
     if (!hraStav) hraStav = nactiHru() || novyStavHry();
+    hraStavy[HRA.id] = hraStav;
     var s = hraStav;
 
     function prekresli(nahoru) {
       var y = window.scrollY;
-      vykresliHru();
+      vykresliHru(HRA.id);
       window.scrollTo(0, nahoru ? 0 : y);
     }
 
     listaStav.textContent = 'den ' + s.den;
 
     if (s.konec) {
-      vykresliKonecHry(s, prekresli);
+      if (HRA.konec.typ === 'oddluzeni') vykresliKonecOddluzeni(s, prekresli);
+      else vykresliKonecHry(s, prekresli);
       return;
     }
 
@@ -3304,8 +3540,10 @@
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
     else if (h === 'lhuty') vykresliLhuty();
-    else if (h === 'hra') {
-      vykresliHru();
+    else if (h === 'hra' || h.indexOf('hra-') === 0) {
+      var idSpisu = h.indexOf('hra-') === 0 ? h.slice(4) : null;
+      if (!idSpisu && SPISY.length > 1) { vykresliSpisy(); return; }
+      vykresliHru(idSpisu);
       // Návrat z citace: vrátit se tam, kde hráč četl.
       if (hraScroll != null) { window.scrollTo(0, hraScroll); hraScroll = null; }
       else window.scrollTo(0, 0);
