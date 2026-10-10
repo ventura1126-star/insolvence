@@ -1,10 +1,10 @@
 {
-  "verze": 1,
+  "verze": 2,
   "nazev": "Insolvenční správce: jeden spis",
   "spis": "Truhlárna Bureš s.r.o.",
   "zacatek": "2025-02-04",
-  "perex": "Krajský soud dnes rozhodl o úpadku Truhlárny Bureš s.r.o. a ustanovil vás insolvenčním správcem. Dluhy 6,8 mil. Kč, hala zastavená bance, stroje, jedenáct zaměstnanců, konkurs. Čas posouváte sami; cestou přijdou události a u každé se rozhodnete. Každé rozhodnutí má důsledek a paragraf, na který se dá kliknout.",
-  "uvod": "Insolvenční návrh podal sám dlužník 14. 1. 2025, tím bylo řízení zahájeno (§ 97 odst. 1). Rozhodnutí o úpadku spojené s prohlášením konkursu vyšlo v insolvenčním rejstříku dnes, 4. 2. 2025 — tímhle okamžikem nastaly jeho účinky (§ 89 odst. 1) a tady je den 0.",
+  "perex": "Krajský soud dnes rozhodl o úpadku Truhlárny Bureš s.r.o. a ustanovil vás insolvenčním správcem. Dluhy 6,8 mil. Kč, hala zastavená bance, stroje, jedenáct zaměstnanců, konkurs — a za sebou firma má neúspěšné moratorium. Čas posouváte sami; cestou přijdou události: soupis, odpůrčí žaloby, přezkum pohledávek, věřitelský výbor, incidenční spory a prodeje. Každé rozhodnutí má důsledek a paragraf, na který se dá kliknout.",
+  "uvod": "Truhlárna to nejdřív zkoušela moratoriem: na Burešův návrh se souhlasem většiny věřitelů ho soud vyhlásil 2. 10. 2024 ještě před zahájením řízení, na 3 měsíce, a 2. 1. 2025 skončilo (§ 125, § 116 odst. 2, § 119 odst. 1). Nepomohlo. Insolvenční návrh podal sám dlužník 14. 1. 2025, tím bylo řízení zahájeno (§ 97 odst. 1). Rozhodnutí o úpadku spojené s prohlášením konkursu vyšlo v insolvenčním rejstříku dnes, 4. 2. 2025 — tímhle okamžikem nastaly jeho účinky (§ 89 odst. 1) a tady je den 0.",
   "konec": {
     "den": 400,
     "nadpis": "Konečná zpráva a rozvrh",
@@ -15,6 +15,8 @@
     "Odměna správce se počítá podle § 1 vyhlášky č. 313/2007 Sb. (znění od 1. 10. 2024), ale bez DPH a bez náhrady hotových výdajů (§ 38 odst. 1). Ostatní náklady správy podstaty jsou paušál 180 000 Kč.",
     "Náhradu nákladů prohraného sporu (38 000 Kč za spor) si hra vymýšlí a strhává ji z podstaty spolu s ostatními náklady.",
     "Co se stane s pohledávkou Hrubého poté, co vrátí 420 000 Kč, hra neřeší — výslovnou odpověď v insolvenčním zákoně dohledanou nemám, tak ji nepřipisuji.",
+    "Věřitelský výbor má po celou hru tři členy (Banka Morava, Hrubý, Pila Lesák), ať volba na schůzi dopadne jakkoli; špatná volba se jen opakuje. Odměnu členů výboru hra nepočítá.",
+    "Pohledávka dodavatele energií za moratoria se v rozvrhu platí před nezajištěnými spolu se mzdami; hra předpokládá, že na všechny pohledávky postavené na roveň stačí.",
     "Rozvrh je jeden a konečný. Částečný rozvrh, zálohy na odměnu a částka na výlohy spojené s ukončením řízení (§ 305 odst. 3) jsou vynechané.",
     "Kromě Kovaříka a Lakovny Novák jsou všechny pohledávky zjištěné v přihlášené výši. Zaměstnanci dostanou celou mzdu jako pohledávku postavenou na roveň pohledávkám za podstatou; Úřad práce a náhrady mezd hra neřeší.",
     "Konec lhůty nikde nepadá na víkend ani svátek, takže se nikde neposouvá (§ 57 odst. 2 o. s. ř.)."
@@ -23,109 +25,500 @@
   "naklady_sporu": 38000,
   "odmena": {
     "pramen": "§ 1 vyhlášky č. 313/2007 Sb.",
-    "zajisteni": [[0, 0, 0.09], [1000000, 90000, 0.04], [10000000, 450000, 0.03], [50000000, 1650000, 0.02], [500000000, 10650000, 0.01]],
-    "nezajisteni": [[0, 0, 0.25], [500000, 125000, 0.20], [1000000, 225000, 0.15], [5000000, 825000, 0.13], [10000000, 1475000, 0.10], [50000000, 5475000, 0.05], [100000000, 7975000, 0.01], [250000000, 9475000, 0.005]],
+    "zajisteni": [
+      [
+        0,
+        0,
+        0.09
+      ],
+      [
+        1000000,
+        90000,
+        0.04
+      ],
+      [
+        10000000,
+        450000,
+        0.03
+      ],
+      [
+        50000000,
+        1650000,
+        0.02
+      ],
+      [
+        500000000,
+        10650000,
+        0.01
+      ]
+    ],
+    "nezajisteni": [
+      [
+        0,
+        0,
+        0.25
+      ],
+      [
+        500000,
+        125000,
+        0.2
+      ],
+      [
+        1000000,
+        225000,
+        0.15
+      ],
+      [
+        5000000,
+        825000,
+        0.13
+      ],
+      [
+        10000000,
+        1475000,
+        0.1
+      ],
+      [
+        50000000,
+        5475000,
+        0.05
+      ],
+      [
+        100000000,
+        7975000,
+        0.01
+      ],
+      [
+        250000000,
+        9475000,
+        0.005
+      ]
+    ],
     "minimum": 45000
   },
   "majetek": [
-    { "id": "hala", "nazev": "Výrobní hala s pozemkem", "hodnota": 3100000, "stav": "sepsáno · zástava Banky Morava", "zajisteni": "banka" },
-    { "id": "stroje", "nazev": "Stroje a vybavení dílny", "hodnota": 900000, "stav": "sepsáno" },
-    { "id": "pohledavky", "nazev": "Pohledávky za odběrateli", "hodnota": 400000, "stav": "sepsáno · vymáhá se" },
-    { "id": "cnc", "nazev": "CNC obráběcí centrum", "hodnota": 850000, "stav": "stojí v dílně · k posouzení" },
-    { "id": "dodavka", "nazev": "Dodávka Ford Transit (u Novotného)", "hodnota": 300000, "stav": "odpůrčí nárok", "skryty": true },
-    { "id": "platba_hruby", "nazev": "Platba Hrubému před splatností", "hodnota": 420000, "stav": "odpůrčí nárok", "skryty": true }
+    {
+      "id": "hala",
+      "nazev": "Výrobní hala s pozemkem",
+      "hodnota": 3100000,
+      "stav": "sepsáno · zástava Banky Morava",
+      "zajisteni": "banka"
+    },
+    {
+      "id": "stroje",
+      "nazev": "Stroje a vybavení dílny",
+      "hodnota": 900000,
+      "stav": "sepsáno"
+    },
+    {
+      "id": "pohledavky",
+      "nazev": "Pohledávky za odběrateli",
+      "hodnota": 400000,
+      "stav": "sepsáno · vymáhá se"
+    },
+    {
+      "id": "cnc",
+      "nazev": "CNC obráběcí centrum",
+      "hodnota": 850000,
+      "stav": "stojí v dílně · k posouzení"
+    },
+    {
+      "id": "dodavka",
+      "nazev": "Dodávka Ford Transit (u Novotného)",
+      "hodnota": 300000,
+      "stav": "odpůrčí nárok",
+      "skryty": true
+    },
+    {
+      "id": "platba_hruby",
+      "nazev": "Platba Hrubému před splatností",
+      "hodnota": 420000,
+      "stav": "odpůrčí nárok",
+      "skryty": true
+    }
   ],
   "veritele": [
-    { "id": "banka", "nazev": "Banka Morava a.s.", "castka": 2500000, "druh": "zajisteny", "stav": "úvěr zajištěný zástavou na hale" },
-    { "id": "uverni", "nazev": "Úvěrní banka a.s.", "castka": 900000, "druh": "nezajisteny", "stav": "zástava na domě jednatelovy matky — tady nezajištěná (§ 2 písm. g)" },
-    { "id": "hruby", "nazev": "Dodavatel Hrubý (dřevo)", "castka": 620000, "druh": "nezajisteny", "stav": "neuhrazené faktury" },
-    { "id": "lesak", "nazev": "Pila Lesák s.r.o.", "castka": 480000, "druh": "nezajisteny", "stav": "neuhrazené faktury" },
-    { "id": "energie", "nazev": "Dodavatel energií", "castka": 340000, "druh": "nezajisteny", "stav": "neuhrazené faktury" },
-    { "id": "fu", "nazev": "Finanční úřad", "castka": 340000, "druh": "nezajisteny", "stav": "daně za loňský rok" },
-    { "id": "kovarik", "nazev": "Kovařík (kování)", "castka": 800000, "druh": "nezajisteny", "stav": "tři faktury z ledna" },
-    { "id": "zamestnanci", "nazev": "Zaměstnanci (11 lidí)", "castka": 560000, "druh": "na-roven", "stav": "dlužné mzdy — postavené na roveň (§ 169 odst. 1 písm. a)" },
-    { "id": "lakovna", "nazev": "Lakovna Novák", "castka": 260000, "druh": "nezajisteny", "stav": "přihláška po lhůtě", "skryty": true, "zjisteno": 0 },
-    { "id": "novotny", "nazev": "Novotný (vrácení kupní ceny dodávky)", "castka": 60000, "druh": "nezajisteny", "stav": "§ 237 odst. 4", "skryty": true }
+    {
+      "id": "banka",
+      "nazev": "Banka Morava a.s.",
+      "castka": 2500000,
+      "druh": "zajisteny",
+      "stav": "úvěr zajištěný zástavou na hale"
+    },
+    {
+      "id": "uverni",
+      "nazev": "Úvěrní banka a.s.",
+      "castka": 900000,
+      "druh": "nezajisteny",
+      "stav": "úvěr; v přihlášce uvádí zástavu na domě jednatelovy matky"
+    },
+    {
+      "id": "hruby",
+      "nazev": "Dodavatel Hrubý (dřevo)",
+      "castka": 620000,
+      "druh": "nezajisteny",
+      "stav": "neuhrazené faktury"
+    },
+    {
+      "id": "lesak",
+      "nazev": "Pila Lesák s.r.o.",
+      "castka": 480000,
+      "druh": "nezajisteny",
+      "stav": "neuhrazené faktury za dřevo"
+    },
+    {
+      "id": "energie",
+      "nazev": "Dodavatel energií",
+      "castka": 340000,
+      "druh": "nezajisteny",
+      "stav": "smlouva od roku 2019, dodávky i za moratoria"
+    },
+    {
+      "id": "fu",
+      "nazev": "Finanční úřad",
+      "castka": 250000,
+      "druh": "nezajisteny",
+      "stav": "daně za rok 2023 — vykonatelné platebními výměry"
+    },
+    {
+      "id": "mraz",
+      "nazev": "Autodoprava Mráz",
+      "castka": 90000,
+      "druh": "nezajisteny",
+      "stav": "faktury za dopravu"
+    },
+    {
+      "id": "kovarik",
+      "nazev": "Kovařík (kování)",
+      "castka": 800000,
+      "druh": "nezajisteny",
+      "stav": "tři faktury z ledna"
+    },
+    {
+      "id": "zamestnanci",
+      "nazev": "Zaměstnanci (11 lidí)",
+      "castka": 560000,
+      "druh": "na-roven",
+      "stav": "dlužné mzdy — postavené na roveň (§ 169 odst. 1 písm. a)"
+    },
+    {
+      "id": "energie_mor",
+      "nazev": "Dodavatel energií — dodávky za moratoria",
+      "castka": 140000,
+      "druh": "na-roven",
+      "stav": "postavená na roveň (§ 169 odst. 1 písm. g)",
+      "skryty": true
+    },
+    {
+      "id": "lakovna",
+      "nazev": "Lakovna Novák",
+      "castka": 260000,
+      "druh": "nezajisteny",
+      "stav": "přihláška po lhůtě",
+      "skryty": true,
+      "zjisteno": 0
+    },
+    {
+      "id": "novotny",
+      "nazev": "Novotný (vrácení kupní ceny dodávky)",
+      "castka": 60000,
+      "druh": "nezajisteny",
+      "stav": "§ 237 odst. 4",
+      "skryty": true
+    }
   ],
   "lhuty": {
     "prihlasky": {
       "nazev": "Přihlášky pohledávek",
       "kdo": "věřitelé",
-      "citace": [{ "par": "136", "odst": "2", "pism": "d" }, { "par": "173", "odst": "1" }],
+      "citace": [
+        {
+          "par": "136",
+          "odst": "2",
+          "pism": "d"
+        },
+        {
+          "par": "173",
+          "odst": "1"
+        }
+      ],
       "pri_konci": {
         "text": "Lhůta k přihláškám uplynula. Přihlásili se všichni věřitelé ze seznamu závazků; k přihláškám podaným později soud nepřihlíží.",
-        "citace": [{ "par": "173", "odst": "1" }],
-        "efekty": { "veritel": { "hruby": { "stav": "přihlášena" }, "lesak": { "stav": "přihlášena" }, "energie": { "stav": "přihlášena" }, "fu": { "stav": "přihlášena" }, "kovarik": { "stav": "přihlášena · čeká na přezkum" }, "uverni": { "stav": "přihlášena — zástava na cizím domě, tady nezajištěná (§ 2 písm. g)" }, "banka": { "stav": "přihlášena · zajištěná halou" }, "zamestnanci": { "stav": "přihlášeny · postavené na roveň (§ 169 odst. 1 písm. a)" } } }
+        "citace": [
+          {
+            "par": "173",
+            "odst": "1"
+          }
+        ],
+        "efekty": {
+          "veritel": {
+            "hruby": {
+              "stav": "přihlášena"
+            },
+            "lesak": {
+              "stav": "přihlášena 502 000 Kč (s úroky) — čeká na přezkum"
+            },
+            "energie": {
+              "stav": "přihlášena"
+            },
+            "fu": {
+              "stav": "přihlášena 250 000 Kč jako vykonatelná — čeká na přezkum"
+            },
+            "kovarik": {
+              "stav": "přihlášena · čeká na přezkum"
+            },
+            "uverni": {
+              "stav": "přihlášena 900 000 Kč jako zajištěná — čeká na přezkum"
+            },
+            "banka": {
+              "stav": "přihlášena · zajištěná halou"
+            },
+            "zamestnanci": {
+              "stav": "nepřihlašují se — mzdy uplatněné podle účetnictví (§ 203 odst. 2) · postavené na roveň"
+            },
+            "mraz": {
+              "stav": "přihlášena 210 000 Kč — čeká na přezkum"
+            }
+          }
+        }
       }
     },
     "prezkum": {
       "nazev": "Přezkumné jednání",
       "kdo": "soud",
       "termin": true,
-      "citace": [{ "par": "136", "odst": "2", "pism": "f" }, { "par": "190", "odst": "1" }]
+      "citace": [
+        {
+          "par": "136",
+          "odst": "2",
+          "pism": "f"
+        },
+        {
+          "par": "190",
+          "odst": "1"
+        }
+      ]
     },
     "vylucovaci": {
       "nazev": "Vylučovací žaloba LeaseTrend",
       "kdo": "LeaseTrend",
-      "citace": [{ "par": "225", "odst": "2" }],
+      "citace": [
+        {
+          "par": "225",
+          "odst": "2"
+        }
+      ],
       "pri_konci": {
         "text": "Lhůta k vylučovací žalobě uplynula. LeaseTrend ji podala včas, 12. 3. — CNC zůstává zablokované až do pravomocného konce sporu.",
-        "citace": [{ "par": "225", "odst": "4" }]
+        "citace": [
+          {
+            "par": "225",
+            "odst": "4"
+          }
+        ]
       }
     },
     "odpor_dodavka": {
       "nazev": "Odpůrčí žaloba — dodávka",
       "kdo": "vy",
-      "citace": [{ "par": "239", "odst": "3" }],
+      "citace": [
+        {
+          "par": "239",
+          "odst": "3"
+        }
+      ],
       "udalost": "dodavka",
       "pri_konci": {
         "text": "Uplynul rok od účinků rozhodnutí o úpadku a odpůrčí žaloba proti Novotnému podaná není. **Odpůrčí nárok zanikl.** Dodávka zůstane švagrovi.",
-        "citace": [{ "par": "239", "odst": "3" }],
+        "citace": [
+          {
+            "par": "239",
+            "odst": "3"
+          }
+        ],
         "hodnoceni": "chyba",
-        "efekty": { "pocty": { "zmeskane": 1 }, "majetek": { "dodavka": { "stav": "nárok zanikl" } } }
+        "efekty": {
+          "pocty": {
+            "zmeskane": 1
+          },
+          "majetek": {
+            "dodavka": {
+              "stav": "nárok zanikl"
+            }
+          }
+        }
       }
     },
     "odpor_hruby": {
       "nazev": "Odpůrčí žaloba — Hrubý",
       "kdo": "vy",
-      "citace": [{ "par": "239", "odst": "3" }],
+      "citace": [
+        {
+          "par": "239",
+          "odst": "3"
+        }
+      ],
       "udalost": "platby",
       "pri_konci": {
         "text": "Uplynul rok od účinků rozhodnutí o úpadku a odpůrčí žaloba proti Hrubému podaná není. **Odpůrčí nárok zanikl** a 420 000 Kč zůstane Hrubému.",
-        "citace": [{ "par": "239", "odst": "3" }],
+        "citace": [
+          {
+            "par": "239",
+            "odst": "3"
+          }
+        ],
         "hodnoceni": "chyba",
-        "efekty": { "pocty": { "zmeskane": 1 }, "majetek": { "platba_hruby": { "stav": "nárok zanikl" } } }
+        "efekty": {
+          "pocty": {
+            "zmeskane": 1
+          },
+          "majetek": {
+            "platba_hruby": {
+              "stav": "nárok zanikl"
+            }
+          }
+        }
       }
     },
     "kovarik": {
       "nazev": "Žaloba Kovaříka na určení",
       "kdo": "Kovařík",
-      "citace": [{ "par": "198", "odst": "1" }]
+      "citace": [
+        {
+          "par": "198",
+          "odst": "1"
+        }
+      ]
     },
     "namitky": {
       "nazev": "Námitky proti vydání výtěžku",
       "kdo": "věřitelé",
-      "citace": [{ "par": "298", "odst": "3" }]
+      "citace": [
+        {
+          "par": "298",
+          "odst": "3"
+        }
+      ]
+    },
+    "fu_zaloba": {
+      "nazev": "Žaloba proti finančnímu úřadu",
+      "kdo": "vy",
+      "citace": [
+        {
+          "par": "199",
+          "odst": "1"
+        }
+      ],
+      "udalost": "fu_zaloba",
+      "pri_konci": {
+        "text": "Uplynulo 30 dnů od přezkumného jednání a žalobu proti finančnímu úřadu jste nepodali. Vykonatelná pohledávka je tím **zjištěná v celé výši 250 000 Kč** — popření padlo.",
+        "citace": [
+          {
+            "par": "199",
+            "odst": "1"
+          },
+          {
+            "par": "201",
+            "odst": "2"
+          }
+        ],
+        "hodnoceni": "chyba",
+        "efekty": {
+          "pocty": {
+            "zmeskane": 1
+          },
+          "veritel": {
+            "fu": {
+              "stav": "zjištěna 250 000 Kč (žaloba nepodána)",
+              "zjisteno": 250000
+            }
+          }
+        }
+      }
+    },
+    "fu_ceka": {
+      "nazev": "Žaloba proti finančnímu úřadu",
+      "kdo": "vy",
+      "citace": [
+        {
+          "par": "199",
+          "odst": "1"
+        }
+      ],
+      "pri_konci": {
+        "text": "Lhůta uplynula a finanční úřad pochopitelně nežaloval — u vykonatelné pohledávky žaluje **správce**, ne věřitel. Pohledávka je zjištěná v celé výši 250 000 Kč.",
+        "citace": [
+          {
+            "par": "199",
+            "odst": "1"
+          },
+          {
+            "par": "201",
+            "odst": "2"
+          }
+        ],
+        "hodnoceni": "chyba",
+        "efekty": {
+          "pocty": {
+            "zmeskane": 1
+          },
+          "veritel": {
+            "fu": {
+              "stav": "zjištěna 250 000 Kč (žaloba nepodána)",
+              "zjisteno": 250000
+            }
+          }
+        }
+      }
+    },
+    "schuze": {
+      "nazev": "Schůze věřitelů ke koupi strojů",
+      "kdo": "soud",
+      "termin": true,
+      "citace": [
+        {
+          "par": "47",
+          "odst": "1"
+        },
+        {
+          "par": "60",
+          "odst": "1"
+        }
+      ]
     }
   },
   "na_zacatku": {
     "lhuta": [
-      { "id": "prihlasky", "od": 0, "mesice": 2 },
-      { "id": "prezkum", "od": 84 }
+      {
+        "id": "prihlasky",
+        "od": 0,
+        "mesice": 2
+      },
+      {
+        "id": "prezkum",
+        "od": 84
+      }
     ]
   },
   "milniky": [
     {
-      "den": 148,
-      "text": "Stroje a vybavení dílny jste prodali jednomu kupci za 900 000 Kč.",
-      "citace": [{ "par": "286", "odst": "1", "pism": "c" }],
-      "efekty": { "majetek": { "stroje": { "stav": "zpeněženo", "vytezek": 900000 } } }
-    },
-    {
       "den": 178,
       "text": "Z pohledávek za odběrateli se podařilo vymoci 340 000 Kč; 60 000 Kč je nedobytných (odběratel zanikl).",
-      "citace": [{ "par": "230", "odst": "1", "pism": "d" }],
-      "efekty": { "majetek": { "pohledavky": { "stav": "vymoženo 340 000 Kč", "vytezek": 340000 } } }
+      "citace": [
+        {
+          "par": "230",
+          "odst": "1",
+          "pism": "d"
+        }
+      ],
+      "efekty": {
+        "majetek": {
+          "pohledavky": {
+            "stav": "vymoženo 340 000 Kč",
+            "vytezek": 340000
+          }
+        }
+      }
     }
   ],
   "udalosti": [
@@ -139,21 +532,61 @@
           "text": "„Podejte ji u insolvenčního soudu, nejpozději 4. 4. 2025.“",
           "hodnoceni": "spravne",
           "dusledek": "Přesně tak. Přihláška se podává **u insolvenčního soudu**, ne u správce, a to ve lhůtě 2 měsíců, kterou stanoví rozhodnutí o úpadku. Den, kdy rozhodnutí vyšlo, se do lhůty nepočítá a lhůta podle měsíců končí dnem se stejným číslem — 4. 4.",
-          "citace": [{ "par": "136", "odst": "2", "pism": "d" }, { "par": "173", "odst": "1" }, { "text": "§ 57 o. s. ř." }]
+          "citace": [
+            {
+              "par": "136",
+              "odst": "2",
+              "pism": "d"
+            },
+            {
+              "par": "173",
+              "odst": "1"
+            },
+            {
+              "text": "§ 57 o. s. ř."
+            }
+          ]
         },
         {
           "text": "„Pošlete ji mně, já ji soudu předám.“",
           "hodnoceni": "chyba",
           "dusledek": "Tohle nesmíte slíbit. Přihlášky se podávají **u insolvenčního soudu**; účinky má přihláška až dnem, kdy tam dojde. Kdyby vám ji Hrubý poslal a vy ji soudu předali po 4. 4., soud k ní nepřihlédne a Hrubý vám pak bude vyčítat škodu. Naštěstí si to Hrubý ještě ověřil u soudu sám.",
-          "citace": [{ "par": "173", "odst": "1" }, { "par": "173", "odst": "4" }],
-          "efekty": { "pocty": { "chyby": 1 } }
+          "citace": [
+            {
+              "par": "173",
+              "odst": "1"
+            },
+            {
+              "par": "173",
+              "odst": "4"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            }
+          }
         },
         {
           "text": "„Nespěchejte, stačí do přezkumného jednání 29. 4.“",
           "hodnoceni": "chyba",
           "dusledek": "Špatně. Lhůta k přihláškám je **2 měsíce** podle rozhodnutí o úpadku a končí 4. 4.; přezkumné jednání je až po ní. Přihláška podaná později se neuspokojí. Hrubý si naštěstí přečetl poučení v rozhodnutí o úpadku a podal včas.",
-          "citace": [{ "par": "136", "odst": "2", "pism": "d" }, { "par": "173", "odst": "1" }],
-          "efekty": { "pocty": { "chyby": 1 } }
+          "citace": [
+            {
+              "par": "136",
+              "odst": "2",
+              "pism": "d"
+            },
+            {
+              "par": "173",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            }
+          }
         }
       ]
     },
@@ -172,20 +605,96 @@
           "text": "Nesepsat. Stroj patří LeaseTrendu — vyzvat ji, ať si ho odveze.",
           "hodnoceni": "spravne",
           "dusledek": "Do podstaty patří **majetek dlužníka** a podklady jsou jednoznačné: vlastníkem je LeaseTrend, Truhlárna stroj jen užívala. Že Bureš přestal platit, na vlastnictví nic nemění — LeaseTrend kvůli tomu smlouvu vypověděla a dlužné splátky si přihlásí jako běžnou pohledávku. Nesepsaný stroj vás ničím neblokuje.",
-          "citace": [{ "par": "205", "odst": "1" }, { "par": "217", "odst": "1" }],
-          "efekty": { "majetek": { "cnc": { "stav": "nesepsáno · vydáno LeaseTrendu", "hodnota": 0 } } }
+          "citace": [
+            {
+              "par": "205",
+              "odst": "1"
+            },
+            {
+              "par": "217",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "majetek": {
+              "cnc": {
+                "stav": "nesepsáno · vydáno LeaseTrendu",
+                "hodnota": 0
+              }
+            }
+          }
         },
         {
           "text": "Sepsat a LeaseTrend vyrozumět — ať si to vysoudí.",
           "hodnoceni": "chyba",
           "dusledek": "Sepsat sporný majetek můžete, ale musíte věřit, že je dlužníkův — a tady podklady říkají opak. LeaseTrend vyrozumíte (doručeno 17. 2.) a od té chvíle běží **30 dní na vylučovací žalobu**. Od počátku lhůty až do pravomocného konce sporu **stroj nesmíte zpeněžit** ani s ním jinak nakládat. Blokuje se jen CNC — ostatní stroje prodat můžete.",
-          "citace": [{ "par": "224", "odst": "1" }, { "par": "225", "odst": "2" }, { "par": "225", "odst": "4" }],
+          "citace": [
+            {
+              "par": "224",
+              "odst": "1"
+            },
+            {
+              "par": "225",
+              "odst": "2"
+            },
+            {
+              "par": "225",
+              "odst": "4"
+            }
+          ],
           "efekty": {
-            "majetek": { "cnc": { "stav": "sepsáno · sporné, nelze zpeněžit" } },
-            "lhuta": [{ "id": "vylucovaci", "od": 13, "dny": 30 }],
+            "majetek": {
+              "cnc": {
+                "stav": "sepsáno · sporné, nelze zpeněžit"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "vylucovaci",
+                "od": 13,
+                "dny": 30
+              }
+            ],
             "pozdeji": [
-              { "den": 36, "text": "LeaseTrend podala u insolvenčního soudu **vylučovací žalobu** proti vám. Je to incidenční spor; dokud neskončí, CNC stojí.", "citace": [{ "par": "225", "odst": "1" }, { "par": "225", "odst": "4" }] },
-              { "den": 190, "text": "Soud vyloučil CNC z podstaty — vlastníkem je LeaseTrend. **Spor jste prohráli** a podstata platí náhradu nákladů řízení.", "citace": [{ "par": "225", "odst": "1" }], "hodnoceni": "chyba", "efekty": { "pocty": { "prohrane": 1 }, "pricti": { "naklady_sporu": 38000 }, "majetek": { "cnc": { "stav": "vyloučeno z podstaty", "hodnota": 0 } } } }
+              {
+                "den": 36,
+                "text": "LeaseTrend podala u insolvenčního soudu **vylučovací žalobu** proti vám. Je to incidenční spor; dokud neskončí, CNC stojí.",
+                "citace": [
+                  {
+                    "par": "225",
+                    "odst": "1"
+                  },
+                  {
+                    "par": "225",
+                    "odst": "4"
+                  }
+                ]
+              },
+              {
+                "den": 190,
+                "text": "Soud vyloučil CNC z podstaty — vlastníkem je LeaseTrend. **Spor jste prohráli** a podstata platí náhradu nákladů řízení.",
+                "citace": [
+                  {
+                    "par": "225",
+                    "odst": "1"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "pricti": {
+                    "naklady_sporu": 38000
+                  },
+                  "majetek": {
+                    "cnc": {
+                      "stav": "vyloučeno z podstaty",
+                      "hodnota": 0
+                    }
+                  }
+                }
+              }
             ]
           }
         },
@@ -193,14 +702,216 @@
           "text": "Sepsat. Bureš přestal platit, leasing tím padl a stroj propadá do podstaty.",
           "hodnoceni": "chyba",
           "dusledek": "Tohle je omyl. Neplacením splátek **vlastnictví nepřechází** — smlouva výslovně říká, že stroj je po celou dobu LeaseTrendu, a ta ji kvůli neplacení vypověděla. Sepíšete cizí věc, vyrozumíte LeaseTrend (doručeno 17. 2.) a začne běžet **30 dní na vylučovací žalobu**. Do konce sporu stroj nesmíte zpeněžit.",
-          "citace": [{ "par": "224", "odst": "1" }, { "par": "225", "odst": "2" }, { "par": "225", "odst": "4" }],
+          "citace": [
+            {
+              "par": "224",
+              "odst": "1"
+            },
+            {
+              "par": "225",
+              "odst": "2"
+            },
+            {
+              "par": "225",
+              "odst": "4"
+            }
+          ],
           "efekty": {
-            "majetek": { "cnc": { "stav": "sepsáno · sporné, nelze zpeněžit" } },
-            "lhuta": [{ "id": "vylucovaci", "od": 13, "dny": 30 }],
+            "majetek": {
+              "cnc": {
+                "stav": "sepsáno · sporné, nelze zpeněžit"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "vylucovaci",
+                "od": 13,
+                "dny": 30
+              }
+            ],
             "pozdeji": [
-              { "den": 36, "text": "LeaseTrend podala u insolvenčního soudu **vylučovací žalobu** proti vám. Je to incidenční spor; dokud neskončí, CNC stojí.", "citace": [{ "par": "225", "odst": "1" }, { "par": "225", "odst": "4" }] },
-              { "den": 190, "text": "Soud vyloučil CNC z podstaty — vlastníkem je LeaseTrend. **Spor jste prohráli** a podstata platí náhradu nákladů řízení.", "citace": [{ "par": "225", "odst": "1" }], "hodnoceni": "chyba", "efekty": { "pocty": { "prohrane": 1 }, "pricti": { "naklady_sporu": 38000 }, "majetek": { "cnc": { "stav": "vyloučeno z podstaty", "hodnota": 0 } } } }
+              {
+                "den": 36,
+                "text": "LeaseTrend podala u insolvenčního soudu **vylučovací žalobu** proti vám. Je to incidenční spor; dokud neskončí, CNC stojí.",
+                "citace": [
+                  {
+                    "par": "225",
+                    "odst": "1"
+                  },
+                  {
+                    "par": "225",
+                    "odst": "4"
+                  }
+                ]
+              },
+              {
+                "den": 190,
+                "text": "Soud vyloučil CNC z podstaty — vlastníkem je LeaseTrend. **Spor jste prohráli** a podstata platí náhradu nákladů řízení.",
+                "citace": [
+                  {
+                    "par": "225",
+                    "odst": "1"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "pricti": {
+                    "naklady_sporu": 38000
+                  },
+                  "majetek": {
+                    "cnc": {
+                      "stav": "vyloučeno z podstaty",
+                      "hodnota": 0
+                    }
+                  }
+                }
+              }
             ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "moratorium",
+      "den": 20,
+      "nadpis": "Pohledávka z doby moratoria",
+      "text": "Dodavatel energií poslal soudu jedinou přihlášku na **340 000 Kč** a jako nezajištěnou. Při kontrole faktur zjistíte, že se v ní míchají dvě věci: elektřina a plyn za červen až září 2024 a dodávky z doby, kdy trvalo moratorium.",
+      "podklad": [
+        "**Smlouva o dodávkách energií** trvá od roku 2019 — ke dni vyhlášení moratoria tedy déle než 3 měsíce.",
+        "**Faktury za 6–9/2024:** 200 000 Kč, nezaplaceno.",
+        "**Faktury za 2. 10. 2024 – 2. 1. 2025** (doba moratoria): 140 000 Kč, nezaplaceno. Dodavatel kvůli starým dluhům smlouvu vypovědět nesměl.",
+        "**Moratorium** bylo vyhlášeno 2. 10. 2024 před zahájením řízení a zaniklo 2. 1. 2025. Řízení bylo zahájeno 14. 1. 2025."
+      ],
+      "volby": [
+        {
+          "text": "Rozdělit: 140 000 Kč je pohledávka postavená na roveň pohledávkám za podstatou, 200 000 Kč běžná přihláška.",
+          "hodnoceni": "spravne",
+          "dusledek": "Pohledávky ze smluv o dodávkách energií, které **vznikly za trvání moratoria** vyhlášeného před zahájením řízení, jsou postavené na roveň pohledávkám za podstatou — pokud bylo řízení zahájeno do roka od konce moratoria. To tu platí: 12 dní. Zákon tím dodavateli vrací to, co mu za moratoria vzal, totiž právo odejít od smlouvy. Těch 140 000 Kč se ale nepřihlašuje, uplatní se **u vás** a zaplatíte je v plné výši kdykoli po rozhodnutí o úpadku. Zbylých 200 000 Kč za léto 2024 zůstává běžnou přihláškou.",
+          "citace": [
+            {
+              "par": "169",
+              "odst": "1",
+              "pism": "g"
+            },
+            {
+              "par": "122",
+              "odst": "2"
+            },
+            {
+              "par": "169",
+              "odst": "3"
+            },
+            {
+              "par": "203",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "energie": {
+                "castka": 200000,
+                "zjisteno": 200000,
+                "stav": "přihláška za 6–9/2024"
+              },
+              "energie_mor": {
+                "skryty": false
+              }
+            }
+          }
+        },
+        {
+          "text": "Nechat celých 340 000 Kč jako běžnou nezajištěnou přihlášku — tak to dodavatel sám podal.",
+          "hodnoceni": "chyba",
+          "dusledek": "Dodavatel se spletl, ale vy to víte. Za moratoria nesměl smlouvu vypovědět, a proto mu zákon za dodávky z té doby dává **přednostní pořadí**. Když ho necháte mezi nezajištěnými, uplatní 140 000 Kč u vás znovu; v pochybnosti mu soud uloží podat **žalobu na určení pořadí** — incidenční spor, který prohrajete.",
+          "citace": [
+            {
+              "par": "169",
+              "odst": "1",
+              "pism": "g"
+            },
+            {
+              "par": "203",
+              "odst": "1"
+            },
+            {
+              "par": "203a",
+              "odst": "1"
+            },
+            {
+              "par": "203a",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "pozdeji": [
+              {
+                "za": 90,
+                "text": "Soud určil, že 140 000 Kč za dodávky energií z doby moratoria je pohledávka postavená na roveň pohledávkám za podstatou. **Spor o pořadí jste prohráli.**",
+                "citace": [
+                  {
+                    "par": "203a",
+                    "odst": "2"
+                  },
+                  {
+                    "par": "169",
+                    "odst": "1",
+                    "pism": "g"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "veritel": {
+                    "energie": {
+                      "castka": 200000,
+                      "zjisteno": 200000,
+                      "stav": "přihláška za 6–9/2024"
+                    },
+                    "energie_mor": {
+                      "skryty": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Vzít celých 340 000 Kč jako pohledávku postavenou na roveň — energie dodávali i za moratoria.",
+          "hodnoceni": "chyba",
+          "dusledek": "Přednost mají jen pohledávky **vzniklé za trvání moratoria**. Dodávky z léta 2024 jsou starší a jsou to obyčejné nezajištěné pohledávky. Zaplatíte-li 200 000 Kč přednostně, berete je ostatním nezajištěným věřitelům.",
+          "citace": [
+            {
+              "par": "169",
+              "odst": "1",
+              "pism": "g"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "energie": {
+                "castka": 0,
+                "zjisteno": 0,
+                "stav": "celé vedeno jako přednostní"
+              },
+              "energie_mor": {
+                "skryty": false,
+                "castka": 340000,
+                "zjisteno": 340000,
+                "stav": "vedeno celé jako postavené na roveň — chybně"
+              }
+            }
           }
         }
       ]
@@ -221,12 +932,71 @@
           "text": "Podat odpůrčí žalobu proti Novotnému hned.",
           "hodnoceni": "spravne",
           "dusledek": "Prodej za pětinu ceny je úkon **bez přiměřeného protiplnění**. Truhlárna už tehdy měla víc věřitelů a faktury přes 3 měsíce po splatnosti, tedy byla v úpadku. A 8 měsíců se vejde i do **jednoho roku**, který platí pro kohokoli — jestli je švagr jednatele osobou blízkou společnosti, tak vůbec řešit nemusíte. Žalobu podáváte vy, a to do roka od účinků rozhodnutí o úpadku.",
-          "citace": [{ "par": "240", "odst": "1" }, { "par": "240", "odst": "2" }, { "par": "240", "odst": "3" }, { "par": "3", "odst": "2", "pism": "b" }, { "par": "239", "odst": "3" }],
+          "citace": [
+            {
+              "par": "240",
+              "odst": "1"
+            },
+            {
+              "par": "240",
+              "odst": "2"
+            },
+            {
+              "par": "240",
+              "odst": "3"
+            },
+            {
+              "par": "3",
+              "odst": "2",
+              "pism": "b"
+            },
+            {
+              "par": "239",
+              "odst": "3"
+            }
+          ],
           "efekty": {
-            "splnit": ["odpor_dodavka"],
-            "majetek": { "dodavka": { "stav": "odpůrčí žaloba podána" } },
+            "splnit": [
+              "odpor_dodavka"
+            ],
+            "majetek": {
+              "dodavka": {
+                "stav": "odpůrčí žaloba podána"
+              }
+            },
             "pozdeji": [
-              { "za": 150, "text": "Soud odpůrčí žalobě proti Novotnému vyhověl. Novotný vydal dodávku, prodali jste ji za 300 000 Kč. Jeho 60 000 Kč v podstatě rozpoznatelných není, a tak se mu vrací jen jako **přihlášená pohledávka**.", "citace": [{ "par": "239", "odst": "4" }, { "par": "237", "odst": "4" }], "hodnoceni": "spravne", "efekty": { "pocty": { "vyhrane": 1 }, "majetek": { "dodavka": { "stav": "vydána a zpeněžena", "vytezek": 300000 } }, "veritel": { "novotny": { "skryty": false, "stav": "pohledávka z vráceného protiplnění (§ 237 odst. 4)" } } } }
+              {
+                "za": 150,
+                "text": "Soud odpůrčí žalobě proti Novotnému vyhověl. Novotný vydal dodávku, prodali jste ji za 300 000 Kč. Jeho 60 000 Kč v podstatě rozpoznatelných není, a tak se mu vrací jen jako **přihlášená pohledávka**.",
+                "citace": [
+                  {
+                    "par": "239",
+                    "odst": "4"
+                  },
+                  {
+                    "par": "237",
+                    "odst": "4"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "pocty": {
+                    "vyhrane": 1
+                  },
+                  "majetek": {
+                    "dodavka": {
+                      "stav": "vydána a zpeněžena",
+                      "vytezek": 300000
+                    }
+                  },
+                  "veritel": {
+                    "novotny": {
+                      "skryty": false,
+                      "stav": "pohledávka z vráceného protiplnění (§ 237 odst. 4)"
+                    }
+                  }
+                }
+              }
             ]
           }
         },
@@ -235,15 +1005,51 @@
           "hodnoceni": "odlozeno",
           "odlozit": true,
           "dusledek": "Můžete — ale hlídejte si to. Odpůrčí žalobu lze podat **jen do 1 roku** od účinků rozhodnutí o úpadku, tedy do 4. 2. 2026. Pak nárok zanikne. Věc máte v Rozpracovaných a lhůtu v kalendáři.",
-          "citace": [{ "par": "239", "odst": "3" }],
-          "efekty": { "lhuta": [{ "id": "odpor_dodavka", "od": 0, "roky": 1 }] }
+          "citace": [
+            {
+              "par": "239",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "lhuta": [
+              {
+                "id": "odpor_dodavka",
+                "od": 0,
+                "roky": 1
+              }
+            ]
+          }
         },
         {
           "text": "Nežalovat. Švagr jednatele není osobou blízkou společnosti, takže 3 roky zpětně neplatí.",
           "hodnoceni": "chyba",
           "dusledek": "Úvaha jde mimo. I kdyby švagr osobou blízkou nebyl, **8 měsíců je méně než 1 rok** a tohle okno platí pro kohokoli. Podmínku úpadku v době prodeje splňují podklady samy — faktury přes 3 měsíce po splatnosti u šesti dodavatelů. Dodávku za 300 000 Kč jste věřitelům nechali ujít.",
-          "citace": [{ "par": "240", "odst": "3" }, { "par": "240", "odst": "2" }, { "par": "3", "odst": "2", "pism": "b" }],
-          "efekty": { "pocty": { "chyby": 1 }, "majetek": { "dodavka": { "stav": "nežalováno" } } }
+          "citace": [
+            {
+              "par": "240",
+              "odst": "3"
+            },
+            {
+              "par": "240",
+              "odst": "2"
+            },
+            {
+              "par": "3",
+              "odst": "2",
+              "pism": "b"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "majetek": {
+              "dodavka": {
+                "stav": "nežalováno"
+              }
+            }
+          }
         }
       ]
     },
@@ -263,12 +1069,57 @@
           "text": "Žalovat jen Hrubého.",
           "hodnoceni": "spravne",
           "dusledek": "Zaplatit dluh **dřív, než se stal splatným**, je typický zvýhodňující úkon, a Truhlárna tehdy už byla v úpadku. Hrubý je cizí osoba, takže se jde zpět **1 rok** — 10 měsíců se vejde. Platba Lese je 14 měsíců stará, tedy mimo okno, a navíc tehdy Truhlárna v úpadku zjevně nebyla.",
-          "citace": [{ "par": "241", "odst": "1" }, { "par": "241", "odst": "2" }, { "par": "241", "odst": "3", "pism": "a" }, { "par": "241", "odst": "4" }],
+          "citace": [
+            {
+              "par": "241",
+              "odst": "1"
+            },
+            {
+              "par": "241",
+              "odst": "2"
+            },
+            {
+              "par": "241",
+              "odst": "3",
+              "pism": "a"
+            },
+            {
+              "par": "241",
+              "odst": "4"
+            }
+          ],
           "efekty": {
-            "splnit": ["odpor_hruby"],
-            "majetek": { "platba_hruby": { "stav": "odpůrčí žaloba podána" } },
+            "splnit": [
+              "odpor_hruby"
+            ],
+            "majetek": {
+              "platba_hruby": {
+                "stav": "odpůrčí žaloba podána"
+              }
+            },
             "pozdeji": [
-              { "za": 150, "text": "Soud odpůrčí žalobě proti Hrubému vyhověl. Hrubý vrátil 420 000 Kč do podstaty.", "citace": [{ "par": "239", "odst": "4" }], "hodnoceni": "spravne", "efekty": { "pocty": { "vyhrane": 1 }, "majetek": { "platba_hruby": { "stav": "vráceno do podstaty", "vytezek": 420000 } } } }
+              {
+                "za": 150,
+                "text": "Soud odpůrčí žalobě proti Hrubému vyhověl. Hrubý vrátil 420 000 Kč do podstaty.",
+                "citace": [
+                  {
+                    "par": "239",
+                    "odst": "4"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "pocty": {
+                    "vyhrane": 1
+                  },
+                  "majetek": {
+                    "platba_hruby": {
+                      "stav": "vráceno do podstaty",
+                      "vytezek": 420000
+                    }
+                  }
+                }
+              }
             ]
           }
         },
@@ -276,13 +1127,68 @@
           "text": "Žalovat Hrubého i Pilu Lesák.",
           "hodnoceni": "chyba",
           "dusledek": "S Hrubým máte pravdu, s Lesem ne. Lesák je cizí osoba, a tak se u něj jde zpět **jen 1 rok** — 14 měsíců je za hranou. Tři roky platí jen pro osoby blízké a koncern. Spor s Lesem prohrajete.",
-          "citace": [{ "par": "241", "odst": "3", "pism": "a" }, { "par": "241", "odst": "4" }],
+          "citace": [
+            {
+              "par": "241",
+              "odst": "3",
+              "pism": "a"
+            },
+            {
+              "par": "241",
+              "odst": "4"
+            }
+          ],
           "efekty": {
-            "splnit": ["odpor_hruby"],
-            "majetek": { "platba_hruby": { "stav": "odpůrčí žaloba podána" } },
+            "splnit": [
+              "odpor_hruby"
+            ],
+            "majetek": {
+              "platba_hruby": {
+                "stav": "odpůrčí žaloba podána"
+              }
+            },
             "pozdeji": [
-              { "za": 150, "text": "Soud odpůrčí žalobě proti Hrubému vyhověl. Hrubý vrátil 420 000 Kč do podstaty.", "citace": [{ "par": "239", "odst": "4" }], "hodnoceni": "spravne", "efekty": { "pocty": { "vyhrane": 1 }, "majetek": { "platba_hruby": { "stav": "vráceno do podstaty", "vytezek": 420000 } } } },
-              { "za": 150, "text": "Soud žalobu proti Pile Lesák zamítl: platba proběhla 14 měsíců před zahájením řízení a Lesák není osobou blízkou ani v koncernu. **Spor jste prohráli** a podstata platí náhradu nákladů.", "citace": [{ "par": "241", "odst": "4" }], "hodnoceni": "chyba", "efekty": { "pocty": { "prohrane": 1 }, "pricti": { "naklady_sporu": 38000 } } }
+              {
+                "za": 150,
+                "text": "Soud odpůrčí žalobě proti Hrubému vyhověl. Hrubý vrátil 420 000 Kč do podstaty.",
+                "citace": [
+                  {
+                    "par": "239",
+                    "odst": "4"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "pocty": {
+                    "vyhrane": 1
+                  },
+                  "majetek": {
+                    "platba_hruby": {
+                      "stav": "vráceno do podstaty",
+                      "vytezek": 420000
+                    }
+                  }
+                }
+              },
+              {
+                "za": 150,
+                "text": "Soud žalobu proti Pile Lesák zamítl: platba proběhla 14 měsíců před zahájením řízení a Lesák není osobou blízkou ani v koncernu. **Spor jste prohráli** a podstata platí náhradu nákladů.",
+                "citace": [
+                  {
+                    "par": "241",
+                    "odst": "4"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "pricti": {
+                    "naklady_sporu": 38000
+                  }
+                }
+              }
             ]
           }
         },
@@ -291,15 +1197,47 @@
           "hodnoceni": "odlozeno",
           "odlozit": true,
           "dusledek": "Dobře, ale lhůta je pevná: odpůrčí žalobu lze podat **jen do 1 roku** od účinků rozhodnutí o úpadku, tedy do 4. 2. 2026. Pak nárok zanikne. Věc máte v Rozpracovaných.",
-          "citace": [{ "par": "239", "odst": "3" }],
-          "efekty": { "lhuta": [{ "id": "odpor_hruby", "od": 0, "roky": 1 }] }
+          "citace": [
+            {
+              "par": "239",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "lhuta": [
+              {
+                "id": "odpor_hruby",
+                "od": 0,
+                "roky": 1
+              }
+            ]
+          }
         },
         {
           "text": "Nežalovat nikoho. Hrubý dodal skutečné dřevo a dostal za něj zaplaceno.",
           "hodnoceni": "chyba",
           "dusledek": "Že dluh byl skutečný, je pravda, a právě proto jde o **zvýhodnění**: Hrubý dostal 100 % a dřív, než měl, zatímco ostatní dodavatelé dostanou v konkursu zlomek. Zákon uvádí předčasné splnění dluhu výslovně. 420 000 Kč jste nechali ležet.",
-          "citace": [{ "par": "241", "odst": "1" }, { "par": "241", "odst": "3", "pism": "a" }],
-          "efekty": { "pocty": { "chyby": 1 }, "majetek": { "platba_hruby": { "stav": "nežalováno" } } }
+          "citace": [
+            {
+              "par": "241",
+              "odst": "1"
+            },
+            {
+              "par": "241",
+              "odst": "3",
+              "pism": "a"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "majetek": {
+              "platba_hruby": {
+                "stav": "nežalováno"
+              }
+            }
+          }
         }
       ]
     },
@@ -313,30 +1251,577 @@
           "text": "Do seznamu ji nezařadit. Soud k ní nepřihlédne a přihlášku odmítne.",
           "hodnoceni": "spravne",
           "dusledek": "Je to tvrdé, ale tak to je. K přihláškám podaným po lhůtě **soud nepřihlíží** a pohledávka se v řízení neuspokojí; soud přihlášku odmítne rozhodnutím a účast Lakovny v řízení skončí. Na tom, že je pohledávka pravá, nezáleží.",
-          "citace": [{ "par": "173", "odst": "1" }, { "par": "185" }],
-          "efekty": { "veritel": { "lakovna": { "skryty": false, "stav": "přihláška po lhůtě — odmítnuta", "zjisteno": 0 } } }
+          "citace": [
+            {
+              "par": "173",
+              "odst": "1"
+            },
+            {
+              "par": "185"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "lakovna": {
+                "skryty": false,
+                "stav": "přihláška po lhůtě — odmítnuta",
+                "zjisteno": 0
+              }
+            }
+          }
         },
         {
           "text": "Zařadit. Jeden den nic neznamená a pohledávka je doložená.",
           "hodnoceni": "chyba",
           "dusledek": "Tohle rozhodnout nemůžete. K opožděné přihlášce **soud nepřihlíží**, odmítne ji a vy budete seznam opravovat. Lakovna si mezitím myslela, že je v řízení, a teď se zlobí na vás.",
-          "citace": [{ "par": "173", "odst": "1" }, { "par": "185" }],
-          "efekty": { "pocty": { "chyby": 1 }, "veritel": { "lakovna": { "skryty": false, "stav": "přihláška po lhůtě — soud ji odmítl", "zjisteno": 0 } } }
+          "citace": [
+            {
+              "par": "173",
+              "odst": "1"
+            },
+            {
+              "par": "185"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "lakovna": {
+                "skryty": false,
+                "stav": "přihláška po lhůtě — soud ji odmítl",
+                "zjisteno": 0
+              }
+            }
+          }
         },
         {
           "text": "Zařadit. Lhůta končila o víkendu, takže se posouvá na pondělí.",
           "hodnoceni": "chyba",
           "dusledek": "Posun by platil, kdyby **konec lhůty** připadl na víkend. Lhůta ale skončila v pátek 4. 4. — v sobotu už neběžela a nebylo co posouvat. Přihláška je opožděná a soud ji odmítne.",
-          "citace": [{ "text": "§ 57 odst. 2 o. s. ř." }, { "par": "7" }, { "par": "173", "odst": "1" }, { "par": "185" }],
-          "efekty": { "pocty": { "chyby": 1 }, "veritel": { "lakovna": { "skryty": false, "stav": "přihláška po lhůtě — soud ji odmítl", "zjisteno": 0 } } }
+          "citace": [
+            {
+              "text": "§ 57 odst. 2 o. s. ř."
+            },
+            {
+              "par": "7"
+            },
+            {
+              "par": "173",
+              "odst": "1"
+            },
+            {
+              "par": "185"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "lakovna": {
+                "skryty": false,
+                "stav": "přihláška po lhůtě — soud ji odmítl",
+                "zjisteno": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "prezkum_banka",
+      "den": 84,
+      "nadpis": "Přezkum 1/5: Úvěrní banka",
+      "text": "Začíná přezkumné jednání. Připravili jste seznam přihlášených pohledávek a k němu stanoviska. Úvěrní banka přihlásila **900 000 Kč** z provozního úvěru a zaškrtla, že uplatňuje právo na uspokojení ze zajištění.",
+      "podklad": [
+        "**Úvěrová smlouva** s Truhlárnou, čerpáno, nesplaceno — pohledávka sama je v pořádku.",
+        "**Zástavní smlouva:** zástavou je rodinný dům paní Burešové, matky jednatele. Dům Truhlárně nepatří a v podstatě není."
+      ],
+      "volby": [
+        {
+          "text": "Uznat pravost a výši, popřít pořadí: právo na uspokojení ze zajištění tu banka nemá.",
+          "hodnoceni": "spravne",
+          "dusledek": "Zajištěným věřitelem je jen ten, jehož pohledávku zajišťuje **majetek v podstatě**. Dům matky jednatele mezi něj nepatří — banka si ho může vymáhat mimo insolvenci, tady stojí ve frontě s dodavateli. Popíráte tedy **pořadí** a musíte zároveň říct, v jakém pořadí má pohledávka být: mezi nezajištěnými. Pravost ani výši to nemění. Banka žalobu nepodá; po lhůtě je pohledávka zjištěná v pořadí, které jste uvedli.",
+          "citace": [
+            {
+              "par": "2",
+              "pism": "g"
+            },
+            {
+              "par": "195"
+            },
+            {
+              "par": "196",
+              "odst": "1"
+            },
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "uverni": {
+                "stav": "zjištěna 900 000 Kč jako nezajištěná (zajištění popřeno)"
+              }
+            }
+          }
+        },
+        {
+          "text": "Uznat jako zajištěnou — zástavní smlouva je platná.",
+          "hodnoceni": "chyba",
+          "dusledek": "Platnost zástavy tu nerozhoduje. Zajišťovat musí majetek, **který náleží do podstaty**, a dům matky jednatele mezi něj nepatří. Seznam máte vadný: banka by na schůzi hlasovala se zajištěnými věřiteli a volila jim členy výboru. Z výtěžku podstaty by stejně nic přednostně nedostala, a hra ji proto v rozvrhu nechává mezi nezajištěnými.",
+          "citace": [
+            {
+              "par": "2",
+              "pism": "g"
+            },
+            {
+              "par": "167",
+              "odst": "1"
+            },
+            {
+              "par": "57",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "uverni": {
+                "stav": "uznána jako zajištěná — chybně"
+              }
+            }
+          }
+        },
+        {
+          "text": "Popřít pravost celé pohledávky — bez zajištění nemá banka nárok.",
+          "hodnoceni": "chyba",
+          "dusledek": "Pravost se popírá, když pohledávka **nevznikla, zanikla nebo se promlčela**. Úvěr ale čerpaný byl a nesplacený je. Banka podá žalobu na určení a incidenční spor o pravost prohrajete; zjištěná bude celá jako nezajištěná, což jste měli rovnou uznat.",
+          "citace": [
+            {
+              "par": "193"
+            },
+            {
+              "par": "195"
+            },
+            {
+              "par": "198",
+              "odst": "1"
+            },
+            {
+              "par": "159",
+              "odst": "1",
+              "pism": "a"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "uverni": {
+                "stav": "popřena co do pravosti · banka žaluje"
+              }
+            },
+            "pozdeji": [
+              {
+                "za": 100,
+                "text": "Soud určil, že pohledávka Úvěrní banky 900 000 Kč je pravá (jako nezajištěná). **Spor o pravost jste prohráli.** Náhradu nákladů vůči vám banka nemá — ve sporech o pravost, výši a pořadí ji nikdo proti správci nemá.",
+                "citace": [
+                  {
+                    "par": "201",
+                    "odst": "1",
+                    "pism": "d"
+                  },
+                  {
+                    "par": "202",
+                    "odst": "1"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "veritel": {
+                    "uverni": {
+                      "stav": "zjištěna 900 000 Kč jako nezajištěná (po sporu)"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "prezkum_lesak",
+      "den": 84,
+      "nadpis": "Přezkum 2/5: Pila Lesák",
+      "text": "Pila Lesák přihlásila **502 000 Kč**: 480 000 Kč jistiny za dřevo a 22 000 Kč úroků z prodlení.",
+      "podklad": [
+        "**Výpočet úroků v přihlášce:** úroky z prodlení počítané od splatnosti faktur až do dne podání přihlášky, 28. 3. 2025.",
+        "Z toho **22 000 Kč** připadá na dobu po rozhodnutí o úpadku (od 4. 2. 2025). Úroky do 4. 2. jsou zahrnuté v jistině přihlášky."
+      ],
+      "volby": [
+        {
+          "text": "Popřít výši o 22 000 Kč; zjištěno 480 000 Kč.",
+          "hodnoceni": "spravne",
+          "dusledek": "Úroky z prodlení, které **přirostly až po rozhodnutí o úpadku**, se v insolvenčním řízení neuspokojují. Popíráte výši a uvádíte, jaká je skutečně: 480 000 Kč. Pila Lesák to ví a nežaluje.",
+          "citace": [
+            {
+              "par": "170",
+              "pism": "a"
+            },
+            {
+              "par": "194"
+            },
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "lesak": {
+                "stav": "zjištěna 480 000 Kč (úroky po úpadku popřeny)",
+                "zjisteno": 480000
+              }
+            }
+          }
+        },
+        {
+          "text": "Uznat celých 502 000 Kč — úroky z prodlení jsou zákonné.",
+          "hodnoceni": "chyba",
+          "dusledek": "Zákonné jsou, ale ty, které přirostly **po rozhodnutí o úpadku**, se v insolvenci neuspokojují. Uznáním je pustíte do rozvrhu na úkor ostatních.",
+          "citace": [
+            {
+              "par": "170",
+              "pism": "a"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "lesak": {
+                "stav": "zjištěna 502 000 Kč — chybně i s úroky po úpadku",
+                "zjisteno": 502000
+              }
+            }
+          }
+        },
+        {
+          "text": "Popřít celou pohledávku, protože je v ní chyba.",
+          "hodnoceni": "chyba",
+          "dusledek": "Chyba v úrocích neznamená, že pohledávka nevznikla. Popírat se má **jen to, co nesedí** — tady výše o 22 000 Kč. Lesák podá žalobu a spor o pravost jistiny prohrajete.",
+          "citace": [
+            {
+              "par": "193"
+            },
+            {
+              "par": "194"
+            },
+            {
+              "par": "159",
+              "odst": "1",
+              "pism": "a"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "lesak": {
+                "stav": "popřena celá · Lesák žaluje"
+              }
+            },
+            "pozdeji": [
+              {
+                "za": 100,
+                "text": "Soud určil pohledávku Pily Lesák ve výši 480 000 Kč. **Spor jste z větší části prohráli.**",
+                "citace": [
+                  {
+                    "par": "201",
+                    "odst": "1",
+                    "pism": "d"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "veritel": {
+                    "lesak": {
+                      "stav": "zjištěna 480 000 Kč (po sporu)",
+                      "zjisteno": 480000
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "prezkum_mraz",
+      "den": 84,
+      "nadpis": "Přezkum 3/5: Autodoprava Mráz",
+      "text": "Autodoprava Mráz přihlásila **210 000 Kč** za sedm faktur za dopravu dřeva a hotových výrobků.",
+      "podklad": [
+        "**Výpis z účtu Truhlárny, listopad 2023:** čtyři z těch sedmi faktur, celkem **120 000 Kč**, jsou zaplacené. Platby mají v poznámce čísla faktur.",
+        "Zbylé tři faktury, **90 000 Kč**, zaplacené nejsou."
+      ],
+      "volby": [
+        {
+          "text": "Popřít výši: skutečně dluží 90 000 Kč.",
+          "hodnoceni": "spravne",
+          "dusledek": "Popíráte výši a uvádíte skutečnou částku. Mráz nežaluje a pohledávka je zjištěná ve výši 90 000 Kč — jenže to je **méně než polovina** přihlášené částky. Pak se k přihlášce **nepřihlíží vůbec, ani v těch 90 000 Kč**. Navíc můžete soudu navrhnout, aby Mrázovi uložil zaplatit do podstaty až 120 000 Kč, o které přihlášku nafoukl; to by byl další incidenční spor (hra ho nevede).",
+          "citace": [
+            {
+              "par": "194"
+            },
+            {
+              "par": "178",
+              "odst": "1"
+            },
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "mraz": {
+                "stav": "popřena výše · čeká se na lhůtu"
+              }
+            },
+            "pozdeji": [
+              {
+                "den": 115,
+                "text": "Mráz žalobu nepodal. Pohledávka je zjištěná ve výši 90 000 Kč, tedy pod 50 % přihlášené částky — **k přihlášce se nepřihlíží ani v zjištěném rozsahu**.",
+                "citace": [
+                  {
+                    "par": "178",
+                    "odst": "1"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "veritel": {
+                    "mraz": {
+                      "stav": "zjištěno pod 50 % přihlášky — nepřihlíží se",
+                      "zjisteno": 0
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Uznat 210 000 Kč — faktury jsou řádně vystavené.",
+          "hodnoceni": "chyba",
+          "dusledek": "Čtyři z faktur jsou zaplacené a dluh z nich **zanikl**. Uznáním pustíte do rozvrhu 120 000 Kč, které Truhlárna už zaplatila — a Mráz se navíc vyhne sankci za nadsazenou přihlášku.",
+          "citace": [
+            {
+              "par": "178",
+              "odst": "1"
+            },
+            {
+              "par": "192",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "mraz": {
+                "stav": "zjištěna 210 000 Kč — chybně",
+                "zjisteno": 210000
+              }
+            }
+          }
+        },
+        {
+          "text": "Popřít pravost celé pohledávky — přihláška je nepoctivá.",
+          "hodnoceni": "chyba",
+          "dusledek": "Pravost se popírá u pohledávky, která nevznikla, zanikla nebo se promlčela. To platí jen pro 120 000 Kč; 90 000 Kč Truhlárna opravdu dluží. Mráz podá žalobu a soud mu 90 000 Kč přizná — **spor o pravost z části prohrajete**. Pravidlo o 50 % se ale uplatní i po sporu, takže se k přihlášce nakonec stejně nepřihlíží.",
+          "citace": [
+            {
+              "par": "193"
+            },
+            {
+              "par": "178",
+              "odst": "1"
+            },
+            {
+              "par": "159",
+              "odst": "1",
+              "pism": "a"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "mraz": {
+                "stav": "popřena celá · Mráz žaluje"
+              }
+            },
+            "pozdeji": [
+              {
+                "za": 100,
+                "text": "Soud určil pohledávku Autodopravy Mráz ve výši 90 000 Kč. **Spor jste z části prohráli**; protože je to pod 50 % přihlášky, k přihlášce se přesto nepřihlíží.",
+                "citace": [
+                  {
+                    "par": "178",
+                    "odst": "1"
+                  },
+                  {
+                    "par": "201",
+                    "odst": "1",
+                    "pism": "d"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "veritel": {
+                    "mraz": {
+                      "stav": "po sporu pod 50 % přihlášky — nepřihlíží se",
+                      "zjisteno": 0
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "prezkum_fu",
+      "den": 84,
+      "nadpis": "Přezkum 4/5: Finanční úřad",
+      "text": "Finanční úřad přihlásil **250 000 Kč** daně z příjmů za rok 2023 jako **vykonatelnou** pohledávku — opírá ji o platební výměr. Ve výpisech z účtu ale něco najdete.",
+      "podklad": [
+        "**Platební výměr** z 20. 11. 2024 na 250 000 Kč, v právní moci.",
+        "**Výpis z účtu Truhlárny, 20. 12. 2024:** platba 60 000 Kč finančnímu úřadu s variabilním symbolem té daně. Na výpisu z osobního daňového účtu chybí, úřad ji zjevně zaúčtoval jinam.",
+        "Platba proběhla až **po vydání výměru**, v daňovém řízení ji tedy Truhlárna uplatnit nemohla."
+      ],
+      "volby": [
+        {
+          "text": "Popřít výši o 60 000 Kč; skutečná výše je 190 000 Kč.",
+          "hodnoceni": "spravne",
+          "dusledek": "Popřít vykonatelnou pohledávku lze jen ze skutečností, které dlužník neuplatnil v řízení před vydáním rozhodnutí — a zaplacení po výměru takové je. Pozor ale na to, **kdo žaluje**: u vykonatelné pohledávky musíte žalobu podat **vy**, a to do 30 dnů od přezkumného jednání. Jinak je pohledávka zjištěná celá.",
+          "citace": [
+            {
+              "par": "199",
+              "odst": "1"
+            },
+            {
+              "par": "199",
+              "odst": "2"
+            },
+            {
+              "par": "194"
+            },
+            {
+              "par": "201",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "fu_popreno": true
+            },
+            "veritel": {
+              "fu": {
+                "stav": "popřena výše o 60 000 Kč · žalovat musíte vy"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "fu_zaloba",
+                "od": 84,
+                "dny": 30
+              }
+            ]
+          }
+        },
+        {
+          "text": "Uznat — vykonatelnou pohledávku popírat nejde.",
+          "hodnoceni": "chyba",
+          "dusledek": "Jde to, jen s omezením: důvodem mohou být jen skutečnosti, které dlužník v daňovém řízení neuplatnil. Platba po vydání výměru je přesně taková. Uznáním pustíte do rozvrhu 60 000 Kč, které už jsou zaplacené.",
+          "citace": [
+            {
+              "par": "199",
+              "odst": "2"
+            },
+            {
+              "par": "192",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "fu": {
+                "stav": "zjištěna 250 000 Kč — chybně",
+                "zjisteno": 250000
+              }
+            }
+          }
+        },
+        {
+          "text": "Popřít výši o 60 000 Kč a počkat, jestli finanční úřad podá žalobu.",
+          "hodnoceni": "chyba",
+          "dusledek": "Popření je správné, ale čekat nemáte na co. U **nevykonatelné** pohledávky žaluje věřitel, u **vykonatelné** správce. Když žalobu do 30 dnů nepodáte, je pohledávka zjištěná v plné výši. Lhůtu máte v kalendáři — a nikdo jiný ji za vás neuhlídá.",
+          "citace": [
+            {
+              "par": "199",
+              "odst": "1"
+            },
+            {
+              "par": "201",
+              "odst": "2"
+            },
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "fu": {
+                "stav": "popřena výše o 60 000 Kč · čekáte na žalobu úřadu"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "fu_ceka",
+                "od": 84,
+                "dny": 30
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "kovarik",
       "den": 84,
-      "nadpis": "Přezkumné jednání: Kovařík",
-      "text": "Je přezkumné jednání. Na stole máte přihlášku dodavatele Kovaříka: **800 000 Kč** za kování a spojovací materiál. Pohledávka je nevykonatelná — Kovařík na ni nemá rozsudek ani jiný exekuční titul. Něco na ní nesedí.",
+      "nadpis": "Přezkum 5/5: Kovařík",
+      "text": "Poslední přihláška: dodavatel Kovařík, **800 000 Kč** za kování a spojovací materiál. Pohledávka je nevykonatelná — Kovařík na ni nemá rozsudek ani jiný exekuční titul. Něco na ní nesedí.",
       "podklad": [
         "**Tři faktury z 2.–9. 1. 2025**, tedy z týdne před zahájením řízení, celkem 800 000 Kč.",
         "**Dodací listy chybí.** Ve skladu je kování za 40 000 Kč.",
@@ -347,13 +1832,59 @@
         {
           "text": "Popřít pravost pohledávky.",
           "hodnoceni": "spravne",
-          "dusledek": "Faktury za osminásobek roční spotřeby, bez dodacích listů a bez zboží ve skladu — to je důvod popřít **pravost**. Pohledávka je nevykonatelná, takže žalovat musí Kovařík, a to do 30 dnů od přezkumného jednání. Když žalobu nepodá, k pohledávce se **nepřihlíží**.",
-          "citace": [{ "par": "198", "odst": "1" }],
+          "dusledek": "Faktury za osminásobek roční spotřeby, bez dodacích listů a bez zboží ve skladu — to je důvod popřít **pravost**: tvrdíte, že pohledávka vůbec nevznikla. Pohledávka je nevykonatelná, takže žalovat musí Kovařík, a to do 30 dnů od přezkumného jednání. Když nežaluje, k pohledávce se nepřihlíží.",
+          "citace": [
+            {
+              "par": "193"
+            },
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
           "efekty": {
-            "veritel": { "kovarik": { "stav": "popřena co do pravosti · běží lhůta k žalobě" } },
-            "lhuta": [{ "id": "kovarik", "od": 84, "dny": 30 }],
+            "veritel": {
+              "kovarik": {
+                "stav": "popřena co do pravosti · běží lhůta k žalobě"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "kovarik",
+                "od": 84,
+                "dny": 30
+              }
+            ],
             "pozdeji": [
-              { "den": 115, "text": "Kovařík ve lhůtě žalobu nepodal. Pohledávka popřená co do pravosti — **nepřihlíží se k ní**.", "citace": [{ "par": "198", "odst": "1" }], "hodnoceni": "spravne", "efekty": { "veritel": { "kovarik": { "stav": "popřena, bez žaloby — nepřihlíží se", "zjisteno": 0 } } } }
+              {
+                "den": 105,
+                "text": "Kovařík podal u insolvenčního soudu **žalobu na určení pravosti** pohledávky proti vám. Je to incidenční spor; povede ho tentýž soud ve vašem spisu.",
+                "citace": [
+                  {
+                    "par": "198",
+                    "odst": "1"
+                  },
+                  {
+                    "par": "159",
+                    "odst": "1",
+                    "pism": "a"
+                  },
+                  {
+                    "par": "160",
+                    "odst": "1"
+                  }
+                ],
+                "efekty": {
+                  "nastav": {
+                    "kovarik_zaloba": true
+                  },
+                  "veritel": {
+                    "kovarik": {
+                      "stav": "popřena co do pravosti · incidenční spor"
+                    }
+                  }
+                }
+              }
             ]
           }
         },
@@ -361,13 +1892,47 @@
           "text": "Popřít jen výši: uznat 400 000 Kč, zbytek popřít.",
           "hodnoceni": "chyba",
           "dusledek": "Napůl. Pochybnost tu není o tom, kolik Kovařík dodal, ale **jestli vůbec něco dodal** — a to je otázka pravosti. Popření jen co do výše má jiný následek: když Kovařík nežaluje, pohledávka je **zjištěná ve výši, kterou jste uznali**. Do rozvrhu tak vpustíte 400 000 Kč, za které možná nic nedodal.",
-          "citace": [{ "par": "198", "odst": "1" }],
+          "citace": [
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
           "efekty": {
-            "pocty": { "chyby": 1 },
-            "veritel": { "kovarik": { "stav": "popřena co do výše · běží lhůta k žalobě" } },
-            "lhuta": [{ "id": "kovarik", "od": 84, "dny": 30 }],
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "kovarik": {
+                "stav": "popřena co do výše · běží lhůta k žalobě"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "kovarik",
+                "od": 84,
+                "dny": 30
+              }
+            ],
             "pozdeji": [
-              { "den": 115, "text": "Kovařík žalobu nepodal. Pohledávka popřená co do výše je tím **zjištěná v uznané výši 400 000 Kč**.", "citace": [{ "par": "198", "odst": "1" }], "efekty": { "veritel": { "kovarik": { "stav": "zjištěna ve výši 400 000 Kč", "zjisteno": 400000 } } } }
+              {
+                "den": 115,
+                "text": "Kovařík žalobu nepodal. Pohledávka popřená co do výše je tím **zjištěná v uznané výši 400 000 Kč**.",
+                "citace": [
+                  {
+                    "par": "198",
+                    "odst": "1"
+                  }
+                ],
+                "efekty": {
+                  "veritel": {
+                    "kovarik": {
+                      "stav": "zjištěna ve výši 400 000 Kč",
+                      "zjisteno": 400000
+                    }
+                  }
+                }
+              }
             ]
           }
         },
@@ -375,8 +1940,635 @@
           "text": "Uznat. Faktury jsou formálně v pořádku.",
           "hodnoceni": "chyba",
           "dusledek": "Formální bezvadnost nestačí — přezkoumat pohledávky je právě vaše práce. Uznaná pohledávka je zjištěná a 800 000 Kč, za které Kovařík nejspíš nic nedodal, se bude v rozvrhu dělit s poctivými věřiteli.",
-          "citace": [{ "par": "198", "odst": "1" }],
-          "efekty": { "pocty": { "chyby": 1 }, "veritel": { "kovarik": { "stav": "zjištěna 800 000 Kč", "zjisteno": 800000 } } }
+          "citace": [
+            {
+              "par": "198",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "kovarik": {
+                "stav": "zjištěna 800 000 Kč",
+                "zjisteno": 800000
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "vybor",
+      "den": 84,
+      "nadpis": "Schůze věřitelů: věřitelský výbor",
+      "text": "Po přezkumu pokračuje první schůze věřitelů. Řídí ji soud, vy radíte. Na pořadu je, zda zvolit věřitelský výbor. Přihlášených věřitelů je osm (zaměstnanci se nepřihlašují a Lakovna Novák vypadla). Návrhy z pléna: Banka Morava chce do výboru sebe a Úvěrní banku „za zajištěné“ a k tomu Hrubého; Bureš přes svého advokáta prosazuje Kovaříka, „protože je to velký věřitel“. Hrubý a Pila Lesák kandidovat chtějí.",
+      "volby": [
+        {
+          "text": "Doporučit tříčlenný výbor: Banka Morava za zajištěné, Hrubý a Pila Lesák za nezajištěné.",
+          "hodnoceni": "spravne",
+          "dusledek": "Výbor tu povinný není — povinný je až **nad 50 přihlášených věřitelů**. Přesto se vyplatí: bez něj vykonává jeho působnost soud a vy budete na každý souhlas čekat. Výbor má 3 až 7 členů a **nezajištění v něm musí mít aspoň tolik členů jako zajištění**; zajištěné volí zajištění, nezajištěné nezajištění. Kovařík s popřenou pohledávkou a vazbou na jednatele by výbor jen zatížil. Schůze odhlasuje váš návrh, soud volbu potvrdí.",
+          "citace": [
+            {
+              "par": "56",
+              "odst": "1"
+            },
+            {
+              "par": "56",
+              "odst": "2"
+            },
+            {
+              "par": "57",
+              "odst": "1"
+            },
+            {
+              "par": "57",
+              "odst": "2"
+            },
+            {
+              "par": "57",
+              "odst": "3"
+            },
+            {
+              "par": "61",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "vybor": true
+            }
+          }
+        },
+        {
+          "text": "Upozornit, že výbor je povinný, a schválit návrh Banky Morava (dvě banky za zajištěné a Hrubý).",
+          "hodnoceni": "chyba",
+          "dusledek": "Dvakrát vedle. Povinný je výbor až nad 50 přihlášených věřitelů. A Úvěrní banka **zajištěným věřitelem není** — zástava na domě matky jednatele v podstatě neleží. Zajištění by tak měli dva členy a nezajištění jednoho, což zákon nedovolí. Soud volbu nepotvrdí a hlasuje se znovu; nakonec vyjde Banka Morava, Hrubý a Pila Lesák.",
+          "citace": [
+            {
+              "par": "56",
+              "odst": "1"
+            },
+            {
+              "par": "57",
+              "odst": "1"
+            },
+            {
+              "par": "2",
+              "pism": "g"
+            },
+            {
+              "par": "57",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "nastav": {
+              "vybor": true
+            }
+          }
+        },
+        {
+          "text": "Podpořit Kovaříka — je to věřitel s velkou pohledávkou a zná provoz.",
+          "hodnoceni": "chyba",
+          "dusledek": "Kovaříkovu pohledávku jste před chvílí popřeli co do pravosti a o jeho vazbě na jednatele víte. Členem výboru nesmí být nikdo, **u koho je důvod pochybovat o nepodjatosti** vůči dlužníkovi, a s popřenou pohledávkou smí hlasovat jen tehdy, když mu to schůze přizná. Soud volbu nepotvrdí; výbor nakonec tvoří Banka Morava, Hrubý a Pila Lesák.",
+          "citace": [
+            {
+              "par": "59",
+              "odst": "2"
+            },
+            {
+              "par": "59",
+              "odst": "3"
+            },
+            {
+              "par": "51",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "nastav": {
+              "vybor": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fu_zaloba",
+      "den": 90,
+      "podminka": {
+        "fu_popreno": true
+      },
+      "odlozitelna": true,
+      "nadpis": "Incidenční spor: žaloba proti finančnímu úřadu",
+      "text": "Popřeli jste vykonatelnou pohledávku finančního úřadu co do výše 60 000 Kč. Teď je řada na vás: do 30 dnů od přezkumného jednání, tedy do **29. 5. 2025**, musí soudu dojít vaše žaloba. Koncept máte hotový, stačí ho podat.",
+      "volby": [
+        {
+          "text": "Podat žalobu teď.",
+          "hodnoceni": "spravne",
+          "dusledek": "Podáno. Je to **incidenční spor o výši** přihlášené pohledávky, rozhoduje ho insolvenční soud. V žalobě smíte uplatnit jen to, pro co jste pohledávku popřeli — tedy platbu 60 000 Kč z 20. 12. 2024. Výpis z účtu to dokazuje.",
+          "citace": [
+            {
+              "par": "199",
+              "odst": "1"
+            },
+            {
+              "par": "199",
+              "odst": "3"
+            },
+            {
+              "par": "159",
+              "odst": "1",
+              "pism": "a"
+            }
+          ],
+          "efekty": {
+            "pozdeji": [
+              {
+                "za": 120,
+                "text": "Soud žalobě vyhověl: pohledávka finančního úřadu je zjištěná ve výši 190 000 Kč.",
+                "citace": [
+                  {
+                    "par": "201",
+                    "odst": "1",
+                    "pism": "d"
+                  },
+                  {
+                    "par": "201",
+                    "odst": "3"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "pocty": {
+                    "vyhrane": 1
+                  },
+                  "veritel": {
+                    "fu": {
+                      "stav": "zjištěna 190 000 Kč (spor vyhrán)",
+                      "zjisteno": 190000
+                    }
+                  }
+                }
+              }
+            ],
+            "veritel": {
+              "fu": {
+                "stav": "popřena výše · incidenční spor běží"
+              }
+            }
+          }
+        },
+        {
+          "text": "Odložit — lhůta je ještě dlouhá.",
+          "hodnoceni": "odlozeno",
+          "odlozit": true,
+          "dusledek": "Lhůta běží do 29. 5. 2025 a prodloužit ji nejde. Když žaloba soudu nedojde včas, je pohledávka zjištěná celá. Věc máte v Rozpracovaných.",
+          "citace": [
+            {
+              "par": "199",
+              "odst": "1"
+            },
+            {
+              "par": "201",
+              "odst": "2"
+            }
+          ]
+        },
+        {
+          "text": "Nepodávat — kvůli 60 000 Kč se s úřadem soudit nevyplatí.",
+          "hodnoceni": "chyba",
+          "dusledek": "Nepodáte-li žalobu, je pohledávka zjištěná v plné výši 250 000 Kč — a 60 000 Kč, které Truhlárna už zaplatila, dostane úřad v rozvrhu podruhé, na úkor ostatních. Důkaz máte na výpisu z účtu; náhradu nákladů by po vás úřad v tomhle sporu stejně chtít nemohl.",
+          "citace": [
+            {
+              "par": "201",
+              "odst": "2"
+            },
+            {
+              "par": "202",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "fu": {
+                "stav": "zjištěna 250 000 Kč (žaloba nepodána)",
+                "zjisteno": 250000
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "vybor_lesak",
+      "den": 120,
+      "nadpis": "Výbor chce odpůrčí žalobu proti Pile Lesák",
+      "text": "Předseda výboru Hrubý vám posílá usnesení: „Správce podá odpůrčí žalobu proti Pile Lesák kvůli platbě 95 000 Kč z doby moratoria. Za moratoria se nemělo platit nikomu přednostně.“ Pro hlasovali Banka Morava a Hrubý; Lesák nehlasoval.",
+      "podklad": [
+        "**Platba 10. 10. 2024** (za moratoria): 95 000 Kč Pile Lesák za dřevo dodané **20. 9. 2024**, tedy 12 dní před vyhlášením moratoria. Dřevo šlo na rozpracované zakázky, bez něj by dílna stála.",
+        "**Peníze v podstatě dnes:** 60 000 Kč. Stroje, hala ani pohledávky zatím prodané nejsou."
+      ],
+      "volby": [
+        {
+          "text": "Vysvětlit výboru, proč je platba chráněná; a kdyby na žalobě trval, podmínit ji zálohou od věřitelů.",
+          "hodnoceni": "spravne",
+          "dusledek": "Usnesení výboru vás zavazuje — rozhodne-li výbor o odpůrčí žalobě, správce ji podá **vždy**. Jenže tahle žaloba je předem prohraná: závazky související se zachováním provozu, vzniklé v posledních 30 dnech před moratoriem, smí dlužník za moratoria platit **přednostně**, a takový úkon zvýhodňujícím úkonem není. A protože v podstatě nejsou peníze na spor, smíte podání podmínit **zálohou od věřitelů**. Hrubý platit nechce, výbor usnesení zruší. Lesák o věci správně nehlasoval: o sporu, jehož by byl stranou, člen výboru hlasovat nesmí.",
+          "citace": [
+            {
+              "par": "239",
+              "odst": "2"
+            },
+            {
+              "par": "122",
+              "odst": "1"
+            },
+            {
+              "par": "241",
+              "odst": "5",
+              "pism": "c"
+            },
+            {
+              "par": "58",
+              "odst": "3"
+            },
+            {
+              "par": "53",
+              "odst": "2",
+              "pism": "c"
+            }
+          ],
+          "efekty": {}
+        },
+        {
+          "text": "Podat žalobu, jak výbor chce.",
+          "hodnoceni": "chyba",
+          "dusledek": "Poslušnost je tu na místě jen napůl. Výboru byste měli nejdřív říct, že platba je chráněná zákonem o moratoriu, a podání podmínit zálohou, když na spor v podstatě nejsou peníze. Takhle podáte předem prohranou žalobu z peněz všech věřitelů.",
+          "citace": [
+            {
+              "par": "239",
+              "odst": "2"
+            },
+            {
+              "par": "122",
+              "odst": "1"
+            },
+            {
+              "par": "241",
+              "odst": "5",
+              "pism": "c"
+            }
+          ],
+          "efekty": {
+            "pozdeji": [
+              {
+                "za": 140,
+                "text": "Soud odpůrčí žalobu proti Pile Lesák zamítl: platba za moratoria na provozní závazek z posledních 30 dnů před jeho vyhlášením zvýhodňujícím úkonem není. **Spor jste prohráli** a podstata platí náhradu nákladů.",
+                "citace": [
+                  {
+                    "par": "241",
+                    "odst": "5",
+                    "pism": "c"
+                  },
+                  {
+                    "par": "122",
+                    "odst": "1"
+                  }
+                ],
+                "hodnoceni": "chyba",
+                "efekty": {
+                  "pocty": {
+                    "prohrane": 1
+                  },
+                  "pricti": {
+                    "naklady_sporu": 38000
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Odmítnout — výbor dohlíží, ale správci nařizovat nemůže.",
+          "hodnoceni": "chyba",
+          "dusledek": "Tady nařizovat může: rozhodne-li věřitelský výbor, že se má podat odpůrčí žaloba, správce ji podá **vždy**. Výbor si u soudu stěžuje a soud vám to připomene. Správná cesta byla vysvětlit, proč je platba chráněná, a případně si říct o zálohu. Nakonec to výbor po vysvětlení stáhne sám.",
+          "citace": [
+            {
+              "par": "239",
+              "odst": "2"
+            },
+            {
+              "par": "58",
+              "odst": "2",
+              "pism": "a"
+            },
+            {
+              "par": "58",
+              "odst": "2",
+              "pism": "i"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "stroje",
+      "den": 148,
+      "nadpis": "Prodej strojů: kupec z výboru",
+      "text": "Stroje a vybavení dílny chcete prodat **mimo dražbu**, vcelku. Máte dvě nabídky: nábytkářská firma Kroupa dá **900 000 Kč** hned. Dodavatel Hrubý — člen věřitelského výboru — nabízí **950 000 Kč**, chce dílnu převzít a dát práci třem bývalým zaměstnancům.",
+      "volby": [
+        {
+          "text": "Prodat Kroupovi za 900 000 Kč se souhlasem soudu a věřitelského výboru.",
+          "hodnoceni": "spravne",
+          "dusledek": "V pořádku. Prodej mimo dražbu potřebuje **souhlas insolvenčního soudu i věřitelského výboru**; dokud oba nemáte, smlouva nenabude účinnosti. Kroupa platí 900 000 Kč. Nevyužili jste ale vyšší nabídku — šlo to i s Hrubým, jen jinou cestou.",
+          "citace": [
+            {
+              "par": "286",
+              "odst": "1",
+              "pism": "c"
+            },
+            {
+              "par": "289",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "majetek": {
+              "stroje": {
+                "stav": "prodáno Kroupovi mimo dražbu",
+                "vytezek": 900000
+              }
+            }
+          }
+        },
+        {
+          "text": "Svolat schůzi věřitelů k souhlasu s koupí Hrubým; pak souhlas soudu a výboru, v němž Hrubý nehlasuje.",
+          "hodnoceni": "spravne",
+          "dusledek": "Nejlepší tah. Člen výboru smí nabývat majetek z podstaty **jen se souhlasem schůze věřitelů**; bez něj by se na něj vztahoval zákaz nabývání. Schůzi svolá soud na váš návrh do 30 dnů. Pak potřebujete souhlas soudu a výboru jako u každého prodeje mimo dražbu — a o vlastní koupi Hrubý ve výboru hlasovat nesmí. Za měsíc máte o 50 000 Kč víc.",
+          "citace": [
+            {
+              "par": "60",
+              "odst": "1"
+            },
+            {
+              "par": "295",
+              "odst": "2",
+              "pism": "f"
+            },
+            {
+              "par": "47",
+              "odst": "1"
+            },
+            {
+              "par": "289",
+              "odst": "1"
+            },
+            {
+              "par": "53",
+              "odst": "2",
+              "pism": "a"
+            },
+            {
+              "par": "58",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "majetek": {
+              "stroje": {
+                "stav": "čeká na schůzi věřitelů"
+              }
+            },
+            "lhuta": [
+              {
+                "id": "schuze",
+                "od": 178
+              }
+            ],
+            "pozdeji": [
+              {
+                "den": 178,
+                "text": "Schůze věřitelů souhlasila s koupí strojů Hrubým; soud i výbor (bez Hrubého hlasu) daly souhlas k prodeji mimo dražbu. Hrubý zaplatil **950 000 Kč**.",
+                "citace": [
+                  {
+                    "par": "60",
+                    "odst": "1"
+                  },
+                  {
+                    "par": "289",
+                    "odst": "1"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "majetek": {
+                    "stroje": {
+                      "stav": "prodáno Hrubému mimo dražbu",
+                      "vytezek": 950000
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Prodat Hrubému za 950 000 Kč — stačí souhlas soudu a výboru, vyšší cena je v zájmu věřitelů.",
+          "hodnoceni": "chyba",
+          "dusledek": "Vyšší cena ano, ale cesta ne. Člen výboru, kterému **schůze věřitelů nedala souhlas** k nabytí majetku z podstaty, ho nabýt nesmí; takový převod je neplatný, jakmile se toho někdo dovolá. A Bureš se dovolá — kupce si chtěl vybrat sám. Prodej se ruší a stroje nakonec koupí Kroupa za 900 000 Kč, o měsíc později.",
+          "citace": [
+            {
+              "par": "295",
+              "odst": "1"
+            },
+            {
+              "par": "295",
+              "odst": "2",
+              "pism": "f"
+            },
+            {
+              "par": "60",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "majetek": {
+              "stroje": {
+                "stav": "prodej Hrubému zrušen"
+              }
+            },
+            "pozdeji": [
+              {
+                "za": 30,
+                "text": "Prodej Hrubému padl; stroje koupila firma Kroupa za 900 000 Kč se souhlasem soudu a výboru.",
+                "citace": [
+                  {
+                    "par": "289",
+                    "odst": "1"
+                  }
+                ],
+                "efekty": {
+                  "majetek": {
+                    "stroje": {
+                      "stav": "prodáno Kroupovi mimo dražbu",
+                      "vytezek": 900000
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kovarik_spor",
+      "den": 170,
+      "podminka": {
+        "kovarik_zaloba": true
+      },
+      "nadpis": "Incidenční spor: Kovařík u jednání",
+      "text": "Jednání o Kovaříkově žalobě. Faktury za kování soud nepřesvědčily a Kovařík to cítí. Jeho advokát přichází s novou verzí: „Šlo vlastně o **půjčku 800 000 Kč v hotovosti**, kterou Kovařík panu Burešovi dal v prosinci. Faktury byly jen forma.“ Předkládá směnku podepsanou Burešem.",
+      "volby": [
+        {
+          "text": "Namítnout, že nový důvod vzniku pohledávky už uplatnit nelze.",
+          "hodnoceni": "spravne",
+          "dusledek": "Přesně tak. V žalobě smí věřitel uplatnit **jen skutečnosti, které jako důvod vzniku pohledávky uvedl do skončení přezkumného jednání**. Kovařík přihlásil dodávku kování; půjčka je jiný důvod a soud k ní nepřihlédne. Náhradu nákladů vůči vám Kovařík nemá v žádném případě; vaše náklady jdou z podstaty.",
+          "citace": [
+            {
+              "par": "198",
+              "odst": "2"
+            },
+            {
+              "par": "159",
+              "odst": "1",
+              "pism": "a"
+            },
+            {
+              "par": "202",
+              "odst": "1"
+            }
+          ],
+          "efekty": {
+            "pozdeji": [
+              {
+                "za": 30,
+                "text": "Soud Kovaříkovu žalobu zamítl. **Spor jste vyhráli**; k pohledávce popřené co do pravosti se nepřihlíží.",
+                "citace": [
+                  {
+                    "par": "198",
+                    "odst": "2"
+                  },
+                  {
+                    "par": "201",
+                    "odst": "3"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "pocty": {
+                    "vyhrane": 1
+                  },
+                  "veritel": {
+                    "kovarik": {
+                      "stav": "žaloba zamítnuta — nepřihlíží se",
+                      "zjisteno": 0
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Nabídnout smír: uznat 300 000 Kč a spor ukončit.",
+          "hodnoceni": "chyba",
+          "dusledek": "Smír v incidenčním sporu může soud schválit, **jen když s ním souhlasí věřitelský výbor**. Hrubý a Lesák souhlasit nechtějí — proč pouštět do rozvrhu 300 000 Kč z pohledávky, která neobstojí? Spor pokračuje a soud k novému důvodu nepřihlédne. Vyhrajete, ale nabídka smíru byla zbytečný ústupek.",
+          "citace": [
+            {
+              "par": "162",
+              "odst": "2"
+            },
+            {
+              "par": "198",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "pozdeji": [
+              {
+                "za": 45,
+                "text": "Výbor smír odmítl a soud Kovaříkovu žalobu zamítl. **Spor jste vyhráli**, k pohledávce se nepřihlíží.",
+                "citace": [
+                  {
+                    "par": "162",
+                    "odst": "2"
+                  },
+                  {
+                    "par": "198",
+                    "odst": "2"
+                  }
+                ],
+                "hodnoceni": "spravne",
+                "efekty": {
+                  "pocty": {
+                    "vyhrane": 1
+                  },
+                  "veritel": {
+                    "kovarik": {
+                      "stav": "žaloba zamítnuta — nepřihlíží se",
+                      "zjisteno": 0
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "text": "Uznat nárok — směnka je silný důkaz.",
+          "hodnoceni": "chyba",
+          "dusledek": "Směnka tu nerozhoduje, rozhoduje **důvod vzniku**, který Kovařík uvedl v přihlášce: dodávka kování. Ten neprokázal a nový důvod v žalobě uplatnit nesmí. Uznáním mu přiznáte 800 000 Kč, které se budou v rozvrhu dělit s poctivými věřiteli.",
+          "citace": [
+            {
+              "par": "198",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "prohrane": 1
+            },
+            "veritel": {
+              "kovarik": {
+                "stav": "zjištěna 800 000 Kč (uznáno ve sporu)",
+                "zjisteno": 800000
+              }
+            }
+          }
         }
       ]
     },
@@ -390,37 +2582,149 @@
           "text": "Odečíst všechny skutečné náklady: 186 000 + 93 000 Kč.",
           "hodnoceni": "chyba",
           "dusledek": "Náklady zpeněžení lze z výtěžku zajištění odečíst **nejvýše do 5 %**, tedy 155 000 Kč. Víc jen se souhlasem zajištěného věřitele, a ten nemáte. Návrh je nad zákonný strop; zveřejníte ho v rejstříku a věřitelé mají 7 dní na námitky.",
-          "citace": [{ "par": "298", "odst": "4" }, { "par": "298", "odst": "3" }],
-          "efekty": { "nastav": { "navrh_ok": false }, "pocty": { "chyby": 1 }, "lhuta": [{ "id": "namitky", "od": 211, "dny": 7 }] }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "4"
+            },
+            {
+              "par": "298",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "navrh_ok": false
+            },
+            "pocty": {
+              "chyby": 1
+            },
+            "lhuta": [
+              {
+                "id": "namitky",
+                "od": 211,
+                "dny": 7
+              }
+            ]
+          }
         },
         {
           "text": "Odečíst 155 000 Kč (5 %) a 93 000 Kč; zbylých 31 000 Kč zaplatit z obecné podstaty.",
           "hodnoceni": "spravne",
           "dusledek": "Strop je **5 % na zpeněžení a 4 % na správu**, a protože správa stála jen 93 000 Kč, odečtete skutečnou částku. Z 3 100 000 Kč zbude 2 852 000; z toho odměna 156 250 a banka 2 500 000 Kč. Přebytek **195 750 Kč** jde ostatním věřitelům — ti na něj mohou sáhnout teprve tehdy, až je banka uspokojená. Návrh zveřejníte; věřitelé mají 7 dní na námitky.",
-          "citace": [{ "par": "298", "odst": "2" }, { "par": "298", "odst": "4" }, { "par": "305", "odst": "2" }, { "text": "§ 1 odst. 1 a 2 vyhl. č. 313/2007 Sb." }],
-          "efekty": { "nastav": { "navrh_ok": true, "hala_zpenezeni": 155000, "hala_sprava": 93000, "nad_ramec": 31000 }, "lhuta": [{ "id": "namitky", "od": 211, "dny": 7 }] }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "2"
+            },
+            {
+              "par": "298",
+              "odst": "4"
+            },
+            {
+              "par": "305",
+              "odst": "2"
+            },
+            {
+              "text": "§ 1 odst. 1 a 2 vyhl. č. 313/2007 Sb."
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "navrh_ok": true,
+              "hala_zpenezeni": 155000,
+              "hala_sprava": 93000,
+              "nad_ramec": 31000
+            },
+            "lhuta": [
+              {
+                "id": "namitky",
+                "od": 211,
+                "dny": 7
+              }
+            ]
+          }
         },
         {
           "text": "Odečíst paušálně 5 % + 4 % = 279 000 Kč.",
           "hodnoceni": "chyba",
           "dusledek": "Procenta v zákoně jsou **strop, ne paušál**. Odečíst smíte skutečné náklady, nanejvýš do 5 % a 4 %. Správa stála 93 000 Kč, takže 124 000 Kč na ni strhnout nesmíte — o 31 000 Kč byste přebytek pro ostatní věřitele zkrátili bez důvodu. Návrh zveřejníte a věřitelé mají 7 dní na námitky.",
-          "citace": [{ "par": "298", "odst": "4" }, { "par": "298", "odst": "3" }],
-          "efekty": { "nastav": { "navrh_ok": false }, "pocty": { "chyby": 1 }, "lhuta": [{ "id": "namitky", "od": 211, "dny": 7 }] }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "4"
+            },
+            {
+              "par": "298",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "navrh_ok": false
+            },
+            "pocty": {
+              "chyby": 1
+            },
+            "lhuta": [
+              {
+                "id": "namitky",
+                "od": 211,
+                "dny": 7
+              }
+            ]
+          }
         },
         {
           "text": "Požádat banku o souhlas s odečtením všech 186 000 Kč na zpeněžení.",
           "hodnoceni": "spravne",
           "dusledek": "Také správně. **Se souhlasem zajištěného věřitele** lze odečíst i víc než 5 %. Banka souhlasí — její pohledávka je krytá celá a navíc nejde z jejích peněz, ale z přebytku. Z 3 100 000 Kč zbude 2 821 000; odměna 156 250, banka 2 500 000, přebytek **164 750 Kč** pro ostatní. Obecná podstata pak nic doplácet nemusí. Věřitelé mají 7 dní na námitky.",
-          "citace": [{ "par": "298", "odst": "4" }, { "par": "298", "odst": "2" }, { "par": "305", "odst": "2" }],
-          "efekty": { "nastav": { "navrh_ok": true, "hala_zpenezeni": 186000, "hala_sprava": 93000, "nad_ramec": 0 }, "lhuta": [{ "id": "namitky", "od": 211, "dny": 7 }] }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "4"
+            },
+            {
+              "par": "298",
+              "odst": "2"
+            },
+            {
+              "par": "305",
+              "odst": "2"
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "navrh_ok": true,
+              "hala_zpenezeni": 186000,
+              "hala_sprava": 93000,
+              "nad_ramec": 0
+            },
+            "lhuta": [
+              {
+                "id": "namitky",
+                "od": 211,
+                "dny": 7
+              }
+            ]
+          }
         }
       ],
-      "efekty": { "majetek": { "hala": { "stav": "prodána za 3 100 000 Kč", "vytezek": 3100000 } } }
+      "efekty": {
+        "majetek": {
+          "hala": {
+            "stav": "prodána za 3 100 000 Kč",
+            "vytezek": 3100000
+          }
+        }
+      }
     },
     {
       "id": "namitky_pozde",
       "den": 219,
-      "podminka": { "navrh_ok": true },
+      "podminka": {
+        "navrh_ok": true
+      },
       "nadpis": "Námitky Pily Lesák",
       "text": "Návrh na vydání výtěžku vyšel v rejstříku ve středu 3. 9. 2025. Dnes, ve čtvrtek 11. 9., došly soudu námitky Pily Lesák: „Banka dostává moc a na nás nic nezbude.“",
       "volby": [
@@ -428,29 +2732,70 @@
           "text": "Upozornit soud, že námitky přišly po lhůtě a nepřihlíží se k nim.",
           "hodnoceni": "spravne",
           "dusledek": "Námitky se podávají **do 7 dnů** od zveřejnění návrhu, tedy do 10. 9. K pozdějším se nepřihlíží. Soud návrh schválí a banka dostane 2 500 000 Kč.",
-          "citace": [{ "par": "298", "odst": "3" }],
-          "efekty": { "veritel": { "banka": { "stav": "uspokojena z výtěžku haly" } } }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "veritel": {
+              "banka": {
+                "stav": "uspokojena z výtěžku haly"
+              }
+            }
+          }
         },
         {
           "text": "Návrh stáhnout a přepracovat, ať je klid.",
           "hodnoceni": "chyba",
           "dusledek": "Zbytečné. Návrh je v pořádku a námitky jsou opožděné, **nepřihlíží se k nim**. Stažením jen ztratíte měsíc a banka si bude stěžovat, že jí výtěžek blokujete.",
-          "citace": [{ "par": "298", "odst": "3" }],
-          "efekty": { "pocty": { "chyby": 1 }, "veritel": { "banka": { "stav": "uspokojena z výtěžku haly (o měsíc později)" } } }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "banka": {
+                "stav": "uspokojena z výtěžku haly (o měsíc později)"
+              }
+            }
+          }
         },
         {
           "text": "Počkat, až soud nařídí jednání o námitkách.",
           "hodnoceni": "chyba",
           "dusledek": "Jednání se nařizuje jen o **včas podaných** námitkách. Tyhle přišly osmý den, takže žádné jednání nebude — tím, že čekáte, jen nic neděláte. Upozorněte soud, že jsou opožděné.",
-          "citace": [{ "par": "298", "odst": "3" }],
-          "efekty": { "pocty": { "chyby": 1 }, "veritel": { "banka": { "stav": "uspokojena z výtěžku haly" } } }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "chyby": 1
+            },
+            "veritel": {
+              "banka": {
+                "stav": "uspokojena z výtěžku haly"
+              }
+            }
+          }
         }
       ]
     },
     {
       "id": "namitky_vcas",
       "den": 216,
-      "podminka": { "navrh_ok": false },
+      "podminka": {
+        "navrh_ok": false
+      },
       "nadpis": "Námitky Hrubého",
       "text": "Návrh na vydání výtěžku vyšel v rejstříku 3. 9. 2025. Dnes, v pondělí 8. 9., došly soudu námitky dodavatele Hrubého: náklady odečtené z výtěžku haly jsou nad zákonný strop a krátí přebytek, který měl jít nezajištěným věřitelům.",
       "volby": [
@@ -458,22 +2803,85 @@
           "text": "Návrh opravit: 155 000 Kč na zpeněžení, 93 000 Kč na správu, zbytek nákladů z obecné podstaty.",
           "hodnoceni": "spravne",
           "dusledek": "Dobře, že to napravíte. Námitky přišly pátý den, tedy **včas**, a jsou důvodné. Opravený návrh drží strop 5 % a 4 % ze skutečných nákladů. Banka dostane 2 500 000 Kč, přebytek 195 750 Kč jde ostatním.",
-          "citace": [{ "par": "298", "odst": "3" }, { "par": "298", "odst": "4" }],
-          "efekty": { "nastav": { "hala_zpenezeni": 155000, "hala_sprava": 93000, "nad_ramec": 31000 }, "veritel": { "banka": { "stav": "uspokojena z výtěžku haly" } } }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "3"
+            },
+            {
+              "par": "298",
+              "odst": "4"
+            }
+          ],
+          "efekty": {
+            "nastav": {
+              "hala_zpenezeni": 155000,
+              "hala_sprava": 93000,
+              "nad_ramec": 31000
+            },
+            "veritel": {
+              "banka": {
+                "stav": "uspokojena z výtěžku haly"
+              }
+            }
+          }
         },
         {
           "text": "Trvat na návrhu — náklady opravdu vznikly.",
           "hodnoceni": "chyba",
           "dusledek": "Že vznikly, nikdo nepopírá, jenže strop je strop. Soud nařídí jednání, **námitkám vyhoví** a váš návrh neschválí. Pak ho stejně opravíte na 155 000 + 93 000 Kč — jen o měsíc později a s ostudou v rejstříku.",
-          "citace": [{ "par": "298", "odst": "3" }, { "par": "298", "odst": "4" }],
-          "efekty": { "pocty": { "prohrane": 1 }, "nastav": { "hala_zpenezeni": 155000, "hala_sprava": 93000, "nad_ramec": 31000 }, "veritel": { "banka": { "stav": "uspokojena z výtěžku haly (po jednání o námitkách)" } } }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "3"
+            },
+            {
+              "par": "298",
+              "odst": "4"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "prohrane": 1
+            },
+            "nastav": {
+              "hala_zpenezeni": 155000,
+              "hala_sprava": 93000,
+              "nad_ramec": 31000
+            },
+            "veritel": {
+              "banka": {
+                "stav": "uspokojena z výtěžku haly (po jednání o námitkách)"
+              }
+            }
+          }
         },
         {
           "text": "Namítnout, že námitky jsou opožděné.",
           "hodnoceni": "chyba",
           "dusledek": "Nejsou. Návrh vyšel 3. 9., lhůta 7 dnů běží do 10. 9. a námitky došly 8. 9. Soud o nich jedná a vyhoví jim. Návrh pak opravíte na zákonné částky.",
-          "citace": [{ "par": "298", "odst": "3" }],
-          "efekty": { "pocty": { "prohrane": 1, "chyby": 1 }, "nastav": { "hala_zpenezeni": 155000, "hala_sprava": 93000, "nad_ramec": 31000 }, "veritel": { "banka": { "stav": "uspokojena z výtěžku haly (po jednání o námitkách)" } } }
+          "citace": [
+            {
+              "par": "298",
+              "odst": "3"
+            }
+          ],
+          "efekty": {
+            "pocty": {
+              "prohrane": 1,
+              "chyby": 1
+            },
+            "nastav": {
+              "hala_zpenezeni": 155000,
+              "hala_sprava": 93000,
+              "nad_ramec": 31000
+            },
+            "veritel": {
+              "banka": {
+                "stav": "uspokojena z výtěžku haly (po jednání o námitkách)"
+              }
+            }
+          }
         }
       ]
     }

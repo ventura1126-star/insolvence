@@ -2490,6 +2490,8 @@
     (ef.pozdeji || []).forEach(function (p) {
       var kopie = JSON.parse(JSON.stringify(p));
       kopie.den = p.den != null ? p.den : s.den + p.za;
+      // Soud ani věřitelé o víkendu nejednají — výsledek přijde v pondělí.
+      while (hraDatum(kopie.den).getDay() % 6 === 0) kopie.den += 1;
       s.planovane.push(kopie);
     });
   }
@@ -2896,10 +2898,12 @@
     HRA.veritele.forEach(function (v) {
       var st = s.veritele[v.id];
       if (st.skryty) return;
-      celkem += v.castka;
+      // Částka se může během hry změnit — třeba když se pohledávka rozdělí.
+      var castka = st.castka != null ? st.castka : v.castka;
+      celkem += castka;
       var r = el('div', 'hra-radek');
       r.appendChild(el('span', 'hra-radek-nazev', v.nazev));
-      r.appendChild(el('span', 'hra-castka', kc(v.castka)));
+      r.appendChild(el('span', 'hra-castka', kc(castka)));
       r.appendChild(el('span', 'hra-radek-stav', st.stav));
       karta.appendChild(r);
     });
