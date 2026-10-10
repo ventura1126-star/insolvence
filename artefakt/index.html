@@ -1012,6 +1012,7 @@
 <script src="pohledavky.js"></script>
 <script src="hra.js"></script>
 <script src="hra2.js"></script>
+<script src="hra3.js"></script>
 <script src="lhuty.js"></script>
 <script>
 (function () {
@@ -1024,7 +1025,7 @@
   // Spisů je víc a motor hry pracuje vždy s jedním. HRA se proto přepíná
   // podle toho, který spis je otevřený — všechny funkce hry ji čtou jako
   // „právě hraný spis", ne jako jediný, který existuje.
-  var SPISY = [window.HRA, window.HRA2].filter(Boolean);
+  var SPISY = [window.HRA, window.HRA2, window.HRA3].filter(Boolean);
   SPISY.forEach(function (sp, i) { if (!sp.id) sp.id = 'spis' + (i + 1); });
   var HRA = SPISY[0] || null;
   var LHUTY = window.LHUTY || null;
@@ -3375,6 +3376,124 @@
     hlavni.appendChild(kartaZjednoduseni(prekresli));
   }
 
+  /** Spis, kde se o úpadku teprve rozhoduje, nekončí penězi, ale výrokem —
+      a ten stojí na tom, co předběžný správce osvědčil (§ 131 odst. 1). */
+  function vykresliKonecUpadek(s, prekresli) {
+    var f = s.flags;
+    var duvody = [];
+    if (f.druhy_veritel_vyvracen) duvody.push({
+      nadpis: 'Není osvědčena další osoba se splatnou pohledávkou',
+      text: 'Pohledávku přistoupivšího věřitele na něj převedl sám navrhovatel necelé čtyři měsíce před ' +
+            'podáním návrhu. Za další osobu se proto nepovažuje.',
+      citace: [{ par: '143', odst: '2' }] });
+    if (f.dobra_vira) duvody.push({
+      nadpis: 'Dlužník jednal v dobré víře a odvrácení lze předpokládat',
+      text: 'Platební neschopnost vznikla tím, že odběratel nezaplatil pravomocně přiznanou pohledávku ' +
+            '3,1 mil. Kč, a její odvrácení v tříměsíčním horizontu je důvodné.',
+      citace: [{ par: '143', odst: '3' }] });
+
+    var vysledek = duvody.length ? 'zamitnuto' : 'upadek';
+    hlavni.appendChild(el('div', 'p-cislo', 'Den ' + s.den + ' · ' + fmtDatum(s.den)));
+    hlavni.appendChild(el('h1', 'p-nazev', HRA.konec.nadpis));
+    var uvod = el('div', 'perex');
+    vlozText(uvod, HRA.konec.text);
+    hlavni.appendChild(uvod);
+
+    var skore = el('div', 'hra-skore');
+    function dlazdice(cislo, popis, hlavniD) {
+      var d = el('div', 'hra-dlazdice' + (hlavniD ? ' hlavni' : ''));
+      d.appendChild(el('div', 'hra-dlazdice-cislo', cislo));
+      d.appendChild(el('div', 'hra-dlazdice-popis', popis));
+      skore.appendChild(d);
+    }
+    dlazdice(String(duvody.length) + ' / 2', 'osvědčené důvody k zamítnutí', true);
+    dlazdice(f.bagr_zajisten ? 'ano' : 'ne', 'majetek zajištěn');
+    dlazdice(String(s.pocty.zmeskane), 'zmeškaných lhůt');
+    dlazdice(String(s.pocty.chyby), 'chybných kroků');
+    hlavni.appendChild(skore);
+
+    var k0 = el('section', 'hra-karta' + (vysledek === 'zamitnuto' ? '' : ' hra-udalost'));
+    k0.appendChild(el('div', 'stitek', 'Výrok soudu'));
+    k0.appendChild(el('div', 'hra-verdikt ' + (vysledek === 'zamitnuto' ? 'spravne' : 'chyba'),
+      vysledek === 'zamitnuto' ? 'Insolvenční návrh zamítnut' : 'Zjištěn úpadek'));
+    var txt = el('div', 'hra-text');
+    if (vysledek === 'zamitnuto') {
+      vlozText(txt,
+        'Soud insolvenční návrh **zamítl**. Je to správný výsledek a došel k němu proto, že jste mu ' +
+        'dodal skutečnosti, ze kterých to plyne. Ne každý insolvenční návrh končí úpadkem — ' +
+        'a poznat ten, který skončit nemá, je část práce předběžného správce, na kterou se zapomíná.');
+    } else {
+      vlozText(txt,
+        'Soud **zjistil úpadek**. Jenže oba důvody, pro které měl návrh zamítnout, ve spisu byly — jen ' +
+        'je nikdo neosvědčil. Odvolací soud rozhodnutí o úpadku zrušil a řízení skončilo zamítnutím ' +
+        'návrhu o pět měsíců později.\n\nTa prodleva má cenu: podle **§ 147** má dlužník právo na náhradu ' +
+        'škody vzniklé zahájením řízení a opatřeními v jeho průběhu, a je-li navrhovatelem právnická ' +
+        'osoba, ručí za ni společně a nerozdílně členové jejího statutárního orgánu.');
+    }
+    k0.appendChild(txt);
+    k0.appendChild(citaceHry(vysledek === 'zamitnuto'
+      ? [{ par: '143', odst: '1' }, { par: '131', odst: '1' }]
+      : [{ par: '136', odst: '1' }, { par: '147', odst: '2' }, { par: '147', odst: '3' }]));
+    hlavni.appendChild(k0);
+
+    if (duvody.length) {
+      var k1 = el('section', 'hra-karta');
+      k1.appendChild(el('div', 'stitek', 'Na čem zamítnutí stojí'));
+      duvody.forEach(function (d) {
+        k1.appendChild(el('h3', 'hra-udalost-nadpis', d.nadpis));
+        var t = el('div', 'hra-text');
+        vlozText(t, d.text);
+        k1.appendChild(t);
+        k1.appendChild(citaceHry(d.citace));
+      });
+      hlavni.appendChild(k1);
+    }
+
+    var k2 = el('section', 'hra-karta');
+    k2.appendChild(el('div', 'stitek', 'Co jste mezitím zajistil'));
+    HRA.majetek.forEach(function (m) {
+      var st = s.majetek[m.id];
+      if (st.skryty) return;
+      radekRozvrhu(k2, m.nazev, st.hodnota ? 'odhad ' + kc(st.hodnota) : '—', null, st.stav);
+    });
+    k2.appendChild(citaceHry([{ par: '112', odst: '3' }, { par: '111', odst: '3' }]));
+    hlavni.appendChild(k2);
+
+    var k3 = el('section', 'hra-karta');
+    k3.appendChild(el('div', 'stitek', 'Vaše odměna a odkud se platí'));
+    radekRozvrhu(k3, 'Odměna a hotové výdaje předběžného správce',
+      kc(HRA.odmena_predbezna), null, 'pohledávka za majetkovou podstatou');
+    var zdroj = el('div', 'hra-text');
+    vlozText(zdroj, vysledek === 'zamitnuto'
+      ? 'Návrh byl zamítnut, takže žádná majetková podstata ke zpeněžení není. Odměna se proto uhradí ' +
+        'ze **zálohy na náklady insolvenčního řízení**, kterou musel navrhovatel složit — u věřitelského ' +
+        'návrhu proti právnické osobě-podnikateli je to **50 000 Kč**. Nestačila-li by, hradí zbytek ' +
+        'stát, nejvýše 50 000 Kč na odměnu a 50 000 Kč na hotové výdaje.'
+      : 'Úpadek byl zjištěn, takže se odměna uhradí z **majetkové podstaty** jako pohledávka za podstatou. ' +
+        'Nestačila-li by, nastupuje záloha a po ní stát ve stejných mezích.');
+    k3.appendChild(zdroj);
+    k3.appendChild(citaceHry([{ par: '168', odst: '1', pism: 'a' }, { par: '108', odst: '1' },
+      { par: '38', odst: '2' }]));
+    hlavni.appendChild(k3);
+
+    if (f.prestrelil) {
+      var k4 = el('section', 'hra-karta hra-udalost');
+      k4.appendChild(el('div', 'stitek', 'Ještě jedna věc'));
+      var t4 = el('div', 'hra-text');
+      vlozText(t4,
+        'Zastavil jste dlužníkovi běžné hospodaření, ač se ho omezení podle § 111 netýká. Firma kvůli ' +
+        'tomu stála a přišla o subdodavatele. Za škodu způsobenou tím, že jste při výkonu funkce ' +
+        'nepostupoval s odbornou péčí, **odpovídáte vy** — a zprostíte se jen tehdy, prokážete-li, ' +
+        'že jste jí nemohl zabránit.');
+      k4.appendChild(t4);
+      k4.appendChild(citaceHry([{ par: '111', odst: '2' }, { par: '37', odst: '1' }]));
+      hlavni.appendChild(k4);
+    }
+
+    hlavni.appendChild(kartaDeniku(s, 'Jak spis běžel'));
+    hlavni.appendChild(kartaZjednoduseni(prekresli));
+  }
+
   function vykresliKonecHry(s, prekresli) {
     var R = spocitejRozvrh(s);
     hlavni.appendChild(el('div', 'p-cislo', 'Den ' + s.den + ' · ' + fmtDatum(s.den)));
@@ -3470,7 +3589,9 @@
       levo.appendChild(el('span', 'vlakno-kde',
         sp.konec.typ === 'oddluzeni'
           ? 'Oddlužení plněním splátkového kalendáře · 3 roky'
-          : 'Konkurs · od rozhodnutí o úpadku po rozvrh'));
+          : sp.konec.typ === 'uzadek'
+            ? 'Předběžný správce · od návrhu po rozhodnutí o úpadku'
+            : 'Konkurs · od rozhodnutí o úpadku po rozvrh'));
       karta.appendChild(levo);
       karta.appendChild(el('span', 'radek-pramen',
         ulozeno ? (ulozeno.konec ? 'dokončeno' : 'rozehráno · den ' + ulozeno.den) : 'nezačato'));
@@ -3507,6 +3628,7 @@
 
     if (s.konec) {
       if (HRA.konec.typ === 'oddluzeni') vykresliKonecOddluzeni(s, prekresli);
+      else if (HRA.konec.typ === 'uzadek') vykresliKonecUpadek(s, prekresli);
       else vykresliKonecHry(s, prekresli);
       return;
     }

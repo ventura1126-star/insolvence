@@ -1,0 +1,788 @@
+{
+ "verze": 1,
+ "id": "horak",
+ "nazev": "Předběžný správce: rozhoduje se o úpadku",
+ "spis": "Stavby Horák s.r.o. — rozhoduje se o úpadku",
+ "zacatek": "2025-09-02",
+ "perex": "Beton Morava podal věřitelský insolvenční návrh na Stavby Horák s.r.o. pro 1,84 mil. Kč. Soud vás ustanovil **předběžným správcem**. Úpadek ještě nikdo nevyslovil — a vaším úkolem není ho prosadit, ale zjistit, jak se věci mají.",
+ "uvod": "Insolvenční návrh došel soudu 2. 9. 2025 v 9:40 a soud vyhlášku o zahájení řízení zveřejnil ve 11:05, tedy ve dvouhodinové lhůtě (§ 101 odst. 1). Protože z návrhu plynulo riziko, že se majetek začne ztrácet, nařídil soud předběžné opatření omezující dlužníka a týmž rozhodnutím **ustanovil předběžného správce** (§ 112 odst. 1, § 113 odst. 1).\n\nVaší povinností je **zjistit a zajistit dlužníkův majetek a přezkoumat jeho účetnictví** (§ 112 odst. 3). Rozhoduje soud; vy mu dodáváte osvědčené skutečnosti (§ 131 odst. 1).",
+ "konec": {
+  "den": 62,
+  "typ": "uzadek",
+  "nadpis": "Soud rozhoduje o insolvenčním návrhu",
+  "text": "Jednání proběhlo a soud rozhoduje. Pro vydání rozhodnutí o úpadku musí být **osvědčeno**, že dlužník je v úpadku (§ 136 odst. 1, § 131 odst. 1). U věřitelského návrhu k tomu musí být osvědčeno i to, že navrhovatel **a alespoň jedna další osoba** má proti dlužníku splatnou pohledávku (§ 143 odst. 2).\n\nCo soud ví, záleží na tom, co jste zjistil a napsal do zprávy."
+ },
+ "zjednoduseni": [
+  "Soud rozhoduje podle toho, co jste osvědčil. Ve skutečnosti si zjišťuje i sám a k týmž závěrům se může dobrat bez vás — hra zjednodušuje, aby bylo vidět, co vaše práce mění.",
+  "Odměna a hotové výdaje předběžného správce se určují podle vyhlášky č. 313/2007 Sb.; hra pracuje s paušální částkou 28 000 Kč, aby bylo vidět, odkud se platí.",
+  "Lhůty nikde nepadají na víkend ani svátek, takže se neposouvají (§ 57 odst. 2 o. s. ř.).",
+  "Zda a jak soud rozhodne o náhradě škody podle § 147, hra jen naznačuje — běží to v samostatném řízení u krajského soudu (§ 7a písm. d).",
+  "Spis končí rozhodnutím o návrhu. Co by následovalo po případném rozhodnutí o úpadku, je obsahem ostatních spisů."
+ ],
+ "odmena_predbezna": 28000,
+ "zaloha": 50000,
+ "majetek": [
+  {
+   "id": "bagr",
+   "nazev": "Rypadlo CAT 320",
+   "hodnota": 1250000,
+   "stav": "v evidenci dlužníka"
+  },
+  {
+   "id": "ucetnictvi",
+   "nazev": "Účetnictví a evidence",
+   "hodnota": 0,
+   "stav": "u dlužníka, nevydáno"
+  },
+  {
+   "id": "pohledavka",
+   "nazev": "Pohledávka za Stavimex a.s.",
+   "hodnota": 3100000,
+   "stav": "pravomocně přiznaná, dosud nevymožená"
+  }
+ ],
+ "veritele": [
+  {
+   "id": "beton",
+   "nazev": "Beton Morava s.r.o. (navrhovatel)",
+   "castka": 1840000,
+   "druh": "nezajisteny",
+   "stav": "pohledávka 5 měsíců po splatnosti"
+  },
+  {
+   "id": "pristoupivsi",
+   "nazev": "Dřevo Group s.r.o. (přistoupivší)",
+   "castka": 310000,
+   "druh": "nezajisteny",
+   "skryty": true,
+   "stav": "přistoupil k řízení"
+  }
+ ],
+ "lhuty": {
+  "bezduvodnost": {
+   "nazev": "Odmítnutí návrhu pro zjevnou bezdůvodnost",
+   "kdo": "soud",
+   "termin": true,
+   "citace": [
+    {
+     "par": "128a",
+     "odst": "1"
+    }
+   ]
+  },
+  "likvidita": {
+   "nazev": "Dlužník může předložit výkaz stavu likvidity",
+   "kdo": "dlužník",
+   "termin": true,
+   "citace": [
+    {
+     "par": "131",
+     "odst": "2"
+    },
+    {
+     "par": "3",
+     "odst": "3"
+    }
+   ]
+  },
+  "moratorium": {
+   "nazev": "Dlužník může navrhnout moratorium",
+   "kdo": "dlužník",
+   "termin": true,
+   "citace": [
+    {
+     "par": "115"
+    }
+   ]
+  },
+  "ucetnictvi": {
+   "nazev": "Vydání účetnictví předběžnému správci",
+   "kdo": "vy",
+   "citace": [
+    {
+     "par": "112",
+     "odst": "3"
+    },
+    {
+     "par": "210",
+     "odst": "1"
+    }
+   ],
+   "udalost": "ucetnictvi",
+   "pri_konci": {
+    "text": "Účetnictví jste si nevymohl a do jednání jste se k němu nedostal. Bez něj jste nemohl osvědčit skoro nic — a soud to ve zprávě postrádal.",
+    "citace": [
+     {
+      "par": "112",
+      "odst": "3"
+     },
+     {
+      "par": "36",
+      "odst": "1"
+     }
+    ],
+    "hodnoceni": "chyba",
+    "efekty": {
+     "pocty": {
+      "zmeskane": 1,
+      "chyby": 1
+     }
+    }
+   }
+  }
+ },
+ "na_zacatku": {
+  "lhuta": [
+   {
+    "id": "bezduvodnost",
+    "od": 0,
+    "dny": 7
+   },
+   {
+    "id": "likvidita",
+    "od": 0,
+    "dny": 14
+   },
+   {
+    "id": "moratorium",
+    "od": 2,
+    "dny": 15
+   }
+  ]
+ },
+ "milniky": [
+  {
+   "den": 48,
+   "nadpis": "Jednání o insolvenčním návrhu",
+   "text": "Soud nařídil jednání — rozhodnutí závisí na zjištění sporných skutečností o tom, zda je dlužník v úpadku, a tehdy jednání nařídit **musí** (§ 133 odst. 2). Přednesl jste zprávu předběžného správce.",
+   "citace": [
+    {
+     "par": "133",
+     "odst": "2"
+    },
+    {
+     "par": "131",
+     "odst": "1"
+    }
+   ]
+  }
+ ],
+ "udalosti": [
+  {
+   "id": "rozsah",
+   "den": 0,
+   "nadpis": "Den 0: co vlastně smíte",
+   "text": "Jednatel Horák má v ruce rozhodnutí, kterým vás soud ustanovil předběžným správcem, a je bílý. „Takže zítra nevyplatím mzdy, nezaplatím subdodavatelům a stavba stojí? Mám tam rozdělané tři zakázky.“",
+   "volby": [
+    {
+     "text": "„Provoz běží dál. Mzdy, zákonné odvody i běžné hospodaření jsou z omezení vyňaté.“",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Omezení podle § 111 odst. 1 se **netýká** úkonů nutných ke splnění povinností stanovených zvláštními předpisy, k provozování podniku v rámci **obvyklého hospodaření** a k odvrácení hrozící škody. Mzdy a odvody jsou přesně to. Zastavit firmu, o jejímž úpadku se teprve rozhoduje, by škodu způsobilo, ne odvrátilo.",
+     "citace": [
+      {
+       "par": "111",
+       "odst": "1"
+      },
+      {
+       "par": "111",
+       "odst": "2"
+      },
+      {
+       "par": "27",
+       "odst": "2"
+      }
+     ]
+    },
+    {
+     "text": "„Od teď neplatíte nic bez mého souhlasu.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Přestřelil jste. **§ 27 odst. 2**: vaše práva a povinnosti vymezuje soud a nikdy nemohou být širší než ty, které má správce po rozhodnutí o úpadku. A **§ 111 odst. 2** běžné hospodaření z omezení výslovně vyjímá. Firma dva dny stála, přišla o subdodavatele a Horák to uvede v návrhu na náhradu škody.",
+     "citace": [
+      {
+       "par": "27",
+       "odst": "2"
+      },
+      {
+       "par": "111",
+       "odst": "2"
+      },
+      {
+       "par": "147",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "nastav": {
+       "prestrelil": true
+      }
+     }
+    },
+    {
+     "text": "„Nevím, zeptejte se soudu.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Rozsah svých oprávnění musíte znát — stojí ve vašem ustanovení. Nejistota správce v prvních hodinách je přesně to, co dlužníka vede k tomu, aby si poradil sám po svém.",
+     "citace": [
+      {
+       "par": "27",
+       "odst": "2"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "ucetnictvi",
+   "den": 3,
+   "nadpis": "Horák nevydá účetnictví",
+   "text": "Požádal jste písemně o účetnictví a přístup do systému. Horák odpovídá, že „žádný úpadek zjištěný není, tohle je jen návrh konkurenta“ a že vám nic vydávat nebude.",
+   "volby": [
+    {
+     "text": "Navrhnout soudu pořádkovou pokutu a trvat na vydání.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Přezkoumat účetnictví je vaše **povinnost** podle § 112 odst. 3 a dlužník je povinen poskytnout součinnost už v této fázi. Vynucuje se pořádkovou pokutou až do 200 000 Kč, v krajním případě předvedením. Horák po výzvě soudu účetnictví vydal.",
+     "citace": [
+      {
+       "par": "112",
+       "odst": "3"
+      },
+      {
+       "par": "210",
+       "odst": "1"
+      },
+      {
+       "par": "81",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "splnit": [
+       "ucetnictvi"
+      ],
+      "majetek": {
+       "ucetnictvi": {
+        "stav": "vydáno po výzvě soudu"
+       }
+      }
+     }
+    },
+    {
+     "text": "Počkat — po rozhodnutí o úpadku to stejně vydat bude muset.",
+     "hodnoceni": "chyba",
+     "odlozit": true,
+     "dusledek": "Jenže o úpadku se teprve rozhoduje, a bez účetnictví nemáte čím ho osvědčit nebo vyvrátit. Tohle je ta část práce, která se nedá odložit na později — později už bude po jednání.",
+     "citace": [
+      {
+       "par": "112",
+       "odst": "3"
+      },
+      {
+       "par": "131",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "lhuta": [
+       {
+        "id": "ucetnictvi",
+        "dny": 40
+       }
+      ]
+     }
+    },
+    {
+     "text": "Vyžádat si údaje od banky a úřadů a účetnictví neřešit.",
+     "hodnoceni": "chyba",
+     "dusledek": "Součinnost třetích osob podle § 43 a § 44 je správná cesta a použijte ji — ale **nenahradí** účetnictví. Z výpisů poznáte toky, ne závazky, splatnosti ani to, komu dlužník dluží. Zpráva bez toho stojí na vodě.",
+     "citace": [
+      {
+       "par": "43",
+       "odst": "1"
+      },
+      {
+       "par": "112",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "lhuta": [
+       {
+        "id": "ucetnictvi",
+        "dny": 40
+       }
+      ]
+     },
+     "odlozit": true
+    }
+   ]
+  },
+  {
+   "id": "bagr",
+   "den": 11,
+   "nadpis": "Rypadlo zmizelo z evidence",
+   "text": "V účetnictví vidíte, že **4. 9.**, tedy dva dny po zahájení řízení, dlužník převedl rypadlo CAT 320 za 310 000 Kč na firmu Horák Technik s.r.o., jejímž jediným společníkem je jednatelova manželka. Odhadní cena stroje je 1,25 mil. Kč.",
+   "volby": [
+    {
+     "text": "Oznámit soudu: úkon je vůči věřitelům neúčinný ze zákona, a navrhnout doplnění předběžného opatření.",
+     "hodnoceni": "spravne",
+     "dusledek": "Přesně tak, a všimněte si toho rozdílu: úkony učiněné v rozporu s omezením podle § 111 jsou vůči věřitelům **neúčinné ze zákona** — nemusí se na ně podávat odpůrčí žaloba. Soud na váš návrh doplnil předběžné opatření a zapsal omezení do příslušných seznamů.",
+     "citace": [
+      {
+       "par": "111",
+       "odst": "1"
+      },
+      {
+       "par": "111",
+       "odst": "3"
+      },
+      {
+       "par": "113",
+       "odst": "1"
+      },
+      {
+       "par": "113",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "nastav": {
+       "bagr_zajisten": true
+      },
+      "majetek": {
+       "bagr": {
+        "stav": "úkon neúčinný ze zákona, stroj zajištěn"
+       }
+      }
+     }
+    },
+    {
+     "text": "Připravit odpůrčí žalobu podle § 235.",
+     "hodnoceni": "chyba",
+     "dusledek": "Zbytečná cesta a v téhle fázi ani nejde. Odpůrčí žalobu podává insolvenční správce až **po rozhodnutí o úpadku** a lhůta běží od jeho účinků (§ 239 odst. 3). Tady stačí § 111 odst. 3 — neúčinnost nastává **ze zákona**. Než jste se k tomu dobral, stroj byl přeprodaný dál.",
+     "citace": [
+      {
+       "par": "111",
+       "odst": "3"
+      },
+      {
+       "par": "239",
+       "odst": "1"
+      },
+      {
+       "par": "239",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "bagr": {
+        "stav": "přeprodán dál, nezajištěno"
+       }
+      }
+     }
+    },
+    {
+     "text": "Zapsat to do zprávy a dál neřešit — o úpadku stejně ještě není rozhodnuto.",
+     "hodnoceni": "chyba",
+     "dusledek": "Zajistit majetek je vaše povinnost **už teď** (§ 112 odst. 3) — proto vás soud ustanovil. Stroj se mezitím přeprodal třetí osobě v dobré víře a vymáhá se podstatně hůř.",
+     "citace": [
+      {
+       "par": "112",
+       "odst": "3"
+      },
+      {
+       "par": "111",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "majetek": {
+       "bagr": {
+        "stav": "přeprodán dál, nezajištěno"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "likvidita",
+   "den": 13,
+   "nadpis": "Výkaz stavu likvidity",
+   "text": "Horák přináší **výkaz stavu likvidity** a výhled vývoje likvidity. Tvrdí, že mezera krytí je 7 %, tedy pod desetinou, a že firma je tudíž platebně schopná. Dokumenty sestavila hlavní účetní firmy.",
+   "podklad": [
+    "Výkaz i výhled byly soudu předloženy **13. den** od zveřejnění vyhlášky.",
+    "Pod oběma dokumenty je podepsaná Ing. Nováková, hlavní účetní Staveb Horák."
+   ],
+   "volby": [
+    {
+     "text": "Upozornit soud, že je sestavila neoprávněná osoba — obsahově se k němu nepřihlíží.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. **§ 3 odst. 3** vyžaduje, aby výkaz i výhled sestavil **auditor, znalec nebo osoba zabývající se ekonomickým poradenstvím v oblasti insolvencí** splňující požadavky prováděcí vyhlášky (č. 190/2017 Sb.). Hlavní účetní dlužníka mezi ně nepatří. Lhůtu 14 dnů podle § 131 odst. 2 sice Horák stihl, ale domněnku platební schopnosti to nezaloží.",
+     "citace": [
+      {
+       "par": "3",
+       "odst": "3"
+      },
+      {
+       "par": "131",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "nastav": {
+       "likvidita_vyvracena": true
+      }
+     }
+    },
+    {
+     "text": "Vzít výkaz na vědomí — mezera krytí pod 10 % znamená, že v úpadku není.",
+     "hodnoceni": "chyba",
+     "dusledek": "Jen tehdy, je-li výkaz sestavený podle zákona. **§ 3 odst. 3** druhá věta klade na zpracovatele výslovné požadavky právě proto, aby si dlužník domněnku nevyrobil sám. Soud se tím při jednání zabýval a vaši zprávu to oslabilo.",
+     "citace": [
+      {
+       "par": "3",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Namítnout, že byl předložen pozdě.",
+     "hodnoceni": "chyba",
+     "dusledek": "Nebyl. **§ 131 odst. 2** dává dlužníku **14 dnů** od zveřejnění vyhlášky v insolvenčním rejstříku a on předložil třináctý den. Vada je jinde — v tom, kdo dokumenty sestavil.",
+     "citace": [
+      {
+       "par": "131",
+       "odst": "2"
+      },
+      {
+       "par": "3",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "pristoupeni",
+   "den": 22,
+   "nadpis": "Přistoupení druhého věřitele",
+   "text": "K řízení přistoupilo Dřevo Group s.r.o. s pohledávkou 310 000 Kč. Tím by byla splněna podmínka **více věřitelů**. V účetnictví ale najdete smlouvu o postoupení: tuhle pohledávku Dřevu Group postoupil **sám navrhovatel Beton Morava**, a to **18. 5. 2025**.",
+   "podklad": [
+    "Insolvenční návrh byl podán 2. 9. 2025.",
+    "Od postoupení do podání návrhu uplynuly necelé 4 měsíce."
+   ],
+   "volby": [
+    {
+     "text": "Oznámit soudu, že se Dřevo Group nepovažuje za další osobu.",
+     "hodnoceni": "spravne",
+     "dusledek": "Výborně — tohle je jádro celého spisu. **§ 143 odst. 2** poslední věta: za další osobu se nepovažuje ten, na koho byla pohledávka navrhovatele převedena **v době 6 měsíců před podáním návrhu** nebo po zahájení řízení. Navrhovatel si tedy druhého věřitele vyrobit nemůže. Není-li osvědčena další osoba, soud návrh **zamítne**.",
+     "citace": [
+      {
+       "par": "143",
+       "odst": "2"
+      },
+      {
+       "par": "107",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "nastav": {
+       "druhy_veritel_vyvracen": true
+      },
+      "veritel": {
+       "pristoupivsi": {
+        "skryty": false,
+        "stav": "nepovažuje se za další osobu (§ 143 odst. 2)"
+       }
+      }
+     }
+    },
+    {
+     "text": "Vzít přistoupení na vědomí — věřitelé jsou tím pádem dva.",
+     "hodnoceni": "chyba",
+     "dusledek": "Formálně dva, podle § 143 odst. 2 ale jen jeden. Smysl toho pravidla je přesně ten, co se tu stalo: zabránit navrhovateli, aby si rozdělením vlastní pohledávky vyrobil druhého věřitele a tím podmínku obešel. Tohle měl soud slyšet od vás.",
+     "citace": [
+      {
+       "par": "143",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "veritel": {
+       "pristoupivsi": {
+        "skryty": false,
+        "stav": "přistoupil k řízení"
+       }
+      }
+     }
+    },
+    {
+     "text": "Namítnout, že přistoupit po zahájení řízení vůbec nelze.",
+     "hodnoceni": "chyba",
+     "dusledek": "Lze. **§ 107 odst. 1**: další insolvenční návrh podaný dřív, než soud vydá rozhodnutí o úpadku, se považuje za **přistoupení k řízení** a pro přistoupivšího platí stav řízení v době přistoupení. Problém není v přistoupení, ale v tom, odkud ta pohledávka pochází.",
+     "citace": [
+      {
+       "par": "107",
+       "odst": "1"
+      },
+      {
+       "par": "107",
+       "odst": "2"
+      },
+      {
+       "par": "143",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "veritel": {
+       "pristoupivsi": {
+        "skryty": false,
+        "stav": "přistoupil k řízení"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "moratorium",
+   "den": 30,
+   "nadpis": "Horák chce moratorium",
+   "text": "Horák podal návrh na vyhlášení **moratoria**. Argumentuje tím, že za dva měsíce dostane zaplaceno od Stavimexu a dluhy srovná. Insolvenční návrh mu soud doručil **4. 9. 2025**.",
+   "volby": [
+    {
+     "text": "Upozornit soud, že patnáctidenní lhůta uplynula 19. 9.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. **§ 115**: dlužník-podnikatel může navrhnout moratorium do **7 dnů** od podání vlastního insolvenčního návrhu, a jde-li o návrh věřitele, do **15 dnů od jeho doručení** soudem. Doručeno 4. 9., lhůta skončila 19. 9., návrh přišel 2. 10. Soud ho odmítl jako opožděný.",
+     "citace": [
+      {
+       "par": "115"
+      },
+      {
+       "par": "117"
+      }
+     ]
+    },
+    {
+     "text": "Podpořit moratorium — firma má reálnou vyhlídku.",
+     "hodnoceni": "chyba",
+     "dusledek": "Vyhlídku možná má, lhůtu ale ne. Moratorium je ostrý zásah do práv věřitelů a zákon ho proto váže na krátkou prekluzivní lhůtu. A prominout zmeškání lhůty v insolvenčním řízení nelze (§ 83). Soud návrh stejně odmítl a vaše stanovisko působilo nepřipraveně.",
+     "citace": [
+      {
+       "par": "115"
+      },
+      {
+       "par": "83"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Nevyjadřovat se — o moratoriu rozhoduje soud.",
+     "hodnoceni": "chyba",
+     "dusledek": "Rozhoduje, ale vaše stanovisko si vyžádal. Mlčení tam, kde znáte rozhodnou lhůtu, není zdrženlivost, ale nesplněná součinnost.",
+     "citace": [
+      {
+       "par": "115"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "dobra_vira",
+   "den": 38,
+   "nadpis": "Proč Horák neplatí",
+   "text": "Z účetnictví i ze spisu je zřejmé, odkud potíže pramení. Stavby Horák mají **pravomocně přiznanou pohledávku 3,1 mil. Kč** za Stavimexem a.s., který jim dílo nezaplatil a vede proti nim šikanózní spor. Stavimex je solventní; exekuce byla nařízena a výtěžek se čeká v řádu týdnů.",
+   "podklad": [
+    "Závazky Staveb Horák po splatnosti činí 2,15 mil. Kč.",
+    "Horák po celou dobu komunikuje, předkládá doklady a o potížích věřitele informoval předem."
+   ],
+   "volby": [
+    {
+     "text": "Uvést to ve zprávě — je to okolnost podle § 143 odst. 3.",
+     "hodnoceni": "spravne",
+     "dusledek": "Přesně tak, a je to druhý samostatný důvod k zamítnutí. **§ 143 odst. 3**: není-li dlužník v úpadku pro předlužení, soud věřitelský návrh zamítne i tehdy, osvědčí-li dlužník jednající **v dobré víře**, že jeho platební neschopnost vznikla v důsledku protiprávního jednání třetí osoby a že lze se zřetelem ke všem okolnostem důvodně předpokládat její odvrácení v době do 3 měsíců po splatnosti.",
+     "citace": [
+      {
+       "par": "143",
+       "odst": "3"
+      },
+      {
+       "par": "3",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "nastav": {
+       "dobra_vira": true
+      }
+     }
+    },
+    {
+     "text": "Nezmiňovat to — neschopnost platit je neschopnost platit.",
+     "hodnoceni": "chyba",
+     "dusledek": "Není, a zákon to rozlišuje výslovně. **§ 143 odst. 3** existuje právě pro poctivého dlužníka, kterého do potíží dostal někdo jiný. Vaší povinností je dát soudu všechny osvědčené skutečnosti, ne jen ty, které svědčí navrhovateli.",
+     "citace": [
+      {
+       "par": "143",
+       "odst": "3"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      }
+     }
+    },
+    {
+     "text": "Doporučit vyčkat se zprávou, až Stavimex zaplatí.",
+     "hodnoceni": "chyba",
+     "dusledek": "Vyčkávat nemůžete — jednání je nařízeno a soud na vaši zprávu čeká. Správná cesta je **popsat stav a odkázat na § 143 odst. 3**; posoudit, zda je odvrácení v tříměsíčním horizontu důvodné, je věcí soudu, ne vašeho odkladu.",
+     "citace": [
+      {
+       "par": "143",
+       "odst": "3"
+      },
+      {
+       "par": "133",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "zprava",
+   "den": 44,
+   "nadpis": "Zpráva předběžného správce",
+   "text": "Za čtyři dny je jednání. Píšete zprávu. Čemu dáte závěr?",
+   "volby": [
+    {
+     "text": "Popsat zjištěné skutečnosti a závěr nechat na soudu.",
+     "hodnoceni": "spravne",
+     "dusledek": "Takhle to má vypadat. Předběžný správce **osvědčuje skutečnosti**, nerozhoduje o úpadku (§ 131 odst. 1, § 136 odst. 1). Zpráva, která poctivě uvede i to, co svědčí dlužníkovi, má u soudu podstatně větší váhu než zpráva, která tlačí na jeden výsledek.",
+     "citace": [
+      {
+       "par": "131",
+       "odst": "1"
+      },
+      {
+       "par": "136",
+       "odst": "1"
+      },
+      {
+       "par": "36",
+       "odst": "1"
+      }
+     ]
+    },
+    {
+     "text": "Doporučit zjištění úpadku — závazky po splatnosti tu jsou.",
+     "hodnoceni": "chyba",
+     "dusledek": "Závazky po splatnosti jsou jen jeden ze tří znaků (§ 3 odst. 1) a u věřitelského návrhu k tomu musí přistoupit **osvědčení další osoby** (§ 143 odst. 2). Tlačit na výsledek, který nemáte podložený, je přesně to, co od předběžného správce nikdo nechce.",
+     "citace": [
+      {
+       "par": "3",
+       "odst": "1"
+      },
+      {
+       "par": "143",
+       "odst": "2"
+      },
+      {
+       "par": "131",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Doporučit zamítnutí — dlužník je poctivý.",
+     "hodnoceni": "chyba",
+     "dusledek": "Závěr může být správný, cesta ne. O zamítnutí rozhoduje soud podle § 143 na základě osvědčených skutečností; vaším úkolem je ty skutečnosti dodat, ne vyslovovat výrok. Soud si ve zprávě stěžoval, že v ní hledal čísla a našel názor.",
+     "citace": [
+      {
+       "par": "131",
+       "odst": "1"
+      },
+      {
+       "par": "143",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
