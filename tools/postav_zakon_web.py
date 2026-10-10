@@ -23,7 +23,8 @@ HLAVICKA = (
     '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
 )
 
-SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js", "hra.js"]
+SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js",
+           "hra.js", "lhuty.js"]
 
 
 def main():

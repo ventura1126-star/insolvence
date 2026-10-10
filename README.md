@@ -165,7 +165,12 @@ Vedle zákona má Artifact sekci **Mimo insolvenční zákon** (`temata.json`) �
 
 Každý bod má vlastní rozhovor i tisk, stejně jako odstavec zákona.
 
-Vedle toho je tam **přehled typů pohledávek** (`pohledavky.json`, obrazovka
+Vedle toho je tam **přehled všech lhůt** (`lhuty.json`, obrazovka `#lhuty`) —
+85 lhůt vytěžených průchodem celého zákona, filtrovatelných podle toho, koho
+se týkají, a barevně rozlišených podle toho, **co se stane, když uplynou**.
+Rámcem je § 83: prominutí zmeškání lhůty není v insolvenčním řízení přípustné.
+
+A **přehled typů pohledávek** (`pohledavky.json`, obrazovka
 `#pohledavky`) — 15 typů tříděných po třech osách, mezi kterými se přepíná:
 pořadí uspokojení, způsob uplatnění a stav po přezkumu. Karty se rozbalují na
 výklad a na „pozor na“, a na konci je deset situací z praxe k zařazení.

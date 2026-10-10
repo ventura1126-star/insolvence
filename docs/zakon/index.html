@@ -329,6 +329,87 @@
   }
   .uloha-reseni p { font-size: .93rem; margin: 0; }
 
+  /* ---- přehled lhůt ---------------------------------------------------- */
+  /* Barva nese následek zmeškání — to je u lhůt jediná informace, která se
+     musí dát přečíst bez čtení. Zánik práva červeně, zbytek tlumeně. */
+  :root {
+    --n-prekluze: #B4453A;
+    --n-povinnost: #A85430;
+    --n-poradkova: #857A70;
+    --n-hmotne: #3A5876;
+    --n-jine: #8A8078;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --n-prekluze: #E07A6C; --n-povinnost: #DC9068; --n-poradkova: #9A9084;
+      --n-hmotne: #9DBDDC; --n-jine: #9A9084;
+    }
+  }
+  :root[data-theme="dark"] {
+    --n-prekluze: #E07A6C; --n-povinnost: #DC9068; --n-poradkova: #9A9084;
+    --n-hmotne: #9DBDDC; --n-jine: #9A9084;
+  }
+
+  .legenda { margin-top: 1rem; display: flex; flex-direction: column; gap: .4rem; }
+  .legenda-radek { display: flex; align-items: baseline; gap: .55rem; font-size: .88rem; }
+  .znacka-nasledku {
+    flex: none;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 2px;
+    background: var(--n-jine);
+  }
+  .n-prekluze .znacka-nasledku, .znacka-nasledku.n-prekluze { background: var(--n-prekluze); }
+  .znacka-nasledku.n-povinnost { background: var(--n-povinnost); }
+  .znacka-nasledku.n-poradkova { background: var(--n-poradkova); }
+  .znacka-nasledku.n-hmotne { background: var(--n-hmotne); }
+
+  .lhuta {
+    border-left: 3px solid var(--n-jine);
+    padding: .7rem 0 .7rem .85rem;
+    margin-bottom: .2rem;
+    border-bottom: 1px solid var(--linka);
+  }
+  .lhuta.n-prekluze { border-left-color: var(--n-prekluze); }
+  .lhuta.n-povinnost { border-left-color: var(--n-povinnost); }
+  .lhuta.n-poradkova { border-left-color: var(--n-poradkova); }
+  .lhuta.n-hmotne { border-left-color: var(--n-hmotne); }
+
+  .lhuta-hlava {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr auto;
+    gap: .25rem .8rem;
+    align-items: baseline;
+  }
+  @media (max-width: 34rem) {
+    .lhuta-hlava { grid-template-columns: 1fr auto; }
+    .lhuta-delka { grid-column: 1 / -1; }
+  }
+  .lhuta-delka {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--inkoust);
+    font-variant-numeric: tabular-nums;
+  }
+  .lhuta-stred { min-width: 0; }
+  .lhuta-co { display: block; font-size: .95rem; }
+  .lhuta-odkdy { display: block; margin-top: .1rem; font-size: .8rem; color: var(--tlum); }
+  .lhuta-paticka { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .5rem; }
+  .nasledek-stitek, .kdo-stitek {
+    font-size: .72rem;
+    border-radius: 999px;
+    padding: .12rem .5rem;
+    border: 1px solid var(--linka);
+    color: var(--tlum);
+  }
+  .nasledek-stitek { border-color: currentColor; }
+  .nasledek-stitek.n-prekluze { color: var(--n-prekluze); }
+  .nasledek-stitek.n-povinnost { color: var(--n-povinnost); }
+  .nasledek-stitek.n-poradkova { color: var(--n-poradkova); }
+  .nasledek-stitek.n-hmotne { color: var(--n-hmotne); }
+  .lhuta-pozn { margin-top: .5rem; }
+  .lhuta-pozn p { margin: 0; font-size: .87rem; color: var(--tlum); }
+
   /* ---- paragraf ------------------------------------------------------- */
   .p-cislo {
     font-size: .8rem;
@@ -934,6 +1015,7 @@
 <script src="temata.js"></script>
 <script src="pohledavky.js"></script>
 <script src="hra.js"></script>
+<script src="lhuty.js"></script>
 <script>
 (function () {
   'use strict';
@@ -943,6 +1025,7 @@
   var TEMATA = window.TEMATA || [];
   var POHLEDAVKY = window.POHLEDAVKY || null;
   var HRA = window.HRA || null;
+  var LHUTY = window.LHUTY || null;
   var BEZ_CISLA = '-';
 
   // Schopnosti dorazí až po chvíli a nemusí dorazit vůbec (jiný prohlížeč,
@@ -1095,7 +1178,7 @@
         nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
         return;
       }
-      if (POHLEDAVKY || HRA) vypis.appendChild(el('h2', 'cast', 'Přehledy'));
+      if (POHLEDAVKY || HRA || LHUTY) vypis.appendChild(el('h2', 'cast', 'Přehledy'));
       if (HRA) {
         var kartaH = el('button', 'radek radek-tema radek-prehled');
         kartaH.type = 'button';
@@ -1103,6 +1186,14 @@
         kartaH.appendChild(el('span', 'radek-pramen', HRA.spis));
         kartaH.addEventListener('click', function () { location.hash = '#hra'; });
         vypis.appendChild(kartaH);
+      }
+      if (LHUTY) {
+        var kartaL = el('button', 'radek radek-tema radek-prehled');
+        kartaL.type = 'button';
+        kartaL.appendChild(el('span', 'radek-nazev', 'Lhůty v zákoně — přehled'));
+        kartaL.appendChild(el('span', 'radek-pramen', LHUTY.lhuty.length + ' lhůt'));
+        kartaL.addEventListener('click', function () { location.hash = '#lhuty'; });
+        vypis.appendChild(kartaL);
       }
       if (POHLEDAVKY) {
         var kartaP = el('button', 'radek radek-tema radek-prehled');
@@ -1915,6 +2006,132 @@
       t.pozor,
       '--- KONEC KONTEXTU ---'
     ].join('\n');
+  }
+
+  /* ---- přehled lhůt ------------------------------------------------------
+     Lhůty jsou roztroušené po celém zákoně a § 83 je dělá nemilosrdnými —
+     prominout se nedají. Tenhle přehled je proto řadí podle toho, co se
+     stane, když uplynou, a nechá je filtrovat podle toho, koho se týkají. */
+
+  function vykresliLhuty() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Lhůty';
+    listaStav.textContent = '';
+
+    if (!LHUTY) {
+      hlavni.appendChild(el('p', 'prazdno', 'Přehled lhůt se nenačetl.'));
+      return;
+    }
+
+    hlavni.appendChild(el('h1', 'titul', 'Lhůty v insolvenčním zákoně'));
+
+    var uvod = el('div', 'vyklad');
+    uvod.appendChild(el('div', 'stitek', LHUTY.uvod.nadpis));
+    vlozText(uvod, LHUTY.uvod.text);
+    var legenda = el('div', 'legenda');
+    Object.keys(LHUTY.nasledky).forEach(function (k) {
+      var r = el('div', 'legenda-radek');
+      r.appendChild(el('span', 'znacka-nasledku n-' + k, ''));
+      var t = el('span');
+      t.appendChild(el('strong', null, LHUTY.nasledky[k].nazev + ' — '));
+      t.appendChild(document.createTextNode(LHUTY.nasledky[k].popis));
+      r.appendChild(t);
+      legenda.appendChild(r);
+    });
+    uvod.appendChild(legenda);
+    hlavni.appendChild(uvod);
+
+    var filtrKdo = 'vse';
+    var dotaz = '';
+
+    var ovladani = el('div', 'osy');
+    hlavni.appendChild(ovladani);
+    var pole = el('input', 'hledani');
+    pole.type = 'search';
+    pole.placeholder = 'Hledat ve lhůtách — třeba „přihláš“ nebo „§ 239“';
+    pole.setAttribute('aria-label', 'Hledat ve lhůtách');
+    pole.autocomplete = 'off';
+    hlavni.appendChild(pole);
+    var vypis = el('div');
+    hlavni.appendChild(vypis);
+
+    function sedi(l) {
+      if (filtrKdo !== 'vse' && l.kdo.indexOf(filtrKdo) < 0) return false;
+      if (!dotaz) return true;
+      var vse = l.delka + ' ' + l.co + ' ' + l.pramen + ' ' + l.odkdy + ' ' +
+        l.faze + ' ' + (l.pozn || '');
+      return bezDiakritiky(vse).indexOf(dotaz) >= 0;
+    }
+
+    function prekresli() {
+      ovladani.textContent = '';
+      var volby = [['vse', 'Všechny']].concat(
+        Object.keys(LHUTY.kdo).map(function (k) { return [k, LHUTY.kdo[k]]; }));
+      volby.forEach(function (dv) {
+        var b = el('button', 'osa' + (dv[0] === filtrKdo ? ' osa-vybrana' : ''));
+        b.type = 'button';
+        var kolik = LHUTY.lhuty.filter(function (l) {
+          return dv[0] === 'vse' || l.kdo.indexOf(dv[0]) >= 0;
+        }).length;
+        b.textContent = dv[1] + ' (' + kolik + ')';
+        b.addEventListener('click', function () { filtrKdo = dv[0]; prekresli(); });
+        ovladani.appendChild(b);
+      });
+
+      vypis.textContent = '';
+      var nalezeno = 0;
+      LHUTY.faze.forEach(function (f) {
+        var vFazi = LHUTY.lhuty.filter(function (l) { return l.faze === f && sedi(l); });
+        if (!vFazi.length) return;
+        nalezeno += vFazi.length;
+        vypis.appendChild(el('h2', 'cast', f));
+        vFazi.forEach(function (l) { vypis.appendChild(radekLhuty(l)); });
+      });
+      if (!nalezeno) {
+        vypis.appendChild(el('p', 'prazdno', 'Žádná lhůta tomu neodpovídá.'));
+      }
+    }
+
+    function radekLhuty(l) {
+      var karta = el('div', 'lhuta n-' + l.nasledek);
+      var hlava = el('div', 'lhuta-hlava');
+      hlava.appendChild(el('span', 'lhuta-delka', l.delka));
+      var stred = el('span', 'lhuta-stred');
+      stred.appendChild(el('span', 'lhuta-co', l.co));
+      stred.appendChild(el('span', 'lhuta-odkdy', l.odkdy));
+      hlava.appendChild(stred);
+      hlava.appendChild(el('span', 'typ-pramen', l.pramen));
+      karta.appendChild(hlava);
+
+      var paticka = el('div', 'lhuta-paticka');
+      paticka.appendChild(el('span', 'nasledek-stitek n-' + l.nasledek,
+        LHUTY.nasledky[l.nasledek].nazev));
+      l.kdo.forEach(function (k) {
+        paticka.appendChild(el('span', 'kdo-stitek', LHUTY.kdo[k]));
+      });
+      karta.appendChild(paticka);
+
+      if (l.pozn) {
+        var pozn = el('div', 'lhuta-pozn');
+        vlozText(pozn, l.pozn);
+        karta.appendChild(pozn);
+      }
+      return karta;
+    }
+
+    var casovac;
+    pole.addEventListener('input', function () {
+      clearTimeout(casovac);
+      casovac = setTimeout(function () {
+        dotaz = bezDiakritiky(pole.value).trim();
+        prekresli();
+      }, 120);
+    });
+
+    prekresli();
+    window.scrollTo(0, 0);
   }
 
   /* ---- témata mimo insolvenční zákon ------------------------------------
@@ -3086,6 +3303,7 @@
     var h = location.hash.replace(/^#/, '');
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
+    else if (h === 'lhuty') vykresliLhuty();
     else if (h === 'hra') {
       vykresliHru();
       // Návrat z citace: vrátit se tam, kde hráč četl.

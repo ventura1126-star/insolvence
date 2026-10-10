@@ -1,0 +1,1079 @@
+{
+ "uvod": {
+  "nadpis": "Prominutí zmeškání lhůty není přípustné",
+  "text": "**§ 83 insolvenčního zákona:** *„Prominutí zmeškání lhůty v insolvenčním řízení není přípustné; totéž platí, jde-li o zmeškání soudního jednání, včetně zmeškání schůze věřitelů nebo přezkumného jednání.\"*\n\nTo je rámec, ve kterém celý tenhle přehled čtěte. **§ 58 občanského soudního řádu o prominutí zmeškání se nepoužije** — zmeškanou lhůtu nevrátí nemoc, dovolená, ztracená pošta ani to, že se věřitel o řízení nedozvěděl.\n\nProto je u každé lhůty uvedeno, **co se stane, když uplyne**. Čtyři různé následky:"
+ },
+ "nasledky": {
+  "prekluze": {
+   "nazev": "Právo zaniká",
+   "popis": "Nejtvrdší následek. Nárok, žaloba nebo námitka jsou nenávratně pryč."
+  },
+  "povinnost": {
+   "nazev": "Porušení povinnosti",
+   "popis": "Zmeškání je porušením povinnosti se sankcí — pořádková pokuta, zproštění funkce, odpovědnost za škodu."
+  },
+  "poradkova": {
+   "nazev": "Pořádková lhůta soudu",
+   "popis": "Lhůta pro soud. Její překročení řízení nezneplatní, ale dá se na ně upozornit."
+  },
+  "hmotne": {
+   "nazev": "Hmotněprávní okno",
+   "popis": "Nejde o procesní lhůtu, ale o období, ve kterém musela skutečnost nastat, nebo o promlčení."
+  },
+  "jine": {
+   "nazev": "Jiný následek",
+   "popis": "Doba trvání, maximální délka nebo podmínka, ne lhůta k úkonu."
+  }
+ },
+ "kdo": {
+  "spravce": "Insolvenční správce",
+  "veritel": "Věřitel",
+  "dluznik": "Dlužník",
+  "soud": "Insolvenční soud",
+  "jiny": "Třetí osoby"
+ },
+ "faze": [
+  "Zahájení řízení",
+  "Úpadek a způsob řešení",
+  "Přihlášky a přezkum",
+  "Podstata a incidenční spory",
+  "Konkurs a zpeněžení",
+  "Oddlužení",
+  "Reorganizace a moratorium",
+  "Po skončení"
+ ],
+ "lhuty": [
+  {
+   "delka": "2 hodiny",
+   "co": "Soud zveřejní vyhlášku o zahájení řízení",
+   "pramen": "§ 101 odst. 1",
+   "odkdy": "od doručení návrhu soudu",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": "Došel-li návrh méně než 2 hodiny před koncem úředních hodin nebo ve dnech pracovního klidu, pak do 2 hodin po zahájení úředních hodin nejbližšího pracovního dne."
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Soud vyzve k odstranění vad insolvenčního návrhu",
+   "pramen": "§ 128 odst. 1 a 2",
+   "odkdy": "od podání návrhu",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": "Lhůta k opravě, kterou soud navrhovateli určí, přitom nesmí být delší než 7 dnů."
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Dlužník-podnikatel navrhne moratorium po vlastním návrhu",
+   "pramen": "§ 115",
+   "odkdy": "od podání insolvenčního návrhu",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Dlužník navrhne moratorium po věřitelském návrhu",
+   "pramen": "§ 115",
+   "odkdy": "od doručení návrhu soudem",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Dlužník navrhne mimořádné moratorium",
+   "pramen": "§ 127a odst. 1",
+   "odkdy": "od doručení insolvenčního návrhu dlužníku",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "14 dnů",
+   "co": "Dlužník předloží výkaz stavu likvidity a výhled",
+   "pramen": "§ 131 odst. 2",
+   "odkdy": "od zveřejnění vyhlášky o zahájení řízení",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "prekluze",
+   "pozn": "Později předložené dokumenty soud nevezme v potaz při posuzování mezery krytí podle § 3 odst. 3."
+  },
+  {
+   "delka": "10 dnů",
+   "co": "Soud učiní úkony směřující k rozhodnutí věci",
+   "pramen": "§ 134",
+   "odkdy": "od podání insolvenčního návrhu",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Soud rozhodne o insolvenčním návrhu dlužníka",
+   "pramen": "§ 134",
+   "odkdy": "od jeho podání",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": "Je-li vyhlášeno moratorium, lhůta neskončí dříve než 10 dnů od jeho zániku."
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "PŘIHLÁŠKA POHLEDÁVKY",
+   "pramen": "§ 136 odst. 2 písm. d), § 173",
+   "odkdy": "od rozhodnutí o úpadku",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Úpadek a způsob řešení",
+   "nasledek": "prekluze",
+   "pozn": "Nejdůležitější lhůta celého zákona. K opožděné přihlášce se nepřihlíží (§ 173 odst. 1), soud ji odmítne (§ 185) a účast věřitele končí. Přihlašovat lze přitom už od zahájení řízení."
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Soud rozhodne o způsobu řešení úpadku",
+   "pramen": "§ 149 odst. 1",
+   "odkdy": "od rozhodnutí o úpadku",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Úpadek a způsob řešení",
+   "nasledek": "poradkova",
+   "pozn": "Ve zvláštních případech podle odst. 2 jen 30 dnů."
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Soud svolá schůzi věřitelů",
+   "pramen": "§ 137 odst. 1",
+   "odkdy": "od rozhodnutí o úpadku",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Úpadek a způsob řešení",
+   "nasledek": "poradkova",
+   "pozn": "Neplatí u oddlužení."
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Soud určí termín přezkumného jednání",
+   "pramen": "§ 137 odst. 2",
+   "odkdy": "po uplynutí přihlašovací lhůty",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Úpadek a způsob řešení",
+   "nasledek": "poradkova",
+   "pozn": "Zároveň ne dříve než 7 dnů po jejím uplynutí."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Soud svolá schůzi věřitelů, byl-li o to požádán",
+   "pramen": "§ 47 odst. 1",
+   "odkdy": "od žádosti",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Úpadek a způsob řešení",
+   "nasledek": "poradkova",
+   "pozn": ""
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Správce podá zprávu o přezkumu a zprávu pro oddlužení",
+   "pramen": "§ 136 odst. 2",
+   "odkdy": "po uplynutí přihlašovací lhůty",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Věřitel opraví nebo doplní vadnou přihlášku",
+   "pramen": "§ 188 odst. 2",
+   "odkdy": "od výzvy správce",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": "Správce může určit i lhůtu delší. Neodstraní-li vady, k přihlášce se nepřihlíží."
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Soud zveřejní seznam přihlášených pohledávek",
+   "pramen": "§ 189 odst. 3",
+   "odkdy": "přede dnem přezkumného jednání",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "poradkova",
+   "pozn": "Má-li se přezkum konat do 30 dnů po uplynutí přihlašovací lhůty, pak nejpozději 10 dnů předem."
+  },
+  {
+   "delka": "7 dní",
+   "co": "Návrh na rozhodnutí o hlasovacím právu odlišně od seznamu",
+   "pramen": "§ 52 odst. 2",
+   "odkdy": "před schůzí věřitelů",
+   "kdo": [
+    "veritel",
+    "dluznik"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": "Lhůta neskončí dříve než 5 dní po zveřejnění seznamu. Doplnit skutečnosti a důkazy lze nejpozději 2 pracovní dny před schůzí."
+  },
+  {
+   "delka": "3 pracovní dny",
+   "co": "Věřitel popře pohledávku jiného věřitele",
+   "pramen": "§ 200 odst. 2",
+   "odkdy": "přede dnem přezkumného jednání",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": "U oddlužení platí jiný režim; lhůta tam neskončí dříve než 7 dní od zveřejnění přihlášky v rejstříku."
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Popírající věřitel složí jistotu 10 000 Kč",
+   "pramen": "§ 202 odst. 3",
+   "odkdy": "po skončení přezkumného jednání",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": "Nebylo-li rozhodnuto o způsobu řešení úpadku, lhůta neskončí dříve než 10 dnů po tom rozhodnutí."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "ŽALOBA věřitele o pravost NEVYKONATELNÉ pohledávky",
+   "pramen": "§ 198 odst. 1",
+   "odkdy": "od přezkumného jednání",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": "Popřel-li ji správce. Lhůta neskončí dříve než 15 dnů od doručení vyrozumění podle § 197 odst. 2."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "ŽALOBA SPRÁVCE o popření VYKONATELNÉ pohledávky",
+   "pramen": "§ 199 odst. 1",
+   "odkdy": "od přezkumného jednání",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": "Obrácený směr proti § 198. Zaměnit si je znamená prohrát. U oddlužení běží od právní moci rozhodnutí o schválení zprávy o přezkumu."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Žaloba proti rozhodnutí o odmítnutí přihlášky",
+   "pramen": "§ 186 odst. 2",
+   "odkdy": "od doručení rozhodnutí věřiteli",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dní",
+   "co": "Nabyvatel pohledávky doloží správci doklady",
+   "pramen": "§ 19 odst. 2",
+   "odkdy": "od vstupu do řízení",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "3 pracovní dny",
+   "co": "Soud rozhodne o vstupu nabyvatele pohledávky",
+   "pramen": "§ 18 odst. 2",
+   "odkdy": "od doručení návrhu",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Přihlášky a přezkum",
+   "nasledek": "poradkova",
+   "pozn": "Nerozhodne-li, má se za to, že návrhu vyhověl. Fikce vyhovění."
+  },
+  {
+   "delka": "1 rok",
+   "co": "ODPŮRČÍ ŽALOBA správce",
+   "pramen": "§ 239 odst. 3",
+   "odkdy": "od účinků rozhodnutí o úpadku",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "prekluze",
+   "pozn": "Nepodá-li ji správce v této lhůtě, odpůrčí nárok ZANIKNE. Patří do kalendáře první den ve funkci."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Vylučovací žaloba z majetkové podstaty",
+   "pramen": "§ 225 odst. 2",
+   "odkdy": "od doručení vyrozumění o soupisu",
+   "kdo": [
+    "jiny"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "prekluze",
+   "pozn": "Nebyla-li podána včas, platí, že majetek je do soupisu pojat oprávněně."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Soud nařídí jednání o námitkách proti pokynům zajištěného věřitele",
+   "pramen": "§ 230 odst. 4",
+   "odkdy": "od podání námitek",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "poradkova",
+   "pozn": "Ostatní zajištění věřitelé podávají námitky do 7 dnů od zveřejnění pokynu."
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Námitky proti návrhu na vydání výtěžku zajištěnému věřiteli",
+   "pramen": "§ 298 odst. 3",
+   "odkdy": "od zveřejnění návrhu v rejstříku",
+   "kdo": [
+    "veritel",
+    "dluznik"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "prekluze",
+   "pozn": "K projednání včasných námitek nařídí soud jednání do 30 dnů."
+  },
+  {
+   "delka": "10 dnů",
+   "co": "Předvolání k výslechu se doručuje předem",
+   "pramen": "§ 214 odst. 1",
+   "odkdy": "před výslechem",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "poradkova",
+   "pozn": ""
+  },
+  {
+   "delka": "1 rok",
+   "co": "Období pro odporování úkonům bez přiměřeného protiplnění",
+   "pramen": "§ 240 odst. 3",
+   "odkdy": "před zahájením řízení",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "hmotne",
+   "pozn": "U osob blízkých a osob tvořících s dlužníkem koncern 3 roky, a u nich se navíc úpadek předpokládá."
+  },
+  {
+   "delka": "1 rok",
+   "co": "Období pro odporování zvýhodňujícím úkonům",
+   "pramen": "§ 241 odst. 4",
+   "odkdy": "před zahájením řízení",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "hmotne",
+   "pozn": "U osob blízkých a koncernu 3 roky."
+  },
+  {
+   "delka": "5 let",
+   "co": "Období pro odporování úmyslně zkracujícím úkonům",
+   "pramen": "§ 242 odst. 3",
+   "odkdy": "před zahájením řízení",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Podstata a incidenční spory",
+   "nasledek": "hmotne",
+   "pozn": "Nejdelší okno, ale musíte prokázat úmysl a vědomost druhé strany."
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Dlužník splní povinnosti spojené s prohlášením konkursu",
+   "pramen": "§ 279 odst. 1",
+   "odkdy": "od prohlášení konkursu",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "povinnost",
+   "pozn": "Nestanoví-li zákon jinak. Vynutitelné pořádkovou pokutou podle § 81."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Správce se vyjádří, zda splní vzájemnou smlouvu",
+   "pramen": "§ 253 odst. 2",
+   "odkdy": "od prohlášení konkursu",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": "Nevyjádříte-li se, PLATÍ, ŽE JSTE ODMÍTL plnění. Mlčení tu má následek."
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Druhý účastník přihlásí škodu z odmítnutého plnění",
+   "pramen": "§ 253 odst. 4",
+   "odkdy": "od odmítnutí plnění",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Druhý účastník přihlásí škodu po zániku smlouvy",
+   "pramen": "§ 254 odst. 2",
+   "odkdy": "od prohlášení konkursu",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Přihlášení škody z předčasného ukončení smlouvy",
+   "pramen": "§ 258",
+   "odkdy": "od ukončení smlouvy",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "10 dnů",
+   "co": "Sdělení, zda strana od smlouvy odstupuje",
+   "pramen": "§ 258",
+   "odkdy": "od výzvy druhého účastníka",
+   "kdo": [
+    "spravce",
+    "veritel"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Nejdelší výpovědní lhůta u nájmu vypovězeného správcem",
+   "pramen": "§ 256 odst. 1",
+   "odkdy": "—",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "10 dní",
+   "co": "Správce předloží zprávu o hospodářské situaci dlužníka",
+   "pramen": "§ 281 odst. 2",
+   "odkdy": "přede dnem první schůze po prohlášení konkursu",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Nabídka jednotky oprávněné osobě při zpeněžení",
+   "pramen": "§ 284 odst. 5",
+   "odkdy": "od doručení nabídky správce",
+   "kdo": [
+    "jiny"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": "Nevyužije-li oprávněná osoba práva, může správce jednotku zpeněžit jinak."
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Žaloba na neplatnost prodeje mimo dražbu",
+   "pramen": "§ 289 odst. 3",
+   "odkdy": "od zveřejnění smlouvy v rejstříku",
+   "kdo": [
+    "veritel",
+    "dluznik"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Orgán činný v trestním řízení sdělí rozsah zajištění",
+   "pramen": "§ 283 odst. 3",
+   "odkdy": "od dotazu správce",
+   "kdo": [
+    "jiny"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "jine",
+   "pozn": "Nesdělí-li, použije se zbytek výtěžku k rozdělení mezi věřitele."
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Námitky proti konečné zprávě",
+   "pramen": "§ 304 odst. 2",
+   "odkdy": "od zveřejnění konečné zprávy v rejstříku",
+   "kdo": [
+    "veritel",
+    "dluznik"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Námitky místních věřitelů z jiného státu EU proti konečné zprávě",
+   "pramen": "§ 430a odst. 2",
+   "odkdy": "od zveřejnění v rejstříku",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Lhůta k plnění určená v rozvrhovém usnesení",
+   "pramen": "§ 307 odst. 2",
+   "odkdy": "od právní moci usnesení",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "povinnost",
+   "pozn": "Nedojde-li k proplacení do 30 dnů od rozvrhového usnesení pro překážku na straně věřitele, postupuje se obdobně."
+  },
+  {
+   "delka": "3 roky",
+   "co": "Zákaz převodu majetku z podstaty na osoby vyloučené z nabývání",
+   "pramen": "§ 295 odst. 1",
+   "odkdy": "od skončení konkursu",
+   "kdo": [
+    "jiny"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "jine",
+   "pozn": "Platí i tehdy, svědčí-li jim zákonné předkupní právo."
+  },
+  {
+   "delka": "60 dnů",
+   "co": "Správce vyrozumí známé věřitele z jiných států EU",
+   "pramen": "§ 373 odst. 2, § 385 odst. 2",
+   "odkdy": "od prohlášení konkursu",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "povinnost",
+   "pozn": "Bez zbytečného odkladu, nejpozději však v této lhůtě."
+  },
+  {
+   "delka": "4 měsíce",
+   "co": "Námitka zahraničního věřitele proti výši či povaze pohledávky",
+   "pramen": "§ 373 odst. 4, § 385 odst. 4",
+   "odkdy": "od prohlášení konkursu",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Konkurs a zpeněžení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Dlužník podá návrh na povolení oddlužení po cizím návrhu",
+   "pramen": "§ 390 odst. 1",
+   "odkdy": "od doručení insolvenčního návrhu dlužníku",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Lhůta k opravě návrhu na povolení oddlužení",
+   "pramen": "§ 393 odst. 1",
+   "odkdy": "od výzvy soudu",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": "Lhůta nesmí být delší než 7 dnů."
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Námitky proti zprávě o přezkumu a zprávě pro oddlužení",
+   "pramen": "§ 398a odst. 4",
+   "odkdy": "od zveřejnění v rejstříku",
+   "kdo": [
+    "veritel",
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Návrh nezajištěných věřitelů na konání schůze věřitelů",
+   "pramen": "§ 399 odst. 1, § 136 odst. 2 písm. i)",
+   "odkdy": "od zveřejnění zpráv v rejstříku",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "7 dní",
+   "co": "Správce sdělí dlužníku datum a místo osobního jednání",
+   "pramen": "§ 410 odst. 2",
+   "odkdy": "předem",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Správce podává zprávu o stavu řízení",
+   "pramen": "§ 36 odst. 2",
+   "odkdy": "průběžně",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "povinnost",
+   "pozn": "Soud může interval prodloužit, nejvýše však na 12 kalendářních měsíců."
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Návrh na prodloužení nebo zrušení oddlužení po roce plnění",
+   "pramen": "§ 36 odst. 3",
+   "odkdy": "po každých 12 měsících plnění",
+   "kdo": [
+    "spravce",
+    "veritel"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": "K později podaným návrhům se nepřihlíží."
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Návrh na prodloužení nebo zrušení po zprávě pro osvobození",
+   "pramen": "§ 36 odst. 4",
+   "odkdy": "od předložení zprávy",
+   "kdo": [
+    "spravce",
+    "veritel"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": "K později podaným návrhům se nepřihlíží."
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Dlužník požádá o zařazení do evidence uchazečů o zaměstnání",
+   "pramen": "§ 412 odst. 4",
+   "odkdy": "od ztráty zaměstnání",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "povinnost",
+   "pozn": "Jinak se má za to, že neplní povinnost usilovat o získání příjmu — důvod ke zrušení oddlužení."
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Nejčastější výzva správce dlužníku při poklesu příjmů",
+   "pramen": "§ 412 odst. 5",
+   "odkdy": "nejvýše jednou za",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "3 nebo 5 let",
+   "co": "Doba oddlužení plněním splátkového kalendáře",
+   "pramen": "§ 412a",
+   "odkdy": "od schválení oddlužení",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "jine",
+   "pozn": "Tři roky při splnění podmínek § 412a odst. 1, jinak pět let."
+  },
+  {
+   "delka": "6 měsíců",
+   "co": "Prodloužení průběhu oddlužení",
+   "pramen": "§ 412b odst. 5 a 6",
+   "odkdy": "—",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "jine",
+   "pozn": "Opakovaně nejdéle v souhrnu o 12 měsíců, z důvodu hodného zvláštního zřetele až o dalších 6 měsíců."
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Dlužník platí zálohy na odměnu správce po zprávě pro osvobození",
+   "pramen": "§ 406 odst. 3 písm. g)",
+   "odkdy": "po podání zprávy",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Neschopnost splácet jako důvod ke zrušení oddlužení",
+   "pramen": "§ 418 odst. 1",
+   "odkdy": "po dobu delší než",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "10 dnů",
+   "co": "Dlužník se vyjádří, zda trvá na jednání",
+   "pramen": "§ 418 odst. 8",
+   "odkdy": "od doručení výzvy soudu",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Oddlužení",
+   "nasledek": "prekluze",
+   "pozn": "Nevyjádří-li se, platí, že na jednání netrvá."
+  },
+  {
+   "delka": "3 roky",
+   "co": "Odnětí osvobození od placení pohledávek",
+   "pramen": "§ 417",
+   "odkdy": "od pravomocného přiznání osvobození",
+   "kdo": [
+    "veritel",
+    "spravce"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "jine",
+   "pozn": "Na návrh věřitele nebo správce, vyjde-li najevo podvodné jednání. Osvobození zaniká i při odsouzení za úmyslný trestný čin v téže lhůtě."
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Nejdelší doba trvání moratoria",
+   "pramen": "§ 119 odst. 1",
+   "odkdy": "od vyhlášení",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "jine",
+   "pozn": "Soud může na návrh dlužníka prodloužit nejdéle o 30 dnů (§ 119 odst. 2)."
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Prodloužení mimořádného moratoria",
+   "pramen": "§ 127a odst. 8",
+   "odkdy": "—",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "1 rok",
+   "co": "Zahájení řízení po zániku moratoria pro zachování pořadí pohledávek",
+   "pramen": "§ 169 odst. 1 písm. g)",
+   "odkdy": "od zániku moratoria",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "hmotne",
+   "pozn": ""
+  },
+  {
+   "delka": "10 dnů",
+   "co": "Návrh na povolení reorganizace",
+   "pramen": "§ 318 odst. 1",
+   "odkdy": "před první schůzí věřitelů po rozhodnutí o úpadku",
+   "kdo": [
+    "dluznik",
+    "veritel"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "120 dnů",
+   "co": "Předložení reorganizačního plánu",
+   "pramen": "§ 339 odst. 1",
+   "odkdy": "od rozhodnutí o povolení reorganizace",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "prekluze",
+   "pozn": "Soud může na návrh dlužníka přiměřeně prodloužit, nejdéle však o dalších 120 dnů."
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Předložení zprávy o reorganizačním plánu věřitelům",
+   "pramen": "§ 343 odst. 3",
+   "odkdy": "před schůzí, která o něm rozhoduje",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Nejkratší odstup schůze po doplnění reorganizačního plánu",
+   "pramen": "§ 350 odst. 3",
+   "odkdy": "od předložení změn věřitelům",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Dlužník s dispozičním oprávněním odmítne splnění vzájemné smlouvy",
+   "pramen": "§ 330a odst. 2",
+   "odkdy": "od povolení reorganizace",
+   "kdo": [
+    "dluznik"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "prekluze",
+   "pozn": "Nevyjádří-li se, MUSÍ smlouvu splnit — opačná fikce než u konkursu podle § 253 odst. 2."
+  },
+  {
+   "delka": "6 měsíců",
+   "co": "Zrušení schválení reorganizačního plánu pro zvláštní výhody",
+   "pramen": "§ 362 odst. 1",
+   "odkdy": "od účinnosti plánu",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "3 roky",
+   "co": "Zrušení schválení plánu po odsouzení za trestný čin",
+   "pramen": "§ 362 odst. 2",
+   "odkdy": "od účinnosti plánu",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "jine",
+   "pozn": ""
+  },
+  {
+   "delka": "3 měsíce",
+   "co": "Znalec informuje soud a věřitelský výbor",
+   "pramen": "§ 354 odst. 2",
+   "odkdy": "průběžně, nejméně jednou za",
+   "kdo": [
+    "jiny"
+   ],
+   "faze": "Reorganizace a moratorium",
+   "nasledek": "povinnost",
+   "pozn": ""
+  },
+  {
+   "delka": "2 roky",
+   "co": "Promlčení náhrady škody proti insolvenčnímu správci",
+   "pramen": "§ 37 odst. 4",
+   "odkdy": "od zjištění výše škody a odpovědnosti",
+   "kdo": [
+    "spravce"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "hmotne",
+   "pozn": "Objektivně 3 roky; u škody způsobené úmyslným trestným činem, za který byl správce odsouzen, až 10 let od skončení řízení."
+  },
+  {
+   "delka": "6 měsíců",
+   "co": "Žaloba na náhradu škody ze zahájení řízení a opatření v něm",
+   "pramen": "§ 147 odst. 4",
+   "odkdy": "od doručení či zveřejnění rozhodnutí končícího řízení",
+   "kdo": [
+    "dluznik",
+    "jiny"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Návrh na rozhodnutí o náhradě škody proti navrhovateli",
+   "pramen": "§ 147 odst. 6",
+   "odkdy": "od rozhodnutí končícího řízení o návrhu",
+   "kdo": [
+    "dluznik",
+    "jiny"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "30 dnů",
+   "co": "Pokračování v přerušeném incidenčním řízení",
+   "pramen": "§ 159 odst. 6",
+   "odkdy": "od právní moci rozhodnutí o skončení",
+   "kdo": [
+    "veritel"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "prekluze",
+   "pozn": ""
+  },
+  {
+   "delka": "10 let",
+   "co": "Promlčení pohledávky na náhradu nákladů podle § 312, § 396, § 405, § 418",
+   "pramen": "§ 312 odst. 4 a další",
+   "odkdy": "od zrušení konkursu či zastavení řízení",
+   "kdo": [
+    "jiny"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "hmotne",
+   "pozn": ""
+  },
+  {
+   "delka": "5 let",
+   "co": "Výmaz dlužníka ze seznamu dlužníků",
+   "pramen": "§ 425 odst. 1",
+   "odkdy": "od právní moci rozhodnutí o skončení řízení",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Po skončení",
+   "nasledek": "jine",
+   "pozn": "Skončilo-li řízení podle § 142, do 15 dnů od doručení žádosti; dlužník může požádat nejdříve po 3 měsících od právní moci."
+  },
+  {
+   "delka": "7 dnů",
+   "co": "Zápis dlužníka do seznamu dlužníků",
+   "pramen": "§ 420 odst. 4",
+   "odkdy": "od účinků zahájení řízení",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": ""
+  },
+  {
+   "delka": "15 dnů",
+   "co": "Předvolání vyhláškou se zveřejňuje předem",
+   "pramen": "§ 72 odst. 2",
+   "odkdy": "přede dnem jednání",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": ""
+  },
+  {
+   "delka": "2 měsíce",
+   "co": "Odvolací soud rozhodne o odvolání proti předběžnému opatření",
+   "pramen": "§ 93 odst. 2",
+   "odkdy": "od předložení soudem prvního stupně",
+   "kdo": [
+    "soud"
+   ],
+   "faze": "Zahájení řízení",
+   "nasledek": "poradkova",
+   "pozn": ""
+  }
+ ]
+}
