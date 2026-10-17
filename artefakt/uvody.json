@@ -1,0 +1,113 @@
+[
+  {
+    "id": "konkurs",
+    "cast": "ČÁST DRUHÁ — ZPŮSOBY ŘEŠENÍ ÚPADKU",
+    "hlava": "HLAVA I — KONKURS",
+    "nazev": "Konkurs",
+    "rozsah": "§§ 244-315",
+    "perex": "Než se pustíte do paragrafů: tahle hlava vypráví jeden příběh od začátku do konce. Firma se zavře, majetek se rozprodá, peníze se rozdělí, firma zmizí. Devět dílů hlavy je devět kapitol toho příběhu v pořadí, v jakém se dějí. Když to budete vědět dopředu, přestanou paragrafy vypadat jako náhodná hromada pravidel.",
+    "bloky": [
+      {
+        "nadpis": "Konkurs jednou větou",
+        "text": "**Konkurs je prodej všeho a rozdělení peněz.**\n\nZákon to v § 244 říká takhle: zjištěné pohledávky věřitelů se **zásadně poměrně** uspokojí z výnosu zpeněžení majetkové podstaty, a co se neuspokojí, **nezaniká**, pokud zákon nestanoví jinak.\n\nRozeberme to na Truhlárně Bureš s.r.o. Má 6,8 milionu dluhů. Má halu, stroje, zásoby dřeva a pohledávky za odběrateli. Prodá se to všechno dohromady za 4,2 milionu. Z toho se nejdřív zaplatí náklady a ti, kdo mají přednost, a zbytek se rozdělí mezi ostatní věřitele **poměrně** — každý dostane stejné procento své pohledávky. Dodavatel Hrubý, kterému firma dluží 480 tisíc, dostane 11 %, tedy něco přes 50 tisíc. Zbytek mu zůstane jako nezaplacená pohledávka.\n\nTo slovo **poměrně** je celý smysl konkursu. Bez něj by platilo, kdo dřív přijde, ten bere — a nejrychlejší věřitel by si odnesl všechno.\n\nA to slovo **zásadně** je vaše každodenní práce, protože někteří poměrně nedostávají: banka se zástavou na hale, zaměstnanci se mzdami, lidé, kterým firma dluží až za chodu insolvence. O nich je další blok."
+      },
+      {
+        "nadpis": "Konkurs mezi třemi způsoby řešení úpadku",
+        "text": "Druhá část zákona nabízí tři způsoby, jak úpadek vyřešit, a vyplatí se je mít proti sobě:\n\n**Konkurs** (Hlava I) — firma končí. Majetek se prodá, věřitelé dostanou procenta, podnik zanikne. Likvidační cesta.\n\n**Reorganizace** (Hlava II) — firma žije dál. Věřitelé se uspokojují z toho, co firma vydělá v příštích letech podle schváleného plánu. Pro Strojírnu Kolář s obratem 180 milionů to dává smysl: fungující závod má větší hodnotu než rozprodané stroje. Sanační cesta.\n\n**Oddlužení** (Hlava V) — pro člověka. Paní Dvořáková platí ze svého příjmu několik let a zbytek dluhů se jí **odpustí**. Je to jediná ze tří cest, na jejímž konci dluhy skutečně zmizí.\n\n**Konkurs je výchozí stav.** Není-li možná reorganizace ani oddlužení, přijde konkurs — a přijde i tehdy, když se reorganizace nebo oddlužení nepovede."
+      },
+      {
+        "nadpis": "Čtyři pojmy, bez kterých se v hlavě ztratíte",
+        "text": "**Majetková podstata** je hromada, ze které se platí. Všechno, co dlužníkovi patří a dá se zpeněžit: nemovitosti, stroje, zásoby, peníze na účtu, pohledávky za odběrateli. Vy ji sepíšete a ten soupis je zároveň listina, která vás opravňuje majetek prodat (§ 280).\n\n**Dispoziční oprávnění** je právo s tou hromadou nakládat. Prohlášením konkursu přechází z dlužníka na vás (§ 246 odst. 1). Od té chvíle podepisujete smlouvy, platíte z účtu a jste pro zaměstnance zaměstnavatel vy, ne Bureš.\n\n**Zajištěný věřitel** je ten, kdo má zástavu. Banka má zástavní právo na hale. Hala se prodá za 3,1 milionu a ty peníze jsou **její** — nejdou do společné hromady, ze které se dělí poměrně (§ 298 odst. 1). Proto se u zajištěného věřitele nikdy nemluví o procentech společně s ostatními.\n\n**Pohledávka za majetkovou podstatou** je dluh, který vznikl až za chodu insolvence nebo těsně kolem ní — elektřina spotřebovaná po úpadku, mzdy za odpracované měsíce v konkursu, vaše odměna. Tyhle se **nepřihlašují** a platí se průběžně a přednostně, ne poměrně na konci. Je to nejčastější záměna u zkoušky: přihlášená pohledávka proti pohledávce za podstatou."
+      },
+      {
+        "nadpis": "Vodopád: kdo dostane zaplaceno a v jakém pořadí",
+        "text": "Tohle je ten obrázek, který si zapamatujte. Peníze z prodeje tečou shora dolů a každé patro se naplní celé, než něco přeteče do dalšího.\n\n**Nejdřív stranou: výtěžek ze zajištěného majetku.** Hala se prodala za 3,1 milionu. Z toho se odečtou náklady na její správu a prodej a část odměny správce — a **zbytek dostane banka** (§ 298 odst. 2). Do společné hromady z toho nejde nic, dokud není banka uspokojena.\n\n**Pak pohledávky za majetkovou podstatou a jim na roveň postavené.** Platí se kdykoli v průběhu řízení, jak jsou splatné. Nestačí-li na ně peníze, má zákon vlastní pořadí (§ 305 odst. 2): nejdřív odměna a hotové výdaje správce, pak pohledávky ze smluv za moratoria, pak úvěrové financování, pak poměrně náklady správy podstaty a mzdy zaměstnanců vzniklé po rozhodnutí o úpadku, pak zákonné výživné, pak náhrada škody na zdraví, a teprve pak ostatní poměrně.\n\n**Nakonec rozvrh: co zbude, se rozdělí poměrně mezi přihlášené věřitele** (§ 306 odst. 3). Tady se objeví těch 11 % pro dodavatele Hrubého.\n\n**A úplně mimo stojí pohledávky, které se neuspokojují vůbec** — třeba úroky narostlé po rozhodnutí o úpadku (§ 170).\n\nKdykoli při čtení hlavy narazíte na větu o tom, kdo z čeho dostane zaplaceno, zařaďte si ji do tohohle vodopádu. Devadesát procent zdánlivě nesouvisejících pravidel tam někam patří."
+      },
+      {
+        "nadpis": "Den D: co se stane prohlášením konkursu",
+        "text": "Účinky nastanou **okamžikem zveřejnění rozhodnutí v insolvenčním rejstříku** (§ 245 odst. 1) — ne vydáním, ne doručením. Od té vteřiny platí najednou tohle:\n\n**Dispoziční oprávnění je vaše** (§ 246). Co dlužník od té chvíle s podstatou udělá, je vůči věřitelům **neúčinné přímo ze zákona** — nemusíte na to žalobu.\n\n**Všechny dluhy se stanou splatnými** (§ 250). Půjčka splatná za tři roky je splatná dnes.\n\n**Soudní a rozhodčí spory o majetek podstaty se přerušují** (§ 263).\n\n**Společné jmění manželů zaniká** (§ 268 odst. 1). To je pro dlužníka-člověka asi nejcitelnější důsledek vůbec.\n\n**Likvidace právnické osoby se přerušuje** (§ 245 odst. 2).\n\n**Kdo dlužníkovi něco dluží, musí platit vám** (§ 249). Zaplatí-li přesto Burešovi a vy ty peníze neuvidíte, platí znovu.\n\n**Co se naopak nestane:** dlužník neztrácí svéprávnost ani procesní způsobilost (§ 245 odst. 3). Není zbaven práv jako osoba — jen přišel o právo nakládat s majetkem."
+      },
+      {
+        "nadpis": "Jak konkurs skončí a co po něm zbude",
+        "text": "Konkurs se **zruší** (§ 308) a zrušení má čtyři podoby. Tři jsou předčasné a jedna je ta normální: zrušení **po splnění rozvrhového usnesení** — tedy když jste rozdělil peníze a doložil to soudu.\n\nA teď to, co je na celé hlavě nejdůležitější si uvědomit předem, protože to mění smysl všeho ostatního:\n\n**U firmy dluhy zmizí.** Zanikne-li v důsledku zrušení konkursu právnická osoba bez právního nástupce, **neuspokojené pohledávky zanikají** (§ 311). Truhlárna Bureš s.r.o. se vymaže z rejstříku a těch 89 % Hrubého pohledávky prostě přestane existovat. Není po kom je vymáhat.\n\n**U člověka dluhy zůstanou.** Konkurs fyzickou osobu dluhů **nezbaví**. Na základě upraveného seznamu pohledávek lze po zrušení konkursu podat návrh na exekuci pro zjištěnou neuspokojenou pohledávku, kterou dlužník nepopřel — a to právo se promlčí teprve **za 10 let** od zrušení konkursu (§ 312 odst. 4).\n\n**Proto existuje oddlužení.** Konkurs je pro člověka nejhorší možný konec: přijde o majetek a dluhy mu zůstanou na deset let. Oddlužení je jediná cesta, na jejímž konci se zbytek odpouští. Až budete číst Hlavu V, vzpomeňte si na tenhle odstavec — vysvětluje, proč jsou podmínky oddlužení tak přísně hlídané."
+      },
+      {
+        "nadpis": "Co v konkursu děláte vy",
+        "text": "Hlava I je z velké části popis vaší práce. V hrubých tazích:\n\n**Převezmete firmu.** Zajistíte majetek, klíče, razítka, účetnictví, účty. Dlužník má na splnění svých povinností vůči vám **15 dnů** od prohlášení konkursu (§ 279 odst. 1).\n\n**Rozhodnete o běžících smlouvách.** U smluv o vzájemném plnění, které ani jedna strana zcela nesplnila, máte na rozmyšlenou **30 dnů** — a mlčení znamená odmítnutí plnění (§ 253 odst. 2). Tohle je past: zapomenete-li, smlouva padá sama.\n\n**Sepíšete majetkovou podstatu** a tím získáte oprávnění ji prodat (§ 280).\n\n**Přezkoumáte přihlášky** a sestavíte upravený seznam pohledávek.\n\n**Prodáte majetek** jedním ze čtyř způsobů (§ 286) a u zajištěného majetku podle pokynů zajištěného věřitele (§ 293).\n\n**Vydáte výtěžek zajištěným věřitelům** (§ 298).\n\n**Podáte konečnou zprávu** s vyúčtováním (§ 302) a po jejím schválení **návrh rozvrhového usnesení** (§ 306).\n\n**Rozdělíte peníze a podáte zprávu o splnění rozvrhu** — a konkurs se zruší."
+      },
+      {
+        "nadpis": "Pět věcí, které většinu lidí překvapí",
+        "text": "**Zajištěný věřitel si svůj prodej platí sám.** Banka dostane výtěžek z haly, ale předtím se z něj odečtou náklady na správu a zpeněžení a část odměny správce. Zákon na to má strop: náklady zpeněžení **nejvýše 5 %** výtěžku, náklady správy **nejvýše 4 %** (§ 298 odst. 4). Nad to jen s jejím souhlasem.\n\n**Zajištěný věřitel vám říká, jak prodávat.** U majetku, který slouží k jeho zajištění, jste **vázán jeho pokyny** (§ 293 odst. 1). Není to váš prodej, je to jeho prodej vašima rukama.\n\n**Prodejem se věc očistí.** Zpeněžením zanikají účinky exekucí a většina závad váznoucích na věci (§ 285 odst. 1) a na kupujícího nepřecházejí závazky, které na věci vázly (§ 283 odst. 5). Proto má smysl kupovat z konkursu. Pozor ale: služebnosti a reálná břemena **nezanikají** (§ 285 odst. 4).\n\n**Prodávat se nesmí hned.** Zpeněžovat lze teprve po právní moci rozhodnutí o prohlášení konkursu a **nejdřív po první schůzi věřitelů** — kromě věcí ohrožených zkázou nebo se souhlasem soudu (§ 283 odst. 2).\n\n**Malý konkurs má vlastní, jednodušší režim.** Je-li dlužníkem nepodnikající fyzická osoba, anebo nebyl-li zjištěn obrat nad 2 miliony a věřitelů není víc než 50, jde o **nepatrný konkurs** (§ 314) a řada kroků se zjednoduší nebo spojí dohromady (§ 315)."
+      },
+      {
+        "nadpis": "Jak tuhle hlavu číst",
+        "text": "**Čtěte ji po dílech, ne po paragrafech.** Každý díl je jedna fáze příběhu a dává smysl jako celek. Přehled dílů je hned pod tímhle textem.\n\n**U každého pravidla se ptejte: komu to pomáhá a na čí úkor.** Insolvenční právo je skoro celé o dělení příliš malého koláče. Téměř každá věta v této hlavě někomu přidává a někomu ubírá — a když víte komu, pamatujete si ji bez biflování.\n\n**Hlídejte si tři slova: poměrně, zajištěný, za podstatou.** Objeví-li se některé z nich, řeší ta věta pozici ve vodopádu.\n\n**Lhůty si zapisujte do jednoho seznamu.** V téhle hlavě jich je hodně a většina je propadná. Přehled všech lhůt v zákoně máte v appce zvlášť.\n\n**A nebojte se, že si to všechno nezapamatujete napoprvé.** Smysl tohoto úvodu není, abyste si pamatoval čísla paragrafů — ale abyste při čtení § 298 věděl, že se zrovna řeší, kolik si banka odnese z haly, a ne že jde o nějaké obecné pravidlo o výtěžku."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "Díl 1",
+        "rozsah": "§§ 244-262",
+        "od": "244",
+        "nazev": "Prohlášení konkursu a jeho účinky",
+        "veta": "Sepne se vypínač. Dispoziční oprávnění přechází na správce, dluhy se stanou splatnými, a řeší se, co s rozjednanými smlouvami — od nájmů přes leasing po výhradu vlastnictví."
+      },
+      {
+        "dil": "Díl 2",
+        "rozsah": "§§ 263-267",
+        "od": "263",
+        "nazev": "Účinky na probíhající řízení",
+        "veta": "Co s žalobami, které už běží u soudů. Většina se přeruší a pokračovat v nich lze jen za podmínek, které zákon vyjmenuje."
+      },
+      {
+        "dil": "Díl 3",
+        "rozsah": "§§ 268-276",
+        "od": "268",
+        "nazev": "Účinky na společné jmění manželů",
+        "veta": "Společné jmění zaniká a musí se vypořádat. Týká se jen dlužníků-lidí, ale je to pro ně ta nejcitelnější část celé hlavy."
+      },
+      {
+        "dil": "Díl 4",
+        "rozsah": "§§ 277-282",
+        "od": "277",
+        "nazev": "Procesní úkony navazující na prohlášení konkursu",
+        "veta": "První týdny správce: zjistit, zajistit, sepsat. Dlužník má na splnění svých povinností 15 dnů a soupis je listina, která opravňuje k prodeji."
+      },
+      {
+        "dil": "Díl 5",
+        "rozsah": "§§ 283-295",
+        "od": "283",
+        "nazev": "Zpeněžení majetkové podstaty",
+        "veta": "Jak se prodává. Čtyři způsoby, kdy se smí začít, kdo k čemu dává souhlas, a zvláštní pravidla pro zajištěný majetek a pro prodej závodu vcelku."
+      },
+      {
+        "dil": "Díl 6",
+        "rozsah": "§§ 296-301",
+        "od": "296",
+        "nazev": "Nakládání s výtěžkem zpeněžení",
+        "veta": "Peníze jsou na účtu. Tenhle díl řeší hlavně to, kolik si z nich odnese zajištěný věřitel a co se mu předtím strhne."
+      },
+      {
+        "dil": "Díl 7",
+        "rozsah": "§§ 302-307",
+        "od": "302",
+        "nazev": "Konečná zpráva a rozvrh",
+        "veta": "Účtování. Správce předloží konečnou zprávu s vyúčtováním, soud ji nechá připomínkovat a schválí, a pak vydá rozvrhové usnesení — kdo kolik dostane."
+      },
+      {
+        "dil": "Díl 8",
+        "rozsah": "§§ 308-313",
+        "od": "308",
+        "nazev": "Zrušení konkursu",
+        "veta": "Konec. Čtyři důvody zrušení a to nejdůležitější: u firmy neuspokojené dluhy zanikají, u člověka zůstávají vymahatelné dalších deset let."
+      },
+      {
+        "dil": "Díl 9",
+        "rozsah": "§§ 314-315",
+        "od": "314",
+        "nazev": "Nepatrný konkurs",
+        "veta": "Zjednodušená verze pro malé případy. Nepodnikající člověk, nebo obrat do 2 milionů a nejvýš 50 věřitelů — a řada kroků se spojí dohromady."
+      }
+    ]
+  }
+]

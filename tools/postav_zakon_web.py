@@ -12,7 +12,11 @@ Spouští se po `npm run build:web`, protože `expo export` cílovou složku ma�
 Spuštění:  python3 tools/postav_zakon_web.py
 """
 import shutil
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import sbal_artefakt  # noqa: E402 — ať je seznam dat jen na jednom místě
 
 KOREN = Path(__file__).resolve().parent.parent
 ZDROJ = KOREN / "artefakt"
@@ -23,8 +27,8 @@ HLAVICKA = (
     '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
 )
 
-SOUBORY = ["index.html", "zakon.js", "vyklad.js", "temata.js", "pohledavky.js",
-           "hra.js", "hra2.js", "hra3.js", "lhuty.js"]
+# Odvozeno z balíčkovače, aby se na nový datový soubor nedalo zapomenout.
+SOUBORY = ["index.html"] + [jmeno for jmeno, _, _ in sbal_artefakt.SOUBORY]
 
 
 def main():

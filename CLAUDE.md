@@ -20,8 +20,10 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 - Artifact (s rozhovory): <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>
 - Čtecí verze: <https://ventura1126-star.github.io/insolvence/zakon/>
 - Kód: `artefakt/index.html` (jedna stránka, prostý HTML/JS, bez frameworku)
-- Data: `artefakt/zakon.json`, `vyklad.json`, `temata.json`, `pohledavky.json`, `lhuty.json`, `hra.json`, `hra2.json`, `hra3.json`
-- Náplň: znění zákona, výklad po odstavcích, témata mimo insolvenční zákon,
+- Data: `artefakt/zakon.json`, `vyklad.json`, `uvody.json`, `temata.json`, `pohledavky.json`, `lhuty.json`, `hra.json`, `hra2.json`, `hra3.json`
+- Náplň: znění zákona, výklad po odstavcích, **laické úvody k hlavám**
+  (`#uvod-<id>`, odkaz je v seznamu zákona u nadpisu hlavy i nad paragrafem —
+  vysvětlují, o čem hlava je, než se začnou číst paragrafy), témata mimo insolvenční zákon,
   přehled typů pohledávek (`#pohledavky`), přehled lhůt (`#lhuty`), hra nad spisy
   (`#hra` rozcestník, `#hra-<id>` konkrétní spis — `hra.json` konkurs,
   `hra2.json` oddlužení, `hra3.json` rozhodování o úpadku), rozhovory s Claudem, tisk
@@ -104,5 +106,10 @@ Pages se z `main` nasadí samy a Artifact se publikuje nástrojem.
 - **`baseUrl` v `zkouska/app.json`** musí odpovídat názvu repozitáře
   (`/insolvence`), jinak si stránka nenajde bundle.
 - **`.nojekyll`** v `docs/` — bez něj Jekyll přeskočí složku `_expo`.
-- **Vygenerované soubory** `artefakt/zakon.js`, `vyklad.js`, `temata.js` jsou
-  mimo repo; zdrojové `.json` v něm jsou.
+- **Vygenerované soubory** `artefakt/*.js` jsou mimo repo; zdrojové `.json`
+  v něm jsou. Nový datový soubor se přidá do `SOUBORY` v
+  `tools/sbal_artefakt.py` a `tools/postav_zakon_web.py` si ho vezme odtud.
+- **Nepiš do kódu stránky znak `§` ani jinou diakritiku, na které něco závisí.**
+  Artifact i Pages kódování deklarují, ale prostý `python3 -m http.server` ne —
+  `§` se pak načte jako `Â§`, porovnání tiše selže a vypadá to jako chyba
+  logiky. Co se má s čím porovnávat, patří do dat (viz pole `od` v `uvody.json`).
