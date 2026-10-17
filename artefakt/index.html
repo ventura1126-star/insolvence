@@ -223,6 +223,48 @@
     margin: 0 0 .1rem;
   }
 
+  /* ---- rozcestník ------------------------------------------------------ */
+  .rozcestnik {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .7rem;
+    margin-top: 1.5rem;
+  }
+  @media (min-width: 42rem) {
+    .rozcestnik { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  .rozc {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    text-align: left;
+    appearance: none;
+    border: 1px solid var(--linka);
+    border-radius: .8rem;
+    background: var(--plocha);
+    color: inherit;
+    font: inherit;
+    padding: 1rem 1.1rem;
+    cursor: pointer;
+    box-shadow: var(--stin);
+  }
+  .rozc:hover { border-color: var(--pecet); }
+  .rozc:focus-visible { outline: 2px solid var(--pecet); outline-offset: 1px; }
+  .rozc-nazev {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.22rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    line-height: 1.2;
+  }
+  .rozc-popis { font-size: .9rem; color: var(--tlum); }
+  .rozc-stav {
+    margin-top: .2rem;
+    font-size: .78rem;
+    color: var(--pecet);
+    font-variant-numeric: tabular-nums;
+  }
+
   /* ---- přehled pohledávek --------------------------------------------- */
   .radek-prehled { border-bottom-color: var(--pecet); }
 
@@ -1124,14 +1166,52 @@
     return b;
   }
 
+  /* ---- rozcestník a seznamy ---------------------------------------------
+     Domovská stránka dřív nesla všechno najednou: přehledy, třicet témat
+     a pod nimi 482 paragrafů. Teď je z ní rozcestník s dlaždicemi a dlouhé
+     seznamy mají vlastní obrazovky. Hledání zůstává na rozcestníku, protože
+     je to nejkratší cesta kamkoli — a hledá napříč vším. */
+
+  function stavVykladu() {
+    var celkem = 0, hotovo = 0;
+    ZAKON.forEach(function (p) { celkem += p.odstavce.length; hotovo += vylozeno(p); });
+    return { celkem: celkem, hotovo: hotovo };
+  }
+
+  function dlazdiceRozcestniku(nazev, popis, stav, hash) {
+    var b = el('button', 'rozc');
+    b.type = 'button';
+    b.appendChild(el('span', 'rozc-nazev', nazev));
+    b.appendChild(el('span', 'rozc-popis', popis));
+    if (stav) b.appendChild(el('span', 'rozc-stav', stav));
+    b.addEventListener('click', function () { location.hash = hash; });
+    return b;
+  }
+
+  function radekTematu(t) {
+    var b = el('button', 'radek radek-tema');
+    b.type = 'button';
+    b.appendChild(el('span', 'radek-nazev', t.nazev));
+    b.appendChild(el('span', 'radek-pramen', t.pramen));
+    b.addEventListener('click', function () { location.hash = '#t' + t.id; });
+    return b;
+  }
+
+  /** Témata, která odpovídají hledanému textu. */
+  function hledejTemata(h) {
+    if (h.length < 2) return [];
+    return TEMATA.filter(function (t) {
+      return bezDiakritiky(t.nazev + ' ' + t.pramen + ' ' +
+        t.body.map(function (b) { return b.nadpis + ' ' + b.text; }).join(' ')).indexOf(h) >= 0;
+    });
+  }
+
   function vykresliObsah(dotaz) {
     hlavni.textContent = '';
     zpetBtn.hidden = true;
-    listaNazev.textContent = 'Insolvenční zákon';
-
-    var celkem = 0, hotovo = 0;
-    ZAKON.forEach(function (p) { celkem += p.odstavce.length; hotovo += vylozeno(p); });
-    listaStav.textContent = hotovo + ' / ' + celkem + ' odst.';
+    listaNazev.textContent = 'Insolvenční zákon v praxi';
+    var st = stavVykladu();
+    listaStav.textContent = st.hotovo + ' / ' + st.celkem + ' odst.';
 
     hlavni.appendChild(el('h1', 'titul', 'Insolvenční zákon v praxi'));
     hlavni.appendChild(el('p', 'perex',
@@ -1141,8 +1221,8 @@
 
     var pole = el('input', 'hledani');
     pole.type = 'search';
-    pole.placeholder = 'Číslo paragrafu nebo slovo';
-    pole.setAttribute('aria-label', 'Hledat v zákoně');
+    pole.placeholder = 'Hledat — číslo paragrafu, slovo, téma';
+    pole.setAttribute('aria-label', 'Hledat');
     pole.autocomplete = 'off';
     if (dotaz) pole.value = dotaz;
     hlavni.appendChild(pole);
@@ -1150,90 +1230,83 @@
     var vypis = el('div');
     hlavni.appendChild(vypis);
 
-    function radekTematu(t) {
-      var b = el('button', 'radek radek-tema');
-      b.type = 'button';
-      b.appendChild(el('span', 'radek-nazev', t.nazev));
-      b.appendChild(el('span', 'radek-pramen', t.pramen));
-      b.addEventListener('click', function () { location.hash = '#t' + t.id; });
-      return b;
+    function rozcestnik() {
+      var mriz = el('div', 'rozcestnik');
+
+      mriz.appendChild(dlazdiceRozcestniku('Insolvenční zákon',
+        'Celé znění po paragrafech, pod odstavci výklad.',
+        ZAKON.length + ' paragrafů · výklad k ' + st.hotovo + ' z ' + st.celkem + ' odstavců',
+        '#zakon'));
+
+      if (TEMATA.length) {
+        var oblasti = [];
+        TEMATA.forEach(function (t) { if (oblasti.indexOf(t.oblast) < 0) oblasti.push(t.oblast); });
+        mriz.appendChild(dlazdiceRozcestniku('Mimo insolvenční zákon',
+          'ZOK, občanský zákoník, exekuce, trestní právo a vaše profese.',
+          TEMATA.length + ' témat v ' + oblasti.length + ' oblastech', '#temata'));
+      }
+
+      if (POHLEDAVKY) {
+        mriz.appendChild(dlazdiceRozcestniku('Typy pohledávek',
+          'Tři osy třídění a deset situací k zařazení.',
+          Object.keys(POHLEDAVKY.typy).length + ' typů', '#pohledavky'));
+      }
+
+      if (LHUTY) {
+        var zanik = LHUTY.lhuty.filter(function (l) { return l.nasledek === 'prekluze'; }).length;
+        mriz.appendChild(dlazdiceRozcestniku('Lhůty v zákoně',
+          'Co se stane, když uplynou — a koho se týkají.',
+          LHUTY.lhuty.length + ' lhůt · u ' + zanik + ' zaniká právo', '#lhuty'));
+      }
+
+      if (SPISY.length) {
+        var rozehrano = 0, hotovych = 0;
+        var puvodni = HRA;
+        SPISY.forEach(function (sp) {
+          HRA = sp;
+          var u = nactiHru();
+          if (u) { if (u.konec) hotovych += 1; else rozehrano += 1; }
+        });
+        HRA = puvodni;
+        var stav = SPISY.length + (SPISY.length < 5 ? ' spisy' : ' spisů');
+        if (rozehrano) stav += ' · ' + rozehrano + ' rozehráno';
+        if (hotovych) stav += ' · ' + hotovych + ' dokončeno';
+        mriz.appendChild(dlazdiceRozcestniku('Veďte spis sám',
+          'Rozhodujete, čas běží, lhůty hoří. Každý spis jiná fáze řízení.',
+          stav, '#hra'));
+      }
+
+      var vlaken = Object.keys(ulozeni.vlakna).filter(function (k) {
+        var z = ulozeni.vlakna[k];
+        return z && z.zpravy && z.zpravy.length;
+      }).length;
+      mriz.appendChild(dlazdiceRozcestniku('Moje rozhovory',
+        'Všechno, co jste probíral s Claudem, na jednom místě.',
+        vlaken ? vlaken + (vlaken === 1 ? ' rozhovor' : vlaken < 5 ? ' rozhovory' : ' rozhovorů')
+               : 'zatím žádný', '#rozhovory'));
+
+      return mriz;
     }
 
     function prekresli(text) {
       vypis.textContent = '';
       var nalez = hledej(text || '');
-      if (nalez) {
-        var h = bezDiakritiky(text || '').trim();
-        var temata = h.length > 1 ? TEMATA.filter(function (t) {
-          return bezDiakritiky(t.nazev + ' ' + t.pramen + ' ' +
-            t.body.map(function (b) { return b.nadpis + ' ' + b.text; }).join(' ')
-          ).indexOf(h) >= 0;
-        }) : [];
-        if (temata.length) {
-          vypis.appendChild(el('h2', 'cast', 'Mimo insolvenční zákon'));
-          temata.forEach(function (t) { vypis.appendChild(radekTematu(t)); });
-          if (nalez.length) vypis.appendChild(el('h2', 'cast', 'Insolvenční zákon'));
-        }
-        if (!nalez.length && !temata.length) {
-          vypis.appendChild(el('p', 'prazdno', 'Nic takového tu není.'));
-          return;
-        }
-        nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
+      if (!nalez) { vypis.appendChild(rozcestnik()); return; }
+
+      var h = bezDiakritiky(text || '').trim();
+      var temata = hledejTemata(h);
+      if (!nalez.length && !temata.length) {
+        vypis.appendChild(el('p', 'prazdno', 'Nic takového tu není.'));
         return;
       }
-      if (POHLEDAVKY || SPISY.length || LHUTY) vypis.appendChild(el('h2', 'cast', 'Přehledy'));
-      if (SPISY.length) {
-        var kartaH = el('button', 'radek radek-tema radek-prehled');
-        kartaH.type = 'button';
-        kartaH.appendChild(el('span', 'radek-nazev', 'Hra: veďte spis sám'));
-        kartaH.appendChild(el('span', 'radek-pramen',
-          SPISY.length > 1 ? SPISY.length + ' spisy' : HRA.spis));
-        kartaH.addEventListener('click', function () { location.hash = '#hra'; });
-        vypis.appendChild(kartaH);
-      }
-      if (LHUTY) {
-        var kartaL = el('button', 'radek radek-tema radek-prehled');
-        kartaL.type = 'button';
-        kartaL.appendChild(el('span', 'radek-nazev', 'Lhůty v zákoně — přehled'));
-        kartaL.appendChild(el('span', 'radek-pramen', LHUTY.lhuty.length + ' lhůt'));
-        kartaL.addEventListener('click', function () { location.hash = '#lhuty'; });
-        vypis.appendChild(kartaL);
-      }
-      if (POHLEDAVKY) {
-        var kartaP = el('button', 'radek radek-tema radek-prehled');
-        kartaP.type = 'button';
-        kartaP.appendChild(el('span', 'radek-nazev', 'Typy pohledávek — přehled'));
-        kartaP.appendChild(el('span', 'radek-pramen',
-          Object.keys(POHLEDAVKY.typy).length + ' typů'));
-        kartaP.addEventListener('click', function () { location.hash = '#pohledavky'; });
-        vypis.appendChild(kartaP);
-      }
-
-      if (TEMATA.length) {
+      if (temata.length) {
         vypis.appendChild(el('h2', 'cast', 'Mimo insolvenční zákon'));
-        var oblast = null;
-        TEMATA.forEach(function (t) {
-          if (t.oblast !== oblast) {
-            oblast = t.oblast;
-            vypis.appendChild(el('h3', 'hlava', oblast));
-          }
-          vypis.appendChild(radekTematu(t));
-        });
+        temata.forEach(function (t) { vypis.appendChild(radekTematu(t)); });
       }
-
-      var cast = null, hlava = null;
-      ZAKON.forEach(function (p) {
-        if (p.cast !== cast) {
-          cast = p.cast;
-          hlava = null;
-          vypis.appendChild(el('h2', 'cast', cast));
-        }
-        if (p.hlava !== hlava) {
-          hlava = p.hlava;
-          if (hlava) vypis.appendChild(el('h3', 'hlava', hlava));
-        }
-        vypis.appendChild(radekParagrafu(p));
-      });
+      if (nalez.length) {
+        if (temata.length) vypis.appendChild(el('h2', 'cast', 'Insolvenční zákon'));
+        nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
+      }
     }
 
     var casovac;
@@ -1242,6 +1315,80 @@
       casovac = setTimeout(function () { prekresli(pole.value); }, 120);
     });
     prekresli(dotaz || '');
+  }
+
+  /** Obsah zákona — dřív byl na domovské stránce, teď má vlastní obrazovku. */
+  function vykresliZakon() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Insolvenční zákon';
+    var st = stavVykladu();
+    listaStav.textContent = st.hotovo + ' / ' + st.celkem + ' odst.';
+
+    hlavni.appendChild(el('h1', 'titul', 'Insolvenční zákon'));
+    hlavni.appendChild(el('p', 'perex',
+      'Kolečko u paragrafu říká, kolik z něj má výklad: ● celý, ◐ část, ○ zatím nic.'));
+
+    var vypis = el('div');
+
+    // Skok na část zákona — bez něj se 482 paragrafů prochází jen scrollem.
+    var skoky = el('div', 'osy');
+    var casti = [];
+    ZAKON.forEach(function (p) { if (casti.indexOf(p.cast) < 0) casti.push(p.cast); });
+    casti.forEach(function (nazev) {
+      var b = el('button', 'osa');
+      b.type = 'button';
+      b.textContent = nazev.split(' — ')[0];
+      b.addEventListener('click', function () {
+        var cil = vypis.querySelector('[data-cast="' + nazev + '"]');
+        if (cil) { cil.scrollIntoView({ block: 'start' }); window.scrollBy(0, -70); }
+      });
+      skoky.appendChild(b);
+    });
+    hlavni.appendChild(skoky);
+    hlavni.appendChild(vypis);
+
+    var cast = null, hlava = null;
+    ZAKON.forEach(function (p) {
+      if (p.cast !== cast) {
+        cast = p.cast;
+        hlava = null;
+        var h2 = el('h2', 'cast', cast);
+        h2.setAttribute('data-cast', cast);
+        vypis.appendChild(h2);
+      }
+      if (p.hlava !== hlava) {
+        hlava = p.hlava;
+        if (hlava) vypis.appendChild(el('h3', 'hlava', hlava));
+      }
+      vypis.appendChild(radekParagrafu(p));
+    });
+    window.scrollTo(0, 0);
+  }
+
+  /** Seznam témat mimo insolvenční zákon. */
+  function vykresliTemata() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Mimo insolvenční zákon';
+    listaStav.textContent = '';
+
+    hlavni.appendChild(el('h1', 'titul', 'Mimo insolvenční zákon'));
+    hlavni.appendChild(el('p', 'perex',
+      'Předpisy, které do insolvenční praxe zasahují, ale v insolvenčním zákoně nejsou. ' +
+      'Psané stejně jako výklad — přes to, co s nimi správce dělá.'));
+
+    var oblast = null;
+    TEMATA.forEach(function (t) {
+      if (t.oblast !== oblast) {
+        oblast = t.oblast;
+        hlavni.appendChild(el('h2', 'cast', oblast));
+      }
+      hlavni.appendChild(radekTematu(t));
+    });
+    window.scrollTo(0, 0);
   }
 
   /* ---- rozhovor pod odstavcem ---------------------------------------- */
@@ -3658,6 +3805,8 @@
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
     else if (h === 'lhuty') vykresliLhuty();
+    else if (h === 'zakon') vykresliZakon();
+    else if (h === 'temata') vykresliTemata();
     else if (h === 'hra' || h.indexOf('hra-') === 0) {
       var idSpisu = h.indexOf('hra-') === 0 ? h.slice(4) : null;
       if (!idSpisu && SPISY.length > 1) { vykresliSpisy(); return; }
