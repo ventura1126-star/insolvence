@@ -1443,9 +1443,11 @@
 
     if (u.osa && u.osa.length) {
       var sek = el('section', 'uvod-blok');
-      sek.appendChild(el('h2', 'uvod-nadpis', 'Hlava po dílech'));
-      sek.appendChild(el('p', 'osa-perex',
-        'Devět kapitol příběhu v pořadí, v jakém se dějí. Kliknutím skočíte na první paragraf dílu.'));
+      // Sedm hlav zákona díly nemá. Tam si členění nese úvod v datech sám,
+      // proto je nadpis i perex osy přepsatelný.
+      sek.appendChild(el('h2', 'uvod-nadpis', u.osaNadpis || 'Hlava po dílech'));
+      sek.appendChild(el('p', 'osa-perex', u.osaPerex ||
+        'Kapitoly příběhu v pořadí, v jakém se dějí. Kliknutím skočíte na první paragraf dílu.'));
       u.osa.forEach(function (d) {
         // Číslo prvního paragrafu je v datech zvlášť. Dolovat ho z „§§ 283-295"
         // by znamenalo mít v kódu paragrafový znak — a ten se bez deklarovaného
@@ -1454,7 +1456,7 @@
         var b = el('button', 'uvod-dil');
         b.type = 'button';
         var hlav = el('span', 'uvod-dil-hlava');
-        hlav.appendChild(el('span', 'uvod-dil-cislo', d.dil));
+        if (d.dil) hlav.appendChild(el('span', 'uvod-dil-cislo', d.dil));
         hlav.appendChild(el('span', 'uvod-dil-nazev', d.nazev));
         hlav.appendChild(el('span', 'uvod-dil-rozsah', d.rozsah));
         b.appendChild(hlav);

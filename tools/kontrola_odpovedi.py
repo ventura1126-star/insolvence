@@ -117,6 +117,43 @@ def zkontroluj_hru(zakon):
     return chyby
 
 
+def zkontroluj_uvody(zakon):
+    """Laické úvody k hlavám — hlídá, že se nerozešly se zákonem.
+
+    Úvod se páruje s hlavou dvojicí cast + hlava a jeho osa odkazuje na
+    paragrafy číslem v poli „od". Novela umí hlavu přejmenovat i paragraf
+    zrušit; pak by úvod zmizel ze seznamu nebo by skok vedl do prázdna,
+    aniž by si toho kdokoli všiml.
+    """
+    zdroj = KOREN / "artefakt/uvody.json"
+    if not zdroj.exists():
+        return []
+    uvody = json.loads(zdroj.read_text("utf-8"))
+    chyby = []
+    hlavy = {(p["cast"], p["hlava"]) for p in zakon}
+    cisla = {p["paragraf"] for p in zakon}
+    videna = set()
+    for u in uvody:
+        kde = u.get("nazev") or u.get("id")
+        if u["id"] in videna:
+            chyby.append(f"úvod {kde}: id {u['id']} se opakuje")
+        videna.add(u["id"])
+        if (u["cast"], u["hlava"]) not in hlavy:
+            chyby.append(f"úvod {kde}: taková hlava v zákoně není")
+        if not u.get("perex", "").strip():
+            chyby.append(f"úvod {kde}: chybí perex")
+        for b in u.get("bloky", []):
+            if not b.get("nadpis", "").strip() or not b.get("text", "").strip():
+                chyby.append(f"úvod {kde}: blok bez nadpisu nebo bez textu")
+        for d in u.get("osa", []):
+            if d.get("od") not in cisla:
+                chyby.append(f"úvod {kde}: osa odkazuje na § {d.get('od')}, který v zákoně není")
+            if not d.get("nazev", "").strip() or not d.get("veta", "").strip():
+                chyby.append(f"úvod {kde}: položka osy bez názvu nebo bez věty")
+    print(f"úvody          {len(uvody)} hlav z {len(hlavy)}")
+    return chyby
+
+
 def zkontroluj_vyklad():
     """Výklad se píše ručně vedle znění zákona — hlídá, že se nerozešly.
 
@@ -149,6 +186,7 @@ def zkontroluj_vyklad():
                 chyby.append(f"výklad § {cislo} odst. {odstavec}: prázdný text")
 
     chyby += zkontroluj_temata()
+    chyby += zkontroluj_uvody(zakon)
     chyby += zkontroluj_hru(zakon)
 
     celkem = sum(len(o) for o in odstavce.values())
