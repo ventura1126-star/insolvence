@@ -1327,8 +1327,9 @@
       var mriz = el('div', 'rozcestnik');
 
       mriz.appendChild(dlazdiceRozcestniku('Insolvenční zákon',
-        'Celé znění po paragrafech, pod odstavci výklad.',
-        ZAKON.length + ' paragrafů · výklad k ' + st.hotovo + ' z ' + st.celkem + ' odstavců',
+        'Celé znění po paragrafech. U každé hlavy laický úvod, pod odstavci výklad.',
+        ZAKON.length + ' paragrafů · úvod k ' + UVODY.length + ' hlavám · výklad k '
+          + st.hotovo + ' z ' + st.celkem + ' odstavců',
         '#zakon'));
 
       if (TEMATA.length) {

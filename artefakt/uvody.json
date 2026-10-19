@@ -640,5 +640,503 @@
         "veta": "Zjednodušená verze pro malé případy. Nepodnikající člověk, nebo obrat do 2 milionů a nejvýš 50 věřitelů — a řada kroků se spojí dohromady."
       }
     ]
+  },
+  {
+    "id": "reorganizace",
+    "cast": "ČÁST DRUHÁ — ZPŮSOBY ŘEŠENÍ ÚPADKU",
+    "hlava": "HLAVA II — REORGANIZACE",
+    "nazev": "Reorganizace",
+    "rozsah": "§§ 316-364",
+    "perex": "Opak konkursu. Firma se nerozprodá — pokračuje v provozu a věřitele uspokojuje z toho, co vydělá, podle plánu, který si věřitelé sami odhlasují. Je to nejsložitější část zákona, protože tu nejde o prodej majetku, ale o vyjednávání o budoucnosti podniku. Celá hlava je v podstatě návod, jak to vyjednávání zorganizovat tak, aby menšina nebyla ušlapaná a většina nebyla rukojmím.",
+    "bloky": [
+      {
+        "nadpis": "Reorganizace jednou větou",
+        "text": "**§ 316 odst. 1: reorganizací se rozumí zpravidla postupné uspokojování pohledávek věřitelů při zachování provozu dlužníkova závodu.**\n\nVšimněte si dvou slov. **Postupné** — platí se v čase, z budoucích výnosů, ne jednorázově z výtěžku prodeje. **Při zachování provozu** — podnik běží dál.\n\n**Proč to má smysl.** Strojírna Kolář má obrat 180 milionů, rozjeté zakázky a 120 zaměstnanců. V konkursu se stroje prodají za zlomek a věřitelé dostanou 15 %. Běží-li firma dál, může za pět let zaplatit 40 %, a lidé si udrží práci. Fungující závod má zkrátka větší hodnotu než jeho součástky.\n\n**Celý zákon o reorganizaci stojí na jednom testu:** dostane každý věřitel podle plánu aspoň tolik, kolik by dostal v konkursu? Když ano, dává reorganizace smysl. Když ne, nemá právo existovat.\n\n**To je důvod, proč se u reorganizace povinně oceňuje majetková podstata znalcem** (§ 153) — bez ceny podstaty se ten test nedá spočítat."
+      },
+      {
+        "nadpis": "Kdo na reorganizaci vůbec dosáhne",
+        "text": "Tohle jsou čísla, která se u zkoušky ptají a vyplatí se je umět přesně.\n\n**Jen podnikatel** (§ 316 odst. 2) — a reorganizace se týká jeho závodu.\n\n**Nikdy:** právnická osoba **v likvidaci**, obchodník s cennými papíry, osoba oprávněná obchodovat na komoditní burze (§ 316 odst. 3).\n\n**Velikostní práh (§ 316 odst. 4) — stačí splnit jedno z dvojího:**\n— roční úhrn čistého obratu za poslední účetní období **alespoň 50 000 000 Kč**, nebo\n— **nejméně 50 zaměstnanců** v pracovním poměru.\n\n**A pak ta velká výjimka (§ 316 odst. 5): předbalená reorganizace.** Předloží-li dlužník spolu s insolvenčním návrhem nebo nejpozději do rozhodnutí o úpadku **reorganizační plán přijatý alespoň polovinou všech zajištěných věřitelů podle výše a alespoň polovinou všech nezajištěných věřitelů podle výše**, velikostní práh se vůbec nepoužije.\n\n**To je zásadní.** Malá firma se na reorganizaci dostane jedině předem vyjednaným plánem. Zákaz pro likvidaci a obchodníky s cennými papíry ale platí i tak — výjimka ruší jen odstavec 4, ne odstavec 3."
+      },
+      {
+        "nadpis": "Kdo to navrhne a do kdy",
+        "text": "**Navrhnout může dlužník nebo přihlášený věřitel** (§ 317).\n\n**Lhůty (§ 318):** podal-li dlužník insolvenční návrh pro **hrozící** úpadek, může návrh na reorganizaci podat **nejpozději do rozhodnutí o úpadku**. V ostatních případech **nejpozději 10 dnů před první schůzí věřitelů**, která se má konat po rozhodnutí o úpadku.\n\n**Věřitelský návrh musí schválit schůze věřitelů** (§ 323). Bez toho se zamítne (§ 326 odst. 1 písm. c).\n\n**Soud návrh zamítne** (§ 326) také tehdy, lze-li důvodně předpokládat **nepoctivý záměr**, nebo podala-li ho osoba, o jejímž návrhu už bylo dříve rozhodnuto.\n\n**Pozor na jeden detail, který se snadno přehlédne (§ 324):** po podání návrhu na reorganizaci a před rozhodnutím o úpadku jsou osoby oprávněné nakládat s majetkovou podstatou v tom omezeny. Reorganizace tedy „zmrazuje\" podnik ještě dřív, než je povolena.\n\n**Povolení reorganizace není její schválení.** Povolením se jen otevírá prostor, ve kterém se teprve sestaví a odhlasuje plán. To jsou dva různé kroky s měsíci mezi sebou."
+      },
+      {
+        "nadpis": "Co se změní povolením reorganizace",
+        "text": "**Největší rozdíl proti konkursu: dispoziční oprávnění zůstávají dlužníkovi.** Právní mocí rozhodnutí o povolení se ruší omezení, která dlužníka do té doby svazovala (§ 330). Firma dál podniká, podepisuje smlouvy, vyplácí mzdy.\n\n**Vy jste dohled, ne provozovatel** (§ 331): vykonáváte dohled nad činností dlužníka s dispozičními oprávněními, pokračujete ve zjišťování a soupisu podstaty, přezkoumáváte pohledávky.\n\n**Soud může dispoziční oprávnění dlužníku omezit nebo odebrat** (§ 332) — na váš návrh, na návrh věřitelského výboru, nebo i bez návrhu. Tohle je páka, kterou držíte v ruce.\n\n**Pozastavuje se výkon funkce valné hromady nebo členské schůze** (§ 333) a její působnost v zásadě přechází jinam. Vlastníci tedy ztrácejí běžnou kontrolu nad firmou, i když ji formálně pořád vlastní.\n\n**Rozhodnutí o povolení má povinný obsah** (§ 329) a od něj se počítají lhůty pro sestavení plánu.\n\n**A § 330a říká, že se přiměřeně použijí konkursní pravidla o smlouvách** (§ 253 až § 260) — takže i v reorganizaci řešíte, co s nedokončenými vzájemnými smlouvami."
+      },
+      {
+        "nadpis": "Reorganizační plán: kdo ho píše a co v něm musí být",
+        "text": "**Přednostní právo sestavit plán má dlužník** (§ 339 odst. 1), i když návrh podal věřitel. Předloží ho s návrhem, nebo ve lhůtě **120 dnů od rozhodnutí o povolení reorganizace** — a soud mu tu lhůtu může prodloužit, **nejdéle o dalších 120 dnů**.\n\n**O přednostní právo dlužník přijde** (§ 339 odst. 2 a 3), oznámí-li, že plán předložit nehodlá, nebo **usnesou-li se tak věřitelé na schůzi**. A schůze, na které se projednává návrh na povolení reorganizace, je oprávněna takové usnesení přijmout **vždy**.\n\n**Plán obsahuje vždy** (§ 340): rozdělení věřitelů do skupin a nakládání s jejich pohledávkami, způsob reorganizace, opatření k plnění plánu včetně toho, kdo smí nakládat s podstatou, a údaj, zda a jak bude pokračovat provoz závodu.\n\n**Reorganizaci lze provést zejména** (§ 341): **restrukturalizací pohledávek** (prominutí části dluhů nebo odklad splatnosti), prodejem podstaty či závodu, vydáním aktiv věřitelům nebo jejich převodem na novou společnost s majetkovou účastí věřitelů, fúzí a dalšími opatřeními. Výčet je demonstrativní a plán je obvykle kombinuje.\n\n**K plánu se připojují dokumenty podle typu reorganizace** (§ 342) a **zpráva o reorganizačním plánu** (§ 343), která má věřitelům poskytnout dost informací, aby mohli hlasovat se znalostí věci."
+      },
+      {
+        "nadpis": "Hlasování ve skupinách — a co když některá řekne ne",
+        "text": "**Věřitelé se dělí do skupin** (§ 337) tak, aby v každé byli věřitelé se **zásadně shodným právním postavením a zásadně shodnými hospodářskými zájmy**. Kritéria rozdělení musí plán uvést.\n\n**Samostatnou skupinou je zejména** každý zajištěný věřitel zvlášť, společníci a členové dlužníka, a věřitelé, jejichž pohledávky plán nedotýká.\n\n**Skupina plán přijala** (§ 347 odst. 1), vyslovila-li se pro **většina hlasujících věřitelů skupiny, jejíž pohledávky představují nejméně polovinu celkové jmenovité hodnoty pohledávek hlasujících věřitelů této skupiny**. Tedy dvojí většina: podle hlav i podle hodnoty.\n\n**Skupina, jejíž pohledávky plán nedotýká, se vždy považuje za skupinu, která přijala** (§ 347 odst. 4).\n\n**Hlasovat lze i mimo schůzi** (§ 345, § 346), a hlasovaly-li takto všechny skupiny, soud schůzi vůbec nesvolá (§ 344 odst. 3).\n\n**A teď to nejzajímavější: plán může projít, i když ho některá skupina odmítne.** Soud ho schválí (§ 348), je-li v souladu se zákonem, není-li sledován nepoctivý záměr, přijaly-li ho všechny skupiny — **nebo** jsou-li splněny podmínky § 349 pro nucené schválení. Tomu se v praxi říká přehlasování odmítající skupiny.\n\n**§ 349 definuje, kdy je plán vůči nepřijavší skupině „spravedlivý\"**: u zajištěných věřitelů musí dostat stejný nebo obdobný druh zajištění v témže pořadí a plnění odpovídající hodnoty; u nezajištěných platí přísná pravidla o současné hodnotě plnění a o tom, že nikdo podřízenější nesmí dostat víc."
+      },
+      {
+        "nadpis": "Co se stane účinností plánu",
+        "text": "**Plán je účinný, jakmile rozhodnutí o jeho schválení nabylo právní moci** (§ 352), nebyla-li stanovena pozdější účinnost.\n\n**A pak přichází ustanovení, které stojí za podtržení — § 356 odst. 1: účinností plánu zanikají práva všech věřitelů vůči dlužníkovi, a to i těch, kteří svou pohledávku nepřihlásili.** Za věřitele se nadále považují jen osoby uvedené v plánu, v rozsahu, který plán stanoví.\n\nJinými slovy: schválený plán **přepíše celou pasivní stranu rozvahy**. Kdo nepřihlásil, přijde o všechno — a to ještě důkladněji než v konkursu.\n\n**Dlužník je od účinnosti plánu oprávněn nakládat s podstatou** (§ 353). Vy zajistíte procesní úkony spojené s účinností (§ 354) a **věřitelský výbor kontroluje provádění plánu** (§ 355).\n\n**Pohledávky, které se neuspokojují podle § 170, přijetím plánu nezanikají**, ale řeší je § 359.\n\n**Po účinnosti plánu lze proti dlužníkovi opět nařídit a provést exekuci** (§ 360) — za podmínek tam stanovených. Firma se tím vrací do normálního světa.\n\n**Plán lze změnit** (§ 361), navrhne-li to jeho navrhovatel a je-li zachován účel reorganizace."
+      },
+      {
+        "nadpis": "Když se to nepovede: přeměna v konkurs",
+        "text": "Reorganizace je riziková a zákon s tím počítá. **§ 363 vyjmenovává důvody přeměny reorganizace v konkurs** a stojí za to je znát, protože to je nejčastější konec:\n\n— reorganizace byla povolena na návrh dlužníka a ten její přeměnu sám navrhl,\n— **oprávněná osoba nesestaví plán ve lhůtě** (ani po prodloužení) nebo předložený plán vezme zpět,\n— soud plán **neschválil** a nedošlo k nápravě,\n— dlužník **neplní podstatné povinnosti podle plánu**,\n— a další případy tam vyjmenované.\n\n**§ 362 přidává zvláštní možnost:** soud zruší rozhodnutí o schválení plánu **do 6 měsíců od jeho účinnosti**, vyjde-li najevo, že byl schválen na základě podvodného jednání nebo že někomu byly poskytnuty zvláštní výhody.\n\n**Pro vás praktické:** v reorganizaci jste dohled, ale ve chvíli přeměny v konkurs se vaše role obrátí o sto osmdesát stupňů — dispoziční oprávnění přejdou na vás a začíná zpeněžování. Proto má smysl po celou dobu reorganizace vést soupis a evidenci tak, jako byste konkurs čekal."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "Díl 1",
+        "rozsah": "§ 316",
+        "od": "316",
+        "nazev": "Přípustnost reorganizace",
+        "veta": "Jen podnikatel, nikdy firma v likvidaci. Obrat aspoň 50 milionů nebo aspoň 50 zaměstnanců — anebo předem odhlasovaný plán, který práh ruší."
+      },
+      {
+        "dil": "Díl 2",
+        "rozsah": "§§ 317-324",
+        "od": "317",
+        "nazev": "Návrh na povolení reorganizace",
+        "veta": "Kdo smí navrhnout a do kdy. Věřitelský návrh musí schválit schůze věřitelů; podáním návrhu se dlužník omezuje v nakládání s podstatou."
+      },
+      {
+        "dil": "Díl 3",
+        "rozsah": "§§ 325-333",
+        "od": "325",
+        "nazev": "Rozhodnutí o návrhu",
+        "veta": "Povolení není schválení plánu. Dispoziční oprávnění zůstávají dlužníkovi, správce dohlíží, soud může oprávnění kdykoli omezit a valná hromada se pozastavuje."
+      },
+      {
+        "dil": "Díl 4",
+        "rozsah": "§§ 334-337",
+        "od": "334",
+        "nazev": "Věřitelé při reorganizaci",
+        "veta": "Za věřitele se tu považují i společníci dlužníka. Všichni se dělí do skupin podle shodného právního postavení a hospodářských zájmů — a ve skupinách se pak hlasuje."
+      },
+      {
+        "dil": "Díl 5",
+        "rozsah": "§§ 338-351",
+        "od": "338",
+        "nazev": "Reorganizační plán",
+        "veta": "Nejdelší díl. Přednostní právo dlužníka a lhůta 120 dnů, povinný obsah plánu, způsoby provedení, hlasování ve skupinách a podmínky, za kterých soud plán schválí i přes odpor některé skupiny."
+      },
+      {
+        "dil": "Díl 6",
+        "rozsah": "§§ 352-361",
+        "od": "352",
+        "nazev": "Provádění reorganizačního plánu",
+        "veta": "Účinností plánu zanikají práva všech věřitelů vůči dlužníkovi včetně těch, kdo nepřihlásili. Dlužník zase disponuje, věřitelský výbor kontroluje, plán lze měnit."
+      },
+      {
+        "dil": "Díl 7",
+        "rozsah": "§§ 362-364",
+        "od": "362",
+        "nazev": "Skončení reorganizace",
+        "veta": "Splnění plánu — nebo přeměna v konkurs, když plán nevznikne, neprojde nebo ho dlužník neplní."
+      }
+    ]
+  },
+  {
+    "id": "vylouceni",
+    "cast": "ČÁST DRUHÁ — ZPŮSOBY ŘEŠENÍ ÚPADKU",
+    "hlava": "HLAVA III — ZVLÁŠTNÍ USTANOVENÍ O VYLOUČENÍ ÚČINKŮ ZÁKONA",
+    "nazev": "Vyloučení účinků zákona",
+    "rozsah": "§§ 365-366",
+    "perex": "Dva paragrafy, které říkají: na tohle insolvenční zákon nesahá. Jde o platební a vypořádací systémy, finanční zajištění a závěrečné vyrovnání — tedy o instalatérské potrubí finančního trhu. Pro běžnou praxi správce okrajové, pro pochopení systému užitečné.",
+    "bloky": [
+      {
+        "nadpis": "Proč tahle výjimka existuje",
+        "text": "Představte si, že banka pošle ráno miliardu přes platební systém a odpoledne na ni padne insolvence. Kdyby se její ranní platby daly zpětně zpochybnit, zhroutil by se platební styk celé země — nikdo by si nemohl být jistý, že přijatá platba je definitivní.\n\n**§ 365 proto říká, že ustanovení insolvenčního zákona nemají vliv na platnost, účinnost či vymahatelnost závazků dlužníka, který je účastníkem platebního systému s neodvolatelností zúčtování** nebo vypořádacího systému s neodvolatelností vypořádání — za podmínek stanovených zákonem o platebním styku, resp. zákonem o podnikání na kapitálovém trhu.\n\n**To slovo „neodvolatelnost\" je celý smysl.** Jakmile transakce v takovém systému projde, je nevratná. Insolvence na tom nic nemění.\n\n**Pro vás prakticky:** narazíte na to jen u dlužníka, který je účastníkem takového systému — tedy u finančních institucí. U Truhlárny Bureš se s tím nesetkáte."
+      },
+      {
+        "nadpis": "Finanční zajištění a závěrečné vyrovnání",
+        "text": "**§ 366 chrání tři věci:**\n\n**Zajištění poskytnuté centrální bance** — ČNB, ECB, centrální bance členského státu EU nebo státu EHP. Měnová politika se dělá proti zástavám a ty musí být neotřesitelné.\n\n**Finanční zajištění** podle zákona o finančním zajištění, bylo-li sjednáno a vzniklo **před zahájením** insolvenčního řízení. A je tu i jemné pravidlo pro den zahájení: vzniklo-li zajištění až poté, co zahájení nastalo, chrání se jen tehdy, pokud příjemce o zahájení **nevěděl a vědět neměl a nemohl** — přičemž samotné zveřejnění v insolvenčním rejstříku ještě neznamená, že vědět měl.\n\n**Závěrečné vyrovnání** podle zákona o podnikání na kapitálovém trhu, bylo-li uzavřeno před zahájením řízení.\n\n**A pak přichází odstavec 3, který je tu nejdůležitější:** touhle ochranou **nejsou dotčena ustanovení o neplatnosti a o neúčinnosti** právních úkonů — tedy § 235 a násl.\n\n**Čtěte to takhle:** výjimka chrání fungování trhu, nikoli podvod. Bylo-li finanční zajištění zřízeno jako zvýhodňující nebo úmyslně zkracující úkon, odpůrčí žaloba proti němu jde dál."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§ 365",
+        "od": "365",
+        "nazev": "Platební a vypořádací systémy",
+        "veta": "Transakce v systémech s neodvolatelností zúčtování či vypořádání zůstávají platné a vymahatelné bez ohledu na insolvenci jejich účastníka."
+      },
+      {
+        "dil": "",
+        "rozsah": "§ 366",
+        "od": "366",
+        "nazev": "Finanční zajištění a závěrečné vyrovnání",
+        "veta": "Chráněno je zajištění centrálním bankám, finanční zajištění vzniklé před zahájením řízení a závěrečné vyrovnání — ale neúčinnost podle § 235 a násl. tím dotčena není."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Dva paragrafy, každý o jiné výjimce. Kliknutím skočíte na paragraf."
+  },
+  {
+    "id": "financni",
+    "cast": "ČÁST DRUHÁ — ZPŮSOBY ŘEŠENÍ ÚPADKU",
+    "hlava": "HLAVA IV — ÚPADEK FINANČNÍCH INSTITUCÍ",
+    "nazev": "Úpadek finančních institucí",
+    "rozsah": "§§ 367-388e",
+    "perex": "Zvláštní režim pro banky, družstevní záložny, pojišťovny, zajišťovny a investiční fondy. Běžný insolvenční správce se do takového spisu nedostane — ale vědět, že tahle hlava existuje a čím se liší, patří k základům. A jedna věc z ní má dopad i na úplně obyčejné spisy: ochrana vkladatelů a pořadí jejich pohledávek.",
+    "bloky": [
+      {
+        "nadpis": "Proč mají finanční instituce vlastní hlavu",
+        "text": "Vzpomeňte si na § 6 odst. 2 písm. a): **na finanční instituci se insolvenční zákon nepoužije po dobu, po kterou je nositelem licence nebo povolení.** Banka se tedy nedá poslat do insolvence, dokud má licenci.\n\n**Tahle hlava nastupuje až potom.** § 367 to říká přímo: použije se na úpadek banky nebo spořitelního a úvěrního družstva **poté, kdy zanikla licence nebo povolení**. U pojišťoven totéž po odejmutí povolení (§ 379).\n\n**Logika je prostá a stojí za zapamatování:** napřed zasáhne dohled — ČNB odebere licenci, případně se spustí řešení krize podle zákona o ozdravných postupech. Teprve když z instituce zbude prázdná skořápka, přichází na řadu insolvenční soud.\n\n**Hlava zapracovává evropské předpisy** a velká část jejího obsahu je o přeshraničních situacích: která práva zůstávají nedotčena, když má banka majetek v jiném členském státě (§ 369), a jak se informují zahraniční orgány."
+      },
+      {
+        "nadpis": "Co je tu úplně jinak",
+        "text": "**Návrh podává dohled, ne věřitel** (§ 368). Insolvenční návrh podává orgán oprávněný vykonávat dozor nebo dohled — tedy zpravidla **Česká národní banka** — a orgán příslušný k řešení krize. (Tím není dotčen § 368 ve vztahu k obecnému § 97.) U pojišťoven podává návrh orgán dozoru (§ 380).\n\n**Pohledávky se nepřihlašují.** To je nejpřekvapivější odchylka celé hlavy. **§ 373: pohledávky věřitelů vyplývající z účetnictví dlužníka se pokládají za přihlášené** — a **okamžikem přihlášení je prohlášení konkursu.**\n\nDává to smysl: banka má statisíce klientů a nelze po nich chtít, aby si hlídali rejstřík a podávali přihlášky. Jejich účty jsou v účetnictví, takže se přihlásí samy.\n\n**Vkladatelé mají přednost** (§ 374). Před pohledávkami ostatních nezajištěných věřitelů se uspokojují zejména pohledávky z té části vkladů fyzických osob a malých a středních podniků, která přesahuje limit pojištění vkladů, a vklady, které by pojištěnými vklady byly.\n\n**Krycí portfolio není součástí podstaty** (§ 375). Majetek, kterým jsou kryty kryté dluhopisy, se do podstaty emitenta nezahrnuje — jinak by krytí nemělo smysl."
+      },
+      {
+        "nadpis": "Pro koho hlava platí a kdo se dozvídá",
+        "text": "**Díl 1 (§§ 367-378)** — banky, spořitelní a úvěrní družstva, některé zahraniční banky, obchodníci s cennými papíry a další osoby tam uvedené.\n\n**Díl 2 (§§ 379-388)** — tuzemské pojišťovny a zajišťovny a pobočky pojišťoven ze třetích států, po odejmutí povolení.\n\n**Díl 3 (§§ 388a-388c)** — podílový fond a podfond akciové společnosti s proměnným základním kapitálem. Zajímavost: v úpadku tu není právnická osoba, ale **majetkový útvar bez právní osobnosti**.\n\n**Díl 4 (§§ 388d-388e)** — informační povinnost soudu vůči České národní bance. Soud ji **bez zbytečného odkladu vyrozumí** o zahájení řízení i o rozhodnutí o úpadku těchto osob, a také jde-li o provozovatele nebo účastníka platebního či vypořádacího systému s neodvolatelností.\n\n**Souvislost, kterou si všimněte:** § 388e navazuje na § 365 a § 366 z předchozí hlavy. Tam se říká, že insolvence nemá vliv na neodvolatelné zúčtování; tady se zařizuje, aby se o insolvenci dozvěděl ten, kdo ty systémy hlídá."
+      },
+      {
+        "nadpis": "Co si z téhle hlavy odnést ke zkoušce",
+        "text": "Nemá smysl se tuhle hlavu učit podrobně. Stačí čtyři věci:\n\n**Finanční instituce jde do insolvence teprve po zániku licence** — do té doby se zákon nepoužije (§ 6 odst. 2 písm. a, § 367, § 379).\n\n**Návrh podává dohled**, typicky ČNB (§ 368, § 380).\n\n**Pohledávky z účetnictví se pokládají za přihlášené prohlášením konkursu** — vkladatelé nic nepodávají (§ 373).\n\n**Vkladatelé mají přednost před ostatními nezajištěnými věřiteli** (§ 374).\n\n**A jedna poznámka k zařazení:** hlava je v části druhé mezi způsoby řešení úpadku, ačkoli nepopisuje nový způsob — popisuje zvláštní režim pro určité dlužníky. Odpovídá tomu § 4 odst. 1 písm. d), který mezi způsoby řešení úpadku řadí i **zvláštní způsoby pro určité subjekty nebo druhy případů**."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "Díl 1",
+        "rozsah": "§§ 367-378",
+        "od": "367",
+        "nazev": "Banky, záložny, obchodníci s cennými papíry",
+        "veta": "Nastupuje až po zániku licence. Návrh podává dohled, pohledávky z účetnictví se pokládají za přihlášené, vkladatelé mají přednost a krycí portfolio zůstává mimo podstatu."
+      },
+      {
+        "dil": "Díl 2",
+        "rozsah": "§§ 379-388",
+        "od": "379",
+        "nazev": "Pojišťovny a zajišťovny",
+        "veta": "Obdobný režim po odejmutí povolení, s vlastními pravidly pro pohledávky z pojištění a pro přeshraniční situace."
+      },
+      {
+        "dil": "Díl 3",
+        "rozsah": "§§ 388a-388c",
+        "od": "388a",
+        "nazev": "Podílový fond a podfond",
+        "veta": "Úpadek majetkového útvaru, který není právnickou osobou — zvláštnost, která jinde v zákoně nemá obdobu."
+      },
+      {
+        "dil": "Díl 4",
+        "rozsah": "§§ 388d-388e",
+        "od": "388d",
+        "nazev": "Informování České národní banky",
+        "veta": "Soud bez zbytečného odkladu vyrozumí ČNB o zahájení řízení i o rozhodnutí o úpadku — zejména u účastníků platebních a vypořádacích systémů."
+      }
+    ]
+  },
+  {
+    "id": "oddluzeni",
+    "cast": "ČÁST DRUHÁ — ZPŮSOBY ŘEŠENÍ ÚPADKU",
+    "hlava": "HLAVA V — ODDLUŽENÍ",
+    "nazev": "Oddlužení",
+    "rozsah": "§§ 389-418",
+    "perex": "Jediná cesta v celém zákoně, na jejímž konci dluhy opravdu zmizí. Dlužník tři roky platí, co může, a zbytek mu soud odpustí. Proto je tahle hlava tak přísná: hlídá, aby osvobození dostal jen ten, kdo se poctivě snažil. Pro správce je to nejčastější typ spisu vůbec — a zároveň ten, kde je nejvíc lidského kontaktu.",
+    "bloky": [
+      {
+        "nadpis": "Co oddlužení je a proč je jiné než zbytek zákona",
+        "text": "Konkurs i reorganizace řeší jednu otázku: jak rozdělit majetek. **Oddlužení řeší jinou: jak dát člověku druhou šanci.**\n\nPaní Dvořáková zavřela kavárnu a zbylo jí 1,4 milionu dluhů. V konkursu by přišla o majetek **a dluhy by jí zůstaly vymahatelné dalších deset let** (§ 312 odst. 4). Nikdy by se z toho nedostala — a společnost by měla o jednoho člověka víc, kterému se nevyplatí oficiálně pracovat.\n\n**Oddlužení to řeší obchodem.** Dlužník vydá svůj majetek ke zpeněžení a po tři roky odevzdává ze svých příjmů to, co by jinak šlo na přednostní pohledávky v exekuci. Na konci soud rozhodne, že je **osvobozen od placení zbytku** (§ 414).\n\n**Proto je celá hlava postavená na poctivosti.** Nejde o to, kolik dlužník zaplatí — jde o to, jestli se poctivě snažil. Většina paragrafů téhle hlavy je ve skutečnosti filtr proti těm, kdo by chtěli dluhy smazat bez úsilí."
+      },
+      {
+        "nadpis": "Kdo na oddlužení dosáhne",
+        "text": "**§ 389 odst. 1: oddlužení může navrhnout fyzická osoba** — jakákoli, podnikatel i nepodnikatel — **a právnická osoba, která podle zákona není považována za podnikatele a současně nemá dluhy z podnikání.**\n\n**Dluhy z podnikání oddlužení nebrání** (§ 389 odst. 2), jsou-li splněny podmínky. A nejdůležitější z nich funguje mlčením: **platí, že věřitel souhlasí, pokud nejpozději spolu s přihláškou výslovně nesdělí, že nesouhlasí — a své stanovisko neodůvodní.**\n\nČtěte to pozorně. Věřitel, který jen mlčí, souhlasil. Chce-li blokovat, musí to říct včas **a odůvodnit**.\n\n**Další dva průchody** v témže odstavci: jde-li o pohledávku, která zůstala neuspokojena po zrušení konkursu podle § 308 odst. 1 písm. c) nebo d), a případ uvedený pod písmenem c).\n\n**Návrh podává dlužník spolu s insolvenčním návrhem** (§ 390 odst. 1). Přišel-li návrh od někoho jiného, má dlužník **30 dnů od jeho doručení** — a musí o tom být poučen.\n\n**A návrh za něj musí sepsat a podat advokát, notář, exekutor, insolvenční správce nebo akreditovaná osoba** (§ 390a odst. 1). Výjimka je pro dlužníka s magisterským právnickým či ekonomickým vzděláním nebo se zkouškou insolvenčního správce (§ 390a odst. 2). Podá-li si ho dlužník sám, **nepřihlíží se k němu** (§ 97 odst. 5).\n\n**Manželé mohou podat společný návrh** (§ 394a)."
+      },
+      {
+        "nadpis": "Dva způsoby, ale v praxi skoro vždy jeden",
+        "text": "**§ 398 odst. 1 nabízí dvě varianty:**\n\n**Zpeněžením majetkové podstaty.** Prodá se majetek, rozdělí se výtěžek, hotovo. Běží to obdobně jako konkurs. **Majetek nabytý po účincích schválení oddlužení už do podstaty nepatří** a zajištění věřitelé se uspokojují jen z výtěžku svého zajištění.\n\n**Plněním splátkového kalendáře se zpeněžením majetkové podstaty.** Tohle je standard. Dlužník **vydá majetek ke zpeněžení** a navíc **měsíčně splácí nezajištěným věřitelům ze svých příjmů částku ve stejném rozsahu, v jakém by z nich mohly být v exekuci uspokojeny přednostní pohledávky.**\n\n**Všimněte si té konstrukce: je to kombinace, ne volba.** I v splátkovém kalendáři se majetek prodává. Lidová představa „buď majetek, nebo splátky\" je nesprávná.\n\n**O způsobu hlasují věřitelé** — ale jen **nezajištění, kteří včas přihlásili** (§ 402 odst. 1). **Zajištění nehlasují**, a nehlasují ani **osoby dlužníkovi blízké a osoby tvořící s ním koncern.**\n\n**Hlasovat lze i mimo schůzi** (§ 400, § 401), a v praxi se to tak dělá skoro vždy — schůze se koná, jen když ji kvalifikovaná většina vyžádá."
+      },
+      {
+        "nadpis": "Filtry poctivosti: kde se oddlužení nejčastěji láme",
+        "text": "**§ 395 je paragraf, kolem kterého se v praxi vede nejvíc sporů.** Soud návrh zamítne, lze-li se zřetelem ke všem okolnostem důvodně předpokládat:\n\n**a) že jím je sledován nepoctivý záměr** — zamlčený majetek, účelové zadlužení těsně před návrhem, převody na rodinu;\n\n**b) že dlužník nebude schopen splácet** ani pohledávky uvedené v tom ustanovení — tedy že na to prostě nemá.\n\n**A odstavec 2 přidává třetí důvod:** dokládají-li dosavadní výsledky řízení **lehkomyslný nebo nedbalý přístup dlužníka k plnění povinností** v insolvenčním řízení.\n\n**Tohle je důležité pro vaši praxi.** Klient, který nereaguje na výzvy, nedodá doklady nebo nechodí na jednání, si oddlužení kazí sám — a vaše zpráva je to, z čeho soud vychází.\n\n**§ 403 vám dává zvláštní roli:** máte-li za to, že jsou tu skutečnosti, které by odůvodňovaly odmítnutí nebo zamítnutí návrhu, musíte to uplatnit. Nejste jen administrátor splátek.\n\n**Schválení oddlužení váže všechny** (§ 406 odst. 1) — **včetně věřitelů, kteří s oddlužením nesouhlasili nebo o něm nehlasovali.**"
+      },
+      {
+        "nadpis": "Povinnosti dlužníka po schválení",
+        "text": "**§ 412 je seznam, který klientovi vytiskněte a projděte s ním větu po větě.** Platí ode dne účinků schválení až do splnění předpokladů pro osvobození nebo do zrušení oddlužení:\n\n**Vykonávat přiměřenou výdělečnou činnost**, a je-li nezaměstnaný, **o příjem usilovat** — a nesmí odmítat splnitelnou možnost si příjem obstarat.\n\n**Vydat hodnoty získané dědictvím, darem a z neúčinného právního úkonu**, jakož i majetek, který neuvedl v seznamu.\n\nA další povinnosti tam vyjmenované — oznamovat změny bydliště a zaměstnání, nezatajovat příjmy, nepřijímat nové závazky nad rámec.\n\n**Dispoziční oprávnění k příjmům získaným po schválení má dlužník** (§ 409 odst. 1), ale musí s nimi naložit způsobem uvedeným v rozhodnutí o schválení. **Nezabavitelnou částku si může ponechat** — a smí ji dobrovolně použít i na splátky.\n\n**Exekuce dlužníka od splátek neosvobodí** (§ 411): nařízení ani zahájení exekuce nemá vliv na jeho povinnost naložit s příjmy podle rozhodnutí o schválení oddlužení.\n\n**Za trvání oddlužení platí přiměřeně konkursní pravidla o smlouvách** (§ 397a, odkaz na § 253 až § 260)."
+      },
+      {
+        "nadpis": "Tři roky, pět let — a co se nepromíjí nikdy",
+        "text": "**Tohle jsou čísla, která musíte umět bez přemýšlení.**\n\n**§ 412a odst. 1: předpoklady pro osvobození jsou splněny, jestliže**\n**a)** dlužník splatil nezajištěným věřitelům pohledávky **v plné výši**, nebo\n**b)** po dobu **3 let** od schválení oddlužení nebylo oddlužení zrušeno a dlužník plnil **všechny podstatné povinnosti**.\n\n**A pozor na to, co následuje za středníkem v písmenu b):** má se za to, že povinnosti plnil, **dosáhl-li předpokládané míry uspokojení** určené soudem v rozhodnutí o schválení. Je to **domněnka**, ne podmínka — nedosáhne-li té míry, domněnka nenastoupí a plnění povinností se posuzuje jinak. Opačně to ale neplatí: kdo míry dosáhl, má vyhráno.\n\n**§ 412a odst. 3: byl-li dlužníku přiznáno osvobození v posledních 20 letech, prodlužuje se doba na 5 let.** Druhé oddlužení je tedy delší.\n\n**Oddlužení zpeněžením podstaty má vlastní pravidla** v § 412a odst. 2.\n\n**Osvobození podle § 414 se nevztahuje na pohledávky vzniklé po rozhodnutí o úpadku** (§ 414 odst. 1).\n\n**A § 416 vyjmenovává, co se nepromíjí nikdy:** peněžitý trest a jiná majetková sankce uložená v trestním řízení za úmyslný trestný čin, náhrada škody způsobené **úmyslným** porušením právní povinnosti, **pohledávka insolvenčního správce na odměnu a hotové výdaje**, zákonné výživné a náhrada škody na zdraví.\n\n**Ten seznam si zapamatujte celý** — je to nejčastější dotaz klientů a nejčastější zkušební otázka z téhle hlavy."
+      },
+      {
+        "nadpis": "Jak to skončí — třemi způsoby",
+        "text": "**Splnění oddlužení** (§ 413). Soud vezme splnění na vědomí rozhodnutím, **současně rozhodne o vaší odměně a nákladech a zprostí vás funkce**. Právní mocí tohoto rozhodnutí insolvenční řízení končí.\n\n**Osvobození** (§ 414). Samostatné rozhodnutí, kterým soud dlužníka osvobodí od placení zbytku pohledávek zahrnutých do oddlužení. **Nebrání dokončení zpeněžení** majetku, který ještě nebyl prodán (§ 414 odst. 3).\n\n**A osvobození lze odejmout** (§ 417), vyjde-li najevo, že k němu došlo na základě podvodného jednání dlužníka nebo že dlužník poskytl zvláštní výhody některým věřitelům.\n\n**Nebo zrušení oddlužení a konkurs** (§ 418). Soud oddlužení zruší a rozhodne o konkursu, jestliže dlužník **neplní podstatné povinnosti**, vznikl-li mu zaviněně nový závazek **déle než 30 dnů po splatnosti**, a v dalších případech tam uvedených.\n\n**§ 412b dovoluje průběh oddlužení přerušit nebo prodloužit** — to je úleva pro dlužníka, kterého potká nemoc, ztráta zaměstnání nebo rodičovská.\n\n**Pro vás praktické:** zrušení oddlužení není trest, který uděláte vy, ale velmi často je to vaše zpráva, která ho spustí. Proto se vyplatí s klientem komunikovat průběžně — většina selhání se dá odvrátit včasným prodloužením podle § 412b."
+      },
+      {
+        "nadpis": "Čím se oddlužení liší od zbytku zákona",
+        "text": "**Nekoná se přezkumné jednání.** Přihlášky přezkoumáte vy a výsledek předložíte ve **zprávě o přezkumu**; soud ji schválí rozhodnutím (§ 410). Nepleťte si lhůty pro incidenční žaloby — běží od právní moci rozhodnutí o schválení zprávy, ne od přezkumného jednání.\n\n**Vedle toho podáváte zprávu pro oddlužení** (§ 398a) a soupis majetkové podstaty, a to **do 2 měsíců po uplynutí lhůty k přihlášení pohledávek** (§ 136 odst. 2 písm. f).\n\n**Rozhodnutí o úpadku a povolení oddlužení přichází v jednom** (§ 148 odst. 3), a nemusí mít ani odůvodnění, není-li spor (§ 136 odst. 4).\n\n**Vaše záloha se sráží ze mzdy dlužníka** příkazem plátci mzdy přímo v rozhodnutí (§ 136 odst. 3) — protože zálohu podle § 108 nelze takovému dlužníku uložit.\n\n**Podnikatel má vlastní splátkový kalendář** (§ 398b), protože jeho příjem nelze srážet ze mzdy.\n\n**A návrh se podává na formuláři**, jinak se k němu nepřihlíží (§ 393)."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§§ 389-394a",
+        "od": "389",
+        "nazev": "Kdo a jak podá návrh",
+        "veta": "Fyzická osoba a nepodnikající právnická osoba. Dluhy z podnikání nevadí, mlčí-li věřitel. Návrh musí sepsat advokát nebo akreditovaná osoba a manželé ho mohou podat společně."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 395-397a",
+        "od": "395",
+        "nazev": "Filtry poctivosti a povolení",
+        "veta": "Zamítnutí pro nepoctivý záměr, pro neschopnost splácet nebo pro lehkomyslný přístup k řízení. Projde-li návrh, soud oddlužení povolí."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 398-398b",
+        "od": "398",
+        "nazev": "Způsoby oddlužení",
+        "veta": "Zpeněžení podstaty, nebo splátkový kalendář se zpeněžením podstaty — což je kombinace obojího a v praxi standard. Podnikatel má vlastní variantu."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 399-403",
+        "od": "399",
+        "nazev": "Hlasování věřitelů",
+        "veta": "Hlasují jen nezajištění věřitelé, kteří včas přihlásili. Osoby blízké a koncernové nehlasují. Nejčastěji se hlasuje mimo schůzi."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 404-411",
+        "od": "404",
+        "nazev": "Schválení oddlužení a jeho účinky",
+        "veta": "Schválení váže i věřitele, kteří byli proti. Dlužník disponuje svými příjmy, ale musí s nimi naložit podle rozhodnutí — a exekuce ho té povinnosti nezbaví."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 412-412b",
+        "od": "412",
+        "nazev": "Povinnosti dlužníka a splnění předpokladů",
+        "veta": "Pracovat, usilovat o příjem, vydávat dary a dědictví. Tři roky poctivého plnění, pět let při opakovaném oddlužení — a možnost průběh přerušit nebo prodloužit."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 413-418",
+        "od": "413",
+        "nazev": "Konec oddlužení",
+        "veta": "Splnění, osvobození od zbytku dluhů a jeho možné odnětí — nebo zrušení oddlužení a přechod do konkursu. A seznam pohledávek, které se nepromíjejí nikdy."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Tahle hlava díly nemá, tak jsem ji rozdělil podle toho, jak oddlužení probíhá v čase. Kliknutím skočíte na první paragraf."
+  },
+  {
+    "id": "akreditace",
+    "cast": "ČÁST TŘETÍ — AKREDITACE PRO POSKYTOVÁNÍ SLUŽEB V OBLASTI ODDLUŽENÍ",
+    "hlava": "HLAVA I — AKREDITACE PRO POSKYTOVÁNÍ SLUŽEB V OBLASTI ODDLUŽENÍ",
+    "nazev": "Akreditace pro služby v oblasti oddlužení",
+    "rozsah": "§§ 418a-418h",
+    "perex": "Osm paragrafů, které vznikly jako odpověď na oddlužovací šmejdy. Návrh na povolení oddlužení smí za dlužníka sepsat jen vybraný okruh osob — a ta poslední skupina, akreditované osoby, musí projít řízením u ministerstva. Tahle část zákona popisuje, jak se akreditace získá, co zavazuje a jak se ztratí.",
+    "bloky": [
+      {
+        "nadpis": "Odkud se tahle část vzala",
+        "text": "Vraťte se k § 390a odst. 1: návrh na povolení oddlužení musí za dlužníka sepsat a podat **advokát, notář, soudní exekutor, insolvenční správce, nebo akreditovaná osoba**. Podá-li si ho dlužník sám, **nepřihlíží se k němu** (§ 97 odst. 5).\n\n**První čtyři profese mají vlastní komory, dohled a kárnou odpovědnost.** Pátá skupina — akreditované osoby — žádnou neměla. Proto jí zákon vytvořil vlastní režim: tahle část.\n\n**Důvod byl velmi praktický.** Dřív nabízely „oddlužení\" firmy, které braly tisíce korun za vyplnění formuláře, klientům nic nevysvětlily a často jim podaly návrh, který neměl šanci projít. Dlužník přišel o peníze i o možnost oddlužení.\n\n**§ 418a vymezuje, co ty služby vlastně jsou:** sepis a podání návrhu na povolení oddlužení, případně i insolvenčního návrhu podle § 390 odst. 1, **a další činnosti s tím nezbytně spojené, zejména porada s klientem a odstranění vad návrhu.**\n\n**Pro vás jako insolvenčního správce je to užitečné dvakrát.** Jednak tyhle služby sám poskytovat smíte — bez akreditace, protože ji nahrazuje vaše postavení. Jednak poznáte, jestli spis, který přebíráte, sepsal někdo kvalifikovaný."
+      },
+      {
+        "nadpis": "Jak se akreditace získá a co zavazuje",
+        "text": "**O udělení akreditace rozhoduje ministerstvo na žádost právnické osoby** (§ 418b odst. 1). Fyzická osoba akreditaci získat nemůže — ta musí být advokátem, notářem, exekutorem nebo insolvenčním správcem.\n\n**Podmínky, žádost a rozhodnutí** řeší § 418b až § 418d, **změnu a prodloužení** § 418e a **zrušení a zánik** § 418f. Akreditace tedy není trvalá — uděluje se na dobu a je třeba ji prodlužovat.\n\n**Nejdůležitější je § 418g odst. 1 a stojí za to ho číst pomalu:** akreditovaná osoba postupuje **svědomitě a s odbornou péčí**. A zákon rovnou uvádí, čím tu povinnost poruší **zejména**:\n\n— **neupozorní dlužníka, že jeho poměry neodůvodňují podání návrhu** na povolení oddlužení ani insolvenčního návrhu,\n— **nezohlední při sepisu návrhu** okolnosti, které zohlednit měla.\n\n**To první je přesně to, kvůli čemu celá část vznikla.** Akreditovaná osoba má klientovi říct „na oddlužení nedosáhnete\" — i když tím přijde o zakázku.\n\n**Seznam akreditovaných osob** vede ministerstvo (§ 418h) a je veřejný. Než někomu uvěříte, že akreditaci má, podívejte se tam."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§ 418a",
+        "od": "418a",
+        "nazev": "Co jsou služby v oblasti oddlužení",
+        "veta": "Sepis a podání návrhu na povolení oddlužení a insolvenčního návrhu, včetně porady s klientem a odstranění vad."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 418b-418f",
+        "od": "418b",
+        "nazev": "Udělení, změna a zánik akreditace",
+        "veta": "Rozhoduje ministerstvo na žádost právnické osoby. Akreditace se uděluje na dobu, prodlužuje se a dá se zrušit."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 418g-418h",
+        "od": "418g",
+        "nazev": "Povinnosti akreditované osoby a seznam",
+        "veta": "Svědomitě a s odbornou péčí — zejména upozornit dlužníka, že na oddlužení nedosáhne. Seznam akreditovaných osob vede ministerstvo a je veřejný."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Tahle hlava díly nemá, tak jsem ji rozdělil podle témat. Kliknutím skočíte na první paragraf."
+  },
+  {
+    "id": "dohled",
+    "cast": "ČÁST TŘETÍ — AKREDITACE PRO POSKYTOVÁNÍ SLUŽEB V OBLASTI ODDLUŽENÍ",
+    "hlava": "HLAVA II — DOHLED",
+    "nazev": "Dohled nad akreditovanými osobami",
+    "rozsah": "§§ 418i-418l",
+    "perex": "Čtyři paragrafy, které dávají předchozí hlavě zuby. Ministerstvo kontroluje akreditované osoby a za porušení povinností ukládá pokuty. Bez téhle hlavy by byla akreditace jen razítkem.",
+    "bloky": [
+      {
+        "nadpis": "Kdo dohlíží a na co",
+        "text": "**§ 418i odst. 1: ministerstvo vykonává dohled nad poskytováním služeb v oblasti oddlužení z hlediska souladu s tímto zákonem — a pro potřeby dohledu provede kontrolu akreditované osoby.**\n\nVšimněte si rozsahu: dohled je nad **poskytováním služeb**, ne jen nad tím, zda akreditovaná osoba splňuje podmínky. Ministerstvo se tedy může dívat i na to, jak se s konkrétními klienty zacházelo.\n\n**Přestupky jsou rozděleny na dvě skupiny:**\n\n**§ 418j — přestupky právnických osob.** Akreditovaná osoba se dopustí přestupku zejména porušením povinnosti postupovat svědomitě a s odbornou péčí (§ 418g odst. 1), neoznačením prostor podle § 418g odst. 2, a **požadováním odměny nebo jiného plnění v rozporu s § 390a odst. 4.**\n\n**§ 418k — přestupky fyzických osob.**\n\n**§ 418l** obsahuje společná ustanovení.\n\n**To třetí v § 418j odst. 1 písm. c) je jádro věci.** § 390a odst. 4 omezuje, co si smí osoba sepisující návrh na oddlužení účtovat. Braní peněz nad rámec toho je přestupek — a přesně kvůli tomu celá třetí část zákona existuje.\n\n**Pro vás praktické:** narazíte-li u klienta na „oddlužovací firmu\", která si účtovala podezřelé částky, je tohle ustanovení, podle kterého se to dá řešit. Podnět míří na ministerstvo, ne na insolvenční soud."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§ 418i",
+        "od": "418i",
+        "nazev": "Dohled ministerstva",
+        "veta": "Ministerstvo kontroluje, jak akreditované osoby poskytují služby — ne jen to, zda splňují podmínky akreditace."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 418j-418l",
+        "od": "418j",
+        "nazev": "Přestupky",
+        "veta": "Oddělené skladby přestupků pro právnické a fyzické osoby. Nejdůležitější je účtování odměny v rozporu s § 390a odst. 4."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Čtyři paragrafy o kontrole a sankcích. Kliknutím skočíte na první paragraf."
+  },
+  {
+    "id": "rejstrik",
+    "cast": "ČÁST ČTVRTÁ — SPOLEČNÁ USTANOVENÍ",
+    "hlava": "HLAVA I — INSOLVENČNÍ REJSTŘÍK",
+    "nazev": "Insolvenční rejstřík",
+    "rozsah": "§§ 419-425",
+    "perex": "Veřejná databáze, na které stojí celé insolvenční řízení. Doručuje se jí, zveřejněním v ní nastávají účinky rozhodnutí, a kdo ji nesleduje, přichází o lhůty. Sedm paragrafů, které se vyplatí znát i proto, že odpovídají na nejčastější lidskou otázku: jak dlouho tam budu vidět?",
+    "bloky": [
+      {
+        "nadpis": "Co rejstřík je a co obsahuje",
+        "text": "**§ 419: insolvenční rejstřík je informační systém veřejné správy, jehož správcem je Ministerstvo spravedlnosti.**\n\n**Obsahuje tři věci:** seznam insolvenčních správců, seznam dlužníků a insolvenční spisy. **Pro každého dlužníka se vede jeden insolvenční spis** — i kdyby proti němu podalo návrh deset věřitelů.\n\n**Je veřejně přístupný**, s výjimkou údajů, u kterých zákon stanoví jinak. **Každý má právo do něj nahlížet a pořizovat si kopie a výpisy.**\n\n**Co se zveřejňuje** (§ 421): chronologicky a **s uvedením okamžiku vložení** — rozhodnutí soudu v insolvenčním řízení i v incidenčních sporech a veškerá podání vkládaná do spisu, nestanoví-li zákon jinak.\n\n**Ten „okamžik vložení\" je právně rozhodný.** Vzpomeňte si na § 71 odst. 2: doručeno je dnem, hodinou a minutou zveřejnění. A na § 89 odst. 1: rozhodnutí jsou účinná okamžikem zveřejnění.\n\n**Nevkládá se, co podléhá utajení** (§ 423)."
+      },
+      {
+        "nadpis": "Jak dlouho jsem v rejstříku vidět",
+        "text": "Tohle je nejčastější otázka klientů a odpověď je ve dvou číslech.\n\n**Obecně 5 let** (§ 425 odst. 1): po uplynutí 5 let od právní moci rozhodnutí, jímž bylo insolvenční řízení skončeno, soud dlužníka **vyškrtne ze seznamu dlužníků a údaje o něm znepřístupní.**\n\n**Skončilo-li řízení rozhodnutím podle § 142** — tedy odmítnutím, zastavením nebo zamítnutím návrhu — vyškrtne ho dřív. To je důležité: kdo insolvenci ustál, nemá v rejstříku viset roky.\n\n**U oddlužení s osvobozením 3 roky** (§ 425 odst. 2): je-li dlužník osvobozen podle § 414, vyškrtne ho soud po uplynutí **3 let od právní moci rozhodnutí o osvobození**, nejdříve však po právní moci rozhodnutí o splnění oddlužení podle § 413.\n\n**Proč u oddlužení kratší doba.** Celý smysl oddlužení je druhá šance. Kdyby měl člověk po třech letech splácení ještě pět let viset v rejstříku a nedostat hypotéku, byla by ta šance poloviční.\n\n**A je tu ochrana osobních údajů** (§ 422): na žádost fyzické osoby, která podání učinila, může soud rozhodnout, že **některé její osobní údaje nebudou veřejně přístupné**. Žádost lze podat kdykoli v průběhu řízení — jméno a příjmení ale veřejné zůstanou.\n\n**Praktická rada klientům:** § 422 se vyplatí využít hned na začátku, zejména u adres a rodných čísel. Zveřejněné osobní údaje se z internetu už nestahují zpátky."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§§ 419-421",
+        "od": "419",
+        "nazev": "Co rejstřík je a co se v něm zveřejňuje",
+        "veta": "Informační systém správovaný ministerstvem. Seznam správců, seznam dlužníků a spisy — chronologicky a s uvedením okamžiku vložení."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 422-424",
+        "od": "422",
+        "nazev": "Ochrana údajů a doručování",
+        "veta": "Některé osobní údaje lze na žádost znepřístupnit. Utajované písemnosti se nevkládají. Zveřejněním se doručuje."
+      },
+      {
+        "dil": "",
+        "rozsah": "§ 425",
+        "od": "425",
+        "nazev": "Vyškrtnutí dlužníka",
+        "veta": "Pět let od skončení řízení, dřív při odmítnutí či zamítnutí návrhu, a tři roky od osvobození v oddlužení."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Tahle hlava díly nemá, tak jsem ji rozdělil podle témat. Kliknutím skočíte na první paragraf."
+  },
+  {
+    "id": "eu",
+    "cast": "ČÁST ČTVRTÁ — SPOLEČNÁ USTANOVENÍ",
+    "hlava": "HLAVA II — VZTAH KE STÁTŮM EVROPSKÉ UNIE",
+    "nazev": "Vztah ke státům Evropské unie",
+    "rozsah": "§§ 426-430a",
+    "perex": "Co dělat, když má dlužník majetek nebo věřitele v jiném členském státě. Šest paragrafů, které samy o sobě skoro nic neupravují — hlavní pravidla jsou v evropském nařízení a tahle hlava na ně jen navazuje. Jedna povinnost z ní ale dopadá i na úplně běžné spisy.",
+    "bloky": [
+      {
+        "nadpis": "Hlavní pravidlo: rozhoduje evropské nařízení",
+        "text": "**§ 426 odst. 1: insolvenční řízení s evropským mezinárodním prvkem a jeho účinky se řídí přímo použitelným předpisem práva Evropské unie** a ustanoveními právního řádu toho členského státu, na nějž ten předpis odkazuje.\n\n**Je to tedy odkazovací ustanovení.** Materiální pravidla — kde se řízení zahajuje, jaké má účinky v jiných státech, jak se uznávají cizí rozhodnutí — jsou v evropském nařízení o insolvenčním řízení, ne tady.\n\n**Proto je tahle hlava tak krátká.** Doplňuje jen to, co nařízení nechává na národním právu.\n\n**§ 427: v řízení s evropským mezinárodním prvkem musí rozhodnutí o úpadku obsahovat výrok o mezinárodní příslušnosti** insolvenčního soudu podle evropského předpisu, **spolu s odkazem na ustanovení, jímž je příslušnost založena.**\n\nTo je praktická formalita s velkými následky: bez toho výroku se rozhodnutí v jiných státech špatně uznává.\n\n**§ 428** řeší postavení insolvenčního správce v přeshraničních souvislostech, **§ 429** zveřejňování některých rozhodnutí a **§ 430a** jednostranný příslib."
+      },
+      {
+        "nadpis": "Povinnost, která se týká i obyčejných spisů",
+        "text": "**§ 430 je jediné ustanovení téhle hlavy, na které narazíte i v běžné praxi — a často se opomíjí.**\n\n**Známé věřitele dlužníka, kteří mají obvyklé místo pobytu, bydliště nebo sídlo v některém z členských států Evropské unie, vyrozumí insolvenční soud neprodleně o zahájení insolvenčního řízení a o vydání rozhodnutí o úpadku.**\n\n**Jak to soud splní** (odstavec 2): doručí jim **zvlášť** rozhodnutí o zahájení řízení, rozhodnutí o úpadku nebo jeho zkrácené znění, **standardní formulář oznámení a standardní formulář pro přihlašování pohledávek** podle evropského předpisu.\n\n**Proč to je důležité.** Obecně platí, že se doručuje jen vyhláškou a kdo nesleduje rejstřík, má smůlu (§ 71). Zahraniční věřitel ale český insolvenční rejstřík nesleduje a často o něm ani neví. Tohle je výjimka, která mu dává reálnou šanci přihlásit.\n\n**Pro vás praktické:** má-li Truhlárna Bureš dodavatele z Rakouska nebo ze Slovenska, patří do seznamu známých věřitelů a soud ho musí vyrozumět zvlášť. Váš seznam věřitelů je to, z čeho soud vychází — a opomenutý zahraniční věřitel je potenciální spor o to, zda mu lhůta vůbec běžela."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§§ 426-429",
+        "od": "426",
+        "nazev": "Příslušnost a navazující pravidla",
+        "veta": "Hlavní úprava je v evropském nařízení. Rozhodnutí o úpadku musí obsahovat výrok o mezinárodní příslušnosti s odkazem na ustanovení, které ji zakládá."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 430-430a",
+        "od": "430",
+        "nazev": "Známí věřitelé a jednostranný příslib",
+        "veta": "Známé věřitele z členských států EU soud vyrozumí zvlášť, se standardními formuláři. Tohle potkáte i u běžného spisu se zahraničním dodavatelem."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Tahle hlava díly nemá, tak jsem ji rozdělil podle témat. Kliknutím skočíte na první paragraf."
+  },
+  {
+    "id": "formular",
+    "cast": "ČÁST ČTVRTÁ — SPOLEČNÁ USTANOVENÍ",
+    "hlava": "HLAVA III — FORMULÁŘ",
+    "nazev": "Formulář",
+    "rozsah": "§ 430b",
+    "perex": "Nejkratší hlava v celém zákoně — jedna věta. Má ale praktický dosah, protože řada podání v insolvenčním řízení jde udělat jedině na předepsaném formuláři, a když ne, nepřihlíží se k nim.",
+    "bloky": [
+      {
+        "nadpis": "Jedna věta a proč na ní záleží",
+        "text": "**§ 430b: ministerstvo uveřejní podobu formulářů a elektronických formulářů pro podání stanovená tímto zákonem způsobem umožňujícím dálkový přístup.**\n\n**Samo o sobě to nic neukládá vám ani věřitelům.** Je to povinnost ministerstva zveřejnit formuláře na internetu.\n\n**Význam je ale v tom, nač to navazuje.** Zákon na mnoha místech říká, že podání lze učinit **jen na formuláři** — a opomenutí má tvrdé následky:\n\n— **insolvenční návrh** v nestanoveném formátu nebo způsobem: **nepřihlíží se k němu** (§ 97 odst. 4),\n— **návrh na povolení oddlužení**: není-li na stanoveném formuláři, nepřihlíží se k němu (§ 393),\n— **popření pohledávky přihlášeným věřitelem**: lze učinit **pouze na formuláři** (§ 200 odst. 1),\n— **konečná zpráva** správce: **pouze na elektronickém formuláři** (§ 302 odst. 5),\n— **podání insolvenčního správce** obecně: na elektronických formulářích (§ 80a odst. 2).\n\n**Pro vás praktické:** podání správce jde skoro všechno přes elektronické formuláře. Vyplatí se mít odkaz na jejich aktuální verzi uložený — mění se a staré verze soud odmítá."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§ 430b",
+        "od": "430b",
+        "nazev": "Zveřejnění formulářů",
+        "veta": "Ministerstvo uveřejní podobu formulářů a elektronických formulářů dálkovým přístupem. Navazuje na ni řada ustanovení, podle kterých se k podání mimo formulář nepřihlíží."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Jediný paragraf. Kliknutím ho otevřete."
+  },
+  {
+    "id": "zaverecna",
+    "cast": "ČÁST ČTVRTÁ — SPOLEČNÁ USTANOVENÍ",
+    "hlava": "HLAVA IV — ZÁVĚREČNÁ USTANOVENÍ",
+    "nazev": "Závěrečná ustanovení",
+    "rozsah": "§§ 431-434",
+    "perex": "Čtyři paragrafy, které se u zkoušky skoro neptají, a přesto stojí za minutu pozornosti. Je tu zmocnění pro prováděcí vyhlášky — a ty jsou pro praxi správce stejně důležité jako zákon sám — a datum, od kterého tohle všechno platí.",
+    "bloky": [
+      {
+        "nadpis": "Co tu najdete",
+        "text": "**§ 431 — zmocňovací ustanovení.** Zmocňuje ministerstvo k vydání prováděcích právních předpisů.\n\n**Tohle není formalita.** Na vyhláškách stojí věci, které v zákoně vůbec nenajdete: **výše vaší odměny a náhrady hotových výdajů**, náležitosti formulářů, obsah výkazu stavu likvidity a výhledu vývoje likvidity podle § 3 odst. 3, minimální výše záloh u oddlužení. Zákon o nich mluví jako o „prováděcím právním předpisu\" a vy je potřebujete znát stejně dobře jako zákon.\n\n**§ 432 — přechodné ustanovení.** Odstavec 1 je ten podstatný: **pro konkursní a vyrovnací řízení zahájená před účinností tohoto zákona se použijí dosavadní právní předpisy.** Tedy starý zákon o konkursu a vyrovnání. Dnes už je to historie, ale vysvětluje to, proč se v judikatuře potkáte se dvěma paralelními světy.\n\n**§ 433 — zrušovací ustanovení.**\n\n**§ 434 — účinnost: tento zákon nabývá účinnosti dnem 1. ledna 2008.**\n\n**To datum je užitečné si pamatovat.** Odděluje „konkursní\" éru od „insolvenční\" a je to první věc, podle které poznáte, zda je starší judikát nebo učebnice ještě použitelná."
+      }
+    ],
+    "osa": [
+      {
+        "dil": "",
+        "rozsah": "§ 431",
+        "od": "431",
+        "nazev": "Zmocňovací ustanovení",
+        "veta": "Základ pro prováděcí vyhlášky — odměna správce, formuláře, výkaz likvidity. Pro praxi stejně důležité jako zákon."
+      },
+      {
+        "dil": "",
+        "rozsah": "§§ 432-433",
+        "od": "432",
+        "nazev": "Přechodná a zrušovací ustanovení",
+        "veta": "Na konkursní a vyrovnací řízení zahájená před účinností zákona se použijí dosavadní předpisy."
+      },
+      {
+        "dil": "",
+        "rozsah": "§ 434",
+        "od": "434",
+        "nazev": "Účinnost",
+        "veta": "Zákon nabývá účinnosti 1. ledna 2008 — datum, které odděluje konkursní éru od insolvenční."
+      }
+    ],
+    "osaNadpis": "Hlava po tématech",
+    "osaPerex": "Tahle hlava díly nemá, tak jsem ji rozdělil podle témat. Kliknutím skočíte na první paragraf."
   }
 ]
