@@ -994,5 +994,328 @@
     "2": "**Co se do seznamu zapisuje:**\n\n**a)** název, sídlo a IČO,\n**b)** identifikační číslo akreditované osoby od ministerstva,\n**c)** adresa prostor,\n**d)** den udělení akreditace,\n**e)** den zápisu do seznamu,\n**f)** **přestupky** — s pokutou **nejméně 5 000 Kč** nebo se zákazem činnosti, s datem právní moci, označením přestupku a výší sankce,\n**g)** den zániku nebo zrušení akreditace.\n\nPísmeno f) je pro dlužníky nejdůležitější — seznam ukazuje, kdo byl za své služby trestán.",
     "3": "**Kdy se přestupek ze seznamu vymaže** — podle výše sankce:\n\n**a)** pokuta **do 10 000 Kč** → po **3 letech**,\n\n**b)** pokuta **nad 10 000 do 75 000 Kč** nebo zákaz činnosti **do 2 let** → po **5 letech**,\n\n**c)** pokuta **nad 75 000 Kč** nebo zákaz činnosti **nad 2 roky** → po **8 letech**.\n\nLhůty běží od právní moci rozhodnutí o přestupku; tím se rozumí i rozhodnutí v přezkumném řízení a rozsudek správního soudu.",
     "4": "**Zrušené rozhodnutí o přestupku se ze seznamu vymaže hned** — zruší-li ho správní orgán nebo soud. Na lhůty z odstavce 3 se nečeká."
+  },
+  "244": {
+    "-": "**Definice konkursu ve třech krocích:** zjištěné pohledávky se **zásadně poměrně** uspokojí **z výnosu zpeněžení majetkové podstaty** — a **co se nezaplatí, nezaniká**, pokud zákon nestanoví jinak.\n\n**Poslední část je rozdíl proti oddlužení.** Truhlárna Bureš s.r.o. po konkursu skončí výmazem, takže zbytek dluhů nemá kdo platit. Ale kdyby šlo o fyzickou osobu, věřitelé by po skončení konkursu mohli vymáhat dál — osvobození zná jen oddlužení (§ 414).\n\n**„Zásadně poměrně\"** připouští výjimky: zajištění věřitelé se uspokojují ze zajištění (§ 298), pohledávky za podstatou a postavené na roveň kdykoli a v plné výši (§ 168, § 169). Poměr platí až pro ty, kdo zbudou v rozvrhu (§ 306 odst. 3)."
+  },
+  "245": {
+    "1": "**Účinky prohlášení konkursu nastávají zveřejněním v insolvenčním rejstříku** — ne doručením, ne právní mocí.\n\nZveřejní-li soud rozhodnutí o prohlášení konkursu na Truhlárnu v úterý v 10:14, od té minuty nakládáte s podstatou vy (§ 246 odst. 1). Na čase záleží: úkon Bureše z 10:30 je neúčinný.",
+    "2": "**Co prohlášení konkursu ukončí:**\n\n— **likvidace** právnické osoby se **přerušuje** (nekončí — po zrušení konkursu může pokračovat),\n\n— **nucená správa končí**,\n\n— **předběžné opatření zaniká**, ledaže soud rozhodne jinak.\n\nKdyby byla Truhlárna před insolvencí v likvidaci, likvidátor odkládá práci a nakládání s majetkem přebíráte vy.",
+    "3": "**Dlužník zůstává svéprávný a procesně způsobilý.** Konkurs mu nebere způsobilost právně jednat ani vystupovat před soudem.\n\nNakládat s majetkovou podstatou ale nemůže — to přešlo na vás (§ 246). Bureš tedy může jako jednatel podepsat cokoli; pokud jde o podstatu, je to proti věřitelům neúčinné (§ 246 odst. 2).",
+    "4": "**Soud může po prohlášení konkursu i bez návrhu změnit předběžné opatření.** Navazuje na odstavec 2, podle kterého předběžné opatření zaniká, „pokud soud nerozhodne jinak\" — tímhle ustanovením ho může upravit tak, aby dál dávalo smysl."
+  },
+  "246": {
+    "1": "**Na správce přechází dispoziční oprávnění k podstatě** — nakládání s majetkem i výkon práv a povinností dlužníka, pokud souvisejí s podstatou.\n\n**Zákon jmenuje, co to v praxi znamená:**\n— vykonáváte **akcionářská práva** k akciím v podstatě,\n— rozhodujete o **obchodním tajemství a mlčenlivosti**,\n— jste **zaměstnavatelem** dlužníkových zaměstnanců,\n— zajišťujete **provoz podniku**, **účetnictví** a **daně**.\n\nV Truhlárně od prohlášení konkursu podepisujete výplatní pásky jedenácti zaměstnancům, vy podáváte přiznání k DPH a vy rozhodujete, jestli rozpracovaná zakázka kuchyní doběhne.",
+    "2": "**Co dlužník udělá s podstatou po přechodu oprávnění, je proti věřitelům neúčinné — ze zákona.**\n\n**§ 235 odst. 2 se nepoužije** — nemusíte podávat odpůrčí žalobu. Prodá-li Bureš po prohlášení konkursu formátovací pilu známému, je to vůči věřitelům neúčinné samo od sebe a pilu sepíšete.",
+    "3": "**Domněnka pro den rozhodnutí o úpadku.** Nakládal-li dlužník s podstatou **v den**, kdy se rozhodnutí o úpadku stalo účinným, má se v pochybnostech za to, že to bylo **až po** přechodu oprávnění.\n\nBureš tvrdí, že převod pily podepsal ráno před zveřejněním. Důkazní břemeno je na něm (nebo na nabyvateli) — vy nemusíte dokazovat hodinu.",
+    "4": "**Odmítnutí daru nebo dědictví bez souhlasu správce je neplatné.** Totéž dohoda o vypořádání dědictví, podle které by dlužník dostal méně, než mu náleží.\n\nU s.r.o. to praktický význam nemá; u fyzické osoby v konkursu ano — zdědí-li po otci dům, nemůže dědictví „taktně\" odmítnout ve prospěch sourozenců."
+  },
+  "248": {
+    "1": "**Po prohlášení konkursu uplatňují věřitelé práva jen podle insolvenčního zákona** — přihláškou, ve sporech podle zákona. **I ti, kteří se do řízení nepřihlásili.**\n\nDodavatel, který zaspal lhůtu k přihláškám, tedy nemůže jít „mimo\" — žalovat Truhlárnu nebo vést exekuci na její majetek. Zbývá mu nic.",
+    "2": "**Zajištění získaná po zahájení řízení jsou neúčinná.** Práva na uspokojení ze zajištění, která věřitelé k podstatě nabyli **po účincích zahájení insolvenčního řízení**, se prohlášením konkursu stávají neúčinnými — **včetně soudcovského a exekutorského zástavního práva**.\n\n**Výjimky:** zajištění k úvěrovému financování správce (§ 41) a zajištění pro oběti trestných činů (§ 167 odst. 2).\n\n**Byl-li zajištěný majetek mezitím zpeněžen**, výtěžek patří do podstaty a nabyvatel ho na vaši výzvu vydá.\n\nPříklad: dodavatel Hrubý si týden po zahájení řízení vymohl zástavu na stroji. Prohlášením konkursu je neúčinná — Hrubý je nezajištěný.",
+    "3": "**Věcná břemena za nápadně nevýhodných podmínek** zřízená k podstatě po účincích zahájení řízení se prohlášením konkursu stávají neúčinnými.\n\nBureš po podání návrhu zřídí sousedovi za 1 000 Kč doživotní právo jízdy přes dvůr haly — tím snižuje její cenu. Prohlášením konkursu je to vůči věřitelům neúčinné a halu prodáte bez toho břemene."
+  },
+  "249": {
+    "1": "**Nároky dlužníka vymáhá jen správce.** Žaloby a jiné návrhy k vymožení nároku dlužníka, který se týká podstaty (včetně jeho zajištění), může po prohlášení konkursu podat **jen insolvenční správce**. **Návrh jiné osoby soud zamítne.**\n\nOdběratel dluží Truhlárně 120 000 Kč za kuchyně. Žalujete ho vy — ne Bureš, ne věřitel, který by „pomohl\".",
+    "2": "**Kdo zaplatí dlužníkovi místo správci, platí riskantně.** Plní-li dlužník dlužníka (odběratel) po prohlášení konkursu přímo Bureši a peníze se nedostanou do podstaty, **není svého dluhu zproštěn** — musí zaplatit znovu vám.\n\n**Výjimky:** prokáže, že **o konkursu nemohl vědět**, nebo že bylo zřejmé, že **dlužník plnění do podstaty vydá**.\n\nInsolvenční rejstřík je veřejný, takže výmluva „nevěděl jsem\" u podnikatele obvykle neobstojí. Pro vás: hned po prohlášení rozešlete odběratelům dopis s číslem účtu podstaty."
+  },
+  "250": {
+    "-": "**Nesplatné pohledávky proti dlužníku se prohlášením konkursu stávají splatnými**, nestanoví-li zákon jinak.\n\nBanka Morava má úvěr splatný až v roce 2028 — prohlášením konkursu je splatný celý a přihlásí ho jako splatný. Konkurs je konečné vypořádání; nemá smysl čekat na splátkový kalendář firmy, která zanikne."
+  },
+  "252": {
+    "1": "**Prohlášením konkursu zanikají jednostranné úkony dlužníka týkající se podstaty** — zejména **příkazy, pověření a plné moci, včetně prokury**.\n\nProkurista Truhlárny, plná moc účetní k jednání s bankou, pověření obchodního zástupce — vše padá. Kdo chce dál jednat za podstatu, potřebuje pověření od vás.",
+    "2": "**Výjimka pro nebezpečí z prodlení.** Zmocněnec musí pokračovat v obstarávání záležitostí, hrozí-li nebezpečí z prodlení — **dokud se jich neujmete vy**.\n\nJeho **nutné výdaje a přiměřená odměna** jsou **pohledávkou za podstatou**.\n\nPříklad: obchodní zástupce má ve skladu kupujícího zboží Truhlárny, které se musí do pátku převzít, jinak propadne záloha. Dokončí převzetí a fakturuje to podstatě.",
+    "3": "**Plné moci pro samotné insolvenční řízení prohlášením konkursu nezanikají.** Advokát, kterého si Bureš vzal na insolvenční řízení, dál zastupuje.\n\n**Jeho odměna za dobu po prohlášení konkursu se ale z podstaty neplatí** — leda by šlo o pracovněprávní pohledávku. Bureš si advokáta na obranu v insolvenci platí ze svého, ne z peněz věřitelů.",
+    "4": "**Nehotové smlouvy zanikají.** Nepřijaté návrhy dlužníka na uzavření smlouvy a dlužníkova přijetí návrhů, ze kterých ještě smlouva nevznikla, prohlášením konkursu zanikají.\n\n**Návrhy, které dlužník ještě nepřijal, smí přijmout jen správce.** Leží-li na stole Truhlárny nabídka na výhodný odkup prken, rozhodnete o ní vy."
+  },
+  "253": {
+    "1": "**Oboustranně nesplněná smlouva: vy volíte.** Nebyla-li smlouva o vzájemném plnění (včetně smlouvy o smlouvě budoucí) v době prohlášení konkursu **zcela splněna ani jednou stranou**, můžete:\n\n— **splnit ji místo dlužníka** a žádat plnění od druhé strany, nebo\n\n— **odmítnout plnění**.\n\nTruhlárna má rozpracovanou zakázku na vestavěné skříně za 400 000 Kč, zákazník zaplatil zálohu 0 Kč a Truhlárna má hotovou polovinu. Dokončit se vyplatí, když dílna běží a materiál je na skladě; odmítnout, když by dokončení stálo víc, než přinese.",
+    "2": "**30 dnů na rozhodnutí — mlčení je odmítnutí.** Nevyjádříte-li se do 30 dnů od prohlášení konkursu, že smlouvu splníte, **platí, že jste plnění odmítl**.\n\n**Do té doby druhá strana nemůže odstoupit**, ledaže smlouva říká jinak.\n\nV prvním měsíci konkursu si proto udělejte seznam rozpracovaných smluv. Kterou chcete zachránit, musíte výslovně potvrdit.",
+    "3": "**Kdo má plnit první, může plnění odepřít** do doby, než bude vzájemné plnění poskytnuto nebo zajištěno.\n\nDodavatel dřeva, který podle smlouvy dodává předem a platí se mu po dodání, nemusí dodat dřevo konkursní Truhlárně, dokud nezaplatíte nebo nezajistíte platbu.\n\n**Neplatí to pro smlouvy, které druhá strana uzavřela po zveřejnění rozhodnutí o úpadku** — kdo smlouvu uzavřel s vědomím úpadku, nemůže se jím pak bránit.",
+    "4": "**Odmítnete-li plnění, druhá strana přihlásí škodu — do 30 dnů od odmítnutí.** Je to běžná přihlášená pohledávka.\n\n**Pokračujete-li ve smlouvě po prohlášení konkursu, její pohledávky jsou pohledávkami za podstatou** — platí se plně a přednostně.\n\nRozhodnutí smlouvu splnit je tedy finanční závazek podstaty, ne gesto.",
+    "5": "**Co druhá strana už plnila, nevymůže zpátky.** Dodala-li před rozhodnutím o úpadku část plnění a Truhlárna nezaplatila, **nemůže se domáhat vrácení** jen proto, že nedostala protiplnění.\n\nDodavatel, který přivezl 30 m³ dřeva a nedostal zaplaceno, nechodí si pro dřevo. Přihlásí pohledávku."
+  },
+  "254": {
+    "1": "**Fixní smlouvy se neplní — jen se nahrazuje škoda.** Má-li předmět plnění **tržní cenu** a dodává se v **přesně určené době nebo lhůtě**, která nastane až **po prohlášení konkursu**, nelze žádat splnění, jen náhradu škody za nesplnění.\n\nTypicky komodity: Truhlárna měla k 15. 6. odebrat 100 m³ dubového dřeva za pevnou cenu.",
+    "2": "**Škoda = rozdíl mezi dohodnutou a tržní cenou** ke dni účinnosti prohlášení konkursu v místě plnění.\n\nDruhá strana ji **přihlásí do 30 dnů od prohlášení konkursu**.\n\nPozor na rozdíl proti § 253 odst. 4: tam se lhůta 30 dnů počítá od odmítnutí plnění, tady **od prohlášení konkursu**."
+  },
+  "255": {
+    "-": "**Půjčil-li dlužník věc (výpůjčka), může správce žádat vrácení i před koncem doby zapůjčení.**\n\nBureš půjčil kamarádovi dílenský vozík na rok zdarma. Po prohlášení konkursu si ho vyžádáte zpátky a prodáte."
+  },
+  "256": {
+    "1": "**Nájmy můžete vypovědět — i na dobu určitou, s výpovědní lhůtou nejvýš 3 měsíce.** Platí pro nájemní a podnájemní smlouvy uzavřené dlužníkem, ať je pronajímatel nebo nájemce.\n\nTruhlárna má sklad v cizí hale na 5 let za 25 000 Kč měsíčně. Po prohlášení konkursu sklad nepotřebujete — vypovíte ho s nejvýš tříměsíční výpovědní lhůtou, i když smlouva výpověď nepřipouští.\n\n**Ochrana nájmu bytu podle občanského zákoníku tím není dotčena** — pronajímá-li dlužník byt, nájemníka nevyhodíte jinak než podle OZ.",
+    "2": "**Ochrana nájemce, kterému dlužník pronajímá na dobu určitou.** Byl-by výpovědí nepřiměřeně dotčen nebo by utrpěl značnou škodu, může **do 15 dnů od doručení výpovědi** navrhnout soudu její zrušení.\n\n**Soud mu vyhoví vždy, je-li zajištěno, že nájemce předmět nájmu při zpeněžení koupí za cenu obvyklou.**\n\nTruhlárna pronajímá část haly autodílně. Autodílna může výpověď zvrátit — nejjistěji tím, že nabídne halu koupit za obvyklou cenu.",
+    "3": "**Nájemné za dobu před prohlášením konkursu se jen přihlašuje.** Totéž **nájemné zaplacené předem** — to se přihlásí jako pohledávka **vázaná na odkládací podmínku**.\n\nPronajímatel skladu, kterému Truhlárna dluží tři měsíce, přihlásí dluh. Nájemné za dobu po prohlášení konkursu, dokud sklad užíváte, je pohledávka za podstatou."
+  },
+  "257": {
+    "-": "**Pronajímatel dlužníka nemůže po rozhodnutí o úpadku vypovědět ani odstoupit kvůli starým dluhům** — pro prodlení s nájemným **z doby před rozhodnutím o úpadku** ani pro **zhoršení majetkové situace dlužníka**.\n\nPronajímatel skladu tedy nemůže hned po úpadku Truhlárnu vystěhovat jen proto, že jí dluží za tři měsíce. Nové prodlení po rozhodnutí o úpadku je ale jiná věc — to musíte platit."
+  },
+  "258": {
+    "-": "**Předmět nájmu, podnájmu nebo výpůjčky ještě nebyl předán? Od smlouvy může odstoupit správce i druhá strana.**\n\nOdstoupíte-li vy, druhá strana může přihlásit **škodu z předčasného ukončení do 30 dnů od odstoupení**.\n\n**Lhůta 10 dnů na vyjádření:** každá strana musí na výzvu druhé do 10 dnů sdělit, zda odstupuje. Kdo mlčí, **právo odstoupit ztrácí**.\n\nTruhlárna si pronajala novou halu od 1. 9., konkurs je prohlášen v srpnu. Pronajímatel vás vyzve — rozhodněte do 10 dnů."
+  },
+  "259": {
+    "-": "**Leasingové smlouvy a smlouvy o koupi najaté věci se řídí pravidly o nájmu** (§ 256 až 258) přiměřeně.\n\nLeasing na dodávku tedy můžete vypovědět s výpovědní lhůtou nejvýš 3 měsíce, leasingovka nemůže smlouvu ukončit kvůli prodlení z doby před úpadkem (§ 257) a dlužné splátky přihlásí.\n\nCo je předmětem leasingu, do podstaty nepatří — vlastníkem je leasingovka (viz hra nad spisem Truhlárny, CNC centrum)."
+  },
+  "260": {
+    "1": "**Dlužník prodal s výhradou vlastnictví a věc předal: kupující volí.** Může věc **vrátit**, nebo **trvat na smlouvě** (doplatit a stát se vlastníkem).\n\nTruhlárna prodala zákazníkovi kuchyňskou linku na splátky s výhradou vlastnictví do doplacení. Zákazník ji může vrátit, nebo doplatit podstatě a nechat si ji.",
+    "2": "**Dlužník koupil s výhradou vlastnictví a převzal: prodávající věc nevymůže, jestliže správce bez zbytečného odkladu splní smlouvu**, jakmile ho prodávající vyzve.\n\nTruhlárna koupila lis na splátky s výhradou. Vyzve-li vás prodávající, máte na vybranou: doplatit, a lis zůstane v podstatě, nebo nedoplatit, a prodávající si ho vezme."
+  },
+  "261": {
+    "1": "**Konkurs automaticky nezastaví provoz podniku**, nestanoví-li zvláštní předpis jinak.\n\nTo je praktická výhoda: Truhlárna může doběhnout rozpracované zakázky, a podnik se dá prodat jako fungující celek — za víc než rozprodané stroje.",
+    "2": "**Kdy provoz skončí:**\n\n**a)** **prodejem podniku jednou smlouvou** při zpeněžení podstaty,\n\n**b)** **rozhodnutím soudu na váš návrh** po vyjádření věřitelského výboru (byl-li ustanoven). Rozhodnutí se doručuje vám, dlužníkovi a výboru, zveřejní se vyhláškou a **odvolání není přípustné**.\n\nZtrácí-li dílna každý měsíc peníze, navrhnete soudu ukončení provozu a pak prodáváte po kusech."
+  },
+  "262": {
+    "-": "**Další účinky prohlášení konkursu stanoví zvláštní předpisy** — tam, kde konkurs zasahuje do jejich oblasti (živnostenské oprávnění, licence, členství v profesních komorách a podobně).\n\nPro zkoušku stačí vědět, že insolvenční zákon není jediným zdrojem účinků konkursu."
+  },
+  "263": {
+    "1": "**Soudní a rozhodčí řízení o podstatě se prohlášením konkursu přerušují** — je-li v nich dlužník účastníkem a týkají-li se podstaty nebo pohledávek, které se z ní mají uspokojit.\n\n**Pokračovat lze jen podle tohoto zákona** (§ 264 a 265). A nezávisle na tom mohou soudy zastavit řízení zahájená v rozporu se zákazy (§ 141a).\n\nPozor: řízení o přihlašovaných pohledávkách se přerušila **už rozhodnutím o úpadku** (§ 140a). Prohlášení konkursu doplňuje zbytek — žaloby dlužníka a spory o podstatu.",
+    "2": "**Za přerušení se nejedná a lhůty neběží.** Pokračuje-li se, **lhůty běží znovu celé** — ne jen jejich zbytek.\n\nByla-li Truhlárna v polovině 15denní odvolací lhůty, po pokračování má zase celých 15 dnů.",
+    "3": "**Přerušení se týká spoluúčastníků na straně dlužníka jen u nerozlučného společenství nebo vedlejšího účastenství.**\n\nŽaluje-li zákazník Truhlárnu a zároveň montážní firmu, která kuchyni montovala, řízení vůči montážní firmě běží dál — nejde o nerozlučné společenství.",
+    "4": "**Soud nebo rozhodce vyrozumí účastníky o přerušení** a poučí je, jak se dá pokračovat.\n\n**Rozhodnutí vydaná za přerušení se nedoručují.** Bylo-li rozhodnutí doručeno, ale ještě nenabylo právní moci, **právní moci nenabude**. Pokračuje-li se, doručuje se znovu.\n\nRozsudek proti Truhlárně, doručený den před prohlášením konkursu, tedy pravomocný nebude, dokud se v řízení nepokračuje."
+  },
+  "264": {
+    "1": "**Spory, kde dlužník žaluje: pokračujete vy.** V přerušených řízeních, kde dlužník byl **žalobcem nebo navrhovatelem** a uplatňoval svá práva k podstatě, lze pokračovat **na váš návrh**. Dnem, kdy váš návrh dojde soudu, se stáváte účastníkem **místo dlužníka**.\n\nTruhlárna žaluje odběratele o 120 000 Kč. Zvažte, zda spor dovést do konce — a pokud ano, podejte návrh na pokračování.",
+    "2": "**Nepodáte-li návrh ve lhůtě určené soudem**, mohou pokračování navrhnout **dlužník nebo ostatní účastníci** — dlužník pak **zůstává účastníkem** sám.\n\nNechá-li správce slabý spor ležet, nemusí ho vést za podstatu; Bureš si ho může dotáhnout na vlastní riziko."
+  },
+  "265": {
+    "1": "**Spory proti dlužníkovi, kde lze pokračovat bez soudu:** na návrh věřitele nebo správce se pokračuje v řízeních o:\n\n— **rozsahu podstaty** (s výjimkou sporů o vyloučení majetku z ní),\n— **nárocích se zajištěním**,\n— **pohledávkách za podstatou** a **pohledávkách postavených na roveň**.\n\nDnem, kdy návrh dojde soudu, se správce stává účastníkem místo dlužníka.\n\nTyto pohledávky se nepřihlašují, takže jejich spor se musí dořešit u původního soudu.",
+    "2": "**Spory o přihlašované pohledávky — jen se souhlasem insolvenčního soudu.** V řízeních o pohledávkách, které se uplatňují **přihláškou** (nebo se na ně tak hledí), a v ostatních přerušených řízeních, které nespadají pod § 264 a odstavec 1, lze pokračovat, **jen rozhodne-li o tom insolvenční soud** — na návrh věřitele nebo správce. Odvolání není přípustné.\n\nNormální cesta je jiná: věřitel přihlásí, vy přezkoumáte, a spor vznikne jako incidenční (§ 198).",
+    "3": "**Kdy soud pokračování povolí:** jen může-li to **vyjasnit sporné otázky** vyvolané insolvencí, nebo **ukončit dlužníkovy spory, aniž by to zatížilo podstatu**.\n\nRozhodnutím se správce stává účastníkem místo dlužníka; **pokračovat lze ale až po přezkumném jednání**.\n\nPříklad: spor o 800 000 Kč s Kovaříkem je u okresního soudu po dokazování a chybí jen rozsudek. Dokončit ho tam je levnější než začínat incidenční spor."
+  },
+  "266": {
+    "1": "**Která řízení se prohlášením konkursu nepřerušují:**\n\n**a)** trestní,\n**b)** dědické a o pozůstalosti,\n**c)** o vypořádání SJM dlužníka a jeho manžela,\n**d)** o výživném nezletilých dětí — ať dlužník platí, nebo dostává,\n**e)** o ochraně osobnosti a dobré pověsti — **ledaže** je dlužník podnikatel nebo jde o peníze,\n**f)** ve věcech veřejných rejstříků,\n**g)** ve věcech kapitálového trhu,\n**h)** výkon rozhodnutí a exekuce,\n**i)** řízení, kde je dlužník jediným účastníkem.\n\nU písm. h) pozor: exekuce se nepřerušuje, ale **nelze ji provést** (§ 109 odst. 1 písm. c) a nově nařídit (§ 140e).",
+    "2": "**V těchto řízeních zůstává účastníkem dlužník**, není-li stanoveno jinak.\n\nV trestním řízení proti Burešovi jako jednateli tedy nevystupujete vy, ale on — a v exekuci vedené proti Truhlárně stále Truhlárna (srov. § 267).",
+    "3": "**Výjimka: kapitálový trh a řízení s jediným účastníkem.** Soud může na návrh orgánu, který je vede, nebo i bez návrhu rozhodnout, že **účastníkem se stává správce** místo dlužníka — podle povahy věci a vlivu na insolvenci. Odvolání není přípustné.",
+    "4": "**Pravidla o přerušení řízení z rozhodnutí o úpadku (§ 140a až 140e) platí dál.** Tento paragraf je nenahrazuje, jen doplňuje."
+  },
+  "267": {
+    "1": "**Exekuce se navrhuje proti povinnému, nikdy proti správci** — ani když je povinným dlužník.\n\n§ 140e (zákaz nařídit nebo zahájit exekuci na podstatu za trvání účinků úpadku) tím není dotčen. Věřitel s pohledávkou za podstatou, kterou mu nezaplatíte, jde přes § 203 odst. 4 a 5 — ne exekučním návrhem na „správce\".",
+    "2": "**Kde dlužník exekuci vede jako oprávněný, stáváte se oprávněným vy.** Prohlášením konkursu, automaticky.\n\nTruhlárna vedla exekuci proti neplatiči o 60 000 Kč. Exekutor teď posílá vymožené peníze na účet podstaty a pokyny dostává od vás."
+  },
+  "268": {
+    "1": "**Prohlášením konkursu na fyzickou osobu zaniká společné jmění s manželem.** Bylo-li vznik SJM odloženo ke dni zániku manželství, má prohlášení konkursu stejné majetkové účinky jako zánik manželství.\n\nU Truhlárny s.r.o. se to neuplatní. Kdyby ale Bureš truhlařil na živnostenský list a konkurs byl na něj osobně, SJM s manželkou zaniká dnem účinků prohlášení.",
+    "2": "**Po prohlášení konkursu se SJM vypořádá**, jestliže:\n\n**a)** zaniklo prohlášením konkursu,\n\n**b)** zaniklo už dříve, ale **nebylo vypořádáno**,\n\n**c)** bylo **zúženo** smlouvou nebo rozhodnutím soudu a **nebylo vypořádáno**.\n\nVypořádání vede správce (§ 270 odst. 1).",
+    "3": "**Lhůta k vypořádání se staví.** V případech podle odst. 2 písm. b) a c) se prohlášením konkursu **staví** lhůta k vypořádání SJM, má-li skončit **nejpozději do 6 měsíců** od prohlášení konkursu.\n\nSmysl: manžel nemůže nechat uplynout lhůtu a spolehnout se na zákonnou domněnku vypořádání těsně po prohlášení konkursu."
+  },
+  "269": {
+    "1": "**Manželské smlouvy z doby insolvence jsou neplatné.** Smlouvy uzavřené po podání **dlužnického** návrhu (u věřitelského po účincích zahájení řízení) se prohlášením konkursu stávají **neplatnými**, jde-li o:\n\n**a)** **zúžení SJM**,\n**b)** **rozšíření SJM**, kterým do něj přešel majetek patřící **jen dlužníkovi**,\n**c)** **rozšíření SJM**, kterým do něj přešly **závazky jen manžela** dlužníka,\n**d)** **dohody o vypořádání SJM**, včetně soudního smíru.\n\nNeplatné, ne neúčinné — **žádná odpůrčí žaloba**. Převede-li živnostník Bureš po podání návrhu dům „ze SJM\" na manželku dohodou, je dohoda prohlášením konkursu neplatná sama.",
+    "2": "**Lhůta k vypořádání uplynula během řízení?** Uplynula-li mezi účinky zahájení řízení a prohlášením konkursu lhůta k vypořádání SJM bez dohody, **účinky zákonné domněnky vypořádání nastanou až po 6 měsících od prohlášení konkursu**. Do té doby lze uzavřít novou dohodu nebo navrhnout soudní vypořádání.\n\n**Práva třetích osob v dobré víře** zůstávají nedotčena.",
+    "3": "**Změny v katastru zajistíte vy.** Vede-li neplatnost manželských smluv ke změně práv zapsaných v katastru, podáte **návrh na vklad** s potvrzením, k jaké změně došlo.\n\nDům zapsaný po neplatné dohodě na manželku se tak v katastru vrátí do původního stavu."
+  },
+  "270": {
+    "1": "**Vypořádání SJM je věc správce.** Prohlášením konkursu na vás přechází oprávnění uzavřít dohodu o vypořádání SJM nebo navrhnout soudní vypořádání.\n\n**Dohody, které uzavře dlužník po prohlášení konkursu, jsou neplatné.** Bureš s manželkou se nemohou „rychle dohodnout\" bez vás.",
+    "2": "**Co dlužník použil se souhlasem manžela k podnikání, patří při vypořádání vždy do podstaty.**\n\nDílna, kterou Bureš ze společných peněz vybavil se souhlasem manželky, při vypořádání vždy spadne do podstaty — bez ohledu na to, jak by se jinak dělila."
+  },
+  "271": {
+    "1": "**Dohoda správce o vypořádání SJM je účinná, až když ji schválí insolvenční soud.**",
+    "2": "**Soud dohodu neschválí, je-li v rozporu s právem — nebo nesouhlasí-li s ní věřitelský výbor.**\n\nNež dohodu s manželkou Bureše podepíšete, projednejte ji s výborem. Bez jeho souhlasu je to zbytečná práce.",
+    "3": "**Schválená dohoda má účinky pravomocného rozsudku.** Pro její zrušení platí obdobně pravidla o.s.ř. o zrušení usnesení o schválení smíru.\n\nPrakticky: jednou schválená dohoda se mění jen výjimečně — připravte ji pečlivě."
+  },
+  "272": {
+    "-": "**Proti schválení dohody o vypořádání SJM není odvolání přípustné.** Proti neschválení se mohou odvolat **jen účastníci dohody** — vy a manžel dlužníka.\n\nVěřitelé, kterým se dohoda nelíbí, mají svůj vliv přes výbor (§ 271 odst. 2), ne přes odvolání."
+  },
+  "273": {
+    "1": "**Probíhající soudní vypořádání SJM: vstupujete místo dlužníka.** Prohlášením konkursu se stáváte účastníkem řízení o vypořádání (to se nepřerušuje — § 266 odst. 1 písm. c).\n\n**Za trvání účinků rozhodnutí o úpadku nelze řízení skončit soudním smírem.** Dohodu lze uzavřít jen cestou § 270 a § 271 — se schválením insolvenčního soudu a souhlasem výboru.",
+    "2": "**Odvolání proti neschválení dohody přerušuje soudní vypořádání.** Podal-li někdo odvolání proti tomu, že insolvenční soud dohodu neschválil, soud v řízení o vypořádání SJM řízení **přeruší do rozhodnutí odvolacího soudu**.\n\nDvě paralelní cesty k vypořádání tak nejedou proti sobě."
+  },
+  "274": {
+    "1": "**Převyšují-li dluhy majetek ve SJM, jde do podstaty celé SJM.** Nelze-li SJM vypořádat proto, že závazky dlužníka, které se z něj mohou uspokojit, jsou vyšší než majetek ve SJM, **zahrne se celý majetek SJM do podstaty**.\n\n**Výtěžek zpeněžení se pak vypořádá přiměřeně podle pravidel pro vypořádání SJM** — manžel dostane, co by mu po vypořádání náleželo.\n\nCelý společný dům živnostníka Bureše se prodá a manželka dostane svůj podíl z výtěžku, nezůstane-li po dluzích ze SJM nic.",
+    "2": "**Insolvence obou manželů:** SJM se zpeněží v tom řízení, kde **dříve nastaly účinky prohlášení konkursu** nebo kde **zajištěný věřitel dříve požádal o zpeněžení** zajištění. Tam se také vypořádá výtěžek.\n\nZabraňuje to tomu, aby dva správci prodávali tentýž dům."
+  },
+  "275": {
+    "-": "**Pohledávka manžela z vypořádání SJM po prohlášení konkursu se považuje za přihlášenou** a uspokojí se jako ostatní přihlášené pohledávky.\n\nManželka Bureše tedy nemusí podávat přihlášku — ale ani nemá přednost. Stojí v rozvrhu vedle dodavatelů."
+  },
+  "276": {
+    "1": "**Za konkursu nové SJM nevznikne.** Uzavře-li dlužník nové manželství, vznik SJM se **odkládá ke dni zániku účinků konkursu**.\n\nKdo se v konkursu ožení, nepřidá novému manželovi starosti ze své podstaty — a naopak.",
+    "2": "**Smlouvy o rozšíření SJM, které to obcházejí, jsou neplatné.**"
+  },
+  "277": {
+    "1": "**Hned po prohlášení konkursu musíte zajistit všechny navazující úkony a činnosti.** „Neprodleně\" — ne až po první schůzi.",
+    "2": "**Na co se zaměřit:**\n\n— **zjištění, zajištění a soupis** majetku,\n— **dokončení seznamu přihlášených pohledávek**,\n— **příprava přezkumného jednání**,\n— **příprava schůze věřitelů**.\n\nPrvní týden v Truhlárně: převzít klíče, účetnictví a bankovní účty, zabezpečit halu, sepsat stroje, sestavit seznam přihlášek.",
+    "3": "**Mezitímní účetní závěrka.** Vede-li dlužník účetnictví (nebo daňovou evidenci), sestavíte **ke dni předcházejícímu účinkům prohlášení konkursu** mezitímní účetní závěrku, popř. přehled příjmů, výdajů, majetku a závazků.\n\nZávěrka dělí čas na „před\" a „za\" konkursu. Bez ní nevíte, s čím vlastně začínáte."
+  },
+  "279": {
+    "1": "**Povinnosti dlužníka a dalších osob v souvislosti s prohlášením konkursu se plní do 15 dnů od prohlášení** — nestanoví-li zákon jinak. Prodloužit může soud jen z důvodů hodných zvláštního zřetele.\n\nBureš má 15 dnů na to, aby vám předal účetnictví, smlouvy a seznamy.",
+    "2": "**Nesplní-li je, soud na váš návrh přijme opatření k vynucení** — pořádkové pokuty, předvedení.\n\nNavrhujte konkrétně: co chybí, odkdy a proč to potřebujete."
+  },
+  "280": {
+    "-": "**Soupis vás opravňuje ke zpeněžení.** Co je v soupisu, to smíte prodat — nestanoví-li zákon jinak.\n\nProto je soupis první úkol: co nesepíšete, nemůžete prodat. A co sepíšete sporně, musíte respektovat lhůtu k vylučovací žalobě (§ 225 odst. 4)."
+  },
+  "281": {
+    "1": "**Zpráva o hospodářské situaci dlužníka ke dni prohlášení konkursu.** Sestavíte ji ze seznamu přihlášek, soupisu a dalších poznatků. Zejména:\n\n— **porovnáte podstatu se závazky**,\n— **vyjádříte se k dalšímu využití podniku** — dá se prodat jako celek? pokračovat v provozu?\n\nU Truhlárny: podstata cca 4,4 mil. Kč (hala 3,1, stroje 0,9, pohledávky 0,4) proti dluhům 6,8 mil. Kč; doporučení prodat halu se stroji jednomu kupci.",
+    "2": "**Zprávu předložíte soudu nejméně 10 dní před první schůzí věřitelů** po prohlášení konkursu. **Věřitelé do ní mohou u soudu nahlížet.**\n\nJe-li schůze 20. 5., zpráva musí být u soudu nejpozději 10. 5."
+  },
+  "282": {
+    "1": "**Schůze věřitelů projedná vaši zprávu** a její závěry jsou **doporučením** pro váš další postup.\n\nDoporučení, ne pokyn. Ale odchýlíte-li se od něj, musíte to umět vysvětlit — výboru, soudu i v konečné zprávě.",
+    "2": "**Plnění dlužníkovi a jeho rodině na existenční potřeby.** U dlužníka – fyzické osoby rozhodne schůze věřitelů, zda a v jakém rozsahu se mu a jeho rodině z podstaty poskytne plnění na **odůvodněné existenční potřeby**. Jen **na žádost** dlužníka nebo člena rodiny.\n\nKdyby byl Bureš v konkursu jako živnostník bez příjmu, může požádat, aby mu z podstaty šlo na nájem a jídlo pro děti. O tom nerozhodujete vy, ale schůze."
+  },
+  "283": {
+    "1": "**Co je zpeněžení:** převedení **veškerého** majetku podstaty na peníze k uspokojení věřitelů. Patří sem i:\n\n— **využití bankovních účtů a hotovosti** dlužníka,\n— **úplatné postoupení pohledávek** dlužníka — a **smluvní zákazy postoupení vás neomezují**.\n\nTruhlárna má za odběrateli pohledávky 400 000 Kč, některé se zákazem postoupení ve smlouvě. Můžete je přesto prodat inkasní firmě, když je vymáhání sami nezvládnete.",
+    "2": "**Kdy smíte začít prodávat:** až **po právní moci rozhodnutí o prohlášení konkursu** a **nejdřív po první schůzi věřitelů**.\n\n**Výjimky:** věci **bezprostředně ohrožené zkázou nebo znehodnocením** (dřevo na dvoře, které začne plesnivět) — a co soud výslovně povolí.\n\nVěřitelé tak mají šanci na schůzi říct, jak si zpeněžení představují, dřív než je hotovo.",
+    "3": "**Majetek zajištěný v trestním řízení** prodáte jen s **předchozím souhlasem orgánu činného v trestním řízení**.\n\nPřevyšuje-li výtěžek částku určenou k vyplacení, informujete ten orgán. **Neozve-li se do 30 dnů**, že se zajištění vztahuje i na zbytek, zbytek jde k rozdělení mezi věřitele.",
+    "4": "**Doklady o zpeněžení do spisu — neprodleně.** Kopie smluv a listin, které dokládají zpeněžení a jeho podmínky, posíláte soudu hned po prodeji.\n\nSoud a věřitelé tak průběžně vidí, za kolik a komu jste prodal — ne až v konečné zprávě.",
+    "5": "**Závazky váznoucí na věci zpeněžením na nabyvatele nepřecházejí**, není-li stanoveno jinak.\n\nKupec haly nepřebírá dluh Truhlárny za energie odebrané v hale. Co přesně zaniká, upřesňuje § 285."
+  },
+  "284": {
+    "1": "**Stát má předkupní právo k nemovitostem, které tvoří pozemní část veřejného přístavu.** U zkoušky okrajová položka — ale jako příklad zákonného předkupního práva, kterým jste vázán, se hodí.",
+    "2": "**Zákonná předkupní práva vás vážou, smluvní ne.**\n\nMá-li soused Truhlárny ve smlouvě předkupní právo k pozemku vedle haly, při zpeněžení ho nemusíte respektovat. Předkupní právo, které plyne přímo ze zákona (příklady v odstavcích 1, 3 a 4), respektovat musíte.",
+    "3": "**Nájemce bytu — fyzická osoba — má zákonné předkupní právo k jednotce** při jejím **prvním převodu** podle § 1187 občanského zákoníku. Tímto právem jste vázán.\n\nPatří-li do podstaty byt pronajatý paní Novákové, nabídnete ho nejdřív jí.",
+    "4": "**Povinnost nabídnout jednotku oprávněným osobám** podle § 1188 OZ a předkupní práva nájemců podle zákona o vlastnictví bytů vás při zpeněžení také vážou.",
+    "5": "**Úkony k převodu na oprávněné zajišťujete vy** — a oprávněný vám hradí **nezbytné náklady a odměnu** podle zvláštního předpisu.\n\n**Lhůta 3 měsíce:** nevyužije-li oprávněný právo **do 3 měsíců od doručení vaší nabídky**, můžete jednotku zpeněžit normálně."
+  },
+  "285": {
+    "1": "**Co zpeněžením zaniká** (v rozsahu zpeněženého majetku):\n\n**a)** **účinky exekucí** — nařízení, vyrozumění o zahájení, exekuční příkazy,\n\n**b)** **ostatní závady** na majetku, včetně **neuplatněných předkupních práv** podle § 284 odst. 3 a 4 a **závad zapsaných ve veřejném seznamu** (zástavní práva v katastru) — není-li stanoveno jinak.\n\nKupec haly Truhlárny dostane halu **čistou**: zástava banky zaniká (§ 167 odst. 4) a exekuční příkaz na halu také. Proto je koupě z konkursu pro kupce bezpečná.",
+    "2": "**Prodaný dům nebo byt, kde dlužník bydlí, musí vyklidit.** Neudělá-li to sám, **nabyvatel žaluje o vyklizení u obecného soudu** — **nejde o incidenční spor**.\n\nVy jako správce vyklizení nevymáháte; to je věc kupce. Ale kupci řekněte předem, co ho čeká.",
+    "3": "**Bytová náhrada při vyklizení** je stejná jako při výpovědi nájmu bytu pro **hrubé porušení povinností nájemce** — tedy nejskromnější, jakou zákon zná.",
+    "4": "**Služebnosti a reálná břemena zpeněžením nezanikají** — leda ta, která jsou v insolvenci neúčinná (třeba podle § 248 odst. 3).\n\nVede-li přes pozemek haly zapsaná služebnost cesty pro souseda, kupec ji převezme. Zástavní práva naopak zanikají (odstavec 1). Pozor na ten rozdíl při oceňování."
+  },
+  "286": {
+    "1": "**Čtyři způsoby zpeněžení:**\n\n**a)** **veřejná dražba** podle zákona o veřejných dražbách (§ 287),\n\n**b)** **prodej movitých věcí a nemovitostí podle o.s.ř.** — přes okresní soud (§ 288),\n\n**c)** **prodej mimo dražbu** (§ 289),\n\n**d)** **dražba provedená soudním exekutorem** (§ 289a).\n\nV praxi převládá prodej mimo dražbu — je nejpružnější, ale potřebuje dva souhlasy.",
+    "2": "**O způsobu zpeněžení rozhodujete vy — se souhlasem věřitelského výboru.**\n\nU zajištěného majetku (hala) ale máte navíc pokyny zajištěného věřitele (§ 293)."
+  },
+  "287": {
+    "1": "**Veřejná dražba se provádí podle zvláštního předpisu** — zákona o veřejných dražbách.",
+    "2": "**Dražbu provede dražebník na váš návrh.** Smlouva o provedení dražby je **účinná až dnem, kdy ji schválí věřitelský výbor**.\n\nVýbor si tak ohlídá, za jakých podmínek a s jakou odměnou dražebník pracuje."
+  },
+  "288": {
+    "1": "**Soudní prodej podle o.s.ř. — u okresního soudu.** Návrh podáváte vy a jste **jediným účastníkem** řízení.\n\nDlužník ani věřitelé v něm nevystupují.",
+    "2": "**Co musíte k návrhu přiložit:** rozhodnutí o prohlášení konkursu, **soupis potvrzený insolvenčním soudem** a **souhlas věřitelského výboru** s tímto způsobem zpeněžení.\n\nBez souhlasu výboru okresní soud prodej nenařídí.",
+    "3": "**Rozhodnutí se doručují jen vám** a jen vy se můžete odvolat."
+  },
+  "289": {
+    "1": "**Prodej mimo dražbu: dva souhlasy — soudu a výboru.** Soud může při souhlasu stanovit **podmínky prodeje**. **Dokud nemáte oba souhlasy, smlouva nenabude účinnosti.**\n\n**Souhlas netřeba** k prodeji věcí **bezprostředně ohrožených zkázou** a věcí **běžně prodávaných při pokračujícím provozu** — kuchyňské linky, které Truhlárna vyrábí a prodává zákazníkům, prodáváte bez souhlasů.\n\nPodmínku účinnosti napište i do smlouvy, ať kupec ví, na čem je.",
+    "2": "**Cena pod odhadní je přípustná.** Přihlédnete přitom i k **nákladům, které by jinak šly na správu** prodávaného majetku.\n\nHala odhadnutá na 3,4 mil. Kč, jediný kupec dá 3,1 mil. Kč — a každý měsíc navíc stojí 31 000 Kč za ostrahu, pojištění a energie. Prodat za 3,1 mil. hned může být lepší než za 3,4 mil. za rok.",
+    "3": "**Platnost smlouvy lze napadnout jen žalobou u insolvenčního soudu do 3 měsíců od zveřejnění smlouvy v rejstříku.** Je to incidenční spor (§ 159 odst. 1 písm. f).\n\n**Po 3 měsících jen tehdy, nebyl-li nabyvatel v dobré víře.**\n\nKupcům to dává jistotu — a vám důvod smlouvu zveřejnit co nejdřív."
+  },
+  "289a": {
+    "1": "**Dražba soudním exekutorem se provádí podle zvláštního předpisu** — exekučního řádu.",
+    "2": "**Dražbu provede exekutor na váš návrh.** Smlouva o provedení dražby je **účinná až schválením věřitelským výborem** — stejně jako u dražebníka (§ 287 odst. 2)."
+  },
+  "290": {
+    "1": "**Podnik lze prodat jedinou smlouvou.** Vcelku — stroje, zásoby, zakázky, zaměstnanci, know-how.\n\nTruhlárna jako fungující dílna s jedenácti lidmi a rozpracovanými zakázkami může vynést víc než stroje rozprodané po kusech.",
+    "2": "**Výtěžek z prodeje podniku patří do celkového výtěžku podstaty** — nesmí sloužit jen k zaplacení závazků souvisejících s prodaným podnikem.\n\nDodavatelé dřeva pro dílnu tedy nemají z prodeje dílny přednost před ostatními."
+  },
+  "291": {
+    "1": "**Na kupce podniku přechází všechno, na co se prodej vztahuje** — včetně **pracovněprávních vztahů se zaměstnanci**. **Nepřecházejí pohledávky proti dlužníkovi vzniklé do účinnosti smlouvy.**\n\nKupec Truhlárny převezme jedenáct zaměstnanců, ale ne jejich dlužné mzdy — ty zůstávají podstatě (§ 169).",
+    "2": "**Obdobně platí pravidla o prodeji podniku** podle zvláštního předpisu (občanského zákoníku), pokud insolvenční zákon nestanoví jinak.\n\n**Prodávající neručí za závazky, které přešly na kupce.** To je rozdíl proti běžnému prodeji podniku — podstata nemá po prodeji žádné ručitelské riziko."
+  },
+  "292": {
+    "-": "**Totéž pro prodej celé podstaty nebo části podniku jednou smlouvou.**\n\nProdáte-li jednou smlouvou jen dílnu bez haly, nebo naopak celou podstatu, platí stejná pravidla jako u podniku (§ 290 a 291)."
+  },
+  "293": {
+    "1": "**Zajištěný majetek: rozhoduje zajištěný věřitel.** Jste **vázán pokyny zajištěného věřitele** směřujícími ke zpeněžení. Je-li zajištěných víc, pokyny dává **první v pořadí**; nedá-li je ani ve lhůtě soudu, může je dát další.\n\n**Pokyn můžete odmítnout, máte-li za to, že předmět zajištění lze zpeněžit výhodněji** — a požádáte soud o přezkoumání.\n\nBanka Morava chce prodat halu rychle za 2,6 mil. Kč, vy máte zájemce za 3,4 mil. Kč, který potřebuje šest týdnů. Pokyn odmítnete a obrátíte se na soud.",
+    "2": "**Obdobně platí § 230 odst. 3 až 5** — náklady provedení pokynu nese zajištěný věřitel, souhlas ostatních zajištěných, námitky do 7 dnů.\n\n**§ 286 odst. 2, § 287 odst. 2 a § 289 odst. 1 se použijí, jen chybí-li pokyn** zajištěného věřitele. Dá-li banka pokyn prodat halu mimo dražbu, **souhlas výboru ani soudu k tomu nepotřebujete**."
+  },
+  "294": {
+    "1": "**Pohledávky dlužníka musíte uplatnit a vymáhat** ve prospěch podstaty. Přiměřeně i nepeněžité pohledávky ocenitelné penězi.\n\nOdběratelé Truhlárny s nezaplacenými fakturami za 400 000 Kč: upomínky, žaloby, exekuce — nebo prodej pohledávek (§ 283 odst. 1).",
+    "2": "**Povinnost odpadá, jsou-li náklady neúměrně vysoké nebo je nelze krýt z podstaty.**\n\nŽalovat zaniklou firmu v Bulharsku o 8 000 Kč nemusíte. Ale své rozhodnutí zdůvodněte v konečné zprávě (§ 302 odst. 2 písm. d)."
+  },
+  "295": {
+    "1": "**Zákaz nabývání: dlužník, osoby blízké a koncern** nesmějí nabývat majetek z podstaty — **ani v dražbě** a **ani 3 roky po skončení konkursu**, i kdyby měli zákonné předkupní právo.\n\n**Úkon v rozporu se zákazem je neplatný** — ale jen **relativně**: platí, dokud se neplatnosti nedovolá ten, kdo je dotčen. Ten, kdo neplatnost způsobil, se jí dovolat nemůže.\n\nBureš si přes švagra nekoupí zpátky formátovací pilu.",
+    "2": "**Zákaz platí také pro:**\n\n**a)** **vedoucí zaměstnance** dlužníka a jim blízké osoby,\n**b)** kdo měl **rozhodující vliv** na provoz podniku v posledních **3 letech** před zahájením řízení nebo po něm,\n**c)** **společníky** dlužníka (mimo a.s.),\n**d)** **akcionáře s více než 10 %** základního kapitálu,\n**e)** **prokuristy**,\n**f)** **členy a náhradníky věřitelského výboru** — **bez souhlasu schůze věřitelů**,\n**g)** koncern a osoby blízké členům výboru podle písm. f).\n\nMistr dílny Truhlárny (vedoucí zaměstnanec) si tedy stroj nekoupí, i kdyby nabídl nejvíc.",
+    "3": "**Výjimka od soudu.** Na návrh osob z odst. 1 a odst. 2 písm. a) až e) a **po vyjádření výboru** může soud v odůvodněných případech povolit výjimku.\n\nMá-li k nabytí dojít **až po skončení konkursu**, může soud výjimku povolit i **členům výboru a jejich okolí** (písm. f) a g). Odvolat se může jen navrhovatel."
+  },
+  "296": {
+    "1": "**Z výtěžku zpeněžení se platí pohledávky za podstatou, pohledávky postavené na roveň a náklady správy podstaty.**\n\nMzdy jedenácti zaměstnanců (§ 169), energie za halu po prohlášení konkursu, vaše odměna — to všechno jde z výtěžku průběžně, ne až v rozvrhu (srov. § 305 odst. 1).",
+    "2": "**Po ukončení provozu nesmí výtěžek sloužit k podnikání — ani se souhlasem výboru.** Smí se jen zhodnotit úroky nebo jinými přírůstky.\n\nPeníze z prodeje haly tedy na termínovaný vklad ano, do akcií nebo nákupu dřeva na spekulaci ne."
+  },
+  "297": {
+    "1": "**Nestačí-li výtěžek, sahá se na zálohy.** Na vaši odměnu a výdaje, pohledávky z moratoria (§ 122 odst. 2), úvěrové financování a náklady správy lze použít **zálohu na náklady řízení** nebo **zálohu poskytnutou věřitelským výborem**.\n\nTo je důvod, proč se u chudých podstat vyplatí chtít zálohu od navrhovatele (§ 108).",
+    "2": "**Nestačí-li ani zálohy, rozhodne soud o pořadí nebo poměrné úhradě** — na váš návrh podle § 305 odst. 2.\n\nV praxi to znamená, že navrhnete soudu pořadí, které zákon v § 305 odst. 2 předepisuje: nejdřív vaše odměna a výdaje, pak moratorium, úvěrové financování a tak dál."
+  },
+  "298": {
+    "1": "**Zajištěný věřitel má právo na uspokojení z výtěžku zpeněžení zajištění.**\n\nBanka Morava se zástavou na hale dostane z prodeje haly — ne z prodeje strojů ani z vymožených pohledávek.",
+    "2": "**Výtěžek zajištění se vydává se souhlasem soudu** — po odečtení:\n\n— **nákladů správy a zpeněžení** (strop v odstavci 4, nestanoví-li soud jinak),\n— **vaší odměny** ze zajištění (vyhl. č. 313/2007 Sb., § 1 odst. 2),\n— částky pro **správce domu u jednotky** (odstavec 8).\n\nHala za 3 100 000 Kč, náklady 248 000 Kč, odměna 156 250 Kč, banka 2 500 000 Kč, zbytek 195 750 Kč jde ostatním věřitelům (viz hra nad spisem Truhlárny).",
+    "3": "**Námitky do 7 dnů od zveřejnění návrhu.** Proti vašemu návrhu na vydání výtěžku mohou podat námitky **ostatní věřitelé a dlužník** — do **7 dnů** od zveřejnění v rejstříku. **K později podaným se nepřihlíží.**\n\nO včasných námitkách soud nařídí jednání **do 30 dnů**.",
+    "4": "**Strop nákladů: zpeněžení nejvýš 5 %, správa nejvýš 4 % výtěžku.** Se souhlasem zajištěného věřitele i víc.\n\n**Je to strop, ne paušál** — odečtete skutečné náklady do stropu. Co je nad stropem, nese obecná podstata.\n\nRealitka si vzala 6 % z 3,1 mil. Kč (186 000 Kč)? Z výtěžku haly odečtete 155 000 Kč, zbytek 31 000 Kč zaplatíte z ostatního majetku — nebo si vyžádáte souhlas banky.",
+    "5": "**Zajištěný věřitel, který dosud nezaplatil svůj díl na znalce, dostane výtěžek ponížený o tuto částku.** Podle § 157 odst. 1 hradí zajištění věřitelé do podstaty **polovinu odměny a hotových výdajů znalce**, který oceňoval zajištění.\n\nNezaplatila-li Banka Morava svou polovinu za znalecký posudek na halu, strhnete ji z výtěžku dřív, než jí ho vydáte.",
+    "6": "**Zpeněžení podle § 293 a nesplněná povinnost z § 230 odst. 3.** Odstavec 2 se u zpeněžení podle pokynů zajištěného věřitele použije, jen jestliže věřitel dosud nezaplatil náklady provedení svého pokynu.\n\nJinými slovy: náklady pokynu nese věřitel ze svého (§ 230 odst. 3) — nezaplatil-li je, strhnou se z výtěžku.",
+    "7": "**Odvolat se mohou jen** dlužník, správce, zajištěný věřitel, jemuž má být výtěžek vydán, a **věřitel, který podal námitky**.\n\nKdo námitky nepodal, odvolání nemá. Lhůta 7 dnů v odstavci 3 je tedy pro ostatní věřitele zároveň jedinou šancí.",
+    "8": "**Jednotka v domě — přednost pro správce domu.** Zpeňuje-li se byt nebo jiná jednotka a **osoba odpovědná za správu domu** (SVJ) přihlásila pohledávku související se správou domu, uspokojí se **před zajištěnými věřiteli** — **až do jedné desetiny výtěžku** po odečtení nákladů a vaší odměny.\n\nSVJ, kterému dlužník dluží příspěvky do fondu oprav, tak dostane přednost i před bankou s hypotékou."
+  },
+  "300": {
+    "-": "**Dílčí zprávy o zpeněžení.** Soudu a výboru průběžně podáváte **dílčí zprávy o průběhu zpeněžení a nakládání s výtěžkem** — z vlastního podnětu, na rozhodnutí soudu nebo na žádost výboru.\n\n**Vyrozumění dalších orgánů:** o zpeněžení neprodleně vyrozumíte **soud, správce daně, exekutora** nebo jiný orgán, u kterého běží řízení o zpeněženém majetku, včetně exekucí.\n\n**Potvrzení pro kupce:** zanikají-li zpeněžením věcná práva (zástavy, exekuce), **vydáte kupci neprodleně potvrzení o jejich zániku** — kupec haly s ním jde na katastr výmaz zástavy Banky Morava (srov. § 167 odst. 5)."
+  },
+  "301": {
+    "1": "**Částečný rozvrh — kdykoli, když to stav zpeněžení dovolí.** Navrhnete ho soudu **se souhlasem věřitelského výboru** a uvedete, **které pohledávky a do jaké výše**.\n\nPozor: nenavrhnout částečný rozvrh, ačkoli to stav podstaty umožňoval, je důvod ke **snížení vaší odměny** (§ 38 odst. 3).",
+    "2": "**Kdy soud částečný rozvrh povolí:**\n— umožňuje ho **stav výtěžku**,\n— **nedotkne se práv zajištěných věřitelů**,\n— **neohrozí rozvrh po konečné zprávě**,\n— navrhované uspokojení je **nepochybné**.\n\nTruhlárna po prodeji haly a strojů, s doběhlými spory a jasnými pohledávkami: vyplaťte věřitelům část hned, nečekejte na dopsání posledního sporu.",
+    "3": "**Proti povolení částečného rozvrhu není odvolání přípustné.**",
+    "4": "**O částečném rozvrhu vydá soud rozvrhové usnesení.** Doručí ho dlužníkovi, vám a zahrnutým věřitelům; ti všichni se mohou odvolat — i s námitkou, že **nebyly splněny předpoklady** pro povolení."
+  },
+  "302": {
+    "1": "**Konečná zpráva na závěr zpeněžení.** Předložíte ji soudu, i když:\n\n**a)** **ještě běží incidenční spory**, pokud nemohou podstatně ovlivnit závěr zprávy,\n\n**b)** **není zpeněžen všechen majetek**, pokud ho lze z podstaty vyjmout.\n\nNa poslední spor o 30 000 Kč tedy nemusíte čekat rok — konečnou zprávu podáte a sporná částka se uloží (§ 306 odst. 4, § 307 odst. 4).",
+    "2": "**Co konečná zpráva obsahuje** — celkovou charakteristiku vaší činnosti s finančními výsledky, zejména:\n\n**a)** přehled **pohledávek za podstatou a na roveň** — uspokojených i zbývajících,\n**b)** přehled **výdajů správy** s **odůvodněním neobvyklých**,\n**c)** přehled **zpeněžení** a výsledků,\n**d)** **nezpeněžený majetek** a proč,\n**e)** výsledky **částečného rozvrhu**,\n**f)** přehled **plnění zajištěným věřitelům** a jeho promítnutí do rozvrhu,\n**g)** přehled **významných jednání a úkonů**.\n\nKonečná zpráva je vaše vysvědčení — soud podle ní rozhoduje i o vaší odměně.",
+    "3": "**Zpráva musí vyústit v částku k rozdělení a v seznam věřitelů s jejich podíly.**\n\nU Truhlárny při nejlepším průběhu hry: k rozdělení 920 537 Kč, nezajištění věřitelé se zjištěnými pohledávkami 2 450 000 Kč, každý dostane 37,6 %.",
+    "4": "**Ke dni sestavení konečné zprávy sestavíte účetní závěrku.**\n\nZačínali jste mezitímní závěrkou ke dni před prohlášením konkursu (§ 277 odst. 3), končíte závěrkou ke dni konečné zprávy.",
+    "5": "**Konečná zpráva se podává jen na elektronickém formuláři**, jehož náležitosti a formát stanoví prováděcí předpis."
+  },
+  "303": {
+    "1": "**S konečnou zprávou předložíte i vyúčtování své odměny a výdajů.**\n\nOdměnu počítáte podle vyhlášky č. 313/2007 Sb. — u konkursu z výtěžku pro zajištěné a nezajištěné věřitele (§ 1), nejméně 45 000 Kč.",
+    "2": "**Vyúčtování podávají i předběžný správce a další správci** (zástupce, oddělený, zvláštní), jsou-li to jiné osoby než vy a jejich odměna není součástí vaší."
+  },
+  "304": {
+    "1": "**Soud konečnou zprávu a vyúčtování přezkoumá** a po vašem slyšení **odstraní chyby a nejasnosti**.",
+    "2": "**Zveřejnění a námitky do 15 dnů.** Upravenou zprávu soud zveřejní vyhláškou a poučí, že **do 15 dnů od zveřejnění** lze proti ní podat **námitky** — dvojmo, jedno vyhotovení jde vám k vyjádření.\n\nPozor na lhůty: u zprávy pro oddlužení je to 7 dnů (§ 398a odst. 4), u konečné zprávy **15 dnů**.",
+    "3": "**K projednání konečné zprávy a vyúčtování soud nařídí jednání**; termín a místo zveřejní vyhláškou.\n\n(Bez námitek se jednání konat nemusí — odstavec 5.)",
+    "4": "**Na jednání soud projedná námitky a rozhodne:**\n\n**a)** **schválí** zprávu a vyúčtování — námitky nejsou důvodné,\n\n**b)** **nařídí doplnění nebo změnu** — některé námitky jsou důvodné, ale nemění základní obsah,\n\n**c)** **odmítne zprávu** — námitky ji důvodně zpochybňují jako celek; pak vám uloží předložit **novou konečnou zprávu** v určené lhůtě.",
+    "5": "**Bez námitek může soud rozhodnout i bez jednání.**\n\nV klidném konkursu Truhlárny bez námitek tak soud zprávu schválí rovnou.",
+    "6": "**Komu se rozhodnutí doručuje a kdo se odvolá.** Doručuje se vám, dlužníkovi a věřitelům, o jejichž námitkách se rozhodovalo. **Odvolat se mohou správce a ti věřitelé a dlužník, jejichž námitkám nebylo vyhověno.**\n\nKdo námitky nepodal, odvolání proti konečné zprávě nemá."
+  },
+  "305": {
+    "1": "**Před rozvrhem se zaplatí, co ještě nezaplaceno zbývá:**\n— **pohledávky za podstatou**,\n— **pohledávky postavené na roveň**,\n— **zajištěné pohledávky** v rozsahu § 167 a § 298.\n\nRozvrh je pak už jen o nezajištěných věřitelích.",
+    "2": "**Když výtěžek nestačí ani na pohledávky z odstavce 1, platí přísné pořadí:**\n\n1. **odměna a hotové výdaje správce**,\n2. pohledávky ze **smluv za moratoria** (§ 122 odst. 2),\n3. pohledávky z **úvěrového financování**,\n4. **poměrně** náklady na **udržování a správu podstaty** a **pracovněprávní pohledávky zaměstnanců vzniklé po rozhodnutí o úpadku**,\n5. **výživné ze zákona**,\n6. **náhrada škody na zdraví**,\n7. ostatní **poměrně**.\n\n**Výtěžek ze zajištění (§ 298 odst. 2) jde na jiné pohledávky až po uspokojení zajištěného věřitele.**\n\nVaše odměna je tedy vždy první — ale jen pokud jste svou práci zvládl tak, aby vůbec nějaký výtěžek byl.",
+    "3": "**Před rozvrhem vyčleníte částku na předpokládané výlohy spojené s ukončením řízení** — poštovné, archivace, závěrečné daňové povinnosti.\n\nCo z ní nespotřebujete, se rozdělí dalším rozvrhovým usnesením (§ 307 odst. 4 věta poslední)."
+  },
+  "306": {
+    "1": "**Návrh rozvrhového usnesení podáte po právní moci schválení konečné zprávy.** Uvedete v něm, **kolik se vyplatí na každou pohledávku** z upraveného seznamu přihlášených pohledávek.\n\nV nepatrném konkursu může soud schválení zprávy a rozvrh spojit (§ 315 odst. 1 písm. f).",
+    "2": "**Soud přezkoumá věcnou správnost návrhu** a vydá **rozvrhové usnesení**, ve kterém určí částky pro věřitele.",
+    "3": "**Všichni věřitelé v rozvrhu se uspokojují poměrně** podle výše zjištěné pohledávky.\n\nTo je ono „zásadně poměrně\" z § 244 v praxi: Úvěrní banka, Hrubý, Pila Lesák i finanční úřad dostanou stejné procento ze své zjištěné pohledávky.",
+    "4": "**Rozvrh lze vydat, i když některé pohledávky ještě nejsou k výplatě** — zejména:\n\n**a)** ty, kterých se týká **odvolání proti konečné zprávě**,\n\n**b)** ty, o kterých **ještě běží incidenční spor**.\n\nPodíl na ně uložíte do úschovy u soudu (§ 307 odst. 4) a vyplatí se, až se spor rozhodne.",
+    "5": "**U pohledávek vázaných na podmínku rozhoduje stav ke dni vydání rozvrhového usnesení.** Je-li podmínka splněna k tomu dni, pohledávka se zahrne; jinak se s ní nakládá podle stavu podmínky."
+  },
+  "307": {
+    "1": "**Rozvrhové usnesení se doručuje** vám, dlužníkovi a věřitelům, jejichž pohledávek se týká. **Všichni se mohou odvolat.**",
+    "2": "**Lhůta ke splnění rozvrhu — nejvýš 2 měsíce od právní moci.** Soud ji určí v rozvrhovém usnesení.",
+    "3": "**Jak vyplácíte:** částky proplatíte věřitelům **na jejich náklad**, zpravidla **ve svém sídle** (v praxi převodem).\n\n**Částky do 500 Kč** můžete složit do **úschovy u soudu** a věřitele písemně vyrozumět. Stejně postupujete, **nepodaří-li se vyplatit do 30 dnů** pro překážku na straně věřitele (neznámý účet, zaniklý věřitel).\n\n**O splnění rozvrhu podáte soudu zprávu** — ta je podkladem pro zrušení konkursu (§ 308 odst. 1 písm. c).",
+    "4": "**Sporné částky do úschovy.** Podíly na pohledávky podle § 306 odst. 4 (odvolání, incidenční spor) složíte do **úschovy u insolvenčního soudu**. Až překážky odpadnou, soud vydá **další rozvrhové usnesení**.\n\nUkáže-li se, že některá částka do rozvrhu nepatří, soud ji **z rozvrhu vyloučí** (bez odvolání). Totéž platí pro **nevyužitou rezervu na výlohy** ukončení řízení (§ 305 odst. 3)."
+  },
+  "308": {
+    "1": "**Kdy soud konkurs zruší i bez návrhu:**\n\n**a)** úpadek **nebyl osvědčen ani dodatečně** — to ale neplatí, je-li už zpeněžena **podstatná část** podstaty,\n\n**b)** **není žádný přihlášený věřitel** a pohledávky za podstatou a na roveň jsou uspokojeny,\n\n**c)** **po obdržení vaší zprávy o splnění rozvrhového usnesení** — běžný konec,\n\n**d)** majetek je **pro uspokojení věřitelů zcela nepostačující** (bez vyloučeného majetku).\n\nU Truhlárny přijde konec podle písm. c). Kdyby se ukázalo, že hala patří někomu jinému a podstata je prázdná, skončí se podle písm. d).",
+    "2": "**Na návrh dlužníka se souhlasem všech.** Soud zruší konkurs, připojí-li dlužník listinu, na které **všichni věřitelé a správce** se zrušením **souhlasí**, s **úředně ověřenými podpisy**.\n\nTypicky když se dlužník s věřiteli mimosoudně dohodne a všechny zaplatí."
+  },
+  "309": {
+    "1": "**Rozhodnutí o zrušení konkursu se doručuje a zveřejňuje jako rozhodnutí o prohlášení**; vám a dlužníkovi **do vlastních rukou**.",
+    "2": "**Proti zrušení podle § 308 odst. 1 se mohou odvolat jen správce a přihlášení věřitelé.** Dlužník ne.",
+    "3": "**Rozhodnutí je vykonatelné a jeho účinky nastávají až právní mocí.**\n\nPozor na rozdíl: prohlášení konkursu působí **zveřejněním** (§ 245 odst. 1), zrušení **právní mocí**.",
+    "4": "**Právní mocí zrušení konkursu insolvenční řízení končí.**\n\nVaše funkce ale ještě ne — viz § 313."
+  },
+  "310": {
+    "1": "**Zemře-li dlužník za konkursu, nastupují dědicové, a nejsou-li, stát.**\n\nKonkurs se tím nezastaví ani neukončí sám — pokračuje vůči dědicům, dokud soud nerozhodne podle odstavce 3.",
+    "2": "**Zpráva o dosavadních výsledcích.** Předložíte soudu zprávu o dosavadním průběhu konkursu a **vyúčtování poměrné odměny a výloh**. Soud ji přezkoumá a rozhodne o ní obdobně jako o konečné zprávě (§ 304).",
+    "3": "**Po schválení zprávy soud konkurs zruší a postoupí věc soudu, který projednává dědictví.** Doručuje a zveřejňuje se podle § 309, ale **odvolání není přípustné**.\n\nZbytek majetku a dluhů se pak řeší v dědickém řízení."
+  },
+  "311": {
+    "-": "**Zánik dluhů s právnickou osobou.** Vede-li zrušení konkursu podle § 308 odst. 1 písm. **c)** (splněný rozvrh) nebo **d)** (nepostačující majetek) ke **zrušení a zániku právnické osoby bez právního nástupce**, **neuspokojené pohledávky zanikají** — leda by byly uspokojeny ze zajištění.\n\nPro Truhlárnu Bureš s.r.o.: po splnění rozvrhu a výmazu z rejstříku zbývajících zhruba 62 % pohledávek nezajištěných věřitelů definitivně zaniká. Za dluhy s.r.o. pak může odpovídat už jen ten, kdo za ně ručil nebo odpovídá z jiného důvodu (jednatel, ručitel) — to je ale mimo insolvenční řízení."
+  },
+  "312": {
+    "1": "**Zrušením konkursu zanikají jeho účinky** — s výjimkou těch, které nelze vrátit do stavu před prohlášením. **Platnost a účinnost úkonů provedených za konkursu tím nedotčena.**\n\nKupec haly si ji ponechá, i když konkurs skončí. Prohlášením zaniklé plné moci (§ 252) neožijí.",
+    "2": "**Za právnickou osobu jednají opět její statutární orgány** — nebo likvidátor, byla-li v likvidaci; **přerušení likvidace končí** (srov. § 245 odst. 2).\n\nBureš jako jednatel znovu jedná za Truhlárnu — v praxi už jen při jejím zániku.",
+    "3": "**Zrušení konkursu pro nepostačující majetek (§ 308 odst. 1 písm. d) je podkladem pro výmaz dlužníka z obchodního rejstříku** — neplatí pro právnické osoby zřízené zákonem.",
+    "4": "**Upravený seznam pohledávek jako exekuční titul.** Po zrušení konkursu lze vymáhat **zjištěnou neuspokojenou pohledávku, kterou dlužník nepopřel**; právo se **promlčí za 10 let** od zrušení konkursu.\n\n**Neplatí to pro pohledávky zaniklé podle § 311** — u zaniklé s.r.o. není koho vymáhat. Prakticky má tohle ustanovení smysl hlavně u fyzických osob v konkursu."
+  },
+  "313": {
+    "1": "**Zrušením konkursu vaše funkce nekončí.** Dispoziční oprávnění ke zbytku podstaty přechází na dlužníka — ale vy máte ještě povinnosti podle odstavce 2.",
+    "2": "**Co musíte udělat po zrušení konkursu** (ke dni zrušení):\n\n— **uzavřít účetní knihy** a sestavit **účetní závěrku**,\n— splnit **daňové povinnosti**,\n— **předat dlužníkovi účetní záznamy** a **zbývající majetek**,\n— zajistit **evidenci a odbornou správu dokumentů** (archivaci) dlužníka a jeho předchůdců,\n— a další činnosti související se zrušením.\n\nNevede-li dlužník účetnictví, týká se to přiměřeně jeho daňové evidence.\n\nArchivace mzdových listů jedenácti zaměstnanců Truhlárny na desítky let dopředu je přesně ten úkol, na který se v rozpočtu konkursu snadno zapomene — proto rezerva podle § 305 odst. 3.",
+    "3": "**Pak vás soud zprostí funkce** a současně rozhodne o **výdajích spojených se zrušením konkursu** a jak se uhradí."
+  },
+  "314": {
+    "1": "**Nepatrný konkurs je:**\n\n**a)** konkurs na **fyzickou osobu, která není podnikatelem**, nebo\n\n**b)** konkurs na dlužníka, u kterého **nebyl zjištěn obrat nad 2 000 000 Kč** za poslední účetní období před prohlášením a který **nemá víc než 50 věřitelů**.\n\nTruhlárna Bureš měla obrat přes 2 mil. Kč — nepatrný konkurs to není. Malá kavárna s obratem 1,5 mil. Kč a dvaceti věřiteli by jím byla.",
+    "2": "**Soud může o nepatrném konkursu rozhodnout i bez návrhu** — spolu s prohlášením konkursu nebo kdykoli později.",
+    "3": "**Vyjde-li najevo, že konkurs nepatrný být neměl, soud rozhodnutí bez zbytečného odkladu zruší.**",
+    "4": "**Odvolání proti rozhodnutí o nepatrném konkursu není přípustné — ale rozhodnutí musí být vždy odůvodněno.**"
+  },
+  "315": {
+    "1": "**Odchylky v nepatrném konkursu** — platí, nerozhodne-li schůze věřitelů jinak:\n\n**a)** místo výboru může být **zástupce věřitelů**,\n\n**b)** **dohoda o vypořádání SJM** nepotřebuje schválení soudu ani souhlas věřitelského orgánu (srov. § 271),\n\n**c)** **vyloučení nedobytných pohledávek a neprodejného majetku** nepotřebuje souhlas soudu ani věřitelského orgánu,\n\n**d)** o **námitkách proti konečné zprávě** lze rozhodnout **bez jednání**,\n\n**e)** na **přezkumném jednání** lze projednat i otázky schůze věřitelů a případně i **konečnou zprávu**,\n\n**f)** soud může **spojit schválení konečné zprávy s rozvrhovým usnesením** (rozvrh nabude právní moci nejdřív s právní mocí schválení zprávy).\n\nTyto odchylky lze použít i v oddlužení (§ 398 odst. 8).",
+    "2": "**Další odchylky podle soudu.** Není-li to v rozporu s rozhodnutím schůze, soud může stanovit i **další odchylky** pro rychlý a hospodárný průběh — **nesmí ale dotknout postavení zajištěných věřitelů ani zásad insolvenčního řízení**. Rozhodnout o nich může s rozhodnutím o nepatrném konkursu nebo kdykoli později."
   }
 }
