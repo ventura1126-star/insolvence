@@ -1,0 +1,418 @@
+{
+  "perex": "Kalkulace, bod zvratu, rozpočty a finanční analýza — počty, které správce potřebuje, když převezme firmu a musí rozhodnout, co s ní dál. Všechno na Truhlárně Bureš a jejích zakázkách; u každé lekce cvičení s kalkulačkou, jako u zkoušky.",
+  "lekce": [
+    {
+      "id": "kcemu",
+      "cislo": 1,
+      "nazev": "K čemu je správci manažerské účetnictví",
+      "perex": "Účetní závěrka vám řekne, kolik firma prodělala. Neřekne vám, co máte zítra ráno udělat — a to je otázka, kterou si jako správce kladete od prvního dne.",
+      "pramen": "§ 7 a § 9 odst. 4 vyhl. č. 312/2007 Sb.; § 5 písm. a), § 36 odst. 1, § 168, § 169, § 230 odst. 1, § 253, § 290 IZ; § 38 a příl. č. 4 vyhl. č. 500/2002 Sb.",
+      "body": [
+        {
+          "nadpis": "Co po vás zkouška chce",
+          "text": "Vyhláška o zkoušce insolvenčního správce (č. 312/2007 Sb.) v **§ 7 odst. 2** vyjmenovává, z čeho se zkouší. Vedle práva tam stojí **f) řízení podniku** a **g) účetnictví a financování podniku**. Odstavec 3 dodává, že tyto dvě oblasti se prověřují **„v rozsahu potřebném pro správu majetku dlužníka“** — tedy ne jako u auditora, ale tak, abyste uměl vést firmu, kterou jste právě převzal.\n\nSlovo „manažerské účetnictví“ ve vyhlášce nenajdete. Veřejná sada testových otázek z roku 2014 se ho netýká vůbec — okruh Audit zkouší finanční účetnictví: odpisy, oceňování, rozvahu. Kde se tahle látka projeví, je **případová studie** v písemné části a **ústní část**. U písemné části smíte mít znění předpisů a **kalkulátor** (§ 9 odst. 4 vyhlášky) — proto tu u každé lekce počítáte."
+        },
+        {
+          "nadpis": "Dvě účetnictví z týchž dokladů",
+          "text": "Faktura od dodavatele Hrubého za dřevotřísku je jeden papír. Účetní ho ale zapíše dvakrát, pro dva různé čtenáře.\n\n**Finanční účetnictví** píše pro lidi venku — banku, finanční úřad, věřitele, soud. Řídí ho zákon č. 563/1991 Sb. a vyhláška č. 500/2002 Sb., dívá se **zpátky**, na **celou firmu**, a jednou za rok z něj vznikne závěrka. Faktura v něm skončí v účtové skupině **50 — Spotřebované nákupy**.\n\n**Manažerské účetnictví** píše pro toho, kdo rozhoduje. Nikdo ho nepředepisuje: směrná účtová osnova (příloha č. 4 vyhlášky) mu jen vyhrazuje **účtové třídy 8 a 9 — vnitropodnikové účetnictví** a dál do něj nemluví. Dívá se **dopředu**, na **zakázky, výrobky a dílny**, a tak často, jak potřebujete. Táž faktura v něm je „materiál na kuchyně pro Rezidenci Na Výsluní“.\n\nV malé firmě, jako je Truhlárna Bureš, žádné vnitropodnikové účetnictví většinou nevede nikdo. Bureš to měl v hlavě a v sešitě. Po prohlášení konkursu to tedy musíte dát dohromady vy — z faktur, výkazů práce a toho, co vám řekne mistr."
+        },
+        {
+          "nadpis": "Proč vám nestačí výsledovka",
+          "text": "Takhle vypadá výsledovka Truhlárny za rok před konkursem — v druhovém členění, tedy podle toho, **co** se spotřebovalo (příloha č. 2 vyhlášky č. 500/2002 Sb.).\n\nŘekne vám, že firma prodělala 1,3 milionu. Neřekne vám, **na čem**. Truhlárna dělala dvě věci: kuchyně pro domácnosti a sériové dodávky pro developera. Prodělávalo obojí? Jedno táhlo druhé ke dnu? Co se stane, když jednu z nich zastavíte? Na nic z toho tabulka neodpoví — materiál, mzdy a energie jsou v ní sečtené za všechno dohromady.\n\nNepomůže ani **účelové členění**, které vyhláška dovoluje (§ 38 a příloha č. 3): náklady prodeje, odbytové a správní náklady. Je to pořád pohled na celou firmu, ne na zakázku.\n\nA hlavně je to **minulost**. O minulosti se v konkursu rozhoduje v přezkumu pohledávek. O budoucnosti rozhodujete vy — a k tomu potřebujete jiná čísla.",
+          "tabulka": {
+            "nadpis": "Truhlárna Bureš s.r.o. — výsledovka za rok před konkursem",
+            "radky": [
+              {
+                "t": "Tržby z prodeje výrobků",
+                "kc": 14200000
+              },
+              {
+                "t": "Spotřeba materiálu a energie",
+                "kc": -7900000
+              },
+              {
+                "t": "Služby",
+                "kc": -1300000
+              },
+              {
+                "t": "Osobní náklady",
+                "kc": -5300000,
+                "pozn": "11 zaměstnanců"
+              },
+              {
+                "t": "Odpisy",
+                "kc": -600000
+              },
+              {
+                "t": "Ostatní provozní náklady",
+                "kc": -100000
+              },
+              {
+                "t": "Nákladové úroky",
+                "kc": -300000,
+                "pozn": "úvěr banky se zástavou"
+              },
+              {
+                "t": "Výsledek hospodaření",
+                "kc": -1300000,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Kdy se ze správce stává manažer",
+          "text": "Měřítko máte v zákoně dvakrát. **§ 5 písm. a)**: řízení má vést k **„rychlému, hospodárnému a co nejvyššímu uspokojení věřitelů“**. **§ 36 odst. 1**: máte postupovat **s odbornou péčí** a vyvinout veškeré úsilí, aby věřitelé byli uspokojeni **v co nejvyšší míře**. Kdo pustí dílnu běžet ze setrvačnosti a prodělá na ní, tomuhle měřítku nedostál. Stejně tak ho nesplní ten, kdo ze strachu zavře dílnu, která vydělávala.\n\nNa Truhlárně to přijde v tomhle pořadí:\n\n— **Prvních 30 dní: rozdělané zakázky.** U smlouvy, kterou ještě nesplnila ani jedna strana, si podle **§ 253** vybíráte, jestli ji splníte, nebo plnění odmítnete. Když do 30 dnů od prohlášení konkursu neřeknete nic, **platí, že jste odmítl**. Na kuchyně pro developera tedy potřebujete kalkulaci hned, ne až se zorientujete. (Lekce 2 a 3.)\n\n— **Každý měsíc provozu.** Správa podstaty podle **§ 230 odst. 1** má mimo jiné vést k tomu, aby se majetek využíval podle svého určení a aby se podstata **rozmnožila, lze-li to rozumně očekávat**. Jenže provoz něco stojí. Náklady na správu podstaty jsou **pohledávky za majetkovou podstatou** (§ 168 odst. 2 písm. b)) a mzdy zaměstnanců stojí **na roveň** s nimi (§ 169 odst. 1 písm. a)). Obojí se platí přednostně před nezajištěnými věřiteli. Když dílna nevydělá na vlastní provoz, zaplatí rozdíl dodavatel Hrubý a ostatní věřitelé. (Lekce 4 a 6.)\n\n— **Prodej.** Podnik můžete zpeněžit **jedinou smlouvou** (§ 290). Běžící truhlárna se zakázkami a lidmi se prodá dráž než hala a stroje po kusech — ale jen tehdy, když provoz do prodeje ten rozdíl nesní. (Lekce 9.)"
+        },
+        {
+          "nadpis": "Tři čísla na první týden",
+          "text": "Než rozhodnete cokoli dalšího, potřebujete tři čísla. Celý kurz je vlastně o tom, jak je spočítat a jak s nimi zacházet.\n\n**1. Kolik stojí měsíc otevřené dílny** — i kdyby se nic nevyrobilo. Mzdy, pojištění, topení, ostraha. To jsou fixní náklady (lekce 2).\n\n**2. Které zakázky na sebe vydělají** — a o kolik přispějí k těm fixním nákladům. To je příspěvek na úhradu (lekce 3) a z něj bod zvratu (lekce 4).\n\n**3. Kolik bude na účtu podstaty za čtyři týdny.** Účetní zisk a peníze nejsou totéž: zakázka může být zisková, a přesto vám dojdou peníze dřív, než developer zaplatí. To je rozpočet hotovosti (lekce 6).\n\nVšechna tři čísla jsou odhady budoucnosti. Žádný zákon vám je nedá hotová a žádný auditor je nepodepíše. Proto je dobré umět je spočítat sám a umět je obhájit — před věřitelským výborem, před soudem a u zkoušky."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Za týden po prohlášení konkursu vám přijdou tři dotazy. Finanční úřad chce daňové přiznání za rok před konkursem. Developer se ptá, jestli dostane zbylé kuchyně. Banka se zástavou na hale chce vědět, kolik hala vynese. Na který dotaz odpoví účetní závěrka a na který ne?",
+          "reseni": "**Finančnímu úřadu** odpoví finanční účetnictví — přiznání k dani z příjmů vychází z výsledku hospodaření podle účetní závěrky.\n\n**Developerovi** závěrka neodpoví. Potřebujete kalkulaci dokončení jeho zakázky — tedy manažerské účetnictví (lekce 3).\n\n**Bance** neodpoví ani jedno. Hala je v rozvaze v pořizovací ceně snížené o odpisy. To je historické číslo, ne cena, za kterou ji někdo koupí. Na to potřebujete ocenění a u zkoušky se to vyplatí říct nahlas: **účetní hodnota není tržní hodnota**."
+        },
+        {
+          "zadani": "Jednatel Bureš vám řekne: „Kuchyně pro developera jsou ztrátové, účetní to spočítala. Odmítněte to.“ Na co se ho zeptáte, než mu uvěříte?",
+          "reseni": "Na dvě věci. **Jak to spočítala** — jestli je v nákladech kuchyně i podíl na nájmu, topení, mzdě mistra a účetní (tzv. režie), a podle jakého klíče. A **které z těch nákladů by zmizely, kdyby se kuchyně nedělaly**.\n\nPlná kalkulace, která rozpočítá všechny náklady na kusy, často ukáže ztrátu u zakázky, která ve skutečnosti přináší peníze — protože podstatnou část nákladů zaplatíte tak jako tak. Přesně tenhle případ spočítáte v lekci 3."
+        },
+        {
+          "zadani": "Proč nemůžete rozhodnutí o rozdělaných kuchyních pro developera odložit na dobu, „až se v tom zorientujete“?",
+          "reseni": "Protože ho za vás udělá zákon. Podle **§ 253 odst. 2** platí, že jste plnění **odmítl**, jestliže se do **30 dnů od prohlášení konkursu** nevyjádříte, že smlouvu splníte. Mlčení je tady rozhodnutí. A odmítnutí má svou cenu: developer může škodu, která mu tím vznikne, přihlásit jako pohledávku (§ 253 odst. 4), a ta se pak dělí o výtěžek s ostatními věřiteli."
+        }
+      ]
+    },
+    {
+      "id": "naklady",
+      "cislo": 2,
+      "nazev": "Náklady: co je fixní, co variabilní a co už je pryč",
+      "perex": "Každé rozhodnutí v konkursu je srovnání dvou budoucností. Rozhodují jen ty náklady, které se mezi nimi liší — a to bývá menšina z toho, co ukazuje účetnictví.",
+      "pramen": "§ 51 a § 208 zák. č. 262/2006 Sb.; § 7 zák. č. 589/1992 Sb.; § 2 zák. č. 592/1992 Sb.; § 9 zák. č. 48/1997 Sb.; § 168, § 169 IZ",
+      "body": [
+        {
+          "nadpis": "Podle druhu a podle účelu",
+          "text": "Tentýž náklad se dá zařadit dvojím způsobem.\n\n**Druhově** — co se spotřebovalo: materiál, energie, služby, mzdy, odpisy. Tak to vidí výsledovka z minulé lekce.\n\n**Účelově** — proč se to spotřebovalo. Tady je hlavní dělítko:\n\n— **Jednicové (přímé) náklady** se dají přiřadit konkrétnímu výrobku. Dřevotříska a kování na kuchyni č. 6 pro developera, hodiny truhláře, který ji skládal.\n\n— **Režijní (nepřímé) náklady** slouží všemu najednou a na kus se dají jen rozpočítat. Topení v hale, mzda mistra, pojištění, účetní. Podle toho, kde vznikají, se dělí na **výrobní režii** (dílna), **správní režii** (kancelář) a **odbytové náklady** (doprava, reklama).\n\nDruhové a účelové třídění se kříží. Mzda je druhově vždycky „osobní náklad“, účelově ale může být přímá (truhlář na zakázce) i režijní (mistr, údržbář)."
+        },
+        {
+          "nadpis": "Fixní a variabilní: co se stane, když se zastaví výroba",
+          "text": "Pro správce je důležitější jiné třídění — podle toho, jak se náklad chová, když se mění objem výroby.\n\n**Variabilní náklady** rostou a klesají s objemem. Víc kuchyní, víc dřevotřísky. Žádná kuchyň, žádná dřevotříska.\n\n**Fixní náklady** se s objemem nemění. Pojištění haly zaplatíte, ať vyrobíte deset kuchyní, nebo žádnou.\n\nNejjednodušší test je otázka: **„Kdybych zítra dílnu na měsíc zavřel, kolik z toho bych ještě zaplatil?“** Co byste zaplatil, je fixní.\n\nTruhlárna Bureš po prohlášení konkursu, měsíčně:",
+          "tabulka": {
+            "nadpis": "Fixní náklady Truhlárny za měsíc",
+            "radky": [
+              {
+                "t": "Mzdy 11 zaměstnanců (hrubé)",
+                "kc": 330000,
+                "pozn": "11 × 30 000 Kč"
+              },
+              {
+                "t": "Pojistné placené zaměstnavatelem",
+                "kc": 111540,
+                "pozn": "33,8 % z hrubých mezd"
+              },
+              {
+                "t": "Energie — pevná složka",
+                "kc": 19000,
+                "pozn": "topení, osvětlení; výpočet níže"
+              },
+              {
+                "t": "Pojištění haly a strojů",
+                "kc": 6000
+              },
+              {
+                "t": "Ostraha, účetní, telefon, software",
+                "kc": 13460
+              },
+              {
+                "t": "Fixní náklady celkem",
+                "kc": 480000,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Mzdy nejsou variabilní, ať píše učebnice cokoli",
+          "text": "V učebnicích bývají **přímé mzdy** mezi variabilními náklady: víc kusů, víc hodin, víc mzdy. To platí pro **úkolovou mzdu** a pro brigádníky. Truhláři u Bureše ale mají **časovou mzdu** — dostanou ji, ať vyrobí deset kuchyní, nebo žádnou.\n\nA když práci nemají kvůli zaměstnavateli, nedostanou nic méně. Podle **§ 208 zákoníku práce** jim při překážce na straně zaměstnavatele přísluší **náhrada mzdy ve výši průměrného výdělku**.\n\nPojistné k tomu počítejte celé. Zaměstnavatel platí **24,8 %** na sociální pojištění (§ 7 odst. 1 písm. a) zák. č. 589/1992 Sb.) a dvě třetiny z **13,5 %** na zdravotní pojištění (§ 2 odst. 1 zák. č. 592/1992 Sb. a § 9 odst. 2 zák. č. 48/1997 Sb.), tedy **9 %**. Dohromady **33,8 %** nad hrubou mzdu.\n\n**Fixní ale není navždy.** Dáte-li výpověď, mzdy po skončení výpovědní doby zmizí. Výpovědní doba je **nejméně 2 měsíce** (§ 51 odst. 2 ZP) a podle dnešního znění **začíná dnem doručení výpovědi** (§ 51 odst. 1). Mzdy jsou tedy **fixní krátkodobě a odstranitelné dlouhodobě**. Pro rozhodnutí na příští dva měsíce s nimi zacházejte jako s pevnými. Pro rozhodnutí, jestli dílnu provozovat půl roku, už ne.\n\nV konkursu k tomu přistupuje pořadí: mzdy zaměstnanců jsou pohledávky **postavené na roveň pohledávkám za majetkovou podstatou** (§ 169 odst. 1 písm. a) IZ). Platí se tedy přednostně — každá koruna z nich je o korunu méně pro nezajištěné věřitele."
+        },
+        {
+          "nadpis": "Smíšené náklady a metoda dvou období",
+          "text": "Některé náklady jsou napůl. Elektřina v hale má **pevnou složku** (topení, osvětlení, kompresor naprázdno) a **proměnnou složku**, která roste s tím, kolik hodin běží stroje.\n\nNejjednodušší způsob, jak je rozdělit, je **metoda dvou období**. Vezmete měsíc s vysokým a měsíc s nízkým objemem:\n\n— **duben:** stroje běžely 1 400 hodin, elektřina stála 61 000 Kč,\n\n— **květen:** stroje běžely 600 hodin, elektřina stála 37 000 Kč.\n\n**Variabilní složka** je rozdíl nákladů dělený rozdílem objemu: (61 000 − 37 000) / (1 400 − 600) = 24 000 / 800 = **30 Kč za strojhodinu**.\n\n**Fixní složka** je to, co zbude, když z kteréhokoli měsíce odečtete variabilní část: 61 000 − 1 400 × 30 = **19 000 Kč měsíčně**.\n\nRovnice nákladů na elektřinu je tedy **N = 19 000 + 30 × h**.\n\nPozor na to, které měsíce vyberete. Kdybyste srovnal leden s červnem, započítal byste do „strojů“ i topení. Metoda dvou období věří jen dvěma bodům. Když jich máte víc, je spolehlivější proložit jimi přímku (regrese), ale u zkoušky se počítá právě takhle."
+        },
+        {
+          "nadpis": "Relevantní, utopené a oportunitní náklady",
+          "text": "Teď to nejdůležitější. Rozhodnutí je vždycky volba mezi variantami — dokončit, nebo nedokončit; provozovat, nebo zavřít. **Relevantní** jsou jen ty náklady a příjmy, které\n\n— **teprve nastanou**, a\n\n— **liší se mezi variantami**.\n\nVšechno ostatní z výpočtu vyhoďte, i když to v účetnictví vypadá důležitě.\n\n**Utopené náklady** jsou peníze, které už jsou pryč a žádné rozhodnutí je nevrátí. Truhlárna před konkursem koupila na developerské kuchyně dřevotřísku a kování za **140 000 Kč**. Ta částka je utopená. Kolik jste za materiál zaplatil, je pro rozhodnutí lhostejné.\n\nNa čem záleží, je **oportunitní náklad** — co byste za ten materiál dostal, kdybyste ho nepoužil. Jiná truhlárna nabízí, že ho celý odkoupí za **60 000 Kč**. Když ho spotřebujete na kuchyně, přicházíte právě o těchto 60 000 Kč. **Relevantní náklad materiálu ze skladu je tedy 60 000 Kč**, ne 140 000.\n\nStejně se zachází s dalšími položkami:\n\n— **Odpisy** jsou rozpouštění dávno zaplacené pořizovací ceny. Nejsou to peníze, které teď odcházejí. Pro rozhodnutí o provozu jsou irelevantní. Relevantní je jen to, o kolik stroje ztratí na prodejní hodnotě, když na nich budete dál pracovat.\n\n— **Mzdy ve výpovědní době** zaplatíte, ať zakázku dokončíte, nebo ne (§ 208 ZP). Pro rozhodnutí o zakázce, která se do výpovědní doby vejde, jsou irelevantní.\n\n— **Pojištění haly** je fixní a zaplatíte ho v obou variantách. Irelevantní."
+        },
+        {
+          "nadpis": "Proč na tom v konkursu záleží víc než jinde",
+          "text": "Jednatel, účetní i věřitelé vám budou nosit čísla z účetnictví. **„Materiál stál 140 tisíc, to přece nevyhodíme.“ „Kuchyně stojí 91 tisíc a developer platí 88, prodělá se na každé.“** Obě věty znějí rozumně a obě vedou ke špatnému rozhodnutí.\n\nV běžné firmě se taková chyba rozpustí v dalších zakázkách. V konkursu jde každá koruna rovnou z podstaty, tedy z kapsy věřitelů. Váš standard je **odborná péče** (§ 36 odst. 1 IZ). Když věřitelský výbor nebo soud chce vědět, proč jste rozhodl tak, jak jste rozhodl, musíte umět ukázat výpočet, ve kterém jsou jen relevantní položky. A u každé, kterou jste vyškrtl, musíte umět říct proč."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "V dubnu běžely stroje Truhlárny 1 400 hodin a elektřina stála 61 000 Kč. V květnu 600 hodin a 37 000 Kč. Kolik stojí elektřina na jednu strojhodinu (variabilní složka)?",
+          "odpoved": 30,
+          "jednotka": "Kč/h",
+          "vzorec": "(61000 - 37000) / (1400 - 600)",
+          "reseni": "Rozdíl nákladů dělený rozdílem objemu: (61 000 − 37 000) / (1 400 − 600) = 24 000 / 800 = **30 Kč za strojhodinu**."
+        },
+        {
+          "zadani": "Se stejnými údaji: jaká je měsíční fixní složka nákladů na elektřinu?",
+          "odpoved": 19000,
+          "jednotka": "Kč",
+          "vzorec": "61000 - 1400 * 30",
+          "reseni": "Z kteréhokoli měsíce odečtěte variabilní část: 61 000 − 1 400 × 30 = **19 000 Kč**. Pro kontrolu z května: 37 000 − 600 × 30 = 19 000 Kč. Musí to vyjít stejně."
+        },
+        {
+          "zadani": "V červnu dílna dokončuje jen zbytek zakázek a stroje poběží 900 hodin. Kolik zaplatíte za elektřinu?",
+          "odpoved": 46000,
+          "jednotka": "Kč",
+          "vzorec": "19000 + 900 * 30",
+          "reseni": "N = 19 000 + 30 × 900 = 19 000 + 27 000 = **46 000 Kč**."
+        },
+        {
+          "zadani": "Počítejte s hrubou mzdou 30 000 Kč. Kolik stojí Truhlárnu měsíčně 11 zaměstnanců s touto mzdou, včetně pojistného placeného zaměstnavatelem (sociální 24,8 %, zdravotní 9 %)?",
+          "odpoved": 441540,
+          "jednotka": "Kč",
+          "vzorec": "11 * 30000 * (1 + 0.248 + 0.09)",
+          "reseni": "11 × 30 000 = 330 000 Kč hrubých mezd. Pojistné 33,8 % = 111 540 Kč. Celkem **441 540 Kč** měsíčně.\n\nA to platíte i v měsíci, kdy dílna stojí — při překážce na straně zaměstnavatele jde o náhradu mzdy ve výši průměrného výdělku (§ 208 ZP)."
+        },
+        {
+          "zadani": "Na skladě leží materiál na developerské kuchyně. Truhlárna ho koupila za 140 000 Kč. Účetní k němu loni vytvořila opravnou položku, takže v rozvaze je za 100 000 Kč. Jiná truhlárna ho odkoupí za 60 000 Kč. S jakou částkou počítáte jako s nákladem materiálu, když rozhodujete, jestli kuchyně dokončit?",
+          "odpoved": 60000,
+          "jednotka": "Kč",
+          "vzorec": "60000",
+          "reseni": "**60 000 Kč** — to je oportunitní náklad, tedy co obětujete, když materiál spotřebujete místo toho, abyste ho prodal.\n\n140 000 Kč je utopený náklad: ty peníze jsou pryč v obou variantách. 100 000 Kč je účetní ocenění — také jen odraz minulosti. Ani jedno z toho se mezi variantami „dokončit“ a „nedokončit“ neliší, takže to do rozhodnutí nepatří."
+        },
+        {
+          "zadani": "Zařaďte pro Truhlárnu po prohlášení konkursu: (a) kování na kuchyni č. 6, (b) mzda truhláře v časové mzdě, (c) odpisy haly, (d) elektřina na pohon CNC, (e) pojištění haly, (f) doprava hotové kuchyně na stavbu.",
+          "reseni": "**(a) kování** — přímý, variabilní, peněžní.\n\n**(b) mzda truhláře** — účelově přímý (pracuje na konkrétní kuchyni), ale **chováním fixní**: při časové mzdě se nemění s počtem kuchyní a v nečinnosti se platí náhrada (§ 208 ZP). Dlouhodobě odstranitelný výpovědí.\n\n**(c) odpisy haly** — režijní, fixní, **nepeněžní**. Pro rozhodnutí o provozu irelevantní.\n\n**(d) elektřina na CNC** — variabilní složka smíšeného nákladu (30 Kč za strojhodinu), výrobní režie, peněžní.\n\n**(e) pojištění** — režijní, fixní, peněžní. Zaplatíte ho, ať dílna jede, nebo stojí.\n\n**(f) doprava** — odbytový náklad, variabilní (na každou kuchyň jedna jízda), peněžní."
+        }
+      ]
+    },
+    {
+      "id": "kalkulace",
+      "cislo": 3,
+      "nazev": "Kalkulace a příspěvek na úhradu",
+      "perex": "Kolik stojí jedna kuchyň? Na tu otázku jsou dvě správné odpovědi. Z té první se sestavuje cena, z té druhé se rozhoduje. Kdo je zamění, odmítne zakázku, která by podstatě přinesla čtyři sta tisíc.",
+      "pramen": "§ 253 IZ; § 25 odst. 1 písm. d) a odst. 5 písm. c) zák. č. 563/1991 Sb.",
+      "body": [
+        {
+          "nadpis": "Kalkulační vzorec",
+          "text": "**Kalkulace** je výpočet nákladů na jeden výrobek nebo zakázku. V Česku se k tomu tradičně používá **typový kalkulační vzorec**. Žádný předpis ho dnes nepřikazuje, firmy si ho upravují, ale kostra je pořád stejná a u zkoušky se s ní počítá.\n\nKuchyň pro developera z Rezidence Na Výsluní podle kalkulace, kterou má Bureš v šuplíku:",
+          "tabulka": {
+            "nadpis": "Kalkulace jedné developerské kuchyně",
+            "radky": [
+              {
+                "t": "Přímý materiál",
+                "kc": 38000,
+                "pozn": "dřevotříska, kování, pracovní deska"
+              },
+              {
+                "t": "Přímé mzdy",
+                "kc": 15000
+              },
+              {
+                "t": "Ostatní přímé náklady",
+                "kc": 5070,
+                "pozn": "pojistné 33,8 % z přímých mezd"
+              },
+              {
+                "t": "Výrobní režie",
+                "kc": 22500,
+                "pozn": "150 % přímých mezd"
+              },
+              {
+                "t": "Vlastní náklady výroby",
+                "kc": 80570,
+                "soucet": true
+              },
+              {
+                "t": "Správní režie",
+                "kc": 8057,
+                "pozn": "10 % vlastních nákladů výroby"
+              },
+              {
+                "t": "Vlastní náklady výkonu",
+                "kc": 88627,
+                "soucet": true
+              },
+              {
+                "t": "Odbytové náklady",
+                "kc": 3000,
+                "pozn": "doprava na stavbu"
+              },
+              {
+                "t": "Úplné vlastní náklady výkonu",
+                "kc": 91627,
+                "soucet": true
+              },
+              {
+                "t": "Zisk (ztráta)",
+                "kc": -3627
+              },
+              {
+                "t": "Cena bez DPH",
+                "kc": 88000,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Jak se do jedné kuchyně dostane topení v hale",
+          "text": "Přímý materiál a přímé mzdy se změří na kuchyni samotné. Režie ne — tu je potřeba na kuchyně **rozpočítat**. Nejběžnější je **přirážková kalkulace**: zvolíte rozvrhovou základnu, typicky přímé mzdy, a spočítáte, kolik režie připadá na korunu základny.\n\nTruhlárna měla za loňský rok **výrobní režii 2,7 milionu** (mzdy mistra a údržbáře, nevyužitý čas truhlářů, topení, energie, odpisy strojů, opravy) a **přímé mzdy 1,8 milionu**. Přirážka výrobní režie je tedy 2,7 / 1,8 = **150 %**. Na kuchyň s přímými mzdami 15 000 Kč připadne 22 500 Kč výrobní režie.\n\nTaková kalkulace je dobrá na dvě věci. Na **cenu** — dlouhodobě musí cena pokrýt všechno, i topení. A na **ocenění zásob** v účetnictví (k tomu bod 5).\n\nMá ale dvě slabiny. **Klíč je libovolný**: kdyby režie šla podle strojhodin, vyšla by jiná čísla. A hlavně: **režie se rozpočítá, i když by nezmizela.** Těch 22 500 Kč výrobní režie na kuchyň je podíl na nákladech, které Truhlárna platí, ať kuchyni vyrobí, nebo ne."
+        },
+        {
+          "nadpis": "Plná kalkulace klame, když se z ní rozhoduje",
+          "text": "Podle kalkulace stojí developerská kuchyň **91 627 Kč** a developer za ni platí **88 000 Kč**. Na každé kuchyni se tedy prodělá 3 627 Kč — a Bureš z toho vyvozuje, že zakázka je ztrátová.\n\nJenže kolik z těch 91 627 Kč by **skutečně zmizelo**, kdyby se kuchyň nevyrobila? Materiál, energie na stroje (60 strojhodin po 30 Kč) a doprava. Mzdy truhlářů ne — mají časovou mzdu. Režie ne — topení, mistr i pojištění běží dál. Správní režie také ne.\n\nTo, co se s jednou kuchyní skutečně mění, ukazuje **kalkulace neúplných (variabilních) nákladů**. Rozdíl mezi cenou a variabilními náklady se jmenuje **příspěvek na úhradu** (také krycí příspěvek nebo marže). Je to částka, kterou každá kuchyň přinese na krytí fixních nákladů — a teprve po jejich pokrytí na zisk.\n\n**Kuchyň s kladným příspěvkem na úhradu se vyplatí vyrobit, pokud na ni máte volnou kapacitu** — bez ohledu na to, co říká plná kalkulace. Bez ní by fixní náklady zůstaly stejné a chybělo by 45 200 Kč na jejich krytí.",
+          "tabulka": {
+            "nadpis": "Táž kuchyň — kalkulace variabilních nákladů",
+            "radky": [
+              {
+                "t": "Cena bez DPH",
+                "kc": 88000
+              },
+              {
+                "t": "Přímý materiál",
+                "kc": -38000
+              },
+              {
+                "t": "Energie strojů",
+                "kc": -1800,
+                "pozn": "60 strojhodin × 30 Kč"
+              },
+              {
+                "t": "Doprava na stavbu",
+                "kc": -3000
+              },
+              {
+                "t": "Příspěvek na úhradu",
+                "kc": 45200,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Rozhodnutí podle § 253: kuchyně pro developera",
+          "text": "Teď to dáme dohromady na rozhodnutí, které máte na stole.\n\nDeveloper objednal **12 kuchyní po 88 000 Kč**. Před zahájením řízení dostal a zaplatil 5. Zbývá **7 kuchyní**. Smlouvu tedy ještě nesplnila ani Truhlárna, ani developer, a podle **§ 253 odst. 1** si vybíráte: splnit, nebo plnění odmítnout. Máte na to **30 dní** od prohlášení konkursu.\n\nVšech 11 zaměstnanců je ve výpovědní době, protože podnik se bude prodávat a dílnu dlouho držet nechcete. Sedm kuchyní je asi na měsíc práce — vejde se to do výpovědní doby. **Mzdy jsou tedy pro rozhodnutí irelevantní**: zaplatíte je tak jako tak, jen jednou za práci a podruhé jako náhradu mzdy.\n\nNa sedm kuchyní je potřeba 7 × 38 000 = 266 000 Kč materiálu. Na skladě leží materiál, který stál 140 000 Kč a prodal by se za 60 000 Kč (lekce 2). Zbytek, tedy 126 000 Kč, musíte dokoupit.\n\nSrovnání s plnou kalkulací: ta říká 7 × (−3 627) = **−25 389 Kč**, tedy odmítnout. Rozdíl mezi oběma pohledy je přes **420 000 Kč** a ty by zaplatili věřitelé.\n\nPodmínky, které musíte ověřit, než podepíšete splnění:\n\n— **Mzdy jsou irelevantní jen ve výpovědní době.** Kdyby se zakázka táhla déle, nebo kdybyste kvůli ní musel někoho držet, kdo by jinak odešel, jsou jeho mzdy relevantní.\n\n— **Smlouva.** Smluvní pokuty za zpoždění, zádržné, právo developera započíst si protipohledávky. To všechno snižuje příjem.\n\n— **Hotovost.** Materiál za 126 000 Kč platíte hned, developer zaplatí až po dodání. Musí na to být na účtu podstaty peníze (lekce 6).\n\n— **Druhá strana odmítnutí.** Kdybyste plnění odmítl, developer přihlásí náhradu škody jako pohledávku (§ 253 odst. 4). Ta se pak dělí o výtěžek s ostatními věřiteli.\n\n— **DPH** je v tabulce vynechaná schválně. Daň na výstupu odvedete a je to pohledávka za majetkovou podstatou (§ 168 odst. 2 písm. e)). Rozhoduje se z cen bez daně.",
+          "tabulka": {
+            "nadpis": "Co přinese splnění zbylých 7 kuchyní — jen relevantní položky",
+            "radky": [
+              {
+                "t": "Příjem od developera",
+                "kc": 616000,
+                "pozn": "7 × 88 000"
+              },
+              {
+                "t": "Materiál ze skladu",
+                "kc": -60000,
+                "pozn": "co by vynesl prodej, ne co stál"
+              },
+              {
+                "t": "Dokoupený materiál",
+                "kc": -126000,
+                "pozn": "266 000 − 140 000"
+              },
+              {
+                "t": "Energie strojů",
+                "kc": -12600,
+                "pozn": "7 × 1 800"
+              },
+              {
+                "t": "Doprava",
+                "kc": -21000,
+                "pozn": "7 × 3 000"
+              },
+              {
+                "t": "Mzdy",
+                "kc": 0,
+                "pozn": "výpovědní doba — zaplatí se v obou variantách"
+              },
+              {
+                "t": "Přínos pro podstatu",
+                "kc": 396400,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Kalkulace v účetnictví: za kolik je rozdělaná kuchyň v rozvaze",
+          "text": "Kalkulační vzorec má i druhou, čistě účetní roli — a ta se u zkoušky potkává s okruhem Audit.\n\nZásoby vytvořené vlastní činností — tedy i **nedokončená výroba** a **hotové výrobky** — se podle **§ 25 odst. 1 písm. d) zákona o účetnictví** oceňují **vlastními náklady**. Co se tím rozumí, říká **§ 25 odst. 5 písm. c)**: **přímé náklady** vynaložené na výrobu, **popřípadě i přiřaditelné nepřímé náklady, které se vztahují k výrobě**.\n\nV kalkulačním vzorci to odpovídá řádku **vlastní náklady výroby** (80 570 Kč u hotové kuchyně). Správní režie a odbytové náklady se k výrobě nevztahují, takže do ocenění nepatří. Zisk už vůbec ne.\n\nPro vás jako správce z toho plyne praktická věc. Když sepisujete podstatu a v účetnictví najdete **nedokončenou výrobu za 400 000 Kč**, znamená to, kolik se do ní **vložilo** — ne kolik za ni někdo **dá**. Půl hotová kuchyň na míru konkrétnímu bytu má pro cizího kupce hodnotu blízkou materiálu, často ještě nižší. Jakou hodnotu má doopravdy, se ukáže jen srovnáním variant: dokončit a prodat, nebo prodat tak, jak je."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Kuchyň pro soukromou zákaznici: přímý materiál 42 000 Kč, přímé mzdy 16 000 Kč, pojistné 33,8 % z přímých mezd, výrobní režie 150 % přímých mezd. Jaké jsou vlastní náklady výroby?",
+          "odpoved": 87408,
+          "jednotka": "Kč",
+          "vzorec": "42000 + 16000 + 16000 * 0.338 + 16000 * 1.5",
+          "reseni": "42 000 + 16 000 + 5 408 (pojistné) + 24 000 (výrobní režie) = **87 408 Kč**.\n\nTo je zároveň částka, za kterou by hotová kuchyň ležela v rozvaze jako výrobek (§ 25 odst. 5 písm. c) ZoÚ)."
+        },
+        {
+          "zadani": "Táž kuchyň se prodává za 120 000 Kč bez DPH. Stroje na ní poběží 70 hodin (30 Kč za strojhodinu), doprava stojí 3 000 Kč. Truhláři mají časovou mzdu. Jaký je příspěvek na úhradu?",
+          "odpoved": 72900,
+          "jednotka": "Kč",
+          "vzorec": "120000 - 42000 - 70 * 30 - 3000",
+          "reseni": "120 000 − 42 000 (materiál) − 2 100 (energie) − 3 000 (doprava) = **72 900 Kč**.\n\nMzdy do variabilních nákladů nepatří — při časové mzdě se nezmění, ať kuchyň uděláte, nebo ne."
+        },
+        {
+          "zadani": "Fixní náklady Truhlárny jsou 480 000 Kč měsíčně, developerská kuchyň má příspěvek na úhradu 45 200 Kč. Kolik developerských kuchyní by musela dílna měsíčně vyrobit a prodat, aby pokryla fixní náklady?",
+          "odpoved": 11,
+          "jednotka": "ks",
+          "tolerance": 0,
+          "vzorec": "ceil(480000 / 45200)",
+          "reseni": "480 000 / 45 200 = 10,6 — tedy **11 kuchyní** měsíčně. Deset nestačí.\n\nTo je **bod zvratu** a je to téma příští lekce. Všimněte si, co z něj plyne: sedm zbylých kuchyní pro developera samo provoz neuživí. Má smysl je dodělat, protože mzdy stejně platíte, ale dílnu kvůli nim déle držet nelze."
+        },
+        {
+          "zadani": "Během výpovědní doby přijde jiný developer: chce 4 kuchyně po 70 000 Kč bez DPH, tedy hluboko pod plnými náklady. Dílna má volné ruce a vejde se to do výpovědní doby. Na kuchyň je potřeba materiál za 38 000 Kč (nakoupit), energie 1 800 Kč a doprava 3 000 Kč. O kolik se díky zakázce zvětší podstata?",
+          "odpoved": 108800,
+          "jednotka": "Kč",
+          "vzorec": "4 * (70000 - 38000 - 1800 - 3000)",
+          "reseni": "Příspěvek na kuchyň: 70 000 − 38 000 − 1 800 − 3 000 = 27 200 Kč. Za čtyři kuchyně **108 800 Kč**.\n\nPlná kalkulace by ukázala ztrátu přes 21 000 Kč na kuchyni. Jenže mzdy a režii platíte tak jako tak. Dokud je kapacita volná, platí: **každá zakázka s kladným příspěvkem na úhradu zvětšuje podstatu.**\n\nPozor jen na to, co vyráběním za tuhle cenu obětujete. Kdyby se kvůli tomu nestihla lepší zakázka, nebo kdyby to zdrželo prodej podniku, je to oportunitní náklad a patří do výpočtu."
+        },
+        {
+          "zadani": "Bureš argumentuje: „Když dílna dělá míň kuchyní, vychází každá dráž — režie je pořád stejná a rozpočítá se na míň kusů. Musíme zdražit.“ Má pravdu?",
+          "reseni": "Napůl. **Aritmeticky ano**: když se fixní režie rozpočítá na méně kusů, plné náklady na kus rostou.\n\n**Závěr je ale nebezpečný.** Zdražíte, prodáte ještě míň, režie na kus vyroste znovu, zdražíte znovu. V učebnicích se tomu říká **spirála smrti**.\n\nO ceně jedné zakázky rozhoduje to, jestli má kladný příspěvek na úhradu a jestli je volná kapacita — ne to, kolik na ni padne rozpočítané režie. Problém „málo kusů“ se neřeší cenou jedné zakázky. Řeší se otázkou, jestli celý provoz vůbec dosáhne bodu zvratu."
+        },
+        {
+          "zadani": "V rozvaze je rozdělaná kuchyň za 52 000 Kč (vlastní náklady vynaložené do dneška). Kupec z bazaru za ni nabízí 15 000 Kč. Dokončit ji nemá kdo — truhláři už odešli. Je účetní hodnota důvod nabídku odmítnout?",
+          "reseni": "Ne. **52 000 Kč je utopený náklad** — je to, co do kuchyně kdysi šlo, ne co za ni dnes někdo dá. Rozhoduje srovnání variant, které reálně máte: prodat za 15 000 Kč, nebo čekat na lepšího kupce, a mezitím platit sklad a riskovat, že nepřijde nikdo.\n\nÚčetně vznikne ztráta 37 000 Kč. To je ale jen přiznání toho, že účetní ocenění bylo vyšší než skutečná hodnota. Ta ztráta nevznikla prodejem — vznikla dávno předtím."
+        }
+      ]
+    }
+  ],
+  "pripravuje_se": [
+    {
+      "cislo": 4,
+      "nazev": "Bod zvratu a provozní páka"
+    },
+    {
+      "cislo": 5,
+      "nazev": "Krátkodobá rozhodnutí: zakázka pod cenou, vyrobit nebo koupit, zavřít provoz"
+    },
+    {
+      "cislo": 6,
+      "nazev": "Rozpočet hotovosti a likvidní plán"
+    },
+    {
+      "cislo": 7,
+      "nazev": "Střediska, vnitropodnikové ceny a odchylky"
+    },
+    {
+      "cislo": 8,
+      "nazev": "Finanční analýza: likvidita, zadluženost, rentabilita"
+    },
+    {
+      "cislo": 9,
+      "nazev": "Financování a ocenění podniku"
+    },
+    {
+      "cislo": 10,
+      "nazev": "Souhrnná případová studie"
+    }
+  ]
+}

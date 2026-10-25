@@ -996,6 +996,58 @@
     * { animation: none !important; transition: none !important; }
   }
 
+  /* ---- manažerské účetnictví -------------------------------------------
+     Lekce se počítají, takže mají tabulky s penězi. Čísla jsou zarovnaná
+     doprava a stejně široká, součtové řádky oddělené linkou nad sebou —
+     jak to člověk zná z kalkulace na papíře. */
+  .radek-planovany { cursor: default; color: var(--tlum); }
+  .radek-planovany:hover { background: none; }
+  .radek-planovany .radek-cislo { color: var(--tlum); }
+  .ucet-obal { margin: 1rem 0 .2rem; overflow-x: auto; }
+  .ucet-tabulka {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .9rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .ucet-tabulka caption {
+    text-align: left;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--pecet);
+    padding-bottom: .45rem;
+  }
+  .ucet-tabulka td {
+    padding: .4rem .2rem;
+    border-bottom: 1px solid var(--linka);
+    vertical-align: baseline;
+  }
+  .ucet-tabulka td.kc { text-align: right; white-space: nowrap; padding-left: .8rem; }
+  .ucet-pozn { display: block; font-size: .78rem; color: var(--tlum); margin-top: .1rem; }
+  .ucet-tabulka tr.soucet td {
+    font-weight: 600;
+    border-top: 1.5px solid var(--inkoust);
+  }
+  .uloha-vstup { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .2rem 0 .5rem; }
+  .uloha-vstup input {
+    width: 9.5rem;
+    font: inherit;
+    font-variant-numeric: tabular-nums;
+    padding: .4rem .55rem;
+    border: 1px solid var(--linka);
+    border-radius: .45rem;
+    background: var(--plocha);
+    color: var(--inkoust);
+  }
+  .uloha-vstup input:focus-visible { outline: 2px solid var(--pecet); outline-offset: 1px; }
+  .uloha-jednotka { color: var(--tlum); font-size: .9rem; }
+  .uloha-verdikt { font-size: .9rem; margin: 0 0 .5rem; }
+  .uloha-verdikt.ok { color: var(--hra-dobre); }
+  .uloha-verdikt.ne { color: var(--hra-kriticke); }
+  .uloha-tlacitka { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .5rem; }
+
   /* ---- tisk ------------------------------------------------------------
      Na papír se nekreslí obrazovka, ale vlastní sazba: žádné plochy (jsou
      to litry inkoustu a na tiskárně stejně vypadnou), místo nich linky.
@@ -1121,6 +1173,7 @@
 <script src="hra3.js"></script>
 <script src="lhuty.js"></script>
 <script src="uvody.js"></script>
+<script src="ucetnictvi.js"></script>
 <script>
 (function () {
   'use strict';
@@ -1139,6 +1192,8 @@
   // Laický úvod k hlavě. Čte se dřív než paragrafy — vysvětluje, o čem ta
   // hlava vlastně je, aby se dal zbytek číst s pochopením souvislostí.
   var UVODY = window.UVODY || [];
+  // Manažerské účetnictví: lekce s výkladem, tabulkami a cvičeními k počítání.
+  var UCETNICTVI = window.UCETNICTVI || null;
   var BEZ_CISLA = '-';
 
   // Schopnosti dorazí až po chvíli a nemusí dorazit vůbec (jiný prohlížeč,
@@ -1357,6 +1412,14 @@
           LHUTY.lhuty.length + ' lhůt · u ' + zanik + ' zaniká právo', '#lhuty'));
       }
 
+      if (UCETNICTVI) {
+        var napsano = UCETNICTVI.lekce.length;
+        var vsech = napsano + (UCETNICTVI.pripravuje_se || []).length;
+        mriz.appendChild(dlazdiceRozcestniku('Manažerské účetnictví',
+          'Kalkulace, bod zvratu, rozpočty — počty, které správce potřebuje, když převezme firmu.',
+          napsano + ' z ' + vsech + ' lekcí · ' + pocetCviceni() + ' cvičení', '#ucetnictvi'));
+      }
+
       if (SPISY.length) {
         var rozehrano = 0, hotovych = 0;
         var puvodni = HRA;
@@ -1393,7 +1456,8 @@
 
       var h = bezDiakritiky(text || '').trim();
       var temata = hledejTemata(h);
-      if (!nalez.length && !temata.length) {
+      var lekce = hledejLekce(h);
+      if (!nalez.length && !temata.length && !lekce.length) {
         vypis.appendChild(el('p', 'prazdno', 'Nic takového tu není.'));
         return;
       }
@@ -1401,8 +1465,12 @@
         vypis.appendChild(el('h2', 'cast', 'Mimo insolvenční zákon'));
         temata.forEach(function (t) { vypis.appendChild(radekTematu(t)); });
       }
+      if (lekce.length) {
+        vypis.appendChild(el('h2', 'cast', 'Manažerské účetnictví'));
+        lekce.forEach(function (l) { vypis.appendChild(radekLekce(l)); });
+      }
       if (nalez.length) {
-        if (temata.length) vypis.appendChild(el('h2', 'cast', 'Insolvenční zákon'));
+        if (temata.length || lekce.length) vypis.appendChild(el('h2', 'cast', 'Insolvenční zákon'));
         nalez.forEach(function (p) { vypis.appendChild(radekParagrafu(p)); });
       }
     }
@@ -2028,6 +2096,24 @@
   function mistoVlakna(puvodniKlic) {
     var klic = mistoZKlice(puvodniKlic);
     var poradi = cisloVlakna(puvodniKlic);
+    if (klic.indexOf('m-') === 0) {
+      // „m-kalkulace-3" je bod 3 lekce, „m-kalkulace-c3" její cvičení 3.
+      var zb = klic.slice(2);
+      var dl = zb.lastIndexOf('-');
+      var l = lekcePodleId(zb.slice(0, dl));
+      var kus = zb.slice(dl + 1);
+      var jeCviceni = kus.charAt(0) === 'c';
+      var poz = Number(jeCviceni ? kus.slice(1) : kus);
+      var polozka = l && (jeCviceni ? (l.cviceni || [])[poz] : l.body[poz]);
+      if (!polozka) return null;
+      return {
+        druh: 'ucetnictvi',
+        hash: '#ucetnictvi-' + l.id,
+        kde: 'Lekce ' + l.cislo + ' — ' + l.nazev,
+        bod: (jeCviceni ? 'Cvičení ' + (poz + 1) : polozka.nadpis) +
+          (poradi > 1 ? ' · ' + poradi + '. konverzace' : '')
+      };
+    }
     if (klic.indexOf('t-') === 0) {
       var zbytek = klic.slice(2);
       var del = zbytek.lastIndexOf('-');
@@ -2120,7 +2206,8 @@
         if (r.misto.druh !== druh && !h) {
           druh = r.misto.druh;
           vypis.appendChild(el('h2', 'cast',
-            druh === 'tema' ? 'Mimo insolvenční zákon' : 'Insolvenční zákon'));
+            druh === 'tema' ? 'Mimo insolvenční zákon' :
+            druh === 'ucetnictvi' ? 'Manažerské účetnictví' : 'Insolvenční zákon'));
         }
         var b = el('button', 'radek radek-vlakno');
         b.type = 'button';
@@ -2525,6 +2612,276 @@
       dopredu.type = 'button';
       dopredu.textContent = TEMATA[i2 + 1].nazev + ' →';
       dopredu.addEventListener('click', function () { location.hash = '#t' + TEMATA[i2 + 1].id; });
+      prechod.appendChild(dopredu);
+    }
+    hlavni.appendChild(prechod);
+    window.scrollTo(0, 0);
+    dootevri();
+  }
+
+  /* ---- manažerské účetnictví --------------------------------------------
+     Lekce jsou psané jako témata — body s výkladem a rozhovorem — a navíc
+     mají tabulky s čísly a cvičení. U cvičení s číselnou odpovědí si člověk
+     výsledek napíše a nechá zkontrolovat; počítá se s kalkulačkou, jako u
+     písemné části zkoušky. Postup se dá odkrýt i bez toho. */
+
+  function lekcePodleId(id) {
+    var l = UCETNICTVI ? UCETNICTVI.lekce : [];
+    for (var i = 0; i < l.length; i += 1) if (l[i].id === id) return l[i];
+    return null;
+  }
+
+  function pocetCviceni() {
+    return UCETNICTVI.lekce.reduce(function (n, l) { return n + (l.cviceni || []).length; }, 0);
+  }
+
+  function hledejLekce(h) {
+    if (!UCETNICTVI || h.length < 2) return [];
+    return UCETNICTVI.lekce.filter(function (l) {
+      var vse = l.nazev + ' ' + l.perex + ' ' + l.pramen + ' ' +
+        l.body.map(function (b) { return b.nadpis + ' ' + b.text; }).join(' ') + ' ' +
+        (l.cviceni || []).map(function (c) { return c.zadani + ' ' + c.reseni; }).join(' ');
+      return bezDiakritiky(vse).indexOf(h) >= 0;
+    });
+  }
+
+  function radekLekce(l) {
+    var b = el('button', 'radek');
+    b.type = 'button';
+    b.appendChild(el('span', 'radek-cislo', String(l.cislo)));
+    b.appendChild(el('span', 'radek-nazev', l.nazev));
+    b.appendChild(el('span', 'radek-pramen', (l.cviceni || []).length + ' cvičení'));
+    b.addEventListener('click', function () { location.hash = '#ucetnictvi-' + l.id; });
+    return b;
+  }
+
+  /** Částka po česku: mezery mezi tisíci, desetinná čárka, opravdové minus. */
+  function korun(n) {
+    var abs = Math.abs(n);
+    var cele = Math.floor(abs);
+    var zbytek = Math.round((abs - cele) * 100);
+    var text = String(cele).replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    if (zbytek) text += ',' + (zbytek < 10 ? '0' : '') + zbytek;
+    return (n < 0 ? '−' : '') + text;
+  }
+
+  function tabulkaLekce(tab) {
+    var obal = el('div', 'ucet-obal');
+    var t = el('table', 'ucet-tabulka');
+    if (tab.nadpis) t.appendChild(el('caption', null, tab.nadpis));
+    var telo = el('tbody');
+    tab.radky.forEach(function (r) {
+      var tr = el('tr', r.soucet ? 'soucet' : null);
+      var popis = el('td');
+      popis.appendChild(document.createTextNode(r.t));
+      if (r.pozn) popis.appendChild(el('span', 'ucet-pozn', r.pozn));
+      tr.appendChild(popis);
+      tr.appendChild(el('td', 'kc', korun(r.kc)));
+      telo.appendChild(tr);
+    });
+    t.appendChild(telo);
+    obal.appendChild(t);
+    return obal;
+  }
+
+  /** Napsané číslo — s mezerami, čárkou i „Kč" za ním. NaN, když to číslo není. */
+  function prectiCislo(text) {
+    var t = text.replace(/[\s  ]/g, '').replace(/kč$/i, '')
+      .replace(/−/g, '-').replace(',', '.');
+    return t === '' ? NaN : Number(t);
+  }
+
+  function ulohaLekce(l, c, i) {
+    var polozka = el('div', 'uloha');
+    polozka.appendChild(el('p', 'uloha-zadani', (i + 1) + '. ' + c.zadani));
+
+    var reseni = el('div', 'uloha-reseni');
+    reseni.hidden = true;
+    if (c.odpoved != null) {
+      reseni.appendChild(el('div', 'uloha-typ',
+        'Výsledek: ' + korun(c.odpoved) + (c.jednotka ? ' ' + c.jednotka : '')));
+    }
+    vlozText(reseni, c.reseni);
+
+    var odkryt = el('button', 'rozbal');
+    odkryt.type = 'button';
+    odkryt.textContent = c.odpoved != null ? 'Ukázat postup' : 'Odkrýt odpověď';
+    function ukaz() { reseni.hidden = false; odkryt.hidden = true; }
+    odkryt.addEventListener('click', ukaz);
+
+    if (c.odpoved != null) {
+      var radek = el('div', 'uloha-vstup');
+      var pole = el('input');
+      pole.type = 'text';
+      pole.inputMode = 'decimal';
+      pole.autocomplete = 'off';
+      pole.placeholder = 'Váš výsledek';
+      pole.setAttribute('aria-label', 'Výsledek cvičení ' + (i + 1));
+      radek.appendChild(pole);
+      if (c.jednotka) radek.appendChild(el('span', 'uloha-jednotka', c.jednotka));
+      var over = el('button', 'rozbal');
+      over.type = 'button';
+      over.textContent = 'Zkontrolovat';
+      radek.appendChild(over);
+      polozka.appendChild(radek);
+
+      var verdikt = el('p', 'uloha-verdikt');
+      verdikt.hidden = true;
+      verdikt.setAttribute('aria-live', 'polite');
+      polozka.appendChild(verdikt);
+
+      var zkontroluj = function () {
+        var x = prectiCislo(pole.value);
+        verdikt.hidden = false;
+        if (isNaN(x)) {
+          verdikt.className = 'uloha-verdikt ne';
+          verdikt.textContent = 'Napište výsledek jako číslo.';
+          return;
+        }
+        // Koruna sem nebo tam na zaokrouhlení mezivýsledků. Kde se odpovídá
+        // počtem kusů, žádná: 10,6 kuchyně není 11.
+        var tolerance = c.tolerance != null ? c.tolerance : 1;
+        var dobre = Math.abs(x - c.odpoved) <= tolerance + 1e-9;
+        verdikt.className = 'uloha-verdikt ' + (dobre ? 'ok' : 'ne');
+        verdikt.textContent = dobre
+          ? 'Správně.'
+          : 'Tohle nevychází. Zkuste to znovu, nebo si ukažte postup.';
+        if (dobre) ukaz();
+      };
+      over.addEventListener('click', zkontroluj);
+      pole.addEventListener('keydown', function (e) { if (e.key === 'Enter') zkontroluj(); });
+    }
+
+    var tlacitka = el('div', 'uloha-tlacitka');
+    tlacitka.appendChild(odkryt);
+    polozka.appendChild(tlacitka);
+    polozka.appendChild(reseni);
+
+    var r = rozhovorProMisto('m-' + l.id + '-c' + i,
+      kontextLekce(l, 'Cvičení ' + (i + 1), c.zadani + '\n\nŘešení: ' + c.reseni),
+      'Lekce ' + l.cislo + ' · cvičení ' + (i + 1));
+    zivePrepinace.push(r);
+    polozka.appendChild(r);
+    return polozka;
+  }
+
+  function kontextLekce(l, nadpis, text) {
+    return [
+      'Jsi asistent pro přípravu na obecnou zkoušku insolvenčního správce v ČR.',
+      'Uživatel prochází lekci manažerského účetnictví (zkouška: řízení podniku,',
+      'účetnictví a financování podniku podle § 7 vyhl. č. 312/2007 Sb.).',
+      'Příklady stojí na fiktivní Truhlárně Bureš s.r.o. v konkursu.',
+      '',
+      'Odpovídej česky, stručně a prakticky — co to znamená pro práci správce.',
+      'Když počítáš, ukaž postup krok za krokem. Kde si nejsi jistý, řekni to.',
+      'Neuváděj paragrafy, které si nepamatuješ přesně.',
+      'Nepiš úvodní zdvořilosti, jdi rovnou k věci.',
+      '',
+      '--- LEKCE ---',
+      'Lekce ' + l.cislo + ' — ' + l.nazev,
+      'Prameny: ' + l.pramen,
+      '',
+      '--- MÍSTO, KTERÉ UŽIVATEL PRÁVĚ ČETL ---',
+      nadpis,
+      text,
+      '--- KONEC KONTEXTU ---'
+    ].join('\n');
+  }
+
+  function vykresliUcetnictvi() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaNazev.textContent = 'Manažerské účetnictví';
+    listaStav.textContent = '';
+
+    if (!UCETNICTVI) {
+      hlavni.appendChild(el('p', 'prazdno', 'Lekce se nenačetly.'));
+      return;
+    }
+    var planovane = UCETNICTVI.pripravuje_se || [];
+    listaStav.textContent = UCETNICTVI.lekce.length + ' / ' +
+      (UCETNICTVI.lekce.length + planovane.length) + ' lekcí';
+
+    hlavni.appendChild(el('h1', 'titul', 'Manažerské účetnictví'));
+    hlavni.appendChild(el('p', 'perex', UCETNICTVI.perex));
+    UCETNICTVI.lekce.forEach(function (l) { hlavni.appendChild(radekLekce(l)); });
+
+    if (planovane.length) {
+      hlavni.appendChild(el('h2', 'cast', 'Připravuje se'));
+      planovane.forEach(function (p) {
+        var r = el('div', 'radek radek-planovany');
+        r.appendChild(el('span', 'radek-cislo', String(p.cislo)));
+        r.appendChild(el('span', 'radek-nazev', p.nazev));
+        r.appendChild(el('span'));
+        hlavni.appendChild(r);
+      });
+    }
+    window.scrollTo(0, 0);
+  }
+
+  function vykresliLekci(id) {
+    var l = lekcePodleId(id);
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaStav.textContent = '';
+
+    if (!l) {
+      listaNazev.textContent = 'Lekce není';
+      hlavni.appendChild(el('p', 'prazdno', 'Taková lekce tu není.'));
+      return;
+    }
+
+    listaNazev.textContent = 'Lekce ' + l.cislo;
+    hlavni.appendChild(el('div', 'p-cislo', 'Manažerské účetnictví · lekce ' + l.cislo));
+    hlavni.appendChild(el('h1', 'p-nazev', l.nazev));
+    hlavni.appendChild(el('p', 'perex', l.perex));
+    hlavni.appendChild(el('p', 'drobecky', l.pramen));
+
+    l.body.forEach(function (bod, i) {
+      var blok = el('section', 'odstavec');
+      blok.appendChild(el('h2', 'bod-nadpis', bod.nadpis));
+      var karta = el('div', 'vyklad');
+      vlozText(karta, bod.text);
+      if (bod.tabulka) karta.appendChild(tabulkaLekce(bod.tabulka));
+      blok.appendChild(karta);
+      var r = rozhovorProMisto('m-' + l.id + '-' + i,
+        kontextLekce(l, bod.nadpis, bod.text),
+        'Lekce ' + l.cislo + ' · ' + bod.nadpis);
+      zivePrepinace.push(r);
+      blok.appendChild(r);
+      hlavni.appendChild(blok);
+    });
+
+    if (l.cviceni && l.cviceni.length) {
+      var cv = el('section', 'cviceni');
+      cv.appendChild(el('h2', 'kolej-nazev', 'Cvičení'));
+      cv.appendChild(el('p', 'kolej-popis',
+        'S kalkulačkou, jako u písemné části zkoušky. Výsledek napište a nechte ' +
+        'zkontrolovat, nebo si rovnou ukažte postup.'));
+      l.cviceni.forEach(function (c, i) { cv.appendChild(ulohaLekce(l, c, i)); });
+      hlavni.appendChild(cv);
+    }
+
+    var vse = UCETNICTVI.lekce;
+    var i2 = vse.indexOf(l);
+    var prechod = el('div', 'prechod');
+    var dozadu = el('button');
+    dozadu.type = 'button';
+    if (i2 > 0) {
+      dozadu.textContent = '← ' + vse[i2 - 1].nazev;
+      dozadu.addEventListener('click', function () { location.hash = '#ucetnictvi-' + vse[i2 - 1].id; });
+    } else {
+      dozadu.textContent = '← Přehled lekcí';
+      dozadu.addEventListener('click', function () { location.hash = '#ucetnictvi'; });
+    }
+    prechod.appendChild(dozadu);
+    if (i2 < vse.length - 1) {
+      var dopredu = el('button');
+      dopredu.type = 'button';
+      dopredu.textContent = vse[i2 + 1].nazev + ' →';
+      dopredu.addEventListener('click', function () { location.hash = '#ucetnictvi-' + vse[i2 + 1].id; });
       prechod.appendChild(dopredu);
     }
     hlavni.appendChild(prechod);
@@ -3966,6 +4323,8 @@
     else if (h === 'lhuty') vykresliLhuty();
     else if (h === 'zakon') vykresliZakon();
     else if (h === 'temata') vykresliTemata();
+    else if (h === 'ucetnictvi') vykresliUcetnictvi();
+    else if (h.indexOf('ucetnictvi-') === 0) vykresliLekci(h.slice(11));
     else if (h.indexOf('uvod-') === 0) vykresliUvod(h.slice(5));
     else if (h === 'hra' || h.indexOf('hra-') === 0) {
       var idSpisu = h.indexOf('hra-') === 0 ? h.slice(4) : null;

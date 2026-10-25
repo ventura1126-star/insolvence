@@ -49,6 +49,83 @@ def zkontroluj_temata():
     return chyby
 
 
+# Vzorec u cvičení je obyčejná aritmetika; nic jiného se v něm nesmí objevit.
+VZOREC = re.compile(r"^[0-9+\-*/(). ]*$")
+
+
+def _spocitej(vzorec):
+    import math
+    holy = vzorec.replace("ceil", "").replace("round", "")
+    if not VZOREC.match(holy):
+        raise ValueError("nepovolený znak")
+    return eval(vzorec, {"__builtins__": {}}, {"ceil": math.ceil, "round": round})
+
+
+def zkontroluj_ucetnictvi():
+    """Lekce manažerského účetnictví — počítá se v nich, takže se přepočítávají.
+
+    Každý řádek tabulky se „soucet" musí sedět na průběžný součet řádků nad ním
+    a každé cvičení s číselnou odpovědí musí mít vzorec, který na ni vyjde.
+    Překlep v čísle by jinak naučil špatný postup a nikdo by si ho nevšiml.
+    """
+    soubor = KOREN / "artefakt/ucetnictvi.json"
+    if not soubor.exists():
+        return []
+    data = json.loads(soubor.read_text("utf-8"))
+    chyby = []
+    videna = set()
+    tabulek = cviceni = 0
+    for lekce in data.get("lekce", []):
+        lid = lekce.get("id", "?")
+        for pole in ("id", "cislo", "nazev", "perex", "pramen", "body"):
+            if not lekce.get(pole):
+                chyby.append(f"lekce {lid}: chybí {pole}")
+        if not re.fullmatch(r"[a-z0-9]+", lid):
+            # Id je součástí klíče rozhovoru „m-<id>-<bod>", pomlčka by ho rozbila.
+            chyby.append(f"lekce {lid}: id smí mít jen malá písmena a číslice")
+        if lid in videna:
+            chyby.append(f"lekce {lid}: id se opakuje")
+        videna.add(lid)
+        for i, b in enumerate(lekce.get("body", [])):
+            if not b.get("nadpis") or not b.get("text", "").strip():
+                chyby.append(f"lekce {lid} bod {i}: prázdný nadpis nebo text")
+            tab = b.get("tabulka")
+            if not tab:
+                continue
+            tabulek += 1
+            prubezne = 0
+            for r in tab.get("radky", []):
+                if not isinstance(r.get("kc"), (int, float)):
+                    chyby.append(f"lekce {lid} bod {i}: řádek {r.get('t')!r} nemá číslo")
+                    continue
+                if r.get("soucet"):
+                    if abs(r["kc"] - prubezne) > 0.5:
+                        chyby.append(f"lekce {lid} bod {i}: {r['t']!r} je {r['kc']}, "
+                                     f"součet řádků nad ním je {prubezne}")
+                else:
+                    prubezne += r["kc"]
+        for i, c in enumerate(lekce.get("cviceni", [])):
+            cviceni += 1
+            if not c.get("zadani") or not c.get("reseni"):
+                chyby.append(f"lekce {lid} cvičení {i}: chybí zadání nebo řešení")
+            if "odpoved" not in c:
+                continue
+            if not c.get("vzorec"):
+                chyby.append(f"lekce {lid} cvičení {i}: číselná odpověď bez vzorce")
+                continue
+            try:
+                vysledek = _spocitej(c["vzorec"])
+            except Exception as e:  # noqa: BLE001 — chceme vidět jakoukoli chybu vzorce
+                chyby.append(f"lekce {lid} cvičení {i}: vzorec nejde spočítat ({e})")
+                continue
+            if abs(vysledek - c["odpoved"]) > 0.005:
+                chyby.append(f"lekce {lid} cvičení {i}: vzorec dává {vysledek}, "
+                             f"odpověď je {c['odpoved']}")
+    print(f"účetnictví     {len(data.get('lekce', []))} lekcí, "
+          f"{tabulek} tabulek, {cviceni} cvičení")
+    return chyby
+
+
 def _citace(uzel):
     """Všechny citace insolvenčního zákona kdekoli ve scénáři hry."""
     if isinstance(uzel, dict):
@@ -186,6 +263,7 @@ def zkontroluj_vyklad():
                 chyby.append(f"výklad § {cislo} odst. {odstavec}: prázdný text")
 
     chyby += zkontroluj_temata()
+    chyby += zkontroluj_ucetnictvi()
     chyby += zkontroluj_uvody(zakon)
     chyby += zkontroluj_hru(zakon)
 
