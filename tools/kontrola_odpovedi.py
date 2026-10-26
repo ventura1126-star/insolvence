@@ -50,7 +50,7 @@ def zkontroluj_temata():
 
 
 # Vzorec u cvičení je obyčejná aritmetika; nic jiného se v něm nesmí objevit.
-VZOREC = re.compile(r"^[0-9+\-*/(). ]*$")
+VZOREC = re.compile(r"^[0-9+\-*/()., ]*$")
 
 
 def _spocitej(vzorec):
@@ -93,17 +93,36 @@ def zkontroluj_ucetnictvi():
             if not tab:
                 continue
             tabulek += 1
-            prubezne = 0
+            # Tabulka má buď jeden sloupec částek, nebo víc (rozpočet po
+            # týdnech). Každý sloupec se sčítá zvlášť; řádek „prevod" musí
+            # navazovat na poslední součet předchozího sloupce.
+            sloupcu = len(tab.get("sloupce") or [None])
+            prubezne = [0] * sloupcu
+            posledni = [None] * sloupcu
             for r in tab.get("radky", []):
-                if not isinstance(r.get("kc"), (int, float)):
-                    chyby.append(f"lekce {lid} bod {i}: řádek {r.get('t')!r} nemá číslo")
+                hodnoty = r.get("kc")
+                if sloupcu == 1:
+                    hodnoty = [hodnoty]
+                if (not isinstance(hodnoty, list) or len(hodnoty) != sloupcu
+                        or not all(isinstance(h, (int, float)) for h in hodnoty)):
+                    chyby.append(f"lekce {lid} bod {i}: řádek {r.get('t')!r} nemá "
+                                 f"{sloupcu} čísel")
                     continue
-                if r.get("soucet"):
-                    if abs(r["kc"] - prubezne) > 0.5:
-                        chyby.append(f"lekce {lid} bod {i}: {r['t']!r} je {r['kc']}, "
-                                     f"součet řádků nad ním je {prubezne}")
-                else:
-                    prubezne += r["kc"]
+                for s_, h in enumerate(hodnoty):
+                    if r.get("soucet"):
+                        if abs(h - prubezne[s_]) > 0.5:
+                            chyby.append(f"lekce {lid} bod {i} sloupec {s_ + 1}: {r['t']!r} "
+                                         f"je {h}, součet řádků nad ním je {prubezne[s_]}")
+                        posledni[s_] = h
+                    else:
+                        prubezne[s_] += h
+            for r in tab.get("radky", []):
+                if not r.get("prevod") or sloupcu == 1:
+                    continue
+                for s_ in range(1, sloupcu):
+                    if posledni[s_ - 1] is not None and abs(r["kc"][s_] - posledni[s_ - 1]) > 0.5:
+                        chyby.append(f"lekce {lid} bod {i} sloupec {s_ + 1}: {r['t']!r} "
+                                     f"nenavazuje na konečný stav předchozího sloupce")
         for i, c in enumerate(lekce.get("cviceni", [])):
             cviceni += 1
             if not c.get("zadani") or not c.get("reseni"):

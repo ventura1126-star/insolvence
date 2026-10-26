@@ -383,21 +383,402 @@
           "reseni": "Ne. **52 000 Kč je utopený náklad** — je to, co do kuchyně kdysi šlo, ne co za ni dnes někdo dá. Rozhoduje srovnání variant, které reálně máte: prodat za 15 000 Kč, nebo čekat na lepšího kupce, a mezitím platit sklad a riskovat, že nepřijde nikdo.\n\nÚčetně vznikne ztráta 37 000 Kč. To je ale jen přiznání toho, že účetní ocenění bylo vyšší než skutečná hodnota. Ta ztráta nevznikla prodejem — vznikla dávno předtím."
         }
       ]
+    },
+    {
+      "id": "bodzvratu",
+      "cislo": 4,
+      "nazev": "Bod zvratu a provozní páka",
+      "perex": "Kolik kuchyní musí dílna měsíčně prodat, aby na sebe vydělala? Jedna rovnice — a z ní odpověď na otázku, kterou vám položí každý věřitelský výbor: má smysl provoz držet?",
+      "pramen": "§ 5 písm. a), § 36 odst. 1, § 168 odst. 2, § 169 odst. 1, § 290 IZ",
+      "body": [
+        {
+          "nadpis": "Jedna rovnice, ze které je všechno ostatní",
+          "text": "Z lekce 3 víte, že každá prodaná kuchyň přinese **příspěvek na úhradu** — cenu minus variabilní náklady. Fixní náklady se platí z toho, co ty příspěvky dají dohromady. Zisk je tedy\n\n**zisk = počet kusů × příspěvek na kus − fixní náklady**\n\n**Bod zvratu** je počet kusů, při kterém je zisk přesně nula: **fixní náklady / příspěvek na kus**.\n\nTruhlárna má fixní náklady **480 000 Kč měsíčně** (lekce 2). Kuchyně pro domácnosti se prodává za 120 000 Kč a má variabilní náklady 47 100 Kč (materiál 42 000, energie 2 100, doprava 3 000), tedy příspěvek **72 900 Kč**. Bod zvratu: 480 000 / 72 900 = **6,58 kuchyně**. V kusech se zaokrouhluje nahoru — dílna potřebuje prodat **7 kuchyní měsíčně**.\n\nPro kontrolu, co se stane při sedmi:",
+          "tabulka": {
+            "nadpis": "Truhlárna při 7 kuchyních pro domácnosti za měsíc",
+            "radky": [
+              {
+                "t": "Tržby",
+                "kc": 840000,
+                "pozn": "7 × 120 000"
+              },
+              {
+                "t": "Variabilní náklady",
+                "kc": -329700,
+                "pozn": "7 × 47 100"
+              },
+              {
+                "t": "Příspěvek na úhradu celkem",
+                "kc": 510300,
+                "soucet": true
+              },
+              {
+                "t": "Fixní náklady",
+                "kc": -480000
+              },
+              {
+                "t": "Zisk",
+                "kc": 30300,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Kapacita: bod zvratu, na který dílna nedosáhne",
+          "text": "Bod zvratu je k ničemu, dokud ho neporovnáte s tím, kolik dílna **vůbec zvládne**. Truhlárna loni vyplatila 1,8 milionu přímých mezd a jedna kuchyň jich potřebuje 15 000 Kč — to je 120 kuchyní ročně, tedy **asi 10 měsíčně**. Víc jedenáct lidí neudělá.\n\nTeď to vedle sebe:\n\n— **kuchyně pro domácnosti:** bod zvratu 7, kapacita 10. Provoz může vydělávat — pokud jsou zákazníci.\n\n— **kuchyně pro developera:** příspěvek 45 200 Kč, bod zvratu 480 000 / 45 200 = 10,6, tedy **11 kuchyní**. Kapacita 10. **Na developerské zakázce samotné dílna nikdy nevydělá, ani když pojede naplno.**\n\nTo vysvětluje, proč Truhlárna padla: Bureš naplnil dílnu developerem, protože to byly velké a jisté zakázky, a dílna se tím zadřela pod bodem zvratu. Výsledovka z lekce 1 to neukázala. Bod zvratu ano.\n\nA vysvětluje to také, proč v lekci 3 vyšlo, že **dodělat** sedm developerských kuchyní se vyplatí, ale **nabírat další** ne. Dodělání platíte mzdami, které platíte tak jako tak. Pokračování by znamenalo držet lidi i po výpovědní době — a pak už jsou mzdy relevantní a bod zvratu rozhoduje."
+        },
+        {
+          "nadpis": "Bod zvratu v korunách a míra bezpečí",
+          "text": "Když firma prodává víc druhů výrobků, počítá se bod zvratu v korunách tržeb. K tomu potřebujete **míru příspěvku** — kolik z každé koruny tržeb zbude na fixní náklady: 72 900 / 120 000 = **60,75 %**.\n\n**Tržby v bodě zvratu** = fixní náklady / míra příspěvku = 480 000 / 0,6075 = **790 123 Kč měsíčně**.\n\nDruhé užitečné číslo je **míra bezpečí** (bezpečnostní marže): o kolik procent mohou tržby klesnout, než se provoz dostane do ztráty. Když Truhlárna prodá 9 kuchyní: (9 − 6,58) / 9 = **26,8 %**. Při sedmi je to jen 6 % — stačí, aby jeden zákazník odstoupil, a měsíc je ve ztrátě.\n\nV konkursu je nízká míra bezpečí varovný signál. Slovo „konkurs“ v obchodním rejstříku odradí část zákazníků samo o sobě a vy nevíte, jak velkou."
+        },
+        {
+          "nadpis": "Provozní páka: proč malý pokles tržeb udělá velkou díru",
+          "text": "**Provozní páka** ukazuje, jak citlivě zisk reaguje na změnu tržeb: **příspěvek na úhradu celkem / zisk**.\n\nPři 9 kuchyních: příspěvek 9 × 72 900 = 656 100 Kč, zisk 656 100 − 480 000 = 176 100 Kč. Páka = 656 100 / 176 100 = **3,73**.\n\nČte se to takhle: **když tržby klesnou o 10 %, zisk klesne o 37 %.** Protože fixní náklady se nepohnou, celý pokles jde rovnou ze zisku.\n\nČím vyšší podíl fixních nákladů, tím delší páka. Truhlárna s jedenácti lidmi na časové mzdě a vlastní halou má páku dlouhou — v dobrých časech roste zisk rychle, ve špatných se propadá ještě rychleji. Totéž platí obráceně pro vás: **snížit fixní náklady** (výpovědi, ukončení nájmů podle § 256) je v konkursu často jediná páka, kterou opravdu máte v ruce."
+        },
+        {
+          "nadpis": "Bod zvratu v konkursu: počítejte hotovost a cenu prodeje celku",
+          "text": "Pro správce má bod zvratu dvě zvláštnosti.\n\n**Počítá se z peněz, ne z účetních nákladů.** Odpisy (loni 50 000 Kč měsíčně) do fixních nákladů nepatří, nic se za ně neplatí. Naopak tam patří všechno, co z podstaty skutečně odchází: mzdy a pojistné, energie, pojištění, ostraha. Náklady na správu podstaty jsou pohledávky za majetkovou podstatou (§ 168 odst. 2 písm. b) IZ) a mzdy stojí na roveň s nimi (§ 169 odst. 1 písm. a)) — platí se přednostně, takže ztrátový provoz platí přímo nezajištění věřitelé.\n\n**Provoz pod bodem zvratu se někdy přesto vyplatí.** Podnik jde prodat jedinou smlouvou (§ 290). Běžící truhlárna s lidmi, zakázkami a zákazníky má pro kupce větší cenu než hala a stroje po kusech. Ten rozdíl je **prémie za prodej celku** a smí se „utratit“ za ztrátu provozu do prodeje.\n\nPříklad: po kusech by majetek vynesl 3,2 milionu, jako běžící podnik 4 miliony. Prémie je 800 000 Kč. Provoz ztrácí 60 000 Kč měsíčně. Držet ho má smysl, jen pokud se prodej stihne zhruba do **13 měsíců** — a to ještě bez rizika, že kupec nepřijde. V praxi si proto stanovíte termín, do kdy musí být kupec, a pokud není, provoz zastavíte.\n\nMěřítkem je pořád **§ 5 písm. a)** a **§ 36 odst. 1**: co nejvyšší uspokojení věřitelů. Nejde o to, aby truhlárna přežila. Jde o to, aby věřitelé dostali víc."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Kuchyně pro domácnosti: cena 120 000 Kč, variabilní náklady 47 100 Kč, fixní náklady 480 000 Kč měsíčně. Kolik kuchyní musí dílna měsíčně prodat, aby nebyla ve ztrátě?",
+          "odpoved": 7,
+          "jednotka": "ks",
+          "tolerance": 0,
+          "vzorec": "ceil(480000 / (120000 - 47100))",
+          "reseni": "Příspěvek 120 000 − 47 100 = 72 900 Kč. Bod zvratu 480 000 / 72 900 = 6,58 — prodat se dá jen celá kuchyň, takže **7**. Při šesti je dílna ve ztrátě 42 600 Kč."
+        },
+        {
+          "zadani": "Jaké jsou tržby v bodě zvratu v korunách (míra příspěvku 72 900 / 120 000)? Výsledek zaokrouhlete na koruny.",
+          "odpoved": 790123,
+          "jednotka": "Kč",
+          "vzorec": "round(480000 / (72900 / 120000))",
+          "reseni": "Míra příspěvku 72 900 / 120 000 = 0,6075. Tržby v bodě zvratu 480 000 / 0,6075 = **790 123 Kč**. Kontrola: 6,58 kuchyně × 120 000 Kč vyjde totéž."
+        },
+        {
+          "zadani": "Dílna prodá 9 kuchyní pro domácnosti. Jaký je měsíční zisk?",
+          "odpoved": 176100,
+          "jednotka": "Kč",
+          "vzorec": "9 * 72900 - 480000",
+          "reseni": "9 × 72 900 = 656 100 Kč příspěvku. Minus 480 000 fixních nákladů = **176 100 Kč**."
+        },
+        {
+          "zadani": "Jaká je při 9 kuchyních provozní páka? Zaokrouhlete na dvě desetinná místa.",
+          "odpoved": 3.73,
+          "tolerance": 0.01,
+          "vzorec": "round(656100 / 176100, 2)",
+          "reseni": "Příspěvek celkem / zisk = 656 100 / 176 100 = **3,73**. Pokles tržeb o 10 % tedy srazí zisk o 37 %: z 176 100 na 110 490 Kč. Ověřte si to: 0,9 × 656 100 − 480 000 = 110 490."
+        },
+        {
+          "zadani": "Jaká je při 9 kuchyních míra bezpečí v procentech? Zaokrouhlete na jedno desetinné místo.",
+          "odpoved": 26.8,
+          "jednotka": "%",
+          "tolerance": 0.1,
+          "vzorec": "round((9 - 480000 / 72900) / 9 * 100, 1)",
+          "reseni": "Bod zvratu je 6,58 kuchyně. (9 − 6,58) / 9 = **26,8 %**. O tolik mohou tržby klesnout, než bude provoz ve ztrátě."
+        },
+        {
+          "zadani": "Věřitelský výbor chce, aby provoz kromě fixních nákladů vydělal ještě 100 000 Kč měsíčně na náklady spojené s prodejem podniku. Kolik kuchyní pro domácnosti je potřeba?",
+          "odpoved": 8,
+          "jednotka": "ks",
+          "tolerance": 0,
+          "vzorec": "ceil((480000 + 100000) / 72900)",
+          "reseni": "Cílový zisk se přičte k fixním nákladům: (480 000 + 100 000) / 72 900 = 7,96, tedy **8 kuchyní**. Je to pořád pod kapacitou 10 — otázka je jen, jestli se tolik zakázek sežene."
+        },
+        {
+          "zadani": "Prodej Truhlárny jako běžícího podniku vynese o 800 000 Kč víc než prodej majetku po kusech. Provoz do prodeje ztrácí 60 000 Kč měsíčně. Kolik celých měsíců nejvýš smí prodej trvat, aby se držení provozu vyplatilo?",
+          "odpoved": 13,
+          "jednotka": "měsíců",
+          "tolerance": 0,
+          "vzorec": "800000 // 60000",
+          "reseni": "800 000 / 60 000 = 13,3 — tedy nejvýš **13 celých měsíců**. Ve čtrnáctém by ztráta provozu prémii za prodej celku převýšila.\n\nVe skutečnosti si nechte rezervu: prémie je odhad, ne jistota, a čím déle provoz běží, tím víc riskujete, že kupec nepřijde a ztráta už bude zaplacená."
+        }
+      ]
+    },
+    {
+      "id": "rozhodnuti",
+      "cislo": 5,
+      "nazev": "Krátkodobá rozhodnutí: pod cenou, vyrobit nebo koupit, zavřít",
+      "perex": "Vezmout zakázku hluboko pod cenou? Lakovat dvířka sám, nebo je dávat ven? Zavřít vzorkovnu, která podle výkazů prodělává? Všechny tři otázky se řeší stejným postupem — a pokaždé vede jinam, než napovídá účetnictví.",
+      "pramen": "§ 41, § 168 odst. 1 písm. f), § 256 IZ; § 51 a § 208 zák. č. 262/2006 Sb.",
+      "body": [
+        {
+          "nadpis": "Jeden postup na všechno",
+          "text": "Krátkodobé rozhodnutí je takové, které nemění kapacitu firmy — haly, stroje a lidi máte, ptáte se jen, jak je využít. Postup je pokaždé stejný:\n\n**1. Popište varianty.** Nejméně dvě, a jednou z nich je vždycky „nic neměnit“.\n\n**2. U každé napište jen to, co se mezi variantami liší.** Příjmy i výdaje. Utopené náklady a rozpočítanou režii škrtněte (lekce 2).\n\n**3. Porovnejte rozdíl.** Ta varianta, která podstatě přinese víc peněz, vyhrává — **pokud nic nemluví proti ní**.\n\n**4. Zvažte, co se spočítat nedá.** Riziko, že zákazník nezaplatí. Pověst firmy, kterou chcete prodat. Čas, který vám to vezme. Tohle je v konkursu důležitější než jinde, protože správce za rozhodnutí odpovídá (§ 36 odst. 1 IZ) a nemá prostor na pokusy.\n\nTomuhle postupu se říká **přírůstková** (diferenciální) **analýza**. Na zbytku lekce ho použijete třikrát."
+        },
+        {
+          "nadpis": "Zakázka pod cenou",
+          "text": "Hotel nabízí Truhlárně **20 vestavěných skříní po 18 000 Kč**. Plné náklady skříně jsou podle kalkulace přes 25 000 Kč. Variabilní náklady (materiál, energie, doprava) jsou **11 500 Kč** na skříň. Kvůli zakázce je potřeba koupit speciální frézovací nástroj za **40 000 Kč**, který jinak k ničemu není. Dílna má volnou kapacitu a lidé jsou ve výpovědní době.\n\nCo se mezi „vzít“ a „nevzít“ liší: příjem 20 × 18 000 = 360 000, variabilní náklady 20 × 11 500 = 230 000, nástroj 40 000. Přínos **90 000 Kč**. Mzdy a režie se neliší — platíte je v obou variantách.\n\nKdy takovou zakázku **nebrat**, i když vyjde kladně:\n\n— **Kapacita není volná.** Pak vytlačí jinou zakázku a její ušlý příspěvek je oportunitní náklad.\n\n— **Cena se rozkřikne.** Když se o ní dozví stálí zákazníci, budou chtít totéž. V konkursu to váží méně — stálé zákazníky budete stejně předávat kupci.\n\n— **Zakázka přesáhne výpovědní dobu.** Pak jsou mzdy relevantní a výpočet se otočí."
+        },
+        {
+          "nadpis": "Vyrobit, nebo koupit",
+          "text": "Truhlárna lakuje dvířka kuchyní ve vlastním lakovacím boxu. Barvy a energie stojí **1 300 Kč** na kuchyň. Box obsluhuje jeden lakýrník — mzda 30 000 Kč, s pojistným **40 140 Kč** měsíčně. Lakovna ve vedlejší obci nabízí, že dvířka nalakuje za **6 500 Kč** na kuchyň.\n\n**Ve výpovědní době** je mzda lakýrníka nevyhnutelná (§ 208 ZP). Vlastní lakování stojí 1 300 Kč na kuchyň, cizí 6 500. Lakovat sám.\n\n**Po výpovědní době** se mzda dá odstranit, a tak do rozhodnutí patří. Vlastní lakovna stojí 40 140 Kč měsíčně plus 1 300 Kč na kuchyň, cizí 6 500 Kč na kuchyň. Kde se to láme?\n\n**Bod indiference** = fixní náklady, které by se ušetřily / rozdíl variabilních nákladů = 40 140 / (6 500 − 1 300) = **7,7 kuchyně měsíčně**.\n\nPři 10 kuchyních měsíčně se vyplatí lakovat sám (5 314 Kč na kuchyň proti 6 500). Při 5 kuchyních už ne (9 328 Kč proti 6 500). V konkursu, kde objem zakázek spíš klesá, se tahle hranice posouvá rychle — a výpověď lakýrníkovi musíte dát včas, protože ušetříte až za dva měsíce (§ 51 odst. 2 ZP)."
+        },
+        {
+          "nadpis": "Zavřít, co podle výkazu prodělává",
+          "text": "Truhlárna má ve městě **vzorkovnu**. Účetní k ní sestavila výkaz:\n\n— příspěvek ze 2 kuchyní, které vzorkovna měsíčně přivede: 2 × 72 900 = **145 800 Kč**,\n— vlastní náklady vzorkovny: nájem 25 000, prodavačka 40 140, energie 4 860 = **70 000 Kč**,\n— podíl na režii firmy (účetní, vedení, pojištění) rozpočítaný podle tržeb: **90 000 Kč**.\n\nVýsledek **−14 200 Kč** měsíčně. Věřitel navrhne vzorkovnu zavřít.\n\nCo se ale stane, když ji zavřete? Zmizí příspěvek 145 800 Kč. Ušetří se 70 000 Kč. **Režie 90 000 Kč nezmizí** — účetní, pojištění i vedení zůstanou a jen se rozpočítají jinam. Podstata na zavření **prodělá 75 800 Kč měsíčně**.\n\nDvě věci, které v konkursu změní výpočet:\n\n— **Ušetří se až po výpovědních lhůtách.** Nájem můžete po prohlášení konkursu vypovědět i tehdy, je-li sjednán na dobu určitou, ale výpovědní lhůta nesmí být delší než 3 měsíce (§ 256 odst. 1 IZ). Prodavačka má výpovědní dobu nejméně 2 měsíce.\n\n— **Přivede vzorkovna v konkursu ještě dvě kuchyně měsíčně?** Zákazník, který si objednává kuchyň na míru, chce mít jistotu, že ji někdo namontuje a reklamace vyřídí. Bez té jistoty může příspěvek klesnout k nule — a pak se zavření vyplatí."
+        },
+        {
+          "nadpis": "Úzké místo: o pořadí rozhoduje příspěvek na hodinu",
+          "text": "Když nestačí kapacita, už nerozhoduje příspěvek **na kus**, ale příspěvek **na jednotku toho, čeho je málo**.\n\nU Truhlárny je úzkým místem CNC. Má **600 strojhodin měsíčně**.\n\n— kuchyně pro domácnosti: příspěvek 72 900 Kč, 70 strojhodin → **1 041 Kč na strojhodinu**,\n— kuchyně pro developera: příspěvek 45 200 Kč, 60 strojhodin → **753 Kč na strojhodinu**.\n\nNejdřív tedy kuchyně pro domácnosti, kolik jich trh vezme. Zákazníci chtějí 5 měsíčně: to je 350 strojhodin. Zbylých 250 hodin vystačí na 4 developerské kuchyně (240 hodin). Příspěvek celkem 5 × 72 900 + 4 × 45 200 = **545 300 Kč**.\n\nPozor, pořadí se může lišit podle toho, **co** je úzké místo. Kdyby chyběli truhláři a ne CNC, počítalo by se na hodinu práce — a vyjít může něco jiného."
+        },
+        {
+          "nadpis": "Když chybí peníze, ne kapacita",
+          "text": "V konkursu bývá nejužším místem často **hotovost**. Rozhodnutí může vyjít výborně a přesto ho neprovedete, protože na materiál nejsou peníze. Tomu je věnovaná příští lekce.\n\nZákon pro tu situaci nabízí **úvěrové financování** (§ 41 IZ): správce může pro udržení nebo obnovení provozu podniku uzavřít za obvyklých obchodních podmínek úvěrové smlouvy i smlouvy na dodávky energií a surovin. Pohledávky z nich jsou **pohledávkami za majetkovou podstatou** (§ 168 odst. 1 písm. f)), takže věřitel ví, že dostane zaplaceno přednostně. A dosavadní zajištění věřitelé mají přednostní právo úvěr poskytnout, pokud nenabídnou horší podmínky než nejlepší nabídka (§ 41 odst. 2).\n\nÚvěr ale něco stojí. Do přírůstkové analýzy patří jako další relevantní výdaj: úrok a poplatky."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Hotel chce 20 skříní po 18 000 Kč. Variabilní náklady 11 500 Kč na skříň, jednorázově nástroj za 40 000 Kč. Dílna je volná, lidé ve výpovědní době. O kolik se podstata zvětší?",
+          "odpoved": 90000,
+          "jednotka": "Kč",
+          "vzorec": "20 * (18000 - 11500) - 40000",
+          "reseni": "20 × (18 000 − 11 500) = 130 000 Kč příspěvku. Minus nástroj 40 000 Kč = **90 000 Kč**. Nástroj je relevantní, protože ho kupujete jen kvůli téhle zakázce."
+        },
+        {
+          "zadani": "Lakýrník stojí 40 140 Kč měsíčně, vlastní lakování 1 300 Kč na kuchyň, cizí lakovna 6 500 Kč na kuchyň. Při kolika kuchyních měsíčně vyjde obojí stejně? Zaokrouhlete na jedno desetinné místo.",
+          "odpoved": 7.7,
+          "jednotka": "ks",
+          "tolerance": 0.05,
+          "vzorec": "round(40140 / (6500 - 1300), 1)",
+          "reseni": "40 140 / 5 200 = **7,7 kuchyně**. Nad touto hranicí se vyplatí lakovat sám, pod ní dávat ven. Platí to ale až **po výpovědní době** — do té doby je mzda nevyhnutelná a vlastní lakování vyhrává vždycky."
+        },
+        {
+          "zadani": "Vzorkovna přináší příspěvek 145 800 Kč měsíčně, její vlastní náklady jsou 70 000 Kč a rozpočítaná režie firmy 90 000 Kč. O kolik měsíčně podstata přijde, když vzorkovnu zavřete (po uplynutí všech výpovědních lhůt)?",
+          "odpoved": 75800,
+          "jednotka": "Kč",
+          "vzorec": "145800 - 70000",
+          "reseni": "Zmizí příspěvek 145 800, ušetří se 70 000. Rozdíl **75 800 Kč** měsíčně. Režie 90 000 Kč zůstane v obou variantách, takže do výpočtu nepatří."
+        },
+        {
+          "zadani": "CNC má 600 strojhodin měsíčně. Kuchyně pro domácnosti: příspěvek 72 900 Kč, 70 strojhodin, trh vezme nejvýš 5. Developerské: příspěvek 45 200 Kč, 60 strojhodin, kolik chcete. Jaký nejvyšší příspěvek celkem dílna za měsíc vydělá?",
+          "odpoved": 545300,
+          "jednotka": "Kč",
+          "vzorec": "5 * 72900 + ((600 - 5 * 70) // 60) * 45200",
+          "reseni": "Domácnosti mají vyšší příspěvek na strojhodinu (1 041 proti 753 Kč), takže první: 5 kuchyní, 350 hodin. Zbývá 250 hodin, to jsou 4 developerské kuchyně (240 hodin). 5 × 72 900 + 4 × 45 200 = **545 300 Kč**."
+        },
+        {
+          "zadani": "Kdyby úzkým místem nebyl CNC, ale hodiny truhlářů — kuchyně pro domácnosti jich potřebuje 90, developerská 40 — kterou kuchyň byste upřednostnil?",
+          "reseni": "**Developerskou.** Na hodinu truhláře dá 45 200 / 40 = 1 130 Kč, kuchyně pro domácnosti jen 72 900 / 90 = 810 Kč.\n\nTo je celé poučení: pořadí výrobků není jejich vlastnost. Záleží na tom, čeho se nedostává. Kdo se naučí „domácnosti jsou lepší“, nastaví výrobu špatně hned, jak se změní úzké místo."
+        },
+        {
+          "zadani": "Dodavatel Hrubý nabízí, že Truhlárně v konkursu dodá materiál, ale chce mít jistotu, že dostane zaplaceno. Co mu jako správce můžete nabídnout?",
+          "reseni": "Smlouva o dodávkách surovin uzavřená pro udržení provozu podniku je **úvěrové financování** podle **§ 41 odst. 1 IZ**. Pohledávky z něj jsou **pohledávkami za majetkovou podstatou** (§ 168 odst. 1 písm. f)) a platí se přednostně — ne v rozvrhu spolu s jeho starou pohledávkou 620 000 Kč, kterou si přihlásil.\n\nNa to staré mu ale nic nezaplatíte: podmínit novou dodávku zaplacením staré pohledávky by znamenalo zvýhodnit jednoho věřitele."
+        }
+      ]
+    },
+    {
+      "id": "hotovost",
+      "cislo": 6,
+      "nazev": "Rozpočet hotovosti a likvidní plán",
+      "perex": "Všechny dosavadní lekce počítaly, co se vyplatí. Tahle počítá, jestli na to budou peníze. Zakázka může přinést čtyři sta tisíc a přitom vám v pátém týdnu vyrobit díru na účtu podstaty. A soud se na tutéž otázku ptá, když rozhoduje o úpadku.",
+      "pramen": "§ 3 odst. 3 a 6, § 41 IZ; vyhláška č. 190/2017 Sb. (§ 2, § 6, § 8, § 9, § 15, § 17)",
+      "body": [
+        {
+          "nadpis": "Zisk není hotovost",
+          "text": "V lekci 3 vyšlo, že dodělání sedmi kuchyní přinese podstatě **396 400 Kč**. To je pravda — ale až na konci. Mezitím se peníze hýbou v jiném pořadí, než ukazuje kalkulace:\n\n— **Materiál platíte hned**, developer platí 30 dní po dodání.\n\n— **Mzdy jsou splatné k výplatnímu termínu**, ať už kuchyně odešly, nebo ne.\n\n— **Staré pohledávky** z doby před konkursem chodí, kdy chodí — a některé nepřijdou vůbec.\n\n— **Odpisy** naopak zisk snižují, ale nic se za ně neplatí.\n\nZisk říká, jestli se rozhodnutí vyplatí. **Rozpočet hotovosti** říká, jestli ho přežijete. Potřebujete obojí."
+        },
+        {
+          "nadpis": "Jak se rozpočet hotovosti sestaví",
+          "text": "Princip je jednoduchý a sestavuje se **po týdnech**:\n\n**počáteční stav + příjmy − výdaje = konečný stav**, a konečný stav jednoho týdne je počátečním stavem dalšího.\n\nDo příjmů a výdajů patří jen to, co skutečně projde účtem, a to **v týdnu, kdy to projde** — ne kdy se to zaúčtuje. Faktura vystavená v prvním týdnu se splatností 30 dní je příjem pátého týdne, a to jen tehdy, když odběratel platí včas.\n\nTruhlárna má po prohlášení konkursu na účtu podstaty **350 000 Kč**. Na dalších osm týdnů je naplánováno: dodělat sedm kuchyní pro developera (lekce 3), udělat dvě kuchyně pro domácnosti a vybrat, co jde ze starých faktur. Tabulka se dá na telefonu posouvat do strany.",
+          "tabulka": {
+            "nadpis": "Truhlárna — rozpočet hotovosti na 8 týdnů",
+            "sloupce": [
+              "1. týden",
+              "2. týden",
+              "3. týden",
+              "4. týden",
+              "5. týden",
+              "6. týden",
+              "7. týden",
+              "8. týden"
+            ],
+            "radky": [
+              {
+                "t": "Počáteční stav účtu podstaty",
+                "kc": [
+                  350000,
+                  224000,
+                  260000,
+                  440000,
+                  378440,
+                  -73600,
+                  131200,
+                  439200
+                ],
+                "prevod": true
+              },
+              {
+                "t": "Inkaso starých pohledávek",
+                "kc": [
+                  0,
+                  0,
+                  180000,
+                  0,
+                  0,
+                  95000,
+                  0,
+                  0
+                ],
+                "pozn": "faktury vystavené před konkursem"
+              },
+              {
+                "t": "Kuchyně pro domácnosti",
+                "kc": [
+                  0,
+                  120000,
+                  0,
+                  0,
+                  0,
+                  120000,
+                  0,
+                  0
+                ],
+                "pozn": "2 zakázky: 50 % záloha, 50 % po montáži"
+              },
+              {
+                "t": "Platby developera",
+                "kc": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  308000,
+                  308000
+                ],
+                "pozn": "7 × 88 000, splatno 30 dní po dodání"
+              },
+              {
+                "t": "Materiál",
+                "kc": [
+                  -126000,
+                  -84000,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "pozn": "developer 126 000, domácnosti 2 × 42 000"
+              },
+              {
+                "t": "Mzdy a pojistné",
+                "kc": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -441540,
+                  0,
+                  0,
+                  0
+                ],
+                "pozn": "výplatní termín za první měsíc"
+              },
+              {
+                "t": "Energie, pojištění, ostraha, účetní",
+                "kc": [
+                  0,
+                  0,
+                  0,
+                  -51060,
+                  0,
+                  -4200,
+                  0,
+                  -38460
+                ],
+                "pozn": "fixní 38 460 měsíčně + strojhodiny"
+              },
+              {
+                "t": "Doprava",
+                "kc": [
+                  0,
+                  0,
+                  0,
+                  -10500,
+                  -10500,
+                  -6000,
+                  0,
+                  0
+                ]
+              },
+              {
+                "t": "Konečný stav",
+                "kc": [
+                  224000,
+                  260000,
+                  440000,
+                  378440,
+                  -73600,
+                  131200,
+                  439200,
+                  708740
+                ],
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Díra v pátém týdnu",
+          "text": "Na konci osmého týdne je na účtu **708 740 Kč** — víc, než bylo na začátku. Plán je dobrý. Jenže v **pátém týdnu** je účet na **−73 600 Kč**. Ve výplatním termínu nemáte na mzdy.\n\nNic z toho by kalkulace neukázala. Problém není ve výnosnosti, ale v **načasování**: materiál za 210 000 Kč odešel v prvních dvou týdnech, mzdy v pátém, a developer zaplatí až v sedmém.\n\nCo s tím, seřazeno od nejlevnějšího:\n\n— **Vyjednat jiné platební podmínky.** Developer chce kuchyně a vy rozhodujete, jestli smlouvu splníte (§ 253). Je to dobrý okamžik říct si o zálohu nebo o platbu po každé dodávce. Stačí, aby do pátého týdne zaplatil **73 600 Kč**.\n\n— **Posunout výdaj.** Materiál na domácnosti nakoupit až ve třetím týdnu. Pozor: jen pokud se tím nezdrží výroba a s ní platby.\n\n— **Úvěrové financování** (§ 41 IZ). Krátký úvěr nebo odložená splatnost u dodavatele materiálu. Pohledávka věřitele je za majetkovou podstatou, takže se to dá sjednat — ale stojí to úrok.\n\nCo udělat **nesmíte**: nechat mzdy nezaplacené a doufat. A nemělo by se to dozvědět ani v pátém týdnu. Proto se rozpočet hotovosti sestavuje **první den** a přepočítává každý týden podle toho, co skutečně přišlo."
+        },
+        {
+          "nadpis": "Totéž pro soud: výkaz stavu likvidity a výhled",
+          "text": "Stejný nástroj se v insolvenčním zákoně objevuje ještě jednou — ne jako pomůcka správce, ale jako **důkaz** v řízení o úpadku.\n\nPodle **§ 3 odst. 3 IZ** se u podnikatele, který vede účetnictví, **má za to, že je schopen platit**, jestliže **mezera krytí** — rozdíl mezi splatnými peněžitými závazky a disponibilními prostředky — je **menší než desetina** splatných závazků. Anebo jestliže **výhled vývoje likvidity** osvědčí, že pod desetinu klesne. Podrobnosti stanoví **vyhláška č. 190/2017 Sb.** (zmocnění v § 3 odst. 6).\n\nCo do výkazu patří — a hlavně co ne:\n\n— **Strana majetku** (§ 8 vyhlášky): **jen peníze** v pokladně a na účtech, cenné papíry obchodované na regulovaném trhu v reálné hodnotě a **nevyčerpaný kontokorent**, pokud se dodržují jeho podmínky a není vypovězen. **Zásoby ani pohledávky ne**, i kdyby jich bylo za miliony.\n\n— **Strana závazků** (§ 9): všechny peněžité dluhy **splatné** k datu posouzení. Dluhy, u kterých věřitel přistoupil na odklad splatnosti, se nezahrnují — odklad ale musí být věrohodně prokázaný.\n\n— **Výhled vývoje likvidity** (§ 14 a § 15) se sestavuje na **8 týdnů jako týdenní přehled**. Pokud se výkaz sestavil k odlišnému (o měsíc dřívějšímu) datu posouzení, na 12 týdnů. Prodloužit se dá výjimečně, nejvýš o 4 týdny.\n\nStrojírna Kolář z výkladu k § 3 odst. 3: splatné závazky 24 milionů, disponibilní prostředky 22 milionů, mezera krytí 2 miliony = **8,3 %**. Pod desetinou, takže domněnka platební schopnosti nastane."
+        },
+        {
+          "nadpis": "Kdy je výhled věrohodný — a proč na tom pracujete s kalkulacemi",
+          "text": "Výhled vývoje likvidity je přesně ten rozpočet hotovosti, který jste právě sestavil pro Truhlárnu — jen ho podepisuje **oprávněná osoba** a soud ho čte jako důkaz. Vyhláška proto říká, kdy mu lze věřit (**§ 17 odst. 2**). Předpoklady jsou reálné zejména tehdy, když\n\n— **tržby** vycházejí z **uzavřených smluv** nebo smluv, jejichž uzavření je **vysoce pravděpodobné**,\n\n— **náklady na produkci** vycházejí z **podložených a odůvodněných kalkulací** — tady se lekce 3 potkává se soudem,\n\n— **inkaso pohledávek** není ohroženo tím, že odběratelé nemohou nebo nechtějí platit,\n\n— **splatnost závazků** je **15 dní**, ledaže je delší doložena písemnou smlouvou.\n\n**Kdo smí výkaz a výhled sestavit** (§ 2 vyhlášky): statutární auditor nebo auditorská společnost, znalec v oboru Ekonomika, odvětví Účetní evidence (nebo znalecký ústav), anebo poradce v oblasti insolvencí a restrukturalizací, který to zpracovává prostřednictvím auditora nebo znalce. Sestavit to smí jen tehdy, když má přístup k **úplným podkladům** (§ 3).\n\nJako správce v řízení o úpadku kontrolujete právě tohle: **kdo** výkaz sestavil, jestli **strana majetku neobsahuje zásoby nebo pohledávky** a jestli tržby ve výhledu stojí na smlouvách, ne na nadějích."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Podle rozpočtu Truhlárny: na začátku pátého týdne je na účtu 378 440 Kč. V pátém týdnu se platí mzdy a pojistné 441 540 Kč a doprava 10 500 Kč, nic nepřijde. Jaký je konečný stav?",
+          "odpoved": -73600,
+          "jednotka": "Kč",
+          "vzorec": "378440 - 441540 - 10500",
+          "reseni": "378 440 − 441 540 − 10 500 = **−73 600 Kč**. Na účtu podstaty chybí peníze na výplatu, přestože celý plán končí s 708 740 Kč."
+        },
+        {
+          "zadani": "Kolik nejméně musí developer zaplatit zálohou nejpozději v pátém týdnu, aby účet podstaty v žádném z osmi týdnů neklesl pod nulu?",
+          "odpoved": 73600,
+          "jednotka": "Kč",
+          "vzorec": "0 - (378440 - 441540 - 10500)",
+          "reseni": "Nejnižší konečný stav je −73 600 Kč v pátém týdnu, ostatní týdny jsou v plusu. Stačí tedy záloha **73 600 Kč** — a o tolik méně pak developer zaplatí v sedmém týdnu, takže na konci osmého týdne je stav stejný."
+        },
+        {
+          "zadani": "Strojírna Kolář: splatné peněžité závazky 24 000 000 Kč, disponibilní prostředky 22 000 000 Kč. Kolik procent splatných závazků činí mezera krytí? Zaokrouhlete na jedno desetinné místo.",
+          "odpoved": 8.3,
+          "jednotka": "%",
+          "tolerance": 0.05,
+          "vzorec": "round((24000000 - 22000000) / 24000000 * 100, 1)",
+          "reseni": "Mezera krytí 2 000 000 Kč. 2 / 24 = **8,3 %**. Je to méně než desetina, takže podle § 3 odst. 3 IZ se má za to, že Kolář platit schopen je."
+        },
+        {
+          "zadani": "Jiný den: Kolář má splatné závazky 24 000 000 Kč, na účtech 19 000 000 Kč, nevyčerpaný kontokorent 2 500 000 Kč (podmínky se dodržují) a na skladě zásoby za 6 000 000 Kč. Jaká je mezera krytí v korunách?",
+          "odpoved": 2500000,
+          "jednotka": "Kč",
+          "vzorec": "24000000 - (19000000 + 2500000)",
+          "reseni": "Na stranu majetku patří peníze na účtech a nevyčerpaný kontokorent (§ 8 odst. 1 a 4 vyhlášky č. 190/2017 Sb.): 21 500 000 Kč. **Zásoby ne** — vyhláška počítá jen s penězi a tím, co se na peníze dá okamžitě proměnit.\n\nMezera krytí 24 000 000 − 21 500 000 = **2 500 000 Kč**, tedy 10,4 % splatných závazků. To **není méně než desetina** — domněnka platební schopnosti nenastane. Zásoby za šest milionů na tom nic nezmění. Pomoct může jen výhled vývoje likvidity, který ukáže, že mezera během osmi týdnů pod desetinu klesne."
+        },
+        {
+          "zadani": "Kolář předloží výhled vývoje likvidity. Počítá v něm s tržbou 15 milionů ze zakázky, o které „se jedná“, a s tím, že dodavatelům zaplatí až za 60 dní, protože „to tak vždycky bylo“. Uzná to soud?",
+          "reseni": "S velkou pravděpodobností ne. Podle **§ 17 odst. 2 vyhlášky č. 190/2017 Sb.** jsou předpoklady reálné zejména tehdy, když tržby vycházejí z **uzavřených** smluv nebo smluv, jejichž uzavření je **vysoce pravděpodobné**. Zakázka, o které se jedná, takovou smlouvou není, dokud se pravděpodobnost nedoloží.\n\nA splatnost závazků se počítá **15 dní**, pokud delší není **podložena písemnou smlouvou**. Zvyk to nenahradí.\n\nVýhled, který stojí na nadějích, domněnku nezaloží. A pro vás jako předběžného správce je to přesně místo, kde se na výhled podívat nejdřív."
+        },
+        {
+          "zadani": "Kdo z těchto lidí smí Kolářovi sestavit výkaz stavu likvidity: (a) hlavní účetní Strojírny, (b) daňový poradce, (c) znalec v oboru Ekonomika, odvětví Účetní evidence, (d) statutární auditor, (e) poradenská firma pro restrukturalizace, která to zpracuje prostřednictvím auditora?",
+          "reseni": "Smějí **(c), (d) a (e)** — podle **§ 2 vyhlášky č. 190/2017 Sb.**\n\n**(a) hlavní účetní** ne. Výkaz z vlastní účtárny soud jako podklad pro domněnku z § 3 odst. 3 nevezme, ať je sestaven jakkoli dobře.\n\n**(b) daňový poradce** sám o sobě také ne. Mezi oprávněnými osobami ve vyhlášce není."
+        }
+      ]
     }
   ],
   "pripravuje_se": [
-    {
-      "cislo": 4,
-      "nazev": "Bod zvratu a provozní páka"
-    },
-    {
-      "cislo": 5,
-      "nazev": "Krátkodobá rozhodnutí: zakázka pod cenou, vyrobit nebo koupit, zavřít provoz"
-    },
-    {
-      "cislo": 6,
-      "nazev": "Rozpočet hotovosti a likvidní plán"
-    },
     {
       "cislo": 7,
       "nazev": "Střediska, vnitropodnikové ceny a odchylky"

@@ -1026,6 +1026,23 @@
   }
   .ucet-tabulka td.kc { text-align: right; white-space: nowrap; padding-left: .8rem; }
   .ucet-pozn { display: block; font-size: .78rem; color: var(--tlum); margin-top: .1rem; }
+  .ucet-siroka { font-size: .82rem; }
+  .ucet-siroka th {
+    font-weight: 500;
+    font-size: .74rem;
+    color: var(--tlum);
+    padding: 0 .2rem .35rem .8rem;
+    text-align: right;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--linka);
+  }
+  .ucet-siroka td.ucet-popis {
+    position: sticky;
+    left: 0;
+    min-width: 11rem;
+    background: var(--vyklad-plocha);
+  }
+  .ucet-tabulka td.zaporne { color: var(--hra-kriticke); }
   .ucet-tabulka tr.soucet td {
     font-weight: 600;
     border-top: 1.5px solid var(--inkoust);
@@ -2665,18 +2682,33 @@
     return (n < 0 ? '−' : '') + text;
   }
 
+  /* Tabulka má buď jeden sloupec částek, nebo víc — rozpočet hotovosti po
+     týdnech. Ta široká se na telefonu posouvá do strany a popisky řádků
+     zůstávají přilepené vlevo, ať je pořád vidět, co se čte. */
   function tabulkaLekce(tab) {
     var obal = el('div', 'ucet-obal');
-    var t = el('table', 'ucet-tabulka');
+    var siroka = !!(tab.sloupce && tab.sloupce.length);
+    var t = el('table', 'ucet-tabulka' + (siroka ? ' ucet-siroka' : ''));
     if (tab.nadpis) t.appendChild(el('caption', null, tab.nadpis));
+    if (siroka) {
+      var hlava = el('thead');
+      var htr = el('tr');
+      htr.appendChild(el('th'));
+      tab.sloupce.forEach(function (s) { htr.appendChild(el('th', 'kc', s)); });
+      hlava.appendChild(htr);
+      t.appendChild(hlava);
+    }
     var telo = el('tbody');
     tab.radky.forEach(function (r) {
       var tr = el('tr', r.soucet ? 'soucet' : null);
-      var popis = el('td');
+      var popis = el('td', 'ucet-popis');
       popis.appendChild(document.createTextNode(r.t));
       if (r.pozn) popis.appendChild(el('span', 'ucet-pozn', r.pozn));
       tr.appendChild(popis);
-      tr.appendChild(el('td', 'kc', korun(r.kc)));
+      (siroka ? r.kc : [r.kc]).forEach(function (h) {
+        var td = el('td', 'kc' + (h < 0 && r.soucet ? ' zaporne' : ''), h === 0 && siroka ? '' : korun(h));
+        tr.appendChild(td);
+      });
       telo.appendChild(tr);
     });
     t.appendChild(telo);
