@@ -776,21 +776,403 @@
           "reseni": "Smějí **(c), (d) a (e)** — podle **§ 2 vyhlášky č. 190/2017 Sb.**\n\n**(a) hlavní účetní** ne. Výkaz z vlastní účtárny soud jako podklad pro domněnku z § 3 odst. 3 nevezme, ať je sestaven jakkoli dobře.\n\n**(b) daňový poradce** sám o sobě také ne. Mezi oprávněnými osobami ve vyhlášce není."
         }
       ]
+    },
+    {
+      "id": "strediska",
+      "cislo": 7,
+      "nazev": "Střediska, vnitropodnikové ceny a odchylky",
+      "perex": "Uvnitř jedné firmy je vnitropodniková cena jen účetní rozhodnutí — zisk celé firmy nezmění. Mezi sestrami v koncernu je to jinak: cena rozhoduje, čí věřitelé dostanou zaplaceno. Tady se manažerské účetnictví mění v nástroj, jak najít vyvedený majetek.",
+      "pramen": "§ 235, § 240, § 242 IZ; § 71, § 72, § 79 zák. č. 90/2012 Sb.; § 2 zák. č. 151/1997 Sb.; § 23 odst. 7 zák. č. 586/1992 Sb.",
+      "body": [
+        {
+          "nadpis": "Střediska: firma rozdělená na kusy, za které někdo odpovídá",
+          "text": "**Středisko** je část firmy, které se dají přiřadit náklady (a případně výnosy) a která má svého odpovědného člověka. Podle toho, za co odpovídá, se rozlišují:\n\n— **nákladová střediska** — odpovídají jen za náklady (lakovna, údržba, účtárna),\n\n— **výnosová** — odpovídají za tržby (vzorkovna, obchod),\n\n— **zisková** — odpovídají za rozdíl obojího (dílna jako celek),\n\n— **investiční** — navíc za majetek, který používají (dceřiná společnost v koncernu).\n\nU Truhlárny Bureš by střediska byla dílna, lakovna, vzorkovna a správa. Bureš je nikdy nezavedl, a proto nikdo nevěděl, že vzorkovna přivádí zákazníky a developerská linka je pod bodem zvratu (lekce 4 a 5). Středisková evidence je přesně to, co z výsledovky celé firmy udělá mapu, kde se vydělává a kde prodělává."
+        },
+        {
+          "nadpis": "Vnitropodniková cena: tři způsoby, jak ji stanovit",
+          "text": "Když jedno středisko dodává druhému — lakovna lakuje dvířka pro dílnu —, potřebuje se to ocenit. Možnosti jsou tři:\n\n— **nákladová cena** — lakovna účtuje dílně jen své náklady. Lakovna pak nikdy nevydělá a nemá důvod šetřit.\n\n— **nákladová cena s přirážkou** — náklady plus dohodnutá marže. Kompromis, ale přirážka je libovolná.\n\n— **tržní cena** — kolik by stálo lakování venku (lekce 5: 6 500 Kč na kuchyň). Nejpoctivější, pokud trh existuje: obě střediska se chovají, jako by obchodovala s cizími.\n\nDůležité: **uvnitř jedné firmy vnitropodniková cena nezmění zisk firmy jako celku.** Co lakovna vydělá navíc, dílna přesně o tolik prodělá. Mění se jen to, kdo vypadá dobře. Proto se kvůli vnitropodnikovým cenám v jedné firmě nikdo nesoudí."
+        },
+        {
+          "nadpis": "V koncernu cena přesouvá peníze mezi věřiteli",
+          "text": "Jakmile středisko není oddělením, ale **samostatnou společností**, všechno se mění. Každá sestra má **své vlastní věřitele** a cena mezi sestrami rozhoduje, u koho zůstanou peníze — a tedy čí věřitelé dostanou zaplaceno.\n\nSkupina Vltava: Vltava Stavby s.r.o. stavěla pro sestru Vltava Development s.r.o. Jste správcem Staveb. V jejich účetnictví najdete:\n\n— za poslední dva roky fakturovaly Developmentu **48 milionů** — přesně ve výši vlastních nákladů, **bez marže**. U cizích investorů přitom Stavby účtovaly marži kolem **15 %**;\n\n— Development si od Staveb každý rok vybíral **„poplatek za řízení“ 1,2 milionu**. Žádná smlouva nepopisuje, za jakou službu.\n\nStavby tak dva roky pracovaly na nule a Development měl zisk. Pak Stavbám došly peníze na dodavatele. Kdyby se obchodovalo za tržní ceny, zůstalo by ve Stavbách:",
+          "tabulka": {
+            "nadpis": "Co ze Staveb odteklo přes ceny ve skupině — za 2 roky",
+            "radky": [
+              {
+                "t": "Ušlá marže na zakázkách pro Development",
+                "kc": 7200000,
+                "pozn": "48 000 000 × 15 %"
+              },
+              {
+                "t": "Poplatek za řízení bez doložené služby",
+                "kc": 2400000,
+                "pozn": "2 × 1 200 000"
+              },
+              {
+                "t": "Celkem",
+                "kc": 9600000,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Jak to správce zjistí: rozbor marží podle odběratelů",
+          "text": "Nikdo vám neřekne „vyváděli jsme peníze přes ceny“. Najdete to v číslech — a to je práce s manažerským účetnictvím, i když ho firma nevedla:\n\n**1. Roztřiďte tržby podle odběratelů** a ke každému přiřaďte náklady zakázek. Kalkulace z lekce 3 se tu počítá zpětně.\n\n**2. Porovnejte marži u cizích a u spřízněných odběratelů.** 15 % proti nule je signál, ne důkaz — ale velmi silný signál.\n\n**3. Zjistěte obvyklou cenu.** Zákon o oceňování majetku ji definuje jako cenu, která by byla dosažena při prodejích stejného nebo obdobného majetku (služby) v obvyklém obchodním styku, a výslovně z ní vylučuje vliv **osobních poměrů** — zejména majetkových, rodinných nebo jiných vztahů mezi prodávajícím a kupujícím (**§ 2 odst. 2 zák. č. 151/1997 Sb.**). Cena mezi sestrami tedy obvyklou cenou být nemusí, a právě proto se s ní srovnává.\n\n**4. Podívejte se, co s tím dělá daňové právo.** Liší-li se ceny mezi **spojenými osobami** od cen mezi nespojenými a rozdíl není uspokojivě doložen, upraví se základ daně (**§ 23 odst. 7 ZDP**). Spojenými osobami jsou mimo jiné ty, kde jedna drží alespoň **25 %** kapitálu nebo hlasů druhé. Finanční úřad tedy zkoumá tutéž otázku jako vy — a jeho dokumentace k převodním cenám, pokud ji skupina měla, je pro vás hotový podklad."
+        },
+        {
+          "nadpis": "Tři cesty, jak peníze vrátit do podstaty",
+          "text": "**Odporovat jako úkonu bez přiměřeného protiplnění (§ 240 IZ).** Zakázky bez marže a poplatek za službu, která nebyla, jsou plnění za protiplnění, jehož obvyklá cena je podstatně nižší. U osoby, která s dlužníkem **tvoří koncern**, má se za to, že úkon byl učiněn v době úpadku (§ 240 odst. 2), a odporovat lze úkonům za **poslední 3 roky** před zahájením řízení (§ 240 odst. 3). U cizích osob jen 1 rok.\n\n**Úmyslně zkracující úkon (§ 242 IZ)** — lhůta je **5 let** a u koncernu se **má za to, že úmysl byl druhé straně znám** (§ 242 odst. 2). Hodí se na starší převody.\n\n**Náhrada újmy podle ZOK.** Kdo svým vlivem v korporaci ovlivní její chování k její újmě, újmu nahradí (**§ 71 odst. 1 ZOK**) a za dluhy, které ovlivněná osoba kvůli tomu nemůže splnit, **ručí jejím věřitelům** (§ 71 odst. 3). V koncernu se řídící osoba může vyvinit tím, že újma vznikla v zájmu koncernu a byla vyrovnána (§ 72 odst. 1) — **jenže ne tehdy, když jednání vůči řízené osobě vedlo k jejímu úpadku** (§ 72 odst. 3). A § 72 se vůbec nepoužije, pokud skupina existenci koncernu neuveřejnila na svých stránkách (§ 79 odst. 3).\n\nV každém případě budete potřebovat **čísla**: kolik činila obvyklá cena, kolik se skutečně účtovalo a kolik z toho chybí. Tabulka nahoře je první verze podkladu pro žalobu — znalec ji pak zpřesní."
+        },
+        {
+          "nadpis": "Standardní náklady a odchylky: kontrola provozu, který řídíte",
+          "text": "Druhá polovina střediskového účetnictví je **kontrola**. Ke každé kuchyni máte kalkulaci — to je **standard**, tedy kolik by to mělo stát. Po dokončení porovnáte se skutečností a rozdíl rozložíte na příčiny.\n\nKuchyně má podle standardu spotřebovat **19 desek po 2 000 Kč** = 38 000 Kč. Skutečně se spotřebovalo **21 desek** a dodavatel účtoval **2 100 Kč** za kus = 44 100 Kč. Odchylka **6 100 Kč nepříznivá**. Z toho:\n\n— **množstevní odchylka** = (skutečné množství − standardní) × standardní cena = (21 − 19) × 2 000 = **4 000 Kč**. Spotřebovalo se víc, než mělo.\n\n— **cenová odchylka** = (skutečná cena − standardní) × skutečné množství = (2 100 − 2 000) × 21 = **2 100 Kč**. Nakoupilo se dráž.\n\nProč to zajímá správce: když v konkursu provozujete dílnu, nejste v ní každý den. Lidé ve výpovědní době nemají důvod šetřit a materiál umí mizet. **Množstevní odchylka, která se opakuje, je první stopa** — dřív než inventura. Cenová odchylka zase ukáže, jestli někdo nakupuje u „svého“ dodavatele."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Vltava Stavby fakturovaly sestře Development za dva roky 48 milionů Kč bez marže. Cizím investorům účtovaly marži 15 % z ceny bez marže. Kolik činí ušlá marže?",
+          "odpoved": 7200000,
+          "jednotka": "Kč",
+          "vzorec": "48000000 * 0.15",
+          "reseni": "48 000 000 × 0,15 = **7 200 000 Kč**. Spolu s poplatkem za řízení 2 400 000 Kč odteklo ze Staveb 9 600 000 Kč — to je první odhad nároku, který znalec zpřesní obvyklou cenou."
+        },
+        {
+          "zadani": "Poplatek za řízení byl 1 200 000 Kč ročně, dva roky. Znalec zjistí, že Development pro Stavby skutečně vedl mzdovou agendu, jejíž obvyklá cena je 300 000 Kč ročně. O kolik byl poplatek bez přiměřeného protiplnění?",
+          "odpoved": 1800000,
+          "jednotka": "Kč",
+          "vzorec": "2 * (1200000 - 300000)",
+          "reseni": "2 × (1 200 000 − 300 000) = **1 800 000 Kč**. Za mzdovou agendu Stavby přiměřené protiplnění dostaly; zbytek byl plnění, za které nedostaly nic."
+        },
+        {
+          "zadani": "Kuchyně měla spotřebovat 19 desek po 2 000 Kč, skutečně spotřebovala 21 desek po 2 100 Kč. Jaká je množstevní odchylka?",
+          "odpoved": 4000,
+          "jednotka": "Kč",
+          "vzorec": "(21 - 19) * 2000",
+          "reseni": "(21 − 19) × 2 000 = **4 000 Kč**, nepříznivá. Množstevní odchylka se počítá ve standardní ceně, aby v ní nebyl vliv dražšího nákupu."
+        },
+        {
+          "zadani": "A jaká je cenová odchylka?",
+          "odpoved": 2100,
+          "jednotka": "Kč",
+          "vzorec": "(2100 - 2000) * 21",
+          "reseni": "(2 100 − 2 000) × 21 = **2 100 Kč**, nepříznivá. Kontrola: 4 000 + 2 100 = 6 100 Kč, což je celkový rozdíl 44 100 − 38 000."
+        },
+        {
+          "zadani": "Zakázka bez marže pro Development byla vyfakturována 2,5 roku před zahájením insolvenčního řízení na Stavby. Jiná, se stejným vzorcem, 4 roky před ním. Kterým z nich lze odporovat podle § 240 a co zbývá u té druhé?",
+          "reseni": "**Té z doby 2,5 roku ano.** Development se Stavbami tvoří koncern, a proto se odporuje úkonům za posledních **3 roky** (§ 240 odst. 3 IZ). A má se za to, že byla učiněna v době úpadku (§ 240 odst. 2) — Development by musel dokázat opak.\n\n**Té ze 4 let podle § 240 ne.** Zbývá **§ 242**, úmyslně zkracující úkon s lhůtou **5 let**. U koncernu se má za to, že úmysl dlužníka byl druhé straně znám (§ 242 odst. 2). Úmysl zkrátit věřitele ale musíte prokázat — tady pomůže, když se vzorec opakoval rok co rok.\n\nA souběžně: **§ 71 ZOK**. Lhůty IZ se na něj nevztahují; řídí se promlčením."
+        },
+        {
+          "zadani": "Bureš navrhne, aby lakovna účtovala dílně 9 000 Kč za kuchyň místo tržních 6 500 Kč. „Lakovna bude zisková a dobře se prodá.“ Změní to zisk Truhlárny?",
+          "reseni": "**Ne.** Lakovna i dílna jsou uvnitř jedné společnosti. Co lakovna vydělá navíc, dílna přesně o tolik prodělá; zisk Truhlárny jako celku zůstane stejný.\n\nA kupce tím neošálíte: kupuje podnik celý, takže ho zajímá zisk celku. Navíc u prodeje podle § 290 zadáváte ocenění znalci vždy (§ 219 odst. 4 IZ) a ten bude vycházet z tržních cen."
+        }
+      ]
+    },
+    {
+      "id": "analyza",
+      "cislo": 8,
+      "nazev": "Finanční analýza: likvidita, zadluženost, rentabilita",
+      "perex": "Dostanete do ruky rozvahu a výsledovku firmy, o které nic nevíte. Za hodinu musíte umět říct, jestli platí, jestli je předlužená a jak dlouho to už trvá. Na to je finanční analýza — a na to, aby se nezaměnila s tím, co po vás chce § 3 insolvenčního zákona.",
+      "pramen": "§ 3 odst. 3 a 4, § 240 IZ; § 40 zák. č. 90/2012 Sb.; § 22 odst. 2 zák. č. 89/2012 Sb.; vyhláška č. 500/2002 Sb. (příloha č. 1); vyhláška č. 190/2017 Sb.",
+      "body": [
+        {
+          "nadpis": "Rozvaha Truhlárny: odkud se berou čísla",
+          "text": "Finanční analýza pracuje se dvěma výkazy: **rozvahou** (co firma má a komu dluží, k jednomu dni) a **výsledovkou** (jak hospodařila za rok). Výsledovku Truhlárny znáte z lekce 1. Tohle je zjednodušená rozvaha ke konci téhož roku — závazky v ní dávají známých **6,8 milionu**.\n\nVšimněte si posledního řádku: **vlastní kapitál 50 000 Kč**. Firma se základním kapitálem 200 000 Kč tedy ztrátou projedla i to málo, co do ní vložili společníci. Účetně ale **předlužená není** — aktiva jsou o 50 000 Kč vyšší než závazky. K tomu se ještě vrátíme.",
+          "tabulka": {
+            "nadpis": "Truhlárna — rozvaha ke konci roku před konkursem",
+            "radky": [
+              {
+                "t": "Hala (pozemek a stavba)",
+                "kc": 4200000,
+                "pozn": "zástava banky"
+              },
+              {
+                "t": "Stroje",
+                "kc": 900000
+              },
+              {
+                "t": "Zásoby",
+                "kc": 700000,
+                "pozn": "materiál 300 000, nedokončená výroba 400 000"
+              },
+              {
+                "t": "Pohledávky z obchodních vztahů",
+                "kc": 900000
+              },
+              {
+                "t": "Peníze",
+                "kc": 150000
+              },
+              {
+                "t": "Aktiva celkem",
+                "kc": 6850000,
+                "soucet": true
+              },
+              {
+                "t": "Úvěr banky (dlouhodobý)",
+                "kc": -3500000
+              },
+              {
+                "t": "Dodavatelé",
+                "kc": -2100000,
+                "pozn": "mezi nimi Hrubý 620 000"
+              },
+              {
+                "t": "Zaměstnanci a pojistné",
+                "kc": -480000
+              },
+              {
+                "t": "Daně (hlavně DPH)",
+                "kc": -520000
+              },
+              {
+                "t": "Kontokorent",
+                "kc": -200000
+              },
+              {
+                "t": "Vlastní kapitál",
+                "kc": 50000,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Likvidita: kolikrát pokryje oběžný majetek krátkodobé dluhy",
+          "text": "Tři ukazatele, od nejvolnějšího po nejpřísnější. Ve všech je ve jmenovateli **krátkodobé závazky** — u Truhlárny 3 300 000 Kč (dodavatelé, zaměstnanci, daně, kontokorent).\n\n**Běžná likvidita** = oběžná aktiva / krátkodobé závazky = 1 750 000 / 3 300 000 = **0,53**. Doporučuje se 1,5 až 2,5. Truhlárna by nesplatila ani polovinu, i kdyby prodala všechny zásoby a vybrala všechny pohledávky.\n\n**Pohotová likvidita** = (oběžná aktiva − zásoby) / krátkodobé závazky = 1 050 000 / 3 300 000 = **0,32**. Doporučuje se kolem 1.\n\n**Okamžitá likvidita** = peníze / krátkodobé závazky = 150 000 / 3 300 000 = **0,05**. Doporučuje se 0,2 a víc.\n\nA **čistý pracovní kapitál** = oběžná aktiva − krátkodobé závazky = **−1 550 000 Kč**. Záporný pracovní kapitál znamená, že část krátkodobých dluhů financuje dlouhodobý majetek — halu a stroje. Ty se ale na zaplacení faktur rychle prodat nedají.\n\n**Pozor na záměnu s § 3 odst. 3 IZ.** Běžná likvidita počítá i se zásobami a pohledávkami. **Mezera krytí** podle vyhlášky č. 190/2017 Sb. bere na straně majetku **jen peníze** (a kotované cenné papíry a nevyčerpaný kontokorent) a na straně závazků **jen splatné** dluhy (lekce 6). Firma může mít slušnou běžnou likviditu a přitom v úpadku být — a obráceně."
+        },
+        {
+          "nadpis": "Zadluženost a rentabilita",
+          "text": "**Celková zadluženost** = cizí zdroje / aktiva = 6 800 000 / 6 850 000 = **99,3 %**. Za rozumnou se u výrobní firmy považuje zhruba polovina. Truhlárna je financovaná téměř výhradně cizími penězi — bankou, dodavateli, zaměstnanci a státem.\n\n**Rentabilita aktiv (ROA)** = EBIT / aktiva. EBIT je zisk před úroky a daněmi: výsledek −1 300 000 + úroky 300 000 = **−1 000 000 Kč**. ROA = **−14,6 %**. Každá koruna majetku za rok ztratila 15 haléřů — ještě před tím, než se zaplatily úroky.\n\n**Rentabilita vlastního kapitálu (ROE)** = zisk / vlastní kapitál. U Truhlárny vychází −1 300 000 / 50 000 = −2 600 % — **a takové číslo nic neznamená.** Když je vlastní kapitál blízko nule nebo záporný, ROE se neinterpretuje. U zkoušky i v praxi to stačí říct nahlas.\n\n**Úrokové krytí** = EBIT / nákladové úroky = −1 000 000 / 300 000 = **−3,33**. Firma na úroky nevydělá ani provozem."
+        },
+        {
+          "nadpis": "Aktivita: kdo koho financuje",
+          "text": "Ukazatele aktivity měří, jak rychle se majetek a dluhy obracejí. Počítají se ve dnech, s rokem o 360 dnech.\n\n**Doba obratu pohledávek** = pohledávky / (tržby / 360) = 900 000 / (14 200 000 / 360) = **22,8 dne**. Tak dlouho v průměru trvá, než zákazník zaplatí.\n\n**Doba obratu závazků vůči dodavatelům** = dodavatelé / (nákupy / 360). Nákupy jsou spotřeba materiálu a energie a služby z výsledovky, 9 200 000 Kč. Vychází 2 100 000 / (9 200 000 / 360) = **82,2 dne**.\n\nZákazníci platí Truhlárně za 23 dní, Truhlárna dodavatelům za 82. **Firmu financovali dodavatelé** — Hrubý a ostatní, kteří dodávali dřevo a kování a čekali na peníze. Přesně takové číslo patří do zprávy o příčinách úpadku a do úvahy, zda jednatel neměl podat insolvenční návrh dřív."
+        },
+        {
+          "nadpis": "Účetní hodnota ještě neříká, jestli je firma předlužená",
+          "text": "**§ 3 odst. 4 IZ**: o předlužení jde, má-li dlužník více věřitelů a souhrn jeho závazků **převyšuje hodnotu jeho majetku**. Hodnotu, ne účetní hodnotu. Účetnictví oceňuje historicky — pořizovací cenou a vlastními náklady (lekce 3). Při posouzení předlužení se ptáte, kolik majetek **má**.\n\nU Truhlárny to vypadá takhle. Hodnota majetku se navíc posuzuje s přihlédnutím k dalšímu provozování podniku jen tehdy, lze-li důvodně předpokládat, že v něm dlužník bude moci pokračovat (§ 3 odst. 4 věta třetí). Při ROA −15 % a dluzích u dodavatelů to předpokládat nelze.\n\nTotéž znamená, že **předlužení není věc jednoho dne**. Když zpětně zjistíte, odkdy byla firma předlužená, víte, odkdy měl jednatel povinnost podat insolvenční návrh — a od kdy jednal bez péče řádného hospodáře.",
+          "tabulka": {
+            "nadpis": "Truhlárna — účetní hodnota proti skutečné",
+            "radky": [
+              {
+                "t": "Aktiva podle účetnictví",
+                "kc": 6850000
+              },
+              {
+                "t": "Nedokončená výroba",
+                "kc": -320000,
+                "pozn": "půl hotové kuchyně na míru: 400 000 → 80 000"
+              },
+              {
+                "t": "Pohledávky",
+                "kc": -250000,
+                "pozn": "dva odběratelé v insolvenci: 900 000 → 650 000"
+              },
+              {
+                "t": "Stroje",
+                "kc": -300000,
+                "pozn": "opotřebené, bez CNC: 900 000 → 600 000"
+              },
+              {
+                "t": "Hala",
+                "kc": 300000,
+                "pozn": "znalec: 4 200 000 → 4 500 000"
+              },
+              {
+                "t": "Hodnota majetku",
+                "kc": 6280000,
+                "soucet": true
+              },
+              {
+                "t": "Závazky celkem",
+                "kc": -6800000
+              },
+              {
+                "t": "Rozdíl",
+                "kc": -520000,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Bankrotní modely: IN05",
+          "text": "Bankrotní modely zhušťují několik ukazatelů do jednoho čísla. V Česku se nejčastěji používá **index IN05** manželů Neumaierových, sestavený na datech českých firem:\n\n**IN05 = 0,13 · A/CZ + 0,04 · EBIT/Ú + 3,97 · EBIT/A + 0,21 · V/A + 0,09 · OA/(KZ + KBÚ)**\n\nkde A jsou aktiva, CZ cizí zdroje, Ú nákladové úroky, V výnosy, OA oběžná aktiva, KZ krátkodobé závazky a KBÚ krátkodobé bankovní úvěry. Hodnoty **nad 1,6** znamenají uspokojivou situaci, **pod 0,9** vážné ohrožení, mezi tím je šedá zóna.\n\nU Truhlárny (kontokorent je už v krátkodobých závazcích): 0,13 · 1,007 + 0,04 · −3,33 + 3,97 · −0,146 + 0,21 · 2,073 + 0,09 · 0,530 = **−0,10**. Hluboko pod 0,9.\n\nDvě poznámky. Model **nic nedokazuje** — je to statistika, která u části firem selhává. A s § 3 IZ nemá nic společného: úpadek se posuzuje podle zákona, ne podle indexu. Pro správce je IN05 užitečný jinak: **spočítaný pro minulé roky ukáže, kdy se firma začala propadat**. Pokud byla v pásmu ohrožení už dva roky před návrhem, máte otázky na jednatele."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Oběžná aktiva Truhlárny jsou 1 750 000 Kč, krátkodobé závazky 3 300 000 Kč. Jaká je běžná likvidita? Zaokrouhlete na dvě desetinná místa.",
+          "odpoved": 0.53,
+          "tolerance": 0.01,
+          "vzorec": "round(1750000 / 3300000, 2)",
+          "reseni": "1 750 000 / 3 300 000 = **0,53**. Doporučené pásmo je 1,5 až 2,5."
+        },
+        {
+          "zadani": "Jaká je pohotová likvidita? Zásoby jsou 700 000 Kč. Zaokrouhlete na dvě desetinná místa.",
+          "odpoved": 0.32,
+          "tolerance": 0.01,
+          "vzorec": "round((1750000 - 700000) / 3300000, 2)",
+          "reseni": "(1 750 000 − 700 000) / 3 300 000 = **0,32**. Bez zásob kryje Truhlárna necelou třetinu krátkodobých dluhů."
+        },
+        {
+          "zadani": "Cizí zdroje jsou 6 800 000 Kč, aktiva 6 850 000 Kč. Jaká je celková zadluženost v procentech? Jedno desetinné místo.",
+          "odpoved": 99.3,
+          "jednotka": "%",
+          "tolerance": 0.05,
+          "vzorec": "round(6800000 / 6850000 * 100, 1)",
+          "reseni": "6 800 000 / 6 850 000 = **99,3 %**."
+        },
+        {
+          "zadani": "Jaký je čistý pracovní kapitál?",
+          "odpoved": -1550000,
+          "jednotka": "Kč",
+          "vzorec": "1750000 - 3300000",
+          "reseni": "1 750 000 − 3 300 000 = **−1 550 000 Kč**. Krátkodobé dluhy financují i halu a stroje."
+        },
+        {
+          "zadani": "Pohledávky 900 000 Kč, roční tržby 14 200 000 Kč. Za kolik dní v průměru zákazníci platí? Jedno desetinné místo.",
+          "odpoved": 22.8,
+          "jednotka": "dní",
+          "tolerance": 0.05,
+          "vzorec": "round(900000 / (14200000 / 360), 1)",
+          "reseni": "14 200 000 / 360 = 39 444 Kč tržeb denně. 900 000 / 39 444 = **22,8 dne**. Dodavatelům přitom Truhlárna platila za 82 dní."
+        },
+        {
+          "zadani": "Aktiva podle účetnictví jsou 6 850 000 Kč. Nedokončenou výrobu je potřeba snížit o 320 000, pohledávky o 250 000 a stroje o 300 000; hala má naopak o 300 000 vyšší hodnotu. Závazky jsou 6 800 000. O kolik závazky převyšují hodnotu majetku?",
+          "odpoved": 520000,
+          "jednotka": "Kč",
+          "vzorec": "6800000 - (6850000 - 320000 - 250000 - 300000 + 300000)",
+          "reseni": "Hodnota majetku 6 850 000 − 320 000 − 250 000 − 300 000 + 300 000 = 6 280 000 Kč. Závazky ji převyšují o **520 000 Kč**. Účetně Truhlárna předlužená není, ve skutečnosti ano (§ 3 odst. 4 IZ)."
+        },
+        {
+          "zadani": "Bureš chce těsně před koncem roku vyplatit sobě jako společníkovi „zálohu na podíl na zisku“ 150 000 Kč, protože „účetně máme kladný vlastní kapitál“. Smí?",
+          "reseni": "**Ne.** Dvakrát.\n\n**§ 40 odst. 1 ZOK:** kapitálová společnost nesmí rozdělit zisk, pokud by vlastní kapitál klesl pod základní kapitál zvýšený o nerozdělitelné fondy. Vlastní kapitál je 50 000 Kč, základní 200 000 Kč — už teď je pod ním.\n\n**§ 40 odst. 3 ZOK:** korporace nesmí vyplatit podíl na zisku ani zálohu na něj, **pokud by si tím přivodila úpadek**. Truhlárna v úpadku už je.\n\nKdyby to Bureš přesto udělal, máte jako správce na stole i odpůrčí žalobu podle § 240 IZ. Bureš je jednatel a společník, a pravidla pro osoby blízké se na něj použijí obdobně (§ 22 odst. 2 o. z.) — odporovat lze tedy za 3 roky zpětně."
+        }
+      ]
+    },
+    {
+      "id": "oceneni",
+      "cislo": 9,
+      "nazev": "Financování a ocenění podniku",
+      "perex": "Koruna za pět let není koruna dnes. Na tom stojí celé ocenění podniku — a také test, který musí projít každý reorganizační plán: § 348 IZ výslovně mluví o „současné hodnotě“ plnění.",
+      "pramen": "§ 3 odst. 4, § 36 odst. 1, § 41, § 219, § 290, § 293, § 316, § 348 IZ; § 2 zák. č. 151/1997 Sb.",
+      "body": [
+        {
+          "nadpis": "Koruna dnes a koruna za pět let",
+          "text": "Kdo dostane milion dnes, může ho uložit nebo investovat a za rok má víc. Kdo ho dostane za rok, o ten výnos přišel — a navíc nese riziko, že nedostane nic. Proto má budoucí platba **nižší současnou hodnotu**:\n\n**současná hodnota = budoucí platba / (1 + r)^t**\n\nkde **r** je **diskontní sazba** (požadovaný výnos za rok) a **t** počet let. Milion za tři roky při 10 %: 1 000 000 / 1,1³ = **751 315 Kč**.\n\nDiskontní sazba je klíčové a **sporné** číslo. Čím rizikovější je, že platba přijde, tím vyšší sazbu je poctivé použít. U firmy, která právě prošla úpadkem, se pohybuje vysoko — 12 % je spíš střízlivý odhad, věřitelé budou chtít víc.\n\nKdyž je plateb víc stejně velkých, nemusíte diskontovat každou zvlášť. **Současná hodnota anuity** = platba × (1 − (1 + r)^−n) / r. Pro 12 % a 5 let je ten koeficient **3,6048**."
+        },
+        {
+          "nadpis": "Strojírna Kolář: rozprodat, nebo reorganizovat",
+          "text": "Strojírna Kolář a.s.: obrat 180 milionů, 140 zaměstnanců, zakázky na dva roky dopředu. Do reorganizace se vejde bez potíží — ta je přípustná, když roční čistý obrat dosáhl aspoň **50 milionů** nebo dlužník zaměstnává aspoň **50 zaměstnanců** (§ 316 odst. 4 IZ).\n\nRozprodat stroje by teď dalo **30 milionů**. Udržet výrobu v chodu a splácet věřitelům z marže dá **18 milionů ročně po pět let** — dohromady 90 milionů.\n\nPorovnat 90 se 30 by byla chyba: 90 milionů přijde postupně a s rizikem. Diskontováno 12 %:",
+          "tabulka": {
+            "nadpis": "Kolář — současná hodnota při diskontní sazbě 12 %",
+            "radky": [
+              {
+                "t": "1. rok",
+                "kc": 16071429,
+                "pozn": "18 000 000 / 1,12^1"
+              },
+              {
+                "t": "2. rok",
+                "kc": 14349490,
+                "pozn": "18 000 000 / 1,12^2"
+              },
+              {
+                "t": "3. rok",
+                "kc": 12812044,
+                "pozn": "18 000 000 / 1,12^3"
+              },
+              {
+                "t": "4. rok",
+                "kc": 11439325,
+                "pozn": "18 000 000 / 1,12^4"
+              },
+              {
+                "t": "5. rok",
+                "kc": 10213683,
+                "pozn": "18 000 000 / 1,12^5"
+              },
+              {
+                "t": "Současná hodnota reorganizace",
+                "kc": 64885971,
+                "soucet": true
+              },
+              {
+                "t": "Rozprodej majetku hned",
+                "kc": -30000000
+              },
+              {
+                "t": "Reorganizace je lepší o",
+                "kc": 34885971,
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "§ 348: test nejlepšího zájmu věřitelů je výpočet současné hodnoty",
+          "text": "Soud schválí reorganizační plán mimo jiné jen tehdy, když **každý věřitel podle něj získá plnění, jehož celková současná hodnota je ke dni účinnosti plánu stejná nebo vyšší** než hodnota plnění, které by zřejmě obdržel v konkursu — ledaže s nižším plněním souhlasí (**§ 348 odst. 1 písm. d) IZ**). To je přesně výpočet z předchozího bodu, jen pro jednoho věřitele.\n\nDodavatel Strojírny má pohledávku **10 milionů**. Plán mu nabízí **40 %**, tedy 4 miliony, splácené **po 800 000 Kč ročně pět let**. V konkursu by dostal odhadem **15 %**, tedy 1,5 milionu — ale ne hned: rozvrh přijde realisticky **za dva roky**.\n\n— plán: 800 000 × 3,6048 = **2 883 821 Kč**,\n— konkurs: 1 500 000 / 1,12² = **1 195 791 Kč**.\n\nPlán test splní. Všimněte si, že **diskontovat se musí obojí** — i konkursní výplata leží v budoucnosti. Kdo srovná současnou hodnotu plánu s nominálními 1,5 milionu z konkursu, srovnává nesrovnatelné.\n\nA protože diskontní sazba je sporná, vyplatí se přepočítat i pesimistickou variantu. Při 25 %: plán 2 151 424 Kč, konkurs 960 000 Kč. Pořád to vychází."
+        },
+        {
+          "nadpis": "Tři způsoby, jak ocenit podnik",
+          "text": "**Výnosový přístup** — podnik má cenu toho, co v budoucnu vydělá, diskontovaného na dnešek (DCF). To jste právě dělali u Koláře. Hodí se pro podnik, který poběží dál.\n\n**Majetkový přístup** — sečte se hodnota jednotlivých položek majetku a odečtou dluhy. Ve variantě **likvidační hodnoty** se ptáte, kolik by majetek vynesl při rozprodeji. U podniku, který dál nepoběží, je to jediná smysluplná hodnota.\n\n**Tržní (srovnávací) přístup** — za kolik se prodávají podobné firmy, typicky jako násobek zisku nebo tržeb. Pro malé firmy v úpadku se srovnatelné obchody hledají těžko.\n\nPro správce z toho plynou dvě pravidla. **Předlužení** (§ 3 odst. 4) se posuzuje s přihlédnutím k dalšímu provozování podniku jen tehdy, lze-li důvodně předpokládat, že v něm dlužník bude moci pokračovat — jinak likvidační hodnotou (lekce 8). A **prodej podniku jako celku** (§ 290) dává smysl, když je výnosová hodnota vyšší než likvidační — rozdíl je prémie, o které byla řeč v lekci 4."
+        },
+        {
+          "nadpis": "Obvyklá cena v soupisu a cena, za kterou skutečně prodáte",
+          "text": "Majetek se v soupisu oceňuje **obvyklou cenou** (§ 219 odst. 5 IZ). Ocenění provádíte sám z účetnictví a dostupných informací, znalce můžete přizvat u obtížně ocenitelného majetku — a u zajištěného majetku a při prodeji podniku jako celku (§ 290) ho zadáváte **vždy** (§ 219 odst. 3 a 4).\n\nZákon o oceňování majetku definuje obvyklou cenu tak, že se do ní **nepromítají mimořádné okolnosti trhu** — a mezi ně výslovně počítá **stav tísně prodávajícího nebo kupujícího** (§ 2 odst. 2 zák. č. 151/1997 Sb.).\n\nJenže prodej v konkursu tíseň je: kupec ví, že prodáváte, protože musíte, a že podnik bez provozu rychle ztrácí hodnotu. **Výtěžek proto často bývá pod obvyklou cenou ze soupisu**, a to nikoli proto, že by se znalec mýlil. Počítejte s tím, když věřitelskému výboru odhadujete, kolik rozvrh přinese, a když se rozhodujete mezi rychlým prodejem a čekáním na lepší nabídku. Každý měsíc čekání má svou cenu — diskont, náklady na správu a riziko, že kupec odejde."
+        },
+        {
+          "nadpis": "Financování: proč dluh Truhlárnu potopil rychleji",
+          "text": "Firma se financuje **vlastním kapitálem** (vklady a nerozdělený zisk) a **cizím** (úvěry, dodavatelé). Cizí kapitál je obvykle levnější — věřitel nese menší riziko než společník — a úroky snižují základ daně. Dluh proto funguje jako **finanční páka**: dokud firma vydělává na majetku víc, než platí za úrok, zvedá výnos společníků.\n\nPáka ale funguje oběma směry. **Když je rentabilita aktiv nižší než úroková sazba, dluh výnos společníků ničí.** Truhlárna měla ROA −15 % a platila bance úroky z 3,5 milionu (lekce 8). Každá koruna dluhu prohlubovala ztrátu.\n\nV insolvenci se financování otevírá znovu. **Úvěrové financování** (§ 41 IZ, lekce 5) umožní udržet provoz a jeho pohledávky jsou za majetkovou podstatou. V reorganizaci je otázka, jak bude Kolář po schválení plánu financovaný, jednou z podmínek, na které se soud dívá: plán nesmí vést k dalšímu úpadku dlužníka (§ 348 odst. 2, pro případ, že ho nepřijmou všechny skupiny věřitelů)."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Jaká je současná hodnota 1 000 000 Kč splatného za 3 roky při diskontní sazbě 10 %? Na koruny.",
+          "odpoved": 751315,
+          "jednotka": "Kč",
+          "vzorec": "round(1000000 / 1.1 ** 3)",
+          "reseni": "1 000 000 / 1,1³ = 1 000 000 / 1,331 = **751 315 Kč**."
+        },
+        {
+          "zadani": "Kolář splácí z reorganizace 18 000 000 Kč ročně po 5 let, diskontní sazba 12 %. Jaká je současná hodnota v milionech Kč? Na dvě desetinná místa.",
+          "odpoved": 64.89,
+          "jednotka": "mil. Kč",
+          "tolerance": 0.01,
+          "vzorec": "round(18 * (1 - 1.12 ** -5) / 0.12, 2)",
+          "reseni": "18 × 3,6048 = **64,89 mil. Kč**. Proti 30 milionům z rozprodeje je reorganizace lepší o víc než 34 milionů — ne o 60, jak by se zdálo z nominálních 90."
+        },
+        {
+          "zadani": "Dodavatel s pohledávkou 10 000 000 Kč dostane podle plánu 800 000 Kč ročně po 5 let. Jaká je současná hodnota při 12 %? Na koruny.",
+          "odpoved": 2883821,
+          "jednotka": "Kč",
+          "vzorec": "round(800000 * (1 - 1.12 ** -5) / 0.12)",
+          "reseni": "800 000 × 3,6048 = **2 883 821 Kč**."
+        },
+        {
+          "zadani": "V konkursu by tentýž dodavatel dostal 1 500 000 Kč, ale až za 2 roky. Jaká je současná hodnota při 12 %? Na koruny.",
+          "odpoved": 1195791,
+          "jednotka": "Kč",
+          "vzorec": "round(1500000 / 1.12 ** 2)",
+          "reseni": "1 500 000 / 1,2544 = **1 195 791 Kč**. Plán (2 883 821 Kč) je vyšší, takže podmínka § 348 odst. 1 písm. d) IZ je u tohoto věřitele splněna."
+        },
+        {
+          "zadani": "Plán nabízí zajištěnému věřiteli Strojírny Kolář — bance — splacení celé pohledávky 20 milionů v jedné splátce za 4 roky, bez úroku. V konkursu by z prodeje zástavy dostala 17 milionů za rok. Při diskontní sazbě 8 %: o kolik je současná hodnota plnění podle plánu vyšší než v konkursu? Zadejte rozdíl plán − konkurs, každou hodnotu nejdřív zaokrouhlete na koruny. Splní plán vůči bance test podle § 348 odst. 1 písm. d)?",
+          "odpoved": -1040144,
+          "jednotka": "Kč",
+          "vzorec": "round(20000000 / 1.08 ** 4) - round(17000000 / 1.08)",
+          "reseni": "Plán: 20 000 000 / 1,08⁴ = 14 700 597 Kč. Konkurs: 17 000 000 / 1,08 = 15 740 741 Kč. Rozdíl **−1 040 144 Kč** — plán dává méně.\n\n**Test nesplní**, ledaže banka s nižším plněním souhlasí. Nominálně přitom dostane o 3 miliony víc. Proto musí plán splácet průběžně, nebo s úrokem."
+        },
+        {
+          "zadani": "Znalec ocenil halu Truhlárny obvyklou cenou 4 500 000 Kč. Po dvou kolech prodeje je nejvyšší nabídka 3 900 000 Kč. Bureš tvrdí, že prodej pod obvyklou cenou je porušení povinností správce. Má pravdu?",
+          "reseni": "Ne nutně. Obvyklá cena podle **§ 2 odst. 2 zák. č. 151/1997 Sb.** výslovně **nepočítá se stavem tísně prodávajícího** — vyjadřuje, za kolik se hala prodá v obvyklém obchodním styku. Konkursní prodej obvyklý není: kupci vědí, že prodávat musíte.\n\nCo musíte umět doložit, je **postup**: že jste prodej dostatečně nabídl, že lepší nabídka nebyla, a že čekat by stálo víc, než by se získalo — správa, pojištění, ostraha, diskont. Měřítkem je odborná péče a co nejvyšší uspokojení věřitelů (**§ 36 odst. 1 IZ**), ne obvyklá cena sama o sobě.\n\nU haly zatížené zástavou navíc platí, že jste vázán **pokyny zajištěného věřitele** ke zpeněžení (§ 293 odst. 1 IZ). Odmítnout je můžete, jen když máte za to, že se hala dá zpeněžit výhodněji — a pak žádáte soud o přezkum. Bureš do toho nemluví vůbec."
+        }
+      ]
     }
   ],
   "pripravuje_se": [
-    {
-      "cislo": 7,
-      "nazev": "Střediska, vnitropodnikové ceny a odchylky"
-    },
-    {
-      "cislo": 8,
-      "nazev": "Finanční analýza: likvidita, zadluženost, rentabilita"
-    },
-    {
-      "cislo": 9,
-      "nazev": "Financování a ocenění podniku"
-    },
     {
       "cislo": 10,
       "nazev": "Souhrnná případová studie"
