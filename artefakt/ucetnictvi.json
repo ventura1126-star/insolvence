@@ -6,11 +6,11 @@
       "cislo": 1,
       "nazev": "K čemu je správci manažerské účetnictví",
       "perex": "Účetní závěrka vám řekne, kolik firma prodělala. Neřekne vám, co máte zítra ráno udělat — a to je otázka, kterou si jako správce kladete od prvního dne.",
-      "pramen": "§ 7 a § 9 odst. 4 vyhl. č. 312/2007 Sb.; § 5 písm. a), § 36 odst. 1, § 168, § 169, § 230 odst. 1, § 253, § 290 IZ; § 38 a příl. č. 4 vyhl. č. 500/2002 Sb.",
+      "pramen": "§ 3 a § 9 odst. 4 vyhl. č. 312/2007 Sb.; § 5 písm. a), § 36 odst. 1, § 168, § 169, § 230 odst. 1, § 253, § 290 IZ; § 38 a příl. č. 4 vyhl. č. 500/2002 Sb.",
       "body": [
         {
           "nadpis": "Co po vás zkouška chce",
-          "text": "Vyhláška o zkoušce insolvenčního správce (č. 312/2007 Sb.) v **§ 7 odst. 2** vyjmenovává, z čeho se zkouší. Vedle práva tam stojí **f) řízení podniku** a **g) účetnictví a financování podniku**. Odstavec 3 dodává, že tyto dvě oblasti se prověřují **„v rozsahu potřebném pro správu majetku dlužníka“** — tedy ne jako u auditora, ale tak, abyste uměl vést firmu, kterou jste právě převzal.\n\nSlovo „manažerské účetnictví“ ve vyhlášce nenajdete. Veřejná sada testových otázek z roku 2014 se ho netýká vůbec — okruh Audit zkouší finanční účetnictví: odpisy, oceňování, rozvahu. Kde se tahle látka projeví, je **případová studie** v písemné části a **ústní část**. U písemné části smíte mít znění předpisů a **kalkulátor** (§ 9 odst. 4 vyhlášky) — proto tu u každé lekce počítáte."
+          "text": "Vyhláška o zkoušce insolvenčního správce (č. 312/2007 Sb.) v **§ 3 odst. 2** vyjmenovává, z čeho se zkouší. Vedle práva tam stojí **f) řízení podniku** a **g) účetnictví a financování podniku**. Odstavec 3 dodává, že tyto dvě oblasti se prověřují **„v rozsahu potřebném pro správu majetku dlužníka“** — tedy ne jako u auditora, ale tak, abyste uměl vést firmu, kterou jste právě převzal.\n\nSlovo „manažerské účetnictví“ ve vyhlášce nenajdete. Veřejná sada testových otázek z roku 2014 se ho netýká vůbec — okruh Audit zkouší finanční účetnictví: odpisy, oceňování, rozvahu. Kde se tahle látka projeví, je **případová studie** v písemné části a **ústní část**. U písemné části smíte mít znění předpisů a **kalkulátor** (§ 9 odst. 4 vyhlášky) — proto tu u každé lekce počítáte."
         },
         {
           "nadpis": "Dvě účetnictví z týchž dokladů",
@@ -1170,12 +1170,239 @@
           "reseni": "Ne nutně. Obvyklá cena podle **§ 2 odst. 2 zák. č. 151/1997 Sb.** výslovně **nepočítá se stavem tísně prodávajícího** — vyjadřuje, za kolik se hala prodá v obvyklém obchodním styku. Konkursní prodej obvyklý není: kupci vědí, že prodávat musíte.\n\nCo musíte umět doložit, je **postup**: že jste prodej dostatečně nabídl, že lepší nabídka nebyla, a že čekat by stálo víc, než by se získalo — správa, pojištění, ostraha, diskont. Měřítkem je odborná péče a co nejvyšší uspokojení věřitelů (**§ 36 odst. 1 IZ**), ne obvyklá cena sama o sobě.\n\nU haly zatížené zástavou navíc platí, že jste vázán **pokyny zajištěného věřitele** ke zpeněžení (§ 293 odst. 1 IZ). Odmítnout je můžete, jen když máte za to, že se hala dá zpeněžit výhodněji — a pak žádáte soud o přezkum. Bureš do toho nemluví vůbec."
         }
       ]
+    },
+    {
+      "id": "pripadovka",
+      "cislo": 10,
+      "nazev": "Souhrnná případová studie: Pekárna Rous",
+      "perex": "Všechno dohromady na jednom spisu, tak jak to může přijít v písemné části zkoušky: podklady, šest otázek, kalkulačka a zákon na stole. Nejdřív si to zkuste sám, pak teprve odkrývejte řešení.",
+      "pramen": "§ 9 a § 9a vyhl. č. 312/2007 Sb.; § 5, § 36, § 41, § 168, § 169, § 219, § 253, § 256, § 286, § 289, § 290 IZ; § 51 a § 208 zák. č. 262/2006 Sb.",
+      "body": [
+        {
+          "nadpis": "Jak vypadá případová studie u zkoušky",
+          "text": "Písemná část se skládá z **testu a případové studie** a trvá nejdéle **6 hodin** dohromady (§ 9 odst. 1 a 2 vyhlášky č. 312/2007 Sb.). Smíte mít **znění předpisů a kalkulátor** (§ 9 odst. 4).\n\nPřípadová studie se **hodnotí jen tehdy, když jste v testu odpověděl správně aspoň na 80 % otázek** (§ 9 odst. 5). Hodnotí ji samostatně dva členové komise a k úspěchu je potřeba, aby průměr jejich procentního hodnocení dosáhl **aspoň 80 %** (§ 9 odst. 6, § 9a odst. 3).\n\nCo hodnotitelé posuzují, říká **§ 9a odst. 2**:\n\n— **úroveň řešení** zadaného problému nebo modelové situace,\n— schopnost **aplikovat základní zásady a ustanovení insolvenčního zákona** a znalosti z oblastí podle § 3 odst. 2 — tedy i řízení podniku a účetnictví a financování podniku,\n— **způsob písemného projevu**.\n\nKonkrétní zadání ministerstvo nezveřejňuje, takže **nevím, jak moc se v nich počítá**. Studie bude mít nejspíš právní jádro. Tahle lekce schválně spojuje obojí: čísla tu slouží k tomu, abyste právní rozhodnutí uměl podložit."
+        },
+        {
+          "nadpis": "Jak psát řešení",
+          "text": "Ať je otázka jakákoli, odpověď má stejnou kostru. Hodnotitel tak na první pohled vidí, že jste nic nevynechal:\n\n**1. Co se po mně chce** — jednou větou. Když je otázka mnohoznačná, řekněte, jak ji chápete.\n\n**2. Právní rámec** — konkrétní paragraf, odstavec, písmeno. Zákon máte na stole, tak ho citujte přesně.\n\n**3. Výpočet** — s postupem, ne jen s výsledkem. Napište, co do výpočtu patří a **co jste vyškrtl a proč** (utopené náklady, rozpočítaná režie). Právě tím ukážete, že víte, co děláte.\n\n**4. Rozhodnutí** — jednoznačně. „Doporučuji splnit smlouvu“, ne „bylo by možné zvážit“.\n\n**5. Rizika a podmínky** — co musí platit, aby rozhodnutí obstálo, a co uděláte, když to platit přestane.\n\nA ještě dvě věci k písemnému projevu: krátké věty, a žádné opisování zákona. Hodnotitel zákon zná. Chce vidět, že víte, **který** paragraf a **proč** se na situaci hodí."
+        },
+        {
+          "nadpis": "Zadání: podklady",
+          "text": "**Pekárna Rous s.r.o.** má jednu výrobnu a tři prodejny: A na náměstí, B u nádraží a C na sídlišti. Zaměstnává 22 lidí — 10 pekařů a 12 prodavaček na zkrácené úvazky. Majitel nepodal návrh pro hrozící úpadek včas. Soud dnes rozhodl o úpadku, prohlásil konkurs a ustanovil vás insolvenčním správcem.\n\n**Co máte na stole:**\n\n— Měsíční výsledovku po prodejnách, kterou připravila účetní (tabulka níže). Suroviny a energie pecí jsou **45 % tržeb**. Výrobna stojí **500 000 Kč** měsíčně (mzdy pekařů s pojistným 428 160 Kč, energie 40 000 Kč, pojištění a ostatní 31 840 Kč). Správa a účetní **60 000 Kč**. Účetní rozpočítala obojí na prodejny podle tržeb.\n\n— Prodejna C má nájemní smlouvu **na dobu určitou do roku 2029**. Pronajímatel tvrdí, že ji v konkursu nelze vypovědět.\n\n— Hotel ve městě nabízí, že bude odebírat pečivo za **60 000 Kč měsíčně v ceníkových cenách**, ale chce **slevu 30 %**. Výrobna má volnou kapacitu.\n\n— Na účtu podstaty je **280 000 Kč**. Dodavatel mouky chce kvůli konkursu platit hned při dodání.\n\n— Kupec, regionální pekařský řetězec, nabízí za **podnik jako celek 9 000 000 Kč**. Chce ho převzít **za 3 měsíce**, s fungující výrobou a **všemi třemi prodejnami**. Znalec odhaduje, že majetek **rozprodaný po kusech** vynese dnes **7 600 000 Kč**.\n\n— Věřitelský výbor se sejde za týden a chce od vás písemné doporučení.",
+          "tabulka": {
+            "nadpis": "Pekárna Rous — výsledovka po prodejnách za měsíc, jak ji připravila účetní",
+            "sloupce": [
+              "Prodejna A",
+              "Prodejna B",
+              "Prodejna C",
+              "Celkem"
+            ],
+            "radky": [
+              {
+                "t": "Tržby",
+                "kc": [
+                  600000,
+                  450000,
+                  250000,
+                  1300000
+                ]
+              },
+              {
+                "t": "Suroviny a energie pecí",
+                "kc": [
+                  -270000,
+                  -202500,
+                  -112500,
+                  -585000
+                ],
+                "pozn": "45 % tržeb"
+              },
+              {
+                "t": "Příspěvek z výroby",
+                "kc": [
+                  330000,
+                  247500,
+                  137500,
+                  715000
+                ],
+                "soucet": true
+              },
+              {
+                "t": "Nájem a prodavačky",
+                "kc": [
+                  -120000,
+                  -100000,
+                  -110000,
+                  -330000
+                ]
+              },
+              {
+                "t": "Příspěvek prodejny",
+                "kc": [
+                  210000,
+                  147500,
+                  27500,
+                  385000
+                ],
+                "soucet": true
+              },
+              {
+                "t": "Výrobna a správa",
+                "kc": [
+                  -258462,
+                  -193846,
+                  -107692,
+                  -560000
+                ],
+                "pozn": "560 000 rozpočteno podle tržeb"
+              },
+              {
+                "t": "Výsledek prodejny",
+                "kc": [
+                  -48462,
+                  -46346,
+                  -80192,
+                  -175000
+                ],
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Rozpočet hotovosti na první čtyři týdny",
+          "text": "Druhý podklad sestavíte sám z toho, co víte o platbách: tržby chodí denně, suroviny se platí hned, mzdy jsou splatné ve třetím týdnu a nájmy v prvním. Dohromady dává měsíc **890 000 Kč** fixních výdajů — výrobna 500 000, správa 60 000 a prodejny 330 000.",
+          "tabulka": {
+            "nadpis": "Pekárna Rous — rozpočet hotovosti",
+            "sloupce": [
+              "1. týden",
+              "2. týden",
+              "3. týden",
+              "4. týden"
+            ],
+            "radky": [
+              {
+                "t": "Počáteční stav účtu podstaty",
+                "kc": [
+                  280000,
+                  315000,
+                  480000,
+                  -83160
+                ],
+                "prevod": true
+              },
+              {
+                "t": "Tržby prodejen",
+                "kc": [
+                  300000,
+                  300000,
+                  300000,
+                  300000
+                ],
+                "pozn": "pekárna inkasuje denně"
+              },
+              {
+                "t": "Suroviny",
+                "kc": [
+                  -135000,
+                  -135000,
+                  -135000,
+                  -135000
+                ],
+                "pozn": "45 % tržeb, dodavatelé chtějí platit hned"
+              },
+              {
+                "t": "Mzdy a pojistné",
+                "kc": [
+                  0,
+                  0,
+                  -668160,
+                  0
+                ],
+                "pozn": "pekaři 428 160, prodavačky 240 000"
+              },
+              {
+                "t": "Nájmy prodejen",
+                "kc": [
+                  -90000,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "t": "Energie, pojištění, ostraha, účetní",
+                "kc": [
+                  -40000,
+                  0,
+                  -60000,
+                  -31840
+                ]
+              },
+              {
+                "t": "Konečný stav",
+                "kc": [
+                  315000,
+                  480000,
+                  -83160,
+                  50000
+                ],
+                "soucet": true
+              }
+            ]
+          }
+        },
+        {
+          "nadpis": "Otázky",
+          "text": "**1.** Účetní tvrdí, že všechny tři prodejny prodělávají a nejhorší je C, kterou doporučuje zavřít. Má pravdu? Kolik podstata na prodejně C skutečně vydělává nebo ztrácí a co by znamenalo ji zavřít?\n\n**2.** Při jakých měsíčních tržbách by provoz jako celek nebyl ve ztrátě? Kolik ztrácí dnes?\n\n**3.** Přijmete nabídku hotelu?\n\n**4.** Vystačí peníze na účtu podstaty? Pokud ne, kdy a o kolik je problém a co s tím uděláte?\n\n**5.** Doporučíte prodat podnik jako celek za 3 měsíce, nebo rozprodat majetek hned? Počítejte s diskontní sazbou 12 % ročně a s tím, že provoz do prodeje ztrácí stejně jako dnes.\n\n**6.** Jaké právní kroky prodej podniku vyžaduje?\n\n**7.** Napište doporučení pro věřitelský výbor.\n\nOtázky 1 až 5 mají číselné jádro a dají se zkontrolovat v cvičeních níže. Na otázky 6 a 7 je vzorové řešení. Rozmyslete si nejdřív vlastní odpověď."
+        }
+      ],
+      "cviceni": [
+        {
+          "zadani": "Otázka 1: Jaký je měsíční příspěvek prodejny C — tedy kolik zůstane z tržeb po surovinách a po jejím vlastním nájmu a prodavačkách?",
+          "odpoved": 27500,
+          "jednotka": "Kč",
+          "vzorec": "250000 * (1 - 0.45) - 110000",
+          "reseni": "Příspěvek z výroby 250 000 × 0,55 = 137 500 Kč. Minus nájem a prodavačky 110 000 Kč = **27 500 Kč** měsíčně.\n\n**Účetní pravdu nemá.** Ztráta −80 192 Kč vzniká jen tím, že na C rozpočítala 107 692 Kč z výrobny a správy. Ty ale po zavření C nezmizí — pekaři, pece i účetní zůstanou a rozpočítají se na A a B. Všechny tři prodejny mají kladný příspěvek. **Zavřením C by podstata měsíčně přišla o 27 500 Kč** (lekce 5).\n\nK tomu tři okolnosti, které rozhodnutí ještě posilují:\n\n— **Úspora by stejně přišla pozdě.** Nájem lze po prohlášení konkursu vypovědět **i když je sjednán na dobu určitou**, výpovědní lhůta však nesmí být delší než **3 měsíce** (§ 256 odst. 1 IZ). Pronajímatel tedy nemá pravdu, jen mu to bude trvat. Prodavačky mají výpovědní dobu nejméně **2 měsíce** (§ 51 odst. 2 ZP).\n\n— **Kupec chce všechny tři prodejny.** Zavření C by ohrozilo prodej celku (otázka 5).\n\n— Prodejnu C tedy **nezavírat** — ale připravit si výpověď nájmu pro případ, že prodej celku padne."
+        },
+        {
+          "zadani": "Otázka 2: Fixní náklady jsou 890 000 Kč měsíčně, variabilní 45 % tržeb. Jaké jsou tržby v bodě zvratu? Na koruny.",
+          "odpoved": 1618182,
+          "jednotka": "Kč",
+          "vzorec": "round(890000 / (1 - 0.45))",
+          "reseni": "Míra příspěvku 55 %. Tržby v bodě zvratu 890 000 / 0,55 = **1 618 182 Kč** měsíčně. Dnes jsou tržby 1 300 000 Kč, provoz tedy ztrácí 1 300 000 × 0,55 − 890 000 = **175 000 Kč** měsíčně (lekce 4).\n\nAby se dostal na nulu, musely by tržby vzrůst o čtvrtinu. To se za tři měsíce do prodeje nestane. Provoz tedy poběží ve ztrátě, a otázka zní, jestli se to vyplatí kvůli prodeji celku (otázka 5)."
+        },
+        {
+          "zadani": "Otázka 3: Hotel chce pečivo za 60 000 Kč měsíčně v ceníkových cenách se slevou 30 %. Suroviny a energie jsou 45 % ceníkové ceny. Výrobna má volnou kapacitu. Kolik zakázka přinese měsíčně?",
+          "odpoved": 15000,
+          "jednotka": "Kč",
+          "vzorec": "60000 * (1 - 0.30) - 60000 * 0.45",
+          "reseni": "Příjem 60 000 × 0,7 = 42 000 Kč. Suroviny a energie se počítají z množství, tedy z ceníkové ceny: 60 000 × 0,45 = 27 000 Kč. Přínos **15 000 Kč** měsíčně.\n\n**Přijmout**, protože kapacita je volná a pekaři jsou placeni tak jako tak (lekce 3 a 5). Hlídat dvě věci:\n\n— **sjednat zakázku nejdéle do prodeje** nebo s možností převodu na kupce — ať kupec nepřebírá smlouvu se slevou, kterou nechce,\n\n— **cena se nesmí rozkřiknout** k zákazníkům prodejen. U velkoodběratele je sleva obvyklá, takže to riziko je malé.\n\nPozor na chybu, kterou dělá většina: počítat suroviny jako 45 % ze **zlevněné** ceny (18 900 Kč) a dostat přínos 23 100 Kč. Mouky se kvůli slevě nespotřebuje méně."
+        },
+        {
+          "zadani": "Otázka 4: Jaký bude stav účtu podstaty na konci třetího týdne?",
+          "odpoved": -83160,
+          "jednotka": "Kč",
+          "vzorec": "280000 + 3 * (300000 - 135000) - 90000 - 40000 - 668160 - 60000",
+          "reseni": "Podle rozpočtu je na konci třetího týdne **−83 160 Kč**. Ve výplatním termínu chybí peníze na mzdy, přestože na konci čtvrtého týdne je účet zase v plusu (50 000 Kč) — lekce 6.\n\nCo s tím:\n\n— **Dodavatel mouky:** sjednat dodávky s 14denní splatností. Smlouva na dodávky surovin pro udržení provozu podniku je **úvěrové financování** podle **§ 41 odst. 1 IZ** a pohledávky z ní jsou **pohledávkami za majetkovou podstatou** (§ 168 odst. 1 písm. f)). Dodavatel tedy ví, že dostane zaplaceno přednostně. Posun plateb za suroviny o dva týdny uvolní ve třetím týdnu 270 000 Kč.\n\n— **Hotel** (otázka 3): sjednat platbu předem nebo týdně.\n\n— **Mzdy nesmí počkat.** Pracovněprávní pohledávky zaměstnanců jsou postavené na roveň pohledávkám za majetkovou podstatou (§ 169 odst. 1 písm. a)) a lidé, kterým nepřijde výplata, odejdou dřív, než podnik prodáte.\n\nA rozpočet přepočítávat každý týden podle skutečnosti."
+        },
+        {
+          "zadani": "Otázka 5: Kupec zaplatí 9 000 000 Kč za 3 měsíce, rozprodej dá 7 600 000 Kč hned. Provoz do prodeje ztrácí 175 000 Kč měsíčně. Diskontní sazba je 12 % ročně (za 3 měsíce tedy 1,12^0,25). O kolik je prodej celku výhodnější? Ztrátu provozu nediskontujte. Na koruny.",
+          "odpoved": 623589,
+          "jednotka": "Kč",
+          "vzorec": "round(9000000 / 1.12 ** 0.25) - 3 * 175000 - 7600000",
+          "reseni": "Současná hodnota nabídky: 9 000 000 / 1,12^0,25 = **8 748 589 Kč**. Minus ztráta provozu 3 × 175 000 = 525 000 Kč. Minus rozprodej hned 7 600 000 Kč. Prodej celku je výhodnější o **623 589 Kč** (lekce 4 a 9).\n\nTo je dost na doporučení, ale ne tolik, aby se dalo spát klidně. **Rezerva zmizí**, pokud:\n\n— se prodej protáhne o víc než asi 3 až 4 měsíce (každý měsíc stojí 175 000 Kč ztráty a diskont),\n\n— kupec cenu na konci sníží — kupci v konkursu to dělají,\n\n— provoz ztratí zákazníky a ztráta naroste.\n\nProto: **termín**, do kdy musí být smlouva podepsaná, a **záloha od kupce**. Když termín nedodrží, provoz zastavit a rozprodat."
+        },
+        {
+          "zadani": "Otázka 6: Jaké právní kroky prodej podniku jako celku vyžaduje?",
+          "reseni": "— **Prodej jedinou smlouvou** je výslovně dovolen (**§ 290 odst. 1 IZ**). Výtěžek je součástí celkového výtěžku podstaty a nemůže sloužit jen ke krytí závazků souvisejících s podnikem (§ 290 odst. 2).\n\n— **Ocenění znalcem je povinné.** Při zpeněžení podle § 290 zadáváte znalci ocenění hodnoty zpeněžovaného majetku **vždy** (**§ 219 odst. 4**). Oceňuje se obvyklou cenou (§ 219 odst. 5).\n\n— **Způsob zpeněžení** určujete **se souhlasem věřitelského výboru** (**§ 286 odst. 2**).\n\n— Prodej mimo dražbu potřebuje **souhlas insolvenčního soudu a věřitelského výboru**. Dokud není udělen, smlouva **nenabývá účinnosti** (**§ 289 odst. 1**). Kupní cenu lze sjednat **pod cenou odhadní** a přihlédnout přitom k nákladům na správu, které by jinak bylo nutné vynaložit (§ 289 odst. 2). To je přesně argument ze ztráty provozu.\n\n— **Rozdělané smlouvy** z doby před konkursem, které má kupec převzít: o každé smlouvě o vzájemném plnění rozhodnete podle **§ 253** do 30 dnů od prohlášení konkursu.\n\n— Měřítkem všeho je **§ 5 písm. a)** a **§ 36 odst. 1**: co nejvyšší uspokojení věřitelů a odborná péče. Výpočet z otázky 5 je důkaz, že jste podle nich postupoval."
+        },
+        {
+          "zadani": "Otázka 7: Napište doporučení pro věřitelský výbor — nejvýš na jednu stranu.",
+          "reseni": "Jedna z možných podob:\n\n**Doporučení insolvenčního správce věřitelskému výboru, Pekárna Rous s.r.o. v konkursu**\n\n**1. Doporučuji prodat podnik jako celek** jedinou smlouvou podle § 290 IZ za 9 000 000 Kč, s převzetím do 3 měsíců. Současná hodnota prodeje po odečtení ztráty provozu je o 623 589 Kč vyšší než okamžitý rozprodej majetku (7 600 000 Kč). Žádám výbor o souhlas se způsobem zpeněžení (§ 286 odst. 2) a s prodejem mimo dražbu (§ 289 odst. 1). Znalecké ocenění podle § 219 odst. 4 jsem zadal.\n\n**2. Do prodeje provoz udržím.** Provoz ztrácí 175 000 Kč měsíčně, protože je pod bodem zvratu (tržby 1 300 000 Kč proti potřebným 1 618 182 Kč). Tato ztráta je v propočtu v bodě 1 zahrnuta.\n\n**3. Prodejnu C nezavírám.** Podle výsledovky účetní je ztrátová jen proto, že nese podíl na nákladech výrobny a správy. Ty by po zavření nezmizely. Její vlastní příspěvek je +27 500 Kč měsíčně a kupec požaduje všechny tři prodejny.\n\n**4. Přijímám odběr hotelu** se slevou 30 %. Na volné kapacitě přinese 15 000 Kč měsíčně. Smlouvu uzavírám tak, aby ji kupec nemusel převzít.\n\n**5. Financování.** Ve třetím týdnu by chybělo 83 160 Kč na mzdy. Sjednávám s dodavatelem mouky 14denní splatnost jako úvěrové financování podle § 41 IZ.\n\n**6. Podmínky a pojistky.** Navrhuji, aby smlouva s kupcem byla podepsána do 6 týdnů a kupec složil zálohu. Pokud se tak nestane, provoz zastavím, dám výpovědi (včetně nájmu prodejny C podle § 256 IZ) a navrhnu rozprodej.\n\n*Všimněte si, co tu je:* každé rozhodnutí má číslo a paragraf, ani jedno se neopírá o účetní ztrátu a poslední bod říká, co se stane, když předpoklad padne. Na to se dá hodnotitel podívat a odškrtat si „úroveň řešení“, „aplikace zákona“ i „písemný projev“."
+        }
+      ]
     }
   ],
-  "pripravuje_se": [
-    {
-      "cislo": 10,
-      "nazev": "Souhrnná případová studie"
-    }
-  ]
+  "pripravuje_se": []
 }
