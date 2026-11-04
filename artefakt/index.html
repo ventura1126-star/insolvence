@@ -4371,8 +4371,13 @@
     else vykresliObsah('');
   }
 
+  // Tlačítko se jmenuje „Obsah" a vede na rozcestník — jedním klikem odkudkoli.
+  // Dřív volalo history.back(), což znamenalo proklikat se domů po jedné
+  // obrazovce, a uvnitř prohlížečky artefaktů to umí odnavigovat celou
+  // stránku pryč, protože iframe sdílí historii s rámcem kolem sebe.
+  // Krok zpět zůstává na tlačítku zpět v prohlížeči.
   zpetBtn.addEventListener('click', function () {
-    if (history.length > 1) history.back();
+    if (location.hash.replace(/^#/, '') === '') smeruj();
     else location.hash = '';
   });
   window.addEventListener('hashchange', smeruj);
