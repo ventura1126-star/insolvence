@@ -20,13 +20,14 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 - Artifact (s rozhovory): <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>
 - Čtecí verze: <https://ventura1126-star.github.io/insolvence/zakon/>
 - Kód: `artefakt/index.html` (jedna stránka, prostý HTML/JS, bez frameworku)
-- Data: `artefakt/zakon.json`, `vyklad.json`, `uvody.json`, `temata.json`, `pohledavky.json`, `lhuty.json`, `hra.json`, `hra2.json`, `hra3.json`
+- Data: `artefakt/zakon.json`, `vyklad.json`, `uvody.json`, `temata.json`, `pohledavky.json`, `lhuty.json`, `hra.json`, `hra2.json`, `hra3.json`, `spis.json`
 - Náplň: znění zákona, výklad po odstavcích, **laické úvody k hlavám**
   (`#uvod-<id>`, odkaz je v seznamu zákona u nadpisu hlavy i nad paragrafem —
   vysvětlují, o čem hlava je, než se začnou číst paragrafy), témata mimo insolvenční zákon,
   přehled typů pohledávek (`#pohledavky`), přehled lhůt (`#lhuty`), hra nad spisy
   (`#hra` rozcestník, `#hra-<id>` konkrétní spis — `hra.json` konkurs,
-  `hra2.json` oddlužení, `hra3.json` rozhodování o úpadku), rozhovory s Claudem, tisk
+  `hra2.json` oddlužení, `hra3.json` rozhodování o úpadku), **rozbor skutečného
+  spisu** (`#spis`, `spis.json`), rozhovory s Claudem, tisk
 - Rozhovory: jeden sdílený **postranní panel** (na širokém displeji sloupec
   vedle textu, na telefonu přes celou obrazovku), každé vlákno má **název** a
   všechna se dají najít v přehledu **Moje rozhovory** (`#rozhovory`). Ukládají
@@ -62,6 +63,13 @@ Předpisy leží v `_zdroje/zakony/` (mimo repo). Nejpoužívanější: `2006-18
 (insolvenční zákon), `2012-89` (občanský zákoník), `2012-90` (ZOK), `1963-99`
 (o. s. ř.), `2001-120` (exekuční řád), `1992-586` (daně z příjmů), `2004-235`
 (DPH), `1991-563` (účetnictví), `2009-93` (auditoři).
+
+Spisy z insolvenčního rejstříku leží v `_spis/` (mimo repo — jsou v nich reálná
+jména, rodná čísla a adresy). Do dat a na web jdou jen **anonymizovaně**: role,
+data a částky ano, jména a spisové značky ne. ISIR formuláře mají rozbité
+kódování fontů (chybí ToUnicode) — kódy znaků jsou posunuté o konstantu včetně
+cifer, které pypdf i pymupdf zahazují jako řídicí znaky; posun se dá najít
+automaticky tak, aby vzniklo co nejvíc čitelného ASCII.
 
 Kde zákon jednoznačnou odpověď nedává, **otázku raději přeskoč**, než abys
 hádal. Změnilo-li se právo tak, že žádná nabízená varianta neplatí, dostane
@@ -108,7 +116,9 @@ Pages se z `main` nasadí samy a Artifact se publikuje nástrojem.
 - **`.nojekyll`** v `docs/` — bez něj Jekyll přeskočí složku `_expo`.
 - **Vygenerované soubory** `artefakt/*.js` jsou mimo repo; zdrojové `.json`
   v něm jsou. Nový datový soubor se přidá do `SOUBORY` v
-  `tools/sbal_artefakt.py` a `tools/postav_zakon_web.py` si ho vezme odtud.
+  `tools/sbal_artefakt.py` a `tools/postav_zakon_web.py` si ho vezme odtud —
+  ale `<script src="…">` v `artefakt/index.html` se musí dopsat ručně, jinak
+  se soubor sice zkopíruje, ale stránka ho nenačte a obrazovka zůstane prázdná.
 - **Nepiš do kódu stránky znak `§` ani jinou diakritiku, na které něco závisí.**
   Artifact i Pages kódování deklarují, ale prostý `python3 -m http.server` ne —
   `§` se pak načte jako `Â§`, porovnání tiše selže a vypadá to jako chyba

@@ -250,6 +250,38 @@ def zkontroluj_uvody(zakon):
     return chyby
 
 
+def zkontroluj_spis(zakon):
+    """Rozbor skutečného spisu — hlídá, že odkazy do zákona někam vedou.
+
+    U každého dokumentu je seznam paragrafů, o které se opírá, a stránka
+    z nich dělá prokliky. Novela umí paragraf zrušit (tak zmizel § 415);
+    odkaz by pak vedl na prázdnou obrazovku, aniž by si toho kdo všiml.
+    """
+    zdroj = KOREN / "artefakt/spis.json"
+    if not zdroj.exists():
+        return []
+    spis = json.loads(zdroj.read_text("utf-8"))
+    cisla = {p["paragraf"] for p in zakon}
+    chyby = []
+    kroku = 0
+    for faze in spis["faze"]:
+        if not faze.get("shrnuti", "").strip():
+            chyby.append(f"spis, fáze {faze.get('nazev')}: chybí shrnutí")
+        for krok in faze["kroky"]:
+            kroku += 1
+            kde = f"{krok.get('doklad')} {krok.get('nazev')}"
+            if not krok.get("co", "").strip():
+                chyby.append(f"spis {kde}: chybí popis, co se stalo")
+            for cislo in krok.get("pravo") or []:
+                if cislo not in cisla:
+                    chyby.append(f"spis {kde}: odkaz na § {cislo}, který v zákoně není")
+    for u in spis.get("pouceni", []):
+        if not u.get("nadpis", "").strip() or not u.get("text", "").strip():
+            chyby.append("spis: ponaučení bez nadpisu nebo bez textu")
+    print(f"spis            {len(spis['faze'])} fází, {kroku} dokumentů")
+    return chyby
+
+
 def zkontroluj_vyklad():
     """Výklad se píše ručně vedle znění zákona — hlídá, že se nerozešly.
 
@@ -284,6 +316,7 @@ def zkontroluj_vyklad():
     chyby += zkontroluj_temata()
     chyby += zkontroluj_ucetnictvi()
     chyby += zkontroluj_uvody(zakon)
+    chyby += zkontroluj_spis(zakon)
     chyby += zkontroluj_hru(zakon)
 
     celkem = sum(len(o) for o in odstavce.values())

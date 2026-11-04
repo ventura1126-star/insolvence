@@ -1,0 +1,404 @@
+{
+  "nazev": "Spis krok za krokem",
+  "podtitul": "Oddlužení OSVČ od návrhu po přerušení",
+  "znak": "§",
+  "perex": "Jeden skutečný insolvenční spis, 104 dokumentů, pět a půl roku. Dlužník podal návrh v dubnu 2021. Úpadek soud zjistil po půl roce, oddlužení schválil po dalších dvou letech a dnes je řízení přerušené, protože dlužníkovi mezitím narostly nové dluhy větší než polovina těch původních. Žádný učebnicový případ — a právě proto se z něj dá naučit to, co v učebnici není: jak dlouho to trvá, kde se to zadrhne a která formalita rozhodne.\n\nProcházejte to v pořadí, v jakém se to dělo. U každého dokumentu je, co se stalo, o co se opírá a co si z toho odnést. Čísla paragrafů jsou prokliky do znění zákona.",
+  "anonymizace": "Spis je skutečný a veřejný z insolvenčního rejstříku. Jméno dlužníka, rodné číslo, adresa, spisová značka i jména věřitelů jsou tu vynechané — zůstávají role, data a částky, na kterých celá právní logika stojí.",
+  "kdo": [
+    { "role": "Dlužník", "popis": "Muž, ročník 1987, ukrajinské státní příslušnosti. OSVČ ve stavebnictví — pomocný stavební dělník na vlastní IČO. Ženatý, vyživovací povinnost ke třem osobám (manželka a dvě děti). Ukončené základní vzdělání, bez zdravotního omezení. Bydlí v pronajatém bytě 2+kk." },
+    { "role": "Sepisovatel návrhu", "popis": "Advokát z Valašského Meziříčí. Dlužník je z Prahy — sepisování návrhů na oddlužení je samostatná živnost podle § 390a odst. 1 písm. a) a dělá se na dálku." },
+    { "role": "Insolvenční správkyně", "popis": "Veřejná obchodní společnost se sídlem v Praze, plátce DPH. Určena předsedkyní soudu z obecné části seznamu podle § 25." },
+    { "role": "Soud", "popis": "Insolvenční soud. Rozhodnutí ve věci vydává samosoudce, dohlédací činnost z velké části asistentka soudce a vyšší soudní úřednice." },
+    { "role": "Šest věřitelů", "popis": "Banka (665 tisíc z úvěru, vymáháno exekučně), nebankovní úvěrová společnost (167 tisíc), pronajímatelka bytu (44 tisíc dlužného nájmu), zdravotní pojišťovna (9,8 tisíce), soudní exekutor (6,4 tisíce paušálních nákladů exekuce), dodavatel plynu (3,5 tisíce)." }
+  ],
+  "cisla": [
+    { "popisek": "Přihlášené pohledávky", "hodnota": "894 429 Kč", "pozn": "6 věřitelů, všechny nezajištěné, žádná popřená" },
+    { "popisek": "Slíbeno v návrhu", "hodnota": "12 336 Kč / měsíc", "pozn": "za pět let 740 160 Kč, z toho pro věřitele 668 770 Kč" },
+    { "popisek": "Skutečná zálohová splátka", "hodnota": "3 060 Kč / měsíc", "pozn": "stanovena při schválení oddlužení v listopadu 2023" },
+    { "popisek": "Uhrazeno věřitelům po 32 měsících", "hodnota": "1,62 %", "pozn": "stav ke zprávě z 15. 9. 2026" },
+    { "popisek": "Nové dluhy vzniklé po úpadku", "hodnota": "cca 525 000 Kč", "pozn": "sociální a zdravotní pojištění a daně z příjmů za roky 2021-2026" },
+    { "popisek": "Od návrhu k rozhodnutí o úpadku", "hodnota": "5 měsíců a 25 dní", "pozn": "z toho pět měsíců trvalo doplňování návrhu" },
+    { "popisek": "Od úpadku ke schválení oddlužení", "hodnota": "2 roky a 14 dní", "pozn": "zpráva pro oddlužení se mezitím přepsala pětkrát" }
+  ],
+  "faze": [
+    {
+      "id": "navrh",
+      "nazev": "Návrh a jeho doplňování",
+      "obdobi": "duben - říjen 2021",
+      "shrnuti": "Dlužník podá návrh přes advokáta. Soud do dvou hodin zveřejní vyhlášku o zahájení řízení a pak pětkrát vyzývá k doplnění. Pět měsíců se nerozhoduje o úpadku, protože návrh není úplný.",
+      "kroky": [
+        {
+          "doklad": "A-1",
+          "datum": "23. 4. 2021",
+          "kdo": "dlužník prostřednictvím advokáta",
+          "nazev": "Insolvenční návrh spojený s návrhem na povolení oddlužení",
+          "co": "Na předepsaném formuláři. Dlužník tvrdí úpadek ve formě **platební neschopnosti** a osvědčuje ho čtyřmi závazky: banka 707 419 Kč (splatno 18. 12. 2020), správa sociálního zabezpečení 11 612 Kč (31. 12. 2020), nebankovní úvěr 120 000 Kč a zdravotní pojišťovna 9 351 Kč (9. 1. 2020). Souhrn závazků 848 382 Kč.\n\nTvrdí čistý příjem z podnikání 34 250 Kč měsíčně a slibuje, že na oddlužení půjde nejméně 12 336 Kč měsíčně — za pět let 740 160 Kč, z toho pro nezajištěné věřitele 668 770 Kč. Navrhovaný způsob: plnění splátkového kalendáře se zpeněžením majetkové podstaty.",
+          "pravo": ["97", "103", "104", "390", "390a", "391", "392", "395", "3"],
+          "pozor": "Dvě věci ve formuláři, které se později ukázaly jako podstatné. U nebankovního úvěru je v kolonce splatnosti datum **16. 8. 2023** — tedy v budoucnosti; na osvědčení úpadku ten závazek v dubnu 2021 nestačí, úpadek stojí na zbylých třech. A tentýž úvěr je v návrhu označen jako **zajištěný** osobním automobilem — věřitel ho ale později přihlásil jako nezajištěný. Zajištění se uplatňuje jen přihláškou a musí se v ní dovolat (§ 166); kdo to neudělá, je prostě nezajištěný věřitel."
+        },
+        {
+          "doklad": "A-4",
+          "datum": "23. 4. 2021",
+          "kdo": "soud",
+          "nazev": "Vyhláška o zahájení insolvenčního řízení",
+          "co": "Řízení je zahájeno dnem, kdy návrh došel soudu. Vyhlášku soud zveřejnil **týž den ve 13:33** — zákon na to dává dvě hodiny. Vyhláška vyzývá věřitele, aby podali přihlášky, a doručuje se mimo jiné finančnímu úřadu, celnímu úřadu, úřadu práce, správě sociálního zabezpečení a okresnímu soudu podle bydliště.",
+          "pravo": ["97", "101", "109", "110", "111"],
+          "pozor": "Od tohoto okamžiku běží účinky zahájení: pohledávky se nedají uplatňovat žalobou, exekuce se nedá provést, dlužník nesmí podstatně měnit majetkovou podstatu. **Přihlášky lze podávat už teď** — ne až po rozhodnutí o úpadku (§ 173 odst. 1)."
+        },
+        {
+          "doklad": "A-6",
+          "datum": "4. 5. 2021",
+          "kdo": "soud",
+          "nazev": "První výzva k doplnění návrhu",
+          "co": "Soud dává sedm dní na doplnění a upřesnění návrhu. Rozhoduje asistentka soudce.",
+          "pravo": ["128", "393"],
+          "pozor": "Lhůta k doplnění **nesmí být delší než 7 dnů** (§ 128 odst. 2). Soud ji určuje, ne navrhovatel — a usnesení se doručuje i dlužníkovi, i když návrh za něj podal advokát."
+        },
+        {
+          "doklad": "A-7 až A-12",
+          "datum": "13. 5. - 24. 9. 2021",
+          "kdo": "advokát a soud",
+          "nazev": "Prodlužování, doplňování, druhá výzva",
+          "co": "13. 5. žádost o prodloužení lhůty s odůvodněním, že dlužník onemocněl covidem. 21. 5. doplnění. Pak druhá výzva (A-9) a 2. 8. další doplnění — daňové přiznání za rok 2020 a fakturace z podnikání. 24. 9. úřední záznam: daňové přiznání nebylo k přípisu nedopatřením přiloženo, sepisovatel ho týž den doposlal (A-12).",
+          "pravo": ["128", "393"],
+          "pozor": "Tady se ztratilo pět měsíců. Soud má o návrhu rozhodnout **bez zbytečného odkladu** (§ 134) a do deseti dnů učinit úkony směřující k rozhodnutí — to splnil. Běh času ale nejde na vrub soudu, nýbrž neúplného návrhu. Jakmile byl návrh kompletní, rozhodl soud o úpadku do 24 dnů."
+        },
+        {
+          "doklad": "A-13, A-14",
+          "datum": "12. 10. 2021",
+          "kdo": "soudce a předsedkyně soudu",
+          "nazev": "Žádost o určení insolvenčního správce a jeho určení",
+          "co": "Soudce žádá předsedkyni soudu o určení osoby správce podle kritérií: dlužník fyzická osoba, návrh podal dlužník, typ správce „oddlužení“. Předsedkyně určí veřejnou obchodní společnost z **obecné části** seznamu insolvenčních správců.",
+          "pravo": ["25"],
+          "pozor": "Správce neurčuje soudce, který věc rozhoduje, ale **předseda soudu podle pořadí** daného dnem zápisu sídla nebo provozovny do příslušné části seznamu. Zvláštní část seznamu je pro velké dlužníky a reorganizace; oddlužení se bere z obecné části."
+        }
+      ]
+    },
+    {
+      "id": "upadek",
+      "nazev": "Rozhodnutí o úpadku a povolení oddlužení",
+      "obdobi": "říjen - listopad 2021",
+      "shrnuti": "Jediné usnesení o sedmnácti výrocích. Zjistí úpadek, povolí oddlužení, ustanoví správkyni, spustí dvouměsíční lhůtu k přihláškám a uloží dlužníkovi zálohy.",
+      "kroky": [
+        {
+          "doklad": "A-15",
+          "datum": "18. 10. 2021",
+          "kdo": "samosoudce",
+          "nazev": "Usnesení o úpadku spojené s povolením oddlužení",
+          "co": "Sedmnáct výroků. I. zjišťuje se úpadek. II. povoluje se řešení oddlužením. III. ustanovuje se insolvenční správkyně. IV. výzva věřitelům s **dvouměsíční** lhůtou k přihláškám a poučením, že k pozdějším se nepřihlíží. V. výzva k uplatnění zajišťovacích práv. VII. nezajištění věřitelé mají 7 dnů od zveřejnění zprávy pro oddlužení na to, aby navrhli schůzi věřitelů nebo hlasovali mimo ni — jinak soud schválí splátkový kalendář. IX. správkyni ukládá do 30 dnů po uplynutí přihlašovací lhůty předložit zprávu o přezkumu, zprávu pro oddlužení a soupis majetkové podstaty. XIII. dlužníkovi ukládá platit zálohu na odměnu a hotové výdaje 900 Kč měsíčně, s DPH 1 089 Kč.",
+          "pravo": ["136", "389", "397", "398", "399", "400", "173", "25", "26", "138", "210"],
+          "pozor": "Usnesení **nemá odůvodnění** — zákon to dovoluje, nevyjádřil-li se žádný věřitel podle § 389 odst. 2 písm. a) a nebyly-li pochybnosti podle § 397 odst. 1. Usnesení se odvolává na „§ 136 odst. 3“; dnes je totéž pravidlo v **§ 136 odst. 4**, ustanovení se mezitím přečíslovalo. Odvolání je přípustné jen proti výroku o osobě správce (a to jen z důvodu nesplnění podmínek nebo podjatosti) a proti výroku o mezinárodní příslušnosti."
+        },
+        {
+          "doklad": "B-1, B-2",
+          "datum": "24. - 25. 11. 2021",
+          "kdo": "insolvenční správkyně",
+          "nazev": "Výzva dlužníkovi k součinnosti",
+          "co": "Správkyně se ohlašuje, žádá dlužníka, aby ji neprodleně kontaktoval, a sděluje číslo účtu pro zálohy. Kopie jde advokátovi i soudu.",
+          "pravo": ["210", "412"],
+          "pozor": "Povinnost součinnosti má dlužník už od rozhodnutí o úpadku, ne až od schválení oddlužení. Nekontaktní dlužník je první varovný signál — v tomhle spisu se k tomu správkyně bude vracet ještě v roce 2026."
+        },
+        {
+          "doklad": "B-3",
+          "datum": "26. 11. 2021",
+          "kdo": "advokát - sepisovatel",
+          "nazev": "Uplatnění odměny za sepis návrhu",
+          "co": "Advokát vyzývá dlužníka k úhradě odměny **4 840 Kč** (4 000 Kč plus DPH) a současně ji uplatňuje v řízení.",
+          "pravo": ["390a", "136", "168", "169"],
+          "pozor": "Maximální odměna za sepis a podání návrhu je zákonem zastropovaná na **4 000 Kč bez DPH** (u společného oddlužení manželů 6 000 Kč) a je v ní zahrnuta i náhrada nákladů. Uplatnit ji lze **jen v insolvenčním řízení** a jen ve lhůtě k přihláškám — pak se považuje za pohledávku postavenou na roveň pohledávkám za majetkovou podstatou. Akreditovaná osoba nemá nárok na nic (§ 390a odst. 4)."
+        }
+      ]
+    },
+    {
+      "id": "prihlasky",
+      "nazev": "Přihlášky a přezkum",
+      "obdobi": "listopad 2021 - leden 2022",
+      "shrnuti": "Šest přihlášek za 894 429 Kč. Správkyně je přezkoumá sama při osobním jednání s dlužníkem — žádné přezkumné jednání u soudu se v oddlužení nekoná. Nic se nepopírá.",
+      "kroky": [
+        {
+          "doklad": "P1 až P6",
+          "datum": "2. 11. - 17. 12. 2021",
+          "kdo": "věřitelé",
+          "nazev": "Šest přihlášek pohledávky",
+          "co": "**P1 zdravotní pojišťovna 9 811 Kč** — dlužné pojistné 9 559 Kč a penále 252 Kč za období 2017-2021, nevykonatelné.\n**P2 soudní exekutor 6 408 Kč** — paušální náklady exekuce: odměna, hotové výdaje 3 500 Kč a DPH.\n**P3 nebankovní úvěrová společnost 167 305,62 Kč** — úvěrová smlouva z 8. 6. 2018, přihlášeno jako nezajištěné.\n**P4 banka 663 288,99 Kč** — úvěrový rámec 500 000 Kč vyčerpaný v plné výši, elektronický platební rozkaz z 29. 6. 2020, vymáháno exekučně.\n**P5 pronajímatelka bytu 44 161,63 Kč** — dlužné nájemné ve čtyřech dílčích pohledávkách, mimo jiné za červen, září a říjen 2021.\n**P6 dodavatel plynu 3 453,31 Kč.**",
+          "pravo": ["173", "174", "176", "177", "166", "183"],
+          "pozor": "Všimněte si přihlášky pronajímatelky: nájem za **září a říjen 2021** vznikl až po zahájení řízení (23. 4. 2021), a přesto se přihlašuje. Pohledávkami za majetkovou podstatou jsou podle § 168 odst. 2 jen ty, které vznikly **po rozhodnutí o úpadku**, a běžné nájemné mezi ně nepatří. Hranicí není zahájení řízení, ale rozhodnutí o úpadku — a i pak jen u taxativně vyjmenovaných druhů.\n\nExekutor neopírá nárok o zákon, ale o dva nálezy Ústavního soudu (III. ÚS 1231/20 a IV. ÚS 3250/14): nárok na náhradu nákladů exekuce má od okamžiku nařízení exekuce, ne až od jejího skončení."
+        },
+        {
+          "doklad": "jednání",
+          "datum": "6. 1. 2022",
+          "kdo": "správkyně a dlužník",
+          "nazev": "Osobní jednání s dlužníkem a přezkum",
+          "co": "Správkyně dlužníka poučí o právu popírat pravost, výši a pořadí přihlášených pohledávek, postupně mu sdělí podstatný obsah každé přihlášky a zaznamená jeho stanovisko do seznamu přihlášených pohledávek. Dlužník nepopřel nic, správkyně také ne. **Všech šest pohledávek zjištěno v plné výši.** Dlužník přitom požádal, aby při případném neschválení nebo zrušení oddlužení byl způsobem řešení konkurs.",
+          "pravo": ["410", "192", "197", "198", "201"],
+          "pozor": "V oddlužení **není přezkumné jednání u soudu**. Přezkum dělá správce sám a výsledek zapíše do seznamu; soud ho pak jen schválí. Popření pohledávky dlužníkem má v oddlužení stejné účinky jako popření správcem (§ 410 odst. 5) — to je rozdíl oproti konkursu, kde popření dlužníkem na zjištění pohledávky nic nemění."
+        },
+        {
+          "doklad": "B-5",
+          "datum": "19. 1. 2022",
+          "kdo": "insolvenční správkyně",
+          "nazev": "První zpráva pro oddlužení a o přezkumu",
+          "co": "Správkyně počítá s čistým příjmem 19 532 Kč měsíčně a třemi vyživovacími povinnostmi — zálohová splátka vychází na **2 524 Kč**. Předpokládané uspokojení nezajištěných věřitelů: **12,35 % za tři roky, 16,20 % za pět let**; při pouhém zpeněžení majetkové podstaty 6,24 %. Soupis majetkové podstaty má čtyři položky: osobní automobil a běžné vybavení domácnosti. Nic z toho správkyně nenavrhuje zpeněžit — vůz dlužník potřebuje k podnikání a jeho prodej by přinesl méně než splátkový kalendář.",
+          "pravo": ["398a", "398", "399", "409"],
+          "pozor": "Zpráva pro oddlužení **není formalita, ale návrh způsobu řešení**. Správce v ní musí porovnat plnění při obou způsobech oddlužení a čísly doložit, proč navrhuje ten, který navrhuje. Zde to porovnání samo odůvodňuje, proč se auto nezpeněžuje: § 398 odst. 6 dlužníkovi neukládá vydat majetek, jehož zpeněžením by se uspokojení věřitelů nezvýšilo."
+        }
+      ]
+    },
+    {
+      "id": "prepisovani",
+      "nazev": "Zpráva se přepisuje pětkrát",
+      "obdobi": "únor 2022 - květen 2023",
+      "shrnuti": "Nezabavitelná částka roste rychleji než dlužníkův příjem. Soud třikrát posílá zprávu zpátky a mezitím přijde námitka věřitele. Patnáct měsíců se o schválení nerozhodne.",
+      "kroky": [
+        {
+          "doklad": "B-6",
+          "datum": "15. 2. 2022",
+          "kdo": "soud",
+          "nazev": "Úřední záznam: změna výpočtu zabavitelné částky",
+          "co": "Od 1. 1. 2022 se změnil výpočet nezabavitelné částky. Soud telefonicky kontaktuje správkyni: dlužníkův příjem je nutné navýšit, aby bylo postaveno najisto, že podmínky oddlužení splní.",
+          "pravo": ["398", "11"],
+          "pozor": "Nezabavitelná částka se odvozuje od životního minima a normativních nákladů na bydlení a mění se nařízením vlády — typicky k 1. lednu, v těchto letech i v průběhu roku. **Zpráva pro oddlužení má omezenou trvanlivost:** každá taková změna posune srážku a s ní i předpokládanou míru uspokojení."
+        },
+        {
+          "doklad": "B-7, B-9",
+          "datum": "14. 3. a 23. 6. 2022",
+          "kdo": "insolvenční správkyně",
+          "nazev": "Druhá a třetí verze zprávy",
+          "co": "Správkyně přepočítává a znovu předkládá.",
+          "pravo": ["398a"],
+          "pozor": null
+        },
+        {
+          "doklad": "B-8",
+          "datum": "7. 6. 2022",
+          "kdo": "soud",
+          "nazev": "Usnesení v dohlédací činnosti",
+          "co": "Soud ukládá správkyni do 15 dnů předložit aktualizovanou zprávu a konstatuje, že **z příjmu dlužníka lze aktuálně strhávat jen 836 Kč**. Vyzývá, aby dlužník příjem navýšil — například darovací smlouvou (§ 2055 a násl. občanského zákoníku) nebo smlouvou o důchodu (§ 2701 a násl.).",
+          "pravo": ["11", "81", "91"],
+          "pozor": "Takhle vypadá **dohlédací činnost** v praxi: soud neřeší hmotné právo, ale tlačí na to, aby řízení dávalo smysl. Proti usnesení není odvolání přípustné, dají se podat jen námitky do 15 dnů a rozhodne o nich soudce. Neplní-li správce uložené povinnosti, hrozí mu pořádková pokuta podle § 81 odst. 2."
+        },
+        {
+          "doklad": "B-11",
+          "datum": "12. 7. 2022",
+          "kdo": "banka (věřitel P4)",
+          "nazev": "Hlasovací lístek a námitky věřitele",
+          "co": "Největší věřitel posílá hlasovací lístek (hlasuje pro splátkový kalendář) a **zároveň namítá nepoctivý záměr** podle § 403 odst. 2. Tvrdí, že dlužník přistupuje k povinnostem lehkomyslně, že jeho příjem 19 532 Kč čistého je hluboko pod tržním průměrem, že nepředložil darovací smlouvu ani nepočítá s mimořádnými splátkami, a že nabídnuté plnění je ve zvlášť hrubém nepoměru k celkovému dluhu 894 428,55 Kč. Za adekvátní považuje uspokojení alespoň 30 %.",
+          "pravo": ["403", "401", "395"],
+          "pozor": "Věřitel to načasoval správně a napsal věcně. O rok a půl později se k tomu stejně nepřihlédne — kvůli podpisu. Usnesení o schválení oddlužení k tomuto podání uvádí datum 12. 7. 2023; pořadí dokumentů ve spisu i navazující vyjádření z července a srpna 2022 ale ukazují na rok **2022**."
+        },
+        {
+          "doklad": "B-13, B-15",
+          "datum": "27. 7. a 12. 8. 2022",
+          "kdo": "dlužník a správkyně",
+          "nazev": "Vyjádření k námitkám",
+          "co": "Dlužník: příjem klesl, protože ubyly zakázky, očekává jejich návrat, a kdyby ne, najde si zaměstnání s vyšším příjmem. Odmítá srovnání s „běžnými mzdovými podmínkami“ — je pomocný stavební dělník.\nSprávkyně: shrnuje osobní a příjmovou situaci, prověřila věřitelem uváděné nabídky práce a doporučila dlužníkovi se o ně ucházet. Námitky nepovažuje za účelné — při zrušení oddlužení a konkursu by uspokojení věřitelů bylo **nižší**, ne vyšší.",
+          "pravo": ["395", "412", "418"],
+          "pozor": "Argument správkyně je ten, který u soudu zabral: cílem není potrestat dlužníka, ale maximalizovat uspokojení věřitelů. Konkurs u dlužníka bez majetku dává věřitelům méně než jakkoli hubený splátkový kalendář."
+        },
+        {
+          "doklad": "B-16 až B-19",
+          "datum": "14. 11. 2022 - 21. 4. 2023",
+          "kdo": "soud a správkyně",
+          "nazev": "Čtvrtá verze zprávy, vyhláška a další urgence",
+          "co": "Další změna nezabavitelné částky, čtvrtá verze zprávy (B-17, 30. 11. 2022), vyhláška o zveřejnění zprávy (B-18, 11. 12. 2022) a v dubnu 2023 další telefonická urgence — tentokrát i k evidenci dluhu dlužníka na zálohách na odměnu správkyně.",
+          "pravo": ["398a", "410"],
+          "pozor": "Úřední záznam B-19 nese v hlavičce **cizí spisovou značku** (jiné číslo INS). Drobnost, ale ukazuje, proč se v insolvenčním rejstříku kontroluje značka u každého dokumentu zvlášť."
+        },
+        {
+          "doklad": "B-20",
+          "datum": "11. 5. 2023",
+          "kdo": "insolvenční správkyně",
+          "nazev": "Pátá a poslední verze zprávy pro oddlužení",
+          "co": "Příjem: zisk z podnikání 257 508 Kč ročně plus dohoda o provedení práce 7 000 Kč měsíčně, celkem 28 459 Kč čistého. Při třech vyživovacích povinnostech vychází zákonná srážka **3 060 Kč** — to je navržená zálohová splátka. Očekávaný výtěžek pro nezajištěné věřitele: 65 480 Kč při splátkovém kalendáři proti 55 800 Kč při pouhém zpeněžení. Odměna sepisovatele 4 000 Kč je stále **neuhrazená**; dlužník na zálohách správkyni zaplatil 20 691 Kč.",
+          "pravo": ["398a", "398b", "390a", "38"],
+          "pozor": "U OSVČ se splátka neurčuje ze mzdy, ale podle § 398b z **očekávaných budoucích měsíčních příjmů** počítaných jako rozdíl reálných příjmů a reálných výdajů. To předpokládá, že dlužník výdaje eviduje — tenhle je neevidoval a v roce 2026 se to vymstí."
+        }
+      ]
+    },
+    {
+      "id": "schvaleni",
+      "nazev": "Schválení oddlužení",
+      "obdobi": "listopad 2023",
+      "shrnuti": "Dvacet výroků. Námitky největšího věřitele padnou pod stůl kvůli podpisu na hlasovacím lístku — a jsou to právě ony, které měly rozhodnout o poctivosti záměru.",
+      "kroky": [
+        {
+          "doklad": "B-22",
+          "datum": "1. 11. 2023",
+          "kdo": "samosoudce",
+          "nazev": "Usnesení o schválení zprávy o přezkumu a schválení oddlužení",
+          "co": "I. dlužník je oprávněn podat návrh na povolení oddlužení. II. schvaluje se zpráva o přezkumu. III. schvaluje se oddlužení **plněním splátkového kalendáře se zpeněžením majetkové podstaty**. IV. zálohová splátka **3 060 Kč** vždy k 20. dni měsíce, první nejpozději do 31. 12. 2023. VII. dlužník nic nevydává ke zpeněžení. VIII. plátci příjmu (zaměstnavateli z dohody) se přikazuje provádět srážky. XI. správkyni se přiznává záloha na odměnu **1 815 Kč včetně DPH za přezkoumání přihlášek šesti věřitelů**. XII. měsíčně 750 Kč odměny a 150 Kč hotových výdajů plus DPH. XVIII. **k námitkám věřitele č. 4 se nepřihlíží.** XIX. působnost věřitelského výboru vykonává soud.",
+          "pravo": ["406", "410", "402", "397", "398", "398b", "38", "61", "47"],
+          "pozor": "Odměna správce z počtu přezkoumaných přihlášek je v oddlužení **25 % sazby pro konkurs**: v konkursu 1 000 Kč za přihlášku, v oddlužení tedy 250 Kč plus DPH. Šest přihlášek dělá 1 500 Kč, s DPH 1 815 Kč."
+        },
+        {
+          "doklad": "B-22",
+          "datum": "1. 11. 2023",
+          "kdo": "samosoudce",
+          "nazev": "Proč se k námitkám nepřihlíželo",
+          "co": "Hlasovací lístek věřitele nebyl opatřen **úředně ověřeným podpisem** osoby, která za věřitele jedná. Byl podepsán uznávaným elektronickým podpisem. Soud: uznávaný elektronický podpis je sice postaven naroveň podpisu vlastnoručnímu, nikoli však podpisu **úředně ověřenému** — s odkazem na usnesení Nejvyššího soudu sen. zn. 29 NSČR 106/2018, uveřejněné pod č. 22/2021 Sbírky soudních rozhodnutí a stanovisek. Článek 25 odst. 2 nařízení eIDAS na tom nic nemění. Náhradu podle § 6 zákona č. 12/2020 Sb., o právu na digitální služby, věřitel také nesplnil — soud si z registru obyvatel ověřil, že pověřený zaměstnanec v něm nemá zapsaný kvalifikovaný certifikát.\n\nDůsledek: k hlasu se nepřihlíží. A protože námitky podle § 403 odst. 2 může podat **jen věřitel, který o způsobu oddlužení hlasoval**, nepřihlíží se ani k námitkám. Soud se jimi zabýval alespoň jako podnětem a uzavřel, že úvahy o nepoctivém záměru jsou předčasné.",
+          "pravo": ["401", "403", "395", "402"],
+          "pozor": "Tohle je ta nejpraktičtější lekce z celého spisu. **Hlasovací lístek je formulářové podání s předepsanou náležitostí, která se nedá nahradit kvalitnějším elektronickým podpisem.** Kdo hlasuje mimo schůzi věřitelů, potřebuje buď úředně ověřený podpis, nebo autorizovanou konverzi. A kdo nehlasuje, ztrácí i právo namítat."
+        },
+        {
+          "doklad": "B-23 až B-25",
+          "datum": "29. 11. 2023 - 4. 1. 2024",
+          "kdo": "soud",
+          "nazev": "Doručení dlužníkovi a právní moc",
+          "co": "Usnesení se dlužníkovi doručuje podle § 50 odst. 2 občanského soudního řádu — oznámení i usnesení se vyvěsí na úřední desce soudu a zveřejní v rejstříku. Vyvěšeno 30. 11. 2023, sejmuto 2. 1. 2024. Právní moc vyznačena 3. 1. 2024.",
+          "pravo": ["71", "75", "138", "406"],
+          "pozor": "Rozhodnutí v insolvenčním řízení se zásadně doručují zveřejněním v rejstříku, ale dlužníkovi a správci **do vlastních rukou** (§ 138). Nepodaří-li se to, nastupuje náhradní doručení podle občanského soudního řádu — a to stojí šest týdnů."
+        }
+      ]
+    },
+    {
+      "id": "plneni",
+      "nazev": "Plnění, nové dluhy a návrh na zrušení",
+      "obdobi": "2024 - leden 2025",
+      "shrnuti": "Dlužník neplatí, nekomunikuje a po úpadku mu narůstají dluhy na pojistném a daních. Po roce správkyně navrhne oddlužení zrušit.",
+      "kroky": [
+        {
+          "doklad": "B-26",
+          "datum": "4. 9. 2024",
+          "kdo": "finanční úřad",
+          "nazev": "Vyrozumění o uplatnění pohledávky za majetkovou podstatou",
+          "co": "Finanční úřad uplatňuje **13 530 Kč** z dodatečného platebního výměru na daň z příjmů fyzických osob z června 2024 — tedy pohledávku, která vznikla až po rozhodnutí o úpadku.",
+          "pravo": ["168", "203", "169"],
+          "pozor": "Pohledávka za majetkovou podstatou **se nepřihlašuje**. Uplatňuje se u insolvenčního správce vyrozuměním a uspokojuje se v plné výši kdykoli po rozhodnutí o úpadku (§ 168 odst. 3). V splátkovém kalendáři ji platí správce z měsíční splátky v pořadí podle § 398 odst. 4 — a to je přesně to, co ukusuje z toho, co by jinak šlo věřitelům."
+        },
+        {
+          "doklad": "B-27",
+          "datum": "23. 9. 2024",
+          "kdo": "insolvenční správkyně",
+          "nazev": "Zpráva o plnění oddlužení",
+          "co": "Aktuální míra uspokojení nezajištěných věřitelů: **0,51 %**. Očekávaná za tři roky 4,96 %, za pět let 8,26 %. Správkyně zatím doporučuje ponechat dlužníka v oddlužení, ale varuje: pokud nebude kontaktní, nedoloží, jak řeší nové dluhy po úpadku, a nepředloží přehledy příjmů, navrhne zrušení. Jako lhůtu k nápravě navrhuje tři měsíce.",
+          "pravo": ["36", "412", "418"],
+          "pozor": "Správce předkládá zprávu o stavu řízení nejméně jednou za tři měsíce (§ 36 odst. 2) — a **neprodleně**, lze-li důvodně předpokládat důvody pro prodloužení průběhu oddlužení nebo jeho zrušení (§ 36 odst. 3). Zde soud navíc uložil roční zprávu výrokem XV. usnesení o schválení."
+        },
+        {
+          "doklad": "B-28",
+          "datum": "30. 9. 2024",
+          "kdo": "soud",
+          "nazev": "Výzva dlužníkovi k novým dluhům",
+          "co": "Soud ukládá dlužníkovi do 7 dnů sdělit, jak bude řešit nové dluhy u zdravotní pojišťovny a finančního úřadu, které mu vznikly **po schválení oddlužení**. A výslovně ho upozorňuje: vznik nového dluhu je samostatným důvodem pro zrušení schváleného oddlužení.",
+          "pravo": ["418", "412", "11"],
+          "pozor": "Důvod je v § 418 odst. 1 písm. b): peněžitý závazek vzniklý **v důsledku zaviněného jednání** po schválení oddlužení a nehrazený déle než 30 dnů po splatnosti. Zavinění se přitom podle odstavce 2 **předpokládá**, byl-li na závazek nařízen výkon rozhodnutí nebo exekuce."
+        },
+        {
+          "doklad": "B-32, B-33",
+          "datum": "17. 12. 2024 a 2. 1. 2025",
+          "kdo": "soud a správkyně",
+          "nazev": "Správkyně navrhuje zrušení oddlužení",
+          "co": "Soud si vyžádá zprávu a prověření, zda dlužník nové závazky uhradil. Správkyně odpovídá: míra uspokojení **1,17 %**, dlužník nedoložil nic podstatného. Doporučení už nezní „ponechat v oddlužení“, ale **zrušení schváleného oddlužení a zastavení řízení**.",
+          "pravo": ["418", "412", "36"],
+          "pozor": "Všimněte si té druhé části návrhu: zrušení oddlužení **a zastavení řízení**, ne konkurs. Soud spolu se zrušením nerozhodne o konkursu, je-li majetek dlužníka pro uspokojení věřitelů zcela nepostačující (§ 418 odst. 5) — a tenhle dlužník nemá nic než ojetý vůz."
+        },
+        {
+          "doklad": "B-34",
+          "datum": "23. 1. 2025",
+          "kdo": "soud",
+          "nazev": "Výzva dlužníkovi k vyjádření",
+          "co": "Soud posílá dlužníkovi návrh správkyně a dává mu 10 dnů, aby sdělil stanovisko, proč neplní podmínky, a zda trvá na nařízení jednání. S poučením, že nevyjádří-li se, bude soud vycházet z toho, že jednání nepožaduje, a rozhodne bez něj.",
+          "pravo": ["418"],
+          "pozor": "Jednání o zrušení oddlužení soud **nařídí vždy**, navrhne-li to správce nebo věřitel nebo trvá-li na něm dlužník. Mlčení dlužníka se po deseti dnech považuje za to, že na jednání netrvá. Usnesení odkazuje na „§ 418 odst. 7“; dnes je totéž pravidlo v **§ 418 odst. 8**."
+        }
+      ]
+    },
+    {
+      "id": "preruseni",
+      "nazev": "Přerušení průběhu oddlužení",
+      "obdobi": "únor 2025 - dnes",
+      "shrnuti": "Místo zrušení přijde návrh na přerušení. Soud vyhoví na dvanáct měsíců. Po jejich uplynutí je uspokojení věřitelů 1,62 % a nových dluhů půl milionu.",
+      "kroky": [
+        {
+          "doklad": "B-35",
+          "datum": "12. 2. 2025",
+          "kdo": "dlužník",
+          "nazev": "Návrh na přerušení průběhu oddlužení",
+          "co": "Dlužník žádá o přerušení na maximální dobu jednoho roku. Důvod: jako osoba ukrajinské národnosti posílal velkou část příjmů příbuzným na Ukrajinu, kteří jsou zasaženi válečným konfliktem nebo se nacházejí přímo ve válečné zóně. Z toho mu vznikly nové dluhy, které chce splatit. Zdůrazňuje, že přerušením se pohledávky věřitelů nijak nekrátí — o dobu přerušení se celková doba oddlužení prodlouží.",
+          "pravo": ["412b", "412a"],
+          "pozor": "Přerušení je **alternativa ke zrušení**, ne úleva zadarmo. Dlužník ji použil v okamžiku, kdy už byl návrh na zrušení na stole — a argumentoval přesně tím, co zákon žádá: důležitými důvody a tím, že věřitelé na tom nebudou hůř."
+        },
+        {
+          "doklad": "B-36, B-37",
+          "datum": "14. - 21. 2. 2025",
+          "kdo": "soud a správkyně",
+          "nazev": "Vyjádření správkyně",
+          "co": "Soud dává správkyni pět dnů. Ta nemá námitky — je si vědoma tíživé životní situace dlužníka — ale podmiňuje to další součinností: daňové přiznání za 2024 včetně přehledu reálných příjmů a výdajů, doplacení rozdílu v poukázaných zálohách a doklady o aktivní snaze řešit nové závazky.",
+          "pravo": ["412b", "11"],
+          "pozor": "Návrh na přerušení může podat dlužník **nebo správce**. Soud si vyjádření druhé strany vyžádá i tam, kde mu to zákon výslovně neukládá — je to součást dohlédací činnosti."
+        },
+        {
+          "doklad": "B-38, B-39",
+          "datum": "20. 3. a 2. 5. 2025",
+          "kdo": "soud a dlužník",
+          "nazev": "Nedoplatky u správy sociálního zabezpečení",
+          "co": "Soud chce vědět, jak budou řešeny nedoplatky na zákonném pojistném. Dlužník prostřednictvím advokáta odpovídá: právě vznik těchto dluhů ho vedl k návrhu na přerušení — v době přerušení bude moci všechny volné prostředky použít na jejich úhradu. Současně plnit splátkový kalendář a splácet nové dluhy není v jeho silách. Po přerušení mu zbyde ještě 44 měsíců splátkového kalendáře.",
+          "pravo": ["412b", "412a", "418"],
+          "pozor": null
+        },
+        {
+          "doklad": "B-40",
+          "datum": "9. 7. 2025",
+          "kdo": "samosoudce",
+          "nazev": "Usnesení o přerušení průběhu oddlužení",
+          "co": "I. **Průběh oddlužení se přerušuje na 12 měsíců počínaje srpnem 2025.** II. Dlužník po dobu přerušení platí správkyni zálohu na odměnu **225 Kč** a na hotové výdaje 150 Kč, plus DPH — celkem **453,75 Kč měsíčně**.\n\nOdůvodnění: po dobu přerušení dlužník nemusí plnit povinnost splácet a doba přerušení se nezapočítává do doby rozhodné pro osvobození. Odměna správce se po dobu přerušení **snižuje o 70 %** podle § 3 odst. 3 vyhlášky č. 313/2007 Sb., náhrada hotových výdajů zůstává 150 Kč podle § 7 odst. 4 téže vyhlášky. Odvolání není přípustné.",
+          "pravo": ["412b", "412a", "398", "418", "38"],
+          "pozor": "**Pozor, zákon se mezitím změnil.** Usnesení z července 2025 cituje tehdejší znění § 412b odst. 1: přerušit lze „až na 1 rok“ a „průběh oddlužení nelze přerušit opakovaně“, a odstavec 2 odkazoval na § 418 odst. 1 písm. d).\n\nZnění účinné od 1. 1. 2026 je jiné: přerušit lze **i opakovaně, až na celkovou dobu 12 měsíců**, a odstavec 2 vylučuje použití **§ 418 odst. 1 písm. c)**. Nově navíc přibyly odstavce 5 až 7: soud může dobu rozhodnou pro posouzení splacení pohledávek prodloužit až o 6 měsíců na návrh dlužníka, a dobu podle § 412a odst. 1 písm. b) o počet měsíců, kdy dlužník neplnil podstatné povinnosti, nejdéle v souhrnu o 12 měsíců. Podle § 418 odst. 3 soud oddlužení nezruší z důvodu, pro který průběh prodlouží.\n\nU téhle látky se vyplatí číst znění, ne poznámky — a u rozhodnutí z roku 2025 si pokaždé ověřit, zda citovaný text ještě platí."
+        },
+        {
+          "doklad": "B-41 až B-44",
+          "datum": "21. 7. - 2. 10. 2025",
+          "kdo": "finanční úřad a soud",
+          "nazev": "Další pohledávka za podstatou a doručení",
+          "co": "Finanční úřad uplatňuje dalších **6 246 Kč** (daň z příjmů za rok 2024). Usnesení o přerušení se dlužníkovi doručuje podle § 49 odst. 4 občanského soudního řádu přes úřední desku, právní moc vyznačena 1. 10. 2025.",
+          "pravo": ["168", "203"],
+          "pozor": null
+        },
+        {
+          "doklad": "B-45, B-46",
+          "datum": "19. a 26. 1. 2026",
+          "kdo": "soud a správkyně",
+          "nazev": "Zpráva v polovině přerušení",
+          "co": "Soud si vyžádá zprávu o plnění oddlužení. Správkyně: přerušení běží od 1. 8. 2025 do 31. 7. 2026, leden 2026 je formálně 26. měsícem splátkového kalendáře. Na účet majetkové podstaty chodí nepravidelně jen 453,75 Kč. Míra uspokojení věřitelů **1,61 %**. Dlužník doložil daňové přiznání za 2024, ale sdělil, že **žádné doklady k výdajům z podnikání nemá — výdaje nesledoval ani neevidoval** a uplatňuje je procentem z příjmů. Bez nich nelze zkontrolovat, zda není nedoplatek na srážkách.",
+          "pravo": ["398b", "412", "36"],
+          "pozor": "Výdajový paušál v daních a výpočet splátky v oddlužení jsou dvě různé věci. § 398b počítá se **skutečnými** příjmy a výdaji. Dlužník, který výdaje neeviduje, znemožňuje kontrolu výše splátky — a porušuje tím povinnost součinnosti podle § 412 odst. 1."
+        },
+        {
+          "doklad": "B-47, B-48",
+          "datum": "21. 8. a 15. 9. 2026",
+          "kdo": "finanční úřad a správkyně",
+          "nazev": "Stav ke dni, kdy spis končí",
+          "co": "Finanční úřad uplatňuje dalších **13 881 Kč** (daň za rok 2025). Správkyně v poslední zprávě sčítá dluhy vzniklé **po úpadku**:\n\n• správa sociálního zabezpečení: doplatky za roky 2021-2025 celkem **283 293 Kč** a neuhrazené zálohy za 1-8/2026 dalších **53 264 Kč**\n• zdravotní pojišťovna: pojistné **133 700 Kč** a penále **34 155 Kč**\n• finanční úřad: **7 284 + 6 246 + 13 881 Kč**\n\nAktuální míra uspokojení nezajištěných věřitelů: **1,6176 %**. Očekávaná za tři roky 3,42 %, za pět let 5,12 %. Správkyně přesto doporučuje ponechat dlužníka v oddlužení — s tím, že pokud nedoloží, jak nové dluhy zaplatí, bude nucena navrhnout zrušení a zastavení řízení.",
+          "pravo": ["412a", "418", "414"],
+          "pozor": "Nové dluhy po úpadku tu přerostly **půl milionu korun** — víc než polovinu původního dluhu, kvůli kterému se do insolvence šlo. A osvobození podle § 414 odst. 1 se na pohledávky vzniklé **po rozhodnutí o úpadku nevztahuje**. I kdyby oddlužení doběhlo, tyhle dluhy dlužníkovi zůstanou."
+        }
+      ]
+    }
+  ],
+  "pouceni": [
+    {
+      "nadpis": "Čas není v zákoně, a přesto rozhoduje",
+      "text": "Od návrhu k rozhodnutí o úpadku **5 měsíců a 25 dní**, od úpadku ke schválení oddlužení **2 roky a 14 dní**, a dalších šest let řízení běží. Zákon soudu žádnou lhůtu pro schválení oddlužení nedává. Doba rozhodná pro osvobození přitom běží až **od schválení** (§ 412a odst. 1) — všechno, co se stalo předtím, se dlužníkovi do tří ani pěti let nepočítá."
+    },
+    {
+      "nadpis": "Zpráva pro oddlužení má omezenou trvanlivost",
+      "text": "Přepsala se pětkrát, protože se třikrát změnila nezabavitelná částka. Pokaždé se posunula srážka a s ní předpokládaná míra uspokojení. Správce, který zprávu odevzdá a čeká, dostane ji zpátky."
+    },
+    {
+      "nadpis": "Formalita porazila argument",
+      "text": "Největší věřitel měl věcné námitky i správné načasování. Neuspěl, protože hlasovací lístek nenesl **úředně ověřený podpis**. Uznávaný ani kvalifikovaný elektronický podpis ho nenahrazuje — a kdo nehlasoval platně, nesmí podle § 403 odst. 2 ani namítat. Celé řízení šlo jinudy kvůli jednomu razítku."
+    },
+    {
+      "nadpis": "Nové dluhy jsou skutečný zabiják oddlužení",
+      "text": "Dlužník si na splátkovém kalendáři odkrojil 1,6 % starého dluhu a mezitím si nadělal nový za půl milionu — hlavně na pojistném, které OSVČ platí sama za sebe. To je samostatný důvod pro zrušení oddlužení (§ 418 odst. 1 písm. b) a osvobození se na tyto pohledávky stejně nevztahuje (§ 414 odst. 1). U podnikajícího dlužníka je to první věc, kterou správce kontroluje."
+    },
+    {
+      "nadpis": "Přerušení průběhu oddlužení v praxi",
+      "text": "Nastoupilo přesně tam, kde ho zákon zamýšlí: na stole už ležel návrh na zrušení. Přerušení dlužníka zbavuje povinnosti splácet, doba se nezapočítává do doby rozhodné pro osvobození a odměna správce klesá o 70 %. Není to ale amnestie — po roce se musí ukázat, že se situace opravdu změnila."
+    },
+    {
+      "nadpis": "Znění zákona se mění pod rukama",
+      "text": "Usnesení o přerušení z července 2025 cituje § 412b, který dnes zní jinak: přerušit jde i opakovaně až na celkem 12 měsíců a přibyla možnost průběh oddlužení prodloužit. Stejně tak § 136 odst. 3 z roku 2021 je dnes § 136 odst. 4 a § 418 odst. 7 je dnes odst. 8. **Rozhodnutí soudu je pramen poznání, ne pramen práva** — citované znění se ověřuje vždy."
+    }
+  ]
+}
