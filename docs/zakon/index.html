@@ -404,6 +404,21 @@
   .spis-paragraf:hover { border-color: var(--pecet); }
   .spis-paragraf:focus-visible { outline: 2px solid var(--pecet); outline-offset: 2px; }
 
+  .spis-navrat {
+    appearance: none;
+    border: 1px solid var(--linka);
+    background: none;
+    color: var(--pecet);
+    font: inherit;
+    font-size: .9rem;
+    border-radius: 999px;
+    padding: .25rem .8rem;
+    margin: 0 0 1.3rem;
+    cursor: pointer;
+  }
+  .spis-navrat:hover { border-color: var(--pecet); }
+  .spis-navrat:focus-visible { outline: 2px solid var(--pecet); outline-offset: 2px; }
+
   .spis-pozor {
     margin-top: .9rem;
     border-left: 3px solid var(--hra-pozor);
@@ -1306,6 +1321,9 @@
   // u každého, o jaké paragrafy se opírá. Čísla paragrafů jsou v datech, aby
   // se v kódu nemusel psát paragrafový znak.
   var SPIS = window.SPIS || null;
+  // Kde ve spisu se stálo, když se kliklo na paragraf. Dokud se čtou
+  // paragrafy, drží se to, aby šlo vrátit se přesně k tomu dokumentu.
+  var spisNavrat = null;
   // Manažerské účetnictví: lekce s výkladem, tabulkami a cvičeními k počítání.
   var UCETNICTVI = window.UCETNICTVI || null;
   var BEZ_CISLA = '-';
@@ -1729,7 +1747,10 @@
             // deklarovaného kódování by se tu rozpadl.
             var b = el('button', 'spis-paragraf', SPIS.znak + ' ' + cislo);
             b.type = 'button';
-            b.addEventListener('click', function () { location.hash = '#p' + cislo; });
+            b.addEventListener('click', function () {
+              spisNavrat = window.scrollY;
+              location.hash = '#p' + cislo;
+            });
             pole.appendChild(b);
           });
           karta.appendChild(pole);
@@ -1759,7 +1780,8 @@
     });
     hlavni.appendChild(zaver);
 
-    window.scrollTo(0, 0);
+    window.scrollTo(0, spisNavrat || 0);
+    spisNavrat = null;
   }
 
   /** Obsah zákona — dřív byl na domovské stránce, teď má vlastní obrazovku. */
@@ -3150,6 +3172,15 @@
     }
 
     listaNazev.textContent = '§ ' + p.paragraf;
+
+    // Lišta vede jen na rozcestník, takže z paragrafu otevřeného ze spisu
+    // by jinak nebylo kudy zpátky k dokumentu, u kterého byl citovaný.
+    if (spisNavrat !== null) {
+      var doSpisu = el('button', 'spis-navrat', '← Zpět do spisu');
+      doSpisu.type = 'button';
+      doSpisu.addEventListener('click', function () { location.hash = '#spis'; });
+      hlavni.appendChild(doSpisu);
+    }
 
     if (p.nazev) {
       hlavni.appendChild(el('div', 'p-cislo', '§ ' + p.paragraf));
@@ -4556,6 +4587,9 @@
   function smeruj() {
     zavriPanel();
     var h = location.hash.replace(/^#/, '');
+    // Návrat do spisu drží, jen dokud se čtou paragrafy; jinde zaniká.
+    // „pohledavky“ taky začíná na p, proto se hlídá číslice za ním.
+    if (h !== 'spis' && !/^p\d/.test(h)) spisNavrat = null;
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
     else if (h === 'lhuty') vykresliLhuty();
