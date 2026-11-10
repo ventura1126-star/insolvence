@@ -24,3 +24,7 @@ artefakt/hra4.js
 artefakt/lhuty.js
 artefakt/uvody.js
 artefakt/ucetnictvi.js
+artefakt/spis.js
+
+# Stažený insolvenční spis (reálná osobní data) — nikdy do repa ani na Pages.
+_spis/

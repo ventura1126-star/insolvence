@@ -329,6 +329,113 @@
   .uvod-dil-rozsah { color: var(--tlum); font-size: .85rem; margin-left: auto; }
   .uvod-dil-veta { display: block; color: var(--tlum); font-size: .95rem; margin-top: .2rem; }
 
+  /* ---- spis krok za krokem --------------------------------------------- */
+  .spis-cisla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: .8rem;
+    margin: 1.6rem 0 2.2rem;
+  }
+  .spis-cislo {
+    background: var(--vyklad-plocha);
+    border-radius: .75rem;
+    padding: .85rem .95rem;
+  }
+  .spis-cislo-popisek { display: block; font-size: .78rem; color: var(--tlum); }
+  .spis-cislo-hodnota {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    margin: .15rem 0;
+  }
+  .spis-cislo-pozn { display: block; font-size: .8rem; color: var(--tlum); }
+
+  .spis-kdo { margin: 0 0 2.2rem; }
+  .spis-role { border-bottom: 1px solid var(--linka); padding: .7rem 0; }
+  .spis-role:last-child { border-bottom: none; }
+  .spis-role-nazev { display: block; font-weight: 600; font-size: .95rem; }
+  .spis-role-popis { display: block; color: var(--tlum); font-size: .92rem; margin-top: .15rem; }
+
+  .spis-faze { margin: 2.6rem 0; }
+  .spis-faze-hlavicka { border-top: 2px solid var(--pecet); padding-top: .9rem; }
+  .spis-faze-obdobi { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--pecet); }
+  .spis-faze-nazev { margin: .3rem 0 .5rem; font-size: 1.35rem; }
+  .spis-faze-shrnuti { color: var(--tlum); font-size: .95rem; margin: 0 0 1.4rem; max-width: 40rem; }
+
+  .spis-krok {
+    background: var(--plocha);
+    border: 1px solid var(--linka);
+    border-radius: .75rem;
+    padding: 1.05rem 1.15rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--stin);
+  }
+  .spis-krok-hlavicka { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem; margin-bottom: .5rem; }
+  .spis-doklad {
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: var(--papir);
+    background: var(--pecet);
+    border-radius: .3rem;
+    padding: .15rem .45rem;
+    white-space: nowrap;
+  }
+  .spis-datum { font-size: .82rem; color: var(--tlum); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .spis-kdoc { font-size: .82rem; color: var(--tlum); }
+  .spis-krok-nazev { margin: 0 0 .5rem; font-size: 1.05rem; }
+  .spis-krok p { font-size: .96rem; margin: 0 0 .7rem; }
+  .spis-krok p:last-child { margin-bottom: 0; }
+
+  .spis-paragrafy { display: flex; flex-wrap: wrap; gap: .35rem; margin: .8rem 0 0; }
+  .spis-paragraf {
+    appearance: none;
+    border: 1px solid var(--linka);
+    background: none;
+    color: var(--pecet);
+    font: inherit;
+    font-size: .84rem;
+    font-variant-numeric: tabular-nums;
+    border-radius: 999px;
+    padding: .2rem .65rem;
+    cursor: pointer;
+  }
+  .spis-paragraf:hover { border-color: var(--pecet); }
+  .spis-paragraf:focus-visible { outline: 2px solid var(--pecet); outline-offset: 2px; }
+
+  .spis-navrat {
+    appearance: none;
+    border: 1px solid var(--linka);
+    background: none;
+    color: var(--pecet);
+    font: inherit;
+    font-size: .9rem;
+    border-radius: 999px;
+    padding: .25rem .8rem;
+    margin: 0 0 1.3rem;
+    cursor: pointer;
+  }
+  .spis-navrat:hover { border-color: var(--pecet); }
+  .spis-navrat:focus-visible { outline: 2px solid var(--pecet); outline-offset: 2px; }
+
+  .spis-pozor {
+    margin-top: .9rem;
+    border-left: 3px solid var(--hra-pozor);
+    background: var(--vyklad-plocha);
+    border-radius: 0 .5rem .5rem 0;
+    padding: .75rem .9rem;
+  }
+  .spis-pozor p { font-size: .93rem; }
+
+  .spis-pozn {
+    border: 1px dashed var(--linka);
+    border-radius: .6rem;
+    padding: .75rem .9rem;
+    margin: 0 0 2rem;
+  }
+  .spis-pozn p { font-size: .88rem; color: var(--tlum); margin: 0; }
+
   /* ---- přehled pohledávek --------------------------------------------- */
   .radek-prehled { border-bottom-color: var(--pecet); }
 
@@ -1192,6 +1299,7 @@
 <script src="lhuty.js"></script>
 <script src="uvody.js"></script>
 <script src="ucetnictvi.js"></script>
+<script src="spis.js"></script>
 <script>
 (function () {
   'use strict';
@@ -1210,6 +1318,13 @@
   // Laický úvod k hlavě. Čte se dřív než paragrafy — vysvětluje, o čem ta
   // hlava vlastně je, aby se dal zbytek číst s pochopením souvislostí.
   var UVODY = window.UVODY || [];
+  // Rozbor jednoho skutečného spisu: fáze řízení, v nich dokumenty v pořadí,
+  // u každého, o jaké paragrafy se opírá. Čísla paragrafů jsou v datech, aby
+  // se v kódu nemusel psát paragrafový znak.
+  var SPIS = window.SPIS || null;
+  // Kde ve spisu se stálo, když se kliklo na paragraf. Dokud se čtou
+  // paragrafy, drží se to, aby šlo vrátit se přesně k tomu dokumentu.
+  var spisNavrat = null;
   // Manažerské účetnictví: lekce s výkladem, tabulkami a cvičeními k počítání.
   var UCETNICTVI = window.UCETNICTVI || null;
   var BEZ_CISLA = '-';
@@ -1430,6 +1545,15 @@
           LHUTY.lhuty.length + ' lhůt · u ' + zanik + ' zaniká právo', '#lhuty'));
       }
 
+      if (SPIS) {
+        var dokladu = 0;
+        SPIS.faze.forEach(function (f) { dokladu += f.kroky.length; });
+        mriz.appendChild(dlazdiceRozcestniku('Spis krok za krokem',
+          'Jeden skutečný spis od návrhu po dnešek. U každého dokumentu, oč se opírá.',
+          SPIS.faze.length + ' fází \u00b7 ' + dokladu + ' dokumentů \u00b7 ' + SPIS.pouceni.length + ' ponaučení',
+          '#spis'));
+      }
+
       if (UCETNICTVI) {
         var napsano = UCETNICTVI.lekce.length;
         var vsech = napsano + (UCETNICTVI.pripravuje_se || []).length;
@@ -1555,6 +1679,110 @@
     }
 
     window.scrollTo(0, 0);
+  }
+
+  /** Jeden skutečný spis po fázích a dokumentech. */
+  function vykresliSpis() {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaStav.textContent = '';
+
+    if (!SPIS) {
+      listaNazev.textContent = 'Spis';
+      hlavni.appendChild(el('p', 'prazdno', 'Rozbor spisu zatím není.'));
+      return;
+    }
+
+    listaNazev.textContent = SPIS.nazev;
+    hlavni.appendChild(el('h1', 'titul', SPIS.nazev));
+    hlavni.appendChild(el('p', 'uvod-rozsah', SPIS.podtitul));
+    vlozText(hlavni, SPIS.perex);
+
+    var pozn = el('div', 'spis-pozn');
+    vlozText(pozn, SPIS.anonymizace);
+    hlavni.appendChild(pozn);
+
+    var cisla = el('div', 'spis-cisla');
+    SPIS.cisla.forEach(function (c) {
+      var k = el('div', 'spis-cislo');
+      k.appendChild(el('span', 'spis-cislo-popisek', c.popisek));
+      k.appendChild(el('span', 'spis-cislo-hodnota', c.hodnota));
+      if (c.pozn) k.appendChild(el('span', 'spis-cislo-pozn', c.pozn));
+      cisla.appendChild(k);
+    });
+    hlavni.appendChild(cisla);
+
+    var kdo = el('section', 'spis-kdo');
+    kdo.appendChild(el('h2', 'uvod-nadpis', 'Kdo je kdo'));
+    SPIS.kdo.forEach(function (r) {
+      var d = el('div', 'spis-role');
+      d.appendChild(el('span', 'spis-role-nazev', r.role));
+      d.appendChild(el('span', 'spis-role-popis', r.popis));
+      kdo.appendChild(d);
+    });
+    hlavni.appendChild(kdo);
+
+    SPIS.faze.forEach(function (f) {
+      var sek = el('section', 'spis-faze');
+      var hl = el('div', 'spis-faze-hlavicka');
+      hl.appendChild(el('span', 'spis-faze-obdobi', f.obdobi));
+      hl.appendChild(el('h2', 'spis-faze-nazev', f.nazev));
+      sek.appendChild(hl);
+      sek.appendChild(el('p', 'spis-faze-shrnuti', f.shrnuti));
+
+      f.kroky.forEach(function (k) {
+        var karta = el('article', 'spis-krok');
+        var hlav = el('div', 'spis-krok-hlavicka');
+        hlav.appendChild(el('span', 'spis-doklad', k.doklad));
+        hlav.appendChild(el('span', 'spis-datum', k.datum));
+        if (k.kdo) hlav.appendChild(el('span', 'spis-kdoc', k.kdo));
+        karta.appendChild(hlav);
+        karta.appendChild(el('h3', 'spis-krok-nazev', k.nazev));
+        vlozText(karta, k.co);
+
+        if (k.pravo && k.pravo.length) {
+          var pole = el('div', 'spis-paragrafy');
+          k.pravo.forEach(function (cislo) {
+            // Paragrafový znak je v datech (SPIS.znak), ne v kódu — bez
+            // deklarovaného kódování by se tu rozpadl.
+            var b = el('button', 'spis-paragraf', SPIS.znak + ' ' + cislo);
+            b.type = 'button';
+            b.addEventListener('click', function () {
+              spisNavrat = window.scrollY;
+              location.hash = '#p' + cislo;
+            });
+            pole.appendChild(b);
+          });
+          karta.appendChild(pole);
+        }
+
+        if (k.pozor) {
+          var p = el('div', 'spis-pozor');
+          p.appendChild(el('div', 'stitek', 'Co si odnést'));
+          vlozText(p, k.pozor);
+          karta.appendChild(p);
+        }
+        sek.appendChild(karta);
+      });
+      hlavni.appendChild(sek);
+    });
+
+    var zaver = el('section', 'spis-faze');
+    var zh = el('div', 'spis-faze-hlavicka');
+    zh.appendChild(el('span', 'spis-faze-obdobi', 'Shrnutí'));
+    zh.appendChild(el('h2', 'spis-faze-nazev', 'Co si z celého spisu odnést'));
+    zaver.appendChild(zh);
+    SPIS.pouceni.forEach(function (u) {
+      var b = el('section', 'uvod-blok');
+      b.appendChild(el('h3', 'uvod-nadpis', u.nadpis));
+      vlozText(b, u.text);
+      zaver.appendChild(b);
+    });
+    hlavni.appendChild(zaver);
+
+    window.scrollTo(0, spisNavrat || 0);
+    spisNavrat = null;
   }
 
   /** Obsah zákona — dřív byl na domovské stránce, teď má vlastní obrazovku. */
@@ -2945,6 +3173,15 @@
     }
 
     listaNazev.textContent = '§ ' + p.paragraf;
+
+    // Lišta vede jen na rozcestník, takže z paragrafu otevřeného ze spisu
+    // by jinak nebylo kudy zpátky k dokumentu, u kterého byl citovaný.
+    if (spisNavrat !== null) {
+      var doSpisu = el('button', 'spis-navrat', '← Zpět do spisu');
+      doSpisu.type = 'button';
+      doSpisu.addEventListener('click', function () { location.hash = '#spis'; });
+      hlavni.appendChild(doSpisu);
+    }
 
     if (p.nazev) {
       hlavni.appendChild(el('div', 'p-cislo', '§ ' + p.paragraf));
@@ -4395,11 +4632,15 @@
   function smeruj() {
     zavriPanel();
     var h = location.hash.replace(/^#/, '');
+    // Návrat do spisu drží, jen dokud se čtou paragrafy; jinde zaniká.
+    // „pohledavky“ taky začíná na p, proto se hlídá číslice za ním.
+    if (h !== 'spis' && !/^p\d/.test(h)) spisNavrat = null;
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
     else if (h === 'lhuty') vykresliLhuty();
     else if (h === 'zakon') vykresliZakon();
     else if (h === 'temata') vykresliTemata();
+    else if (h === 'spis') vykresliSpis();
     else if (h === 'ucetnictvi') vykresliUcetnictvi();
     else if (h.indexOf('ucetnictvi-') === 0) vykresliLekci(h.slice(11));
     else if (h.indexOf('uvod-') === 0) vykresliUvod(h.slice(5));
