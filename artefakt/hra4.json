@@ -1,0 +1,1339 @@
+{
+ "verze": 1,
+ "id": "bednar",
+ "nazev": "Insolvenční správce: oddlužení do splnění",
+ "spis": "Roman Bednář — oddlužení se zpeněžením",
+ "zacatek": "2025-03-04",
+ "perex": "Krajský soud dnes rozhodl o úpadku pana Romana Bednáře a povolil oddlužení. Necelých 250 tisíc dluhů u šesti věřitelů, na mzdu běží exekuce a v šuplíku leží rozsudek, podle kterého mu někdo dluží 160 tisíc. Tenhle spis může skončit dřív než za tři roky — když nic nepokazíte.",
+ "uvod": "Pan Bednář, 44 let, pracuje jako skladník, čistá mzda **31 000 Kč**, nikoho nevyživuje. Dluhy jsou staré spotřebitelské úvěry, přečerpaný kontokorent a pojistné; většinu z nich mezitím odkoupily vymáhací firmy. Od loňska mu exekutor sráží ze mzdy.\n\nPřed dvěma lety ho kupec jeho auta podvedl a trestní soud mu uložil zaplatit panu Bednářovi náhradu škody **160 000 Kč**. Nezaplatil zatím nic.\n\nNávrh na povolení oddlužení mu bezplatně sepsala akreditovaná osoba. Soud rozhodl o úpadku a povolil oddlužení jedním usnesením a ustanovil vás správcem (§ 136 odst. 2, § 148 odst. 3).",
+ "konec": {
+  "den": 745,
+  "typ": "oddluzeni",
+  "splneni": true,
+  "nadpis": "Zpráva o splnění oddlužení",
+  "text": "Přišla srážka za březen 2027, jednadvacátá po schválení — podle propočtu ze zprávy pro oddlužení poslední. Než podáte **zprávu o splnění oddlužení**, sečtete, co se skutečně sešlo: vyúčtujete odměnu a výdaje, zálohu podle § 38 odst. 6 rozpustíte do posledního rozdělení a doporučíte, zda dlužníka osvobodit.\n\nOsvobození se vztahuje i na věřitele, kteří své pohledávky nepřihlásili, a na ručitele (§ 414 odst. 5 a 6). Nedotkne se jen pohledávek vyjmenovaných v § 416 odst. 1 — například výživného nebo náhrady škody způsobené úmyslným porušením povinnosti. Žádnou takovou pan Bednář nemá."
+ },
+ "zjednoduseni": [
+  "Průběh řízení je převzatý ze skutečného spisu z insolvenčního rejstříku. Jména, místa a částky jsou vymyšlené.",
+  "Výši měsíční splátky (9 400 Kč) hra bere jako pevnou. Skutečná srážka se mění s každou výplatou — podle přesčasů, odměn i novel nařízení o nezabavitelných částkách.",
+  "Splátka se počítá za každý započatý měsíc po schválení, i když první ve skutečnosti přijde až v měsíci následujícím.",
+  "Odměna správce podle § 3 odst. 2 vyhlášky č. 313/2007 Sb.: 750 Kč za měsíc po schválení a 4 % z výtěžku zpeněžení dosaženého jinak než způsoby podle § 286; náhrada výdajů 150 Kč měsíčně podle § 7 odst. 4. Odměnu za dobu do schválení kryly zálohy sražené ze mzdy (§ 136 odst. 3), a do bilance proto nevstupuje. DPH hra nepočítá.",
+  "Předpokládaná míra uspokojení je 100 %. Kdyby jí dlužník nedosáhl, běželo by oddlužení dál nejdéle do tří let od schválení (§ 412a odst. 1 písm. b).",
+  "Zbytek pohledávky na náhradu škody se do konce hry nevymůže."
+ ],
+ "odmena": {
+  "pramen": "§ 3 odst. 2 a § 7 odst. 4 vyhl. 313/2007 Sb.",
+  "do_schvaleni": 1650,
+  "do_schvaleni_ze_zaloh": true,
+  "po_schvaleni": 750,
+  "vydaje_mesic": 150,
+  "zpenezeni": [
+   [
+    0,
+    0,
+    0.04
+   ]
+  ],
+  "zpenezeni_popis": "4 % — zpeněžení jinak než podle § 286"
+ },
+ "splatka": 9400,
+ "ocekavana_mira": 1.0,
+ "majetek": [
+  {
+   "id": "srazky",
+   "nazev": "Srážky ze mzdy uložené do schválení",
+   "hodnota": 0,
+   "stav": "srážky běží"
+  },
+  {
+   "id": "u_exekutora",
+   "nazev": "Srážka zaslaná exekutorovi po zahájení řízení",
+   "hodnota": 4300,
+   "stav": "na účtu exekutora"
+  },
+  {
+   "id": "ucet",
+   "nazev": "Zůstatek starého účtu u Krajské banky",
+   "hodnota": 12800,
+   "skryty": true,
+   "stav": "blokován exekučním příkazem"
+  },
+  {
+   "id": "skoda",
+   "nazev": "Pohledávka na náhradu škody z trestního rozsudku",
+   "hodnota": 160000,
+   "stav": "sepsáno · pachatel zatím neplatí"
+  }
+ ],
+ "veritele": [
+  {
+   "id": "inkaso",
+   "nazev": "Inkaso Morava a.s.",
+   "castka": 125700,
+   "druh": "nezajisteny",
+   "stav": "odkoupené spotřebitelské úvěry · oprávněný z exekuce"
+  },
+  {
+   "id": "fond",
+   "nazev": "Albatros Receivables Ltd.",
+   "castka": 52300,
+   "druh": "nezajisteny",
+   "stav": "zahraniční fond · odkoupená kreditní karta"
+  },
+  {
+   "id": "banka",
+   "nazev": "Krajská banka a.s.",
+   "castka": 31600,
+   "druh": "nezajisteny",
+   "stav": "přečerpaný kontokorent"
+  },
+  {
+   "id": "operator",
+   "nazev": "Tel-Net s.r.o.",
+   "castka": 8900,
+   "druh": "nezajisteny",
+   "stav": "nezaplacené vyúčtování a pokuta za předčasné ukončení"
+  },
+  {
+   "id": "exekutor",
+   "nazev": "Soudní exekutor — náklady exekuce",
+   "castka": 7900,
+   "druh": "nezajisteny",
+   "skryty": true,
+   "stav": "přihlášeno"
+  },
+  {
+   "id": "pojistovna",
+   "nazev": "Pojišťovna Domov a.s.",
+   "castka": 16000,
+   "druh": "nezajisteny",
+   "skryty": true,
+   "stav": "přihlášeno"
+  },
+  {
+   "id": "pojistovna_p",
+   "nazev": "Pojišťovna Domov a.s. — podřízená část",
+   "castka": 3600,
+   "druh": "podrizeny",
+   "skryty": true,
+   "stav": "příslušenství nad výši jistiny"
+  }
+ ],
+ "prekazky": [
+  {
+   "flag": "nahrada_zatajena",
+   "text": "Plnění 18 000 Kč od pachatele zůstalo u dlužníka, ačkoli soud uložil pohledávku vydat ke zpeněžení.",
+   "citace": [
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "e"
+    },
+    {
+     "par": "418",
+     "odst": "1",
+     "pism": "a"
+    }
+   ]
+  }
+ ],
+ "lhuty": {
+  "prihlasky": {
+   "nazev": "Přihlášky pohledávek",
+   "kdo": "věřitelé",
+   "citace": [
+    {
+     "par": "136",
+     "odst": "2",
+     "pism": "d"
+    },
+    {
+     "par": "173",
+     "odst": "1"
+    }
+   ],
+   "pri_konci": {
+    "text": "Přihlašovací lhůta uplynula. Přihlásili se všichni věřitelé ze seznamu závazků i exekutor s náklady exekuce. K přihláškám podaným později se nepřihlíží a soud je odmítne (§ 185).",
+    "citace": [
+     {
+      "par": "173",
+      "odst": "1"
+     },
+     {
+      "par": "185"
+     }
+    ],
+    "hodnoceni": "info"
+   }
+  },
+  "zpravy": {
+   "nazev": "Zpráva o přezkumu a zpráva pro oddlužení",
+   "kdo": "vy",
+   "citace": [
+    {
+     "par": "136",
+     "odst": "2",
+     "pism": "f"
+    },
+    {
+     "par": "398a",
+     "odst": "1"
+    }
+   ],
+   "udalost": "jednani",
+   "pri_konci": {
+    "text": "Lhůta k podání zprávy o přezkumu a zprávy pro oddlužení uplynula, aniž jste je podal. Soud si vyžádal vysvětlení a uložil vám pořádkovou pokutu.",
+    "citace": [
+     {
+      "par": "36",
+      "odst": "1"
+     },
+     {
+      "par": "81",
+      "odst": "2"
+     }
+    ],
+    "hodnoceni": "chyba",
+    "efekty": {
+     "pocty": {
+      "zmeskane": 1,
+      "chyby": 1
+     }
+    }
+   }
+  },
+  "namitky": {
+   "nazev": "Námitky proti zprávám a hlasování",
+   "kdo": "věřitelé a dlužník",
+   "termin": true,
+   "citace": [
+    {
+     "par": "398a",
+     "odst": "4"
+    },
+    {
+     "par": "136",
+     "odst": "2",
+     "pism": "i"
+    }
+   ]
+  }
+ },
+ "na_zacatku": {
+  "lhuta": [
+   {
+    "id": "prihlasky",
+    "od": 0,
+    "mesice": 2
+   },
+   {
+    "id": "zpravy",
+    "od": 61,
+    "mesice": 2
+   }
+  ]
+ },
+ "milniky": [
+  {
+   "den": 128,
+   "nadpis": "Soud schválil oddlužení",
+   "text": "Žádný ze způsobů oddlužení nezískal většinu hlasů, a tak o něm soud rozhodl sám: **plnění splátkového kalendáře se zpeněžením majetkové podstaty** (§ 402 odst. 5). Uložil panu Bednářovi platit nezajištěným věřitelům prostřednictvím správce **9 400 Kč měsíčně** podle distribučního schématu, určil **předpokládanou míru uspokojení 100 %**, přikázal zaměstnavateli posílat srážky vám a uložil vydat ke zpeněžení majetek sepsaný v soupisu — včetně pohledávky na náhradu škody.",
+   "citace": [
+    {
+     "par": "402",
+     "odst": "5"
+    },
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "a"
+    },
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "c"
+    },
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "d"
+    },
+    {
+     "par": "406",
+     "odst": "3",
+     "pism": "e"
+    }
+   ],
+   "efekty": {
+    "nastav": {
+     "schvaleno": true
+    }
+   }
+  }
+ ],
+ "udalosti": [
+  {
+   "id": "mzda",
+   "den": 0,
+   "nadpis": "Den 0: volá mzdová účetní",
+   "text": "Volá mzdová účetní zaměstnavatele pana Bednáře. Na jeho mzdu běží od loňska exekuce a srážky posílá exekutorovi. „Dozvěděla jsem se, že je v insolvenci. První srážku po zahájení řízení jsem exekutorovi už poslala. Co mám dělat teď?“",
+   "podklad": [
+    "Insolvenční řízení bylo zahájeno před měsícem. Dnes soud rozhodl o úpadku a povolil oddlužení.",
+    "Soud zároveň přikázal zaměstnavateli srážet zálohy na vaši odměnu a výdaje za dobu do schválení (§ 136 odst. 3)."
+   ],
+   "volby": [
+    {
+     "text": "„Srážejte dál, ale exekutorovi nic neposílejte. Peníze držte pro podstatu.“",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Exekuci lze po zahájení řízení nařídit, ale **nelze ji provést** (§ 109 odst. 1 písm. c). Srážka, kterou zaměstnavatel jen ponechá u sebe, provedením není — je to úkon k zajištění majetku (§ 109 odst. 2). Z těchto peněz se hradí i zálohy na vaši odměnu, když na ně běžná srážka nestačí (§ 136 odst. 3). Zbytek patří do podstaty.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "c"
+      },
+      {
+       "par": "109",
+       "odst": "2"
+      },
+      {
+       "par": "136",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "majetek": {
+       "srazky": {
+        "stav": "ukládají se u zaměstnavatele"
+       }
+      },
+      "pozdeji": [
+       {
+        "za": 140,
+        "nadpis": "Uložené srážky",
+        "text": "Po schválení oddlužení poslal zaměstnavatel uložené srážky na účet podstaty: po odečtení záloh na vaši odměnu **28 900 Kč**.",
+        "citace": [
+         {
+          "par": "406",
+          "odst": "3",
+          "pism": "e"
+         }
+        ],
+        "hodnoceni": "spravne",
+        "efekty": {
+         "majetek": {
+          "srazky": {
+           "stav": "vydáno správci — 28 900 Kč",
+           "vytezek": 28900
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "„Posílejte to dál exekutorovi, ten to do schválení podrží.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Exekutor peníze nepodrží — vyplatí je oprávněnému. A to už je provedení exekuce, které po zahájení řízení zakazuje § 109 odst. 1 písm. c). K opatřením přijatým v rozporu s tím se v insolvenčním řízení nepřihlíží (§ 109 odst. 6), jenže peníze pak musíte složitě vymáhat zpátky. Srážka za jeden měsíc, 9 400 Kč, se už nevrátila.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "c"
+      },
+      {
+       "par": "109",
+       "odst": "6"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "srazky": {
+        "stav": "ukládají se — jeden měsíc odešel exekutorovi"
+       }
+      },
+      "pozdeji": [
+       {
+        "za": 140,
+        "nadpis": "Uložené srážky",
+        "text": "Po schválení oddlužení poslal zaměstnavatel uložené srážky na účet podstaty: **19 500 Kč**. Jedna měsíční srážka skončila u oprávněného.",
+        "citace": [
+         {
+          "par": "406",
+          "odst": "3",
+          "pism": "e"
+         }
+        ],
+        "hodnoceni": "chyba",
+        "efekty": {
+         "majetek": {
+          "srazky": {
+           "stav": "vydáno správci — 19 500 Kč",
+           "vytezek": 19500
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "„Přestaňte srážet a vyplácejte mu celou mzdu, exekuce skončila.“",
+     "hodnoceni": "chyba",
+     "dusledek": "Neskončila. Zahájení insolvenčního řízení exekuci neruší — jen ji nelze provést (§ 109 odst. 1 písm. c), a srážky slouží jako zajištění pro podstatu (§ 109 odst. 2). Navíc soud zaměstnavateli přikázal srážet zálohy na vaši odměnu (§ 136 odst. 3). Pan Bednář dostával čtyři měsíce celou mzdu a peníze utratil.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "c"
+      },
+      {
+       "par": "109",
+       "odst": "2"
+      },
+      {
+       "par": "136",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "srazky": {
+        "stav": "nic se neuložilo"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "exekutor",
+   "den": 16,
+   "nadpis": "Exekutor si chce strhnout náklady",
+   "text": "Píše exekutor, který vedl exekuci na mzdu. Má na účtu **4 300 Kč** — srážku za první měsíc po zahájení insolvenčního řízení, kterou mu zaměstnavatel poslal, než se o insolvenci dozvěděl. Navrhuje: „Strhnu si z toho náklady exekuce, ať je to uzavřené.“",
+   "podklad": [
+    "Náklady exekuce podle příkazu k úhradě: **7 900 Kč**.",
+    "Oprávněným z exekuce je Inkaso Morava a.s."
+   ],
+   "volby": [
+    {
+     "text": "Vyzvat ho, ať celých 4 300 Kč vydá do podstaty a náklady přihlásí.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Peníze sražené po zahájení řízení nesmí exekutor nikomu vyplatit — ani sobě. Vyplacení výtěžku je provedení exekuce (§ 109 odst. 1 písm. c). Náklady exekuce jsou pohledávka za dlužníkem jako každá jiná a uplatňují se přihláškou (§ 109 odst. 1 písm. a), § 173 odst. 1). Exekutor peníze vydal a přihlásil 7 900 Kč.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "c"
+      },
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "173",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "majetek": {
+       "u_exekutora": {
+        "stav": "vydáno správci",
+        "vytezek": 4300
+       }
+      },
+      "veritel": {
+       "exekutor": {
+        "skryty": false,
+        "stav": "přihlášeno — náklady exekuce"
+       }
+      }
+     }
+    },
+    {
+     "text": "Souhlasit — náklady exekutora jsou stejně nesporné.",
+     "hodnoceni": "chyba",
+     "dusledek": "Nesporné jsou, ale exekutor tím dostal 4 300 Kč mimo insolvenční řízení a přednostně před ostatními věřiteli. To je provedení exekuce, které § 109 odst. 1 písm. c) po zahájení řízení zakazuje. Zbytek nákladů, 3 600 Kč, přihlásil.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "c"
+      },
+      {
+       "par": "173",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "u_exekutora": {
+        "stav": "exekutor si je ponechal"
+       }
+      },
+      "veritel": {
+       "exekutor": {
+        "skryty": false,
+        "zjisteno": 3600,
+        "stav": "přihlášen zbytek nákladů"
+       }
+      }
+     }
+    },
+    {
+     "text": "Ať je pošle oprávněnému, insolvence na to nedosáhne.",
+     "hodnoceni": "chyba",
+     "dusledek": "Dosáhne. Peníze sražené po zahájení řízení patří do podstaty a vyplatit je oprávněnému znamená exekuci provést (§ 109 odst. 1 písm. c). Inkaso Morava dostalo 4 300 Kč navíc, ostatní věřitelé o ně přišli — a exekutor přesto přihlásil celé náklady.",
+     "citace": [
+      {
+       "par": "109",
+       "odst": "1",
+       "pism": "c"
+      },
+      {
+       "par": "109",
+       "odst": "6"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "u_exekutora": {
+        "stav": "vyplaceno oprávněnému"
+       }
+      },
+      "veritel": {
+       "exekutor": {
+        "skryty": false,
+        "stav": "přihlášeno — náklady exekuce"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "pojistovna",
+   "den": 35,
+   "nadpis": "Pojistné a příslušenství nad jistinu",
+   "text": "Pojišťovna Domov přihlásila **16 000 Kč** z nezaplaceného pojistného. Rozpad podle přihlášky jste si vypsal.",
+   "podklad": [
+    "Jistina (dlužné pojistné): **6 200 Kč**",
+    "Úroky z prodlení a poplatky z prodlení, všechny přirostlé **před** rozhodnutím o úpadku: **9 800 Kč**",
+    "Přihláška je doložená a dlužník ji nepopírá."
+   ],
+   "volby": [
+    {
+     "text": "Zařadit 12 400 Kč jako nepodřízenou a 3 600 Kč jako podřízenou pohledávku.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Je-li způsobem řešení oddlužení, považují se úroky, úroky z prodlení a poplatek z prodlení za **podřízené** v rozsahu, v němž v souhrnu převyšují jistinu (§ 172 odst. 2 věta druhá). Příslušenství 9 800 Kč převyšuje jistinu 6 200 Kč o 3 600 Kč. Ta část se uspokojí až po úplném uhrazení ostatních pohledávek (§ 172 odst. 1).",
+     "citace": [
+      {
+       "par": "172",
+       "odst": "2"
+      },
+      {
+       "par": "172",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "veritel": {
+       "pojistovna": {
+        "skryty": false,
+        "zjisteno": 12400,
+        "stav": "nepodřízená část 12 400 Kč"
+       },
+       "pojistovna_p": {
+        "skryty": false,
+        "zjisteno": 3600
+       }
+      }
+     }
+    },
+    {
+     "text": "Zařadit celých 16 000 Kč mezi nepodřízené — úroky vznikly před úpadkem.",
+     "hodnoceni": "chyba",
+     "dusledek": "Úroky přirostlé před úpadkem sice nevylučuje § 170, ale v oddlužení je jejich část nad výši jistiny **podřízená** (§ 172 odst. 2). Zařadil jste ji mezi ostatní, a 3 600 Kč se tak platí souběžně s nimi a na jejich úkor.",
+     "citace": [
+      {
+       "par": "172",
+       "odst": "2"
+      },
+      {
+       "par": "170",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "veritel": {
+       "pojistovna": {
+        "skryty": false,
+        "zjisteno": 16000,
+        "stav": "celá přihláška jako nepodřízená"
+       }
+      }
+     }
+    },
+    {
+     "text": "Popřít výši o 3 600 Kč — příslušenství nad jistinu se neplatí.",
+     "hodnoceni": "chyba",
+     "dusledek": "Platí, jen později. Popřením výše byste tvrdil, že ta část neexistuje. Zákon ji ale nevylučuje, jen ji **řadí za ostatní** (§ 172 odst. 2). Pojišťovna podala námitku a soud vám uložil zprávu o přezkumu opravit (§ 410 odst. 3 písm. b).",
+     "citace": [
+      {
+       "par": "172",
+       "odst": "2"
+      },
+      {
+       "par": "410",
+       "odst": "3",
+       "pism": "b"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "veritel": {
+       "pojistovna": {
+        "skryty": false,
+        "zjisteno": 12400,
+        "stav": "nepodřízená část 12 400 Kč"
+       },
+       "pojistovna_p": {
+        "skryty": false,
+        "zjisteno": 3600,
+        "stav": "zařazeno až po opravě zprávy"
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "ucet",
+   "den": 50,
+   "nadpis": "Zapomenutý účet",
+   "text": "Ve výpisech z registru účtů narazíte na starý účet pana Bednáře u Krajské banky, který v seznamu majetku neuvedl. Leží na něm **12 800 Kč**, od roku 2023 blokovaných exekučním příkazem. „Na ten jsem úplně zapomněl. Až se oddlužení schválí, můžu ho zase používat, ne?“",
+   "volby": [
+    {
+     "text": "Sepsat zůstatek do soupisu a požádat banku o jeho vydání.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Do majetkové podstaty patří majetek, který dlužníkovi patřil k zahájení řízení (§ 205 odst. 1), a soupis správce soustavně doplňuje (§ 217 odst. 1). Používat ho dlužník nebude ani po schválení: dispoziční oprávnění k majetku postiženému exekucí na něj nepřechází (§ 409 odst. 3).",
+     "citace": [
+      {
+       "par": "205",
+       "odst": "1"
+      },
+      {
+       "par": "217",
+       "odst": "1"
+      },
+      {
+       "par": "409",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "majetek": {
+       "ucet": {
+        "stav": "sepsáno do soupisu"
+       }
+      },
+      "pozdeji": [
+       {
+        "za": 45,
+        "nadpis": "Banka vydala zůstatek",
+        "text": "Krajská banka převedla zůstatek starého účtu, **12 800 Kč**, na účet podstaty.",
+        "citace": [
+         {
+          "par": "217",
+          "odst": "1"
+         }
+        ],
+        "hodnoceni": "spravne",
+        "efekty": {
+         "majetek": {
+          "ucet": {
+           "stav": "vydáno správci — 12 800 Kč",
+           "vytezek": 12800
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "Nechat mu ho — je to drobnost a v seznamu ho stejně neměl.",
+     "hodnoceni": "chyba",
+     "dusledek": "Že ho neuvedl v seznamu, je problém dlužníka, ne důvod mu peníze nechat. Majetek z doby zahájení řízení patří do podstaty (§ 205 odst. 1) a k majetku postiženému exekucí dispoziční oprávnění na dlužníka nepřejde (§ 409 odst. 3). Věřitelé přišli o 12 800 Kč.",
+     "citace": [
+      {
+       "par": "205",
+       "odst": "1"
+      },
+      {
+       "par": "409",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "ucet": {
+        "stav": "nesepsáno — zůstalo dlužníkovi"
+       }
+      }
+     }
+    },
+    {
+     "text": "Navrhnout soudu, aby oddlužení neschválil — majetek zatajil.",
+     "hodnoceni": "chyba",
+     "dusledek": "Přestřelené. Oddlužení soud neschválí, vyjde-li najevo nepoctivý záměr (§ 405 odst. 1, § 395 odst. 1 písm. a). Zapomenutý účet s 12 800 Kč, který dlužník hned přizná, sotva. Vaší prací je majetek dohledat a sepsat — což jste nakonec stejně udělal, jen se soud musel zabývat zbytečným návrhem.",
+     "citace": [
+      {
+       "par": "405",
+       "odst": "1"
+      },
+      {
+       "par": "395",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "217",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "ucet": {
+        "stav": "sepsáno do soupisu"
+       }
+      },
+      "pozdeji": [
+       {
+        "za": 60,
+        "nadpis": "Banka vydala zůstatek",
+        "text": "Krajská banka převedla zůstatek starého účtu, **12 800 Kč**, na účet podstaty.",
+        "citace": [
+         {
+          "par": "217",
+          "odst": "1"
+         }
+        ],
+        "hodnoceni": "info",
+        "efekty": {
+         "majetek": {
+          "ucet": {
+           "stav": "vydáno správci — 12 800 Kč",
+           "vytezek": 12800
+          }
+         }
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "jednani",
+   "den": 77,
+   "nadpis": "Přezkum a zpráva pro oddlužení",
+   "text": "Přihlašovací lhůta skončila. Sešli jste se s panem Bednářem k jednání podle § 410 odst. 2 — termín jste mu oznámil deset dní předem. Žádnou přihlášku nepopírá, vy také ne. Zbývá napsat zprávu pro oddlužení a navrhnout způsob.",
+   "podklad": [
+    "Podle výplatních pásek z čisté mzdy 31 000 Kč odchází srážkou zhruba **9 400 Kč** měsíčně.",
+    "Odměna a výdaje správce po schválení dělají **900 Kč** měsíčně; splátka je pokryje mnohonásobně, takže překážka podle § 395 odst. 1 písm. b) tu není.",
+    "Zjištěné nepodřízené pohledávky necelých **240 000 Kč**. V podstatě jsou uložené srážky, peníze od exekutora, zůstatek účtu a pohledávka na náhradu škody."
+   ],
+   "volby": [
+    {
+     "text": "Navrhnout splátkový kalendář se zpeněžením, s propočtem a distribučním schématem.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Peníze v podstatě se rozdělí, splátky doplatí zbytek — podle propočtu dostanou věřitelé **100 %** zhruba za 21 měsíců. Ke zprávě patří propočet předpokládaného uspokojení a návrh distribučního schématu pro jednotlivé věřitele (§ 398a odst. 2). Podal jste ji spolu se zprávou o přezkumu (§ 398a odst. 1); věřitelům běží 7 dní na námitky (§ 398a odst. 4).",
+     "citace": [
+      {
+       "par": "398",
+       "odst": "1"
+      },
+      {
+       "par": "398a",
+       "odst": "1"
+      },
+      {
+       "par": "398a",
+       "odst": "2"
+      },
+      {
+       "par": "398a",
+       "odst": "4"
+      }
+     ],
+     "efekty": {
+      "lhuta": [
+       {
+        "id": "namitky",
+        "dny": 7
+       }
+      ],
+      "pozdeji": [
+       {
+        "za": 9,
+        "nadpis": "Nikdo nehlasoval",
+        "text": "Do sedmi dnů nikdo nenavrhl schůzi věřitelů ani nehlasoval. Když žádný způsob oddlužení nezíská prostou většinu hlasů, rozhodne o něm soud v rozhodnutí o schválení — a to o splátkovém kalendáři se zpeněžením (§ 402 odst. 5).",
+        "citace": [
+         {
+          "par": "402",
+          "odst": "5"
+         },
+         {
+          "par": "136",
+          "odst": "2",
+          "pism": "i"
+         }
+        ],
+        "hodnoceni": "info"
+       }
+      ]
+     }
+    },
+    {
+     "text": "Navrhnout jen zpeněžení majetkové podstaty — dluhy jsou malé.",
+     "hodnoceni": "chyba",
+     "dusledek": "Zpeněžením podstaty by věřitelé dostali jen to, co v ní je dnes — zhruba pětinu. A odměna správce by při tomto způsobu činila nejméně 45 000 Kč (§ 3 odst. 1 vyhlášky). Ve zprávě máte zhodnotit předpokládané plnění při obou způsobech (§ 398a odst. 2) a srovnání tu mluví jasně pro splátky. Soud vám zprávu vrátil k opravě.",
+     "citace": [
+      {
+       "par": "398a",
+       "odst": "2"
+      },
+      {
+       "par": "398",
+       "odst": "2"
+      },
+      {
+       "text": "§ 3 odst. 1 vyhlášky č. 313/2007 Sb."
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "lhuta": [
+       {
+        "id": "namitky",
+        "dny": 7
+       }
+      ],
+      "pozdeji": [
+       {
+        "za": 9,
+        "nadpis": "Nikdo nehlasoval",
+        "text": "Do sedmi dnů nikdo nenavrhl schůzi věřitelů ani nehlasoval. Když žádný způsob oddlužení nezíská prostou většinu hlasů, rozhodne o něm soud v rozhodnutí o schválení — a to o splátkovém kalendáři se zpeněžením (§ 402 odst. 5).",
+        "citace": [
+         {
+          "par": "402",
+          "odst": "5"
+         },
+         {
+          "par": "136",
+          "odst": "2",
+          "pism": "i"
+         }
+        ],
+        "hodnoceni": "info"
+       }
+      ]
+     }
+    },
+    {
+     "text": "Navrhnout splátkový kalendář bez zpeněžení — majetek ať si ponechá.",
+     "hodnoceni": "chyba",
+     "dusledek": "Takový způsob zákon nezná. Oddlužení lze provést jen zpeněžením majetkové podstaty, nebo plněním splátkového kalendáře **se** zpeněžením (§ 398 odst. 1). Majetek z podstaty dlužník vydat musí, ledaže by jeho zpeněžení věřitelům nic nepřineslo (§ 398 odst. 6) — a peníze na účtech jim přinesou hodně.",
+     "citace": [
+      {
+       "par": "398",
+       "odst": "1"
+      },
+      {
+       "par": "398",
+       "odst": "3"
+      },
+      {
+       "par": "398",
+       "odst": "6"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "lhuta": [
+       {
+        "id": "namitky",
+        "dny": 7
+       }
+      ],
+      "pozdeji": [
+       {
+        "za": 9,
+        "nadpis": "Nikdo nehlasoval",
+        "text": "Do sedmi dnů nikdo nenavrhl schůzi věřitelů ani nehlasoval. Když žádný způsob oddlužení nezíská prostou většinu hlasů, rozhodne o něm soud v rozhodnutí o schválení — a to o splátkovém kalendáři se zpeněžením (§ 402 odst. 5).",
+        "citace": [
+         {
+          "par": "402",
+          "odst": "5"
+         },
+         {
+          "par": "136",
+          "odst": "2",
+          "pism": "i"
+         }
+        ],
+        "hodnoceni": "info"
+       }
+      ]
+     }
+    },
+    {
+     "text": "Nechat to na později, lhůta ještě běží.",
+     "hodnoceni": "odlozeno",
+     "odlozit": true,
+     "dusledek": "Zprávy zůstávají rozpracované. Lhůta k jejich podání skončí 2 měsíce po uplynutí přihlašovací lhůty.",
+     "citace": [
+      {
+       "par": "136",
+       "odst": "2",
+       "pism": "f"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "prvni_splatka",
+   "den": 153,
+   "nadpis": "První splátka",
+   "text": "Zaměstnavatel poslal první srážku podle rozhodnutí o schválení: **9 400 Kč**. Jak s ní naložíte?",
+   "podklad": [
+    "Do schválení platil dlužník srážkami zálohy na vaši odměnu a výdaje (§ 136 odst. 3). Za poslední měsíc před schválením jedna záloha chybí.",
+    "Po schválení vám náleží 750 Kč odměny a 150 Kč náhrady výdajů měsíčně."
+   ],
+   "volby": [
+    {
+     "text": "Uložit z ní zálohu na šest měsíců odměny a výdajů, zbytek poslat věřitelům.",
+     "hodnoceni": "spravne",
+     "dusledek": "Přesně podle § 38 odst. 6: při splátkovém kalendáři se zpeněžením správce z měsíčních splátek **uloží** částku odpovídající odměně a výdajům za 6 měsíců jako zálohu na zvláštní účet. Rozpustí se na konci, až splátkový kalendář skončí. Chybějící zálohu za dobu do schválení si ze splátek vzít nesmíte — ta počká až na úplné uspokojení věřitelů (§ 398 odst. 4).",
+     "citace": [
+      {
+       "par": "38",
+       "odst": "6"
+      },
+      {
+       "par": "398",
+       "odst": "4"
+      }
+     ]
+    },
+    {
+     "text": "Strhnout si nejdřív chybějící zálohu za dobu do schválení.",
+     "hodnoceni": "chyba",
+     "dusledek": "Odměnu a výdaje za období **do schválení** lze z měsíčních splátek uspokojit až po úplném uspokojení nezajištěných věřitelů (§ 398 odst. 4 věta čtvrtá). Věřitelé jdou napřed. Soud vám platbu vytkl a peníze jste vracel do rozdělení.",
+     "citace": [
+      {
+       "par": "398",
+       "odst": "4"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Nic neukládat, splátku po odečtení měsíční odměny celou rozdělit.",
+     "hodnoceni": "chyba",
+     "dusledek": "Tady zákon volbu nedává — § 38 odst. 6 říká, že správce zálohu **uloží**. Má krýt odměnu za období plnění pro případ, že dlužník přestane platit. Zálohu jste musel dotvářet z dalších splátek a vysvětlovat to ve zprávě.",
+     "citace": [
+      {
+       "par": "38",
+       "odst": "6"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "zmena_veritele",
+   "den": 230,
+   "nadpis": "Nový exekutor chce platby",
+   "text": "Ozval se jiný soudní exekutor: exekuci, ve které vznikly přihlášené náklady exekuce, od původního exekutora převzal (§ 44b exekučního řádu). Posílá e-mail s číslem účtu a žádá, ať od příští splátky platíte podíl jemu.",
+   "podklad": [
+    "Návrh na rozhodnutí o vstupu do řízení u soudu zatím není.",
+    "Přihlášená pohledávka: náklady exekuce."
+   ],
+   "volby": [
+    {
+     "text": "Ponechat schéma beze změny a vyzvat oba exekutory k návrhu podle § 18.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Věřitele v řízení nemění e-mail, ale **rozhodnutí soudu**: na návrh původního věřitele podaný na formuláři a s písemným souhlasem nabyvatele (§ 18 odst. 1). Soud o něm rozhodne do 3 pracovních dnů; nerozhodne-li, má se za to, že návrhu vyhověl (§ 18 odst. 2). Teprve potom změníte distribuční schéma.",
+     "citace": [
+      {
+       "par": "18",
+       "odst": "1"
+      },
+      {
+       "par": "18",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "pozdeji": [
+       {
+        "za": 20,
+        "nadpis": "Vstup do řízení",
+        "text": "Exekutoři podali návrh na formuláři a soud rozhodl, že místo původního exekutora vstupuje do řízení nový. Od další splátky posíláte podíl jemu a v nejbližší zprávě to uvedete.",
+        "citace": [
+         {
+          "par": "18",
+          "odst": "1"
+         }
+        ],
+        "hodnoceni": "spravne",
+        "efekty": {
+         "veritel": {
+          "exekutor": {
+           "stav": "místo původního exekutora vstoupil nový (§ 18)"
+          }
+         }
+        }
+       }
+      ]
+     }
+    },
+    {
+     "text": "Změnit účet hned podle e-mailu — exekutor je úřední osoba.",
+     "hodnoceni": "chyba",
+     "dusledek": "Úřední osoba neznamená rozhodnutí soudu. Dokud soud podle § 18 nerozhodne, je účastníkem řízení původní věřitel — a platbou někomu jinému riskujete, že budete platit dvakrát. Návrh dorazil o měsíc později a jednu splátku jste musel dorovnávat.",
+     "citace": [
+      {
+       "par": "18",
+       "odst": "1"
+      },
+      {
+       "par": "18",
+       "odst": "2"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Odmítnout — během insolvenčního řízení se věřitel měnit nemůže.",
+     "hodnoceni": "chyba",
+     "dusledek": "Může, právě na to je § 18. Převod nebo přechod přihlášené pohledávky během řízení je běžný; soud jen rozhodne, že nabyvatel vstupuje do řízení místo původního věřitele.",
+     "citace": [
+      {
+       "par": "18",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "zprava_zpenezeni",
+   "den": 377,
+   "nadpis": "Zpráva o zpeněžení",
+   "text": "Peníze, které soud uložil vydat, jsou na účtu podstaty. Pohledávka na náhradu škody zatím nevynesla nic. Co s penězi?",
+   "podklad": [
+    "Nic se nedražilo ani neprodávalo — peníze se jen vybraly.",
+    "Odměna z výtěžku podle § 3 odst. 2 vyhlášky: 15 % a méně v pásmech při zpeněžení způsoby podle § 286, **4 %** při zpeněžení jinými způsoby."
+   ],
+   "volby": [
+    {
+     "text": "Podat zprávu podle § 409 odst. 2, vyúčtovat 4 % a peníze rozdělit podle poměru pohledávek.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Poté, co správce zpeněží majetek, předloží zprávu, pro niž se přiměřeně použijí ustanovení o konečné zprávě, a peníze se rozdělí obdobně jako podle rozvrhu (§ 409 odst. 2). Vybrání peněz není dražba ani prodej podle § 286, proto **4 %**. Pohledávku na náhradu škody zpeněžujete dál.",
+     "citace": [
+      {
+       "par": "409",
+       "odst": "2"
+      },
+      {
+       "par": "286",
+       "odst": "1"
+      },
+      {
+       "text": "§ 3 odst. 2 písm. c) vyhlášky č. 313/2007 Sb."
+      }
+     ]
+    },
+    {
+     "text": "Vyúčtovat 15 % — zpeněžení je zpeněžení.",
+     "hodnoceni": "chyba",
+     "dusledek": "Vyhláška rozlišuje. Pásma od 15 % platí jen pro výtěžek dosažený způsoby podle § 286 — veřejnou dražbou, prodejem podle o. s. ř., prodejem mimo dražbu nebo dražbou exekutora. Za peníze z účtu a srážek náleží 4 % (§ 3 odst. 2 písm. c) vyhlášky). Soud vám odměnu snížil.",
+     "citace": [
+      {
+       "par": "286",
+       "odst": "1"
+      },
+      {
+       "text": "§ 3 odst. 2 písm. c) vyhlášky č. 313/2007 Sb."
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Nechat peníze ležet a rozdělit všechno najednou na konci.",
+     "hodnoceni": "chyba",
+     "dusledek": "Peníze na účtu podstaty věřitelům nic nepřinesou a § 409 odst. 2 počítá s jejich rozdělením poté, co je majetek zpeněžen. Důvodem ke snížení odměny je mimo jiné to, že správce nenavrhl částečný rozvrh, ačkoliv to stav zpeněžení umožňoval (§ 38 odst. 3).",
+     "citace": [
+      {
+       "par": "409",
+       "odst": "2"
+      },
+      {
+       "par": "38",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "pachatel",
+   "den": 475,
+   "nadpis": "Pachatel zaplatil dlužníkovi",
+   "text": "Volá pan Bednář: pachatel z jeho trestní věci mu po propuštění poslal **18 000 Kč** na náhradu škody. „Náhrada škody přece není mimořádný příjem, to stojí přímo v zákoně. Potřebuju opravit auto.“",
+   "podklad": [
+    "Pohledávka na náhradu škody je sepsaná v soupisu a rozhodnutí o schválení ji uložilo vydat ke zpeněžení.",
+    "§ 412 odst. 1 písm. b) za středníkem: za mimořádný příjem se nepovažují plnění z titulu práva na náhradu majetkové a nemajetkové újmy."
+   ],
+   "volby": [
+    {
+     "text": "Peníze musí vydat — pohledávka patřila do podstaty už před schválením.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Výjimka v § 412 odst. 1 písm. b) říká jen, že takové plnění není **mimořádný příjem**, ze kterého se platí mimořádné splátky. Tady ale nejde o příjem, nýbrž o **majetek podstaty**: pohledávka existovala před schválením, soud ji uložil vydat ke zpeněžení (§ 406 odst. 3 písm. e) a k takovému majetku dlužník dispoziční oprávnění nemá (§ 409 odst. 3). Pachatele zároveň vyzvete, ať další platby posílá na účet podstaty.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "b"
+      },
+      {
+       "par": "406",
+       "odst": "3",
+       "pism": "e"
+      },
+      {
+       "par": "409",
+       "odst": "3"
+      },
+      {
+       "par": "398",
+       "odst": "6"
+      }
+     ],
+     "efekty": {
+      "majetek": {
+       "skoda": {
+        "stav": "z části zpeněženo — 18 000 Kč",
+        "vytezek": 18000
+       }
+      }
+     }
+    },
+    {
+     "text": "Má pravdu, náhrada škody mu zůstane.",
+     "hodnoceni": "chyba",
+     "dusledek": "Výjimka pro náhradu újmy míří na **nové** příjmy po schválení, které by jinak šly na mimořádné splátky. Pohledávka na náhradu škody ale byla v podstatě od začátku a soud ji uložil vydat. Ponecháním plnění dlužník porušuje podstatnou povinnost — a vy jste mu to schválil.",
+     "citace": [
+      {
+       "par": "412",
+       "odst": "1",
+       "pism": "b"
+      },
+      {
+       "par": "406",
+       "odst": "3",
+       "pism": "e"
+      },
+      {
+       "par": "418",
+       "odst": "1",
+       "pism": "a"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 2
+      },
+      "nastav": {
+       "nahrada_zatajena": true
+      }
+     }
+    },
+    {
+     "text": "Polovinu vydat, polovinu nechat na auto.",
+     "hodnoceni": "chyba",
+     "dusledek": "Takovou pravomoc nemáte. Majetek, který soud uložil vydat ke zpeněžení, se vydává celý; dělit ho podle potřeb dlužníka zákon správci neumožňuje.",
+     "citace": [
+      {
+       "par": "406",
+       "odst": "3",
+       "pism": "e"
+      },
+      {
+       "par": "409",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      },
+      "majetek": {
+       "skoda": {
+        "stav": "z části zpeněženo — 9 000 Kč",
+        "vytezek": 9000
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "sto_procent",
+   "den": 685,
+   "nadpis": "Ještě dvě splátky",
+   "text": "Podle propočtu stačí ještě **dvě splátky** a nezajištění věřitelé budou mít zaplaceno v plné výši. Zbytek pohledávky na náhradu škody vymožený není — pachatel znovu přestal platit.",
+   "podklad": [
+    "Předpokládaná míra uspokojení v rozhodnutí o schválení: **100 %**.",
+    "Na zvláštním účtu leží záloha na šest měsíců odměny podle § 38 odst. 6."
+   ],
+   "volby": [
+    {
+     "text": "Spočítat poslední splátku, rozpustit zálohu, ukončit srážky a podat zprávu o splnění.",
+     "hodnoceni": "spravne",
+     "dusledek": "Správně. Splatí-li dlužník nezajištěným věřitelům pohledávky v plné výši, jsou předpoklady pro osvobození splněny bez ohledu na tři roky (§ 412a odst. 1 písm. a). Soud pak vezme splnění na vědomí, rozhodne o vaší odměně a zprostí vás funkce (§ 413 odst. 1). Podřízená část pohledávky pojišťovny přijde na řadu až po úplném uhrazení ostatních (§ 172 odst. 1) — z toho, co z poslední splátky zbude. Nevymožený zbytek pohledávky osvobození nebrání (§ 414 odst. 3) a dlužník vám ke zpeněžení dál dluží součinnost (§ 412 odst. 2).",
+     "citace": [
+      {
+       "par": "412a",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "413",
+       "odst": "1"
+      },
+      {
+       "par": "172",
+       "odst": "1"
+      },
+      {
+       "par": "414",
+       "odst": "3"
+      },
+      {
+       "par": "412",
+       "odst": "2"
+      }
+     ]
+    },
+    {
+     "text": "Nechat srážky běžet do tří let — předpokládaná míra se počítá ke třem letům.",
+     "hodnoceni": "chyba",
+     "dusledek": "Tři roky jsou strop pro případ, že plné výše dosaženo není (§ 412a odst. 1 písm. b). Při plné výši je předpoklad splněn podle písmene a) a povinnosti dlužníka podle § 412 odst. 1 trvají jen do splnění předpokladů pro osvobození. Další srážky by pan Bednář platil zbytečně.",
+     "citace": [
+      {
+       "par": "412a",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "412a",
+       "odst": "1",
+       "pism": "b"
+      },
+      {
+       "par": "412",
+       "odst": "1"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    },
+    {
+     "text": "Podat zprávu o splnění hned — dvě splátky jsou formalita.",
+     "hodnoceni": "chyba",
+     "dusledek": "Předpokladem je, že dlužník věřitelům pohledávky v plné výši **splatil**, ne že je splatí (§ 412a odst. 1 písm. a). Soud by zprávu odmítl jako předčasnou a podával byste ji znovu.",
+     "citace": [
+      {
+       "par": "412a",
+       "odst": "1",
+       "pism": "a"
+      },
+      {
+       "par": "413",
+       "odst": "3"
+      }
+     ],
+     "efekty": {
+      "pocty": {
+       "chyby": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

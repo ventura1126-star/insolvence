@@ -164,11 +164,16 @@ def zkontroluj_hru(zakon):
     písmeno, by hráče poslala do prázdna — a hůř, učila by ho číslo, které
     už neplatí. Proto se každá ověří proti zakon.json.
     """
-    soubor = KOREN / "artefakt/hra.json"
-    if not soubor.exists():
-        return []
-    hra = json.loads(soubor.read_text("utf-8"))
     paragrafy = {p["paragraf"]: p for p in zakon}
+    chyby = []
+    for soubor in sorted((KOREN / "artefakt").glob("hra*.json")):
+        chyby += _zkontroluj_spis(soubor, paragrafy)
+    return chyby
+
+
+def _zkontroluj_spis(soubor, paragrafy):
+    hra = json.loads(soubor.read_text("utf-8"))
+    jmeno = soubor.stem
     chyby = []
 
     pocet = 0
@@ -177,39 +182,39 @@ def zkontroluj_hru(zakon):
         oznaceni = f"§ {c['par']}" + (f" odst. {c['odst']}" if c.get("odst") else "")
         p = paragrafy.get(c["par"])
         if p is None:
-            chyby.append(f"hra: {oznaceni} — takový paragraf v zákoně není")
+            chyby.append(f"{jmeno}: {oznaceni} — takový paragraf v zákoně není")
             continue
         odstavec = None
         if c.get("odst"):
             odstavec = next((o for o in p["odstavce"] if o["cislo"] == c["odst"]), None)
             if odstavec is None:
-                chyby.append(f"hra: {oznaceni} — takový odstavec není")
+                chyby.append(f"{jmeno}: {oznaceni} — takový odstavec není")
                 continue
         if c.get("pism"):
             texty = [odstavec["text"]] if odstavec else [o["text"] for o in p["odstavce"]]
             vzor = re.compile(r"(^|\n)\s*" + re.escape(c["pism"]) + r"\)")
             if not any(vzor.search(t) for t in texty):
-                chyby.append(f"hra: {oznaceni} písm. {c['pism']} — takové písmeno není")
+                chyby.append(f"{jmeno}: {oznaceni} písm. {c['pism']} — takové písmeno není")
 
     videna = set()
     for u in hra.get("udalosti", []):
         if u["id"] in videna:
-            chyby.append(f"hra: událost {u['id']} — id se opakuje")
+            chyby.append(f"{jmeno}: událost {u['id']} — id se opakuje")
         videna.add(u["id"])
         if not 2 <= len(u.get("volby", [])) <= 4:
-            chyby.append(f"hra: událost {u['id']} — má mít 2 až 4 volby")
+            chyby.append(f"{jmeno}: událost {u['id']} — má mít 2 až 4 volby")
         for i, v in enumerate(u.get("volby", [])):
             if not v.get("dusledek", "").strip() or not v.get("citace"):
-                chyby.append(f"hra: událost {u['id']} volba {i} — chybí důsledek nebo citace")
+                chyby.append(f"{jmeno}: událost {u['id']} volba {i} — chybí důsledek nebo citace")
     lhuty = hra.get("lhuty", {})
     for u in hra.get("udalosti", []):
         for v in u.get("volby", []):
             for lh in v.get("efekty", {}).get("lhuta", []) + v.get("efekty", {}).get("splnit", []):
                 klic = lh["id"] if isinstance(lh, dict) else lh
                 if klic not in lhuty:
-                    chyby.append(f"hra: událost {u['id']} — neznámá lhůta {klic}")
+                    chyby.append(f"{jmeno}: událost {u['id']} — neznámá lhůta {klic}")
 
-    print(f"hra            {len(hra.get('udalosti', []))} událostí, {pocet} citací")
+    print(f"{jmeno:<15}{len(hra.get('udalosti', []))} událostí, {pocet} citací")
     return chyby
 
 

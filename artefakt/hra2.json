@@ -43,7 +43,8 @@
     120000,
     0.04
    ]
-  ]
+  ],
+  "zpenezeni_popis": "15 % do 500 tis. Kč"
  },
  "splatka": 9200,
  "ocekavana_mira": 0.35,
@@ -187,7 +188,7 @@
     {
      "par": "136",
      "odst": "2",
-     "pism": "e"
+     "pism": "f"
     },
     {
      "par": "398a",
@@ -992,7 +993,7 @@
       {
        "par": "136",
        "odst": "2",
-       "pism": "e"
+       "pism": "f"
       }
      ],
      "efekty": {
@@ -1333,6 +1334,38 @@
        "chyby": 1
       }
      }
+    }
+   ]
+  }
+ ],
+ "prekazky": [
+  {
+   "flag": "dar_zatajen",
+   "text": "Dar 60 000 Kč zůstal zatajený — hodnoty získané darem se vydávají správci.",
+   "citace": [
+    {
+     "par": "412",
+     "odst": "1",
+     "pism": "b"
+    },
+    {
+     "par": "417",
+     "odst": "1"
+    }
+   ]
+  },
+  {
+   "flag": "evidence_zmeskana",
+   "text": "Dlužnice nepožádala do 15 dnů o zařazení do evidence uchazečů — má se za to, že neplnila povinnost usilovat o příjem.",
+   "citace": [
+    {
+     "par": "412",
+     "odst": "4"
+    },
+    {
+     "par": "418",
+     "odst": "1",
+     "pism": "a"
     }
    ]
   }

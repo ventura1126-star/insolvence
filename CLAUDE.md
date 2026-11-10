@@ -20,13 +20,13 @@ začátku, ve které jsi**, a do té druhé nesahej, ledaže o to výslovně po�
 - Artifact (s rozhovory): <https://claude.ai/artifact/17oidZ2ypcBMaJS8MHj4aF>
 - Čtecí verze: <https://ventura1126-star.github.io/insolvence/zakon/>
 - Kód: `artefakt/index.html` (jedna stránka, prostý HTML/JS, bez frameworku)
-- Data: `artefakt/zakon.json`, `vyklad.json`, `uvody.json`, `temata.json`, `pohledavky.json`, `lhuty.json`, `hra.json`, `hra2.json`, `hra3.json`
+- Data: `artefakt/zakon.json`, `vyklad.json`, `uvody.json`, `temata.json`, `pohledavky.json`, `lhuty.json`, `hra.json`, `hra2.json`, `hra3.json`, `hra4.json`
 - Náplň: znění zákona, výklad po odstavcích, **laické úvody k hlavám**
   (`#uvod-<id>`, odkaz je v seznamu zákona u nadpisu hlavy i nad paragrafem —
   vysvětlují, o čem hlava je, než se začnou číst paragrafy), témata mimo insolvenční zákon,
   přehled typů pohledávek (`#pohledavky`), přehled lhůt (`#lhuty`), hra nad spisy
   (`#hra` rozcestník, `#hra-<id>` konkrétní spis — `hra.json` konkurs,
-  `hra2.json` oddlužení, `hra3.json` rozhodování o úpadku), rozhovory s Claudem, tisk
+  `hra2.json` oddlužení, `hra3.json` rozhodování o úpadku, `hra4.json` oddlužení se splněním před třemi lety — průběh převzatý z anonymizovaného skutečného spisu), rozhovory s Claudem, tisk
 - Rozhovory: jeden sdílený **postranní panel** (na širokém displeji sloupec
   vedle textu, na telefonu přes celou obrazovku), každé vlákno má **název** a
   všechna se dají najít v přehledu **Moje rozhovory** (`#rozhovory`). Ukládají
