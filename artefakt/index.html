@@ -424,6 +424,26 @@
   }
   .spis-pozor p { font-size: .93rem; }
 
+  .spis-ukazka { margin: .9rem 0 0; }
+  .spis-ukazka summary { cursor: pointer; font-size: .9rem; color: var(--pecet); }
+  .spis-ukazka summary:hover { text-decoration: underline; }
+  .spis-ukazka summary:focus-visible { outline: 2px solid var(--pecet); outline-offset: 2px; }
+  /* Listina vypadá jako papír ze spisu: patkové písmo, bílý list, okraj. */
+  .spis-listina {
+    margin-top: .6rem;
+    background: var(--plocha);
+    border: 1px solid var(--linka);
+    border-left: 3px solid var(--tlum);
+    border-radius: .4rem;
+    padding: 1rem 1.1rem;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: .95rem;
+    line-height: 1.5;
+  }
+  .spis-listina p { margin: 0 0 .65rem; white-space: pre-line; }
+  .spis-listina p:last-child { margin-bottom: 0; }
+  .spis-ukazka-pozn { font-size: .8rem; color: var(--tlum); margin: .4rem 0 0; }
+
   .spis-pozn {
     border: 1px dashed var(--linka);
     border-radius: .6rem;
@@ -1296,6 +1316,7 @@
 <script src="uvody.js"></script>
 <script src="ucetnictvi.js"></script>
 <script src="spis.js"></script>
+<script src="spis2.js"></script>
 <script>
 (function () {
   'use strict';
@@ -1317,7 +1338,10 @@
   // Rozbor jednoho skutečného spisu: fáze řízení, v nich dokumenty v pořadí,
   // u každého, o jaké paragrafy se opírá. Čísla paragrafů jsou v datech, aby
   // se v kódu nemusel psát paragrafový znak.
-  var SPIS = window.SPIS || null;
+  // Rozborů je víc; SPIS je ten právě otevřený, stejně jako HRA u hry.
+  var ROZBORY = [window.SPIS, window.SPIS2].filter(Boolean);
+  ROZBORY.forEach(function (r, i) { if (!r.id) r.id = 'rozbor' + (i + 1); });
+  var SPIS = ROZBORY[0] || null;
   // Kde ve spisu se stálo, když se kliklo na paragraf. Dokud se čtou
   // paragrafy, drží se to, aby šlo vrátit se přesně k tomu dokumentu.
   var spisNavrat = null;
@@ -1541,12 +1565,17 @@
           LHUTY.lhuty.length + ' lhůt · u ' + zanik + ' zaniká právo', '#lhuty'));
       }
 
-      if (SPIS) {
+      if (ROZBORY.length) {
         var dokladu = 0;
-        SPIS.faze.forEach(function (f) { dokladu += f.kroky.length; });
+        ROZBORY.forEach(function (r) {
+          r.faze.forEach(function (f) { dokladu += f.kroky.length; });
+        });
         mriz.appendChild(dlazdiceRozcestniku('Spis krok za krokem',
-          'Jeden skutečný spis od návrhu po dnešek. U každého dokumentu, oč se opírá.',
-          SPIS.faze.length + ' fází \u00b7 ' + dokladu + ' dokumentů \u00b7 ' + SPIS.pouceni.length + ' ponaučení',
+          ROZBORY.length > 1
+            ? 'Skutečné spisy od návrhu po konec. U každého dokumentu, oč se opírá, u důležitých ukázka.'
+            : 'Jeden skutečný spis od návrhu po dnešek. U každého dokumentu, oč se opírá.',
+          (ROZBORY.length > 1 ? ROZBORY.length + ' spisy \u00b7 ' : SPIS.faze.length + ' fází \u00b7 ') +
+            dokladu + ' dokumentů',
           '#spis'));
       }
 
@@ -1678,11 +1707,39 @@
   }
 
   /** Jeden skutečný spis po fázích a dokumentech. */
-  function vykresliSpis() {
+  /** Rozcestník rozborů — každý spis je jiný průběh a často i jiné právo. */
+  function vykresliRozbory() {
     hlavni.textContent = '';
     zivePrepinace = [];
     zpetBtn.hidden = false;
     listaStav.textContent = '';
+    listaNazev.textContent = 'Spis krok za krokem';
+    hlavni.appendChild(el('h1', 'titul', 'Spis krok za krokem'));
+    hlavni.appendChild(el('p', 'perex',
+      'Skutečné spisy z insolvenčního rejstříku, dokument po dokumentu. U každého, co se stalo ' +
+      'a oč se opírá; u těch důležitých i ukázka, jak takový dokument vypadá.'));
+    ROZBORY.forEach(function (r) {
+      var dokladu = 0;
+      r.faze.forEach(function (f) { dokladu += f.kroky.length; });
+      var karta = el('button', 'radek radek-tema radek-prehled');
+      karta.type = 'button';
+      var levo = el('span');
+      levo.appendChild(el('span', 'vlakno-nazev', r.podtitul));
+      levo.appendChild(el('span', 'vlakno-kde', r.kratce || ''));
+      karta.appendChild(levo);
+      karta.appendChild(el('span', 'radek-pramen', dokladu + ' dokumentů'));
+      karta.addEventListener('click', function () { location.hash = '#spis-' + r.id; });
+      hlavni.appendChild(karta);
+    });
+    window.scrollTo(0, 0);
+  }
+
+  function vykresliSpis(id) {
+    hlavni.textContent = '';
+    zivePrepinace = [];
+    zpetBtn.hidden = false;
+    listaStav.textContent = '';
+    if (id) ROZBORY.forEach(function (r) { if (r.id === id) SPIS = r; });
 
     if (!SPIS) {
       listaNazev.textContent = 'Spis';
@@ -1737,6 +1794,18 @@
         karta.appendChild(el('h3', 'spis-krok-nazev', k.nazev));
         vlozText(karta, k.co);
 
+        // Ukázka dokumentu: přepis podstatné části, jména nahrazená rolí.
+        if (k.ukazka) {
+          var uk = el('details', 'spis-ukazka');
+          uk.appendChild(el('summary', null, 'Ukázka dokumentu' +
+            (k.ukazka.nazev ? ' \u00b7 ' + k.ukazka.nazev : '')));
+          var listina = el('div', 'spis-listina');
+          vlozText(listina, k.ukazka.text);
+          uk.appendChild(listina);
+          if (k.ukazka.pozn) uk.appendChild(el('p', 'spis-ukazka-pozn', k.ukazka.pozn));
+          karta.appendChild(uk);
+        }
+
         if (k.pravo && k.pravo.length) {
           var pole = el('div', 'spis-paragrafy');
           k.pravo.forEach(function (cislo) {
@@ -1745,7 +1814,7 @@
             var b = el('button', 'spis-paragraf', SPIS.znak + ' ' + cislo);
             b.type = 'button';
             b.addEventListener('click', function () {
-              spisNavrat = window.scrollY;
+              spisNavrat = { hash: '#spis-' + SPIS.id, y: window.scrollY };
               location.hash = '#p' + cislo;
             });
             pole.appendChild(b);
@@ -1777,7 +1846,7 @@
     });
     hlavni.appendChild(zaver);
 
-    window.scrollTo(0, spisNavrat || 0);
+    window.scrollTo(0, spisNavrat ? spisNavrat.y : 0);
     spisNavrat = null;
   }
 
@@ -3175,7 +3244,8 @@
     if (spisNavrat !== null) {
       var doSpisu = el('button', 'spis-navrat', '← Zpět do spisu');
       doSpisu.type = 'button';
-      doSpisu.addEventListener('click', function () { location.hash = '#spis'; });
+      var kam = spisNavrat.hash;
+      doSpisu.addEventListener('click', function () { location.hash = kam; });
       hlavni.appendChild(doSpisu);
     }
 
@@ -4630,13 +4700,14 @@
     var h = location.hash.replace(/^#/, '');
     // Návrat do spisu drží, jen dokud se čtou paragrafy; jinde zaniká.
     // „pohledavky“ taky začíná na p, proto se hlídá číslice za ním.
-    if (h !== 'spis' && !/^p\d/.test(h)) spisNavrat = null;
+    if (h.indexOf('spis') !== 0 && !/^p\d/.test(h)) spisNavrat = null;
     if (h === 'rozhovory') vykresliRozhovory();
     else if (h === 'pohledavky') vykresliPohledavky();
     else if (h === 'lhuty') vykresliLhuty();
     else if (h === 'zakon') vykresliZakon();
     else if (h === 'temata') vykresliTemata();
-    else if (h === 'spis') vykresliSpis();
+    else if (h === 'spis') { if (ROZBORY.length > 1) vykresliRozbory(); else vykresliSpis(); }
+    else if (h.indexOf('spis-') === 0) vykresliSpis(h.slice(5));
     else if (h === 'ucetnictvi') vykresliUcetnictvi();
     else if (h.indexOf('ucetnictvi-') === 0) vykresliLekci(h.slice(11));
     else if (h.indexOf('uvod-') === 0) vykresliUvod(h.slice(5));

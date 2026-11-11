@@ -30,6 +30,7 @@ SOUBORY = [
     ("uvody.js", "uvody.json", "UVODY"),
     ("ucetnictvi.js", "ucetnictvi.json", "UCETNICTVI"),
     ("spis.js", "spis.json", "SPIS"),
+    ("spis2.js", "spis2.json", "SPIS2"),
 ]
 
 

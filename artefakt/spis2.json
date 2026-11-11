@@ -1,0 +1,267 @@
+{
+ "id": "manzele",
+ "nazev": "Spis krok za krokem",
+ "podtitul": "Oddlužení manželů podle práva před rokem 2019",
+ "kratce": "Společný návrh, pět let splátek, 53 % pro věřitele a osvobození · 2016–2021",
+ "znak": "§",
+ "perex": "Manželé, oba zaměstnaní, podali v lednu 2016 společný návrh na povolení oddlužení. Dluhy přes **1,2 mil. Kč**, z toho polovina u jedné banky a zbytek hlavně u nebankovních věřitelů. Soud schválil splátkový kalendář na pět let, manželé ho celý odplatili a věřitelé dostali **53,39 %**. V listopadu 2021 je soud osvobodil od zbytku dluhů.\n\nSpis je cenný hlavně jako **srovnání**: běžel celý podle zákona ve znění před oddlužovací novelou č. 31/2019 Sb. — třicetidenní přihlašovací lhůta, přezkumné jednání u soudu, pět let splácení. U každého kroku je proto napsáno, jak by to šlo dnes. Odkazy na paragrafy vedou na **dnešní** znění.",
+ "anonymizace": "Spis je skutečný a veřejný z insolvenčního rejstříku. Jména dlužníků, rodná čísla, adresa, spisová značka, jméno soudkyně i správce a názvy věřitelů jsou vynechané nebo nahrazené rolí — i v ukázkách dokumentů. Data, částky a znění výroků zůstaly, protože na nich stojí právní logika.",
+ "kdo": [
+  {
+   "role": "Dlužníci — manželé",
+   "popis": "Podali společný návrh na povolení oddlužení. Po celé řízení jsou nerozlučnými společníky a považují se za jednoho dlužníka (§ 394a odst. 3). Oba zaměstnaní, on ve výrobě, ona přes agenturu práce."
+  },
+  {
+   "role": "Insolvenční správce",
+   "popis": "Fyzická osoba, plátce DPH. Přezkoumal přihlášky, část tří z nich popřel, pět let vyplácel splátky podle distribuční tabulky a každého půl roku podával zprávu o plnění."
+  },
+  {
+   "role": "Insolvenční soud",
+   "popis": "Krajský soud, samosoudkyně. O změnách v osobě věřitele rozhodovala soudní tajemnice."
+  },
+  {
+   "role": "Věřitelé",
+   "popis": "Dvanáct věřitelů s devatenácti přihláškami. Jedna banka drží **52 %** zjištěných pohledávek, zbytek jsou převážně nebankovní poskytovatelé úvěrů, mobilní operátor a zahraniční banky. Žádný zajištěný věřitel."
+  }
+ ],
+ "cisla": [
+  {
+   "popisek": "Ve splátkovém kalendáři",
+   "hodnota": "1 239 462 Kč",
+   "pozn": "zjištěné pohledávky nezajištěných věřitelů"
+  },
+  {
+   "popisek": "Splácelo se",
+   "hodnota": "60 měsíců",
+   "pozn": "říjen 2016 – září 2021"
+  },
+  {
+   "popisek": "Věřitelé dostali",
+   "hodnota": "53,39 %",
+   "pozn": "zhruba 11 tisíc Kč měsíčně"
+  },
+  {
+   "popisek": "Odměna a výdaje správce",
+   "hodnota": "111 078 Kč",
+   "pozn": "68 měsíců, včetně DPH"
+  }
+ ],
+ "faze": [
+  {
+   "id": "upadek",
+   "nazev": "Společný návrh a rozhodnutí o úpadku",
+   "obdobi": "leden – únor 2016",
+   "shrnuti": "Manželé podají jeden společný návrh, soud za necelý měsíc rozhodne o úpadku, povolí oddlužení a rovnou nařídí přezkumné jednání a schůzi věřitelů — tak se to tehdy dělalo.",
+   "kroky": [
+    {
+     "doklad": "A-1",
+     "datum": "29. 1. 2016",
+     "kdo": "dlužníci",
+     "nazev": "Insolvenční návrh spojený s návrhem na povolení oddlužení",
+     "co": "Manželé podávají **společný návrh** na povolení oddlužení. Tím se zahajuje insolvenční řízení.",
+     "pravo": [
+      "394a",
+      "390",
+      "97"
+     ],
+     "pozor": "Společný návrh manželů vyžaduje výslovné prohlášení obou, že souhlasí, aby **všechen jejich majetek** byl pro účely schválení oddlužení považován za společné jmění; podpisy musí být úředně ověřené (§ 394a odst. 2). Dnes se navíc měsíční odměna správce v oddlužení manželů zvyšuje o **50 %** (§ 3 odst. 3 písm. a) vyhlášky č. 313/2007 Sb.)."
+    },
+    {
+     "doklad": "A-5",
+     "datum": "23. 2. 2016",
+     "kdo": "samosoudkyně",
+     "nazev": "Usnesení o úpadku spojené s povolením oddlužení",
+     "co": "Deset výroků. I. zjišťuje se úpadek obou. II. ustanovuje se správce. III. povoluje se oddlužení. IV. zálohu na odměnu a výdaje platí manželé společně a nerozdílně: **1 350 Kč** měsíčně plus DPH. V. věřitelé mají na přihlášky **30 dnů**. VII. a VIII. soud nařizuje **přezkumné jednání** a hned po něm **schůzi věřitelů**, která má hlasovat o způsobu oddlužení.",
+     "pravo": [
+      "136",
+      "397",
+      "173",
+      "190",
+      "399"
+     ],
+     "ukazka": {
+      "nazev": "výroky usnesení (výňatek)",
+      "text": "**U s n e s e n í**\n\nKrajský soud v [—] rozhodl samosoudkyní [—] v insolvenční věci dlužníků: [dlužník], r. č. [—], [dlužnice], r. č. [—], oba bytem [—], o insolvenčním návrhu dlužníků\n\n**t a k t o :**\n\nI. **Zjišťuje se úpadek dlužníků** [dlužník] a [dlužnice].\n\nII. Insolvenčním správcem se ustanovuje [správce].\n\nIII. Soud **povoluje** řešení úpadku **oddlužením**.\n\nIV. Soud ukládá dlužníkům, aby počínaje měsícem únorem 2016 platili insolvenčnímu správci společně a nerozdílně zálohu na odměnu a hotové výdaje ve výši 1.350,- Kč měsíčně, zvýšenou v případě, že insolvenční správce je plátce DPH, o aktuální sazbu DPH (…).\n\nV. **Věřitelé**, kteří dosud nepřihlásili své pohledávky, **se vyzývají**, aby tak učinili ve lhůtě **30 dnů** ode dne zveřejnění tohoto usnesení v insolvenčním rejstříku. (…) K přihláškám, které budou podány později, insolvenční soud **nepřihlíží** a takto uplatněné pohledávky nebudou v insolvenčním řízení **uspokojeny**.\n\n(…)\n\nVII. Soud nařizuje **přezkumné jednání na den 28. 4. 2016** (…).\n\nVIII. Soud svolává **schůzi věřitelů**, která se bude konat bezprostředně po skončení přezkumného jednání na stejném místě, s předmětem jednání: a) zpráva insolvenčního správce o jeho dosavadní činnosti, (…) c) projednání způsobu oddlužení a hlasování o přijetí způsobu oddlužení, d) volba věřitelského orgánu.",
+      "pozn": "Jména a adresy nahrazené rolí, vynechané pasáže označené (…)."
+     },
+     "pozor": "Tady je nejvíc vidět, co změnila novela 2019. **Dnes** mají věřitelé na přihlášky **2 měsíce** (§ 136 odst. 2 písm. d). Přezkumné jednání u soudu se při oddlužení nekoná: správce přezkoumá přihlášky sám a stanovisko dlužníka zjistí na **osobním jednání** (§ 410 odst. 2). Místo schůze věřitelů podá správce **zprávu pro oddlužení** a věřitelé mají 7 dní na námitky nebo na návrh schůze (§ 398a odst. 4, § 136 odst. 2 písm. i). Záloha 1 350 Kč odpovídala tehdejší odměně 1 125 Kč a výdajům 225 Kč měsíčně."
+    }
+   ]
+  },
+  {
+   "id": "prezkum",
+   "nazev": "Přihlášky a přezkum",
+   "obdobi": "březen – srpen 2016",
+   "shrnuti": "Dvanáct věřitelů podá devatenáct přihlášek. Jeden věřitel sám vezme víc než polovinu své přihlášky zpět, na přezkumné jednání nepřijde nikdo a správce popře tři položky nebankovního věřitele. Ten nežaluje.",
+   "kroky": [
+    {
+     "doklad": "P4-2",
+     "datum": "1. 4. 2016",
+     "kdo": "nebankovní věřitel",
+     "nazev": "Částečné zpětvzetí přihlášky",
+     "co": "Věřitel přihlásil pět dílčích pohledávek z dvou úvěrů, celkem **248 401 Kč**. Měsíc nato bere zpět **141 162 Kč** — všechny smluvní pokuty a část zesplatněných splátek — a žádá uspokojení jen ve výši **107 238,86 Kč**. Důvod neuvádí.",
+     "pravo": [
+      "184",
+      "170"
+     ],
+     "ukazka": {
+      "nazev": "podání věřitele (výňatek)",
+      "text": "**částečné zpětvzetí přihlášky věřitele do insolvenčního řízení**\n\n(…) Přihláškou ze dne 1. 3. 2016 přihlásil věřitel do insolvenčního řízení za dlužníkem celkem **pět nezajištěných pohledávek v celkové výši 248.401,- Kč.** (…)\n\nVěřitel tímto sděluje nadepsanému soudu, **že bere svou přihlášku do insolvenčního řízení na majetek dlužníka částečně zpět**, a to v následujícím rozsahu:\n\nPro dílčí pohledávku č. 1 bere věřitel svou přihlášku zpět co do částky 52.972,- Kč\nPro dílčí pohledávku č. 2 bere věřitel svou přihlášku zcela zpět, tj. ve výši 54.537,- Kč\n(…)\n\nVěřitel tedy (…) žádá, aby jeho pohledávka (…) **byla uspokojena pouze ve výši 107.238,86 Kč.**",
+      "pozn": "Dílčí pohledávka č. 2 byly podle přihlášky nezaplacené smluvní pokuty."
+     },
+     "pozor": "Věřitel může přihlášku vzít zpět **kdykoli** během řízení, zcela nebo zčásti, a soud zpětvzetí vezme na vědomí rozhodnutím (§ 184 odst. 1). Proč to věřitel udělal, ve spisu není. Pro správce je to ale signál: smluvní pokuty z nebankovních úvěrů jsou první, na co se při přezkumu dívá — a věřitel tu zjevně nechtěl riskovat, že je správce popře."
+    },
+    {
+     "doklad": "B-3",
+     "datum": "28. 4. 2016",
+     "kdo": "soud a správce",
+     "nazev": "Přezkumné jednání a schůze věřitelů",
+     "co": "Jednání se konalo u soudu. **Žádný z věřitelů nepřišel.** Správce u tří přihlášek jednoho nebankovního věřitele popřel část pohledávky. Schůze věřitelů, která měla hlasovat o způsobu oddlužení, se tak obešla bez hlasování.",
+     "pravo": [
+      "190",
+      "402"
+     ],
+     "pozor": "Když nikdo nehlasuje, rozhodne o způsobu oddlužení soud (§ 402 odst. 5). Tehdy volil mezi splátkovým kalendářem a zpeněžením majetkové podstaty; **dnes** zákon zná zpeněžení podstaty a splátkový kalendář **se** zpeněžením, a bez většiny hlasů soud rozhodne o tom druhém. Ani dnes není nic neobvyklého, že se věřitelé neozvou vůbec."
+    },
+    {
+     "doklad": "P10-2",
+     "datum": "3. 5. 2016",
+     "kdo": "insolvenční správce",
+     "nazev": "Vyrozumění věřitele o popření a výzva k žalobě",
+     "co": "Správce věřiteli oznamuje, co a proč popřel: u jedné přihlášky **8 613,56 Kč** — poplatek za poskytnutí úvěru, jehož splatnost nastala až po rozhodnutí o úpadku; u dalších dvou po **20 000 Kč** smluvní pokuty, jejichž ujednání považuje za neplatné pro rozpor s dobrými mravy. Současně ho vyzývá, ať podá žalobu na určení, a poučuje ho o lhůtě.",
+     "pravo": [
+      "197",
+      "198",
+      "170"
+     ],
+     "ukazka": {
+      "nazev": "vyrozumění správce (výňatek)",
+      "text": "Věc: **Vyrozumění konkursního věřitele č. 7 o tom, že jeho pohledávka zůstala sporná**\nVýzva insolvenčního správce k podání určovací žaloby (…) dle ustanovení § 198 odst. 1 a 2 (…)\n\nnevykonatelnou pohledávku ve výši 23 400,00 Kč – přihláška pohledávky č. 10\n\nDne 28. 4. 2016 se konalo přezkumné jednání a insolvenční správce popřel pravost a výši části přihlášené pohledávky takto: na pohledávce označené jako č. 1 – správce popírá výši 8 613,56 Kč, když má za to, že se jedná **poplatek za poskytnutí úvěru, jehož splatnost nastala po rozhodnutí o úpadku**.\n\n(…)\n\nnevykonatelnou pohledávku ve výši 44 550,00 Kč – přihláška pohledávky č. 11\n\n(…) správce popírá výši 20 000,00 Kč, když má za to, že **ujednání o smluvní pokutě** je ve smyslu ustanovení § 39 zákona č. 40/1964 Sb., občanského zákoníku, **neplatné**, neboť odporuje zákonu nebo jej obchází anebo se příčí dobrým mravům (…).\n\nInsolvenční správce **vyzývá** insolvenčního věřitele č. 7 k uplatnění popřené pohledávky žalobou vůči insolvenčnímu správci u insolvenčního soudu do 30 dnů od přezkumného jednání; tato lhůta však neskončí dříve než uplynutím 15 dnů od doručení tohoto vyrozumění. Nedojde-li žaloba ve stanovené lhůtě insolvenčnímu soudu, k pohledávce popřené co do pravosti se nepřihlíží; pohledávka popřená co do výše nebo pořadí je v takovém případě zjištěna ve výši nebo pořadí uvedeném při jejím popření.",
+      "pozn": "Správce se odvolává na starý občanský zákoník č. 40/1964 Sb. Smlouvy uzavřené před 1. 1. 2014 se jím řídí dál, včetně práv z jejich porušení (§ 3028 odst. 3 občanského zákoníku č. 89/2012 Sb.)."
+     },
+     "pozor": "Takhle vypadá řádné vyrozumění: **co** je popřeno, **proč**, a **poučení** o lhůtě. U nevykonatelné pohledávky žaluje věřitel, a to do 30 dnů od přezkumného jednání, nejdřív však 15 dnů od doručení vyrozumění (§ 198 odst. 1). Dnes v oddlužení běží lhůta od právní moci rozhodnutí o schválení zprávy o přezkumu — tatáž věta § 198 odst. 1 to říká výslovně. Věřitel nežaloval a těch 48 613,56 Kč z rozdělování vypadlo."
+    }
+   ]
+  },
+  {
+   "id": "schvaleni",
+   "nazev": "Schválení oddlužení",
+   "obdobi": "září 2016",
+   "shrnuti": "Soud schválí splátkový kalendář na pět let, přikáže oběma zaměstnavatelům posílat srážky správci, stanoví distribuční tabulku a v témže usnesení odmítne popřené části přihlášek.",
+   "kroky": [
+    {
+     "doklad": "B-4",
+     "datum": "6. 9. 2016",
+     "kdo": "samosoudkyně",
+     "nazev": "Usnesení o schválení oddlužení plněním splátkového kalendáře",
+     "co": "Dvanáct výroků. I. schvaluje se oddlužení plněním splátkového kalendáře. II. a III. zaměstnavatelům obou dlužníků se přikazuje srážet ze mzdy jako pro přednostní pohledávku a posílat to správci. IV. správce si z každé splátky ponechá zálohu na odměnu, zaplatí případné pohledávky za podstatou a zbytek rozdělí věřitelům podle tabulky s procentním podílem každé přihlášky. V. splátkový kalendář poběží **od října 2016 do září 2021**, nebo kratší dobu do úplného splacení. VII. pravidla pro změnu distribuční tabulky. IX.–XII. popřené části tří přihlášek se **odmítají**, protože věřitel nežaloval.",
+     "pravo": [
+      "406",
+      "402",
+      "398",
+      "185",
+      "198"
+     ],
+     "ukazka": {
+      "nazev": "výroky usnesení (výňatek)",
+      "text": "**t a k t o :**\n\nI. **Soud schvaluje oddlužení dlužníků plněním splátkového kalendáře.**\n\nII. Soud ukládá jak plátci mzdy nebo jiného příjmu **dlužníka**, tak také příp. dalším následujícím novým plátcům mzdy (…): [zaměstnavatel], aby po doručení tohoto rozhodnutí, počínaje měsícem **říjnem 2016**, prováděl z příjmu dlužníka srážky ve stejném rozsahu, jako při výkonu rozhodnutí pro uspokojení přednostní pohledávky, a sražené částky nevyplácel dlužníku, ale zasílal je insolvenčnímu správci (…), a to bez zřetele k právní moci tohoto usnesení.\n\n(…)\n\nIV. **Soud ukládá insolvenčnímu správci**, aby si každý měsíc z částek sražených dlužníkům (…):\n1. ponechal částku 1.350,- Kč jako zálohu na odměnu a náhradu hotových výdajů (…);\n2. uhradil případné pohledávky za majetkovou podstatou a pohledávky postavené na roveň pohledávkám za podstatou;\n3. zbývající částku vyplatil nezajištěným věřitelům, a to **první splátku v termínu do 31. října 2016**, druhou a další splátku nadále vždy nejpozději do konce následujícího kalendářního měsíce, v poměru\n\nč. přihl. 2/P3 · [banka] · 645 331,27 Kč · 52,0654 %\nč. přihl. 3/P4 · [nebankovní věřitel] · 107 238,86 Kč · 8,6520 %\nč. přihl. 6/P8 · [nebankovní věřitel] · 103 361,00 Kč · 8,3392 %\n(… dalších šestnáct řádků …)\n\nV. Oddlužení splátkovým kalendářem bude probíhat **od října 2016 do září 2021**, případně po dobu kratší do úplného splacení pohledávek nezajištěných věřitelů.\n\n(…)\n\nIX. Přihláška pohledávky věřitele č. 7/P10 (…) se ve výši **8.613,56 Kč odmítá. Přihláška pohledávky je zjištěna ve výši 14.786,44 Kč.**",
+      "pozn": "Ve výroku IV. je v originále tabulka všech devatenácti přihlášek; tady jsou tři největší. Řádek 3/P4 je ten věřitel, který vzal přihlášku z části zpět."
+     },
+     "pozor": "Všimněte si, kde se popřené pohledávky „uzavřely“: soud odmítl jejich popřené části rovnou v usnesení o schválení, protože žalobní lhůta marně uplynula (§ 185, § 198 odst. 1). Přehled příjmů předkládali dlužníci **každých 6 měsíců**; dnes je to po každých 3 kalendářních měsících, neurčí-li soud jinak (§ 412 odst. 1 písm. d). A tehdy trvalo oddlužení **pět let** — dnes tři roky, pokud dlužník nedostal osvobození v posledních 20 letech (§ 412a odst. 1 písm. b) a odst. 3)."
+    }
+   ]
+  },
+  {
+   "id": "plneni",
+   "nazev": "Pět let splátek",
+   "obdobi": "říjen 2016 – září 2021",
+   "shrnuti": "Dvakrát do roka zpráva správce o plnění, mezitím čtyřikrát změna věřitele — pohledávky se prodávají vymáhacím firmám. V červnu 2019 nabude účinnosti oddlužovací novela, na tenhle spis ale nedopadne.",
+   "kroky": [
+    {
+     "doklad": "B-5 až B-14",
+     "datum": "5/2017 – 10/2021",
+     "kdo": "insolvenční správce",
+     "nazev": "Sdělení správce o plnění oddlužení",
+     "co": "Deset pololetních zpráv: kolik zaměstnavatelé srazili, kolik si správce ponechal na zálohu, kolik dostal který věřitel a zda dlužníci plní povinnosti. Podle závěrečné zprávy plnili řádně a včas po celou dobu.",
+     "pravo": [
+      "412",
+      "36"
+     ],
+     "pozor": "Zprávy jsou nástrojem **dohledu** nad dlužníkem, který správce vykonává po celou dobu účinků schválení oddlužení (dnes § 412 odst. 3). Kdyby příjmy klesly, je to místo, kde se to soud dozví nejdřív. Dnes navíc zákon říká, kdy má správce dlužníka vyzvat, aby doložil své úsilí — při poklesu příjmů nebo předpokládané míry uspokojení o víc než čtvrtinu (§ 412 odst. 5)."
+    },
+    {
+     "doklad": "P10-4",
+     "datum": "10. 1. 2019",
+     "kdo": "soudní tajemnice",
+     "nazev": "Usnesení o změně v osobě věřitele",
+     "co": "Nebankovní věřitel č. 7 postoupil smlouvou z října 2018 své pohledávky vymáhací společnosti. Na jeho návrh a se souhlasem nabyvatele soud rozhodl, že nabyvatel vstupuje do řízení na jeho místo — u každé ze čtyř přihlášek zvlášť. Podobně se během splácení vyměnili věřitelé ještě u dalších přihlášek.",
+     "pravo": [
+      "18",
+      "19"
+     ],
+     "ukazka": {
+      "nazev": "usnesení (výňatek)",
+      "text": "**Usnesení**\n\nKrajský soud v [—] rozhodl soudní tajemnicí [—] v insolvenčním řízení dlužníků [dlužník], [dlužnice] o přihlášce pohledávky věřitele číslo 7, číslo přihlášky P10: [původní věřitel] o návrhu na vstup nového věřitele\n\n**takto:**\n\nNa místo přihlášeného věřitele číslo 7, číslo přihlášky P10: [původní věřitel] **vstupuje do řízení** společnost [nabyvatel — vymáhací společnost].\n\n**Odůvodnění:** Podáním, doručeným soudu dne 9. 1. 2019, byl podán návrh na změnu v osobě věřitele, jelikož byla mezi postupitelem [—] a postupníkem [—] uzavřena dne 2. 10. 2018 Smlouva o postoupení pohledávek (…). Na důkaz účinnosti smlouvy (…) bylo přiloženo i souhlasné prohlášení nového věřitele (…).\n\nVe smyslu § 19 IZ se nabyvatel pohledávky právní mocí tohoto usnesení stává účastníkem insolvenčního řízení a platí pro něj **stav insolvenčního řízení v době, kdy se stal jeho účastníkem**. (…)\n\n**Poučení:** Proti tomuto usnesení není odvolání přípustné.",
+      "pozn": "Mezi podáním návrhu a rozhodnutím uplynul jeden den."
+     },
+     "pozor": "Nabyvatel přebírá řízení **ve stavu, v jakém je** (§ 19 odst. 1) — tady tedy i s pohledávkou zjištěnou jen v nepopřené části. Pro správce je důležitý výrok VII. usnesení o schválení: při změně věřitele musí platby dotčenému věřiteli **zadržet**, upravit distribuční tabulku a novému platit až po jejím zveřejnění. Dnes soud o návrhu rozhoduje do 3 pracovních dnů, jinak se má za to, že mu vyhověl (§ 18 odst. 2)."
+    }
+   ]
+  },
+  {
+   "id": "konec",
+   "nazev": "Splnění a osvobození",
+   "obdobi": "říjen – listopad 2021",
+   "shrnuti": "Šedesátá splátka, zpráva o splnění a jedno usnesení, které vezme splnění na vědomí, zprostí správce, přizná mu odměnu a dlužníky osvobodí.",
+   "kroky": [
+    {
+     "doklad": "B-15",
+     "datum": "26. 10. 2021",
+     "kdo": "insolvenční správce",
+     "nazev": "Sdělení správce o splnění oddlužení a návrh na osvobození",
+     "co": "Za 60 měsíců zaplatili dlužníci **53,39 %** zjištěných pohledávek, zálohy na odměnu platili řádně a plnili všechny povinnosti. Správce navrhuje vzít splnění na vědomí a dlužníky osvobodit.",
+     "pravo": [
+      "413",
+      "414"
+     ]
+    },
+    {
+     "doklad": "B-16",
+     "datum": "23. 11. 2021",
+     "kdo": "samosoudkyně",
+     "nazev": "Usnesení o splnění oddlužení, zproštění správce, odměně a osvobození",
+     "co": "Čtyři výroky v jednom usnesení: splnění se bere na vědomí, správce se zprošťuje funkce, přiznává se mu odměna **92 565 Kč** a náhrada výdajů **18 513 Kč** (obojí s DPH, už zaplacené ze záloh) a dlužníci se osvobozují od zbytku dluhů — včetně věřitelů, kteří se nepřihlásili, a ručitelů. V odůvodnění soud výslovně říká, že použil zákon **ve znění před novelou č. 31/2019 Sb.**",
+     "pravo": [
+      "413",
+      "414",
+      "416"
+     ],
+     "ukazka": {
+      "nazev": "výroky a část odůvodnění",
+      "text": "**USNESENÍ**\n\n(…) **takto:**\n\nI. Soud **bere na vědomí splnění oddlužení dlužníků** plněním splátkového kalendáře.\n\nII. Soud **zprošťuje funkce insolvenčního správce** [správce].\n\nIII. Soud **přiznává** insolvenčnímu správci **odměnu** včetně DPH ve výši **92 565 Kč** a **náhradu hotových výdajů** včetně DPH ve výši **18 513 Kč.**\n\nIV. **Dlužníci se osvobozují od placení pohledávek** věřitelů, zahrnutých do oddlužení, v rozsahu, v němž dosud nebyly uspokojeny. Osvobození se vztahuje také na věřitele, k jejichž pohledávkám se v insolvenčním řízení nepřihlíželo, jakož i na věřitele, kteří své pohledávky do insolvenčního řízení nepřihlásili, ač tak měli učinit. **Osvobození se vztahuje** i na ručitele a jiné osoby, které měly vůči dlužníkům pro tyto pohledávky právo postihu.\n\n**Odůvodnění:**\n\n(…) 2. Vzhledem ke skutečnosti, že od 1. 6. 2019 nabyla účinnosti tzv. oddlužovací novela (provedená zákonem č. 31/2019 Sb.), insolvenční soud při použití jejího přechodného ustanovení (čl. II) aplikoval na daný případ zákon (…) **ve znění před novelou č. 31/2019 Sb.** Dané insolvenční řízení bylo totiž zahájeno a rozhodnutí o úpadku bylo vydáno ještě před účinností oddlužovací novely.\n\n3. Ze zprávy insolvenčního správce (…) bylo zjištěno, že dlužníci za 60 měsíců trvání splátkového kalendáře uhradili **53,39 %** zjištěných pohledávek nezajištěných věřitelů (…).\n\n(…) 9. (…) Insolvenčnímu správci v daném případě náleží odměna za 60 měsíců trvání schváleného oddlužení (…) a 8 měsíců v době od úpadku do konce měsíce, v němž nastaly účinky schválení oddlužení (…), tedy částka 92 565 Kč (**68 měsíců x 1 125 Kč + 21% DPH**). (…)",
+      "pozn": "Rozhodnutí je z listopadu 2021 — dva a půl roku po novele, a přesto podle starého znění."
+     },
+     "pozor": "Dnešní ekvivalent: osvobození podle **§ 414 odst. 1**, na nepřihlášené věřitele dopadá podle **odst. 5** a na ručitele podle **odst. 6** — soud tehdy citoval odst. 2 a 3, protože se paragraf mezitím přečísloval. Výjimky z osvobození (výživné, úmyslné delikty, peněžité tresty) jsou v § 416 odst. 1. A odměna: tehdy 1 125 Kč měsíčně po celou dobu, dnes **1 650 Kč** do schválení a **750 Kč** po něm (§ 3 odst. 2 písm. a) vyhlášky č. 313/2007 Sb.)."
+    }
+   ]
+  }
+ ],
+ "pouceni": [
+  {
+   "nadpis": "Přechodná ustanovení rozhodují léta",
+   "text": "Novela č. 31/2019 Sb. platí od června 2019, a přesto soud v roce 2021 rozhodoval podle starého znění — protože řízení bylo zahájeno a o úpadku rozhodnuto dřív. U zkoušky i v praxi je proto první otázka u každého oddlužení: **podle kterého znění běží?** Pět let a přezkumné jednání u soudu jsou znak starého práva, tři roky a jednání správce s dlužníkem nového."
+  },
+  {
+   "nadpis": "Popírat se vyplácí — i v malém",
+   "text": "Správce popřel 48 613,56 Kč z přihlášek jednoho věřitele, ten nežaloval a o tolik méně se dělilo. Jiný věřitel vzal sám zpět 141 162 Kč, hlavně smluvní pokuty. Na 1,24 mil. Kč dluhů to je víc než desetina — a o tu víc dostali všichni ostatní."
+  },
+  {
+   "nadpis": "Pohledávky se během oddlužení prodávají",
+   "text": "Za pět let se vyměnili věřitelé u několika přihlášek. Každá změna znamená rozhodnutí soudu podle § 18, zadržení plateb dotčenému věřiteli a novou distribuční tabulku. Správce, který by platil podle oznámení postupníka bez rozhodnutí soudu, riskuje, že zaplatí dvakrát."
+  },
+  {
+   "nadpis": "53 % stačilo",
+   "text": "Dlužníci splatili jen něco přes polovinu a dostali osvobození, protože řádně plnili povinnosti po celou dobu. Ani dnes osvobození nestojí na tom, že se zaplatí všechno: rozhoduje plnění podstatných povinností, a dosažení předpokládané míry uspokojení zakládá jen domněnku, že je dlužník plnil (§ 412a odst. 1 písm. b)."
+  }
+ ]
+}

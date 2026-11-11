@@ -262,11 +262,15 @@ def zkontroluj_spis(zakon):
     z nich dělá prokliky. Novela umí paragraf zrušit (tak zmizel § 415);
     odkaz by pak vedl na prázdnou obrazovku, aniž by si toho kdo všiml.
     """
-    zdroj = KOREN / "artefakt/spis.json"
-    if not zdroj.exists():
-        return []
-    spis = json.loads(zdroj.read_text("utf-8"))
     cisla = {p["paragraf"] for p in zakon}
+    chyby = []
+    for zdroj in sorted((KOREN / "artefakt").glob("spis*.json")):
+        chyby += _zkontroluj_rozbor(zdroj, cisla)
+    return chyby
+
+
+def _zkontroluj_rozbor(zdroj, cisla):
+    spis = json.loads(zdroj.read_text("utf-8"))
     chyby = []
     kroku = 0
     for faze in spis["faze"]:
@@ -280,10 +284,12 @@ def zkontroluj_spis(zakon):
             for cislo in krok.get("pravo") or []:
                 if cislo not in cisla:
                     chyby.append(f"spis {kde}: odkaz na § {cislo}, který v zákoně není")
+            if "ukazka" in krok and not (krok["ukazka"].get("text") or "").strip():
+                chyby.append(f"spis {kde}: ukázka bez textu")
     for u in spis.get("pouceni", []):
         if not u.get("nadpis", "").strip() or not u.get("text", "").strip():
             chyby.append("spis: ponaučení bez nadpisu nebo bez textu")
-    print(f"spis            {len(spis['faze'])} fází, {kroku} dokumentů")
+    print(f"{zdroj.stem:<16}{len(spis['faze'])} fází, {kroku} dokumentů")
     return chyby
 
 
